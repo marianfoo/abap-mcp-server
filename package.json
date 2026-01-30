@@ -1,6 +1,11 @@
 {
-  "name": "mcp-sap-docs",
-  "version": "0.3.21",
+  "name": "mcp-abap-server",
+  "version": "1.0.0",
+  "description": "ABAP/RAP-focused MCP server for ADT (Eclipse) - search documentation, lint code",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marianfoo/abap-mcp-server.git"
+  },
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
@@ -29,7 +34,8 @@
     "esm": true
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.19.0",
+    "@abaplint/core": "^2.115.0",
+    "@modelcontextprotocol/sdk": "^1.25.3",
     "better-sqlite3": "^12.2.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",

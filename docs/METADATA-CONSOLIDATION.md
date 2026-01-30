@@ -145,7 +145,7 @@ env: {
 }
 ```
 
-#### `.github/workflows/deploy-mcp-sap-docs.yml` 🚀 **UPDATED**
+#### `.github/workflows/deploy-abap-mcp-server.yml` 🚀 **UPDATED**
 - Removed transformers cache directory creation
 - Updated deployment comments for BM25-only system
 - Added metadata.json existence check

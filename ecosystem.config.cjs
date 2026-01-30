@@ -1,13 +1,13 @@
-// PM2 configuration for SAP Docs MCP server
+// PM2 configuration for ABAP MCP server
 // Modern MCP streamable HTTP transport only (SSE proxy removed)
 module.exports = {
   apps: [
     // HTTP status server on :3001 (pinned port for PM2)
     {
-      name: "mcp-sap-http",
+      name: "abap-mcp-http",
       script: "node",
-      args: ["/opt/mcp-sap/mcp-sap-docs/dist/src/http-server.js"],
-      cwd: "/opt/mcp-sap/mcp-sap-docs",
+      args: ["/opt/mcp-sap/abap-mcp-server/dist/src/http-server.js"],
+      cwd: "/opt/mcp-sap/abap-mcp-server",
       env: { 
         NODE_ENV: "production", 
         PORT: "3001",
@@ -33,10 +33,10 @@ module.exports = {
 
     // Streamable HTTP MCP server (latest MCP spec)
     {
-      name: "mcp-sap-streamable",
+      name: "abap-mcp-streamable",
       script: "node",
-      args: ["/opt/mcp-sap/mcp-sap-docs/dist/src/streamable-http-server.js"],
-      cwd: "/opt/mcp-sap/mcp-sap-docs",
+      args: ["/opt/mcp-sap/abap-mcp-server/dist/src/streamable-http-server.js"],
+      cwd: "/opt/mcp-sap/abap-mcp-server",
       env: { 
         NODE_ENV: "production", 
         MCP_PORT: "3122",

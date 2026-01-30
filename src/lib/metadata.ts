@@ -38,6 +38,8 @@ export type Metadata = {
 let META: Metadata | null = null;
 let BOOSTS: Record<string, number> = {};
 let SYNONYM_MAP: Record<string, string[]> = {};
+// Normalized context boosts with lowercase keys for case-insensitive lookup
+let CONTEXT_BOOSTS_NORMALIZED: Record<string, Record<string, number>> = {};
 
 export function loadMetadata(metaPath?: string): Metadata {
   if (META) return META;
@@ -63,7 +65,16 @@ export function loadMetadata(metaPath?: string): Metadata {
     }
     SYNONYM_MAP = syn;
     
-    console.log(`✅ Metadata loaded: ${META.sources.length} sources, ${Object.keys(SYNONYM_MAP).length} synonyms`);
+    // Normalize context boosts keys to lowercase for case-insensitive lookup
+    // This fixes the mismatch where metadata.json has "RAP" but search.ts uses "rap"
+    CONTEXT_BOOSTS_NORMALIZED = {};
+    if (META.contextBoosts) {
+      for (const [ctx, boosts] of Object.entries(META.contextBoosts)) {
+        CONTEXT_BOOSTS_NORMALIZED[ctx.toLowerCase()] = boosts;
+      }
+    }
+    
+    console.log(`✅ Metadata loaded: ${META.sources.length} sources, ${Object.keys(SYNONYM_MAP).length} synonyms, ${Object.keys(CONTEXT_BOOSTS_NORMALIZED).length} context boosts`);
     return META;
   } catch (error) {
     console.warn(`⚠️ Could not load metadata from ${finalPath}, using defaults:`, error);
@@ -79,6 +90,7 @@ export function loadMetadata(metaPath?: string): Metadata {
     
     BOOSTS = {};
     SYNONYM_MAP = {};
+    CONTEXT_BOOSTS_NORMALIZED = {};
     
     return META;
   }
@@ -166,18 +178,17 @@ export function getAllSourcePaths(): Record<string, string> {
   return paths;
 }
 
-// Get context boosts for a specific context
+// Get context boosts for a specific context (case-insensitive)
 export function getContextBoosts(context: string): Record<string, number> {
   if (!META) loadMetadata();
-  if (!META) return {};
-  return META.contextBoosts?.[context] || {};
+  // Use normalized (lowercase) lookup for case-insensitive matching
+  return CONTEXT_BOOSTS_NORMALIZED[context.toLowerCase()] || {};
 }
 
-// Get all context boosts
+// Get all context boosts (normalized to lowercase keys)
 export function getAllContextBoosts(): Record<string, Record<string, number>> {
   if (!META) loadMetadata();
-  if (!META) return {};
-  return META.contextBoosts || {};
+  return CONTEXT_BOOSTS_NORMALIZED;
 }
 
 // Get library mapping for source ID

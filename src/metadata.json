@@ -1,263 +1,16 @@
 {
-  "version": 1,
-  "updated_at": "2025-01-14",
-  "description": "Centralized configuration for SAP Docs MCP search system",
+  "version": 2,
+  "updated_at": "2026-01-29",
+  "description": "ABAP/RAP-focused MCP server configuration for ADT (Eclipse) usage",
   
   "sources": [
-    {
-      "id": "sapui5",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.1,
-      "tags": ["ui5", "frontend", "javascript"],
-      "description": "SAPUI5 framework documentation",
-      "libraryId": "/sapui5",
-      "sourcePath": "sapui5-docs/docs",
-      "baseUrl": "https://ui5.sap.com",
-      "pathPattern": "/#/topic/{file}",
-      "anchorStyle": "custom"
-    },
-    {
-      "id": "cap",
-      "type": "documentation", 
-      "lang": "en",
-      "boost": 0.1,
-      "tags": ["backend", "nodejs", "java", "cds"],
-      "description": "SAP Cloud Application Programming model",
-      "libraryId": "/cap",
-      "sourcePath": "cap-docs",
-      "baseUrl": "https://cap.cloud.sap",
-      "pathPattern": "/docs/{file}",
-      "anchorStyle": "docsify"
-    },
-    {
-      "id": "openui5-api",
-      "type": "api",
-      "lang": "en", 
-      "boost": 0.1,
-      "tags": ["api", "controls", "ui5"],
-      "description": "OpenUI5 API documentation",
-      "libraryId": "/openui5-api",
-      "sourcePath": "openui5/src",
-      "baseUrl": "https://sdk.openui5.org",
-      "pathPattern": "/#/api/{file}",
-      "anchorStyle": "custom"
-    },
-    {
-      "id": "openui5-samples",
-      "type": "samples",
-      "lang": "en",
-      "boost": 0.05,
-      "tags": ["samples", "examples", "ui5"],
-      "description": "OpenUI5 code samples",
-      "libraryId": "/openui5-samples",
-      "sourcePath": "openui5/src",
-      "baseUrl": "https://sdk.openui5.org",
-      "pathPattern": "/entity/{file}",
-      "anchorStyle": "custom"
-    },
-    {
-      "id": "wdi5",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.05,
-      "tags": ["testing", "e2e", "webdriver"],
-      "description": "wdi5 testing framework",
-      "libraryId": "/wdi5",
-      "sourcePath": "wdi5/docs",
-      "baseUrl": "https://ui5-community.github.io/wdi5",
-      "pathPattern": "#{file}",
-      "anchorStyle": "docsify"
-    },
-    {
-      "id": "ui5-tooling",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.0,
-      "tags": ["tooling", "build", "cli"],
-      "description": "UI5 Tooling documentation",
-      "libraryId": "/ui5-tooling",
-      "sourcePath": "ui5-tooling/docs",
-      "baseUrl": "https://sap.github.io/ui5-tooling/v4",
-      "pathPattern": "/pages/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "cloud-mta-build-tool", 
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.0,
-      "tags": ["mta", "build", "deployment"],
-      "description": "Cloud MTA Build Tool",
-      "libraryId": "/cloud-mta-build-tool",
-      "sourcePath": "cloud-mta-build-tool/docs/docs",
-      "baseUrl": "https://sap.github.io/cloud-mta-build-tool",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "ui5-webcomponents",
-      "type": "documentation", 
-      "lang": "en",
-      "boost": 0.0,
-      "tags": ["webcomponents", "ui5"],
-      "description": "UI5 Web Components",
-      "libraryId": "/ui5-webcomponents",
-      "sourcePath": "ui5-webcomponents/docs",
-      "baseUrl": "https://sap.github.io/ui5-webcomponents/docs",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "cloud-sdk-js",
-      "type": "documentation",
-      "lang": "en", 
-      "boost": 0.05,
-      "tags": ["sdk", "javascript", "cloud"],
-      "description": "SAP Cloud SDK for JavaScript",
-      "libraryId": "/cloud-sdk-js",
-      "sourcePath": "cloud-sdk/docs-js",
-      "baseUrl": "https://sap.github.io/cloud-sdk/docs/js",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "cloud-sdk-java",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.05,
-      "tags": ["sdk", "java", "cloud"],
-      "description": "SAP Cloud SDK for Java",
-      "libraryId": "/cloud-sdk-java",
-      "sourcePath": "cloud-sdk/docs-java",
-      "baseUrl": "https://sap.github.io/cloud-sdk/docs/java",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "cloud-sdk-ai-js",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.05, 
-      "tags": ["ai", "sdk", "javascript"],
-      "description": "SAP Cloud SDK AI for JavaScript",
-      "libraryId": "/cloud-sdk-ai-js",
-      "sourcePath": "cloud-sdk-ai/docs-js",
-      "baseUrl": "https://sap.github.io/ai-sdk/docs/js",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "cloud-sdk-ai-java",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.05,
-      "tags": ["ai", "sdk", "java"],
-      "description": "SAP Cloud SDK AI for Java",
-      "libraryId": "/cloud-sdk-ai-java",
-      "sourcePath": "cloud-sdk-ai/docs-java",
-      "baseUrl": "https://sap.github.io/ai-sdk/docs/java",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "ui5-typescript",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.1,
-      "tags": ["ui5", "typescript", "types", "frontend"],
-      "description": "UI5 TypeScript",
-      "libraryId": "/ui5-typescript",
-      "sourcePath": "ui5-typescript",
-      "baseUrl": "https://github.com/UI5/typescript/blob/gh-pages",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "ui5-cc-spreadsheetimporter",
-      "type": "documentation", 
-      "lang": "en",
-      "boost": 0.05,
-      "tags": ["ui5", "spreadsheet", "importer", "custom-control"],
-      "description": "UI5 CC Spreadsheet Importer",
-      "libraryId": "/ui5-cc-spreadsheetimporter",
-      "sourcePath": "ui5-cc-spreadsheetimporter/docs",
-      "baseUrl": "https://docs.spreadsheet-importer.com",
-      "pathPattern": "/pages/{file}/",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "abap-cheat-sheets",
-      "type": "documentation",
-      "lang": "en", 
-      "boost": 0.05,
-      "tags": ["abap", "syntax", "cheat-sheets", "examples", "backend"],
-      "description": "ABAP Cheat Sheets",
-      "libraryId": "/abap-cheat-sheets",
-      "sourcePath": "abap-cheat-sheets",
-      "baseUrl": "https://github.com/SAP-samples/abap-cheat-sheets/blob/main",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "sap-styleguides",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.06,
-      "tags": ["abap", "clean-code", "style-guide", "best-practices", "code-review"],
-      "description": "SAP Style Guides",
-      "libraryId": "/sap-styleguides", 
-      "sourcePath": "sap-styleguides",
-      "baseUrl": "https://github.com/SAP/styleguides/blob/main",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "dsag-abap-leitfaden",
-      "type": "documentation",
-      "lang": "de",
-      "boost": 0.05,
-      "tags": ["abap", "leitfaden", "best-practices", "german", "dsag", "clean-core"],
-      "description": "DSAG ABAP Leitfaden",
-      "libraryId": "/dsag-abap-leitfaden",
-      "sourcePath": "dsag-abap-leitfaden/docs",
-      "baseUrl": "https://1dsag.github.io/ABAP-Leitfaden",
-      "pathPattern": "/{file}/",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "abap-fiori-showcase",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.08,
-      "tags": ["fiori-elements", "abap", "rap", "annotations", "odata-v4", "showcase"],
-      "description": "ABAP Platform Fiori Feature Showcase",
-      "libraryId": "/abap-fiori-showcase",
-      "sourcePath": "abap-fiori-showcase",
-      "baseUrl": "https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/blob/main",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
-    {
-      "id": "cap-fiori-showcase",
-      "type": "documentation",
-      "lang": "en",
-      "boost": 0.08,
-      "tags": ["fiori-elements", "cap", "annotations", "odata-v4", "showcase", "nodejs"],
-      "description": "CAP Fiori Elements Feature Showcase",
-      "libraryId": "/cap-fiori-showcase",
-      "sourcePath": "cap-fiori-showcase",
-      "baseUrl": "https://github.com/SAP-samples/fiori-elements-feature-showcase/blob/main",
-      "pathPattern": "/{file}",
-      "anchorStyle": "github"
-    },
     {
       "id": "abap-docs-standard",
       "type": "documentation",
       "lang": "en",
       "boost": 1.0,
       "tags": ["abap", "keyword-documentation", "language-reference", "syntax", "programming", "standard", "on-premise"],
-      "description": "Official ABAP Keyword Documentation (Standard ABAP - On-Premise)",
+      "description": "Official ABAP Keyword Documentation (Standard ABAP - On-Premise, full syntax)",
       "libraryId": "/abap-docs-standard",
       "sourcePath": "abap-docs/docs/standard/md",
       "baseUrl": "https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US",
@@ -270,114 +23,179 @@
       "lang": "en",
       "boost": 0.8,
       "tags": ["abap", "keyword-documentation", "language-reference", "syntax", "programming", "cloud", "btp", "restricted"],
-      "description": "Official ABAP Keyword Documentation (ABAP Cloud - BTP, Restricted Syntax)",
+      "description": "Official ABAP Keyword Documentation (ABAP Cloud - BTP, restricted syntax)",
       "libraryId": "/abap-docs-cloud",
       "sourcePath": "abap-docs/docs/cloud/md",
       "baseUrl": "https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US",
       "pathPattern": "/{file}",
       "anchorStyle": "sap-help"
+    },
+    {
+      "id": "abap-cheat-sheets",
+      "type": "documentation",
+      "lang": "en", 
+      "boost": 0.7,
+      "tags": ["abap", "syntax", "cheat-sheets", "examples", "rap", "cds"],
+      "description": "ABAP Cheat Sheets - practical examples and code snippets for ABAP and RAP",
+      "libraryId": "/abap-cheat-sheets",
+      "sourcePath": "abap-cheat-sheets",
+      "baseUrl": "https://github.com/SAP-samples/abap-cheat-sheets/blob/main",
+      "pathPattern": "/{file}",
+      "anchorStyle": "github"
+    },
+    {
+      "id": "sap-styleguides",
+      "type": "documentation",
+      "lang": "en",
+      "boost": 0.6,
+      "tags": ["abap", "clean-code", "style-guide", "best-practices", "code-review"],
+      "description": "SAP Clean ABAP Style Guide - coding standards and best practices",
+      "libraryId": "/sap-styleguides", 
+      "sourcePath": "sap-styleguides",
+      "baseUrl": "https://github.com/SAP/styleguides/blob/main",
+      "pathPattern": "/{file}",
+      "anchorStyle": "github"
+    },
+    {
+      "id": "dsag-abap-leitfaden",
+      "type": "documentation",
+      "lang": "de",
+      "boost": 0.5,
+      "tags": ["abap", "leitfaden", "best-practices", "german", "dsag", "clean-core"],
+      "description": "DSAG ABAP Development Guidelines (German) - comprehensive ABAP best practices",
+      "libraryId": "/dsag-abap-leitfaden",
+      "sourcePath": "dsag-abap-leitfaden/docs",
+      "baseUrl": "https://1dsag.github.io/ABAP-Leitfaden",
+      "pathPattern": "/{file}/",
+      "anchorStyle": "github"
+    },
+    {
+      "id": "abap-fiori-showcase",
+      "type": "documentation",
+      "lang": "en",
+      "boost": 0.8,
+      "tags": ["fiori-elements", "abap", "rap", "annotations", "odata-v4", "showcase", "cds"],
+      "description": "ABAP RAP Fiori Elements Feature Showcase - annotations and UI patterns",
+      "libraryId": "/abap-fiori-showcase",
+      "sourcePath": "abap-fiori-showcase",
+      "baseUrl": "https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/blob/main",
+      "pathPattern": "/{file}",
+      "anchorStyle": "github"
+    },
+    {
+      "id": "abap-platform-rap-opensap",
+      "type": "samples",
+      "lang": "en",
+      "boost": 0.7,
+      "tags": ["rap", "abap", "samples", "opensap", "course", "tutorial"],
+      "description": "RAP openSAP Course Samples - Building Apps with ABAP RESTful Application Programming",
+      "libraryId": "/abap-platform-rap-opensap",
+      "sourcePath": "abap-platform-rap-opensap",
+      "baseUrl": "https://github.com/SAP-samples/abap-platform-rap-opensap/blob/main",
+      "pathPattern": "/{file}",
+      "anchorStyle": "github"
+    },
+    {
+      "id": "cloud-abap-rap",
+      "type": "samples",
+      "lang": "en",
+      "boost": 0.7,
+      "tags": ["rap", "abap", "cloud", "btp", "samples", "examples"],
+      "description": "ABAP Cloud + RAP Examples - RAP development in ABAP Cloud environment",
+      "libraryId": "/cloud-abap-rap",
+      "sourcePath": "cloud-abap-rap",
+      "baseUrl": "https://github.com/SAP-samples/cloud-abap-rap/blob/main",
+      "pathPattern": "/{file}",
+      "anchorStyle": "github"
+    },
+    {
+      "id": "abap-platform-reuse-services",
+      "type": "samples",
+      "lang": "en",
+      "boost": 0.6,
+      "tags": ["rap", "abap", "reuse", "services", "number-range", "change-documents"],
+      "description": "RAP Reuse Services - Number Ranges, Change Documents, Mail, Adobe Forms",
+      "libraryId": "/abap-platform-reuse-services",
+      "sourcePath": "abap-platform-reuse-services",
+      "baseUrl": "https://github.com/SAP-samples/abap-platform-reuse-services/blob/main",
+      "pathPattern": "/{file}",
+      "anchorStyle": "github"
     }
   ],
   
   "synonyms": [
-    { "from": "ui5", "to": ["sapui5", "openui5"] },
-    { "from": "button", "to": ["btn", "sap.m.Button"] },
-    { "from": "table", "to": ["sap.m.Table", "sap.ui.table.Table"] },
-    { "from": "wizard", "to": ["sap.m.Wizard"] },
-    { "from": "testing", "to": ["wdi5", "e2e", "automation"] },
-    { "from": "cds", "to": ["cap", "cloud application programming"] },
-    { "from": "odata", "to": ["rest", "api", "service"] },
-    { "from": "typescript", "to": ["ts", "types", "type definitions"] },
-    { "from": "spreadsheet", "to": ["excel", "csv", "import", "upload"] },
     { "from": "abap", "to": ["advanced business application programming", "sap programming"] },
     { "from": "abap cloud", "to": ["abap btp", "cloud abap", "restricted abap", "abap steampunk"] },
     { "from": "standard abap", "to": ["on-premise abap", "full abap", "classic abap"] },
+    { "from": "rap", "to": ["restful application programming", "abap restful", "behavior definition"] },
+    { "from": "cds", "to": ["core data services", "data definition", "ddl"] },
     { "from": "clean-code", "to": ["clean code", "best practices", "style guide"] },
     { "from": "style-guide", "to": ["styleguide", "coding standards", "best practices"] },
     { "from": "leitfaden", "to": ["guidelines", "guide", "best practices"] },
     { "from": "clean-core", "to": ["clean core", "extensibility", "cloud development"] },
     { "from": "fiori-elements", "to": ["fiori elements", "annotations", "odata"] },
-    { "from": "rap", "to": ["restful application programming", "abap restful"] },
-    { "from": "annotations", "to": ["ui5 annotations", "odata annotations", "fiori annotations"] }
+    { "from": "annotations", "to": ["cds annotations", "odata annotations", "fiori annotations"] },
+    { "from": "behavior", "to": ["behavior definition", "behavior implementation", "bdef"] },
+    { "from": "select", "to": ["select statement", "open sql", "abap sql"] },
+    { "from": "loop", "to": ["loop at", "internal table", "iteration"] },
+    { "from": "class", "to": ["abap class", "oo abap", "object oriented"] },
+    { "from": "interface", "to": ["abap interface", "intf"] },
+    { "from": "bopf", "to": ["business object processing framework"] }
   ],
   
   "acronyms": {
-    "CAP": ["Cloud Application Programming", "cds"],
-    "CDS": ["Core Data Services", "cap"],
-    "UI5": ["sapui5", "openui5"],
-    "BTP": ["Business Technology Platform", "cloud"],
-    "MTA": ["Multi-Target Application"],
-    "CQL": ["CDS Query Language", "query"],
-    "OData": ["Open Data Protocol", "rest", "api"],
-    "TS": ["TypeScript", "types"],
     "ABAP": ["Advanced Business Application Programming", "sap programming"],
+    "RAP": ["RESTful Application Programming", "abap restful", "business object"],
+    "CDS": ["Core Data Services", "data definition"],
+    "BTP": ["Business Technology Platform", "cloud"],
+    "OData": ["Open Data Protocol", "rest", "api"],
+    "BOPF": ["Business Object Processing Framework"],
     "DSAG": ["Deutschsprachige SAP-Anwendergruppe", "german sap user group"],
-    "RAP": ["RESTful Application Programming", "abap restful", "business object"]
+    "ADT": ["ABAP Development Tools", "eclipse"],
+    "BDEF": ["Behavior Definition"],
+    "EML": ["Entity Manipulation Language"],
+    "SADL": ["Service Adaptation Definition Language"]
   },
 
   "contextBoosts": {
-    "SAP Cloud SDK": {
-      "/cloud-sdk-ai-js": 1.0,
-      "/cloud-sdk-ai-java": 1.0,
-      "/cloud-sdk-js": 0.8,
-      "/cloud-sdk-java": 0.8,
-      "/cap": 0.2
-    },
-    "UI5": {
-      "/sapui5": 0.9,
-      "/openui5-api": 0.9,
-      "/openui5-samples": 0.9,
-      "/ui5-typescript": 0.8
-    },
-    "wdi5": {
-      "/wdi5": 1.0,
-      "/openui5-api": 0.4,
-      "/openui5-samples": 0.4,
-      "/sapui5": 0.4
-    },
-    "UI5 Web Components": {
-      "/ui5-webcomponents": 1.0
-    },
-    "UI5 Tooling": {
-      "/ui5-tooling": 1.0
-    },
-    "Cloud MTA Build Tool": {
-      "/cloud-mta-build-tool": 1.0
-    },
-    "CAP": {
-      "/cap": 1.0,
-      "/cap-fiori-showcase": 0.9,
-      "/sapui5": 0.2
-    },
-    "TypeScript": {
-      "/ui5-typescript": 1.0,
-      "/sapui5": 0.4,
-      "/openui5-api": 0.4
-    },
-    "UI5 CC Spreadsheet Importer": {
-      "/ui5-cc-spreadsheetimporter": 1.0,
-      "/sapui5": 0.3,
-      "/openui5-api": 0.3
-    },
     "ABAP": {
       "/abap-docs-standard": 1.0,
       "/abap-docs-cloud": 0.8,
       "/abap-cheat-sheets": 0.8,
       "/sap-styleguides": 0.7,
       "/dsag-abap-leitfaden": 0.6,
-      "/cap": 0.2
+      "/abap-fiori-showcase": 0.5,
+      "/abap-platform-rap-opensap": 0.5,
+      "/cloud-abap-rap": 0.5,
+      "/abap-platform-reuse-services": 0.4
     },
     "ABAP Cloud": {
       "/abap-docs-cloud": 1.5,
       "/abap-docs-standard": 0.3,
       "/abap-cheat-sheets": 0.6,
-      "/cap": 0.4
+      "/cloud-abap-rap": 1.0,
+      "/abap-platform-rap-opensap": 0.7
     },
     "Standard ABAP": {
       "/abap-docs-standard": 1.5,
       "/abap-docs-cloud": 0.2,
       "/abap-cheat-sheets": 0.6,
       "/dsag-abap-leitfaden": 0.5
+    },
+    "RAP": {
+      "/abap-fiori-showcase": 1.0,
+      "/abap-cheat-sheets": 0.8,
+      "/abap-platform-rap-opensap": 1.0,
+      "/cloud-abap-rap": 1.0,
+      "/abap-platform-reuse-services": 0.8,
+      "/abap-docs-cloud": 0.6,
+      "/abap-docs-standard": 0.4
+    },
+    "CDS": {
+      "/abap-cheat-sheets": 1.0,
+      "/abap-fiori-showcase": 0.9,
+      "/abap-docs-cloud": 0.7,
+      "/abap-docs-standard": 0.7
     },
     "Clean Code": {
       "/sap-styleguides": 1.0,
@@ -391,68 +209,57 @@
     },
     "Fiori Elements": {
       "/abap-fiori-showcase": 1.0,
-      "/cap-fiori-showcase": 1.0,
-      "/sapui5": 0.6,
-      "/cap": 0.5
-    },
-    "RAP": {
-      "/abap-fiori-showcase": 1.0,
       "/abap-cheat-sheets": 0.6,
-      "/cap": 0.3
+      "/abap-platform-rap-opensap": 0.5
     },
     "cloud": {
       "/abap-docs-cloud": 2.0,
+      "/cloud-abap-rap": 1.5,
       "/abap-docs-standard": 0.2
     },
     "btp": {
       "/abap-docs-cloud": 1.5,
-      "/cap": 0.8
+      "/cloud-abap-rap": 1.2
     },
     "on-premise": {
       "/abap-docs-standard": 1.5,
       "/abap-docs-cloud": 0.1
+    },
+    "samples": {
+      "/abap-platform-rap-opensap": 1.2,
+      "/cloud-abap-rap": 1.2,
+      "/abap-platform-reuse-services": 1.0,
+      "/abap-cheat-sheets": 0.8
+    },
+    "reuse": {
+      "/abap-platform-reuse-services": 1.5,
+      "/abap-cheat-sheets": 0.5
     }
   },
 
   "libraryMappings": {
-    "sapui5": "sapui5",
-    "cap": "cap",
-    "cloud-sdk-js": "cloud-sdk-js",
-    "cloud-sdk-ai-js": "cloud-sdk-ai-js",
-    "openui5-api": "sapui5",
-    "openui5-samples": "sapui5",
-    "wdi5": "wdi5",
-    "ui5-tooling": "ui5-tooling",
-    "cloud-mta-build-tool": "cloud-mta-build-tool",
-    "ui5-webcomponents": "ui5-webcomponents",
-    "cloud-sdk-java": "cloud-sdk-java",
-    "cloud-sdk-ai-java": "cloud-sdk-ai-java",
-    "ui5-typescript": "ui5-typescript",
-    "ui5-cc-spreadsheetimporter": "ui5-cc-spreadsheetimporter",
+    "abap-docs-standard": "abap-docs",
+    "abap-docs-cloud": "abap-docs",
     "abap-cheat-sheets": "abap-cheat-sheets",
     "sap-styleguides": "sap-styleguides",
     "dsag-abap-leitfaden": "dsag-abap-leitfaden",
     "abap-fiori-showcase": "abap-fiori-showcase",
-    "cap-fiori-showcase": "cap-fiori-showcase",
-    "abap-docs-standard": "abap-docs",
-    "abap-docs-cloud": "abap-docs"
+    "abap-platform-rap-opensap": "abap-platform-rap-opensap",
+    "cloud-abap-rap": "cloud-abap-rap",
+    "abap-platform-reuse-services": "abap-platform-reuse-services"
   },
 
   "contextEmojis": {
-    "CAP": "🏗️",
-    "wdi5": "🧪", 
-    "UI5": "🎨",
-    "UI5 Web Components": "🕹️",
-    "SAP Cloud SDK": "🌐",
-    "UI5 Tooling": "🔧",
-    "Cloud MTA Build Tool": "🚢",
-    "TypeScript": "📝",
-    "UI5 CC Spreadsheet Importer": "📊",
     "ABAP": "💻",
+    "ABAP Cloud": "☁️",
+    "Standard ABAP": "🏢",
+    "RAP": "⚡",
+    "CDS": "📊",
     "Clean Code": "✨",
     "DSAG": "🇩🇪",
     "Fiori Elements": "📱",
-    "RAP": "⚡",
+    "samples": "📝",
+    "reuse": "♻️",
     "MIXED": "🔀"
   }
 }

@@ -165,13 +165,21 @@ export function searchFTS(userQuery: string, filters: Filters = {}, limit = 20):
     params.push(...filters.types);
   }
 
-  // BM25 weights: title, description, keywords, controlName, namespace
-  // Higher weight = more important (title and controlName are most important)
+  // BM25 weights for indexed columns (in column order):
+  // 1. libraryId: 0.5 (filtering, not ranking)
+  // 2. type: 0.5 (filtering, not ranking)
+  // 3. title: 10.0 (highest - exact matches matter most)
+  // 4. description: 5.0 (high - often contains key terms)
+  // 5. keywords: 4.0 (medium-high - explicit keywords)
+  // 6. controlName: 4.0 (medium-high - for UI5 controls)
+  // 7. namespace: 1.5 (low - rarely searched directly)
+  // 8. content: 2.0 (medium - noisy but finds method names like GET_GLOBAL_AUTHORIZATIONS)
+  // 9. identifiers: 8.0 (very high - extracted ABAP identifiers for precision)
   const sql = `
     SELECT
       id, libraryId, type, title, description, relFile, snippetCount,
       highlight(docs, 2, '<mark>', '</mark>') AS highlight,
-      bm25(docs, 1.0, 8.0, 2.0, 4.0, 6.0, 3.0) AS bm25Score
+      bm25(docs, 0.5, 0.5, 10.0, 5.0, 4.0, 4.0, 1.5, 2.0, 8.0) AS bm25Score
     FROM docs
     WHERE ${conditions.join(" AND ")}
     ORDER BY bm25Score

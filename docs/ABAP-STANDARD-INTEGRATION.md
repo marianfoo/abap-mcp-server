@@ -85,7 +85,7 @@ sources/abap-docs/docs/7.58/md/
 
 ### **1. Initialize Submodule**
 ```bash
-cd /Users/marianzeis/DEV/sap-docs-mcp
+cd /Users/marianzeis/DEV/abap-mcp-server
 git submodule update --init --recursive sources/abap-docs
 ```
 
@@ -102,7 +102,7 @@ This will:
 
 ### **3. Build Index**
 ```bash
-cd /Users/marianzeis/DEV/sap-docs-mcp
+cd /Users/marianzeis/DEV/abap-mcp-server
 npm run build:index
 ```
 

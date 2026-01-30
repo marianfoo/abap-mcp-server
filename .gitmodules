@@ -1,46 +1,6 @@
-[submodule "sources/sapui5-docs"]
-	path = sources/sapui5-docs
-	url = https://github.com/SAP-docs/sapui5.git
-	branch = main
-[submodule "sources/cap-docs"]
-	path = sources/cap-docs
-	url = https://github.com/cap-js/docs.git
-	branch = main
-[submodule "sources/openui5"]
-	path = sources/openui5
-	url = https://github.com/SAP/openui5.git
-	branch = master
-[submodule "sources/wdi5"]
-	path = sources/wdi5
-	url = https://github.com/ui5-community/wdi5.git
-	branch = main
-[submodule "sources/ui5-tooling"]
-	path = sources/ui5-tooling
-	url = https://github.com/SAP/ui5-tooling.git
-	branch = main
-[submodule "sources/cloud-mta-build-tool"]
-	path = sources/cloud-mta-build-tool
-	url = https://github.com/SAP/cloud-mta-build-tool.git
-	branch = master
-[submodule "sources/ui5-webcomponents"]
-	path = sources/ui5-webcomponents
-	url = https://github.com/SAP/ui5-webcomponents.git
-	branch = main
-[submodule "sources/cloud-sdk"]
-	path = sources/cloud-sdk
-	url = https://github.com/SAP/cloud-sdk.git
-	branch = main
-[submodule "sources/cloud-sdk-ai"]
-	path = sources/cloud-sdk-ai
-	url = https://github.com/SAP/ai-sdk.git
-	branch = main
-[submodule "sources/ui5-typescript"]
-	path = sources/ui5-typescript
-	url = https://github.com/UI5/typescript.git
-	branch = gh-pages
-[submodule "sources/ui5-cc-spreadsheetimporter"]
-	path = sources/ui5-cc-spreadsheetimporter
-	url = https://github.com/spreadsheetimporter/ui5-cc-spreadsheetimporter.git
+[submodule "sources/abap-docs"]
+	path = sources/abap-docs
+	url = https://github.com/marianfoo/abap-docs.git
 	branch = main
 [submodule "sources/abap-cheat-sheets"]
 	path = sources/abap-cheat-sheets
@@ -58,11 +18,15 @@
 	path = sources/abap-fiori-showcase
 	url = https://github.com/SAP-samples/abap-platform-fiori-feature-showcase.git
 	branch = main
-[submodule "sources/cap-fiori-showcase"]
-	path = sources/cap-fiori-showcase
-	url = https://github.com/SAP-samples/fiori-elements-feature-showcase.git
+[submodule "sources/abap-platform-rap-opensap"]
+	path = sources/abap-platform-rap-opensap
+	url = https://github.com/SAP-samples/abap-platform-rap-opensap.git
 	branch = main
-[submodule "sources/abap-docs"]
-	path = sources/abap-docs
-	url = https://github.com/marianfoo/abap-docs.git
+[submodule "sources/cloud-abap-rap"]
+	path = sources/cloud-abap-rap
+	url = https://github.com/SAP-samples/cloud-abap-rap.git
+	branch = main
+[submodule "sources/abap-platform-reuse-services"]
+	path = sources/abap-platform-reuse-services
+	url = https://github.com/SAP-samples/abap-platform-reuse-services.git
 	branch = main

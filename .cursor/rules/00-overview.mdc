@@ -18,7 +18,7 @@ Use this when asked about "how it works", "where to change X", or "what runs in 
 - **ABAP Integration**: 40,761+ files across 8 versions with intelligent version filtering
 
 ## Production Setup
-- **Remote Server**: Hosted MCP server at https://mcp-sap-docs.marianzeis.de/mcp
+- **Remote Server**: Hosted MCP server at https://mcp-abap.marianzeis.de/mcp
 - **PM2**: 3 processes (proxy, http, streamable) via `ecosystem.config.cjs`
 - **Deployment**: GitHub Actions → SSH → enhanced `setup.sh` → PM2 restart
 - **Health**: Multiple endpoints (/status, /health, /healthz, /readyz)

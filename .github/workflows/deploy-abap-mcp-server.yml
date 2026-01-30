@@ -132,7 +132,7 @@ jobs:
             set -Eeuo pipefail
 
             echo "==> Database Health Pre-Check"
-            cd /opt/mcp-sap/mcp-sap-docs || { echo "Directory not found, will be created"; }
+            cd /opt/mcp-sap/abap-mcp-server || { echo "Directory not found, will be created"; }
             
             # Function to check SQLite database integrity
             check_db_integrity() {
@@ -153,7 +153,7 @@ jobs:
             }
             
             # Check existing database and create backup
-            DB_PATH="/opt/mcp-sap/mcp-sap-docs/dist/data/docs.sqlite"
+            DB_PATH="/opt/mcp-sap/abap-mcp-server/dist/data/docs.sqlite"
             if [ -f "$DB_PATH" ]; then
               if ! check_db_integrity "$DB_PATH"; then
                 echo "==> Database corruption detected - will rebuild"
@@ -175,23 +175,23 @@ jobs:
             sudo chown -R "$USER":"$USER" /opt/mcp-sap
 
             echo "==> Clone or update repo (with submodules)"
-            if [ -d /opt/mcp-sap/mcp-sap-docs/.git ]; then
-              cd /opt/mcp-sap/mcp-sap-docs
+            if [ -d /opt/mcp-sap/abap-mcp-server/.git ]; then
+              cd /opt/mcp-sap/abap-mcp-server
               git config --global url."https://github.com/".insteadOf git@github.com:
               git fetch --prune
               git reset --hard origin/main
             else
               cd /opt/mcp-sap
               git config --global url."https://github.com/".insteadOf git@github.com:
-               git clone https://github.com/marianfoo/mcp-sap-docs.git
-              cd mcp-sap-docs
+               git clone https://github.com/marianfoo/abap-mcp-server.git
+              cd abap-mcp-server
             fi
             
             echo "==> Deploying version: $NEW_VERSION"
 
             echo "==> Configure BM25 search environment"
             # Ensure metadata file exists for centralized configuration
-            [ -f /opt/mcp-sap/mcp-sap-docs/data/metadata.json ] || echo "Metadata file will be created during build"
+            [ -f /opt/mcp-sap/abap-mcp-server/data/metadata.json ] || echo "Metadata file will be created during build"
             
             echo "==> Check system resources before build"
             AVAILABLE_MB=$(df /opt/mcp-sap --output=avail -m | tail -n1)
@@ -210,7 +210,7 @@ jobs:
             echo "✅ Memory OK: ${AVAILABLE_MB_MEM}MB available"
 
             echo "==> Stop MCP services gracefully before build"
-            pm2 stop mcp-sap-proxy mcp-sap-http mcp-sap-streamable || true
+            pm2 stop abap-mcp-proxy abap-mcp-http abap-mcp-streamable || true
             sleep 3
             
             echo "==> Run setup (shallow, single-branch submodules + build)"
@@ -229,9 +229,8 @@ jobs:
 
             echo "==> (Re)start MCP services with BM25 search support"
             # Proxy (SSE) on 127.0.0.1:18080; HTTP status on 127.0.0.1:3001; Streamable HTTP on 127.0.0.1:3122
-            pm2 start /opt/mcp-sap/mcp-sap-docs/ecosystem.config.cjs --only mcp-sap-proxy      || pm2 restart mcp-sap-proxy
-            pm2 start /opt/mcp-sap/mcp-sap-docs/ecosystem.config.cjs --only mcp-sap-http       || pm2 restart mcp-sap-http
-            pm2 start /opt/mcp-sap/mcp-sap-docs/ecosystem.config.cjs --only mcp-sap-streamable || pm2 restart mcp-sap-streamable
+            pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs --only abap-mcp-http       || pm2 restart abap-mcp-http
+            pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs --only abap-mcp-streamable || pm2 restart abap-mcp-streamable
             pm2 save
 
             echo "==> Enhanced health checks with database verification"

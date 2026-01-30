@@ -22,8 +22,8 @@ If the file doesn't exist, create it. If it exists, add the new server to the ex
 ```json
 {
   "mcpServers": {
-    "sap-docs-remote": {
-      "url": "https://mcp-sap-docs.marianzeis.de/mcp"
+    "abap-mcp-remote": {
+      "url": "https://mcp-abap.marianzeis.de/mcp"
     }
   }
 }
@@ -38,8 +38,8 @@ If you already have other MCP servers configured, add the new server:
     "existing-server": {
       "command": "some-command"
     },
-    "sap-docs-remote": {
-      "url": "https://mcp-sap-docs.marianzeis.de/mcp"
+    "abap-mcp-remote": {
+      "url": "https://mcp-abap.marianzeis.de/mcp"
     }
   }
 }
@@ -76,7 +76,7 @@ Ask Cursor a SAP-related question to verify the connection:
 
 ### Server Not Responding
 1. Check your internet connection
-2. Verify the URL is correct: `https://mcp-sap-docs.marianzeis.de/mcp`
+2. Verify the URL is correct: `https://mcp-abap.marianzeis.de/mcp`
 3. Restart Cursor
 4. Check Cursor's MCP server status in settings
 
@@ -112,12 +112,12 @@ You can use both local and remote MCP servers simultaneously:
 ```json
 {
   "mcpServers": {
-    "sap-docs-local": {
+    "abap-mcp-local": {
       "command": "node",
       "args": ["/path/to/local/server.js"]
     },
-    "sap-docs-remote": {
-      "url": "https://mcp-sap-docs.marianzeis.de/mcp"
+    "abap-mcp-remote": {
+      "url": "https://mcp-abap.marianzeis.de/mcp"
     }
   }
 }
@@ -125,8 +125,8 @@ You can use both local and remote MCP servers simultaneously:
 
 ## 🌐 Server Information
 
-- **URL**: https://mcp-sap-docs.marianzeis.de
-- **Health Check**: https://mcp-sap-docs.marianzeis.de/status
+- **URL**: https://mcp-abap.marianzeis.de
+- **Health Check**: https://mcp-abap.marianzeis.de/status
 - **Protocol**: MCP Streamable HTTP
 - **Uptime**: Monitored 24/7 with automatic deployment
 - **Updates**: Automatically synced with latest documentation
@@ -156,7 +156,7 @@ npm run setup:submodules
 
 If you encounter issues:
 
-1. Check the [repository issues](https://github.com/marianfoo/mcp-sap-docs/issues)
+1. Check the [repository issues](https://github.com/marianfoo/abap-mcp-server/issues)
 2. Verify server status at the health check URL
 3. Create a new issue with your configuration and error details
 

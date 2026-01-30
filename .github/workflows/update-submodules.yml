@@ -37,9 +37,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             set -e
-            cd /opt/mcp-sap/mcp-sap-docs
+            cd /opt/mcp-sap/abap-mcp-server
             
-            DB_PATH="/opt/mcp-sap/mcp-sap-docs/dist/data/docs.sqlite"
+            DB_PATH="/opt/mcp-sap/abap-mcp-server/dist/data/docs.sqlite"
             HEALTH_CHECK_ONLY="${{ inputs.health_check_only }}"
             FORCE_REBUILD="${{ inputs.force_rebuild }}"
             
@@ -327,7 +327,7 @@ jobs:
           echo "pm2 status && pm2 logs --lines 50" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "# Manual database rebuild if corruption detected" >> $GITHUB_STEP_SUMMARY
-          echo "cd /opt/mcp-sap/mcp-sap-docs" >> $GITHUB_STEP_SUMMARY
+          echo "cd /opt/mcp-sap/abap-mcp-server" >> $GITHUB_STEP_SUMMARY
           echo "pm2 stop all" >> $GITHUB_STEP_SUMMARY
           echo "rm -f dist/data/docs.sqlite" >> $GITHUB_STEP_SUMMARY
           echo "npm run build:fts" >> $GITHUB_STEP_SUMMARY

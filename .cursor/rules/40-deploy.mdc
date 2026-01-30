@@ -16,9 +16,8 @@ For PM2 processes, GitHub Actions, health checks, and production operations.
 - **Skip Nested**: `SKIP_NESTED_SUBMODULES=1` for deployment optimization
 
 ## PM2 Configuration (`ecosystem.config.cjs`)
-- **mcp-sap-proxy**: MCP proxy server (127.0.0.1:18080)
-- **mcp-sap-http**: HTTP status server (127.0.0.1:3001)  
-- **mcp-sap-streamable**: Streamable HTTP MCP (127.0.0.1:3122)
+- **abap-mcp-http**: HTTP status server (127.0.0.1:3001)  
+- **abap-mcp-streamable**: Streamable HTTP MCP (127.0.0.1:3122)
 
 ## Environment Configuration (BM25-Only)
 ```javascript
@@ -61,7 +60,7 @@ env: {
 - [ ] Log levels appropriate
 - [ ] Resource usage normal
 
-@file .github/workflows/deploy-mcp-sap-docs.yml
+@file .github/workflows/deploy-abap-mcp-server.yml
 @file ecosystem.config.cjs
 @file setup.sh
 @file src/http-server.ts

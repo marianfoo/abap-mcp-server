@@ -9,7 +9,7 @@ For tool schemas, request/response formats, and endpoints.
 - **`sap_help_search`**: Search SAP Help Portal using private APIs
 - **`sap_help_get`**: Retrieve full SAP Help page content (max 75k chars with intelligent truncation)
 
-**Note**: Tool names may appear with prefixes depending on MCP client (e.g., `mcp_sap-docs-remote_search`)
+**Note**: Tool names may appear with prefixes depending on MCP client (e.g., `mcp_abap-mcp-remote_search`)
 
 ## Content Size Limits
 - **Maximum**: 75,000 characters (~18,750 tokens) for SAP Help and Community content

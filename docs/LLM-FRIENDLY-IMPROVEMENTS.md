@@ -8,14 +8,14 @@ This document summarizes the improvements made to make the SAP Docs MCP server m
 Claude was confused about function names, using incorrect patterns like:
 - ❌ `search: query "..."`  (FAILED - wrong syntax)
 - ❌ `SAP Docs MCP:search`  (FAILED - incorrect namespace)
-- ✅ Should be: `search(query="...")` or `mcp_sap-docs-remote_search(query="...")`
+- ✅ Should be: `search(query="...")` or `mcp_abap-mcp-remote_search(query="...")`
 
 ## 🔧 **Improvements Implemented**
 
 ### **1. Simplified Visual Formatting**
 **Before:**
 ```
-**FUNCTION NAME: Use exactly 'search' or 'mcp_sap-docs-remote_search' depending on your MCP client**
+**FUNCTION NAME: Use exactly 'search' or 'mcp_abap-mcp-remote_search' depending on your MCP client**
 
 Unified search across all SAP documentation sources...
 
@@ -98,7 +98,7 @@ QUERY TIPS:
  * =================================
  * The function names in this MCP server may appear with different prefixes depending on your MCP client:
  * - Simple names: search, fetch, sap_community_search, sap_help_search, sap_help_get
- * - Prefixed names: mcp_sap-docs-remote_search, mcp_sap-docs-remote_fetch, etc.
+ * - Prefixed names: mcp_abap-mcp-remote_search, mcp_abap-mcp-remote_fetch, etc.
  * 
  * Try the simple names first, then the prefixed versions if they don't work.
  */

@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // ---- build/package meta -----------------------------------------------------
-let packageInfo: { version: string; name: string } = { version: "unknown", name: "mcp-sap-docs" };
+let packageInfo: { version: string; name: string } = { version: "unknown", name: "abap-mcp-server" };
 try {
   const packagePath = join(__dirname, "../../package.json");
   packageInfo = JSON.parse(readFileSync(packagePath, "utf8"));
@@ -273,10 +273,10 @@ const server = createServer(async (req, res) => {
         transport: "MCP Streamable HTTP",
         protocol_version: "2025-07-09"
       },
-      documentation: "https://github.com/marianfoo/mcp-sap-docs#connect-from-your-mcp-client",
+      documentation: "https://github.com/marianfoo/abap-mcp-server#connect-from-your-mcp-client",
       alternatives: {
         "Local MCP Streamable HTTP": "http://127.0.0.1:3122/mcp",
-        "Public MCP Streamable HTTP": "https://mcp-sap-docs.marianzeis.de/mcp"
+        "Public MCP Streamable HTTP": "https://mcp-abap.marianzeis.de/mcp"
       }
     };
     

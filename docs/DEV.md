@@ -6,7 +6,7 @@
 ```bash
 # Clone and install
 git clone <repo-url>
-cd sap-docs-mcp
+cd abap-mcp-server
 npm install
 
 # Run enhanced setup (submodules + build)
@@ -122,7 +122,7 @@ npm run start:streamable
 
 ### 🚀 **Deployment**
 - **PM2 Config**: `ecosystem.config.cjs` → Process configuration
-- **GitHub Actions**: `.github/workflows/deploy-mcp-sap-docs.yml`
+- **GitHub Actions**: `.github/workflows/deploy-abap-mcp-server.yml`
 - **Setup Script**: `setup.sh` → Deployment automation
 
 ## Adding New Documentation Sources
@@ -282,7 +282,7 @@ lsof -ti:3001 | xargs kill -9
 pm2 monit
 
 # Log streaming
-pm2 logs mcp-sap-http --lines 100
+pm2 logs abap-mcp-http --lines 100
 
 # Process status
 pm2 status

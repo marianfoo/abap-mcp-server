@@ -1,7 +1,7 @@
 // Central configuration for search system
 export const CONFIG = {
-  // Default number of results to return
-  RETURN_K: Number(process.env.RETURN_K ||30),
+  // Default number of results to return (50 is optimal for comprehensive coverage)
+  RETURN_K: Number(process.env.RETURN_K || 50),
   
   // Database paths
   DB_PATH: "dist/data/docs.sqlite",

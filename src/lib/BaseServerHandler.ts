@@ -1,22 +1,21 @@
 /**
- * Base Server Handler - Shared functionality for MCP servers
- * Eliminates code duplication between stdio and HTTP server implementations
+ * Base Server Handler - ABAP/RAP-focused MCP server
+ * Provides unified search across ABAP documentation resources for ADT (Eclipse) usage
  * 
  * IMPORTANT FOR LLMs/AI ASSISTANTS:
  * =================================
- * The function names in this MCP server may appear with different prefixes depending on your MCP client:
- * - Simple names: search, fetch, sap_community_search, sap_help_search, sap_help_get
- * - Prefixed names: mcp_sap-docs-remote_search, mcp_sap-docs-remote_fetch, etc.
+ * This MCP server provides tools for ABAP/RAP development:
+ * - search: Unified search across ABAP documentation (offline + optional online)
+ * - fetch: Retrieve full document content
+ * - abap_lint: Local ABAP code linting
  * 
- * Try the simple names first, then the prefixed versions if they don't work.
- * 
- * Note: sap_docs_search and sap_docs_get are legacy aliases for backward compatibility.
+ * The function names may appear with different prefixes depending on your MCP client:
+ * - Simple names: search, fetch, abap_lint
+ * - Prefixed names: mcp_abap-mcp-server_search, etc.
  */
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import {
-  ListResourcesRequestSchema,
-  ReadResourceRequestSchema,
   CallToolRequestSchema,
   ListToolsRequestSchema,
   ListPromptsRequestSchema,
@@ -24,12 +23,9 @@ import {
 } from "@modelcontextprotocol/sdk/types.js";
 import {
   searchLibraries,
-  fetchLibraryDocumentation,
-  listDocumentationResources,
-  readDocumentationResource,
-  searchCommunity
+  fetchLibraryDocumentation
 } from "./localDocs.js";
-import { searchSapHelp, getSapHelpContent } from "./sapHelp.js";
+import { lintAbapCode, LintResult } from "./abaplint.js";
 
 import { SearchResponse } from "./types.js";
 import { logger } from "./logger.js";
@@ -168,17 +164,14 @@ function extractClientMetadata(request: any): Record<string, any> {
 
 /**
  * Base Server Handler Class
- * Provides shared functionality for all MCP server implementations
+ * Provides ABAP/RAP-focused MCP server functionality for ADT (Eclipse) usage
  */
 export class BaseServerHandler {
   
   /**
-   * Configure server with shared resource and tool handlers
+   * Configure server with tool handlers
    */
   static configureServer(srv: Server): void {
-    // Only setup resource handlers if resources capability is enabled
-    // DISABLED: Resources capability causes 60,000+ resources which breaks Cursor
-    // this.setupResourceHandlers(srv);
     this.setupToolHandlers(srv);
 
     const capabilities = (srv as unknown as { _capabilities?: { prompts?: object } })._capabilities;
@@ -188,34 +181,7 @@ export class BaseServerHandler {
   }
 
   /**
-   * Setup resource handlers (shared between all server types)
-   */
-  private static setupResourceHandlers(srv: Server): void {
-    // List available resources
-    srv.setRequestHandler(ListResourcesRequestSchema, async () => {
-      const resources = await listDocumentationResources();
-      return { resources };
-    });
-
-    // Read resource contents
-    srv.setRequestHandler(ReadResourceRequestSchema, async (request) => {
-      const { uri } = request.params;
-      try {
-        return await readDocumentationResource(uri);
-      } catch (error: any) {
-        return {
-          contents: [{
-            uri,
-            mimeType: "text/plain",
-            text: `Error reading resource: ${error.message}`
-          }]
-        };
-      }
-    });
-  }
-
-  /**
-   * Setup tool handlers (shared between all server types)
+   * Setup tool handlers for ABAP/RAP-focused MCP server
    */
   private static setupToolHandlers(srv: Server): void {
     // List available tools
@@ -223,138 +189,93 @@ export class BaseServerHandler {
       return {
         tools: [
           {
-            name: "sap_community_search", 
-            description: `SEARCH SAP COMMUNITY: sap_community_search(query="search terms")
-
-FUNCTION NAME: sap_community_search (or mcp_sap-docs-remote_sap_community_search)
-
-FINDS: Blog posts, discussions, solutions from SAP Community
-INCLUDES: Engagement data (kudos), ranked by "Best Match"
-
-TYPICAL WORKFLOW:
-1. sap_community_search(query="your problem + error code")
-2. fetch(id="community-12345") for full posts
-
-BEST FOR TROUBLESHOOTING:
-• Include error codes: "415 error", "500 error"
-• Be specific: "CAP action binary upload 415"
-• Use real scenarios: "wizard implementation issues"`,
-            inputSchema: {
-              type: "object",
-              properties: {
-                query: {
-                  type: "string",
-                  description: "Search terms for SAP Community. Include error codes and specific technical details.",
-                  examples: [
-                    "CAP action parameter binary file upload 415 error",
-                    "wizard implementation best practices",
-                    "fiori elements authentication",
-                    "UI5 deployment issues",
-                    "wdi5 test automation problems"
-                  ]
-                }
-              },
-              required: ["query"]
-            }
-          },
-          {
-            name: "sap_help_search",
-            description: `SEARCH SAP HELP PORTAL: sap_help_search(query="product + topic")
-
-FUNCTION NAME: sap_help_search (or mcp_sap-docs-remote_sap_help_search)
-
-SEARCHES: Official SAP Help Portal (help.sap.com)
-COVERS: Product guides, implementation guides, technical documentation
-
-TYPICAL WORKFLOW:
-1. sap_help_search(query="product name + configuration topic")
-2. sap_help_get(result_id="sap-help-12345abc")
-
-BEST PRACTICES:
-• Include product names: "S/4HANA", "BTP", "Fiori"
-• Add specific tasks: "configuration", "setup", "deployment"
-• Use official SAP terminology`,
-            inputSchema: {
-              type: "object",
-              properties: {
-                query: {
-                  type: "string",
-                  description: "Search terms for SAP Help Portal. Include product names and specific topics.",
-                  examples: [
-                    "S/4HANA configuration",
-                    "Fiori Launchpad setup", 
-                    "BTP integration",
-                    "ABAP development guide",
-                    "SAP Analytics Cloud setup"
-                  ]
-                }
-              },
-              required: ["query"]
-            }
-          },
-          {
-            name: "sap_help_get", 
-            description: `GET SAP HELP PAGE: sap_help_get(result_id="sap-help-12345abc")
-
-FUNCTION NAME: sap_help_get (or mcp_sap-docs-remote_sap_help_get)
-
-RETRIEVES: Complete SAP Help Portal page content
-REQUIRES: Exact result_id from sap_help_search
-
-USAGE PATTERN:
-1. Get ID from sap_help_search results  
-2. Use exact ID (don't modify the format)
-3. Receive full page content + metadata`,
-            inputSchema: {
-              type: "object",
-              properties: {
-                result_id: {
-                  type: "string",
-                  description: "Exact ID from sap_help_search results. Copy the ID exactly as returned.",
-                  examples: [
-                    "sap-help-12345abc",
-                    "sap-help-98765def"
-                  ]
-                }
-              },
-              required: ["result_id"]
-            }
-          },
-          {
             name: "search",
-            description: `SEARCH SAP DOCS: search(query="search terms")
+            description: `SEARCH ABAP/RAP DOCUMENTATION: search(query="search terms")
 
 FUNCTION NAME: search
 
-COVERS: ABAP (Standard & Cloud), UI5, CAP, wdi5, OpenUI5 APIs, Cloud SDK
-ABAP LIBRARIES:
-• Standard ABAP (default): Full syntax for on-premise systems
-• ABAP Cloud: Restricted syntax for BTP (add "cloud" or "btp" to query)
+This is a unified search tool for ABAP and RAP development documentation. It searches across multiple offline sources and can optionally include online sources (SAP Help Portal, SAP Community).
+
+AVAILABLE OFFLINE SOURCES (searched by default):
+• abap-docs-standard: Official ABAP Keyword Documentation for Standard ABAP (on-premise, full syntax)
+• abap-docs-cloud: Official ABAP Keyword Documentation for ABAP Cloud (BTP, restricted syntax)
+• abap-cheat-sheets: ABAP Cheat Sheets with practical examples and code snippets
+• sap-styleguides: SAP Clean ABAP Style Guide and best practices
+• dsag-abap-leitfaden: DSAG ABAP Development Guidelines (German)
+• abap-fiori-showcase: ABAP RAP Fiori Elements Feature Showcase (RAP + annotations)
+• abap-platform-rap-opensap: RAP course samples from openSAP
+• cloud-abap-rap: ABAP Cloud + RAP examples
+• abap-platform-reuse-services: RAP reuse services examples
+
+OPTIONAL ONLINE SOURCES (when includeOnline=true):
+• SAP Help Portal (help.sap.com): Official product documentation
+• SAP Community: Blog posts, discussions, troubleshooting solutions
+
+PARAMETERS:
+• query (required): Search terms. Be specific and use technical ABAP/RAP terminology.
+• k (optional, default=50): Number of results to return.
+• includeOnline (optional, default=true): Search SAP Help Portal and SAP Community in addition to offline docs. Online searches have a 10-second timeout. Set to false for faster offline-only search.
+• includeSamples (optional, default=true): Include code-heavy sample repositories in results.
+• abapFlavor (optional, default="auto"): Filter by ABAP flavor:
+  - "standard": Only Standard ABAP (on-premise, full syntax)
+  - "cloud": Only ABAP Cloud (BTP, restricted syntax)
+  - "auto": Detect from query (add "cloud" or "btp" for cloud, otherwise standard)
+• sources (optional): Array of specific source IDs to search (e.g., ["abap-docs-standard", "abap-cheat-sheets"])
+
+RETURNS (JSON array of results, each containing):
+• id: Document identifier (use with fetch to get full content)
+• title: Document title
+• url: Link to documentation
+• snippet: Text excerpt from document
+• score: Relevance score (RRF-fused from multiple sources)
+• library_id: Source library identifier
+• metadata.source: Source ID (abap-docs-standard, sap-help, etc.)
+• metadata.sourceKind: "offline" | "sap_help" | "sap_community"
 
 TYPICAL WORKFLOW:
-1. search(query="your search terms") 
-2. fetch(id="result_id_from_step_1")
+1. search(query="your ABAP/RAP question")
+2. fetch(id="result_id_from_step_1") to get full content
 
 QUERY TIPS:
-• Be specific: "CAP action binary parameter" not just "CAP"
-• Include error codes: "415 error CAP action"
-• Use technical terms: "LargeBinary MediaType XMLHttpRequest"
-• For ABAP Cloud: Add "cloud" or "btp" to query (e.g., "SELECT cloud")
-• For Standard ABAP: Default behavior, no modifier needed`,
+• Be specific: "RAP behavior definition" not just "RAP"
+• Include ABAP keywords: "SELECT FOR ALL ENTRIES", "LOOP AT GROUP BY"
+• For ABAP Cloud: Add "cloud" or "btp" to query, or set abapFlavor="cloud"
+• For faster search: Set includeOnline=false to skip online sources
+• For implementation examples: Ensure includeSamples=true`,
             inputSchema: {
               type: "object",
               properties: {
                 query: {
                   type: "string",
-                  description: "Search terms using natural language. Be specific and include technical terms. For ABAP Cloud (BTP), add 'cloud' or 'btp' to query. Standard ABAP is the default.",
-                  examples: [
-                    "CAP binary data LargeBinary MediaType",
-                    "UI5 button properties",
-                    "wdi5 testing locators", 
-                    "ABAP SELECT statements",
-                    "ABAP LOOP cloud",
-                    "415 error CAP action parameter"
-                  ]
+                  description: "Search terms for ABAP/RAP documentation. Be specific and use technical terms."
+                },
+                k: {
+                  type: "number",
+                  description: "Number of results to return. Default: 50.",
+                  default: 50,
+                  minimum: 1,
+                  maximum: 100
+                },
+                includeOnline: {
+                  type: "boolean",
+                  description: "Search SAP Help Portal and SAP Community in addition to offline docs (adds ~1-2s latency). Set to false for faster offline-only search. Default: true.",
+                  default: true
+                },
+                includeSamples: {
+                  type: "boolean",
+                  description: "Include code-heavy sample repositories in results. Default: true.",
+                  default: true
+                },
+                abapFlavor: {
+                  type: "string",
+                  enum: ["standard", "cloud", "auto"],
+                  description: "Filter by ABAP flavor: 'standard' (on-premise), 'cloud' (BTP), or 'auto' (detect from query). Default: auto.",
+                  default: "auto"
+                },
+                sources: {
+                  type: "array",
+                  items: { type: "string" },
+                  description: "Optional: specific source IDs to search. If not provided, searches all ABAP sources."
                 }
               },
               required: ["query"]
@@ -362,37 +283,130 @@ QUERY TIPS:
           },
           {
             name: "fetch",
-            description: `GET SPECIFIC DOCS: fetch(id="result_id")
+            description: `GET FULL DOCUMENT CONTENT: fetch(id="result_id")
 
 FUNCTION NAME: fetch
 
-RETRIEVES: Full content from search results
-WORKS WITH: Document IDs returned by search
+Retrieves the full content of a document from search results.
 
-ChatGPT COMPATIBLE:
-• Uses "id" parameter (required by ChatGPT)
-• Returns structured JSON content
-• Includes full document text and metadata`,
+USAGE:
+1. First use search() to find relevant documents
+2. Use the 'id' from search results to fetch full content
+3. Returns complete document text with metadata
+
+PARAMETERS:
+• id (required): Document ID from search results. Use the exact ID returned by search.
+
+RETURNS:
+• id: Document identifier
+• title: Document title
+• text: Full document content (markdown or code)
+• url: Link to online documentation (if available)
+• metadata: Source information and content details`,
             inputSchema: {
               type: "object",
               properties: {
                 id: {
                   type: "string",
-                  description: "Unique document ID from search results. Use exact IDs returned by search.",
+                  description: "Document ID from search results. Use exact IDs returned by search.",
                   examples: [
-                    "/cap/guides/domain-modeling",
-                    "/sapui5/controls/button-properties", 
-                    "/openui5-api/sap/m/Button",
-                    "/abap-docs-standard/inline-declarations",
-                    "/abap-docs-cloud/inline-declarations",
-                    "community-12345"
+                    "/abap-docs-standard/abapselect",
+                    "/abap-docs-cloud/abaploop",
+                    "/abap-cheat-sheets/rap",
+                    "/sap-styleguides/clean-abap"
                   ]
                 }
               },
               required: ["id"]
             }
           },
+          {
+            name: "abap_lint",
+            description: `LINT ABAP CODE: abap_lint(code="DATA lv_test TYPE string.")
 
+FUNCTION NAME: abap_lint
+
+Runs static code analysis on ABAP source code using abaplint.
+Pass ABAP code directly as a string - no files needed.
+
+LIMITS:
+• Maximum code size: 50KB - larger code will be rejected
+• Execution timeout: 10 seconds - complex code may timeout
+
+HOW IT WORKS:
+1. Pass ABAP source code as a string
+2. The tool automatically detects the ABAP file type from the code content
+3. Returns structured findings with line numbers, messages, and severity
+
+AUTO-DETECTION (no filename needed):
+The tool automatically detects the correct file type from code patterns:
+• CLASS ... DEFINITION -> .clas.abap
+• INTERFACE ... -> .intf.abap
+• FUNCTION-POOL / FUNCTION -> .fugr.abap
+• REPORT / PROGRAM -> .prog.abap
+• TYPE-POOL -> .type.abap
+• DEFINE VIEW / CDS -> .ddls.asddls
+• DEFINE BEHAVIOR -> .bdef.asbdef
+• DEFINE ROLE -> .dcls.asdcls
+• Code snippets without clear type -> .clas.abap (default, enables most rules)
+
+PARAMETERS:
+• code (required): ABAP source code to analyze as a string (max 50KB)
+• filename (optional): Override auto-detection with explicit filename (e.g., "test.clas.abap"). Only needed if auto-detection fails for unusual code patterns.
+• version (optional): ABAP version - "Cloud" (default) or "Standard"
+
+RETURNS JSON with:
+• findings: Array of lint issues, each containing:
+  - line: Line number where issue starts
+  - column: Column number where issue starts  
+  - endLine: Line number where issue ends
+  - endColumn: Column number where issue ends
+  - message: Description of the issue
+  - severity: "error" | "warning" | "info"
+  - ruleKey: abaplint rule identifier (e.g., "unused_variables", "keyword_case")
+• errorCount: Total errors found
+• warningCount: Total warnings found
+• infoCount: Total info messages found
+• success: Boolean indicating if lint completed successfully
+• error: Error message if lint failed (includes size/timeout errors)
+
+EXAMPLE:
+abap_lint(code="CLASS zcl_test DEFINITION PUBLIC.\\n  PUBLIC SECTION.\\n    DATA: lv_unused TYPE string.\\nENDCLASS.")
+
+RULES CHECKED:
+• Syntax errors and unknown types
+• Unused variables and unreachable code
+• ABAP Cloud compatibility (obsolete statements)
+• Naming conventions (classes, variables, methods)
+• Code style (indentation, line length, keyword case)
+• Best practices (prefer XSDBOOL, use NEW, etc.)
+
+USE CASES:
+• Validate code snippets before implementing
+• Check code for ABAP Cloud compatibility  
+• Find syntax errors and best practice violations
+• Review generated or suggested code`,
+            inputSchema: {
+              type: "object",
+              properties: {
+                code: {
+                  type: "string",
+                  description: "ABAP source code to analyze (max 50KB)"
+                },
+                filename: {
+                  type: "string",
+                  description: "Optional: Override auto-detection with explicit filename (e.g., 'myclass.clas.abap'). Usually not needed - the tool auto-detects file type from code content."
+                },
+                version: {
+                  type: "string",
+                  enum: ["Cloud", "Standard"],
+                  description: "ABAP version for linting rules. 'Cloud' (default) checks for BTP/Steampunk compatibility.",
+                  default: "Cloud"
+                }
+              },
+              required: ["code"]
+            }
+          }
         ]
       };
     });
@@ -402,24 +416,78 @@ ChatGPT COMPATIBLE:
       const { name, arguments: args } = request.params;
       const clientMetadata = extractClientMetadata(request);
 
-      if (name === "sap_docs_search" || name === "search") {
-        const { query } = args as { query: string };
+      if (name === "search") {
+        // Extract all parameters with defaults
+        const { 
+          query,
+          k,
+          includeOnline = true,  // Online search enabled by default
+          includeSamples = true,
+          abapFlavor = 'auto',
+          sources
+        } = args as { 
+          query: string;
+          k?: number;
+          includeOnline?: boolean;
+          includeSamples?: boolean;
+          abapFlavor?: 'standard' | 'cloud' | 'auto';
+          sources?: string[];
+        };
+        
+        // Validate and constrain k parameter (max 100 results)
+        const resultCount = Math.min(Math.max(k || CONFIG.RETURN_K, 1), 100);
         
         // Enhanced logging with timing
         const timing = logger.logToolStart(name, query, clientMetadata);
         
+        // DEBUG: Log all input parameters
+        console.log(`\n🔍 [SEARCH TOOL] ========================================`);
+        console.log(`🔍 [SEARCH TOOL] Query: "${query}"`);
+        console.log(`🔍 [SEARCH TOOL] Parameters: k=${resultCount}, includeOnline=${includeOnline}, includeSamples=${includeSamples}, abapFlavor=${abapFlavor}`);
+        console.log(`🔍 [SEARCH TOOL] Sources filter: ${sources ? sources.join(', ') : 'all'}`);
+        console.log(`🔍 [SEARCH TOOL] Request ID: ${timing.requestId}`);
+        
         try {
-          // Use hybrid search with reranking
+          // Use unified search with all parameters
+          console.log(`🔍 [SEARCH TOOL] Calling unified search...`);
+          const searchStartTime = Date.now();
+          
           const results = await search(query, { 
-            k: CONFIG.RETURN_K 
+            k: resultCount,
+            includeOnline,
+            includeSamples,
+            abapFlavor,
+            sources
           });
+          
+          const searchDuration = Date.now() - searchStartTime;
+          console.log(`🔍 [SEARCH TOOL] Search completed in ${searchDuration}ms`);
           
           const topResults = results;
           
+          // DEBUG: Log result summary
+          console.log(`🔍 [SEARCH TOOL] Results returned: ${topResults.length}`);
+          if (topResults.length > 0) {
+            // Count by sourceKind
+            const sourceKindCounts: Record<string, number> = {};
+            topResults.forEach(r => {
+              const kind = r.sourceKind || 'unknown';
+              sourceKindCounts[kind] = (sourceKindCounts[kind] || 0) + 1;
+            });
+            console.log(`🔍 [SEARCH TOOL] By sourceKind: ${JSON.stringify(sourceKindCounts)}`);
+            
+            // Log top 3 results for quick inspection
+            console.log(`🔍 [SEARCH TOOL] Top 3 results:`);
+            topResults.slice(0, 3).forEach((r, i) => {
+              console.log(`   ${i+1}. [${r.sourceKind}] score=${r.finalScore?.toFixed(4)} id=${r.id.substring(0, 60)}...`);
+            });
+          }
+          
           if (topResults.length === 0) {
+            console.log(`⚠️ [SEARCH TOOL] No results found for query: "${query}"`);
             logger.logToolSuccess(name, timing.requestId, timing.startTime, 0, { fallback: false });
             return createErrorResponse(
-              `No results for "${query}". Try UI5 controls ("button", "table"), CAP topics ("actions", "binary"), testing ("wdi5", "e2e"), ABAP queries ("SELECT", "LOOP cloud" for ABAP Cloud), or include error codes ("415 error").`,
+              `No results for "${query}". Try ABAP keywords ("SELECT", "LOOP", "RAP"), add "cloud" for ABAP Cloud syntax, or be more specific.`,
               timing.requestId
             );
           }
@@ -436,16 +504,17 @@ ChatGPT COMPATIBLE:
             
             return {
               // ChatGPT-required format: id, title, url
-              id: r.id,  // Use full document ID as required by ChatGPT
+              id: r.id,
               title: r.text.split('\n')[0] || r.id,
-              url: docUrl || `#${r.id}`,
-              // Additional fields for backward compatibility
+              url: docUrl || r.path || `#${r.id}`,
+              // Additional fields
               library_id: libraryId,
               topic: topic,
               snippet: r.text ? r.text.substring(0, CONFIG.EXCERPT_LENGTH_MAIN) + '...' : '',
               score: r.finalScore,
               metadata: {
-                source: r.sourceId || 'sap-docs',
+                source: r.sourceId || 'abap-docs',
+                sourceKind: r.sourceKind || 'offline',
                 library: libraryId,
                 bm25Score: r.bm25,
                 rank: index + 1
@@ -453,21 +522,31 @@ ChatGPT COMPATIBLE:
             };
           });
           
-          logger.logToolSuccess(name, timing.requestId, timing.startTime, topResults.length, { fallback: false });
+          logger.logToolSuccess(name, timing.requestId, timing.startTime, topResults.length, { 
+            includeOnline,
+            includeSamples,
+            abapFlavor
+          });
+          
+          // DEBUG: Log output summary
+          console.log(`🔍 [SEARCH TOOL] Returning ${searchResults.length} formatted results`);
+          console.log(`🔍 [SEARCH TOOL] ========================================\n`);
           
           return createSearchResponse(searchResults);
         } catch (error) {
+          // DEBUG: Log error details
+          console.error(`❌ [SEARCH TOOL] Error during search:`, error);
           logger.logToolError(name, timing.requestId, timing.startTime, error, false);
-          logger.info('Attempting fallback to original search after hybrid search failure');
+          logger.info('Attempting fallback to original search after unified search failure');
           
-          // Fallback to original search
+          // Fallback to original search (offline only)
           try {
             const res: SearchResponse = await searchLibraries(query);
             
             if (!res.results.length) {
               logger.logToolSuccess(name, timing.requestId, timing.startTime, 0, { fallback: true });
               return createErrorResponse(
-                res.error || `No fallback results for "${query}". Try UI5 controls ("button", "table"), CAP topics ("actions", "binary"), testing ("wdi5", "e2e"), ABAP queries ("SELECT", "LOOP cloud" for ABAP Cloud), or include error codes.`,
+                res.error || `No fallback results for "${query}". Try ABAP keywords ("SELECT", "LOOP", "RAP"), add "cloud" for ABAP Cloud syntax, or be more specific.`,
                 timing.requestId
               );
             }
@@ -475,7 +554,7 @@ ChatGPT COMPATIBLE:
             // Transform fallback results to structured format
             const fallbackResults: SearchResult[] = res.results.map((r, index) => ({
               id: r.id || `fallback-${index}`,
-              title: r.title || 'SAP Documentation',
+              title: r.title || 'ABAP Documentation',
               url: r.url || `#${r.id}`,
               snippet: r.description ? r.description.substring(0, 200) + '...' : '',
               metadata: {
@@ -490,63 +569,14 @@ ChatGPT COMPATIBLE:
           } catch (fallbackError) {
             logger.logToolError(name, timing.requestId, timing.startTime, fallbackError, true);
             return createErrorResponse(
-              `Search temporarily unavailable. Wait 30 seconds and retry, try sap_community_search instead, or use more specific search terms.`,
+              `Search temporarily unavailable. Wait 30 seconds and retry, or use more specific search terms.`,
               timing.requestId
             );
           }
         }
       }
 
-      if (name === "sap_community_search") {
-        const { query } = args as { query: string };
-        
-        // Enhanced logging with timing
-        const timing = logger.logToolStart(name, query, clientMetadata);
-        
-        try {
-          const res: SearchResponse = await searchCommunity(query);
-          
-          if (!res.results.length) {
-            logger.logToolSuccess(name, timing.requestId, timing.startTime, 0);
-            return createErrorResponse(
-              res.error || `No SAP Community posts found for "${query}". Try different keywords or check your connection.`,
-              timing.requestId
-            );
-          }
-          
-          // Transform community search results to ChatGPT-compatible format
-          const communityResults: SearchResult[] = res.results.map((r: any, index) => ({
-            // ChatGPT-required format: id, title, url
-            id: r.id || `community-${index}`,
-            title: r.title || 'SAP Community Post',
-            url: r.url || `#${r.id}`,
-            // Additional fields for enhanced functionality
-            library_id: r.library_id || `community-${index}`,
-            topic: r.topic || '',
-            snippet: r.snippet || (r.description ? r.description.substring(0, 200) + '...' : ''),
-            score: r.score || 0,
-            metadata: r.metadata || {
-              source: 'sap-community',
-              likes: r.likes,
-              author: r.author,
-              postTime: r.postTime,
-              rank: index + 1
-            }
-          }));
-          
-          logger.logToolSuccess(name, timing.requestId, timing.startTime, res.results.length);
-          
-          return createSearchResponse(communityResults);
-        } catch (error) {
-          logger.logToolError(name, timing.requestId, timing.startTime, error);
-          return createErrorResponse(
-            `SAP Community search service temporarily unavailable. Please try again later.`,
-            timing.requestId
-          );
-        }
-      }
-
-      if (name === "sap_docs_get" || name === "fetch") {
+      if (name === "fetch") {
         // Handle both old format (library_id) and new ChatGPT format (id)
         const library_id = (args as any).library_id || (args as any).id;
         const topic = (args as any).topic || "";
@@ -584,7 +614,7 @@ ChatGPT COMPATIBLE:
             text: text,
             url: docUrl || `#${library_id}`,
             metadata: {
-              source: 'sap-docs',
+              source: 'abap-docs',
               library: library_id,
               topic: topic || undefined,
               contentLength: text.length
@@ -607,95 +637,59 @@ ChatGPT COMPATIBLE:
         }
       }
 
-      if (name === "sap_help_search") {
-        const { query } = args as { query: string };
+      if (name === "abap_lint") {
+        const { code, filename, version } = args as { 
+          code: string; 
+          filename?: string;
+          version?: "Cloud" | "Standard";
+        };
         
-        // Enhanced logging with timing
-        const timing = logger.logToolStart(name, query, clientMetadata);
-        
-        try {
-          const res: SearchResponse = await searchSapHelp(query);
-          
-          if (!res.results.length) {
-            logger.logToolSuccess(name, timing.requestId, timing.startTime, 0);
-            return createErrorResponse(
-              res.error || `No SAP Help results found for "${query}". Try different keywords or check your connection.`,
-              timing.requestId
-            );
-          }
-          
-          // Transform SAP Help search results to ChatGPT-compatible format
-          const helpResults: SearchResult[] = res.results.map((r, index) => ({
-            // ChatGPT-required format: id, title, url
-            id: r.id || `sap-help-${index}`,
-            title: r.title || 'SAP Help Document',
-            url: r.url || `#${r.id}`,
-            // Additional fields for enhanced functionality
-            snippet: r.description ? r.description.substring(0, 200) + '...' : '',
-            metadata: {
-              source: 'sap-help',
-              totalSnippets: r.totalSnippets,
-              rank: index + 1
-            }
-          }));
-          
-          logger.logToolSuccess(name, timing.requestId, timing.startTime, res.results.length);
-          
-          return createSearchResponse(helpResults);
-        } catch (error) {
-          logger.logToolError(name, timing.requestId, timing.startTime, error);
+        if (!code) {
+          const timing = logger.logToolStart(name, 'missing_code', clientMetadata);
+          logger.logToolError(name, timing.requestId, timing.startTime, new Error('Missing code parameter'));
           return createErrorResponse(
-            `SAP Help search service temporarily unavailable. Please try again later.`,
+            `Missing required parameter: code. Please provide ABAP source code to lint.`,
             timing.requestId
           );
         }
-      }
-
-      if (name === "sap_help_get") {
-        const { result_id } = args as { result_id: string };
         
-        // Enhanced logging with timing
-        const timing = logger.logToolStart(name, result_id, clientMetadata);
+        // Enhanced logging with timing (show first 50 chars of code)
+        const codePreview = code.substring(0, 50).replace(/\n/g, ' ') + (code.length > 50 ? '...' : '');
+        const timing = logger.logToolStart(name, codePreview, clientMetadata);
         
         try {
-          const content = await getSapHelpContent(result_id);
+          const result: LintResult = await lintAbapCode(code, filename || 'code.abap', version || 'Cloud');
           
-          // Transform SAP Help content to structured format
-          const document: DocumentResult = {
-            id: result_id,
-            title: `SAP Help Document (${result_id})`,
-            text: content,
-            url: `https://help.sap.com/#${result_id}`,
-            metadata: {
-              source: 'sap-help',
-              resultId: result_id,
-              contentLength: content.length
-            }
-          };
-          
-          logger.logToolSuccess(name, timing.requestId, timing.startTime, 1, { 
-            contentLength: content.length,
-            resultId: result_id
+          logger.logToolSuccess(name, timing.requestId, timing.startTime, 1, {
+            errorCount: result.errorCount,
+            warningCount: result.warningCount,
+            infoCount: result.infoCount
           });
           
-          return createDocumentResponse(document);
+          // Return structured JSON response
+          return {
+            content: [
+              {
+                type: "text",
+                text: JSON.stringify(result)
+              }
+            ]
+          };
         } catch (error) {
           logger.logToolError(name, timing.requestId, timing.startTime, error);
           return createErrorResponse(
-            `Error retrieving SAP Help content. Please try again later.`,
+            `Error running abaplint: ${error}`,
             timing.requestId
           );
         }
       }
-
-
 
       throw new Error(`Unknown tool: ${name}`);
     });
   }
 
   /**
-   * Setup prompt handlers (shared between all server types)
+   * Setup prompt handlers for ABAP/RAP development
    */
   private static setupPromptHandlers(srv: Server): void {
     // List available prompts
@@ -703,26 +697,26 @@ ChatGPT COMPATIBLE:
       return {
         prompts: [
           {
-            name: "sap_search_help",
-            title: "SAP Documentation Search Helper",
-            description: "Helps users construct effective search queries for SAP documentation",
+            name: "abap_search_help",
+            title: "ABAP/RAP Documentation Search Helper",
+            description: "Helps users construct effective search queries for ABAP and RAP documentation",
             arguments: [
               {
-                name: "domain",
-                description: "SAP domain (UI5, CAP, ABAP, etc.)",
+                name: "topic",
+                description: "ABAP topic (RAP, CDS, BOPF, etc.)",
                 required: false
               },
               {
-                name: "context",
-                description: "Specific context or technology area",
+                name: "flavor",
+                description: "ABAP flavor: standard (on-premise) or cloud (BTP)",
                 required: false
               }
             ]
           },
           {
-            name: "sap_troubleshoot",
-            title: "SAP Issue Troubleshooting Guide",
-            description: "Guides users through troubleshooting common SAP development issues",
+            name: "abap_troubleshoot",
+            title: "ABAP Issue Troubleshooting Guide",
+            description: "Guides users through troubleshooting common ABAP development issues",
             arguments: [
               {
                 name: "error_message",
@@ -730,8 +724,8 @@ ChatGPT COMPATIBLE:
                 required: false
               },
               {
-                name: "technology",
-                description: "SAP technology stack (UI5, CAP, ABAP, etc.)",
+                name: "context",
+                description: "Development context (RAP, CDS, classic ABAP, etc.)",
                 required: false
               }
             ]
@@ -745,91 +739,101 @@ ChatGPT COMPATIBLE:
       const { name, arguments: args } = request.params;
       
       switch (name) {
-        case "sap_search_help":
-          const domain = args?.domain || "general SAP";
-          const context = args?.context || "development";
+        case "abap_search_help":
+          const topic = args?.topic || "ABAP";
+          const flavor = args?.flavor || "standard";
           
           return {
-            description: `Search helper for ${domain} documentation`,
+            description: `Search helper for ${topic} documentation (${flavor})`,
             messages: [
               {
                 role: "user",
                 content: {
                   type: "text",
-                  text: `I need help searching ${domain} documentation for ${context}. What search terms should I use to find the most relevant results?
+                  text: `I need help searching ${topic} documentation for ${flavor} ABAP. What search terms should I use to find the most relevant results?
 
-Here are some tips for effective SAP documentation searches:
+Here are some tips for effective ABAP documentation searches:
 
-**For UI5/Frontend:**
-- Include specific control names (e.g., "Table", "Button", "ObjectPage")
-- Mention UI5 version if relevant
-- Use terms like "properties", "events", "aggregations"
+**For Standard ABAP (on-premise):**
+- Use specific ABAP statements: "SELECT", "LOOP", "MODIFY", "READ TABLE"
+- Include object types: "class", "method", "interface", "function module"
+- Mention specific features: "internal tables", "field symbols", "data references"
 
-**For CAP/Backend:**
-- Include CDS concepts (e.g., "entity", "service", "annotation")
-- Mention specific features (e.g., "authentication", "authorization", "events")
-- Use terms like "deployment", "configuration"
+**For ABAP Cloud (BTP):**
+- Add "cloud" or "btp" to your query to filter for cloud-compatible syntax
+- Focus on released APIs and objects
+- Use RAP-related terms: "behavior definition", "projection", "unmanaged"
 
-**For ABAP:**
-- Standard ABAP (on-premise, full syntax) is the default
-- Add "cloud" or "btp" to search ABAP Cloud (restricted syntax)
-- Use specific statement types (e.g., "SELECT", "LOOP", "MODIFY")
-- Include object types (e.g., "class", "method", "interface")
+**For RAP (RESTful Application Programming):**
+- Use specific RAP terms: "behavior definition", "behavior implementation"
+- Include entity types: "root entity", "child entity", "composition"
+- Mention actions and determinations: "action", "determination", "validation"
+
+**For CDS (Core Data Services):**
+- Use CDS keywords: "define view", "association", "composition"
+- Include annotation types: "@UI", "@ObjectModel", "@Consumption"
+- Mention specific features: "virtual elements", "calculated fields"
 
 **General Tips:**
 - Be specific rather than broad
 - Include error codes if troubleshooting
-- Use technical terms rather than business descriptions
+- Use technical ABAP terms
 - Combine multiple related terms
 
-What specific topic are you looking for help with?`
+What specific ABAP topic are you looking for help with?`
                 }
               }
             ]
           };
 
-        case "sap_troubleshoot":
+        case "abap_troubleshoot":
           const errorMessage = args?.error_message || "an issue";
-          const technology = args?.technology || "SAP";
+          const context = args?.context || "ABAP";
           
           return {
-            description: `Troubleshooting guide for ${technology}`,
+            description: `Troubleshooting guide for ${context}`,
             messages: [
               {
                 role: "user", 
                 content: {
                   type: "text",
-                  text: `I'm experiencing ${errorMessage} with ${technology}. Let me help you troubleshoot this systematically.
+                  text: `I'm experiencing ${errorMessage} with ${context}. Let me help you troubleshoot this systematically.
 
 **Step 1: Information Gathering**
 - What is the exact error message or symptom?
-- When does this occur (during development, runtime, deployment)?
-- What were you trying to accomplish?
-- What technology stack are you using?
+- When does this occur (during development, activation, runtime)?
+- Are you using Standard ABAP or ABAP Cloud?
+- Is this related to RAP, CDS, or classic ABAP?
 
 **Step 2: Initial Search Strategy**
-Let me search the SAP documentation for similar issues:
+Let me search the ABAP documentation for similar issues:
 
-**For UI5 Issues:**
-- Search for the exact error message
-- Include control or component names
-- Look for browser console errors
+**For Syntax Errors:**
+- Search for the exact ABAP statement causing issues
+- Check if the syntax is cloud-compatible (add "cloud" to query)
+- Look for deprecated or changed syntax
 
-**For CAP Issues:**
-- Check service definitions and annotations
-- Look for deployment configuration
-- Verify database connections
+**For RAP Issues:**
+- Check behavior definition and implementation
+- Verify entity relationships and compositions
+- Look for action/determination/validation patterns
 
-**For ABAP Issues:**
-- Standard ABAP is default; add "cloud" or "btp" for ABAP Cloud
-- Look for syntax or runtime errors
+**For CDS Issues:**
+- Verify view definitions and associations
+- Check annotation syntax and targets
+- Look for authorization and access control issues
+
+**For Runtime Errors:**
+- Search for the exact runtime error (e.g., "CX_SY_ZERODIVIDE")
 - Check object dependencies
+- Verify data types and conversions
 
 **Step 3: Common Solutions**
 Based on the issue type, I'll search for:
-- Official SAP documentation
-- Community discussions
-- Code examples and samples
+- Official ABAP keyword documentation
+- ABAP Cheat Sheets with examples
+- Clean ABAP style guide recommendations
+- RAP sample implementations
 
 Please provide more details about your specific issue, and I'll search for relevant solutions.`
                 }

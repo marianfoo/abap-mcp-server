@@ -67,7 +67,7 @@ const extractPostId = (url: string): string | undefined => {
 async function fetchText(url: string, userAgent?: string) {
   const res = await fetch(url, {
     headers: {
-      "User-Agent": userAgent || "sap-docs-mcp/1.0 (BestMatchScraper)",
+      "User-Agent": userAgent || "abap-mcp-server/1.0 (BestMatchScraper)",
       "Accept": "text/html,application/xhtml+xml",
     },
   });
@@ -202,7 +202,7 @@ export async function getCommunityPostsByIds(postIds: string[], userAgent?: stri
     const response = await fetch(url, {
       headers: {
         'Accept': 'application/json',
-        'User-Agent': userAgent || 'sap-docs-mcp/1.0 (BatchRetrieval)'
+        'User-Agent': userAgent || 'abap-mcp-server/1.0 (BatchRetrieval)'
       }
     });
 

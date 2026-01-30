@@ -61,7 +61,7 @@ export async function searchSapHelp(query: string): Promise<SearchResponse> {
     const response = await fetch(searchUrl, {
       headers: {
         Accept: "application/json",
-        "User-Agent": "mcp-sap-docs/help-search",
+        "User-Agent": "abap-mcp-server/help-search",
         Referer: BASE,
       },
     });
@@ -179,7 +179,7 @@ export async function getSapHelpContent(resultId: string): Promise<string> {
       const searchResponse = await fetch(searchUrl, {
         headers: {
           Accept: "application/json",
-          "User-Agent": "mcp-sap-docs/help-get",
+          "User-Agent": "abap-mcp-server/help-get",
           Referer: BASE,
         },
       });
@@ -230,7 +230,7 @@ export async function getSapHelpContent(resultId: string): Promise<string> {
     const metadataResponse = await fetch(metadataUrl, {
       headers: {
         Accept: "application/json",
-        "User-Agent": "mcp-sap-docs/help-metadata",
+        "User-Agent": "abap-mcp-server/help-metadata",
         Referer: BASE,
       },
     });
@@ -260,7 +260,7 @@ export async function getSapHelpContent(resultId: string): Promise<string> {
     const pageResponse = await fetch(pageUrl, {
       headers: {
         Accept: "application/json",
-        "User-Agent": "mcp-sap-docs/help-content",
+        "User-Agent": "abap-mcp-server/help-content",
         Referer: BASE,
       },
     });

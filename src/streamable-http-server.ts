@@ -112,10 +112,10 @@ async function main() {
         transport: "MCP Streamable HTTP", 
         protocol_version: "2025-07-09"
       },
-      documentation: "https://github.com/marianfoo/mcp-sap-docs#connect-from-your-mcp-client",
+      documentation: "https://github.com/marianfoo/abap-mcp-server#connect-from-your-mcp-client",
       alternatives: {
         "Local MCP Streamable HTTP": "http://127.0.0.1:3122/mcp",
-        "Public MCP Streamable HTTP": "https://mcp-sap-docs.marianzeis.de/mcp"
+        "Public MCP Streamable HTTP": "https://mcp-abap.marianzeis.de/mcp"
       }
     };
     
@@ -250,7 +250,7 @@ async function main() {
   app.get('/health', (req: Request, res: Response) => {
     res.json({
       status: 'healthy',
-      service: 'mcp-sap-docs-streamable',
+      service: 'abap-mcp-server-streamable',
       version: VERSION,
       timestamp: new Date().toISOString(),
       transport: 'streamable-http',
