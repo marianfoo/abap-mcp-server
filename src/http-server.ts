@@ -161,15 +161,14 @@ const server = createServer(async (req, res) => {
     // docs/search status
     const sourcesRoot = join(__dirname, "../../sources");
     const knownSources = [
-      "sapui5-docs",
-      "cap-docs",
-      "openui5",
-      "wdi5",
-      "ui5-tooling",
-      "cloud-mta-build-tool",
-      "ui5-webcomponents",
-      "cloud-sdk",
-      "cloud-sdk-ai"
+      "abap-docs",
+      "abap-cheat-sheets",
+      "sap-styleguides",
+      "dsag-abap-leitfaden",
+      "abap-fiori-showcase",
+      "abap-platform-rap-opensap",
+      "cloud-abap-rap",
+      "abap-platform-reuse-services"
     ];
     const presentSources = existsSync(sourcesRoot)
       ? readdirSync(sourcesRoot, { withFileTypes: true })
@@ -199,7 +198,7 @@ const server = createServer(async (req, res) => {
     }
 
     // index + FTS footprint
-    const dataRoot = join(__dirname, "../../data");
+    const dataRoot = join(__dirname, "../data");
     const indexJson = join(dataRoot, "index.json");
     const ftsDb = join(dataRoot, "docs.sqlite");
     const indexStat = existsSync(indexJson) ? statSync(indexJson) : null;

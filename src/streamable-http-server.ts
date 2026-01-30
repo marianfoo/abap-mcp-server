@@ -67,9 +67,9 @@ function createServer() {
   };
 
   const srv = new Server({
-    name: "SAP Docs Streamable HTTP",
+    name: "ABAP MCP Streamable HTTP",
     description:
-      "SAP documentation server with Streamable HTTP transport - supports SAPUI5, CAP, wdi5, SAP Community, SAP Help Portal, and ABAP Keyword Documentation integration",
+      "ABAP/RAP MCP server with Streamable HTTP transport - supports ABAP Keyword Documentation, Cheat Sheets, Styleguides, and RAP examples",
     version: VERSION
   }, serverOptions);
 
@@ -290,7 +290,7 @@ Health check: GET /health
 `);
 
   // Log server startup
-  logger.info("MCP SAP Docs Streamable HTTP server starting up", {
+  logger.info("ABAP MCP Streamable HTTP server starting up", {
     port: MCP_PORT,
     nodeEnv: process.env.NODE_ENV,
     logLevel: process.env.LOG_LEVEL,
@@ -298,7 +298,7 @@ Health check: GET /health
   });
 
   // Log successful startup
-  logger.info("MCP SAP Docs Streamable HTTP server ready", {
+  logger.info("ABAP MCP Streamable HTTP server ready", {
     transport: "streamable-http",
     port: MCP_PORT,
     pid: process.pid
