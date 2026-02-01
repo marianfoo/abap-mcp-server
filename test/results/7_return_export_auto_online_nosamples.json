@@ -6,10 +6,42 @@
       "includeOnline": true,
       "includeSamples": false
     },
-    "timestamp": "2026-01-31T19:18:39.079Z",
+    "timestamp": "2026-02-01T20:18:08.995Z",
     "count": 50
   },
   "results": [
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#prefer-returning-to-exporting",
+      "text": "Prefer RETURNING to EXPORTING\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Parameter Types](#parameter-types) > [This section](#prefer-returning-to-exporting) ```ABAP METHODS square METHODS square IMPORTING number TYPE RETURNING VALUE result TYPE DATA\n\n/sap-styleguides/clean-abap/CleanABAP#prefer-returning-to-exporting",
+      "bm25": -13.582214429814375,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#prefer-returning-to-exporting",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.08607594936708861,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.582214429814375,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 5.8
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#use-either-returning-or-exporting-or-changing-but-not-a-combination",
+      "text": "Use either RETURNING or EXPORTING or CHANGING, but not a combination\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Parameter Types](#parameter-types) > [This section](#use-either-returning-or-exporting-or-changing-but-not-a-combination) ```ABAP METHODS copy_class METHODS copy_class IMPORTING old_name TYPE seoclsname name TYPE secolsname R...\n\n/sap-styleguides/clean-abap/CleanABAP#use-either-returning-or-exporting-or-changing-but-not-a-combination",
+      "bm25": -13.551384697218184,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#use-either-returning-or-exporting-or-changing-but-not-a-combination",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.085,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.551384697218184,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 5.8
+      }
+    },
     {
       "id": "/abap-docs-standard/ABENABAP_TECHNO",
       "text": "ABENABAP_TECHNO\n\nThe term [ABAP](ABENABAP_GLOSRY.html) as an abbreviation for *Advanced Business Application Programming* encompasses the entire ABAP technology provided for and by an [ABAP system](ABENABAP_SYSTEM_GLOSRY.html) on which ABAP-based applications are developed and executed. Originally, ABAP stood for the [ABAP language](ABENABALA_GLOSRY.html) only. ABAP technology is not provided as a standalone produ\n\n/abap-docs-standard/ABENABAP_TECHNO",
@@ -17,13 +49,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENABAP_TECHNO",
       "relFile": "ABENABAP_TECHNO.md",
-      "finalScore": 0.0967741935483871,
+      "finalScore": 0.07258064516129031,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -21.41118833194283,
         "rank": 2,
         "rrfScore": 0.016129032258064516,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -33,13 +65,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENABAP_OBJ_PROGR_MODEL_GUIDL",
       "relFile": "ABENABAP_OBJ_PROGR_MODEL_GUIDL.md",
-      "finalScore": 0.09090909090909091,
+      "finalScore": 0.06818181818181818,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -15.924550740647522,
         "rank": 6,
         "rrfScore": 0.015151515151515152,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -49,13 +81,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENABAP_GLOSRY",
       "relFile": "ABENABAP_GLOSRY.md",
-      "finalScore": 0.09047619047619047,
+      "finalScore": 0.06666666666666667,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -21.223762751424363,
         "rank": 3,
         "rrfScore": 0.015873015873015872,
-        "boost": 4.7
+        "boost": 3.2
       }
     },
     {
@@ -65,13 +97,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENTECHNO_GLOSSARY",
       "relFile": "ABENTECHNO_GLOSSARY.md",
-      "finalScore": 0.0859375,
+      "finalScore": 0.0625,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -18.879112495756363,
         "rank": 4,
         "rrfScore": 0.015625,
-        "boost": 4.5
+        "boost": 3
       }
     },
     {
@@ -81,13 +113,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENABALA_GLOSSARY",
       "relFile": "ABENABALA_GLOSSARY.md",
-      "finalScore": 0.08461538461538462,
+      "finalScore": 0.06153846153846154,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -18.31056833063797,
         "rank": 5,
         "rrfScore": 0.015384615384615385,
-        "boost": 4.5
+        "boost": 3
       }
     },
     {
@@ -97,45 +129,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENMODULARIZATION_GUIDL",
       "relFile": "ABENMODULARIZATION_GUIDL.md",
-      "finalScore": 0.08208955223880597,
+      "finalScore": 0.05970149253731343,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -15.852298393681815,
         "rank": 7,
         "rrfScore": 0.014925373134328358,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENSAVER_MAP_MESSAGES",
-      "text": "ABENSAVER_MAP_MESSAGES\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: Development guide for the ABAP RESTful Application Programming Model, section [Message Mapping](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/741dfc88293d4ac99186815b9fc35e31?version=sap_cross_pro\n\n/abap-docs-standard/ABENSAVER_MAP_MESSAGES",
-      "bm25": -14.886353618503138,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENSAVER_MAP_MESSAGES",
-      "relFile": "ABENSAVER_MAP_MESSAGES.md",
-      "finalScore": 0.07971014492753624,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -14.886353618503138,
-        "rank": 9,
-        "rrfScore": 0.014492753623188406,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENRAP_GLOSSARY",
-      "text": "ABENRAP_GLOSSARY\n\nRAP stands for the [ABAP RESTful Application Programming Model](ABENARAP_GLOSRY.html). In the following, terms of the [ABAP Glossary](ABENABAP_GLOSSARY.html) are listed, that are relevant for RAP. **ABAP behavior pool** ABP for short. A special [class pool](ABENCLASS_POOL_GLOSRY.html) for an [ABAP behavior implementation](ABENBEHAVIOR_IMPLEMENT_GLOSRY.html). A behavior pool is based on a [RAP beha\n\n/abap-docs-standard/ABENRAP_GLOSSARY",
-      "bm25": -14.671697219390387,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENRAP_GLOSSARY",
-      "relFile": "ABENRAP_GLOSSARY.md",
-      "finalScore": 0.07857142857142857,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -14.671697219390387,
-        "rank": 10,
-        "rrfScore": 0.014285714285714285,
-        "boost": 4.5
+        "boost": 3
       }
     },
     {
@@ -145,13 +145,45 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABAPINVALID_STMTS_IN_TX",
       "relFile": "ABAPINVALID_STMTS_IN_TX.md",
-      "finalScore": 0.07792207792207792,
+      "finalScore": 0.05844155844155845,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.703337794179301,
         "rank": 17,
         "rrfScore": 0.012987012987012988,
-        "boost": 5
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSAVER_MAP_MESSAGES",
+      "text": "ABENSAVER_MAP_MESSAGES\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: Development guide for the ABAP RESTful Application Programming Model, section [Message Mapping](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/741dfc88293d4ac99186815b9fc35e31?version=sap_cross_pro\n\n/abap-docs-standard/ABENSAVER_MAP_MESSAGES",
+      "bm25": -14.886353618503138,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSAVER_MAP_MESSAGES",
+      "relFile": "ABENSAVER_MAP_MESSAGES.md",
+      "finalScore": 0.057971014492753624,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.886353618503138,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRAP_GLOSSARY",
+      "text": "ABENRAP_GLOSSARY\n\nRAP stands for the [ABAP RESTful Application Programming Model](ABENARAP_GLOSRY.html). In the following, terms of the [ABAP Glossary](ABENABAP_GLOSSARY.html) are listed, that are relevant for RAP. **ABAP behavior pool** ABP for short. A special [class pool](ABENCLASS_POOL_GLOSRY.html) for an [ABAP behavior implementation](ABENBEHAVIOR_IMPLEMENT_GLOSRY.html). A behavior pool is based on a [RAP beha\n\n/abap-docs-standard/ABENRAP_GLOSSARY",
+      "bm25": -14.671697219390387,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRAP_GLOSSARY",
+      "relFile": "ABENRAP_GLOSSARY.md",
+      "finalScore": 0.05714285714285714,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.671697219390387,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 3
       }
     },
     {
@@ -161,13 +193,45 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENSAVER_FINALIZE",
       "relFile": "ABENSAVER_FINALIZE.md",
-      "finalScore": 0.07236842105263158,
+      "finalScore": 0.05263157894736842,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.861701518651017,
         "rank": 16,
         "rrfScore": 0.013157894736842105,
-        "boost": 4.5
+        "boost": 3
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#omit-the-optional-keyword-exporting",
+      "text": "Omit the optional keyword EXPORTING\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Calls](#calls) > [This section](#omit-the-optional-keyword-exporting) ```ABAP modify->update( node           = /clean/my_bo_c=>node-item modify update node clean my_bo_c node item item data item\n\n/sap-styleguides/clean-abap/CleanABAP#omit-the-optional-keyword-exporting",
+      "bm25": -13.490140254941549,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#omit-the-optional-keyword-exporting",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.0524390243902439,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.490140254941549,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#clear-or-overwrite-exporting-reference-parameters",
+      "text": "Clear or overwrite EXPORTING reference parameters\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Parameter Initialization](#parameter-initialization) > [This section](#clear-or-overwrite-exporting-reference-parameters) Reference parameters refer to existing memory areas that may be filled beforehand. Clear or overwrite t...\n\n/sap-styleguides/clean-abap/CleanABAP#clear-or-overwrite-exporting-reference-parameters",
+      "bm25": -13.486572944329403,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#clear-or-overwrite-exporting-reference-parameters",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.051807228915662654,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.486572944329403,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 3.3
       }
     },
     {
@@ -177,29 +241,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENDDIC_VIEWS",
       "relFile": "ABENDDIC_VIEWS.md",
-      "finalScore": 0.06790123456790123,
+      "finalScore": 0.04938271604938271,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.510673304896649,
         "rank": 21,
         "rrfScore": 0.012345679012345678,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENXSA_GLOSRY",
-      "text": "ABENXSA_GLOSRY\n\nShort for SAP HANA extended application services Advanced Model. Current version of [XS](ABENXS_GLOSRY.html) and successor to [XSC](ABENXSC_GLOSRY.html). [SAP Web IDE for SAP HANA](ABENSAP_WEB_IDE_FOR_SAP_HAN_GLOSRY.html) and [SAP HANA Cockpit](ABENSAP_HANA_COCKPIT_GLOSRY.html) can be used to develop and manage XSA objects. Objects are usually deployed using [HDI](ABENHDI_GLOSRY.html). ABENTECHNO\\\n\n/abap-docs-standard/ABENXSA_GLOSRY",
-      "bm25": -13.59201807749048,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENXSA_GLOSRY",
-      "relFile": "ABENXSA_GLOSRY.md",
-      "finalScore": 0.06666666666666667,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.59201807749048,
-        "rank": 18,
-        "rrfScore": 0.01282051282051282,
-        "boost": 4.2
+        "boost": 3
       }
     },
     {
@@ -209,13 +257,29 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENDDIC_DATA_ELEMENTS",
       "relFile": "ABENDDIC_DATA_ELEMENTS.md",
-      "finalScore": 0.06547619047619047,
+      "finalScore": 0.047619047619047616,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.418668686561151,
         "rank": 24,
         "rrfScore": 0.011904761904761904,
-        "boost": 4.5
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENXSA_GLOSRY",
+      "text": "ABENXSA_GLOSRY\n\nShort for SAP HANA extended application services Advanced Model. Current version of [XS](ABENXS_GLOSRY.html) and successor to [XSC](ABENXSC_GLOSRY.html). [SAP Web IDE for SAP HANA](ABENSAP_WEB_IDE_FOR_SAP_HAN_GLOSRY.html) and [SAP HANA Cockpit](ABENSAP_HANA_COCKPIT_GLOSRY.html) can be used to develop and manage XSA objects. Objects are usually deployed using [HDI](ABENHDI_GLOSRY.html). ABENTECHNO\\\n\n/abap-docs-standard/ABENXSA_GLOSRY",
+      "bm25": -13.59201807749048,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENXSA_GLOSRY",
+      "relFile": "ABENXSA_GLOSRY.md",
+      "finalScore": 0.047435897435897434,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.59201807749048,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 2.7
       }
     },
     {
@@ -235,35 +299,51 @@
       }
     },
     {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#prefer-returning-to-exporting",
-      "text": "Prefer RETURNING to EXPORTING\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Parameter Types](#parameter-types) > [This section](#prefer-returning-to-exporting) ```ABAP METHODS square METHODS square IMPORTING number TYPE RETURNING VALUE result TYPE DATA\n\n/sap-styleguides/clean-abap/CleanABAP#prefer-returning-to-exporting",
-      "bm25": -13.582214429814375,
+      "id": "/sap-styleguides/clean-abap/CleanABAP#omit-receiving",
+      "text": "Omit RECEIVING\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Calls](#calls) > [This section](#omit-receiving) ```ABAP DATA(sum) = aggregate_values( values ). DATA aggregate_values values anti pattern aggregate_values EXPORTING values values RECEIVING\n\n/sap-styleguides/clean-abap/CleanABAP#omit-receiving",
+      "bm25": -13.342105691931993,
       "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#prefer-returning-to-exporting",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#omit-receiving",
       "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.04177215189873418,
+      "finalScore": 0.04470588235294117,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -13.582214429814375,
-        "rank": 19,
-        "rrfScore": 0.012658227848101266,
-        "boost": 2.3
+        "bm25Score": -13.342105691931993,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2.8
       }
     },
     {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#use-either-returning-or-exporting-or-changing-but-not-a-combination",
-      "text": "Use either RETURNING or EXPORTING or CHANGING, but not a combination\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Parameter Types](#parameter-types) > [This section](#use-either-returning-or-exporting-or-changing-but-not-a-combination) ```ABAP METHODS copy_class METHODS copy_class IMPORTING old_name TYPE seoclsname name TYPE secolsname R...\n\n/sap-styleguides/clean-abap/CleanABAP#use-either-returning-or-exporting-or-changing-but-not-a-combination",
-      "bm25": -13.551384697218184,
+      "id": "/sap-styleguides/clean-abap/CleanABAP#prefer-basis-checks-to-regular-expressions",
+      "text": "Prefer basis checks to regular expressions\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Regular expressions](#regular-expressions) > [This section](#prefer-basis-checks-to-regular-expressions) ```ABAP CALL FUNCTION 'SEO_CLIF_CHECK_NAME' CALL SEO_CLIF_CHECK_NAME EXPORTING cls_name class_name EXCEPTIONS anti pattern DATA is_valid\n\n/sap-styleguides/clean-abap/CleanABAP#prefer-basis-checks-to-regular-expressions",
+      "bm25": -13.329413717302945,
       "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#use-either-returning-or-exporting-or-changing-but-not-a-combination",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#prefer-basis-checks-to-regular-expressions",
       "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.04125,
+      "finalScore": 0.044186046511627906,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -13.551384697218184,
-        "rank": 20,
-        "rrfScore": 0.0125,
-        "boost": 2.3
+        "bm25Score": -13.329413717302945,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#indent-and-snap-to-tab",
+      "text": "Indent and snap to tab\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Formatting](#formatting) > [This section](#indent-and-snap-to-tab) Indent parameter keywords by 2 spaces and parameters by 4 spaces: ```ABAP DATA add_two_numbers EXPORTING value_1 value_2 CHANGING errors errors DATA add_two_numbers\n\n/sap-styleguides/clean-abap/CleanABAP#indent-and-snap-to-tab",
+      "bm25": -13.32445749383415,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#indent-and-snap-to-tab",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.04367816091954023,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.32445749383415,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 2.8
       }
     },
     {
@@ -297,11 +377,11 @@
       }
     },
     {
-      "id": "sap-help-a24c8490449041b88b7890d299b57351",
-      "text": "Excel Support\n\nWarnings <b>returned</b> by the <b>ABAP</b> List Viewer <b>export</b> tool are written into the\n                                 \t\t\t\tapplication log. ... Errors <b>returned</b> by the <b>ABAB</b> List Viewer <b>export</b> tool are <b>returned</b> as\n                                 \t\t\t\tHTTP 500 errors. ... Properties with the SAP-semantic &quot;URL&quot; are created as &quot;Link to URL&quot; columns in the\n                                 \t\t\t\t<b>ABAP</b> List Viewer <b>export</b> tool. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/68bf513362174d54b58cddec28794093/a24c8490449041b88b7890d299b57351.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "id": "sap-help-undefined",
+      "text": "\n\ndataType - The <b>ABAP</b> data type of the parameter.\n\t<b>Returns</b>:\n\tA new Table object, collecting multiple values. Calling the end() <b>method</b> on it will\n <b>return</b> this RfcQuery. ... dataType - The <b>ABAP</b> data type of the parameter.\n\t<b>Returns</b>:\n\tA new ParameterFields object, collecting multiple values. Calling the end() <b>method</b> on it\n will <b>return</b> this RfcQuery. ... <b>Method</b> Summary\n\nAll <b>Methods</b>&nbsp;Instance <b>Methods</b>&nbsp;Concrete <b>Methods</b>&nbsp;Deprecated <b>Methods</b>&nbsp;\tModifier and Type\t<b>Method</b> and Description\n\tboolean\tdoCommit()\nDeprecated.&nbsp; ...  — Product: SAP Cloud SDK (1.0)\n\nhttps://help.sap.com/doc/9b126cf98d314c02acc9fe9e3631b2da/1.0/en-US/com/sap/cloud/sdk/s4hana/connectivity/rfc/RfcQuery.html",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/68bf513362174d54b58cddec28794093/a24c8490449041b88b7890d299b57351.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "path": "https://help.sap.com/doc/9b126cf98d314c02acc9fe9e3631b2da/1.0/en-US/com/sap/cloud/sdk/s4hana/connectivity/rfc/RfcQuery.html",
       "relFile": "",
       "finalScore": 0.03571428571428571,
       "sourceKind": "sap_help",
@@ -312,11 +392,11 @@
       }
     },
     {
-      "id": "sap-help-4f3c1021944e2b93e10000000a42189e",
-      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a result and/or the <b>export</b> parameters can be <b>returned</b> to the caller if you pass this to the container CONTAINER within the <b>method</b> implementation. ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b> command CALL FUNCTION. ... Note\n\nIf you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call to the relevant function and the data declaration of the <b>method</b> parameters ...  — Product: SAP ERP (6.0 EHP4 Latest)\n\nhttps://help.sap.com/docs/SAP_ERP/142f8559883b4c11966ebfb99dd61164/4f3c1021944e2b93e10000000a42189e.html?locale=en-US&state=PRODUCTION&version=6.04.latest",
+      "id": "sap-help-a24c8490449041b88b7890d299b57351",
+      "text": "Excel Support\n\nWarnings <b>returned</b> by the <b>ABAP</b> List Viewer <b>export</b> tool are written into the\n                                 \t\t\t\tapplication log. ... Errors <b>returned</b> by the <b>ABAB</b> List Viewer <b>export</b> tool are <b>returned</b> as\n                                 \t\t\t\tHTTP 500 errors. ... Properties with the SAP-semantic &quot;URL&quot; are created as &quot;Link to URL&quot; columns in the\n                                 \t\t\t\t<b>ABAP</b> List Viewer <b>export</b> tool. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/68bf513362174d54b58cddec28794093/a24c8490449041b88b7890d299b57351.html?locale=en-US&state=PRODUCTION&version=1709 002",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_ERP/142f8559883b4c11966ebfb99dd61164/4f3c1021944e2b93e10000000a42189e.html?locale=en-US&state=PRODUCTION&version=6.04.latest",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/68bf513362174d54b58cddec28794093/a24c8490449041b88b7890d299b57351.html?locale=en-US&state=PRODUCTION&version=1709 002",
       "relFile": "",
       "finalScore": 0.03515625,
       "sourceKind": "sap_help",
@@ -327,11 +407,11 @@
       }
     },
     {
-      "id": "sap-help-c3021959f06111d4b2eb0050dadfb92b",
-      "text": "Binding to Object References (Instances)\n\nThey are not affected by the <b>EXPORTING</b>, CHANGING or <b>RETURNING</b> parameters of the <b>ABAP</b> <b>method</b>. ... You do not have to specify optional parameters, or the usual <b>ABAP</b> additions <b>EXPORTING</b>, <b>IMPORTING</b>, CHANGING, or <b>RETURNING</b>. ... However, the argument list is superfluous, since the <b>RETURNING</b> parameter of the <b>ABAP</b> <b>method</b>. ...  — Product: SAP NetWeaver 7.0 (SPS39)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/1099d5b96c531014ae27d839c339133b/c3021959f06111d4b2eb0050dadfb92b.html?locale=en-US&state=PRODUCTION&version=7.0.39",
+      "id": "sap-help-4f3c1021944e2b93e10000000a42189e",
+      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a result and/or the <b>export</b> parameters can be <b>returned</b> to the caller if you pass this to the container CONTAINER within the <b>method</b> implementation. ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b> command CALL FUNCTION. ... Note\n\nIf you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call to the relevant function and the data declaration of the <b>method</b> parameters ...  — Product: SAP ERP (6.0 EHP4 Latest)\n\nhttps://help.sap.com/docs/SAP_ERP/142f8559883b4c11966ebfb99dd61164/4f3c1021944e2b93e10000000a42189e.html?locale=en-US&state=PRODUCTION&version=6.04.latest",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/1099d5b96c531014ae27d839c339133b/c3021959f06111d4b2eb0050dadfb92b.html?locale=en-US&state=PRODUCTION&version=7.0.39",
+      "path": "https://help.sap.com/docs/SAP_ERP/142f8559883b4c11966ebfb99dd61164/4f3c1021944e2b93e10000000a42189e.html?locale=en-US&state=PRODUCTION&version=6.04.latest",
       "relFile": "",
       "finalScore": 0.03461538461538462,
       "sourceKind": "sap_help",
@@ -342,27 +422,11 @@
       }
     },
     {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#omit-the-optional-keyword-exporting",
-      "text": "Omit the optional keyword EXPORTING\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Calls](#calls) > [This section](#omit-the-optional-keyword-exporting) ```ABAP modify->update( node           = /clean/my_bo_c=>node-item modify update node clean my_bo_c node item item data item\n\n/sap-styleguides/clean-abap/CleanABAP#omit-the-optional-keyword-exporting",
-      "bm25": -13.490140254941549,
-      "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#omit-the-optional-keyword-exporting",
-      "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.03414634146341463,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.490140254941549,
-        "rank": 22,
-        "rrfScore": 0.012195121951219513,
-        "boost": 1.7999999999999998
-      }
-    },
-    {
-      "id": "sap-help-eee8b9fd-0fc4-44e0-8114-475416d7980a",
-      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a result and/or the <b>export</b> parameters can be <b>returned</b> to the caller if you pass this to the container CONTAINER within the <b>method</b> implementation. ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b> command CALL FUNCTION. ... Note\n\nIf you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call to the relevant function and the data declaration of the <b>method</b> parameters ...  — Product: SAP NetWeaver 7.0 EHP2 (SPS23)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/eee8b9fd-0fc4-44e0-8114-475416d7980a.html?locale=en-US&state=PRODUCTION&version=7.02.23",
+      "id": "sap-help-c3021959f06111d4b2eb0050dadfb92b",
+      "text": "Binding to Object References (Instances)\n\nThey are not affected by the <b>EXPORTING</b>, CHANGING or <b>RETURNING</b> parameters\n                                       of the <b>ABAP</b> <b>method</b>. ... If the type of the\n                                 <b>RETURNING</b> parameter is elementary, this is the actual <b>return</b> value of the <b>ABAP</b> <b>method</b>. ... The &lsquo;invoke&rsquo; <b>method</b> <b>expects</b> the name of the <b>ABAP</b> instance <b>method</b> in lower case as the first argument, following by the passed\n                                 parameters. ...  — Product: SAP NetWeaver 7.0 (SPS35)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/1099d5b96c531014ae27d839c339133b/c3021959f06111d4b2eb0050dadfb92b.html?locale=en-US&state=PRODUCTION&version=7.0.35",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/eee8b9fd-0fc4-44e0-8114-475416d7980a.html?locale=en-US&state=PRODUCTION&version=7.02.23",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/1099d5b96c531014ae27d839c339133b/c3021959f06111d4b2eb0050dadfb92b.html?locale=en-US&state=PRODUCTION&version=7.0.35",
       "relFile": "",
       "finalScore": 0.034090909090909095,
       "sourceKind": "sap_help",
@@ -389,27 +453,11 @@
       }
     },
     {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#clear-or-overwrite-exporting-reference-parameters",
-      "text": "Clear or overwrite EXPORTING reference parameters\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Parameter Initialization](#parameter-initialization) > [This section](#clear-or-overwrite-exporting-reference-parameters) Reference parameters refer to existing memory areas that may be filled beforehand. Clear or overwrite t...\n\n/sap-styleguides/clean-abap/CleanABAP#clear-or-overwrite-exporting-reference-parameters",
-      "bm25": -13.486572944329403,
-      "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#clear-or-overwrite-exporting-reference-parameters",
-      "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.033734939759036145,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.486572944329403,
-        "rank": 23,
-        "rrfScore": 0.012048192771084338,
-        "boost": 1.7999999999999998
-      }
-    },
-    {
-      "id": "sap-help-5ba0b404f47411d194da00a0c94260a5",
-      "text": " Creating Parameters for Methods\n\nIf you use <b>returning</b> parameters, you cannot use <b>exporting</b>\n                                                         or changing parameters. ... , <b>Exporting</b>, Changing or <b>Returning</b>. ... This is only possible for <b>importing</b>, <b>exporting</b>, and changing parameters. ...  — Product: SAP S/4HANA (1709 FPS01 (Jan 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/bd833c8355f34e96a6e83096b38bf192/5ba0b404f47411d194da00a0c94260a5.html?locale=en-US&state=PRODUCTION&version=1709 001",
+      "id": "sap-help-eee8b9fd-0fc4-44e0-8114-475416d7980a",
+      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a result and/or the <b>export</b> parameters can be <b>returned</b> to the caller if you pass this to the container CONTAINER within the <b>method</b> implementation. ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b> command CALL FUNCTION. ... Note\n\nIf you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call to the relevant function and the data declaration of the <b>method</b> parameters ...  — Product: SAP NetWeaver 7.0 EHP2 (SPS23)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/eee8b9fd-0fc4-44e0-8114-475416d7980a.html?locale=en-US&state=PRODUCTION&version=7.02.23",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/bd833c8355f34e96a6e83096b38bf192/5ba0b404f47411d194da00a0c94260a5.html?locale=en-US&state=PRODUCTION&version=1709 001",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/eee8b9fd-0fc4-44e0-8114-475416d7980a.html?locale=en-US&state=PRODUCTION&version=7.02.23",
       "relFile": "",
       "finalScore": 0.033582089552238806,
       "sourceKind": "sap_help",
@@ -420,11 +468,11 @@
       }
     },
     {
-      "id": "sap-help-1e947662-692b-4ef8-8e1d-1db8b56e172e",
-      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a  result and/or the  <b>export</b> parameters can be <b>returned</b> to the caller if you pass this\n                           to the container CONTAINER within the <b>method</b> implementation ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b>\n                           command CALL FUNCTION. ... Note \n                           \n                           If you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call ...  — Product: SAP Customer Relationship Management (7.0 SP19)\n\nhttps://help.sap.com/docs/SAP_CUSTOMER_RELATIONSHIP_MANAGEMENT/fa15fcddf754411882a05e4fc10afd64/1e947662-692b-4ef8-8e1d-1db8b56e172e.html?locale=en-US&state=PRODUCTION&version=7.0.0.19",
+      "id": "sap-help-5ba0b404f47411d194da00a0c94260a5",
+      "text": " Creating Parameters for Methods\n\nIf you use <b>returning</b> parameters, you cannot use <b>exporting</b>\n                                                         or changing parameters. ... , <b>Exporting</b>, Changing or <b>Returning</b>. ... This is only possible for <b>importing</b>, <b>exporting</b>, and changing parameters. ...  — Product: SAP S/4HANA (1709 FPS01 (Jan 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/bd833c8355f34e96a6e83096b38bf192/5ba0b404f47411d194da00a0c94260a5.html?locale=en-US&state=PRODUCTION&version=1709 001",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_CUSTOMER_RELATIONSHIP_MANAGEMENT/fa15fcddf754411882a05e4fc10afd64/1e947662-692b-4ef8-8e1d-1db8b56e172e.html?locale=en-US&state=PRODUCTION&version=7.0.0.19",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/bd833c8355f34e96a6e83096b38bf192/5ba0b404f47411d194da00a0c94260a5.html?locale=en-US&state=PRODUCTION&version=1709 001",
       "relFile": "",
       "finalScore": 0.03308823529411765,
       "sourceKind": "sap_help",
@@ -435,11 +483,11 @@
       }
     },
     {
-      "id": "sap-help-187df76d-77c9-4d01-bf62-fcf4666e62bd",
-      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a  result and/or the  <b>export</b> parameters can be <b>returned</b> to the caller if you pass this\n                           to the container CONTAINER within the <b>method</b> implementation ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b>\n                           command CALL FUNCTION. ... Note \n                           \n                           If you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call ...  — Product: SAP NetWeaver 7.0 EHP1 (SPS18)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/187df76d-77c9-4d01-bf62-fcf4666e62bd.html?locale=en-US&state=PRODUCTION&version=7.01.18",
+      "id": "sap-help-1e947662-692b-4ef8-8e1d-1db8b56e172e",
+      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a  result and/or the  <b>export</b> parameters can be <b>returned</b> to the caller if you pass this\n                           to the container CONTAINER within the <b>method</b> implementation ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b>\n                           command CALL FUNCTION. ... Note \n                           \n                           If you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call ...  — Product: SAP Customer Relationship Management (7.0 SP19)\n\nhttps://help.sap.com/docs/SAP_CUSTOMER_RELATIONSHIP_MANAGEMENT/fa15fcddf754411882a05e4fc10afd64/1e947662-692b-4ef8-8e1d-1db8b56e172e.html?locale=en-US&state=PRODUCTION&version=7.0.0.19",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/187df76d-77c9-4d01-bf62-fcf4666e62bd.html?locale=en-US&state=PRODUCTION&version=7.01.18",
+      "path": "https://help.sap.com/docs/SAP_CUSTOMER_RELATIONSHIP_MANAGEMENT/fa15fcddf754411882a05e4fc10afd64/1e947662-692b-4ef8-8e1d-1db8b56e172e.html?locale=en-US&state=PRODUCTION&version=7.0.0.19",
       "relFile": "",
       "finalScore": 0.03260869565217392,
       "sourceKind": "sap_help",
@@ -466,11 +514,11 @@
       }
     },
     {
-      "id": "sap-help-d0f13c01-17ab-4550-81fc-adaae245ffb2",
-      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a  result and/or the  <b>export</b> parameters can be <b>returned</b> to the caller if you pass this\n                           to the container CONTAINER within the <b>method</b> implementation ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b>\n                           command CALL FUNCTION. ... Note \n                           \n                           If you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call ...  — Product: SAP NetWeaver 7.0 (SPS36)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d0f13c01-17ab-4550-81fc-adaae245ffb2.html?locale=en-US&state=PRODUCTION&version=7.0.36",
+      "id": "sap-help-187df76d-77c9-4d01-bf62-fcf4666e62bd",
+      "text": "Programming Synchronous Methods\n\nIn the case of synchronous <b>methods</b>, a  result and/or the  <b>export</b> parameters can be <b>returned</b> to the caller if you pass this\n                           to the container CONTAINER within the <b>method</b> implementation ... A synchronous <b>method</b> can be implemented with a function module. The function module is called in the program with the <b>ABAP</b>\n                           command CALL FUNCTION. ... Note \n                           \n                           If you have fully maintained the <b>ABAP</b> function type of the <b>method</b> and the <b>method</b> parameters, the system implements the call ...  — Product: SAP NetWeaver 7.0 EHP1 (SPS18)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/187df76d-77c9-4d01-bf62-fcf4666e62bd.html?locale=en-US&state=PRODUCTION&version=7.01.18",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d0f13c01-17ab-4550-81fc-adaae245ffb2.html?locale=en-US&state=PRODUCTION&version=7.0.36",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/187df76d-77c9-4d01-bf62-fcf4666e62bd.html?locale=en-US&state=PRODUCTION&version=7.01.18",
       "relFile": "",
       "finalScore": 0.03214285714285714,
       "sourceKind": "sap_help",
@@ -689,59 +737,11 @@
       }
     },
     {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#omit-receiving",
-      "text": "Omit RECEIVING\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Methods](#methods) > [Calls](#calls) > [This section](#omit-receiving) ```ABAP DATA(sum) = aggregate_values( values ). DATA aggregate_values values anti pattern aggregate_values EXPORTING values values RECEIVING\n\n/sap-styleguides/clean-abap/CleanABAP#omit-receiving",
-      "bm25": -13.342105691931993,
-      "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#omit-receiving",
-      "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.027058823529411764,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.342105691931993,
-        "rank": 25,
-        "rrfScore": 0.011764705882352941,
-        "boost": 1.2999999999999998
-      }
-    },
-    {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#prefer-basis-checks-to-regular-expressions",
-      "text": "Prefer basis checks to regular expressions\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Regular expressions](#regular-expressions) > [This section](#prefer-basis-checks-to-regular-expressions) ```ABAP CALL FUNCTION 'SEO_CLIF_CHECK_NAME' CALL SEO_CLIF_CHECK_NAME EXPORTING cls_name class_name EXCEPTIONS anti pattern DATA is_valid\n\n/sap-styleguides/clean-abap/CleanABAP#prefer-basis-checks-to-regular-expressions",
-      "bm25": -13.329413717302945,
-      "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#prefer-basis-checks-to-regular-expressions",
-      "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.026744186046511624,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.329413717302945,
-        "rank": 26,
-        "rrfScore": 0.011627906976744186,
-        "boost": 1.2999999999999998
-      }
-    },
-    {
-      "id": "/sap-styleguides/clean-abap/CleanABAP#indent-and-snap-to-tab",
-      "text": "Indent and snap to tab\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Formatting](#formatting) > [This section](#indent-and-snap-to-tab) Indent parameter keywords by 2 spaces and parameters by 4 spaces: ```ABAP DATA add_two_numbers EXPORTING value_1 value_2 CHANGING errors errors DATA add_two_numbers\n\n/sap-styleguides/clean-abap/CleanABAP#indent-and-snap-to-tab",
-      "bm25": -13.32445749383415,
-      "sourceId": "sap-styleguides",
-      "path": "/sap-styleguides/clean-abap/CleanABAP#indent-and-snap-to-tab",
-      "relFile": "clean-abap/CleanABAP.md",
-      "finalScore": 0.0264367816091954,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.32445749383415,
-        "rank": 27,
-        "rrfScore": 0.011494252873563218,
-        "boost": 1.2999999999999998
-      }
-    },
-    {
       "id": "community-14218665",
-      "text": "ABAP SALV Table with Checkbox Column, Select/Desel...\n\n...STRING format for attachment METHOD convert_itab_to_xls_xstring. TRY. cl_salv_table=>factory( EXPORTING list_display = abap _false IMPORTING r...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/abap-salv-table-with-checkbox-column-select-deselect-all-and-email-export/ba-p/14218665?search-action-id=497478072458&search-result-uid=14218665",
+      "text": "ABAP SALV Table with Checkbox Column, Select/Desel...\n\n...STRING format for attachment METHOD convert_itab_to_xls_xstring. TRY. cl_salv_table=>factory( EXPORTING list_display = abap _false IMPORTING r...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/abap-salv-table-with-checkbox-column-select-deselect-all-and-email-export/ba-p/14218665?search-action-id=498798938228&search-result-uid=14218665",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/abap-salv-table-with-checkbox-column-select-deselect-all-and-email-export/ba-p/14218665?search-action-id=497478072458&search-result-uid=14218665",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/abap-salv-table-with-checkbox-column-select-deselect-all-and-email-export/ba-p/14218665?search-action-id=498798938228&search-result-uid=14218665",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -753,10 +753,10 @@
     },
     {
       "id": "community-13361128",
-      "text": "New ABAP Table Sum\n\nNew vs . Old ABAP Table Summarizing &nbsp; Introduction &nbsp; In this blog series, the goal is to focus on comparing older ABAP language features with a detailed explanation of t...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/new-abap-table-sum/ba-p/13361128?search-action-id=497478072458&search-result-uid=13361128",
+      "text": "New ABAP Table Sum\n\nNew vs . Old ABAP Table Summarizing &nbsp; Introduction &nbsp; In this blog series, the goal is to focus on comparing older ABAP language features with a detailed explanation of t...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/new-abap-table-sum/ba-p/13361128?search-action-id=498798938228&search-result-uid=13361128",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/new-abap-table-sum/ba-p/13361128?search-action-id=497478072458&search-result-uid=13361128",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/new-abap-table-sum/ba-p/13361128?search-action-id=498798938228&search-result-uid=13361128",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -784,10 +784,10 @@
     },
     {
       "id": "community-12991656",
-      "text": "Crossing the Great Divide - Procedural vs OO ABAP ...\n\n...e just like they were reading the specification. That does mean breaking a lot of my normal rules, on naming for example, and words like IMPORTING and EXPORTING aren't part of normal sentences so you w...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/crossing-the-great-divide-procedural-vs-oo-abap-programming/ba-p/12991656?search-action-id=497478072458&search-result-uid=12991656",
+      "text": "Crossing the Great Divide - Procedural vs OO ABAP ...\n\n...e just like they were reading the specification. That does mean breaking a lot of my normal rules, on naming for example, and words like IMPORTING and EXPORTING aren't part of normal sentences so you w...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/crossing-the-great-divide-procedural-vs-oo-abap-programming/ba-p/12991656?search-action-id=498798938228&search-result-uid=12991656",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/crossing-the-great-divide-procedural-vs-oo-abap-programming/ba-p/12991656?search-action-id=497478072458&search-result-uid=12991656",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/crossing-the-great-divide-procedural-vs-oo-abap-programming/ba-p/12991656?search-action-id=498798938228&search-result-uid=12991656",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "BAPI BAPI_TRANSACTION_COMMIT BAPI_TRANSACTION_ROLLBACK",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-02-01T20:19:13.519Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENABP_CL_ABAP_BEH_SAVER_FAILED",
+      "text": "ABENABP_CL_ABAP_BEH_SAVER_FAILED\n\nSyntax for [unmanaged](ABENBDL_IMPL_TYPE.html) scenarios. The `adjust_numbers` method is only available for [`late numbering`](ABENBDL_LATE_NUMBERING.html) scenarios. See more methods that can be implemented [here](ABENABP_CL_ABAP_BEH_HANDLER.html). Syntax for managed scenarios with [additional or unmanaged save](ABENBDL_SAVING.html). See more methods that can be implemented [here](ABENABP_CL_ABAP\n\n/abap-docs-standard/ABENABP_CL_ABAP_BEH_SAVER_FAILED",
+      "bm25": -9.363170302600508,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABP_CL_ABAP_BEH_SAVER_FAILED",
+      "relFile": "ABENABP_CL_ABAP_BEH_SAVER_FAILED.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.363170302600508,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-d22e819479bd4043941d611508c321e6",
+      "text": "Using BAPI Functions\n\nExecution\n\n\nOn commit or rollback, if there were <b>BAPI</b> calls since last commit or rollback, the <b>BAPI_TRANSACTION_COMMIT</b> or <b>BAPI_TRANSACTION_ROLLBACK</b> is\ncalled. ... Using <b>BAPI</b> Functions\nThe SAP ABAP adapter supports calling <b>BAPI</b> functions as virtual procedures. \n\nYou can call <b>BAPI</b> functions through virtual procedures. ... The following example creates a virtual procedure named <b>BAPI_TRANSACTION_COMMIT</b> with the transaction context set\nto close:CREATE VIRTUAL PROCEDURE <b>BAPI_TRANSACTION_COMMIT</b> (\n  IN WAIT NVARCHAR(1),\n  OUT ...  — Product: SAP HANA Smart Data Integration and SAP HANA Smart Data Quality (2.8.2 (SPS 08))\n\nhttps://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/cc7ebd3f344a4cdda20966a7617f52d8/d22e819479bd4043941d611508c321e6.html?locale=en-US&state=PRODUCTION&version=2.0_SPS08",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/HANA_SMART_DATA_INTEGRATION/cc7ebd3f344a4cdda20966a7617f52d8/d22e819479bd4043941d611508c321e6.html?locale=en-US&state=PRODUCTION&version=2.0_SPS08",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353526184",
+      "text": "BAPI_TRANSACTION_COMMIT versus COMMIT WORK\n\nThe same kind of logic applies to the rollback: you must call <b>BAPI_TRANSACTION_ROLLBACK</b> instead of ROLLBACK WORK. It\n  will empty the <b>BAPI</b> buffer too. ... So <b>BAPI_TRANSACTION_COMMIT</b> additionally refreshes a &quot;<b>BAPI</b> buffer&quot;. ... Here is what <b>BAPI</b> buffer is for: \tAssuming your program calls <b>BAPIs</b> consecutively and use a COMMIT WORK/<b>BAPI_TRANSACTION_COMMIT</b> only at the end\n        so that to commit all <b>BAPI</b> updates once (better performance ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353526184.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353526184.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBUSINESS_APP_PROG_INTER_GLOSRY",
+      "text": "ABENBUSINESS_APP_PROG_INTER_GLOSRY\n\nBAPI for short. A predefined interface to data and processes of an SAP application that is stored in the business object repository with the basic functions *Create Objects*, *Query Object Properties*, and *Change Object Properties*. BAPIs are implemented using remotely called [function modules](ABENFUNCTION_MODULE_GLOSRY.html) with the naming convention `BAPI_business_object_name_method_name` tha\n\n/abap-docs-standard/ABENBUSINESS_APP_PROG_INTER_GLOSRY",
+      "bm25": -10.939409386994178,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBUSINESS_APP_PROG_INTER_GLOSRY",
+      "relFile": "ABENBUSINESS_APP_PROG_INTER_GLOSRY.md",
+      "finalScore": 0.036065573770491806,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.939409386994178,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-076b205537c53e6ae10000000a44176d",
+      "text": "Creating a CIAP Record Using the CIAP BAPI\n\nConsider using the\n<b>BAPI_TRANSACTION_COMMIT</b> and the\n<b>BAPI_TRANSACTION_ROLLBACK</b> if\nyou have called at least one <b>BAPI</b> function module. ... For more information see\n<b>BAPI_TRANSACTION_COMMIT</b> versus COMMIT WORK.\n\n\n \n Process\nThe process for creating records using this <b>BAPI</b> differs from the standard process for record creation. ... Creating a CIAP Record Using the CIAP <b>BAPI</b>\n Use\nYou can create CIAP records using the BAPI_CIAP_RECORD_CREATE <b>BAPI</b> for notas fiscais that do not have any records assigned to them. ...  — Product: SAP ERP (6.0 EHP8 Latest)\n\nhttps://help.sap.com/docs/SAP_ERP/7de135920d6b44298b1d498e57882cf6/076b205537c53e6ae10000000a44176d.html?locale=en-US&state=PRODUCTION&version=6.18.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_ERP/7de135920d6b44298b1d498e57882cf6/076b205537c53e6ae10000000a44176d.html?locale=en-US&state=PRODUCTION&version=6.18.latest",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-51cca23808074600844d3aaa171f94b6",
+      "text": "Authorizations for Communication with SAP Convergent Charging\n\n<b>BAPI_TRANSACTION_COMMIT</b>\tS_RFC\tRFC_NAME\t<b>BAPI_TRANSACTION_COMMIT</b>\t\n\t<b>BAPI_TRANSACTION_COMMIT</b>\tS_RFC\tACTVT\t\n16\n\t\n\t<b>BAPI_TRANSACTION_ROLLBACK</b>\tS_RFC\tRFC_TYPE\t\nFUNC\n\t<b>BAPI_TRANSACTION_ROLLBACK</b> is used to roll back ... <b>BAPI_TRANSACTION_ROLLBACK</b>\tS_RFC\tRFC_NAME\t<b>BAPI_TRANSACTION_ROLLBACK</b>\t\n\t<b>BAPI_TRANSACTION_ROLLBACK</b>\tS_RFC\tACTVT\t\n16\n\t\n\tDDIF_FIELDINFO_GET\tS_RFC\tRFC_TYPE\t\nFUNC\n\tDDIF_FIELDINFO_GET is used to retrieve the human ... S_RFC\tRFC_TYPE\t\nFUNC\n\t<b>BAPI_TRANSACTION_COMMIT</b> is used to commit the changes related to the creation of billable items and consumption\nitems. ...  — Product: SAP S/4HANA (2025 (Oct 2025))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/fc005cff24e9430691c1e05ffd5f0eee/51cca23808074600844d3aaa171f94b6.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/fc005cff24e9430691c1e05ffd5f0eee/51cca23808074600844d3aaa171f94b6.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-599a4bfb777d48388595610db941d64f",
+      "text": "General Methods (CL_APL_ECATT_API)\n\nExecutes <b>BAPI_TRANSACTION_COMMIT</b> ... Executes <b>BAPI_TRANSACTION_COMMIT</b> ... Executes <b>BAPI_TRANSACTION_ROLLBACK</b> ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/c6663103e6ad47dcb8bb830d85137077/599a4bfb777d48388595610db941d64f.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/c6663103e6ad47dcb8bb830d85137077/599a4bfb777d48388595610db941d64f.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-5c76048b04594888a47e74d35a91c08a",
+      "text": "RFC Receiver Adapter\n\nallowlisted in Cloud connector before using this\noption:\t<b>BAPI_TRANSACTION_COMMIT</b>\n\n\t<b>BAPI_TRANSACTION_ROLLBACK</b>\n\n\n\n\nCaution\n\nIf you enable this option for non-<b>BAPI</b> functions,\n<b>BAPI_TRANSACTION_COMMIT</b> can still ... The RFC adapter supports Synchronous RFC (sRFC) and transactional execution of function\nmodule (can execute <b>BAPI_TRANSACTION_COMMIT</b>/<b>BAPI_TRANSACTION_ROLLBACK</b>). tRFC\nis not supported in Neo and\nCloud Foundry ... You can enable this option if you want to support <b>BAPI</b> functions\nthat require <b>BAPI_TRANSACTION_COMMIT</b> to be invoked implicitly by the\nRFC receiver adapter.Note\n\nEnsure the following ABAP functions are ...  — Product: SAP Cloud Integration (Cloud)\n\nhttps://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5c76048b04594888a47e74d35a91c08a.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5c76048b04594888a47e74d35a91c08a.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-6bbd69968baa4c1d99e5d87930d8d73a",
+      "text": "Technical Conditions for Loading Specifications from SAP S/4HANA\n\n<b>BAPI_TRANSACTION_ROLLBACK</b>\n\n\n\n\n\nAuthorization\n\n\nFor SAP S/4HANA integration, you need\nstandard SAP S/4HANA\nauthorization settings. ... Unexpected exception during completion of member * in ChangeSet\n*\n\t<b>BAPI_TRANSACTION_COMMIT</b> is missing from the Cloud Connector\nresources. ... Error message\n\tSolution\n\n\tUnexpected exception during cancellation of member * in ChangeSet\n*\n\t<b>BAPI_TRANSACTION_ROLLBACK</b> is missing from the Cloud Connector\nresources. ...  — Product: SAP Integrated Product Development (Cloud)\n\nhttps://help.sap.com/docs/PLM_EPD/1bfdb8b2f0264b66a818a2a889ee8c31/6bbd69968baa4c1d99e5d87930d8d73a.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/PLM_EPD/1bfdb8b2f0264b66a818a2a889ee8c31/6bbd69968baa4c1d99e5d87930d8d73a.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-c8e80440a832e369e10000000a155106",
+      "text": " Configuring the Receiver RFC Adapter\n\nIf you want to use this communication channel to call <b>BAPIs</b> as remote-enabled function modules that change the data in the database, choose Commit Handling for Single <b>BAPI</b> Calls . ... If an error occurs, the transaction is rolled back by <b>BAPI_TRANSACTION_ROLLBACK</b>.\n\nThe result is determined by the value of the field TYPE in parameter RETURN. ... Adapter sets the WAIT input parameter for <b>BAPI_TRANSACTION_COMMIT</b> to true. ...  — Product: SAP NetWeaver 7.3 EHP1 (SPS33)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_731/5cf7d2de571a45cc81f91261668b7361/c8e80440a832e369e10000000a155106.html?locale=en-US&state=PRODUCTION&version=7.31.33",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_731/5cf7d2de571a45cc81f91261668b7361/c8e80440a832e369e10000000a155106.html?locale=en-US&state=PRODUCTION&version=7.31.33",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-7c97794d6364459e91b7f8633ee0e440",
+      "text": "Configuring the Transfer of Order Proposals from SAP Predictive Replenishment to SAP S/4HANA\n\nAlso, expose these <b>BAPIs</b>:\tBAPI_PO_CREATE1\n\n\t<b>BAPI_TRANSACTION_COMMIT</b> \n\n\t<b>BAPI_TRANSACTION_ROLLBACK</b>\n\n\n\n\n\nPerform the following steps to set up the destination:\tEnter the name rfc_to_bapi_create_po. ... ,&rdquo; with refactored logic to connect to <b>BAPI</b> instead of the\nOData V2 <b>API</b>. ... PO Transfer via <b>BAPI</b> Channel\nAfter configuring the new destination, all future Purchase\nOrder (PO) transfers will go through the new <b>BAPI</b> channel. ...  — Product: SAP Predictive Replenishment (Latest)\n\nhttps://help.sap.com/docs/PRP/6471b1898d8644f8921eb141943de948/7c97794d6364459e91b7f8633ee0e440.html?locale=en-US&state=PRODUCTION&version=Latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/PRP/6471b1898d8644f8921eb141943de948/7c97794d6364459e91b7f8633ee0e440.html?locale=en-US&state=PRODUCTION&version=Latest",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3363507284",
+      "text": "Schema for BAPI_BUS1077_CREATE...CHANGE...DELETE in Custom Programs\n\nCALL FUNCTION '<b>BAPI_TRANSACTION_COMMIT</b>'\n      EXPORTING\n        WAIT = 'X'. ... Related Articles\n\n1726346&nbsp;-&nbsp;Example program\n  for specification <b>BAPIs</b> issues errors\n\n1492413&nbsp;-&nbsp;Example programs\n  for specification <b>BAPIs</b> with change no.\n\n1247216&nbsp;-&nbsp;Specification\n  <b>BAPI</b>/<b>API</b> and inheritance ... : Important notes\n\n1111161&nbsp;-&nbsp;FAQs when you are\n  working with specification <b>BAPIs</b>\n\n1074977&nbsp;-&nbsp;Example programs\n  for specification <b>BAPIs</b>\n\n1071008 - Sample code for\n  AT_SAVE_CHECK of <b>BAdI</b> EHSS_SPEC_CHECKS ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/plm/3363507284.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/plm/3363507284.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_advanced#sap-komponenten-wie-bapis-funktionsbausteine-in-unit-test",
+      "text": "SAP Komponenten wie BAPIs & Funktionsbausteine in Unit Test\n\nSollten Sie in Ihren Komponenten- oder Integrationstests darauf angewiesen sein, dass ein Funktionsbaustein oder eine Klasse von SAP einen Schritt ausführt, der Teil Ihres Tests sein soll, ist es meist nötig, wiederholbare und stabile Testdaten in den relevanten Tabellen zu haben. siehe [Mocking von...\n\n/dsag-abap-leitfaden/testing/abap_unit_advanced#sap-komponenten-wie-bapis-funktionsbausteine-in-unit-test",
+      "bm25": -9.91164256986334,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_advanced#sap-komponenten-wie-bapis-funktionsbausteine-in-unit-test",
+      "relFile": "testing/abap_unit_advanced.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.91164256986334,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-794-EML",
+      "text": "ABENNEWS-794-EML\n\nThe [RAP saver class](ABENABP_SAVER_CLASS_GLOSRY.html)\\\\ [`CL_ABAP_BEHAVIOR_SAVER_FAILED`](ABENABP_CL_ABAP_BEH_SAVER_FAILED.html) has been released with the [C1 release contract](ABENC1_CONTRACT_GLOSRY.html) for the ABAP language version [ABAP for Cloud Development](ABENABAP_FOR_CLOUD_DEV_GLOSRY.html). See the blog post [*Using BAPIs in RAP*](https://blogs.sap.com/2022/11/30/using-bapis-in-rap/) f\n\n/abap-docs-standard/ABENNEWS-794-EML",
+      "bm25": -10.713405686560707,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-794-EML",
+      "relFile": "ABENNEWS-794-EML.md",
+      "finalScore": 0.027419354838709675,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.713405686560707,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#update",
+      "text": "update\n\nThe update method gets a table of type FOR UPDATE Booking. <pre>  METHOD update.\n\n/abap-platform-rap-opensap/week4/unit3#update",
+      "bm25": -7.577495228667918,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#update",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.025373134328358207,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.577495228667918,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-13301176",
+      "text": "BAPI for Accounting Document Post and Reverse\n\n...read table it_return into wa_return with key type = 'E'. if sy-subrc = 0. &nbsp; call function ' BAPI_TRANSACTION_ROLLBACK '. &nbsp; perform frm_message_display. else. &nbsp; call function ' BAPI_TRANSACTION_COMMIT ...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/bapi-for-accounting-document-post-and-reverse/ba-p/13301176?search-action-id=498799931555&search-result-uid=13301176",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/bapi-for-accounting-document-post-and-reverse/ba-p/13301176?search-action-id=498799931555&search-result-uid=13301176",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#solution",
+      "text": "Solution\n\nFind the source code of the created entities in the **[/sources/](/week4/sources)** folder: - [W4U3_BDEF_ZI_RAP_TRAVEL_U_####.txt](/week4/sources/W4U3_BDEF_ZI_RAP_TRAVEL_U_%23%23%23%23.txt) - [W4U3_TABL_zsrap_travel_x_####.txt](/week4/sources/W4U3_TABL_zsrap_travel_x_%23%23%23%23.txt)\n\n/abap-platform-rap-opensap/week4/unit3#solution",
+      "bm25": -7.564335938123318,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#solution",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.024999999999999998,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.564335938123318,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-13213108",
+      "text": "Create a Material with reference using BAPI\n\n...RTDATA = * PRTDATAX = * EXTENSIONIN = * EXTENSIONINX = &nbsp; if tab_return-type = 'S'. CALL FUNCTION ' BAPI_TRANSACTION_COMMIT ' EXPORTING WAIT = 'X'. else. CALL FUNCTION ' BAPI_TRANSACTION_ROLLBACK ...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/create-a-material-with-reference-using-bapi/ba-p/13213108?search-action-id=498799931555&search-result-uid=13213108",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/create-a-material-with-reference-using-bapi/ba-p/13213108?search-action-id=498799931555&search-result-uid=13213108",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3",
+      "text": "Defining and Implementing the Business Object Behavior\n\nIn this hands-on exercise, you will define and implement the behavior of our (unmanaged) business object.\n\n/abap-platform-rap-opensap/week4/unit3",
+      "bm25": -7.562315487510894,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02463768115942029,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.562315487510894,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-13476865",
+      "text": "Implementing BAPI Calls in SAP S/4HANA On-Premise ...\n\n..._PR_CREATE\", \" TRANSACT ION_COMMIT\": \" BAPI_TRANSACTION_COMMIT \", \"PR_HEADER\" : \"PRHEADER\", \"WAIT\" : \"WAIT\" }, \"excelToBapiMapping\": { \"header\" : { \"PurchaseRequisitionType\" : \"P...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/implementing-bapi-calls-in-sap-s-4hana-on-premise-systems-using-create/ba-p/13476865?search-action-id=498799931555&search-result-uid=13476865",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/implementing-bapi-calls-in-sap-s-4hana-on-premise-systems-using-create/ba-p/13476865?search-action-id=498799931555&search-result-uid=13476865",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#lock",
+      "text": "Lock\n\nWe also have implemented the lock method, which would perform a locking in order to avoid, when an update is performed, that there are two updates happening at the same time. <pre>   METHOD lock.\n\n/abap-platform-rap-opensap/week4/unit3#lock",
+      "bm25": -7.557269079912904,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#lock",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.024285714285714285,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.557269079912904,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#step5-implement-the-remaining-methods-for-the-travel-entity",
+      "text": "Step5. Implement the remaining methods for the Travel entity\n\nWhat is now left is the implementation of all the other methods. Please replace the methods in your class with copy and paste from the code sections below.\n\n/abap-platform-rap-opensap/week4/unit3#step5-implement-the-remaining-methods-for-the-travel-entity",
+      "bm25": -7.555252402180266,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#step5-implement-the-remaining-methods-for-the-travel-entity",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.023943661971830985,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.555252402180266,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#read-by-association-rba-booking",
+      "text": "read by association - rba_Booking\n\nAnd last but not least, there is coding for the read by association booking, similar to the read method for the Travel entity. This would read booking data from the buffer.  <pre>   METHOD rba_Booking.\n\n/abap-platform-rap-opensap/week4/unit3#read-by-association-rba-booking",
+      "bm25": -7.554244466877041,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#read-by-association-rba-booking",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02361111111111111,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.554244466877041,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#delete",
+      "text": "delete\n\nThe delete methods get a list of keys `travelid` and `bookingid` of the booking entities that shall be deleted. To delete booking entities using the legacy API we will use the function module `/DMO/FLIGHT_TRAVEL_UPDATE`.  <pre>   METHOD delete.\n\n/abap-platform-rap-opensap/week4/unit3#delete",
+      "bm25": -7.553236800472325,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#delete",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02328767123287671,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.553236800472325,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#create-control-structures",
+      "text": "Create control structures\n\nWhat is now left is to create two control structures **`zsrap_travel_x_####`**  and **`zsrap_booking_x_####`** needed for the mappings in the Behavior Definition. 1. Right click on the package and select **New > Other ABAP Repository Object** ![Add structure](images/w4u3_01_13.png)\n\n/abap-platform-rap-opensap/week4/unit3#create-control-structures",
+      "bm25": -7.552229402858528,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#create-control-structures",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.022972972972972974,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.552229402858528,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#komponententests",
+      "text": "Komponententests\n\nTests ganzer Klassen oder zusammenhängender Komponenten wie eine Klasse und ein BAPI zur Verbuchung. Diese Tests sind häufig von der Datenbank abhängig. Hier sollte mit entsprechenden Techniken gearbeitet werden um einen konsistenten Datenbankzustand für jeden Test herzustellen.   Hierzu eignen sich...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#komponententests",
+      "bm25": -8.582256860780138,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#komponententests",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.022727272727272728,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.582256860780138,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#summary",
+      "text": "Summary\n\nYou have completed the exercise!   In this unit have defined an **unmanaged** RAP business object and you have implemented operations, namely **Create**, **Update**, **Delete**, **Read**, **Lock**, **CBA** and **RBA** in both, the behavior implementation class for the Travel entity as well in the be...\n\n/abap-platform-rap-opensap/week4/unit3#summary",
+      "bm25": -7.547196442891654,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#summary",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02266666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.547196442891654,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_GLOSSARY",
+      "text": "ABENABAP_GLOSSARY\n\n*[ABAP](ABENTECHNO_GLOSSARY.html)*, *[ABAP Language](ABENABALA_GLOSSARY.html)*, *[ABAP SQL](ABENSQL_GLOSSARY.html)*, *[AMDP](ABENAMDP_GLOSSARY.html)*, *[CDS](ABENCDS_GLOSSARY.html)*, *[DDIC](ABENDDIC_GLOSSARY.html)*, *[RAP](ABENRAP_GLOSSARY.html)*, *[SAP GUI](ABENSAP_GUI_GLOSSARY.html)* -   [ABAP](ABENABAP_GLOSRY.html) -   [ABAP Analytical Engine](ABENABAP_AE_GLOSRY.html)\n\n/abap-docs-standard/ABENABAP_GLOSSARY",
+      "bm25": -5.63376365405594,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_GLOSSARY",
+      "relFile": "ABENABAP_GLOSSARY.md",
+      "finalScore": 0.02252252252252252,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -5.63376365405594,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#introduction",
+      "text": "Introduction\n\nIn this hands-on exercise, you will define and implement the behavior of our (unmanaged) business object.  We will add a behavior to our business object **ZI_RAP_Travel_U_####** by creating a Behavior Definition (short BDEF) and a Behavior Implementation class (short BIL). We will test the implement...\n\n/abap-platform-rap-opensap/week4/unit3#introduction",
+      "bm25": -7.544179885529209,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#introduction",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.022368421052631576,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.544179885529209,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#step-1-create-behavior-definition-for-interface-view-zi-rap-travel-",
+      "text": "Step 1. Create Behavior Definition for Interface View ZI_RAP_TRAVEL_####\n\n1. Right click on the root view **`ZI_RAP_Travel_U_####`** of your business object and choose **`New Behavior Definition`** from the context menu.   ![Create Behavior Definition_1](images/w4u3_01_01.png) 2. Here we must change the default setting **`Managed**`** for the **Implementation Type** to **...\n\n/abap-platform-rap-opensap/week4/unit3#step-1-create-behavior-definition-for-interface-view-zi-rap-travel-",
+      "bm25": -7.543174902201531,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#step-1-create-behavior-definition-for-interface-view-zi-rap-travel-",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02207792207792208,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.543174902201531,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#rba-travel",
+      "text": "rba_travel\n\nThis method reads the details of a parent travel entity when a booking entity is updated because we have defined in the behavior definition that the etag for the booking entity does depend on the etag of the parent entity Travel. <pre> define behavior for ZI_RAP_Booking_U_1234 alias Booking\n\n/abap-platform-rap-opensap/week4/unit3#rba-travel",
+      "bm25": -7.543174902201531,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#rba-travel",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.021794871794871794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.543174902201531,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#read",
+      "text": "Read\n\nThe read method is used to read data from the buffer rather than from the database. This is for example needed, when doing updates, because we are using ETags. The function module `/DMO/FLIGHT_TRAVEL_READ` is used to read the data from the buffer of our legacy API. <pre>  METHOD read.\n\n/abap-platform-rap-opensap/week4/unit3#read",
+      "bm25": -7.54217018659201,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#read",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.021518987341772152,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.54217018659201,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#step6-implement-the-methods-for-the-booking-entity",
+      "text": "Step6. Implement the methods for the Booking entity\n\nNow we create the behavior implementation class for the Booking entity.   1. Activate your behavior definition by pressing the **Activate** button ![Activate](images/adt_activate.png) if you have not already done so.  2. In order to create the behavior implementation class for the booking entity, we...\n\n/abap-platform-rap-opensap/week4/unit3#step6-implement-the-methods-for-the-booking-entity",
+      "bm25": -7.540161558099642,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#step6-implement-the-methods-for-the-booking-entity",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.540161558099642,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#create-mappings",
+      "text": "Create mappings\n\nAs a final step we can specify the mapping between the CDS view field names and the field names that are used by our legacy business logic, that means by our function modules that we use to create, update and delete travel data. > [Further reading: Using Type and Control Mapping](https://help.sap.co...\n\n/abap-platform-rap-opensap/week4/unit3#create-mappings",
+      "bm25": -7.538153999197091,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#create-mappings",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.02098765432098765,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.538153999197091,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#create-by-association-cba-booking",
+      "text": "create by association - cba_Booking\n\nIn our demo application, we assume that new bookings cannot be created separately but can only in conjunction with a given travel instance. The fact that new instances of the bookings can only be created for a specific travel instance is considered in the behavior definition by the _Booking associat...\n\n/abap-platform-rap-opensap/week4/unit3#create-by-association-cba-booking",
+      "bm25": -7.538153999197091,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#create-by-association-cba-booking",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.020731707317073172,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.538153999197091,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#step-4-testing-the-bo-with-eml",
+      "text": "Step 4. Testing the BO with EML\n\nSo, how are we now going to test whether our implementation works? We could either proceed as we did last time, that means we could publish the service and then use the preview functionality to test the service. Here we will show a different way. We will first start to implement a unit test, which i...\n\n/abap-platform-rap-opensap/week4/unit3#step-4-testing-the-bo-with-eml",
+      "bm25": -7.529133197430263,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#step-4-testing-the-bo-with-eml",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.020481927710843374,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.529133197430263,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week4/unit3#step-3-create-and-implement-the-behavior-implementation-bil-class-for-the-travel-entity",
+      "text": "Step 3. Create and implement the behavior implementation (BIL) class for the Travel entity\n\nNow we create the behavior implementation class, but since the coding for the BDEF is not yet active, we have first to activate it. And then we can press, again, CTRL+1 and create the behavior implementation class for the travel.  1. Activate your behavior definition by pressing the **Activate** but...\n\n/abap-platform-rap-opensap/week4/unit3#step-3-create-and-implement-the-behavior-implementation-bil-class-for-the-travel-entity",
+      "bm25": -7.527131506028954,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week4/unit3#step-3-create-and-implement-the-behavior-implementation-bil-class-for-the-travel-entity",
+      "relFile": "week4/unit3.md",
+      "finalScore": 0.020238095238095236,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.527131506028954,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/abap/modern_development#verwendung-von-sap-code-gesetz-von-demeter",
+      "text": "Verwendung von SAP Code - Gesetz von Demeter\n\nDie Verwendung von SAP-Code (Klassen, Funktionsbausteinen, BAPIs, etc.) oder auch paketfremder Code, sollte immer in einer eigenen Zugriffsschicht liegen. Dies entspricht dann auch einer sauberen Trennung der Belange (S - Separation of Concerns).   Dies entspricht der Entwurfsrichtlinie der Objektor...\n\n/dsag-abap-leitfaden/abap/modern_development#verwendung-von-sap-code-gesetz-von-demeter",
+      "bm25": -7.160010045080609,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/abap/modern_development#verwendung-von-sap-code-gesetz-von-demeter",
+      "relFile": "abap/modern_development.md",
+      "finalScore": 0.01764705882352941,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.160010045080609,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods",
+      "text": "Grundlagen zu Unit Tests\n\n{: .no_toc}\n\n/dsag-abap-leitfaden/testing/abap_unit_methods",
+      "bm25": -6.696751699614322,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.01744186046511628,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.696751699614322,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#skills-die-beim-arbeiten-mit-unit-tests-trainiert-werden",
+      "text": "Skills, die beim Arbeiten mit Unit Tests trainiert werden\n\n* Objektorientiertes Design z.B. lose Kopplung * Erstellen von testbaren Designs (Inversion of Control & Dependency Injection) * Agile Prinzipien und Methoden der Software Entwicklung z.B. ( S.O.L.I.D )\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#skills-die-beim-arbeiten-mit-unit-tests-trainiert-werden",
+      "bm25": -6.6683608470594855,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#skills-die-beim-arbeiten-mit-unit-tests-trainiert-werden",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.017241379310344827,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.6683608470594855,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#voraussetzungen-f-r-abap-unit-tests",
+      "text": "Voraussetzungen für ABAP Unit Tests\n\nNachdem im vorigen Abschnitt Herausforderungen und Voraussetzungen vor allem organisatorischer Art angesprochen wurden, gehen wir Im Folgenden Abschnitt auf technische Aspekte und Belange ein, die zu berücksichtigen sind, um erfolgreich ABAP Unit Tests zum Einsatz zu bringen.\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#voraussetzungen-f-r-abap-unit-tests",
+      "bm25": -6.6566022474303885,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#voraussetzungen-f-r-abap-unit-tests",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.017045454545454544,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.6566022474303885,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#was-sind-unit-tests-genau-",
+      "text": "Was sind Unit Tests genau?\n\nUnit Tests sind Funktionen, die modularisierte Einheiten (Methoden, Funktionsbausteine) oder ganze Prozesse mit vorgegebenen Funktionen aufrufen und das Ergebnis mit den erwarteten Vorgaben abgleichen.  Folgendes Beispiel demonstriert die Vorgehensweise: Es gibt eine Klasse mit einer Methode, die au...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#was-sind-unit-tests-genau-",
+      "bm25": -6.6554286678527355,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#was-sind-unit-tests-genau-",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.016853932584269662,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.6554286678527355,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#integrationstests",
+      "text": "Integrationstests\n\nBei Integrationstests werden Teile von oder ganze Prozesse getestet, um das Zusammenspiel der Komponenten abzusichern.  Diese Tests sind oft davon gekennzeichnet, dass die Vorbereitung der Ausgangslage an Daten aufwändig ist. Es wird benötigt: Kunde mit Liefersperre, Material ohne bestand, aber mit ...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#integrationstests",
+      "bm25": -6.6554286678527355,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#integrationstests",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.016666666666666666,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.6554286678527355,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#einstieg",
+      "text": "Einstieg\n\nUnit Tests sind wichtig. Das Erstellen, Verwalten und Entwickeln von Unit Tests erfordert umfangreiche Kenntnisse, die über das reine Schreiben von ABAP hinaus gehen. Das widerspricht der Aussage, dass sich dieses Kapitel an alle Programmierende richtet, unabhängig vom Wissensstand. Das ist jedoch n...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#einstieg",
+      "bm25": -6.654255502013562,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#einstieg",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.016483516483516484,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.654255502013562,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#methoden-tests",
+      "text": "Methoden Tests\n\nTests einzelner Methoden mit dem Fokus die korrekte Arbeitsweise der Methoden sicher zu stellen. Die Tests sollten unbedingt unabhängig von der Datenbank ausgeführt werden.   Aus dieser Definition ergeben sich bereits oft die ersten Grundlagen für ein Refactoring, da viele Methoden mehrere Aufgaben ...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#methoden-tests",
+      "bm25": -6.653082749694115,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#methoden-tests",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.016304347826086956,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.653082749694115,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#mocking",
+      "text": "Mocking\n\nEin sehr wichtiger und hier oft erwähnter Begriff ist das sogenannte Mocking. Generell versteht man unter Mocking, dass Objekte wie z.B: Funktionsbausteine oder Klassen von SAP, die nicht Teil des Unit-Tests sind, durch Stellvertreterobjekte ersetzt werden. Wie ein Mocking erreicht wird, wird in ein...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#mocking",
+      "bm25": -6.6519104106757965,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#mocking",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.016129032258064516,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.6519104106757965,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#tdd-test-driven-development-",
+      "text": "TDD (Test-Driven-Development)\n\nWenn das Stichwort \"Unit Tests\" fällt, kommt es fast unweigerlich auch zu dem Thema _Test Driven Development_, kurz _TDD_. TDD ist ein Programmiervorgehen, bei dem - vereinfacht - zuerst definiert wird, welche Eingaben einer Funktion zu welchen Ergebnissen führen soll. Erst danach wird die Implement...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#tdd-test-driven-development-",
+      "bm25": -6.650738484740162,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#tdd-test-driven-development-",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.015957446808510637,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.650738484740162,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#code-abdeckung-coverage-",
+      "text": "Code-Abdeckung (coverage)\n\nIn den Entwicklungstools kann nachvollzogen werden, welche Code-Strecken beim Ausführen der Unit Tests durchlaufen wurden. Eine 100%-ige Codeabdeckung sollte dabei das Ziel sein. Bei vorhandenen Klassen, bei denen nicht auf die Trennung geachtet wurde, ist eine 100%-ige Testabdeckung kaum zu erreich...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#code-abdeckung-coverage-",
+      "bm25": -6.650738484740162,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#code-abdeckung-coverage-",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.015789473684210527,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.650738484740162,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#unit-tests-modularisieren",
+      "text": "Unit Tests modularisieren\n\nUnit Tests bestehen aus Code, der ebenso wie Produktcode, modularisiert, gewartet und erweitert werden muss. Es ist fast immer ratsam, einen Unit Test in kleine Methoden zu modularisieren, da es in der Natur der Tests liegt, dass mehrere Fälle identische Ausgangsdaten oder Absicherungen verwenden. D...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#unit-tests-modularisieren",
+      "bm25": -6.64956697166892,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#unit-tests-modularisieren",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.015625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.64956697166892,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap_unit_methods#clean-islands",
+      "text": "Clean Islands\n\nUm zu vermitteln, wie eine gute Umsetzung von Unit Tests aussehen kann, können so genannte _Clean Islands_ helfen. Es handelt sich dabei um Pakete oder Klassen die in Bezug auf die Softwarequalität - und auch Unit-Tests - einen Vorzeigestatus haben. Somit dienen sie als Referenz für Teams, Externe u...\n\n/dsag-abap-leitfaden/testing/abap_unit_methods#clean-islands",
+      "bm25": -6.647225183247218,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap_unit_methods#clean-islands",
+      "relFile": "testing/abap_unit_methods.md",
+      "finalScore": 0.015463917525773196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.647225183247218,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 0.5
+      }
+    }
+  ]
+}

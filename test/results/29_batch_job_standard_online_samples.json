@@ -1,0 +1,811 @@
+{
+  "meta": {
+    "query": "JOB_OPEN JOB_SUBMIT JOB_CLOSE background job scheduling",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-02-01T20:19:27.753Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT_VIA_JOB",
+      "text": "This statement\n\n`... [USER user] VIA JOB job NUMBER n [LANGUAGE lang] ...` This addition schedules the execution of the called program as a [background task](ABENBACKROUND_TASK_GLOSRY.html) with the number `n` in the [background request](ABENBACKROUND_REQUEST_GLOSRY.html)\\\\ `job`. The number `n` for a background request `job` must be obtained using the function module `JOB_OPEN` from the function pool `BTCH`. The\n\n/abap-docs-standard/ABAPSUBMIT_VIA_JOB",
+      "bm25": -87.36650121922683,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT_VIA_JOB",
+      "relFile": "ABAPSUBMIT_VIA_JOB.md",
+      "finalScore": 0.06557377049180328,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -87.36650121922683,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-761-OTHERS",
+      "text": "ABENNEWS-761-OTHERS\n\nThe new addition `LANGUAGE` of the statement [`SUBMIT VIA JOB`](ABAPSUBMIT_VIA_JOB.html) makes it possible to set the [logon language](ABENLOGON_LANGUAGE_GLOSRY.html) of the background session, which was previously only possible when using the function module `JOB_SUBMIT` directly. The method `SET_PARAM_TABLE` of the class `CL_SQL_STATEMENT`, used to access sets in [ADBC queries](ABENADBC_QUERY.ht\n\n/abap-docs-standard/ABENNEWS-761-OTHERS",
+      "bm25": -36.98283279255302,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-761-OTHERS",
+      "relFile": "ABENNEWS-761-OTHERS.md",
+      "finalScore": 0.05161290322580645,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -36.98283279255302,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_MESSAGE_BATCH_JOB",
+      "text": "ABENABAP_MESSAGE_BATCH_JOB\n\nIn [background processing](ABENBACKROUND_PROCESSING_GLOSRY.html), all messages are handled in accordance with the type specified in the statement `MESSAGE`. **Note** There is one exception. [During list processing](ABENABAP_MESSAGE_LIST_PROCESSING.html), a message of type *W* changes to type *E* before handling. Since background processing starts internally with the [*SUBMIT*](ABAPSUBMIT_VIA_JOB.h\n\n/abap-docs-standard/ABENABAP_MESSAGE_BATCH_JOB",
+      "bm25": -18.980478450448093,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_MESSAGE_BATCH_JOB",
+      "relFile": "ABENABAP_MESSAGE_BATCH_JOB.md",
+      "finalScore": 0.04477611940298507,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.980478450448093,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBACKROUND_JOB_GLOSRY",
+      "text": "ABENBACKROUND_JOB_GLOSRY\n\n*\\->*\\\\ [background request](ABENBACKROUND_REQUEST_GLOSRY.html) ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENBACKROUND_JOB_GLOSRY",
+      "bm25": -19.153435644243004,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBACKROUND_JOB_GLOSRY",
+      "relFile": "ABENBACKROUND_JOB_GLOSRY.md",
+      "finalScore": 0.040909090909090916,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.153435644243004,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_ON_OFF",
+      "text": "Calling the program\n\nIf spooling is switched off, all list output is written to the list buffer for the current screen list. When spooling is switched on, a spool list is created. Spooling can be switched on as follows: If `NEW-PAGE PRINT ON` is used, spooling is switched on explicitly in the program. With the other three options, spooling is switched on from the start of execution of an executable program. Switching\n\n/abap-docs-standard/ABENPRINT_ON_OFF",
+      "bm25": -33.99173127066039,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_ON_OFF",
+      "relFile": "ABENPRINT_ON_OFF.md",
+      "finalScore": 0.0390625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -33.99173127066039,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSYSTEM_FIELDS_OBSOLETE",
+      "text": "ABENSYSTEM_FIELDS_OBSOLETE\n\nThe following [system fields](ABENSYSTEM_FIELD_GLOSRY.html) are obsolete and should no longer be used. Many originate from the R/2 era. The transition from R/2 to R/3 retained some system fields which are no longer provided with data. **Name** **Type** **Length** **Content** **Name** **Type** **Length** **Content** `sy-appli` `x` 2 In R/2, ID for which SAP applications are installed. No longer fil\n\n/abap-docs-standard/ABENSYSTEM_FIELDS_OBSOLETE",
+      "bm25": -30.28288127599674,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSYSTEM_FIELDS_OBSOLETE",
+      "relFile": "ABENSYSTEM_FIELDS_OBSOLETE.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.28288127599674,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT_SHORTREF",
+      "text": "ABAPSUBMIT_SHORTREF\n\n`SUBMIT \\{rep|(name)\\}\\    [USING SELECTION-SCREEN dynnr]\\    [VIA SELECTION-SCREEN]\\    [USING SELECTION-SET variant]\\    [USING SELECTION-SETS OF PROGRAM prog]\\    [WITH SELECTION-TABLE rspar]\\  \\{\\ [WITH sel1 \\{\\ \\{\\{EQ|NE|CP|NP|GE|LT|LE|GT\\} dobj [SIGN sign]\\}\\                |\\ \\{[NOT] BETWEEN dobj1 AND dobj2 [SIGN sign]\\}\\                |\\ \\{IN rtab\\}\\ \\}]\\    [WITH sel2 \\{\\ \\{\\{EQ|NE|CP|NP\n\n/abap-docs-standard/ABAPSUBMIT_SHORTREF",
+      "bm25": -17.94949696818834,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT_SHORTREF",
+      "relFile": "ABAPSUBMIT_SHORTREF.md",
+      "finalScore": 0.036231884057971016,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.94949696818834,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_MESSAGE_LIST_PROCESSING",
+      "text": "ABENABAP_MESSAGE_LIST_PROCESSING\n\nIn [list processing](ABENLIST_PROCESSING_GLOSRY.html), a message of type *W* is always converted to type *E* before further context-dependent handling takes place. The message is then handled in accordance with the other context. List processing is active in the following contexts with respect to messages: In programs called using `SUBMIT`, list processing is active, therefore, apart from when act\n\n/abap-docs-standard/ABENABAP_MESSAGE_LIST_PROCESSING",
+      "bm25": -15.330484248169453,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_MESSAGE_LIST_PROCESSING",
+      "relFile": "ABENABAP_MESSAGE_LIST_PROCESSING.md",
+      "finalScore": 0.033783783783783786,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.330484248169453,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENORGANIZATION_OF_MODULES",
+      "text": "ABENORGANIZATION_OF_MODULES\n\nABAP programs are executed on the [Application Server ABAP (AS ABAP)](ABENAS_ABAP_GLOSRY.html) of an [ABAP system](ABENABAP_SYSTEM_GLOSRY.html). The figure below shows a highly simplified representation of the AS ABAP as part of an ABAP system. The [AS ABAP](ABENAS_ABAP_GLOSRY.html) represents the application layer of the ABAP system. The AS ABAP is identified by a [system ID](ABENSYSTEM_ID_GLOSRY\n\n/abap-docs-standard/ABENORGANIZATION_OF_MODULES",
+      "bm25": -14.576446444884963,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENORGANIZATION_OF_MODULES",
+      "relFile": "ABENORGANIZATION_OF_MODULES.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.576446444884963,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_GLOSSARY",
+      "text": "ABENABAP_GLOSSARY\n\n*[ABAP](ABENTECHNO_GLOSSARY.html)*, *[ABAP Language](ABENABALA_GLOSSARY.html)*, *[ABAP SQL](ABENSQL_GLOSSARY.html)*, *[AMDP](ABENAMDP_GLOSSARY.html)*, *[CDS](ABENCDS_GLOSSARY.html)*, *[DDIC](ABENDDIC_GLOSSARY.html)*, *[RAP](ABENRAP_GLOSSARY.html)*, *[SAP GUI](ABENSAP_GUI_GLOSSARY.html)* -   [ABAP](ABENABAP_GLOSRY.html) -   [ABAP Analytical Engine](ABENABAP_AE_GLOSRY.html)\n\n/abap-docs-standard/ABENABAP_GLOSSARY",
+      "bm25": -13.71133827879317,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_GLOSSARY",
+      "relFile": "ABENABAP_GLOSSARY.md",
+      "finalScore": 0.03164556962025317,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.71133827879317,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBACKROUND_REQUEST_GLOSRY",
+      "text": "ABENBACKROUND_REQUEST_GLOSRY\n\nABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENBACKROUND_REQUEST_GLOSRY",
+      "bm25": -17.909973442376305,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBACKROUND_REQUEST_GLOSRY",
+      "relFile": "ABENBACKROUND_REQUEST_GLOSRY.md",
+      "finalScore": 0.03142857142857143,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.909973442376305,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT",
+      "text": "ABAPSUBMIT\n\nThe statement `SUBMIT` calls an [executable program](ABENEXECUTABLE_PROGRAM_GLOSRY.html). The executable program is executed as described under [Flow of an Executable Program](ABENREPORTING_PROCESS.html). Depending on the addition `AND RETURN`, the calling program is either ended or interrupted. If the called program contains a syntax error, an uncatchable exception is raised. The [name](ABENPROGR\n\n/abap-docs-standard/ABAPSUBMIT",
+      "bm25": -13.560057869401438,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT",
+      "relFile": "ABAPSUBMIT.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.560057869401438,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBACKROUND_PROCESSING_GLOSRY",
+      "text": "ABENBACKROUND_PROCESSING_GLOSRY\n\nExecution of [ABAP programs](ABENABAP_PROGRAM_GLOSRY.html) with defined settings in the background, that is, with no on-screen user dialog. In contrast to [dialog processing](ABENDIALOG_PROCESSING_GLOSRY.html), the execution process is predefined when the program is started. An [executable program](ABENEXECUTABLE_PROGRAM_GLOSRY.html) is scheduled in [ABAP Editor](ABENABAP_EDITOR_GLOSRY.html) or af\n\n/abap-docs-standard/ABENBACKROUND_PROCESSING_GLOSRY",
+      "bm25": -17.704167067620517,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBACKROUND_PROCESSING_GLOSRY",
+      "relFile": "ABENBACKROUND_PROCESSING_GLOSRY.md",
+      "finalScore": 0.03098591549295775,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.704167067620517,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_SPOOL",
+      "text": "ABENPRINT_SPOOL\n\nEvery output to a spool list is assigned to exactly one [spool request](ABENSPOOL_REQUEST_GLOSRY.html). For every spool request, [spool parameters](ABENPRINT_PARAMETERS.html) are specified that can no longer be changed. Spool lists can be stacked in spool list levels. A spool list level always has exactly one spool request assigned to it. The following operations create a new spool list level: Up\n\n/abap-docs-standard/ABENPRINT_SPOOL",
+      "bm25": -12.601503189206744,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_SPOOL",
+      "relFile": "ABENPRINT_SPOOL.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.601503189206744,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBATCH_SESSION_GLOSRY",
+      "text": "ABENBATCH_SESSION_GLOSRY\n\nABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENBATCH_SESSION_GLOSRY",
+      "bm25": -17.664591218622157,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBATCH_SESSION_GLOSRY",
+      "relFile": "ABENBATCH_SESSION_GLOSRY.md",
+      "finalScore": 0.030555555555555558,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.664591218622157,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPASSERT",
+      "text": "ABAPASSERT\n\nThis statement defines an [assertion](ABENASSERTION_GLOSRY.html). Any [logical expression](ABENLOGICAL_EXPRESSION_GLOSRY.html) can be specified for [`log_exp`](ABENLOGEXP.html). An assertion is either active or inactive. When the program reaches an active assertion, the logical expression is evaluated, and the program execution continues with the statement after `ASSERT` only if the result of `log\n\n/abap-docs-standard/ABAPASSERT",
+      "bm25": -12.353147833481463,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPASSERT",
+      "relFile": "ABAPASSERT.md",
+      "finalScore": 0.03048780487804878,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.353147833481463,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#application-jobs",
+      "text": "Application Jobs\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> CLASS zcl_demo_abap DEFINITION PUBLIC FINAL CREATE PUBLIC PUBLIC SECTION INTERFACES\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#application-jobs",
+      "bm25": -14.84562437645007,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#application-jobs",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.02894736842105263,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.84562437645007,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#running-code-in-the-background",
+      "text": "Running Code in the Background\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap CLASS zcl_demo_abap DEFINITION PUBLIC FINAL CREATE PUBLIC PUBLIC SECTION\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#running-code-in-the-background",
+      "bm25": -14.51052777600371,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#running-code-in-the-background",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.028205128205128206,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.51052777600371,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "community-14173195",
+      "text": "SAP S/4HANA Cloud: Scheduling Background Jobs Usin...\n\nIntroduction In traditional ECC systems, developers typically used SUBMIT statements or function modules like JOB_OPEN , JOB_SUBMIT , and JOB_CLOSE to schedul e background job s. However, with the e...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/sap-s-4hana-cloud-scheduling-background-jobs-using-application-job/ba-p/14173195?search-action-id=498800027242&search-result-uid=14173195",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-s-4hana-cloud-scheduling-background-jobs-using-application-job/ba-p/14173195?search-action-id=498800027242&search-result-uid=14173195",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-772-OTHERS",
+      "text": "ABENNEWS-772-OTHERS\n\nThe method `GET_ERROR_MESSAGE` of the class `CL_ABAP_SUBMIT_HANDLING` can now be used to read the last error message in cases where it was not possible to schedule a background task using [`SUBMIT VIA JOB`](ABAPSUBMIT_VIA_JOB.html). abenabap.html abennews.html abennews-77.html abennews-772.html\n\n/abap-docs-standard/ABENNEWS-772-OTHERS",
+      "bm25": -18.95906125072688,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-772-OTHERS",
+      "relFile": "ABENNEWS-772-OTHERS.md",
+      "finalScore": 0.024999999999999998,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.95906125072688,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-12873976",
+      "text": "Don't leave children unattended - How SAP Central ...\n\nHow to generate child job s The function modules JOB_OPEN , JOB_SUBMIT and JOB_CLOSE make sure job s&nbsp;can be schedul ed out of ABAP reports. But what happens if these reports are part of a job t...\n\nhttps://community.sap.com/t5/additional-blog-posts-by-sap/don-t-leave-children-unattended-how-sap-central-process-scheduling-by/ba-p/12873976?search-action-id=498800027242&search-result-uid=12873976",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/additional-blog-posts-by-sap/don-t-leave-children-unattended-how-sap-central-process-scheduling-by/ba-p/12873976?search-action-id=498800027242&search-result-uid=12873976",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13279512",
+      "text": "How to start a background job after the end of 2 o...\n\n...bsp;&nbsp; ENDIF. &nbsp;&nbsp;&nbsp; IF sy-index = 2. * The submit ted report will check for the end of job 1 and schedul e job 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SUBMIT zwo_mini_scheduler_sub VIA JOB l...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/how-to-start-a-background-job-after-the-end-of-2-other-jobs/ba-p/13279512?search-action-id=498800027242&search-result-uid=13279512",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/how-to-start-a-background-job-after-the-end-of-2-other-jobs/ba-p/13279512?search-action-id=498800027242&search-result-uid=13279512",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-753-OTHERS",
+      "text": "ABENNEWS-753-OTHERS\n\nIn ABAP release 7.53, a new [ABAP version](ABENABAP_VERSION_GLOSRY.html)\\\\ [ABAP for Cloud Development](ABENABAP_FOR_CLOUD_DEV_GLOSRY.html) was introduced. The internal version ID in the column `UCCHECK` of the system table `TRDIR` is *5*. The [ABAP language versions](ABENABAP_VERSION_GLOSRY.html) are now [obsolete](ABENABAP_VERSIONS_OBSOLETE.html) and should no longer be used.\n\n/abap-docs-standard/ABENNEWS-753-OTHERS",
+      "bm25": -16.463657519776632,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-753-OTHERS",
+      "relFile": "ABENNEWS-753-OTHERS.md",
+      "finalScore": 0.02328767123287671,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.463657519776632,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-30-LDB",
+      "text": "ABENNEWS-30-LDB\n\nThe addition `AS MATCHCODE STRUCTURE` of `PARAMETERS` makes it possible to use matchcode selection for a [logical database](ABENLOGICAL_DATA_BASE_GLOSRY.html). The standard selection screen contains a box with input fields for matchcode ID and search string. In the [database program](ABENDATABASE_PROGRAM_GLOSRY.html), selected records can be processed in the subroutine `PUT_xxx_MATCHCODE`. Matchco\n\n/abap-docs-standard/ABENNEWS-30-LDB",
+      "bm25": -15.180989133242019,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-30-LDB",
+      "relFile": "ABENNEWS-30-LDB.md",
+      "finalScore": 0.02266666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.180989133242019,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes",
+      "text": "Released ABAP Classes\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/22_Released_ABAP_Classes",
+      "bm25": -12.314682931860606,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.020481927710843374,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.314682931860606,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#xml-json",
+      "text": "XML/JSON\n\n<table> <tr> <td> Class </td> <td> Details </td> mentioned refer ABAP Keyword Documentation JSON cheat sheet executable example\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#xml-json",
+      "bm25": -12.292546365503911,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#xml-json",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.020238095238095236,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.292546365503911,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#rap",
+      "text": "RAP\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Getting current context handler implementations storing information variable declared\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#rap",
+      "bm25": -12.290337085216807,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#rap",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.02,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.290337085216807,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#assignments",
+      "text": "Assignments\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap DATA BEGIN TYPE TYPE LENGTH TYPE LENGTH DATA BEGIN\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#assignments",
+      "bm25": -12.290337085216807,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#assignments",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.019767441860465116,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.290337085216807,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#locking",
+      "text": "Locking\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Deleting demo database table DELETE FROM zdemo_abap_rapt1 Creating database\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#locking",
+      "bm25": -12.290337085216807,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#locking",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.01954022988505747,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.290337085216807,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDB_CONNECTIONS_TRANS",
+      "text": "ABENDB_CONNECTIONS_TRANS\n\nEvery active database connection creates a separate transaction context or is linked with its own [database LUW](ABENDATABASE_LUW_GLOSRY.html). This means that database changes on one connection can be committed or rolled back independently of changes on other database connections. In this way, for example, log data can be stored in and committed on a secondary or service connection without modify\n\n/abap-docs-standard/ABENDB_CONNECTIONS_TRANS",
+      "bm25": -11.837994969106804,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDB_CONNECTIONS_TRANS",
+      "relFile": "ABENDB_CONNECTIONS_TRANS.md",
+      "finalScore": 0.01953125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.837994969106804,
+        "rank": 68,
+        "rrfScore": 0.0078125,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#transactional-consistency",
+      "text": "Transactional Consistency\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Activating modify transactional phase cl_abap_tx modify following database modification\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#transactional-consistency",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#transactional-consistency",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.019318181818181818,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#string-processing",
+      "text": "String Processing\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap DATA tabbed cl_abap_char_utilities horizontal_tab following attributes replaced representation control\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#string-processing",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#string-processing",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.019101123595505618,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#regular-expressions",
+      "text": "Regular Expressions\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Example string DATA Creating instance regular expression Creating instance\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#regular-expressions",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#regular-expressions",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.01888888888888889,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#dynamic-programming",
+      "text": "Dynamic Programming\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap following method checks database table names name provided with\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#dynamic-programming",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#dynamic-programming",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.01868131868131868,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#call-stack",
+      "text": "Call Stack\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Getting full current call stack DATA call_stack xco_cp current\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#call-stack",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#call-stack",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.018478260869565215,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#sending-emails",
+      "text": "Sending Emails\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap DATA mail cl_bcs_mail_message create_instance mail set_sender mail add_recipient mail\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#sending-emails",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#sending-emails",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.01827956989247312,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#tenant-information",
+      "text": "Tenant Information\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Getting handler currently active tenant DATA xco_cp current tenant\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#tenant-information",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#tenant-information",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.018085106382978722,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#exception-classes",
+      "text": "Exception Classes\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap DATA CATCH cx_sy_zerodivide ENDTRY DATA str_table VALUE string_table DATA\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#exception-classes",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#exception-classes",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.017894736842105262,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#parallel-processing",
+      "text": "Parallel Processing\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> CLASS zcl_demo_abap DEFINITION PUBLIC FINAL CREATE PUBLIC PUBLIC SECTION INTERFACES\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#parallel-processing",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#parallel-processing",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.017708333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#application-log",
+      "text": "Application Log\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Demo application objects external Note Refer documentation about create\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#application-log",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#application-log",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.01752577319587629,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTEXT_ENVIRONMENT",
+      "text": "ABENTEXT_ENVIRONMENT\n\nThe [text environment language](ABENTEXT_ENV_LANGU_GLOSRY.html) is part of the [language settings](ABENLANGUAGE_SETTINGS.html) of an ABAP program and determines its [text environment](ABENTEXT_ENVIRONMENT_GLOSRY.html). It is valid during an [internal session](ABENINTERNAL_SESSION_GLOSRY.html). The current text environment language can be determined using the method `GET_LANGUAGE` of the class `CL_\n\n/abap-docs-standard/ABENTEXT_ENVIRONMENT",
+      "bm25": -11.636554042760038,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTEXT_ENVIRONMENT",
+      "relFile": "ABENTEXT_ENVIRONMENT.md",
+      "finalScore": 0.017482517482517484,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.636554042760038,
+        "rank": 83,
+        "rrfScore": 0.006993006993006993,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#calling-services",
+      "text": "Calling Services\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap CLASS zcl_demo_abap DEFINITION PUBLIC FINAL CREATE PUBLIC PUBLIC SECTION\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#calling-services",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#calling-services",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.017346938775510204,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#zip-files",
+      "text": "Zip Files\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> Creating file DATA cl_abap_zip Adding files file TIMES DATA some_content\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#zip-files",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#zip-files",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.01717171717171717,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#abap-unit",
+      "text": "ABAP Unit\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> Code test class DATA result cl_abap_unit_assert assert_equals result value does\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#abap-unit",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#abap-unit",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.017,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#releasing-apis",
+      "text": "Releasing APIs\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> DATA api_state cl_abap_api_state create_instance api_key VALUE object_type CLAS object_name ZCL_DEMO_TEST\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#releasing-apis",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#releasing-apis",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.016831683168316833,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#generative-ai",
+      "text": "Generative AI\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> FINAL ai_api cl_aic_islm_compl_api_factory create_instance ZDEMO_ABAP_INT_SCEN FINAL result ai_api execute_for_string Tell\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#generative-ai",
+      "bm25": -12.288128598913662,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#generative-ai",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.016666666666666666,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.288128598913662,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#numbers-and-calculations",
+      "text": "Numbers and Calculations\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap Constants minimum maximum values built numeric types Example Type\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#numbers-and-calculations",
+      "bm25": -12.285920906166535,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#numbers-and-calculations",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.016504854368932037,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.285920906166535,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#calendar-related-information",
+      "text": "Calendar-Related Information\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> abap SELECT FactoryCalendarID FROM I_FactoryCalendarBasic ORDER FactoryCalendarID INTO TABLE @DATA\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#calendar-related-information",
+      "bm25": -12.285920906166535,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#calendar-related-information",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.016346153846153847,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.285920906166535,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DAEMON",
+      "text": "ABENABAP_DAEMON\n\n**This topic including all subnodes are out of maintenance. There is no guarantee that the information is complete and up-to-date. No active support is provided.** ABAP daemon framework (ADF) is an application programming interface (API) based on interfaces and classes for creating and handling [ABAP daemons](ABENABAP_DAEMON_GLOSRY.html). An ABAP daemon is an instance of an [ABAP daemon class](ABE\n\n/abap-docs-standard/ABENABAP_DAEMON",
+      "bm25": -9.347194730667603,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DAEMON",
+      "relFile": "ABENABAP_DAEMON.md",
+      "finalScore": 0.016233766233766236,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.347194730667603,
+        "rank": 94,
+        "rrfScore": 0.006493506493506494,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/22_Released_ABAP_Classes#units-of-measurement",
+      "text": "Units of Measurement\n\n<table> <tr> <td> Class </td> <td> Details/Code Snippet </td> CLASS zcl_demo_abap DEFINITION PUBLIC FINAL CREATE PUBLIC PUBLIC SECTION INTERFACES\n\n/abap-cheat-sheets/22_Released_ABAP_Classes#units-of-measurement",
+      "bm25": -12.285920906166535,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/22_Released_ABAP_Classes#units-of-measurement",
+      "relFile": "22_Released_ABAP_Classes.md",
+      "finalScore": 0.016190476190476193,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.285920906166535,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 0.7
+      }
+    }
+  ]
+}

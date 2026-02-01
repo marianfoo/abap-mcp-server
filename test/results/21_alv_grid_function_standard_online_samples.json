@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "ALV grid REUSE_ALV_GRID_DISPLAY function module",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-02-01T20:18:59.808Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "sap-help-3353525946",
+      "text": "ALV grid control with 2 different approaches\n\n<b>ALV</b> <b>grid</b> control with 2 different approaches\nLast month, i was engaging with a small project that involved with <b>alv</b> <b>grid</b>.&nbsp; ... And usually, there are 2\n    ways to do the <b>alv</b> <b>grid</b> control:\n\n1 Call FM\n\n2 <b>ALV</b> <b>grid</b> control using OO&nbsp;approach. ... the mostly used <b>function</b> <b>modules</b> are: REUSE_ALV_LIST_DISPLAY\n    ,<b>EUSE_ALV_GRID_DISPLAY</b>,REUSE_ALV_GRID_DISPLAY_LVC. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353525946.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353525946.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353525782",
+      "text": "ALV Standard Sum Total Or Subtotal\n\n<b>ALV</b> Standard Sum Total Or Subtotal\nIn standard <b>ALV</b> <b>function</b> <b>module</b> '<b>REUSE_ALV_GIRD_DISPLAY</b>' or&nbsp;'REUSE_ALV_LIST_DISPLAY', they provide the standard\n  <b>functionality</b> of sum totally or sum subtotally. ... CALL&nbsp;<b>FUNCTION</b>&nbsp;'<b>REUSE_ALV_GRID_DISPLAY</b>'\n&nbsp;&nbsp;&nbsp;&nbsp;EXPORTING\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i_callback_program&nbsp;=&nbsp;sy-repid\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is_layout&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;lw_layout\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it_fieldcat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;li_fieldcat&nbsp;&quot;can&nbsp;sum&nbsp;total\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it_sort&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... List&nbsp;display\n*&nbsp;is&nbsp;just&nbsp;displaying&nbsp;total&nbsp;or&nbsp;subtotal,&nbsp;but&nbsp;<b>grid</b>&nbsp;display\n*&nbsp;besides&nbsp;display&nbsp;it&nbsp;also&nbsp;provide&nbsp;the&nbsp;extension.\n*&nbsp;Meanwhile&nbsp;in&nbsp;<b>grid</b>&nbsp;display,&nbsp;if&nbsp;sorting&nbsp;and&nbsp;the&nbsp;several&nbsp;line\n*&nbsp;of&nbsp;sorting&nbsp;fields&nbsp;have ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353525782.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353525782.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#excursion-sap-list-viewer-alv-",
+      "text": "Excursion: SAP List Viewer (ALV)\n\n- Provides an object-oriented API for displaying and formatting lists  - Allows you to specify layout settings and functionality - Classes such as `CL_SALV_TABLE` encapsulate the use of the ALV grid control and simplify the integration into ABAP programs. Note: The older class `CL_GUI_ALV_GRID` shou...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#excursion-sap-list-viewer-alv-",
+      "bm25": -22.949706739064098,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#excursion-sap-list-viewer-alv-",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.036065573770491806,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.949706739064098,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-3353524193",
+      "text": "Function Modules related to ALV Grid\n\n<b>Function</b> <b>Modules</b> related to <b>ALV</b> <b>Grid</b>\n&nbsp;1) <b>REUSE_ALV_GRID_DISPLAY</b>\n\n&nbsp;2) REUSE_ALV_COMMENTARY_WRITE\n\n&nbsp;3) REUSE_ALV_EVENTS_GET\n\n&nbsp;4) REUSE_DOUBLE_ALV\n\n&nbsp;5) REUSE_MINIALV_LIST_DISPLAY\n\n&nbsp;6) LVC_FIELDCATALOG_MERGE ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524193.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524193.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
+      "text": "ABENDYNPRO_CFW_ABEXA\n\nThe example illustrates the use of different GUI controls in a dynpro. The screen of dynpro 100 contains a custom control named `CUSTOM_CONTROL` that covers the entire screen area. In the flow logic, both dialog modules `status_0100` and `cancel` are called. The addition `AT EXIT-COMMAND` is used at PAI. In the GUI status `SCREEN_100`, the usual symbols of the standard tool bar are filled with fun\n\n/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
+      "bm25": -21.569527688006623,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
+      "relFile": "ABENDYNPRO_CFW_ABEXA.md",
+      "finalScore": 0.035483870967741936,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.569527688006623,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-3353524187",
+      "text": "Important Function Modules\n\n<b>Modules</b> related to <b>ALV</b> <b>Grid</b>:\n\n1) <b>REUSE_ALV_GRID_DISPLAY</b>\n\n&nbsp;2) REUSE_ALV_COMMENTARY_WRITE\n\n&nbsp;3) REUSE_ALV_EVENTS_GET\n\n&nbsp;4) REUSE_DOUBLE_ALV\n\n&nbsp;5) REUSE_MINIALV_LIST_DISPLAY\n\n&nbsp;6) LVC_FIELDCATALOG_MERGE ... Important <b>Function</b> <b>Modules</b>\n<b>Function</b>\n    <b>Modules</b> related to lists:\n\n1) SAP_PROGRESS_INDICATOR\n\n2) WWW_ITAB_TO_HTML\n\n3) WWW_LIST_TO_HTML\n\n<b>Function</b> <b>Modules</b> related to Office Integration:\n\n1)SAP_CONVERT_TO_XLS_FORMAT ... 6)CONVERT_CODE_ISO_TO_SAP\n\n7)CONVERT_CODE_SAP_TO_ISO\n\n8)SK_OBJECT_CONVERT_OTF_PDF\n\n9)ROUND_AMOUNT\n\n10)UNIT_OF_MEASURE_ISO_TO_SAP\n\n11)UNIT_OF_MEASURE_SAP_TO_ISO\n\n12)SPELL_AMOUNT\n\n<b>Function</b>\n    <b>Modules</b> ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524187.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524187.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
+      "text": "ABENFREE_SELECTION_ABEXA\n\nThis example demonstrates how a dynamic selection is used in a program. This example shows the simplest way to use a [dynamic selection](ABENFREE_SELECTIONS.html) in a program. When the value *T* of the parameter `KIND` is passed, the function module `FREE_SELECTIONS_INIT` is set to prepare dynamic selections for database tables in the ABAP Dictionary. The names of the database tables (here only o\n\n/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
+      "bm25": -16.930632532538944,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
+      "relFile": "ABENFREE_SELECTION_ABEXA.md",
+      "finalScore": 0.03492063492063492,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.930632532538944,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-3353523583",
+      "text": "ALV\n\nA control was made available\n        for <b>ALVs</b>, known as <b>ALV</b> <b>grid</b>. It can be used in 3 ways:\tDirect use of control\n\t<b>Function</b> <b>module</b> wrapper. ... Class <b>ALV</b> (wiki)\n\t<b>ALV</b> Object <b>Model</b> - Simple 2D Table - Event Handling\n\tsap library - <b>alv</b> <b>grid</b> control\n\tsap library - <b>SALV</b>\n\n\n        \n\t\n          Hierarchical sequential control ... <b>Function</b> <b>module</b> RS_TREE_LIST_DISPLAY\n\n        \n\t\n          <b>Grid</b> Control\n\n        \t\n          \n            \n\n          \n\n        \t\n          Class CL_GUI_ALV_GRID, Class ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abaptools/3353523583.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abaptools/3353523583.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524151",
+      "text": "Function Module lists\n\n<b>Function</b> <b>Module</b> lists\nPOPUPS:\n\n1)POPUP_TO_CONFIRM\n 2)POPUP_NO_LIST\n 3)POPUP_TO_DECIDE\n 4)POPUIP_TO_DECIDE_LIST\n 5)POPUP_TO_INFORM\n\n  6)POPUP_TO_SELECT_MONTH\n 7)POPUP_WITH_TABLE_DISPLAY\n 8)POPUP_TO_CONFIRM_DATALOSS ... <b>GRID</b>\n <b>REUSE_ALV_GRID_DISPLAY</b>\n REUSE_ALV_COMMENTARY_WRITE\n REUSE_ALV_EVENTS_GET\n\n  REUSE_DOUBLE_ALV\n REUSE_MINIALV_LIST_DISPLAY\n LVC_FIELDCATALOG_MERGE\n REUSE_ALV_LIST_DISPLAY\n\n  REUSE_ALV_BLOCK_LIST_APPEND ... 6)BDC_INSERT\n 7)OPEN_FORM\n 8)CLOSE_FORM\n 9)START_FORM\n\n  10)END_FORM\n\n11)WRITE_FORM\n 12)SSF_FUNCTION_MODULE_NAME\n 13)SSF_OPEN\n 14)SSF_CLOSE\n 15)RS_VARIANT_VALUES_TECH_DATA\n\n16) RS_VARIANT_CONTENTS\n\n  <b>ALV</b> ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524151.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524151.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524002",
+      "text": "List Of Function Modules Used In ALV Programming\n\nList Of <b>Function</b> <b>Modules</b> Used In <b>ALV</b> Programming\nList Of <b>Function</b> <b>Modules</b> that are important and commonly used in <b>ALV</b> Programming.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... REUSE_ALV_VARIANT_F4\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REUSE_ALV_VARIANT_EXISTENCE\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REUSE_ALV_EVENTS_GET\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REUSE_ALV_COMMENTARY_WRITE\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REUSE_ALV_FIELDCATALOG_MERGE\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REUSE_ALV_LIST_DISPLAY\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>REUSE_ALV_GRID_DISPLAY</b> ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abapfaq/3353524002.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abapfaq/3353524002.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524143",
+      "text": "Add Header to ALV report\n\nAdd Header to <b>ALV</b> report\nIn order to insert a report heading in to the <b>ALV</b> <b>grid</b> you need to perform the following steps:\n 1. ... Create 'top-of-page' FORM\n\nCheck the following code:\n\n\n  \n    CALL <b>FUNCTION</b> '<b>REUSE_ALV_GRID_DISPLAY</b>'\n  EXPORTING\n    I_CALLBACK_PROGRAM     = GD_REPID\n    I_CALLBACK_TOP_OF_PAGE = 'TOP-OF-PAGE' &quot;see FORM ... Update\n  '<b>REUSE_ALV_GRID_DISPLAY</b>' FM call to include 'top-of-page' FORM\n 2. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abapfaq/3353524143.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abapfaq/3353524143.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#optional-layout-settings-and-functionality",
+      "text": "Optional Layout Settings and Functionality\n\n- The following commented code snippet covers a selection of the many setting and functionality options. - For simplicity of the snippet, the code only uses the root exception class. Make sure that you implement appropriate error handling and exception classes.   - You can copy and paste the code in...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#optional-layout-settings-and-functionality",
+      "bm25": -13.570151996049573,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#optional-layout-settings-and-functionality",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.03283582089552239,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.570151996049573,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-3353526020",
+      "text": "Automatic Field Catalog Population Using Internal Table in ALV Report\n\nHeader generation for zfields in <b>Grid</b>\n    display:\n  \n \n\n\n\nFinally the output comes by using FM <b>REUSE_ALV_GRID_DISPLAY</b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \n &nbsp;\n\n  \n\n\n\n&nbsp;\n\n\n &nbsp;\n\nRelated Content\n\nNot Applicable ... Scope of this document:\n &nbsp;This document gives the idea how field catalog can be populated\n  automatically through <b>Function</b> <b>Module</b> to avoid manual creation. ... Importing Parameter:\n\n  1)&nbsp;&nbsp;&nbsp;&nbsp; I_PROGRAM_NAME\n This hold the name of the program (SY-REPID) from which the <b>function</b>\n  <b>module</b> is called .we don't pass SY-REPID directly to this parameters. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353526020.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353526020.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524005",
+      "text": "Printing ALV along with Page Numbers\n\ntable parameter of <b>ALV</b> <b>function</b> <b>module</b>\n  <b>REUSE_ALV_GRID_DISPLAY</b>. ... No sy-subrc check is required\n ENDFORM. &quot; top_of_page \tStep 3: Display report&nbsp;&nbsp; Display the <b>ALV</b> report using '<b>REUSE_ALV_GRID_DISPLAY</b>'\n        <b>function</b> <b>module</b>. ... Register TOP_OF_PAGE routine with the TOP_OF_PAGE event in IT_EVENTS table parameter of the <b>ALV</b> <b>function</b>\n      <b>module</b>. * Prepare event table\n PERFORM prepare_event_table. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524005.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524005.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEPARATION_CONCERNS_GUIDL",
+      "text": "ABENSEPARATION_CONCERNS_GUIDL\n\nThe term 'separation of concerns' (SoC) was coined in Edsger W. Dijkstra's article `On the role of scientific thought` from 1974: *\"... But nothing is gained --on the contrary!-- by tackling these various aspects simultaneously. It is what I sometimes have called 'the separation of concerns', which, even if not perfectly possible, is yet the only available technique for effective ordering of one's\n\n/abap-docs-standard/ABENSEPARATION_CONCERNS_GUIDL",
+      "bm25": -15.085670277545738,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEPARATION_CONCERNS_GUIDL",
+      "relFile": "ABENSEPARATION_CONCERNS_GUIDL.md",
+      "finalScore": 0.03076923076923077,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.085670277545738,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCLASS_INTERACE_POOLS",
+      "text": "ABENCLASS_INTERACE_POOLS\n\nClass pools and interface pools are the ABAP programs where [global classes](ABENGLOBAL_CLASS_GLOSRY.html) and [global interfaces](ABENGLOBAL_INTERFACE_GLOSRY.html) of the class library are defined. They are created in the [ABAP development tools for Eclipse (ADT)](ABENADT_GLOSRY.html) or using the [Class Builder](ABENCLASS_BUILDER_GLOSRY.html) tool in the [ABAP Workbench](ABENABAP_WORKBENCH_GLOSR\n\n/abap-docs-standard/ABENCLASS_INTERACE_POOLS",
+      "bm25": -13.069204959763988,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCLASS_INTERACE_POOLS",
+      "relFile": "ABENCLASS_INTERACE_POOLS.md",
+      "finalScore": 0.02840909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.069204959763988,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#getting-started",
+      "text": "Getting Started\n\n- To get started quickly, you only need to ...   - instantiate an ALV table object using the `factory` method.   - define the display type for the ALV output. By default, full-screen display is enabled. TYPES BEGIN demo_struct col1 TYPE string col2 TYPE col3 TYPE\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#getting-started",
+      "bm25": -14.619780149496187,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#getting-started",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.025757575757575757,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.619780149496187,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-13860788",
+      "text": "Creating an ALV Report with CSV Download Functiona...\n\n...Grid Display &nbsp; We have to display the data by using “ REUSE_ALV_GRID_DISPLAY ” function module and we have to pass the material data internal table and field catalog internal table and also s...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/creating-an-alv-report-with-csv-download-functionality-in-sap-abap/ba-p/13860788?search-action-id=498799687794&search-result-uid=13860788",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/creating-an-alv-report-with-csv-download-functionality-in-sap-abap/ba-p/13860788?search-action-id=498799687794&search-result-uid=13860788",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_1556465713-_ANNO",
+      "text": "ABENCDS_1556465713-_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. To enable Analytics, there has to be defined CDS views which represent the Analytical Provider and CDS view, which represent analytical queries. Analytical queries must select from an A\n\n/abap-docs-standard/ABENCDS_1556465713-_ANNO",
+      "bm25": -10.715753817762824,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_1556465713-_ANNO",
+      "relFile": "ABENCDS_1556465713-_ANNO.md",
+      "finalScore": 0.025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.715753817762824,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists",
+      "text": "Selection Screens and Classic Lists\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/20_Selection_Screens_Lists",
+      "bm25": -13.377703023781693,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.024999999999999998,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.377703023781693,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-13771152",
+      "text": "Custom calculations of total and subtotals in REUS ...\n\n..._CALLBACK_PF_STATUS_SET in the REUSE_ALV_GRID_DISPLAY function module specifies the name of the form that sets the PF (program function ) status for the ALV Grid . This allows you to define custom actions and t...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/custom-calculations-of-total-and-subtotals-in-reuse-alv-grid-display/ba-p/13771152?search-action-id=498799687794&search-result-uid=13771152",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/custom-calculations-of-total-and-subtotals-in-reuse-alv-grid-display/ba-p/13771152?search-action-id=498799687794&search-result-uid=13771152",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPRETURN",
+      "text": "ABAPRETURN\n\nThis statement immediately terminates the current processing block. It can appear at any point in a [processing block](ABENPROCESSING_BLOCK_GLOSRY.html) and terminates this block regardless of the statement block or control structure in which the statement appears. After the processing block has been exited, the runtime framework behaves as when the [processing block is exited in a regular way](AB\n\n/abap-docs-standard/ABAPRETURN",
+      "bm25": -10.325419380882797,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPRETURN",
+      "relFile": "ABAPRETURN.md",
+      "finalScore": 0.024752475247524754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.325419380882797,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#more-information",
+      "text": "More Information\n\n- ABAP Keyword Documentation:   - [Selection Screens](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenselection_screen.htm)    - [Classic Lists](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenabap_dynpro_list.htm)\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#more-information",
+      "bm25": -13.367529554356091,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#more-information",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02463768115942029,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.367529554356091,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
+      "text": "ABAPSET_HANDLER_INSTANCE\n\n`SET HANDLER handler1 handler2 ... FOR \\{ oref |\\{ALL INSTANCES\\}\\ \\}`\\\\  This statement registers the [event handlers](ABENEVENT_HANDLER_GLOSRY.html)\\\\ `handler1 handler2 ...` for the associated [instance events](ABENINSTANCE_EVENT_GLOSRY.html) of the objects specified after `FOR`. The addition `ACTIVATION` can be used to deregister event handlers or perform a dynamic registration. An event handl\n\n/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
+      "bm25": -10.002422744218915,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
+      "relFile": "ABAPSET_HANDLER_INSTANCE.md",
+      "finalScore": 0.024509803921568627,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.002422744218915,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13231209",
+      "text": "Useful HR Function Modules, Views, Tables.\n\n...R_GET_PAYROLL_RESULTS Imports the current payroll results 14 REUSE_ALV_GRID_DISPLAY Alv Grid type output 15 RH_GET_PERSON_FROM_USER Get the assignment of the user to a person 16 HR_READ_INFOTYPE Read the i...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/useful-hr-function-modules-views-tables/ba-p/13231209?search-action-id=498799687794&search-result-uid=13231209",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/useful-hr-function-modules-views-tables/ba-p/13231209?search-action-id=498799687794&search-result-uid=13231209",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screens",
+      "text": "Selection Screens\n\n- Are special [dynpros](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abendynpro_glosry.htm) in [executable programs](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenexecutable_program_glosry.htm) (*\"reports\"*; they're also possible...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screens",
+      "bm25": -13.360756363064933,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.024285714285714285,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.360756363064933,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#creating-selection-screens",
+      "text": "Creating Selection Screens\n\n<table> <tr> <th> Subject/Statement </th> <th> Notes </th> <th> Code Snippet </th> abap PROGRAM SELECTION SCREEN BEGIN SCREEN 9000 PARAMETERS param TYPE\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#creating-selection-screens",
+      "bm25": -13.357372499228621,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#creating-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.023943661971830985,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.357372499228621,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
+      "text": "Adapting the Selection Screen Layout\n\n<table> <tr> <th> Subject/Statement </th> <th> Notes </th> <th> Code Snippet </th> abap PARAMETERS param1 TYPE LENGTH SELECTION SCREEN SKIP PARAMETERS param2\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
+      "bm25": -13.353990454519101,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02361111111111111,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.353990454519101,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/testing/abap-unit_basics#was-ist-mittels-abap-unit-testbar-",
+      "text": "Was ist mittels ABAP Unit testbar?\n\n> {: .Zitat } > \"Das kann man nicht testen\"   Grundsätzlich ist fast alles mit ABAP Unit testbar. Es gibt Programmbereiche, die nicht mittels ABAP Unit Tests überprüft werden können. Dazu gehören alle Programmteile, die auf einen Dialog angewiesen sind oder Daten darstellen (z.B. ALV-Grid).\n\n/dsag-abap-leitfaden/testing/abap-unit_basics#was-ist-mittels-abap-unit-testbar-",
+      "bm25": -16.16870127657636,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/testing/abap-unit_basics#was-ist-mittels-abap-unit-testbar-",
+      "relFile": "testing/abap-unit_basics.md",
+      "finalScore": 0.0234375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.16870127657636,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#introduction",
+      "text": "Introduction\n\n> [!NOTE] >  The content of this cheat sheet and the executable examples are only relevant to [classic ABAP](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenclassic_abap_glosry.htm). [Selection screens](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-U...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#introduction",
+      "bm25": -13.350610227379184,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#introduction",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02328767123287671,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.350610227379184,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#list-creation-related-abap-keywords-and-additions",
+      "text": "List Creation-Related ABAP Keywords and Additions\n\n<table> <tr> <th> Subject/Keyword </th> <th> Notes </th> <th> Code Snippet </th> abap ULINE ULINE abap DATA itab VALUE string_table Blank lines\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#list-creation-related-abap-keywords-and-additions",
+      "bm25": -13.350610227379184,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#list-creation-related-abap-keywords-and-additions",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.022972972972972974,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.350610227379184,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#calling-selection-screens",
+      "text": "Calling Selection Screens\n\n- There are several ways of how to call selection screens (see [here](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenselection_screen_call.htm)), among them [`CALL SELECTION-SCREEN`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=ab...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#calling-selection-screens",
+      "bm25": -13.348920794911715,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#calling-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02266666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.348920794911715,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
+      "text": "ABAP Statements for Selection Screens\n\nSelection screens can be created by using special ABAP statements in the global declaration part of executable programs:  - [`PARAMETERS`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapparameters.htm) - [`SELECT-OPTIONS`](https://help.sap.com/doc/abapdocu_latest_...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
+      "bm25": -13.343855219588765,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.022368421052631576,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.343855219588765,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
+      "text": "ABENSTRING_TEMPLATE_UTC_ABEXA\n\nThe example demonstrates the various time stamp formats for embedded expressions. UTC time stamps in [time stamp fields](ABENUTCLONG.html) and in [packed numbers](ABENTIME_STAMPS_PACKED.html) are formatted in all possible country-specific [date formats](ABENDATE_FORMATS.html) and [time formats](ABENCOUNTRY_FORMATS.html) using the parameter [`COUNTRY`](ABAPCOMPUTE_STRING_FORMAT_OPTIONS.html). For t\n\n/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
+      "bm25": -10.859443787916806,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
+      "relFile": "ABENSTRING_TEMPLATE_UTC_ABEXA.md",
+      "finalScore": 0.022222222222222227,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.859443787916806,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#processing-lists-in-list-buffers",
+      "text": "Processing Lists in List Buffers\n\n- ABAP statements are available that allow lists to be processed that have already been saved as [screen lists](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenscreen_list_glosry.htm) in the [list buffer](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#processing-lists-in-list-buffers",
+      "bm25": -13.342167601194252,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#processing-lists-in-list-buffers",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02207792207792208,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.342167601194252,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLOCK_FUNCTION_MODULE_GLOSRY",
+      "text": "ABENLOCK_FUNCTION_MODULE_GLOSRY\n\nSpecial [function module](ABENFUNCTION_MODULE_GLOSRY.html) for setting and removing [SAP locks](ABENSAP_LOCK_GLOSRY.html). When creating a [lock object](ABENLOCK_OBJECT_GLOSRY.html), a function module with the prefix `ENQUEUE_` is created to set the lock, and a function module with the prefix `DEQUEUE_` is created to remove the lock. ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENLOCK_FUNCTION_MODULE_GLOSRY",
+      "bm25": -8.73759563042293,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLOCK_FUNCTION_MODULE_GLOSRY",
+      "relFile": "ABENLOCK_FUNCTION_MODULE_GLOSRY.md",
+      "finalScore": 0.021917808219178082,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.73759563042293,
+        "rank": 86,
+        "rrfScore": 0.00684931506849315,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#excursion-submit-statements",
+      "text": "Excursion: SUBMIT Statements\n\n- [`SUBMIT`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapsubmit.htm) statements call executable programs and, therefore, selection screens. - In general, every executable program is started implicitly with `SUBMIT`. - Selection screens can be considered a param...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#excursion-submit-statements",
+      "bm25": -13.340480435833253,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#excursion-submit-statements",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.021794871794871794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.340480435833253,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#classic-lists",
+      "text": "Classic Lists\n\n- Used to output data in a structured and formatted way. - This output can be ...   - created in the so-called [list buffer](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenlist_buffer_glosry.htm), a memory area for storing [screen lists](https://help.sap.com/doc/a...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#classic-lists",
+      "bm25": -13.335421656015397,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#classic-lists",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.021518987341772152,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.335421656015397,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#using-elements-from-other-selection-screens",
+      "text": "Using Elements from Other Selection Screens\n\n- You can include screen elements created in other selection screens. - Statements include the `INCLUDE` addition. These are possible:    - `SELECTION-SCREEN INCLUDE PARAMETERS` PROGRAM TABLES sscrfields SELECTION SCREEN COMMENT txt1 SELECTION SCREEN SKIP\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#using-elements-from-other-selection-screens",
+      "bm25": -13.335421656015397,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#using-elements-from-other-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.335421656015397,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#event-blocks",
+      "text": "Event Blocks\n\n- Event blocks are introduced by an [event keyword](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenevent_keyword_glosry.htm).  - Ended by the next processing block (there's no closing statement). - Should not contain separate declarations, i.e. you should put all ...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#event-blocks",
+      "bm25": -13.333736300853086,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#event-blocks",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02098765432098765,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.333736300853086,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#formatting-output-using-format-statements",
+      "text": "Formatting Output Using FORMAT Statements\n\n- [`FORMAT`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapformat.htm) statements can be used to apply formattings to output statements. - The formats are valid until reverted by a new `FORMAT` statement, using the additions `OFF` or `RESET`. - Note that the addi...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#formatting-output-using-format-statements",
+      "bm25": -13.326999398937756,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#formatting-output-using-format-statements",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.020731707317073172,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.326999398937756,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_CUSTOMER-FUNCTION",
+      "text": "ABAPCALL_CUSTOMER-FUNCTION\n\n`CALL CUSTOMER-FUNCTION function_exit [parameter_list](ABAPCALL_FUNCTION_PARAMETER.html).` This statement can be used in programs delivered by SAP. It includes the [function module exit](ABENFUNCTION_MODULE_EXIT_GLOSRY.html) specified in `function_exit`. The function module exit is a [customer exit](ABENCUSTOMER_EXIT_GLOSRY.html). In an SAP program, it enables a function module provided by SAP and\n\n/abap-docs-standard/ABAPCALL_CUSTOMER-FUNCTION",
+      "bm25": -8.76096808082761,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_CUSTOMER-FUNCTION",
+      "relFile": "ABAPCALL_CUSTOMER-FUNCTION.md",
+      "finalScore": 0.020689655172413793,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.76096808082761,
+        "rank": 85,
+        "rrfScore": 0.006896551724137931,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#parameters",
+      "text": "PARAMETERS\n\n- Creates ...   - a program-global variable (similar to `DATA` statements)    - an input field on the selection screen automatically, i.e. the content of the program-global variable can be changed via the input field. abap PROGRAM TYPE addition example uses built ABAP type Note\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#parameters",
+      "bm25": -13.325316302177907,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#parameters",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.020481927710843374,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.325316302177907,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLIST_GUIDL",
+      "text": "ABENLIST_GUIDL\n\nA list is a medium used for the structured and formatted output of data. The following lists are available in ABAP: Classic lists are the only option to send ABAP data from ABAP programs directly to the SAP spool system as spool lists. If SAP List Viewer is used, the lists that are displayed in the viewer are automatically converted to classic spool lists during printing. **Use SAP List Viewer**\n\n/abap-docs-standard/ABENLIST_GUIDL",
+      "bm25": -11.44509518799781,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLIST_GUIDL",
+      "relFile": "ABENLIST_GUIDL.md",
+      "finalScore": 0.02040816326530612,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.44509518799781,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
+      "text": "SELECTION-SCREEN\n\n- `SELECTION-SCREEN` statements can be used to create and modify the layout of standalone selection screens. - Note: The standard selection screen for executable programs is created automatically. That is, each executable program contains a standard selection screen with dynpro number 1000. The scre...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
+      "bm25": -13.323633656520252,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.020238095238095236,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.323633656520252,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION",
+      "text": "ABAPCALL_FUNCTION\n\n1\\. `CALL FUNCTION func \\{\\ [parameter_list](ABAPCALL_FUNCTION_PARAMETER.html)`\\\\ `|\\ [parameter_tables](ABAPCALL_FUNCTION_DYNAMIC.html)\\ \\}.` 2\\. `CALL FUNCTION ... DESTINATION ...`\n\n/abap-docs-standard/ABAPCALL_FUNCTION",
+      "bm25": -8.69217150867167,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION",
+      "relFile": "ABAPCALL_FUNCTION.md",
+      "finalScore": 0.020134228187919462,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.69217150867167,
+        "rank": 89,
+        "rrfScore": 0.006711409395973154,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#creating-lists-with-write-statements",
+      "text": "Creating Lists with WRITE Statements\n\n- Lists consist of consecutive list lines that are filled one after the other using the statement [`WRITE`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapwrite-.htm). - This way, you can output mostly flat data objects and strings/xstrings, types converted to a c...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#creating-lists-with-write-statements",
+      "bm25": -13.323633656520252,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#creating-lists-with-write-statements",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.323633656520252,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODULE",
+      "text": "ABAPMODULE\n\n`MODULE mod \\{OUTPUT|[INPUT]\\}.`\\\\  The statement `MODULE` defines a [dialog module](ABENDIALOG_MODULE_GLOSRY.html)\\\\ `mod`. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `mod`. The functions of a dialog module `mod` are implemented between the statements `MODULE` ad `ENDMODULE`. A dialog module is called using the identically named statement [`MODULE`](MODULE.html) of th\n\n/abap-docs-standard/ABAPMODULE",
+      "bm25": -8.689146242973164,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODULE",
+      "relFile": "ABAPMODULE.md",
+      "finalScore": 0.02,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.689146242973164,
+        "rank": 90,
+        "rrfScore": 0.006666666666666667,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#executable-examples",
+      "text": "Executable Examples\n\nAfter the import of the repository, proceed as follows:  - Find the program in ADT using the search by choosing `CTRL + SHIFT + A`. - Enter `ZDEMO_ABAP_SELSCR_LISTS_INTRO` and open the program. This program serves as an entry point for all selection screen and list examples. Program names of the ind...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#executable-examples",
+      "bm25": -13.31522718803174,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#executable-examples",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.019767441860465116,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.31522718803174,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#select-options",
+      "text": "SELECT-OPTIONS\n\n- Declares selection criteria for a data object - Unlike the `PARAMETERS` statement, which specifies a single value for a variable, the `SELECT-OPTIONS` statement allows you to specify complex criteria, such as an value range or a list of single values, to include or exclude values, that can be eval...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#select-options",
+      "bm25": -13.313547244948953,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#select-options",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.01954022988505747,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.313547244948953,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 0.7
+      }
+    }
+  ]
+}

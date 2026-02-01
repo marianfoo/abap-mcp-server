@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": false
     },
-    "timestamp": "2026-01-31T19:19:09.114Z",
+    "timestamp": "2026-02-01T20:18:51.074Z",
     "count": 50
   },
   "results": [
@@ -403,11 +403,11 @@
       }
     },
     {
-      "id": "sap-help-5082895e-3e73-4e04-b03e-a62721a16558",
-      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP1 (SPS22)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/5082895e-3e73-4e04-b03e-a62721a16558.html?locale=en-US&state=PRODUCTION&version=7.01.22",
+      "id": "sap-help-d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8",
+      "text": "Interface Create\n\nUse the following macro command:\n                              \n\n                              \n                              \n                              EXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt; ... As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... <b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. ...  — Product: SAP NetWeaver 7.0 (SPS36)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8.html?locale=en-US&state=PRODUCTION&version=7.0.36",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/5082895e-3e73-4e04-b03e-a62721a16558.html?locale=en-US&state=PRODUCTION&version=7.01.22",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8.html?locale=en-US&state=PRODUCTION&version=7.0.36",
       "relFile": "",
       "finalScore": 0.03260869565217392,
       "sourceKind": "sap_help",
@@ -434,11 +434,11 @@
       }
     },
     {
-      "id": "sap-help-d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8",
-      "text": "Interface Create\n\nUse the following macro command:\n                              \n\n                              \n                              \n                              EXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt; ... As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... <b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. ...  — Product: SAP NetWeaver 7.0 (SPS36)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8.html?locale=en-US&state=PRODUCTION&version=7.0.36",
+      "id": "sap-help-5082895e-3e73-4e04-b03e-a62721a16558",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP1 (SPS22)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/5082895e-3e73-4e04-b03e-a62721a16558.html?locale=en-US&state=PRODUCTION&version=7.01.22",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8.html?locale=en-US&state=PRODUCTION&version=7.0.36",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/5082895e-3e73-4e04-b03e-a62721a16558.html?locale=en-US&state=PRODUCTION&version=7.01.22",
       "relFile": "",
       "finalScore": 0.03214285714285714,
       "sourceKind": "sap_help",
@@ -754,10 +754,10 @@
     },
     {
       "id": "community-13977859",
-      "text": "Writing Clean Code and Best Practices in SAP ABAP\n\n...ractices can significantly enhance the quality of your programs. Here are some key points to keep in mind: 1. Use Meaningful Name s Choose clear, descriptive name s for variables , methods , and classes....\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/writing-clean-code-and-best-practices-in-sap-abap/ba-p/13977859?search-action-id=497478237655&search-result-uid=13977859",
+      "text": "Writing Clean Code and Best Practices in SAP ABAP\n\n...ractices can significantly enhance the quality of your programs. Here are some key points to keep in mind: 1. Use Meaningful Name s Choose clear, descriptive name s for variables , methods , and classes....\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/writing-clean-code-and-best-practices-in-sap-abap/ba-p/13977859?search-action-id=498799566405&search-result-uid=13977859",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/writing-clean-code-and-best-practices-in-sap-abap/ba-p/13977859?search-action-id=497478237655&search-result-uid=13977859",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/writing-clean-code-and-best-practices-in-sap-abap/ba-p/13977859?search-action-id=498799566405&search-result-uid=13977859",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -769,10 +769,10 @@
     },
     {
       "id": "community-13578235",
-      "text": "[ Clean Code Practices] Mess to Masterpiece with an...\n\n...evelopers to write comments for their methods , classes, and variables in a structured manner. Why is it important? Onboarding: New developers can understand the code ’s intent and f...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/clean-code-practices-mess-to-masterpiece-with-an-example/ba-p/13578235?search-action-id=497478237655&search-result-uid=13578235",
+      "text": "[ Clean Code Practices] Mess to Masterpiece with an...\n\n...evelopers to write comments for their methods , classes, and variables in a structured manner. Why is it important? Onboarding: New developers can understand the code ’s intent and f...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/clean-code-practices-mess-to-masterpiece-with-an-example/ba-p/13578235?search-action-id=498799566405&search-result-uid=13578235",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/clean-code-practices-mess-to-masterpiece-with-an-example/ba-p/13578235?search-action-id=497478237655&search-result-uid=13578235",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/clean-code-practices-mess-to-masterpiece-with-an-example/ba-p/13578235?search-action-id=498799566405&search-result-uid=13578235",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -784,10 +784,10 @@
     },
     {
       "id": "community-13198805",
-      "text": "Fanning the Flames: Prefixing Variable/Attribute N...\n\n...reaming of a world without global variables , methods no longer than (insert number here) lines of code and pure object orientation may be an enjoyable pastime, but it doesn't get the job done. The w...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/fanning-the-flames-prefixing-variable-attribute-names/ba-p/13198805?search-action-id=497478237655&search-result-uid=13198805",
+      "text": "Fanning the Flames: Prefixing Variable/Attribute N...\n\n...reaming of a world without global variables , methods no longer than (insert number here) lines of code and pure object orientation may be an enjoyable pastime, but it doesn't get the job done. The w...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/fanning-the-flames-prefixing-variable-attribute-names/ba-p/13198805?search-action-id=498799566405&search-result-uid=13198805",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/fanning-the-flames-prefixing-variable-attribute-names/ba-p/13198805?search-action-id=497478237655&search-result-uid=13198805",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/fanning-the-flames-prefixing-variable-attribute-names/ba-p/13198805?search-action-id=498799566405&search-result-uid=13198805",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": false
     },
-    "timestamp": "2026-01-31T19:19:01.198Z",
+    "timestamp": "2026-02-01T20:18:42.994Z",
     "count": 50
   },
   "results": [
@@ -626,10 +626,10 @@
     },
     {
       "id": "community-13563513",
-      "text": "ST05 : Analyze Individual Trace Records\n\n...Analysis Guide might also be helpful. The Open SAP course A First Step Towards SAP HANA Query Optimization covers further techniques for SQL query performance analyses and optimizations.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/st05-analyze-individual-trace-records/ba-p/13563513?search-action-id=497478151718&search-result-uid=13563513",
+      "text": "ST05 : Analyze Individual Trace Records\n\n...Analysis Guide might also be helpful. The Open SAP course A First Step Towards SAP HANA Query Optimization covers further techniques for SQL query performance analyses and optimizations.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/st05-analyze-individual-trace-records/ba-p/13563513?search-action-id=498799629991&search-result-uid=13563513",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/st05-analyze-individual-trace-records/ba-p/13563513?search-action-id=497478151718&search-result-uid=13563513",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/st05-analyze-individual-trace-records/ba-p/13563513?search-action-id=498799629991&search-result-uid=13563513",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -657,10 +657,10 @@
     },
     {
       "id": "community-12823559",
-      "text": "The SQL Trace ( ST05 ) &#150; Quick and Easy\n\nThe SQL Trace , which is part of the Performance Trace (transaction ST05 ), is the most important tool to test the performance of the database. Unfortunately, information on how to use the SQL Trace a...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/the-sql-trace-st05-quick-and-easy/ba-p/12823559?search-action-id=497478151718&search-result-uid=12823559",
+      "text": "The SQL Trace ( ST05 ) &#150; Quick and Easy\n\nThe SQL Trace , which is part of the Performance Trace (transaction ST05 ), is the most important tool to test the performance of the database. Unfortunately, information on how to use the SQL Trace a...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/the-sql-trace-st05-quick-and-easy/ba-p/12823559?search-action-id=498799629991&search-result-uid=12823559",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/the-sql-trace-st05-quick-and-easy/ba-p/12823559?search-action-id=497478151718&search-result-uid=12823559",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/the-sql-trace-st05-quick-and-easy/ba-p/12823559?search-action-id=498799629991&search-result-uid=12823559",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -704,10 +704,10 @@
     },
     {
       "id": "community-13560035",
-      "text": "ST05 : Activate Trace Recording with Filter\n\n...he performance analysis of their business application. Maybe they do not have authorization to run ST05 , while you are not allowed to work with the application. Or you do not know ahead of time w...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/st05-activate-trace-recording-with-filter/ba-p/13560035?search-action-id=497478151718&search-result-uid=13560035",
+      "text": "ST05 : Activate Trace Recording with Filter\n\n...he performance analysis of their business application. Maybe they do not have authorization to run ST05 , while you are not allowed to work with the application. Or you do not know ahead of time w...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/st05-activate-trace-recording-with-filter/ba-p/13560035?search-action-id=498799629991&search-result-uid=13560035",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/st05-activate-trace-recording-with-filter/ba-p/13560035?search-action-id=497478151718&search-result-uid=13560035",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/st05-activate-trace-recording-with-filter/ba-p/13560035?search-action-id=498799629991&search-result-uid=13560035",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

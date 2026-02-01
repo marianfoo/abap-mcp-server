@@ -1,0 +1,811 @@
+{
+  "meta": {
+    "query": "CALL FUNCTION DESTINATION RFC remote function call",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-02-01T20:19:09.858Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION",
+      "text": "ABAPCALL_FUNCTION_DESTINATION\n\nSynchronous call (sRFC) of a [remote-enabled function module](ABENREMOTE_ENABLED_FM_GLOSRY.html) specified in `func` using the [RFC interface](ABENRFC_INTERFACE_GLOSRY.html). The addition `DESTINATION` is used to specify the [destination](ABENRFC_DESTINATION.html) in `dest`. `func` and `dest` expect character-like data objects. The calling program is continued after the `CALL FUNCTION` statement w\n\n/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION",
+      "bm25": -35.29173164033331,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION",
+      "relFile": "ABAPCALL_FUNCTION_DESTINATION.md",
+      "finalScore": 0.07936507936507936,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.29173164033331,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 4
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_REMOTE_SESSION",
+      "text": "ABAPCALL_FUNCTION_REMOTE_SESSION\n\nSynchronous call (sRFC) of a [remote-enabled function module](ABENREMOTE_ENABLED_FM_GLOSRY.html) specified in `func` using the [RFC interface](ABENRFC_INTERFACE_GLOSRY.html). The addition `IN REMOTE SESSION` is used to specify the remote session in `session`. `func` expects character-like data objects. The calling program is continued after the `CALL FUNCTION` statement when the remotely called fu\n\n/abap-docs-standard/ABAPCALL_FUNCTION_REMOTE_SESSION",
+      "bm25": -34.777397816843525,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_REMOTE_SESSION",
+      "relFile": "ABAPCALL_FUNCTION_REMOTE_SESSION.md",
+      "finalScore": 0.07462686567164178,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.777397816843525,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 4
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_STARTING",
+      "text": "ABAPCALL_FUNCTION_STARTING\n\n`CALL FUNCTION func STARTING NEW TASK task`\\\\                `[DESTINATION \\{dest|\\{IN GROUP \\{group|DEFAULT\\}\\}\\}]`\\\\                `[\\{CALLING meth\\}|\\{PERFORMING subr\\} ON END OF TASK]`\\\\\n\n/abap-docs-standard/ABAPCALL_FUNCTION_STARTING",
+      "bm25": -34.62927479876178,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_STARTING",
+      "relFile": "ABAPCALL_FUNCTION_STARTING.md",
+      "finalScore": 0.0661764705882353,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.62927479876178,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION_PARA",
+      "text": "ABAPCALL_FUNCTION_DESTINATION_PARA\n\n`... \\{\\ [EXPORTING  p1 = a1 p2 = a2 ...]`\\\\        `[IMPORTING  p1 = a1 p2 = a2 ...]`\\\\        `[TABLES     t1 = itab1 t2 = itab2 ...]`\\\\\n\n/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION_PARA",
+      "bm25": -32.24772077697194,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION_PARA",
+      "relFile": "ABAPCALL_FUNCTION_DESTINATION_PARA.md",
+      "finalScore": 0.06578947368421052,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -32.24772077697194,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 4
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_BACKGROUND_UNIT",
+      "text": "ABAPCALL_FUNCTION_BACKGROUND_UNIT\n\n`CALL FUNCTION func IN BACKGROUND UNIT oref`\\\\  Background Remote Function Call (bgRFC) of a [remote-enabled function module](ABENREMOTE_ENABLED_FM_GLOSRY.html) specified in `func` using the [RFC interface](ABENRFC_INTERFACE_GLOSRY.html). Here, `oref` is an [object reference variable](ABENOBJECT_REFER_VARIABLE_GLOSRY.html) that must point to an object whose class implements the interface `IF_BGRFC\n\n/abap-docs-standard/ABAPCALL_FUNCTION_BACKGROUND_UNIT",
+      "bm25": -34.08376839822431,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_BACKGROUND_UNIT",
+      "relFile": "ABAPCALL_FUNCTION_BACKGROUND_UNIT.md",
+      "finalScore": 0.06428571428571428,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.08376839822431,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_BACKGROUND_TASK",
+      "text": "ABAPCALL_FUNCTION_BACKGROUND_TASK\n\n`CALL FUNCTION func IN BACKGROUND TASK`\\\\                     `[AS SEPARATE UNIT]`\\\\                     `[DESTINATION dest]`\\\\\n\n/abap-docs-standard/ABAPCALL_FUNCTION_BACKGROUND_TASK",
+      "bm25": -32.20209465422957,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_BACKGROUND_TASK",
+      "relFile": "ABAPCALL_FUNCTION_BACKGROUND_TASK.md",
+      "finalScore": 0.05844155844155845,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -32.20209465422957,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENREMOTE_FUNCTION_CALL_GLOSRY",
+      "text": "ABENREMOTE_FUNCTION_CALL_GLOSRY\n\nRFC for short. Call of a [function module](ABENFUNCTION_MODULE_GLOSRY.html) using the [RFC interface](ABENRFC_INTERFACE_GLOSRY.html) Calls be made in the same or in different systems. The target system is determined using an [RFC destination](ABENRFC_DEST_GLOSRY.html). Connections are possible between different [AS ABAP](ABENAS_ABAP_GLOSRY.html) or between an AS ABAP and an external system. In non\n\n/abap-docs-standard/ABENREMOTE_FUNCTION_CALL_GLOSRY",
+      "bm25": -26.920093078293476,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENREMOTE_FUNCTION_CALL_GLOSRY",
+      "relFile": "ABENREMOTE_FUNCTION_CALL_GLOSRY.md",
+      "finalScore": 0.05662650602409639,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.920093078293476,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 3.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_DESTINATION",
+      "text": "ABENRFC_DESTINATION\n\nThe information about the target system of an RFC call is specified by the RFC destination. The properties of destinations are defined statically and managed in AS ABAP using the transaction `SM59`. Every destination managed in transaction `SM59` has a unique name that can be used to specify the destination after the addition [`DESTINATION`](ABAPCALL_FUNCTION_DESTINATION.html) in RFC. For every de\n\n/abap-docs-standard/ABENRFC_DESTINATION",
+      "bm25": -33.58420645582803,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_DESTINATION",
+      "relFile": "ABENRFC_DESTINATION.md",
+      "finalScore": 0.048611111111111105,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -33.58420645582803,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_STATEMENTS",
+      "text": "ABENRFC_STATEMENTS\n\nThe following additions of the [`CALL FUNCTION`](ABAPCALL_FUNCTION.html) statement cause a remote function call: Background RFC (bgRFC) is an enhanced successor technology of tRFC (and qRFC) and makes it obsolete. It is strongly recommended that bgRFC is used instead of tRFC. -   [`DESTINATION`](ABAPCALL_FUNCTION_DESTINATION.html) for a synchronous RFC (sRFC)\n\n/abap-docs-standard/ABENRFC_STATEMENTS",
+      "bm25": -35.3135500714618,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_STATEMENTS",
+      "relFile": "ABENRFC_STATEMENTS.md",
+      "finalScore": 0.04838709677419355,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.3135500714618,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION-",
+      "text": "Synchronous RFC\n\n1\\. `CALL FUNCTION func [DESTINATION](ABAPCALL_FUNCTION_DESTINATION.html) dest [parameter_list](ABAPCALL_FUNCTION_DESTINATION_PARA.html). | CALL FUNCTION func [IN REMOTE SESSION](ABAPCALL_FUNCTION_REMOTE_SESSION.html) session [parameter_list.](ABAPCALL_FUNCTION_REMOTE_PARA.html)` 2\\. `CALL FUNCTION func STARTING NEW TASK task`\\\\ `[DESTINATION \\{dest|\\{IN GROUP \\{group|DEFAULT\\}\\}\\}]`\\\\\n\n/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION-",
+      "bm25": -35.24370053089656,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_DESTINATION-",
+      "relFile": "ABAPCALL_FUNCTION_DESTINATION-.md",
+      "finalScore": 0.046875,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.24370053089656,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_CONTEXT",
+      "text": "ABENRFC_CONTEXT\n\nEvery remote call of a function module using an RFC interface defines an [RFC session](ABENRFC_SESSION_GLOSRY.html) as a dedicated [user session](ABENUSER_SESSION_GLOSRY.html) in the target system. The logon data of an RFC session is defined during the definition of an [RFC destination](ABENRFC_DESTINATION.html) in transaction `SM59`. If no values are defined for the [user name](ABENUSER_NAME_GLOS\n\n/abap-docs-standard/ABENRFC_CONTEXT",
+      "bm25": -35.008432266793584,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_CONTEXT",
+      "relFile": "ABENRFC_CONTEXT.md",
+      "finalScore": 0.046153846153846156,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.008432266793584,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION_SHORTREF",
+      "text": "ABAPCALL_FUNCTION_SHORTREF\n\n`CALL FUNCTION func [\\ \\{IN UPDATE TASK\\}\\                     |\\ \\{\\ [\\ \\{STARTING NEW TASK task\\}\\                         |\\ \\{IN BACKGROUND TASK [AS SEPARATE UNIT]\\}\\ ]\\                         [DESTINATION dest]\\ \\}\\                     |\\ \\{IN BACKGROUND UNIT\\}\\ ]\\                     [\\{CALLING meth\\}|\\{PERFORMING subr\\} ON END OF TASK]\\                     \\{\\ [EXPORTING  p1 = a1 p2 = a2 .\n\n/abap-docs-standard/ABAPCALL_FUNCTION_SHORTREF",
+      "bm25": -25.347206279519604,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION_SHORTREF",
+      "relFile": "ABAPCALL_FUNCTION_SHORTREF.md",
+      "finalScore": 0.045,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.347206279519604,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_FUNCTION",
+      "text": "ABAPCALL_FUNCTION\n\n1\\. `CALL FUNCTION func \\{\\ [parameter_list](ABAPCALL_FUNCTION_PARAMETER.html)`\\\\ `|\\ [parameter_tables](ABAPCALL_FUNCTION_DYNAMIC.html)\\ \\}.` 2\\. `CALL FUNCTION ... DESTINATION ...`\n\n/abap-docs-standard/ABAPCALL_FUNCTION",
+      "bm25": -24.831534450840326,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_FUNCTION",
+      "relFile": "ABAPCALL_FUNCTION.md",
+      "finalScore": 0.04285714285714286,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.831534450840326,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_DEST_GLOSRY",
+      "text": "ABENRFC_DEST_GLOSRY\n\nAn RFC destination contains the connection parameters for [remote function calls](ABENREMOTE_FUNCTION_CALL_GLOSRY.html). It contains the connection type, the target system, and the partner program. Connections that only affect another [AS ABAP](ABENAS_ABAP_GLOSRY.html) can be classified as [trusted systems](ABENTRUSTED_SYSTEM_GLOSRY.html). RFC destinations are managed statically using the [transac\n\n/abap-docs-standard/ABENRFC_DEST_GLOSRY",
+      "bm25": -34.91784532359997,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_DEST_GLOSRY",
+      "relFile": "ABENRFC_DEST_GLOSRY.md",
+      "finalScore": 0.040909090909090916,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.91784532359997,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_INTERFACE",
+      "text": "ABENRFC_INTERFACE\n\nThe RFC interface is required to execute a remote function call. The RFC interface performs the following services: If the AS ABAP are not the same, two ABAP programs communicate with each other using the RFC interface, whereas for communication between an AS ABAP and an external system, an ABAP program connects with a program in a different programming language (C, C++, Visual Basic, Java or .NET\n\n/abap-docs-standard/ABENRFC_INTERFACE",
+      "bm25": -32.77068828581529,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_INTERFACE",
+      "relFile": "ABENRFC_INTERFACE.md",
+      "finalScore": 0.04054054054054054,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -32.77068828581529,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_LOGON_DATA_ABEXA",
+      "text": "ABENRFC_LOGON_DATA_ABEXA\n\nThis example demonstrates how the logon data of an RFC session is set implicitly. A remote-enabled function module `DEMO_RFM_LOGON_DATA` is called with the destination `NONE` using the RFC interface. The logon data user name, client, and logon language of the corresponding [RFC session](ABENRFC_CONTEXT.html) are provided implicitly. To demonstrate that the [logon language](ABENLOGON_LANGUAGE_GLOSR\n\n/abap-docs-standard/ABENRFC_LOGON_DATA_ABEXA",
+      "bm25": -33.9978472689604,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_LOGON_DATA_ABEXA",
+      "relFile": "ABENRFC_LOGON_DATA_ABEXA.md",
+      "finalScore": 0.03802816901408451,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -33.9978472689604,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_DIALOG",
+      "text": "ABENRFC_DIALOG\n\nIn an [RFM](ABENRFM_GLOSRY.html) called using RFC, both variants [sRFC](ABENSRFC_GLOSRY.html) and [aRFC](ABENARFC_GLOSRY.html) can execute dialog interactions using the SAP GUI or call dynpros. This is not possible with the variants [bgRFC](ABENTRFC_2_GLOSRY.html), [tRFC](ABENTRFC_2_GLOSRY.html), and [qRFC](ABENQRFC_GLOSRY.html). It is technically possible for [pRFC](ABENPRFC_GLOSRY.html) but not\n\n/abap-docs-standard/ABENRFC_DIALOG",
+      "bm25": -31.63960683724868,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_DIALOG",
+      "relFile": "ABENRFC_DIALOG.md",
+      "finalScore": 0.0379746835443038,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -31.63960683724868,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_DYNAMIC_DEST_ABEXA",
+      "text": "ABENRFC_DYNAMIC_DEST_ABEXA\n\nThis example demonstrates how [dynamic destinations](ABENRFC_DESTINATION.html) are created. The method `CREATE_RFC_DESTINATION` of class `CL_DYNAMIC_DESTINATION` is used to create a [dynamic destination](ABENRFC_DESTINATION.html). Input values, whose default values are determined from system fields for the current AS ABAP, are passed as parameters. A remote-enabled function module is called using\n\n/abap-docs-standard/ABENRFC_DYNAMIC_DEST_ABEXA",
+      "bm25": -32.96211497168198,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_DYNAMIC_DEST_ABEXA",
+      "relFile": "ABENRFC_DYNAMIC_DEST_ABEXA.md",
+      "finalScore": 0.036986301369863014,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -32.96211497168198,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-30-RFC",
+      "text": "ABENNEWS-30-RFC\n\n`CALL FUNCTION... DESTINATION ...` can now also be called using the addition `IN BACKGROUND TASK`. The calls are collected and executed as a logical unit of work ([LUW](ABENLUW_GLOSRY.html)) on the target host ([destination](ABENRFC_DEST_GLOSRY.html)) at the next `COMMIT WORK`. The current program does not wait for the function modules to finish processing. Regular [remote function calls](ABENREMO\n\n/abap-docs-standard/ABENNEWS-30-RFC",
+      "bm25": -35.415445215131754,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-30-RFC",
+      "relFile": "ABENNEWS-30-RFC.md",
+      "finalScore": 0.036065573770491806,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.415445215131754,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_INTRO",
+      "text": "ABENRFC_INTRO\n\nRemote Function Call (RFC) is an SAP-specific procedure for calling function modules in remote systems. Communication using the RFC interface can be divided into different scenarios based on the systems involved: RFC can be used as a synchronous or asynchronous communication procedure.\n\n/abap-docs-standard/ABENRFC_INTRO",
+      "bm25": -26.302360562359425,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_INTRO",
+      "relFile": "ABENRFC_INTRO.md",
+      "finalScore": 0.03529411764705882,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.302360562359425,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPARALLEL_RFC_ABEXA",
+      "text": "ABENPARALLEL_RFC_ABEXA\n\nThis example demonstrates parallel asynchronous RFC processing. Parallel asynchronous processing of the function module `RFC_SYSTEM_INFO` using [asynchronous remote function calls](ABENASYNCHRONOUS_RFC_GLOSRY.html). Ten calls with different task IDs `name` are made, which each run in a separate [work process](ABENWORK_PROCESS_GLOSRY.html). The callback routine `callbback_meth` counts the completed\n\n/abap-docs-standard/ABENPARALLEL_RFC_ABEXA",
+      "bm25": -31.9338079051956,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPARALLEL_RFC_ABEXA",
+      "relFile": "ABENPARALLEL_RFC_ABEXA.md",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -31.9338079051956,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENREMOTE_USER_GLOSRY",
+      "text": "ABENREMOTE_USER_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENREMOTE_USER_GLOSRY",
+      "bm25": -30.661925451848752,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENREMOTE_USER_GLOSRY",
+      "relFile": "ABENREMOTE_USER_GLOSRY.md",
+      "finalScore": 0.03375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.661925451848752,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPRECEIVE",
+      "text": "ABAPRECEIVE\n\n`RECEIVE RESULTS FROM FUNCTION func`\\\\  This statement must be used in a callback routine specified in an [asynchronous RFC](ABAPCALL_FUNCTION_STARTING.html) to receive output parameters of an asynchronously called function `func` in the parameter list [`parameter_list`](ABAPRECEIVE_PARA.html) and to handle exceptions. The addition `KEEPING TASK` retains the asynchronous RFC connection, and theref\n\n/abap-docs-standard/ABAPRECEIVE",
+      "bm25": -32.61096541320049,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPRECEIVE",
+      "relFile": "ABAPRECEIVE.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -32.61096541320049,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_AUTHORITY",
+      "text": "ABENRFC_AUTHORITY\n\nIf the [profile parameter](ABENPROFILE_PARAMETER_GLOSRY.html)\\\\ `auth/rfc_authority_check` is set to 1, an automatic authorization check is executed when a function module is called by remote call. For detailed information about RFC authorizations, see the documentation [RFC](https://help.sap.com/docs/ABAP_PLATFORM_NEW/753088fc00704d0a80e7fbd6803c8adb/4888068AD9134076E10000000A42189D) in SAP Help\n\n/abap-docs-standard/ABENRFC_AUTHORITY",
+      "bm25": -25.8119391106834,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_AUTHORITY",
+      "relFile": "ABENRFC_AUTHORITY.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.8119391106834,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_EXCEPTION",
+      "text": "ABENRFC_EXCEPTION\n\nIn the interface of a [remote enabled function module](ABENREMOTE_ENABLED_FM_GLOSRY.html), it is currently only possible to specify classic exceptions, that is, [non-class-based exceptions](ABENEXCEPTIONS_NON_CLASS.html). Class-based exceptions are supported only in internal SAP release tracks. In an external function call, the non-class-based exceptions defined in the interface of the function mo\n\n/abap-docs-standard/ABENRFC_EXCEPTION",
+      "bm25": -25.776789017611726,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_EXCEPTION",
+      "relFile": "ABENRFC_EXCEPTION.md",
+      "finalScore": 0.03296703296703297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.776789017611726,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSAP_LUW",
+      "text": "If a program is called using\n\nAn application program can be split into multiple program sections, which are processed in sequence using different [work processes](ABENWORK_PROCESS_GLOSRY.html). Each switch of a work process is linked with an implicit [database commit](ABENDATABASE_COMMIT_GLOSRY.html), which means that an application program is not linked with a single [database LUW](ABENDATABASE_LUW_GLOSRY.html) automatically.\n\n/abap-docs-standard/ABENSAP_LUW",
+      "bm25": -24.17887451805395,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSAP_LUW",
+      "relFile": "ABENSAP_LUW.md",
+      "finalScore": 0.03211009174311927,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.17887451805395,
+        "rank": 49,
+        "rrfScore": 0.009174311926605505,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-40-RFC",
+      "text": "ABENNEWS-40-RFC\n\nThe statement `WAIT` makes it possible to wait for a response from a function module called asynchronously. This requires the addition `PERFORMING form ON END OF TASK`. `WAIT` must be executed in the same [internal session](ABENINTERNAL_SESSION_GLOSRY.html). The `KEEPING TASK` addition preserves the remote context in the subroutine for reuse. If an error occurs in the target system in RFC, details\n\n/abap-docs-standard/ABENNEWS-40-RFC",
+      "bm25": -34.401310439638955,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-40-RFC",
+      "relFile": "ABENNEWS-40-RFC.md",
+      "finalScore": 0.0318840579710145,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.401310439638955,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_LIMITATIONS",
+      "text": "ABENRFC_LIMITATIONS\n\nIn contrast to the regular function module call, the following restrictions apply to an RFC: -   [Pass-by value](ABENPASS_BY_VALUE_GLOSRY.html) must be selected for the `IMPORTING`, `EXPORTING`, and `CHANGING` parameters of a [remote-enabled function module](ABENREMOTE_ENABLED_FM_GLOSRY.html). This cannot be specified explicitly for `TABLES` parameters but is used implicitly for RFC. -   The forma\n\n/abap-docs-standard/ABENRFC_LIMITATIONS",
+      "bm25": -25.684485674996385,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_LIMITATIONS",
+      "relFile": "ABENRFC_LIMITATIONS.md",
+      "finalScore": 0.031578947368421054,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.684485674996385,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_SYSTEM_FIELDS",
+      "text": "ABENRFC_SYSTEM_FIELDS\n\nRFC initializes the system field `sy-subrc` is initialized in the calling program or sets it to the value specified in exception handling, as with every function module call. In addition, each time a function module is called remotely, the system fields for messages (`sy-msgid`, `sy-msgno`, `sy-msgty`, and `sy-msgv1` through `sy-msgv4`) are initialized in the calling program. If the statement [`ME\n\n/abap-docs-standard/ABENRFC_SYSTEM_FIELDS",
+      "bm25": -25.604760689100164,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_SYSTEM_FIELDS",
+      "relFile": "ABENRFC_SYSTEM_FIELDS.md",
+      "finalScore": 0.030927835051546393,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.604760689100164,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENUSER_SESSIONS",
+      "text": "ABENUSER_SESSIONS\n\nEach execution of an ABAP program takes place in an [internal session](ABENINTERNAL_SESSION_GLOSRY.html) in an [ABAP session](ABENABAP_SESSION_GLOSRY.html) within an [AS instance](ABENAS_INSTANCE_GLOSRY.html)\\\\ [user session](ABENUSER_SESSION_GLOSRY.html). For this, at least one ABAP session is open in each user session. A user session is opened whenever an [ABAP user](ABENABAP_USER_GLOSRY.html)\\\\\n\n/abap-docs-standard/ABENUSER_SESSIONS",
+      "bm25": -28.22523427586799,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENUSER_SESSIONS",
+      "relFile": "ABENUSER_SESSIONS.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -28.22523427586799,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSYNCHRONOUS_RFC_GLOSRY",
+      "text": "ABENSYNCHRONOUS_RFC_GLOSRY\n\nsRFC for short. [Remote function call](ABENREMOTE_FUNCTION_CALL_GLOSRY.html) in which the calling program waits for the end of processing of the remotely called function. ABENTECHNO\\_GLOSSARY.html ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENSYNCHRONOUS_RFC_GLOSRY",
+      "bm25": -26.057697470628487,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSYNCHRONOUS_RFC_GLOSRY",
+      "relFile": "ABENSYNCHRONOUS_RFC_GLOSRY.md",
+      "finalScore": 0.030681818181818185,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.057697470628487,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENASYNCHRONOUS_RFC_GLOSRY",
+      "text": "ABENASYNCHRONOUS_RFC_GLOSRY\n\naRFC for short. [Remote function call](ABENREMOTE_FUNCTION_CALL_GLOSRY.html) that does not wait for the end of processing of the remotely called function. ABENTECHNO\\_GLOSSARY.html ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENASYNCHRONOUS_RFC_GLOSRY",
+      "bm25": -26.009233987440798,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENASYNCHRONOUS_RFC_GLOSRY",
+      "relFile": "ABENASYNCHRONOUS_RFC_GLOSRY.md",
+      "finalScore": 0.030337078651685393,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.009233987440798,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_REMOTE_SESSION_ABEXA",
+      "text": "ABENRFC_REMOTE_SESSION_ABEXA\n\nThis example demonstrates parameter passing for a remote session. In synchronous calls, parameters are passed and applied directly in the statement `CALL FUNCTION`. \\* Public class definition \\\\nCLASS cl\\_demo\\_rfc\\_remote\\_session DEFINITION \\\\n PUBLIC \\\\n INHERITING FROM cl\\_demo\\_classrun \\\\n CREATE PUBLIC . \\\\n PUBLIC SECTION. \\\\n METHODS main \\\\n REDEFINITION . \\\\n\\\\ \\\\n PRIVATE SECTION. \\\\n\n\n/abap-docs-standard/ABENRFC_REMOTE_SESSION_ABEXA",
+      "bm25": -24.797351902423138,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_REMOTE_SESSION_ABEXA",
+      "relFile": "ABENRFC_REMOTE_SESSION_ABEXA.md",
+      "finalScore": 0.03018867924528302,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.797351902423138,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_MESSAGE_RFC",
+      "text": "ABENABAP_MESSAGE_RFC\n\nAs long as no list or dialog processing takes place during [RFC processing](ABENRFC_PROCESSING_GLOSRY.html), messages behave as follows: If [dialog processing](ABENABAP_MESSAGE_DIALOG.html) or [list processing](ABENABAP_MESSAGE_LIST_PROCESSING.html) takes place during RFC processing, any messages sent behave as described there. If a message of type *E* is sent in a remote-enabled function module,\n\n/abap-docs-standard/ABENABAP_MESSAGE_RFC",
+      "bm25": -25.340828268033007,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_MESSAGE_RFC",
+      "relFile": "ABENABAP_MESSAGE_RFC.md",
+      "finalScore": 0.0297029702970297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.340828268033007,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_INTERFACE_GLOSRY",
+      "text": "ABENRFC_INTERFACE_GLOSRY\n\nInterface for [remote function calls](ABENREMOTE_FUNCTION_CALL_GLOSRY.html) (RFC). The RFC interface consists of an interface for [ABAP programs](ABENABAP_PROGRAM_GLOSRY.html) and interfaces for non-ABAP programs. ABENTECHNO\\_GLOSSARY.html ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENRFC_INTERFACE_GLOSRY",
+      "bm25": -25.769555684010385,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_INTERFACE_GLOSRY",
+      "relFile": "ABENRFC_INTERFACE_GLOSRY.md",
+      "finalScore": 0.029347826086956522,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.769555684010385,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_PARAMETERS_ABEXA",
+      "text": "ABENRFC_PARAMETERS_ABEXA\n\nThis example demonstrates parameter passing in two RFC variants. The function module `DEMO_RFM_PARAMETERS` is called using [synchronous](ABAPCALL_FUNCTION_DESTINATION.html) and [asynchronous](ABAPCALL_FUNCTION_STARTING.html) RFC. -   In synchronous calls, parameters are passed and applied directly in the statement `CALL FUNCTION`.\n\n/abap-docs-standard/ABENRFC_PARAMETERS_ABEXA",
+      "bm25": -25.724340390591948,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_PARAMETERS_ABEXA",
+      "relFile": "ABENRFC_PARAMETERS_ABEXA.md",
+      "finalScore": 0.029032258064516134,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.724340390591948,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_SERVER_GROUP_GLOSRY",
+      "text": "ABENRFC_SERVER_GROUP_GLOSRY\n\nGroup of multiple [AS instances](ABENAS_INSTANCE_GLOSRY.html) of an [AS ABAP](ABENAS_ABAP_GLOSRY.html) that are provided to process asynchronous [remote function calls](ABENREMOTE_FUNCTION_CALL_GLOSRY.html) (RFC) concurrently. RFC server groups are created using [transaction code](ABENTRANSACTION_GLOSRY.html)\\\\ `RZ12`. ABENTECHNO\\_GLOSSARY.html ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENRFC_SERVER_GROUP_GLOSRY",
+      "bm25": -25.706933165792513,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_SERVER_GROUP_GLOSRY",
+      "relFile": "ABENRFC_SERVER_GROUP_GLOSRY.md",
+      "finalScore": 0.02872340425531915,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.706933165792513,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_PROCESSING_GLOSRY",
+      "text": "ABENRFC_PROCESSING_GLOSRY\n\nProcessing of a [remote function call](ABENREMOTE_FUNCTION_CALL_GLOSRY.html) using the [RFC interface](ABENRFC_INTERFACE_GLOSRY.html) in an [RFM](ABENRFM_GLOSRY.html). ABENTECHNO\\_GLOSSARY.html ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENRFC_PROCESSING_GLOSRY",
+      "bm25": -25.6196845709063,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_PROCESSING_GLOSRY",
+      "relFile": "ABENRFC_PROCESSING_GLOSRY.md",
+      "finalScore": 0.028125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.6196845709063,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_OBSOLETE",
+      "text": "ABENRFC_OBSOLETE\n\n-   [`CALL FUNCTION - IN BACKGROUND TASK`](ABAPCALL_FUNCTION_BACKGROUND_TASK.html) abenabap.html abenabap\\_reference.html abenabap\\_obsolete.html abenextern\\_obsolete.html\n\n/abap-docs-standard/ABENRFC_OBSOLETE",
+      "bm25": -24.446222042548055,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_OBSOLETE",
+      "relFile": "ABENRFC_OBSOLETE.md",
+      "finalScore": 0.02803738317757009,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.446222042548055,
+        "rank": 47,
+        "rrfScore": 0.009345794392523364,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_EXCEPTIONS_ABEXA",
+      "text": "ABENRFC_EXCEPTIONS_ABEXA\n\nThis example demonstrates exception handling in RFC. The `DEMO_RFM_CLASSIC_EXCEPTION` function module raises the non-class-based exception `CLASSIC_EXCEPTION`. When `DEMO_RFM_CLASSIC_EXCEPTION` is called, `EXCEPTIONS` is specified and values for `sy-subrc` are assigned to the possible classic exceptions. If none of the predefined RFC interface exceptions are raised, `sy-subrc` is set to 3.\n\n/abap-docs-standard/ABENRFC_EXCEPTIONS_ABEXA",
+      "bm25": -25.268365851691474,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_EXCEPTIONS_ABEXA",
+      "relFile": "ABENRFC_EXCEPTIONS_ABEXA.md",
+      "finalScore": 0.02621359223300971,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.268365851691474,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-46-RFC",
+      "text": "ABENNEWS-46-RFC\n\nABAP Debugger enables `breakpoints` to be set on the statements RFC or `CALL FUNCTION DESTINATION`. This positions `breakpoints` in the current program for all types of RFC. Main sessions could not be created, for example using the `/O command in the OK code field`, for synchronous RFC until ABAP release 4.6. This function, previously only provided for asynchronous RFC, is now available from this\n\n/abap-docs-standard/ABENNEWS-46-RFC",
+      "bm25": -26.708446147773362,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-46-RFC",
+      "relFile": "ABENNEWS-46-RFC.md",
+      "finalScore": 0.02619047619047619,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.708446147773362,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-816-RFC",
+      "text": "ABENNEWS-816-RFC\n\nA synchronous RFC call specifying a [remote session](ABAPCALL_FUNCTION_REMOTE_SESSION.html) is now possible using the syntax `CALL FUNCTION ... IN REMOTE SESSION ...`. abenabap.html abennews.html abennews-81.html abennews-816.html\n\n/abap-docs-standard/ABENNEWS-816-RFC",
+      "bm25": -26.295323054473368,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-816-RFC",
+      "relFile": "ABENNEWS-816-RFC.md",
+      "finalScore": 0.025581395348837212,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.295323054473368,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL-",
+      "text": "ABAPCALL-\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** Calls the system function `cfunc`. A flat character-like data object containing the name of the function can be specified for `cfunc`. The function must be entered in the file `sapactab.h`. Modifying a function or creating a new function requires the ABAP kernel to be compiled and linked again. This requir\n\n/abap-docs-standard/ABAPCALL-",
+      "bm25": -22.06238256303759,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL-",
+      "relFile": "ABAPCALL-.md",
+      "finalScore": 0.025362318840579712,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.06238256303759,
+        "rank": 78,
+        "rrfScore": 0.007246376811594203,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCOMMIT",
+      "text": "ABAPCOMMIT\n\n\\\\ `COMMIT WORK [AND WAIT].` The statement `COMMIT WORK` closes the current [SAP LUW](ABENSAP_LUW_GLOSRY.html) and opens a new one. All change requests from the current SAP LUW are committed. To do this, `COMMIT WORK` performs the following actions: Furthermore, the `COMMIT WORK` raises the event `TRANSACTION_FINISHED` from the system class `CL_SYSTEM_TRANSACTION_STATE`, where the parameter `KIND`\n\n/abap-docs-standard/ABAPCOMMIT",
+      "bm25": -25.407577934503642,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCOMMIT",
+      "relFile": "ABAPCOMMIT.md",
+      "finalScore": 0.025252525252525256,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.407577934503642,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13559556",
+      "text": "Cloud Integration - Creating XML Structure for Rem...\n\nThis blog describes how to set up the XML structure to successfully call a Function Module or BAPI remote ly from SAP Cloud Integration. It shows how the different parameter types like tables, s...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/cloud-integration-creating-xml-structure-for-remote-function-call-rfc-that/ba-p/13559556?search-action-id=498799760512&search-result-uid=13559556",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/cloud-integration-creating-xml-structure-for-remote-function-call-rfc-that/ba-p/13559556?search-action-id=498799760512&search-result-uid=13559556",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13745585",
+      "text": "Understanding Different Types of RFC Calls in SAP ...\n\nRemote Function Call ( RFC ) is a powerful feature in SAP ABAP, enabling communication between SAP systems, as well as between SAP systems and external systems. RFC s facilitate remote function e...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/understanding-different-types-of-rfc-calls-in-sap-abap/ba-p/13745585?search-action-id=498799760512&search-result-uid=13745585",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/understanding-different-types-of-rfc-calls-in-sap-abap/ba-p/13745585?search-action-id=498799760512&search-result-uid=13745585",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13458760",
+      "text": "Call a Remote Function Module ( RFC ) From SAP Cloud...\n\n...DATA(lv_rfc_dest) = lo_rfc_dest->get_destination_name( ). CALL FUNCTION ' RFC _SYSTEM_INFO' DESTINATION lv_rfc_dest IMPORTING rfc si_export = l...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/call-a-remote-function-module-rfc-from-sap-cloud-platform-abap-environment/ba-p/13458760?search-action-id=498799760512&search-result-uid=13458760",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/call-a-remote-function-module-rfc-from-sap-cloud-platform-abap-environment/ba-p/13458760?search-action-id=498799760512&search-result-uid=13458760",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/integration/index#rfc",
+      "text": "RFC\n\nRemote Function Call, kurz RFC, ist die Verwendung von klassischen Funktionsbausteinen zur Kommunikation über Systemgrenzen hinweg. Dabei können sogenannte Destionations verwendet werden, um einen Funktionsbaustein in einem anderen System aufzurufen. Der Aufruf von Funktionsbausteinen von Non-SAP-Sy...\n\n/dsag-abap-leitfaden/integration/index#rfc",
+      "bm25": -28.117422528396723,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/integration/index#rfc",
+      "relFile": "integration/index.md",
+      "finalScore": 0.024390243902439025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -28.117422528396723,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRFC_SESSION_GLOSRY",
+      "text": "ABENRFC_SESSION_GLOSRY\n\nABENTECHNO\\_GLOSSARY.html ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENRFC_SESSION_GLOSRY",
+      "bm25": -23.295628994242243,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRFC_SESSION_GLOSRY",
+      "relFile": "ABENRFC_SESSION_GLOSRY.md",
+      "finalScore": 0.024324324324324326,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.295628994242243,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTEXT_ENVIRONMENT",
+      "text": "ABENTEXT_ENVIRONMENT\n\nThe [text environment language](ABENTEXT_ENV_LANGU_GLOSRY.html) is part of the [language settings](ABENLANGUAGE_SETTINGS.html) of an ABAP program and determines its [text environment](ABENTEXT_ENVIRONMENT_GLOSRY.html). It is valid during an [internal session](ABENINTERNAL_SESSION_GLOSRY.html). The current text environment language can be determined using the method `GET_LANGUAGE` of the class `CL_\n\n/abap-docs-standard/ABENTEXT_ENVIRONMENT",
+      "bm25": -24.91184150439909,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTEXT_ENVIRONMENT",
+      "relFile": "ABENTEXT_ENVIRONMENT.md",
+      "finalScore": 0.02403846153846154,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.91184150439909,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 1.5
+      }
+    }
+  ]
+}

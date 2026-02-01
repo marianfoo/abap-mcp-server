@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": true
     },
-    "timestamp": "2026-01-31T19:19:04.398Z",
+    "timestamp": "2026-02-01T20:18:46.099Z",
     "count": 50
   },
   "results": [
@@ -663,11 +663,11 @@
       }
     },
     {
-      "id": "sap-help-80e471619ba4443585f20ce526bbe918",
-      "text": "Unit Testing AMDP\n\nThe first level dependencies can be of the type, <b>TABLE</b>, <b>CDS</b> VIEW, DATABASE VIEW, SYNONYM, <b>AMDP</b> PROCEDURE, <b>AMDP</b> <b>FUNCTION</b>, and <b>AMDP</b>\nBADI. ... Unit Testing <b>AMDP</b>\n<b>AMDP</b> Unit testing involves testing <b>SQLScript</b> logic written inside an <b>AMDP</b> method under test by isolating the method under test from all of\nthe first-level dependencies. ... The unit test environment generates test doubles for all the first-level dependencies and a test clone is generated for the <b>AMDP</b> method under\ntest. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/80e471619ba4443585f20ce526bbe918.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "id": "sap-help-7370f3f78a6d4940af29ab89abf7f1b0",
+      "text": "SQL-Based Scalar Functions\n\nA scalar <b>function</b> is linked with an\n<b>AMDP</b> <b>function</b> in which it is implemented using <b>SQLScript</b>. ... <b>AMDP</b> <b>function</b> implementation: Static\nmethod in an <b>AMDP</b> class that implements a database <b>function</b> in <b>SQLScript</b> on the\nSAP HANA database and returns a scalar value. ... Binds a <b>CDS</b> scalar <b>function</b> definition to a\nruntime and to an <b>AMDP</b> method that implements the <b>function</b>. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/7370f3f78a6d4940af29ab89abf7f1b0.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/80e471619ba4443585f20ce526bbe918.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/7370f3f78a6d4940af29ab89abf7f1b0.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
       "relFile": "",
       "finalScore": 0.03461538461538462,
       "sourceKind": "sap_help",
@@ -710,11 +710,11 @@
       }
     },
     {
-      "id": "sap-help-20dfd5ccb940460dba191957eaeedf79",
-      "text": "Used Frameworks and Tools\n\nThere are <b>CDS</b> entities that are implemented as <b>AMDP</b> methods in <b>SQLscript</b> on the SAP HANA database, such as <b>CDS</b> <b>table</b> <b>functions</b> and\n<b>CDS</b> scalar <b>functions</b>. ... When the data access in your code under test is performed via <b>CDS</b>\nview entities, the <b>CDS</b> test double framework redirects entity calls to\ndoubled database <b>tables</b>. ... For these entities, the <b>AMDP</b> test double framework is used to isolate and test the logic encapsulated within an <b>AMDP</b> method. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/20dfd5ccb940460dba191957eaeedf79.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "id": "sap-help-80e471619ba4443585f20ce526bbe918",
+      "text": "Unit Testing AMDP\n\nThe first level dependencies can be of the type, <b>TABLE</b>, <b>CDS</b> VIEW, DATABASE VIEW, SYNONYM, <b>AMDP</b> PROCEDURE, <b>AMDP</b> <b>FUNCTION</b>, and <b>AMDP</b>\nBADI. ... Unit Testing <b>AMDP</b>\n<b>AMDP</b> Unit testing involves testing <b>SQLScript</b> logic written inside an <b>AMDP</b> method under test by isolating the method under test from all of\nthe first-level dependencies. ... The unit test environment generates test doubles for all the first-level dependencies and a test clone is generated for the <b>AMDP</b> method under\ntest. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/80e471619ba4443585f20ce526bbe918.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/20dfd5ccb940460dba191957eaeedf79.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/80e471619ba4443585f20ce526bbe918.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
       "relFile": "",
       "finalScore": 0.034090909090909095,
       "sourceKind": "sap_help",
@@ -741,11 +741,11 @@
       }
     },
     {
-      "id": "sap-help-7370f3f78a6d4940af29ab89abf7f1b0",
-      "text": "SQL-Based Scalar Functions\n\nA scalar <b>function</b> is linked with an\n<b>AMDP</b> <b>function</b> in which it is implemented using <b>SQLScript</b>. ... <b>AMDP</b> <b>function</b> implementation: Static\nmethod in an <b>AMDP</b> class that implements a database <b>function</b> in <b>SQLScript</b> on the\nSAP HANA database and returns a scalar value. ... Binds a <b>CDS</b> scalar <b>function</b> definition to a\nruntime and to an <b>AMDP</b> method that implements the <b>function</b>. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/7370f3f78a6d4940af29ab89abf7f1b0.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "id": "sap-help-20dfd5ccb940460dba191957eaeedf79",
+      "text": "Used Frameworks and Tools\n\nThere are <b>CDS</b> entities that are implemented as <b>AMDP</b> methods in <b>SQLscript</b> on the SAP HANA database, such as <b>CDS</b> <b>table</b> <b>functions</b> and\n<b>CDS</b> scalar <b>functions</b>. ... When the data access in your code under test is performed via <b>CDS</b>\nview entities, the <b>CDS</b> test double framework redirects entity calls to\ndoubled database <b>tables</b>. ... For these entities, the <b>AMDP</b> test double framework is used to isolate and test the logic encapsulated within an <b>AMDP</b> method. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/20dfd5ccb940460dba191957eaeedf79.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
       "bm25": 0,
       "sourceId": "sap-help",
-      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/7370f3f78a6d4940af29ab89abf7f1b0.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/20dfd5ccb940460dba191957eaeedf79.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
       "relFile": "",
       "finalScore": 0.033582089552238806,
       "sourceKind": "sap_help",

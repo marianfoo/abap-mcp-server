@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "query": "BREAK-POINT ASSERT debugging watchpoint",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": false,
+      "includeSamples": true
+    },
+    "timestamp": "2026-02-01T20:19:15.143Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABAPBREAK-POINT",
+      "text": "ABAPBREAK-POINT\n\n`BREAK-POINT \\{\\ [ID group]`\\\\  This statement defines a [breakpoint](ABENBREAKPOINT_GLOSRY.html). The addition `ID` controls the activation. Without the addition `ID`, the breakpoint is always active. **Breakpoints in Dialog Processing**\n\n/abap-docs-standard/ABAPBREAK-POINT",
+      "bm25": -28.54291911910773,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPBREAK-POINT",
+      "relFile": "ABAPBREAK-POINT.md",
+      "finalScore": 0.047619047619047616,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -28.54291911910773,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPASSERT",
+      "text": "ABAPASSERT\n\nThis statement defines an [assertion](ABENASSERTION_GLOSRY.html). Any [logical expression](ABENLOGICAL_EXPRESSION_GLOSRY.html) can be specified for [`log_exp`](ABENLOGEXP.html). An assertion is either active or inactive. When the program reaches an active assertion, the logical expression is evaluated, and the program execution continues with the statement after `ASSERT` only if the result of `log\n\n/abap-docs-standard/ABAPASSERT",
+      "bm25": -22.03123988814485,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPASSERT",
+      "relFile": "ABAPASSERT.md",
+      "finalScore": 0.044117647058823525,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.03123988814485,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENASSERTIONS_GUIDL",
+      "text": "ABENASSERTIONS_GUIDL\n\nThe [`ASSERT`](ABAPASSERT.html) statement is used to express an assertion in an ABAP program. Such an assertion is either always active or can be activated externally by assignment to a checkpoint group. When the program reaches an active assertion, it evaluates the corresponding condition. If the condition is violated, the following happens, depending on the type of activation: Assertions, togeth\n\n/abap-docs-standard/ABENASSERTIONS_GUIDL",
+      "bm25": -15.776242904071704,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENASSERTIONS_GUIDL",
+      "relFile": "ABENASSERTIONS_GUIDL.md",
+      "finalScore": 0.0410958904109589,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.776242904071704,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPBREAK-POINT_INTERNAL",
+      "text": "ABAPBREAK-POINT_INTERNAL\n\n**This addition is for internal use only. \\\\nIt must not be used in application programs.** This addition can be specified optionally after `log_text`, but not together with the addition `ID`. It is only useful in system programs, system modules, system subroutines, and system function modules whose names begin with %\\_. If system debugging is not activated and the addition `AT NEXT APPLICATION ST\n\n/abap-docs-standard/ABAPBREAK-POINT_INTERNAL",
+      "bm25": -12.560229078051243,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPBREAK-POINT_INTERNAL",
+      "relFile": "ABAPBREAK-POINT_INTERNAL.md",
+      "finalScore": 0.037037037037037035,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.560229078051243,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCHECKPOINTS",
+      "text": "ABENCHECKPOINTS\n\nCheckpoints define points in a program at which the state of the program can be tested during program execution. Checkpoints are either conditional or unconditional. Conditional checkpoints are defined by [assertions](ABENASSERTION_GLOSRY.html), unconditional checkpoints by [breakpoints](ABENBREAKPOINT_GLOSRY.html) or [logpoints](ABENLOGPOINT_GLOSRY.html). Checkpoints, and breakpoints from outside\n\n/abap-docs-standard/ABENCHECKPOINTS",
+      "bm25": -18.89049166789882,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCHECKPOINTS",
+      "relFile": "ABENCHECKPOINTS.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.89049166789882,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPBREAK-POINT_SHORTREF",
+      "text": "ABAPBREAK-POINT_SHORTREF\n\n`BREAK-POINT [\\ \\{ID group\\}\\ |\\ \\{log_text\\}\\ ].` Defines a [breakpoint](ABENBREAKPOINT_GLOSRY.html) for branching to ABAP Debugger.     Assigns the breakpoint to a [checkpoint group](ABENCHECKPOINT_GROUP_GLOSRY.html)\\\\ `group` that controls its activation. Without this specification, a breakpoint is always active.\n\n/abap-docs-standard/ABAPBREAK-POINT_SHORTREF",
+      "bm25": -11.846355488362828,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPBREAK-POINT_SHORTREF",
+      "relFile": "ABAPBREAK-POINT_SHORTREF.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.846355488362828,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCHECKPOINT_GLOSRY",
+      "text": "ABENCHECKPOINT_GLOSRY\n\nSuperordinate term for [assertions](ABENASSERTION_GLOSRY.html), [breakpoints](ABENBREAKPOINT_GLOSRY.html), or [logpoints](ABENLOGPOINT_GLOSRY.html). The statements [`ASSERT`](ABAPASSERT.html), [`BREAK-POINT`](ABAPBREAK-POINT.html), and [`LOG-POINT`](ABAPLOG-POINT.html) for defining checkpoints are not operative but equip the program for test purposes. Inactive checkpoints are ignored during progra\n\n/abap-docs-standard/ABENCHECKPOINT_GLOSRY",
+      "bm25": -18.774591679481976,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCHECKPOINT_GLOSRY",
+      "relFile": "ABENCHECKPOINT_GLOSRY.md",
+      "finalScore": 0.03098591549295775,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.774591679481976,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCHECKPOINT_ABEXA",
+      "text": "ABENCHECKPOINT_ABEXA\n\nThis example demonstrates the various [checkpoints](ABENCHECKPOINT_GLOSRY.html) and their binding to a [checkpoint group](ABENCHECKPOINT_GROUP_GLOSRY.html). The example includes the following: All of these are linked with the [checkpoint group](ABENCHECKPOINT_GROUP_GLOSRY.html)\\\\ `DEMO_CHECKPOINT_GROUP`.\n\n/abap-docs-standard/ABENCHECKPOINT_ABEXA",
+      "bm25": -17.639913861131475,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCHECKPOINT_ABEXA",
+      "relFile": "ABENCHECKPOINT_ABEXA.md",
+      "finalScore": 0.030555555555555558,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.639913861131475,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_JAVA_SCRIPT",
+      "text": "ABENABAP_JAVA_SCRIPT\n\nIn the kernel of an AS ABAP, a JavaScript (JS) Engine is integrated, in which JavaScript programs can be executed either in normal or in debugging mode (server-side scripting). The JavaScript (JS) Engine used supports JavaScript Version 1.5. Proxies can be used to bind script variables to data objects in ABAP programs. The class `CL_JAVA_SCRIPT` implements an API, which can be used in ABAP program\n\n/abap-docs-standard/ABENABAP_JAVA_SCRIPT",
+      "bm25": -12.145316979926013,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_JAVA_SCRIPT",
+      "relFile": "ABENABAP_JAVA_SCRIPT.md",
+      "finalScore": 0.030120481927710843,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.145316979926013,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-46-DEBUGGER",
+      "text": "ABENNEWS-46-DEBUGGER\n\nIn Release 4.6A, the following functions were added to ABAP Debugger: The display of the data types `string` and `xstring` can now be scrolled. The cursor can be positioned on the string by double-clicking it. It is also possible to declare strings as watchpoints. The 'System Debugging' setting is saved too when breakpoints are saved. Furthermore, the new 'Last [Short Dump](ABENSHORT_DUMP_GLOSRY.h\n\n/abap-docs-standard/ABENNEWS-46-DEBUGGER",
+      "bm25": -41.09816813254261,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-46-DEBUGGER",
+      "relFile": "ABENNEWS-46-DEBUGGER.md",
+      "finalScore": 0.027868852459016394,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -41.09816813254261,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-30-DEBUGGING",
+      "text": "ABENNEWS-30-DEBUGGING\n\nThere are now special procedures for handling **system programs** and **system dynpros** in ABAP debugging. (System programs are programs with the status 'S' in the program properties, system dynpros are the [dynpros](ABENDYNPRO_GLOSRY.html) of system programs or dynpros that contain only system modules (module name `SYST`\\-...).) Examples for system dynpros: list dynpro, selection screen dynpro,\n\n/abap-docs-standard/ABENNEWS-30-DEBUGGING",
+      "bm25": -13.027669917163792,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-30-DEBUGGING",
+      "relFile": "ABENNEWS-30-DEBUGGING.md",
+      "finalScore": 0.027500000000000004,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.027669917163792,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDEFINE",
+      "text": "ABAPDEFINE\n\n`... &1 ... &9 ...`\\\\  The statement `DEFINE` defines a [macro](ABENMACRO_GLOSRY.html)\\\\ `macro`. The following [naming conventions](ABENNAMING_CONVENTIONS.html) apply to `macro` and [ABAP words](ABENABAP_WORD_GLOSRY.html) cannot be used. Macros can be defined in all [program types](ABENPROGRAM_TYPE_GLOSRY.html), particularly in [type pools](ABENTYPE_POOL_GLOSRY.html). Any content can be found b\n\n/abap-docs-standard/ABAPDEFINE",
+      "bm25": -10.08507754656486,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDEFINE",
+      "relFile": "ABAPDEFINE.md",
+      "finalScore": 0.027472527472527476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.08507754656486,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-700-TOOLS",
+      "text": "ABENNEWS-700-TOOLS\n\nThe new two-process debugger has been further developed as follows: From ABAP release 7.0, the default setting is the use of the two-process debugger. This setting can be changed in ABAP Editor by choosing *Utilities -> Settings -> ABAP Editor -> Debugging*. The following improvements were made:\n\n/abap-docs-standard/ABENNEWS-700-TOOLS",
+      "bm25": -39.706952513433016,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-700-TOOLS",
+      "relFile": "ABENNEWS-700-TOOLS.md",
+      "finalScore": 0.027419354838709675,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -39.706952513433016,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_GLOSSARY",
+      "text": "ABENABAP_GLOSSARY\n\n*[ABAP](ABENTECHNO_GLOSSARY.html)*, *[ABAP Language](ABENABALA_GLOSSARY.html)*, *[ABAP SQL](ABENSQL_GLOSSARY.html)*, *[AMDP](ABENAMDP_GLOSSARY.html)*, *[CDS](ABENCDS_GLOSSARY.html)*, *[DDIC](ABENDDIC_GLOSSARY.html)*, *[RAP](ABENRAP_GLOSSARY.html)*, *[SAP GUI](ABENSAP_GUI_GLOSSARY.html)* -   [ABAP](ABENABAP_GLOSRY.html) -   [ABAP Analytical Engine](ABENABAP_AE_GLOSRY.html)\n\n/abap-docs-standard/ABENABAP_GLOSSARY",
+      "bm25": -9.970085979263963,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_GLOSSARY",
+      "relFile": "ABENABAP_GLOSSARY.md",
+      "finalScore": 0.02717391304347826,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.970085979263963,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_MESSAGE_UPDATE",
+      "text": "ABENABAP_MESSAGE_UPDATE\n\nDuring [updates](ABENUPDATE_GLOSRY.html), the behavior of messages depends on the work process. -   During [synchronous updates](ABENSYNCHRONOUS_UPDATE_GLOSRY.html) and [asynchronous updates](ABENASYNCHRONOUS_UPDATE_GLOSRY.html) in an update work process in an [update session](ABENUPDATE_SESSION_GLOSRY.html), all messages except type `S` cause the update to terminate without creating a runtime err\n\n/abap-docs-standard/ABENABAP_MESSAGE_UPDATE",
+      "bm25": -9.762590556214821,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_MESSAGE_UPDATE",
+      "relFile": "ABENABAP_MESSAGE_UPDATE.md",
+      "finalScore": 0.02688172043010753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.762590556214821,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_SUBJECTS",
+      "text": "ABENABAP_SUBJECTS\n\n-   [$ABAP.schema, macro, AMDP](ABENAMDP_LOGICAL_DB_SCHEMAS.html) -   [$ABAP.type, macro, AMDP](ABENAMDP_ABAP_TYPES.html) -   [@, ABAP annotation](ABENCDS_ANNOTATIONS_ABAP.html)\n\n/abap-docs-standard/ABENABAP_SUBJECTS",
+      "bm25": -9.488621167844846,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_SUBJECTS",
+      "relFile": "ABENABAP_SUBJECTS.md",
+      "finalScore": 0.026595744680851064,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.488621167844846,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-640-TOOLS",
+      "text": "ABENNEWS-640-TOOLS\n\nThe new statement [`ASSERT`](ABAPASSERT.html) can be used to define [assertions](ABENASSERTION_GLOSRY.html). Assertions help verify particular assumptions about the state of a program in a particular location, and they guarantee that these assumptions hold. Assertions can be activated from outside the program using a [checkpoint group](ABENCHECKPOINT_GROUP_GLOSRY.html) and the addition `ID`. The s\n\n/abap-docs-standard/ABENNEWS-640-TOOLS",
+      "bm25": -27.108168552398247,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-640-TOOLS",
+      "relFile": "ABENNEWS-640-TOOLS.md",
+      "finalScore": 0.0265625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -27.108168552398247,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-710-TOOLS",
+      "text": "ABENNEWS-710-TOOLS\n\nCode Completion has been added to the new ABAP front-end editor. This tool proposes appropriate ABAP words and operands for the current code location. By default, Code Completion is called using Ctrl+Space. The following units can be completed: The proposals can be accepted as they are or as patterns with prefilled parameters. The <ZK>Source Code-Based Editor</> setting is used to expand the inter\n\n/abap-docs-standard/ABENNEWS-710-TOOLS",
+      "bm25": -22.86603845690179,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-710-TOOLS",
+      "relFile": "ABENNEWS-710-TOOLS.md",
+      "finalScore": 0.026153846153846156,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.86603845690179,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSTOPPING_POINT_GLOSRY",
+      "text": "ABENSTOPPING_POINT_GLOSRY\n\n*\\->*\\\\ [Breakpoint](ABENBREAKPOINT_GLOSRY.html) ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENSTOPPING_POINT_GLOSRY",
+      "bm25": -11.52176301243192,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSTOPPING_POINT_GLOSRY",
+      "relFile": "ABENSTOPPING_POINT_GLOSRY.md",
+      "finalScore": 0.02588235294117647,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.52176301243192,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-610-DEBUGGER",
+      "text": "ABENNEWS-610-DEBUGGER\n\nIf *Goto -> Further Information -> Program Properties* is chosen in the menu, the system displays the properties *Fixed Point Arithmetic*, *System Program*, and *Unicode Check*. If a data reference `dref` is double-clicked in the *Field Names* column, information about the technical properties of the reference are displayed. If the *Field Content* column is double-clicked, the content of the data\n\n/abap-docs-standard/ABENNEWS-610-DEBUGGER",
+      "bm25": -22.83452000800207,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-610-DEBUGGER",
+      "relFile": "ABENNEWS-610-DEBUGGER.md",
+      "finalScore": 0.025757575757575757,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.83452000800207,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBREAKPOINT_GLOSRY",
+      "text": "ABENBREAKPOINT_GLOSRY\n\nStopping point in an [ABAP program](ABENABAP_PROGRAM_GLOSRY.html) that when it is reached in [dialog processing](ABENDIALOG_PROCESSING_GLOSRY.html), is branched into the [ABAP Debugger](ABENABAP_DEBUGGER_GLOSRY.html). Breakpoints with a limited lifespan and a validity related to the current [ABAP user](ABENABAP_USER_GLOSRY.html) can be set interactively in the [ABAP Editor](ABENABAP_EDITOR_GLOSRY.\n\n/abap-docs-standard/ABENBREAKPOINT_GLOSRY",
+      "bm25": -11.441878697797295,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBREAKPOINT_GLOSRY",
+      "relFile": "ABENBREAKPOINT_GLOSRY.md",
+      "finalScore": 0.025581395348837212,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.441878697797295,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-46-RFC",
+      "text": "ABENNEWS-46-RFC\n\nABAP Debugger enables `breakpoints` to be set on the statements RFC or `CALL FUNCTION DESTINATION`. This positions `breakpoints` in the current program for all types of RFC. Main sessions could not be created, for example using the `/O command in the OK code field`, for synchronous RFC until ABAP release 4.6. This function, previously only provided for asynchronous RFC, is now available from this\n\n/abap-docs-standard/ABENNEWS-46-RFC",
+      "bm25": -22.092618279551967,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-46-RFC",
+      "relFile": "ABENNEWS-46-RFC.md",
+      "finalScore": 0.025373134328358207,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.092618279551967,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DEBUGGER_GLOSRY",
+      "text": "ABENABAP_DEBUGGER_GLOSRY\n\nTool used to execute [ABAP programs](ABENABAP_PROGRAM_GLOSRY.html) line by line or section by section. This makes it possible to edit the content of [data objects](ABENDATA_OBJECT_GLOSRY.html) and to check the program logic. See also [breakpoint](ABENBREAKPOINT_GLOSRY.html). ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENABAP_DEBUGGER_GLOSRY",
+      "bm25": -11.386280314014366,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DEBUGGER_GLOSRY",
+      "relFile": "ABENABAP_DEBUGGER_GLOSRY.md",
+      "finalScore": 0.025287356321839084,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.386280314014366,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENMEMORY_USAGE_ABEXA",
+      "text": "ABENMEMORY_USAGE_ABEXA\n\nThe example illustrates the administrative costs of deep components with low data content. At the breakpoints, the memory requirements of the four internal tables `itab`, `rtab`, `ttab`, and `otab` can be displayed by the ABAP Debugger. At the first breakpoint, the four tables have the same dynamic but not duplicate data content, that is, 1000 different integers. In `itab`, the data content of abo\n\n/abap-docs-standard/ABENMEMORY_USAGE_ABEXA",
+      "bm25": -11.105201055027335,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENMEMORY_USAGE_ABEXA",
+      "relFile": "ABENMEMORY_USAGE_ABEXA.md",
+      "finalScore": 0.025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.105201055027335,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-620-TOOLS",
+      "text": "ABENNEWS-620-TOOLS\n\nCode Inspector is a tool that enables ABAP programs, function modules, classes, interfaces, and dictionary objects to be checked statically for errors, performance, security, and reliability. The development of these [repository objects](ABENREPOSITORY_OBJECT_GLOSRY.html) is supported by simple search and check functions. The check results are available in the form of a tree hierarchy Code Inspect\n\n/abap-docs-standard/ABENNEWS-620-TOOLS",
+      "bm25": -20.814525472572726,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-620-TOOLS",
+      "relFile": "ABENNEWS-620-TOOLS.md",
+      "finalScore": 0.02463768115942029,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.814525472572726,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENASSERTION_GLOSRY",
+      "text": "ABENASSERTION_GLOSRY\n\nAssertion in an [ABAP program](ABENABAP_PROGRAM_GLOSRY.html). An assertion is defined as a conditional [checkpoint](ABENCHECKPOINT_GLOSRY.html) using the [`ASSERT`](ABAPASSERT.html) statement. Assertions are either always active or can be [activated](ABENACTIVATABLE_CHECKPOINT_GLOSRY.html) by assigning them to a [checkpoint group](ABENCHECKPOINT_GROUP_GLOSRY.html). When an active assertion is reac\n\n/abap-docs-standard/ABENASSERTION_GLOSRY",
+      "bm25": -7.534972113106724,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENASSERTION_GLOSRY",
+      "relFile": "ABENASSERTION_GLOSRY.md",
+      "finalScore": 0.024107142857142858,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.534972113106724,
+        "rank": 52,
+        "rrfScore": 0.008928571428571428,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPFREE_DATAOBJECT",
+      "text": "ABAPFREE_DATAOBJECT\n\nThe statement `FREE` deletes all lines from an internal table and releases the complete memory area that was occupied by the lines, including the [initial memory requirement](ABENINITIAL_MEM_REQ_GLOSRY.html). On other data objects, `FREE` works like the statement [`CLEAR`](ABAPCLEAR.html). If `dobj` is a structure with tabular components, the memory of all the tabular components is released.\n\n/abap-docs-standard/ABAPFREE_DATAOBJECT",
+      "bm25": -8.982011355631824,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPFREE_DATAOBJECT",
+      "relFile": "ABAPFREE_DATAOBJECT.md",
+      "finalScore": 0.02403846153846154,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.982011355631824,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSTATEMENT_GUIDL",
+      "text": "ABENSTATEMENT_GUIDL\n\nAn ABAP statement (declaration or executable statement) is closed with a period. This statement can be followed by further statements in the same line. Statements can also span multiple lines. **Maximum of one statement per program line** Write a maximum of one statement in every source code line. Long statements can and should be split at suitable places. This means the statements can be divided\n\n/abap-docs-standard/ABENSTATEMENT_GUIDL",
+      "bm25": -8.968384359894625,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSTATEMENT_GUIDL",
+      "relFile": "ABENSTATEMENT_GUIDL.md",
+      "finalScore": 0.02380952380952381,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.968384359894625,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_TRANSACTION_USING",
+      "text": "ABAPCALL_TRANSACTION_USING\n\nIn the variant with the addition `USING`, the transaction is executed using a [batch input table](ABENBATCH_INPUT_TABLE_GLOSRY.html). The transaction is called as described under [`CALL TRANSACTION`](ABAPCALL_TRANSACTION.html). The additions [`WITH|WITHOUT AUTHORITY-CHECK`](ABAPCALL_TRANSACTION_AUTHORITY.html) are used to control the authorization check. `bdc_tab` expects an internal table with th\n\n/abap-docs-standard/ABAPCALL_TRANSACTION_USING",
+      "bm25": -8.258472466080322,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_TRANSACTION_USING",
+      "relFile": "ABAPCALL_TRANSACTION_USING.md",
+      "finalScore": 0.02336448598130841,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.258472466080322,
+        "rank": 47,
+        "rrfScore": 0.009345794392523364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENICF",
+      "text": "ABENICF\n\n**This topic including all subnodes are out of maintenance. There is no guarantee that the information is complete and up-to-date. No active support is provided.** An [AS ABAP](ABENAS_ABAP_GLOSRY.html) can act as a server as well as a client in the internet using the internet protocols HTTP, HTTPS, and SMTP. The technical basis for the communication with the internet is provided by the ABAP interf\n\n/abap-docs-standard/ABENICF",
+      "bm25": -7.629686550291377,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENICF",
+      "relFile": "ABENICF.md",
+      "finalScore": 0.022935779816513763,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.629686550291377,
+        "rank": 49,
+        "rrfScore": 0.009174311926605505,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAPC_DETACHED_CLIENT_ABEXA",
+      "text": "ABENAPC_DETACHED_CLIENT_ABEXA\n\nThis example demonstrates how a detached client is created for the WebSocket protocol. This example demonstrates how an ABAP program can create a [detached APC client](ABENAPC.html) for the WebSocket protocol. A breakpoint in the method `ON_MESSAGE` of the APC handler class `CL_APC_WSP_EXT_DEMO_APC_PCP` can be used to monitor the arrival and processing of the message. The reaction to custom messag\n\n/abap-docs-standard/ABENAPC_DETACHED_CLIENT_ABEXA",
+      "bm25": -9.166451880044832,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAPC_DETACHED_CLIENT_ABEXA",
+      "relFile": "ABENAPC_DETACHED_CLIENT_ABEXA.md",
+      "finalScore": 0.02291666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.166451880044832,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPASSERT_SHORTREF",
+      "text": "ABAPASSERT_SHORTREF\n\n`ASSERT [\\ [ID group [SUBKEY sub]]\\           [FIELDS val1 val2 ...]\\           CONDITION ] log_exp.` Defines an [assertion](ABENASSERTION_GLOSRY.html). If the logical expression `log_exp` is false, either the program terminates with a runtime error, or processing switches to the ABAP debugger, or a log entry is created.     Assigns the assertion to a [checkpoint group](ABENCHECKPOINT_GROUP_GLOSRY\n\n/abap-docs-standard/ABAPASSERT_SHORTREF",
+      "bm25": -7.451007989471181,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPASSERT_SHORTREF",
+      "relFile": "ABAPASSERT_SHORTREF.md",
+      "finalScore": 0.022727272727272728,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.451007989471181,
+        "rank": 72,
+        "rrfScore": 0.007575757575757576,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMETHODS_TESTING",
+      "text": "ABAPMETHODS_TESTING\n\nThis statement is only possible in a [test class](ABENTEST_CLASS_GLOSRY.html). It declares a [test method](ABENTEST_METHOD_GLOSRY.html) that is called as a single test during a [test run](ABENTEST_RUN_GLOSRY.html). A test can be programmed in the method implementation. To check the test assumptions, static methods from the class `CL_ABAP_UNIT_ASSERT` are used, such as: The data is evaluated using\n\n/abap-docs-standard/ABAPMETHODS_TESTING",
+      "bm25": -7.53321517585193,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMETHODS_TESTING",
+      "relFile": "ABAPMETHODS_TESTING.md",
+      "finalScore": 0.022123893805309734,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.53321517585193,
+        "rank": 53,
+        "rrfScore": 0.008849557522123894,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-610-JAVASCRIPT",
+      "text": "ABENNEWS-610-JAVASCRIPT\n\nIn ABAP release 6.10, Java scripts can be called from an ABAP program, which allows debugging in the source code of Java scripts. Integration also makes it possible to access ABAP Objects and ABAP data objects from JavaScript. Instance methods of ABAP Objects can also be called from JavaScript. **Support for the connection of JavaScript to ABAP will be discontinued without replacement in a release\n\n/abap-docs-standard/ABENNEWS-610-JAVASCRIPT",
+      "bm25": -12.309465281593306,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-610-JAVASCRIPT",
+      "relFile": "ABENNEWS-610-JAVASCRIPT.md",
+      "finalScore": 0.020731707317073172,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.309465281593306,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies",
+      "text": "Formulartechnologien\n\n{: .no_toc}\n\n/dsag-abap-leitfaden/forms/form-technologies",
+      "bm25": -14.562467281479721,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.02027027027027027,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.562467281479721,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#fazit",
+      "text": "Fazit\n\nSAP empfiehlt für neue Formulare grundsätzlich SAP Interactive Forms by Adobe zu verwenden. Dies ist zukunftssicher, da SAPscript und SmartForms von SAP selbst nicht mehr weiterentwickelt werden. Unternehmen, welche bereits viele Smart Forms Formulare im Einsatz haben, wird empfohlen diese weiterzuv...\n\n/dsag-abap-leitfaden/forms/form-technologies#fazit",
+      "bm25": -14.45174171759501,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#fazit",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.02,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.45174171759501,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#smartforms-2001-",
+      "text": "SmartForms (2001)\n\nIm Vergleich zu SAPscript hat SmartForms eine modernere SAP GUI Oberfläche, zur Gestaltung von Formularen. Ab dieser Technologie wurde auch mit einer Schnittstelle zur Datenübertragung zwischen Druckprogramm und Formular gearbeitet. Somit ist jedoch auch eine Möglichkeit mehr da, wo sich evtl. Codin...\n\n/dsag-abap-leitfaden/forms/form-technologies#smartforms-2001-",
+      "bm25": -14.446254170635257,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#smartforms-2001-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.019736842105263157,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.446254170635257,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#sapscript-1992-r-3-",
+      "text": "SAPscript (1992 R/3)\n\nAuch im Jahr 2025 haben sehr viele Unternehmen weiterhin SAPscript Formulare im Einsatz. Häufig sind dies seit Jahren oder z.T. Jahrzehnten bestehende Formulare. Deshalb müssen ABAP Entwickler sich auch weiterhin mit dieser Technologie auskennen, um ggf. Anpassungen an den Formularen vornehmen zu kö...\n\n/dsag-abap-leitfaden/forms/form-technologies#sapscript-1992-r-3-",
+      "bm25": -14.440771218293072,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#sapscript-1992-r-3-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.01948051948051948,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.440771218293072,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#sap-s-4hana-forms-2015-s-4hana-",
+      "text": "SAP S/4HANA Forms (2015 S/4HANA)\n\nGrundlage sind Adobe Formulare mit Gateway-Schnittstellen, deren Datenbeschaffung mittels Gateway-Services (also keine klassischen Druckprogramme) erfolgt. Die Pflege erfolgt mit Fiori Apps und somit sind “SAP S/4HANA Forms” public-cloud-fähig. Das Layout wird ebenfalls mit dem LiveCycle Designer, j...\n\n/dsag-abap-leitfaden/forms/form-technologies#sap-s-4hana-forms-2015-s-4hana-",
+      "bm25": -14.440771218293072,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#sap-s-4hana-forms-2015-s-4hana-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.019230769230769232,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.440771218293072,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENST_DATA",
+      "text": "ABENST_DATA\n\nThe following assertions can be specified for the content of the `data` attribute of a [`tt:cond`](ABENST_TT_COND.html) element: The operands of the assertions can be data nodes, variables, or values. An assertion can be specified as a comma-separated list of multiple of the above assertions. An assertion of this type is met if all assertions in the list are met. Each data node may appear only onc\n\n/abap-docs-standard/ABENST_DATA",
+      "bm25": -7.518405442600947,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENST_DATA",
+      "relFile": "ABENST_DATA.md",
+      "finalScore": 0.019230769230769232,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.518405442600947,
+        "rank": 70,
+        "rrfScore": 0.007692307692307693,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week5/unit6#test-entity-set-travel",
+      "text": "Test entity set Travel\n\n1. Create a break-point in the method `validateAgency` in the class     ![Add a breakpoint in ValidateAgency](images/w5u6_01_09.png) 2. Navigate back to the service binding and double-click on the entity set **Travel** to start the Fiori Elements preview\n\n/abap-platform-rap-opensap/week5/unit6#test-entity-set-travel",
+      "bm25": -10.523115013385208,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week5/unit6#test-entity-set-travel",
+      "relFile": "week5/unit6.md",
+      "finalScore": 0.019101123595505618,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.523115013385208,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#sap-interactive-forms-by-adobe-2005-",
+      "text": "SAP Interactive Forms by Adobe (2005)\n\nLassen Sie sich von dem Teil „Interactive“ im Namen nicht täuschen – hierbei handelt es sich sehr wohl um „Druckformulare“ und nicht ausschließlich um interaktive Formulare.   Das Formularlayout wird mittels LiveCycle Designer (LCD von Adobe) in der Transaktion SFP gestaltet. Der LCD muss dafür im S...\n\n/dsag-abap-leitfaden/forms/form-technologies#sap-interactive-forms-by-adobe-2005-",
+      "bm25": -14.427083897810778,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#sap-interactive-forms-by-adobe-2005-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.0189873417721519,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.427083897810778,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-30",
+      "text": "ABENNEWS-30\n\nChanges were made in the following areas as part of the development for ABAP release 3.0: -   [Declaration Statements in ABAP Release 3.0](ABENNEWS-30-DECLARE.html) -   [RFC, Remote Function Call in ABAP Release 3.0](ABENNEWS-30-RFC.html)\n\n/abap-docs-standard/ABENNEWS-30",
+      "bm25": -10.282944059676522,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-30",
+      "relFile": "ABENNEWS-30.md",
+      "finalScore": 0.01888888888888889,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.282944059676522,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/14_ABAP_Unit_Tests#evaluating-the-test-result-with-methods-of-the-cl-abap-unit-assert-class",
+      "text": "Evaluating the Test Result with Methods of the CL_ABAP_UNIT_ASSERT Class\n\nThe following overview covers a selection of static methods of the `CL_ABAP_UNIT_ASSERT`  class that can be used for the checks. | Method | Details | |---|---|\n\n/abap-cheat-sheets/14_ABAP_Unit_Tests#evaluating-the-test-result-with-methods-of-the-cl-abap-unit-assert-class",
+      "bm25": -7.531882807327675,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/14_ABAP_Unit_Tests#evaluating-the-test-result-with-methods-of-the-cl-abap-unit-assert-class",
+      "relFile": "14_ABAP_Unit_Tests.md",
+      "finalScore": 0.018803418803418806,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.531882807327675,
+        "rank": 57,
+        "rrfScore": 0.008547008547008548,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENREACTION_ERROR_GUIDL",
+      "text": "ABENREACTION_ERROR_GUIDL\n\nABAP provides the following concepts that a program can use to properly react to different error situations: These four concepts either involve the handling of the error situations by the program or the user (exceptions or error messages) or produce a controlled program termination (assertions, `RAISE SHORTDUMP`, `THROW SHORTDUMP`, and exit messages). **Select an appropriate reaction to error situ\n\n/abap-docs-standard/ABENREACTION_ERROR_GUIDL",
+      "bm25": -7.287813642589964,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENREACTION_ERROR_GUIDL",
+      "relFile": "ABENREACTION_ERROR_GUIDL.md",
+      "finalScore": 0.018656716417910446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.287813642589964,
+        "rank": 74,
+        "rrfScore": 0.007462686567164179,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week5/unit2#step-4-create-a-console-application-to-test-the-odata-service",
+      "text": "Step 4. Create a console application to test the OData service\n\nWe can now test the service consumption model by creating a small console application **ZCL_CE_RAP_AGENCY_####** that implements the interface **if_oo_adt_classrun**.   This is a useful additional step since this way it is easier to check whether the OData consumption works and debugging a console a...\n\n/abap-platform-rap-opensap/week5/unit2#step-4-create-a-console-application-to-test-the-odata-service",
+      "bm25": -9.45275208648813,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week5/unit2#step-4-create-a-console-application-to-test-the-odata-service",
+      "relFile": "week5/unit2.md",
+      "finalScore": 0.017894736842105262,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.45275208648813,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week5/unit6#check-the-service-binding",
+      "text": "Check the service binding\n\n1. Expand your package **ZRAP_TRAVEL_#### > Business Services > Service Bindings**     - Open the service binding `ZUI_RAP_TRAVEL_O2_####`    ![Open service binding](images/w5u6_01_01.png)\n\n/abap-platform-rap-opensap/week5/unit6#check-the-service-binding",
+      "bm25": -9.084860222717408,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week5/unit6#check-the-service-binding",
+      "relFile": "week5/unit6.md",
+      "finalScore": 0.01752577319587629,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.084860222717408,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week5/unit6#summary",
+      "text": "Summary\n\nIn this unit you have learned how to adapt the service definition and that these changes are becoming active immediately in the published service binding.\n\n/abap-platform-rap-opensap/week5/unit6#summary",
+      "bm25": -9.076804572815378,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week5/unit6#summary",
+      "relFile": "week5/unit6.md",
+      "finalScore": 0.017346938775510204,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.076804572815378,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week5/unit6#solution",
+      "text": "Solution\n\nFind the source code for the updated service definition in the week5/sources folder: [Sources](sources) or use the following link. - [W5U6_SRVD_ZUI_RAP_TRAVEL_####.txt](/week5/sources/W5U6_SRVD_ZUI_RAP_TRAVEL_%23%23%23%23.txt)\n\n/abap-platform-rap-opensap/week5/unit6#solution",
+      "bm25": -9.072782102768203,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week5/unit6#solution",
+      "relFile": "week5/unit6.md",
+      "finalScore": 0.01717171717171717,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.072782102768203,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week5/unit6#test-access-to-entity-agency",
+      "text": "Test access to entity Agency\n\n1. Navigate back to the service binding `ZUI_RAP_TRAVEL_O2_####`    ![Open service definition](images/w5u6_01_05.png) 2. Use **Refresh** from the context menu to update the list of entity sets\n\n/abap-platform-rap-opensap/week5/unit6#test-access-to-entity-agency",
+      "bm25": -9.066755077987558,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week5/unit6#test-access-to-entity-agency",
+      "relFile": "week5/unit6.md",
+      "finalScore": 0.017,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.066755077987558,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 0.7
+      }
+    }
+  ]
+}

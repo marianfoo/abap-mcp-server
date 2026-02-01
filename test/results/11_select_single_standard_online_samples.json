@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": true
     },
-    "timestamp": "2026-01-31T19:18:55.919Z",
+    "timestamp": "2026-02-01T20:18:37.961Z",
     "count": 50
   },
   "results": [
@@ -610,10 +610,10 @@
     },
     {
       "id": "community-14143325",
-      "text": "Selection of optimal scenario for Selective Data T...\n\n...cenarios are illustrated in the image above. Option 3. Special case – Systems Consolidation When it is necessary to consolidate multiple SAP ECC systems into a single instance of SAP S/4HANA, and there a...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/selection-of-optimal-scenario-for-selective-data-transition-to-sap-s-4hana/ba-p/14143325?search-action-id=497478315063&search-result-uid=14143325",
+      "text": "Selection of optimal scenario for Selective Data T...\n\n...cenarios are illustrated in the image above. Option 3. Special case – Systems Consolidation When it is necessary to consolidate multiple SAP ECC systems into a single instance of SAP S/4HANA, and there a...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/selection-of-optimal-scenario-for-selective-data-transition-to-sap-s-4hana/ba-p/14143325?search-action-id=498799384111&search-result-uid=14143325",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/selection-of-optimal-scenario-for-selective-data-transition-to-sap-s-4hana/ba-p/14143325?search-action-id=497478315063&search-result-uid=14143325",
+      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/selection-of-optimal-scenario-for-selective-data-transition-to-sap-s-4hana/ba-p/14143325?search-action-id=498799384111&search-result-uid=14143325",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -641,10 +641,10 @@
     },
     {
       "id": "community-13216444",
-      "text": "SELECT SINGLE vs. SELECT UP TO 1 ROWS\n\nSome time ago I´ve written a small block Select ing One Row From a Data base Table in order to explain the usage of SELECT SINGLE and SELECT UP TO 1 ROWS. Obviously, there are still discussions about t...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/select-single-vs-select-up-to-1-rows/ba-p/13216444?search-action-id=497478315063&search-result-uid=13216444",
+      "text": "SELECT SINGLE vs. SELECT UP TO 1 ROWS\n\nSome time ago I´ve written a small block Select ing One Row From a Data base Table in order to explain the usage of SELECT SINGLE and SELECT UP TO 1 ROWS. Obviously, there are still discussions about t...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/select-single-vs-select-up-to-1-rows/ba-p/13216444?search-action-id=498799384111&search-result-uid=13216444",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/select-single-vs-select-up-to-1-rows/ba-p/13216444?search-action-id=497478315063&search-result-uid=13216444",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/select-single-vs-select-up-to-1-rows/ba-p/13216444?search-action-id=498799384111&search-result-uid=13216444",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -672,10 +672,10 @@
     },
     {
       "id": "community-14180186",
-      "text": "Selective Data Transition: HCM migration to the cl...\n\n...ver the years. The greenfield and brownfield approaches can be combined into a single project, while applying SDT precepts to the HCM data . As we saw earlier, a 30-year historical data base is too much f...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/selective-data-transition-hcm-migration-to-the-cloud/ba-p/14180186?search-action-id=497478315063&search-result-uid=14180186",
+      "text": "Selective Data Transition: HCM migration to the cl...\n\n...ver the years. The greenfield and brownfield approaches can be combined into a single project, while applying SDT precepts to the HCM data . As we saw earlier, a 30-year historical data base is too much f...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/selective-data-transition-hcm-migration-to-the-cloud/ba-p/14180186?search-action-id=498799384111&search-result-uid=14180186",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/selective-data-transition-hcm-migration-to-the-cloud/ba-p/14180186?search-action-id=497478315063&search-result-uid=14180186",
+      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/selective-data-transition-hcm-migration-to-the-cloud/ba-p/14180186?search-action-id=498799384111&search-result-uid=14180186",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

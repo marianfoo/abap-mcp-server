@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": true
     },
-    "timestamp": "2026-01-31T19:18:35.234Z",
+    "timestamp": "2026-02-01T20:18:05.242Z",
     "count": 50
   },
   "results": [
@@ -386,10 +386,10 @@
     },
     {
       "id": "community-14240957",
-      "text": "File upload for items in Fiori Elements List Repor...\n\n...ESTful Application Programming Model (RAP), you can use the \"Attachment\" for each row (item) in the SAP Fiori Elements List Report . It is possible to upload, read, and delete files on a line-by-line basis....\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/file-upload-for-items-in-fiori-elements-list-report/ba-p/14240957?search-action-id=497478174122&search-result-uid=14240957",
+      "text": "File upload for items in Fiori Elements List Repor...\n\n...ESTful Application Programming Model (RAP), you can use the \"Attachment\" for each row (item) in the SAP Fiori Elements List Report . It is possible to upload, read, and delete files on a line-by-line basis....\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/file-upload-for-items-in-fiori-elements-list-report/ba-p/14240957?search-action-id=498798953962&search-result-uid=14240957",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/file-upload-for-items-in-fiori-elements-list-report/ba-p/14240957?search-action-id=497478174122&search-result-uid=14240957",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/file-upload-for-items-in-fiori-elements-list-report/ba-p/14240957?search-action-id=498798953962&search-result-uid=14240957",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -401,10 +401,10 @@
     },
     {
       "id": "community-14240934",
-      "text": "Fiori Elements List Report でのファイルアップロード\n\n1. はじめに このブログでは、SAP Fiori Elements の List Report で、各行（アイテム）に対して“添付ファイル“のような項目を持たせ、行単位でファイルのアップロード・参照・削除の実現方法を紹介します。 List Report のデータソースは、ABAP RESTful Application Programming Model（RAP）フレームワークを使用して開発したO...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/fiori-elements-list-report%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89/ba-p/14240934?search-action-id=497478174122&search-result-uid=14240934",
+      "text": "Fiori Elements List Report でのファイルアップロード\n\n1. はじめに このブログでは、SAP Fiori Elements の List Report で、各行（アイテム）に対して“添付ファイル“のような項目を持たせ、行単位でファイルのアップロード・参照・削除の実現方法を紹介します。 List Report のデータソースは、ABAP RESTful Application Programming Model（RAP）フレームワークを使用して開発したO...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/fiori-elements-list-report%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89/ba-p/14240934?search-action-id=498798953962&search-result-uid=14240934",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/fiori-elements-list-report%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89/ba-p/14240934?search-action-id=497478174122&search-result-uid=14240934",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/fiori-elements-list-report%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89/ba-p/14240934?search-action-id=498798953962&search-result-uid=14240934",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -416,10 +416,10 @@
     },
     {
       "id": "community-13874000",
-      "text": "Column editable on Fiori Element List report\n\nStep1: Create list report fiori elements app Step2: Add action buttons (Edit,Save,Cancel) Step3: Once action buttons are added then ext/controller file will be generated Step4: P...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/column-editable-on-fiori-element-list-report/ba-p/13874000?search-action-id=497478174122&search-result-uid=13874000",
+      "text": "Column editable on Fiori Element List report\n\nStep1: Create list report fiori elements app Step2: Add action buttons (Edit,Save,Cancel) Step3: Once action buttons are added then ext/controller file will be generated Step4: P...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/column-editable-on-fiori-element-list-report/ba-p/13874000?search-action-id=498798953962&search-result-uid=13874000",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/column-editable-on-fiori-element-list-report/ba-p/13874000?search-action-id=497478174122&search-result-uid=13874000",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/column-editable-on-fiori-element-list-report/ba-p/13874000?search-action-id=498798953962&search-result-uid=13874000",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

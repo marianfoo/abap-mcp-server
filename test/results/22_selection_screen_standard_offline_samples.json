@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "query": "PARAMETERS SELECT-OPTIONS selection screen AT SELECTION-SCREEN",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": false,
+      "includeSamples": true
+    },
+    "timestamp": "2026-02-01T20:18:59.828Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE_PARAM",
+      "text": "ABAPSELECTION-SCREEN_INCLUDE_PARAM\n\n`SELECTION-SCREEN INCLUDE PARAMETERS para`\\\\                                      `[OBLIGATORY [OFF]]`\\\\  The addition `PARAMETERS` is used to create the screen elements for the selection parameter `para` on the current [selection screen](ABENSELECTION_SCREEN_GLOSRY.html). `para` expects a selection parameter that was already declared using the statement [`PARAMETERS`](ABAPPARAMETERS.html) in a pr\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE_PARAM",
+      "bm25": -15.542360276729042,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE_PARAM",
+      "relFile": "ABAPSELECTION-SCREEN_INCLUDE_PARAM.md",
+      "finalScore": 0.06557377049180328,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.542360276729042,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE",
+      "text": "ABAPSELECTION-SCREEN_INCLUDE\n\n1\\. `SELECTION-SCREEN INCLUDE PARAMETERS para`\\\\ `[OBLIGATORY [OFF]]`\\\\ 2\\. `SELECTION-SCREEN INCLUDE SELECT-OPTIONS selcrit`\\\\\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE",
+      "bm25": -15.371599122379724,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE",
+      "relFile": "ABAPSELECTION-SCREEN_INCLUDE.md",
+      "finalScore": 0.0625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.371599122379724,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPAT_SELECTION-SCREEN_SHORTREF",
+      "text": "ABAPAT_SELECTION-SCREEN_SHORTREF\n\n`AT SELECTION-SCREEN [ OUTPUT                      |\\ \\{ON \\{par|selcrit\\}\\}\\                      |\\ \\{ON END OF selcrit\\}\\                      |\\ \\{ON BLOCK block\\}\\                      |\\ \\{ON RADIOBUTTON GROUP group\\}\\                      |\\ \\{ON \\{HELP-REQUEST|VALUE-REQUEST\\}\\                         FOR \\{par|selcrit-low|selcrit-high\\}\\}\\                      |\\ \\{ON EXIT-COMMAND\\}\\ ].` I\n\n/abap-docs-standard/ABAPAT_SELECTION-SCREEN_SHORTREF",
+      "bm25": -15.20636579924527,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPAT_SELECTION-SCREEN_SHORTREF",
+      "relFile": "ABAPAT_SELECTION-SCREEN_SHORTREF.md",
+      "finalScore": 0.05714285714285714,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.20636579924527,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_LINE",
+      "text": "ABAPSELECTION-SCREEN_LINE\n\n`SELECTION-SCREEN BEGIN OF LINE.`\\\\  `SELECTION-SCREEN END OF LINE.` The first and last statements define a new line below the existing elements on the [selection screen](ABENSELECTION_SCREEN_GLOSRY.html). All the screen elements within these statements that are defined using the statements [`PARAMETERS`](ABAPPARAMETERS.html)\\\\ [`SELECT-OPTIONS`](ABAPSELECT-OPTIONS.html) and [`SELECTION-SCREEN`](A\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_LINE",
+      "bm25": -15.135305601315217,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_LINE",
+      "relFile": "ABAPSELECTION-SCREEN_LINE.md",
+      "finalScore": 0.05263157894736842,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.135305601315217,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_OVERVIEW",
+      "text": "ABENSELECTION_SCREEN_OVERVIEW\n\nSelection screens are special [dynpros](ABENDYNPRO_GLOSRY.html) that can be defined in executable programs, function pools, and module pools. Selection screens are defined in the global declaration part of the specified ABAP programs with the statements `SELECT-OPTIONS`, `SELECTION-SCREEN` and `PARAMETERS` without using the Screen Painter. The [screen layouts](ABENSCREEN_GLOSRY.html) of selection\n\n/abap-docs-standard/ABENSELECTION_SCREEN_OVERVIEW",
+      "bm25": -15.28994239426725,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_OVERVIEW",
+      "relFile": "ABENSELECTION_SCREEN_OVERVIEW.md",
+      "finalScore": 0.05223880597014925,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.28994239426725,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPAT_SELECTION-SCREEN_EVENTS",
+      "text": "ABAPAT_SELECTION-SCREEN_EVENTS\n\n`|\\ \\{ ON \\{para|selcrit\\}\\ \\}`\\\\    `|\\ \\{ ON END OF selcrit \\}`\\\\    `|\\ \\{ ON BLOCK block \\}`\\\\\n\n/abap-docs-standard/ABAPAT_SELECTION-SCREEN_EVENTS",
+      "bm25": -15.064695708419839,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPAT_SELECTION-SCREEN_EVENTS",
+      "relFile": "ABAPAT_SELECTION-SCREEN_EVENTS.md",
+      "finalScore": 0.05194805194805195,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.064695708419839,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_STANDARD",
+      "text": "ABAPSELECTION-SCREEN_STANDARD\n\nEach [executable program](ABENEXECUTABLE_PROGRAM_GLOSRY.html) contains a standard selection screen with the [dynpro number](ABENDYNPRO_NUMBER_GLOSRY.html) 1000. The screen elements on the standard selection screen are defined by all [`PARAMETERS`](ABAPPARAMETERS.html), [`SELECT-OPTIONS`](ABAPSELECT-OPTIONS.html), and [`SELECTION-SCREEN`](ABAPSELECTION-SCREEN.html) statements that are not within th\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_STANDARD",
+      "bm25": -14.816055378519414,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_STANDARD",
+      "relFile": "ABAPSELECTION-SCREEN_STANDARD.md",
+      "finalScore": 0.047058823529411764,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.816055378519414,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_MODIF_ID",
+      "text": "ABAPSELECTION-SCREEN_MODIF_ID\n\n`... MODIF ID modid ...` After the `MODIF ID` addition, a `modid` identifier can be specified to assign a screen element of a selection screen to a [modification group](ABENMODIFICATION_GROUP_GLOSRY.html). The `MODIF ID` addition can be specified for the following statements: The name of the `modid` modification group must be specified directly and can have no more than three characters. When gene\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_MODIF_ID",
+      "bm25": -14.802687312392102,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_MODIF_ID",
+      "relFile": "ABAPSELECTION-SCREEN_MODIF_ID.md",
+      "finalScore": 0.046511627906976744,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.802687312392102,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_LDB",
+      "text": "ABAPSELECTION-SCREEN_LDB\n\n1\\. `SELECTION-SCREEN BEGIN OF VERSION vers text.`\\\\ `SELECTION-SCREEN EXCLUDE \\{PARAMETERS para\\}`\\\\ `|\\ \\{SELECT-OPTIONS selcrit\\}`\\\\\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_LDB",
+      "bm25": -14.79697094904574,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_LDB",
+      "relFile": "ABAPSELECTION-SCREEN_LDB.md",
+      "finalScore": 0.04597701149425287,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.79697094904574,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_SELECTION_SCREEN",
+      "text": "ABAPCALL_SELECTION_SCREEN\n\n`CALL SELECTION-SCREEN dynnr`\\\\                        `[STARTING AT col1 lin1`\\\\                        `[ENDING   AT col2 lin2]]`\\\\\n\n/abap-docs-standard/ABAPCALL_SELECTION_SCREEN",
+      "bm25": -14.973771442959592,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_SELECTION_SCREEN",
+      "relFile": "ABAPCALL_SELECTION_SCREEN.md",
+      "finalScore": 0.04430379746835443,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.973771442959592,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_EXCL_SHORTREF",
+      "text": "ABAPSELECTION-SCREEN_EXCL_SHORTREF\n\n`SELECTION-SCREEN EXCLUDE \\{\\ \\{PARAMETERS parameter\\}\\                           |\\ \\{SELECT-OPTIONS selcrit\\}\\                           |\\ \\{RADIOBUTTON GROUPS group\\}\\                           |\\ \\{BLOCKS block\\}\\                           |\\ \\{IDS id\\}\\ \\}.` Deletes the specified element from a version of the [standard selection screen](ABENSTANDARD_SELSCREEN_GLOSRY.html) in a [logical datab\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_EXCL_SHORTREF",
+      "bm25": -14.777371091168204,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_EXCL_SHORTREF",
+      "relFile": "ABAPSELECTION-SCREEN_EXCL_SHORTREF.md",
+      "finalScore": 0.04395604395604396,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.777371091168204,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPPARAMETERS_SCREEN",
+      "text": "ABAPPARAMETERS_SCREEN\n\n\\\\ `... \\{\\ \\{[OBLIGATORY|NO-DISPLAY]\\ [VISIBLE LENGTH vlen]\\}`\\\\      `|\\ \\{AS CHECKBOX [USER-COMMAND fcode]\\}`\\\\      `|\\ \\{RADIOBUTTON GROUP group [USER-COMMAND fcode]\\}`\\\\\n\n/abap-docs-standard/ABAPPARAMETERS_SCREEN",
+      "bm25": -14.908644681312254,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPPARAMETERS_SCREEN",
+      "relFile": "ABAPPARAMETERS_SCREEN.md",
+      "finalScore": 0.043750000000000004,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.908644681312254,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_DYN_DICT_ABEXA",
+      "text": "ABENSEL_SCREEN_DYN_DICT_ABEXA\n\nThis example demonstrates how a dynamic dictionary reference to a selection parameter can be created. At the event at which selection screen 200 is called, the field `name` must contain the name of a data type from the ABAP Dictionary. Currently, selection parameters can only refer to fields of database tables, views, and structures. The selection parameter dynamically takes the properties, that i\n\n/abap-docs-standard/ABENSEL_SCREEN_DYN_DICT_ABEXA",
+      "bm25": -15.471170747181347,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_DYN_DICT_ABEXA",
+      "relFile": "ABENSEL_SCREEN_DYN_DICT_ABEXA.md",
+      "finalScore": 0.043548387096774194,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.471170747181347,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPPARAMETERS",
+      "text": "ABAPPARAMETERS\n\n`PARAMETERS \\{para[(len)]\\}|\\{para [LENGTH len]\\}`\\\\  Declares a [selection parameter](ABENSELPAR_GLOSRY.html)\\\\ `para` of length `len`. Selection parameters are components of a [selection screen](ABENSELECTION_SCREEN_GLOSRY.html) that are assigned a global elementary data object in the ABAP program and an input field on the selection screen. The name of the selection parameter `para` can contain\n\n/abap-docs-standard/ABAPPARAMETERS",
+      "bm25": -15.189644719344244,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPPARAMETERS",
+      "relFile": "ABAPPARAMETERS.md",
+      "finalScore": 0.04225352112676056,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.189644719344244,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLDB_SELECTIONS",
+      "text": "ABENLDB_SELECTIONS\n\nThe selections on a [standard selection screen](ABENSTANDARD_SELSCREEN_GLOSRY.html) of a logical database are defined using the usual statements used to define selection screens: In logical database, the additions [`VALUE-REQUEST`](ABAPPARAMETERS_LDB.html) and [`HELP-REQUEST`](ABAPPARAMETERS_LDB.html) can also be used to define specific input helps. The selection screen is defined in a special inc\n\n/abap-docs-standard/ABENLDB_SELECTIONS",
+      "bm25": -15.185358027475198,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLDB_SELECTIONS",
+      "relFile": "ABENLDB_SELECTIONS.md",
+      "finalScore": 0.041666666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.185358027475198,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_COMMENT",
+      "text": "ABAPSELECTION-SCREEN_COMMENT\n\n`SELECTION-SCREEN COMMENT [/][pos|POS_LOW|POS_HIGH](len)`\\\\                           `\\{text|\\{[text] FOR FIELD sel\\}\\}`\\\\                           `[VISIBLE LENGTH vlen]`\\\\\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_COMMENT",
+      "bm25": -14.764487694497365,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_COMMENT",
+      "relFile": "ABAPSELECTION-SCREEN_COMMENT.md",
+      "finalScore": 0.041666666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.764487694497365,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_PARAM_SCREEN_ABEXA",
+      "text": "ABENSEL_SCREEN_PARAM_SCREEN_ABEXA\n\nThe example demonstrates how the `select_options` additions of the statement `PARAMETERS` can be used. This example program consists of six parts, each representing one of the [`screen_options`](ABAPPARAMETERS_SCREEN.html) additions of the statement `PARAMETERS`. Each example corresponds to a block on selection screen 100. -   Part 1: If the cursor is not on the input field, a symbol appears in th\n\n/abap-docs-standard/ABENSEL_SCREEN_PARAM_SCREEN_ABEXA",
+      "bm25": -15.325793998370953,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_PARAM_SCREEN_ABEXA",
+      "relFile": "ABENSEL_SCREEN_PARAM_SCREEN_ABEXA.md",
+      "finalScore": 0.041538461538461545,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.325793998370953,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_F1_HELP_ABEXA",
+      "text": "ABENSEL_SCREEN_F1_HELP_ABEXA\n\nThe example shows a user-defined F1 help on selection screens. This program declares a selection screen with two selection parameters that both refer to the data element `S_CARR_ID` from the ABAP Dictionary. While the dictionary documentation is used as online help for `p_carr_1`, a separate dynpro with the number 100 is called for `p_carr_2`. Using the Screen Painter, this dynpro is defined as a\n\n/abap-docs-standard/ABENSEL_SCREEN_F1_HELP_ABEXA",
+      "bm25": -15.28843223593154,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_F1_HELP_ABEXA",
+      "relFile": "ABENSEL_SCREEN_F1_HELP_ABEXA.md",
+      "finalScore": 0.03970588235294118,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.28843223593154,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT_SELSCREEN_PARAMETERS",
+      "text": "ABAPSUBMIT_SELSCREEN_PARAMETERS\n\n`... [USING SELECTION-SET variant]\\      [USING SELECTION-SETS OF PROGRAM prog]\\      [WITH SELECTION-TABLE rspar]\\      [WITH expr_syntax1 WITH expr_syntax2 ...]\\      [WITH FREE SELECTIONS texpr] ...` `USING SELECTION-SET` supplies all selection screen components using a [selection screen variant](ABENVARIANT_GLOSRY.html)\\\\ `variant`. The specification `USING SELECTION-SETS OF PROGRAM` enables t\n\n/abap-docs-standard/ABAPSUBMIT_SELSCREEN_PARAMETERS",
+      "bm25": -14.790363565274728,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT_SELSCREEN_PARAMETERS",
+      "relFile": "ABAPSUBMIT_SELSCREEN_PARAMETERS.md",
+      "finalScore": 0.03932584269662921,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.790363565274728,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELSCREEN_PB_BAR_ABEXA",
+      "text": "ABENSELSCREEN_PB_BAR_ABEXA\n\nThis example demonstrates the activation of pushbuttons in the application toolbar of the GUI status. A standalone selection screen with the dynpro number 1100 is defined with two selection parameters. In the application toolbar, two pushbuttons are activated using `FUNCTION KEY` and supplied with the texts *LH* and *UA*. When the user clicks a button, the event `AT SELECTION-SCREEN` is raised. Th\n\n/abap-docs-standard/ABENSELSCREEN_PB_BAR_ABEXA",
+      "bm25": -15.275920060334705,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELSCREEN_PB_BAR_ABEXA",
+      "relFile": "ABENSELSCREEN_PB_BAR_ABEXA.md",
+      "finalScore": 0.0391304347826087,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.275920060334705,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT_INTERFACE",
+      "text": "ABAPSUBMIT_INTERFACE\n\n`... [USING SELECTION-SCREEN dynnr]`\\\\      `[VIA SELECTION-SCREEN]`\\\\  The addition `USING SELECTION-SCREEN` specifies the [selection screen](ABENSELECTION_SCREEN_GLOSRY.html) and `VIA SELECTION-SCREEN` determines whether it is displayed. The additions [`selscreen_parameters`](ABAPSUBMIT_SELSCREEN_PARAMETERS.html) supply values to the parameters and selection criteria, as well as the dynamic sele\n\n/abap-docs-standard/ABAPSUBMIT_INTERFACE",
+      "bm25": -15.314348921254574,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT_INTERFACE",
+      "relFile": "ABAPSUBMIT_INTERFACE.md",
+      "finalScore": 0.03787878787878788,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.314348921254574,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_PARAM_VALUE_ABEXA",
+      "text": "ABENSEL_SCREEN_PARAM_VALUE_ABEXA\n\nThe example shows how to use the `value_options` additions of the statement `PARAMETERS`. This example program consists of five parts, each illustrating one of [`value_options`](ABAPPARAMETERS_VALUE.html) additions of the statement `PARAMETERS`. Each example corresponds to a block on selection screen 100. -   Part 1: The input fields of the selection parameters on the selection screen are prefille\n\n/abap-docs-standard/ABENSEL_SCREEN_PARAM_VALUE_ABEXA",
+      "bm25": -15.171075834818854,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_PARAM_VALUE_ABEXA",
+      "relFile": "ABENSEL_SCREEN_PARAM_VALUE_ABEXA.md",
+      "finalScore": 0.036986301369863014,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.171075834818854,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSCREEN_ABEXA",
+      "text": "ABENSCREEN_ABEXA\n\nThis example demonstrates the classic user dialogs selection screen, dynpro, message, and list. First, an input field is created on the standard selection screen using `PARAMETERS`. Then, `CALL SCREEN` is used to call a dynpro that displays the value of the field. The statement `MESSAGE` sends the text as a message. Finally, it is written to the basic list of the program using `WRITE`. REPORT demo\n\n/abap-docs-standard/ABENSCREEN_ABEXA",
+      "bm25": -15.145503296303623,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSCREEN_ABEXA",
+      "relFile": "ABENSCREEN_ABEXA.md",
+      "finalScore": 0.03648648648648649,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.145503296303623,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_LDB_VERSION",
+      "text": "ABAPSELECTION-SCREEN_LDB_VERSION\n\n`SELECTION-SCREEN BEGIN OF VERSION vers text.`\\\\  `SELECTION-SCREEN EXCLUDE \\{\\ \\{PARAMETERS para\\}`\\\\                           `|\\ \\{SELECT-OPTIONS selcrit\\}`\\\\\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_LDB_VERSION",
+      "bm25": -14.714654958006076,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_LDB_VERSION",
+      "relFile": "ABAPSELECTION-SCREEN_LDB_VERSION.md",
+      "finalScore": 0.036036036036036036,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.714654958006076,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_F4_HELP_ABEXA",
+      "text": "ABENSEL_SCREEN_F4_HELP_ABEXA\n\nThe example demonstrates a user-defined `F4` help for a selection parameter on a selection screen. This program declares a selection screen with two selection parameters that both refer to the column `CARRID` of the database table `SPFLI`. While the dictionary input help is used for `p_carr_1`, a separate input help is programmed for `p_carr_2`. Dynpro 100 is called for this. In the flow logic, th\n\n/abap-docs-standard/ABENSEL_SCREEN_F4_HELP_ABEXA",
+      "bm25": -15.142609208004473,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_F4_HELP_ABEXA",
+      "relFile": "ABENSEL_SCREEN_F4_HELP_ABEXA.md",
+      "finalScore": 0.036000000000000004,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.142609208004473,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPPARAMETERS_VALUE",
+      "text": "ABAPPARAMETERS_VALUE\n\n`... [DEFAULT val]`\\\\      `[MATCHCODE OBJECT search_help]`\\\\  Using these additions, it is possible define a [start value](ABENSTART_VALUE_GLOSRY.html) that allows lowercase letters, a search help, or [SPA/GPA parameter](ABENSPA_GPA_PARAMETER_GLOSRY.html) to be bound, or a check to be executed against a value list.\n\n/abap-docs-standard/ABAPPARAMETERS_VALUE",
+      "bm25": -14.824088471648771,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPPARAMETERS_VALUE",
+      "relFile": "ABAPPARAMETERS_VALUE.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.824088471648771,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
+      "text": "SELECTION-SCREEN\n\n- `SELECTION-SCREEN` statements can be used to create and modify the layout of standalone selection screens. - Note: The standard selection screen for executable programs is created automatically. That is, each executable program contains a standard selection screen with dynpro number 1000. The scre...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
+      "bm25": -14.771330008805277,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.03440860215053764,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.771330008805277,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_WITH_SUBSCR_ABEXA",
+      "text": "ABENSEL_SCREEN_WITH_SUBSCR_ABEXA\n\nThis example demonstrates how to include subscreens in selection screens. Displaying subscreens in subscreen areas on selection screens is a special case of tabstrips on selection screens. Defining a subscreen area is similar to defining a tabstrip area without a tab title. Before the selection screen is sent, a subscreen must be assigned to the subscreen area `sub`. This is done using the compone\n\n/abap-docs-standard/ABENSEL_SCREEN_WITH_SUBSCR_ABEXA",
+      "bm25": -14.895906608150908,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_WITH_SUBSCR_ABEXA",
+      "relFile": "ABENSEL_SCREEN_WITH_SUBSCR_ABEXA.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.895906608150908,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCL_SHORTREF",
+      "text": "ABAPSELECTION-SCREEN_INCL_SHORTREF\n\n`SELECTION-SCREEN INCLUDE \\{\\ \\{ PARAMETERS parameter                               [OBLIGATORY [OFF]]\\                               [MODIF ID modid]\\ \\}\\                           |\\ \\{ SELECT-OPTIONS selcrit                               [OBLIGATORY [OFF]]\\                               [NO INTERVALS [OFF]]\\                               [NO-EXTENSION [OFF]]\\                               [MODI\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_INCL_SHORTREF",
+      "bm25": -14.614780522558664,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCL_SHORTREF",
+      "relFile": "ABAPSELECTION-SCREEN_INCL_SHORTREF.md",
+      "finalScore": 0.032520325203252036,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.614780522558664,
+        "rank": 63,
+        "rrfScore": 0.008130081300813009,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE_BLOCK",
+      "text": "ABAPSELECTION-SCREEN_INCLUDE_BLOCK\n\n`SELECTION-SCREEN INCLUDE BLOCKS block [ID id].` The addition `BLOCKS` is used to create a block `block` on the current [selection screen](ABENSELECTION_SCREEN_GLOSRY.html). `block` expects a block that must have already been created on a previous selection screen using the statement [`SELECTION-SCREEN BEGIN OF BLOCK`](ABAPSELECTION-SCREEN_BLOCK.html) or [`SELECTION-SCREEN BEGIN OF [TABBED] BLOCK`\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE_BLOCK",
+      "bm25": -14.577183722391547,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_INCLUDE_BLOCK",
+      "relFile": "ABAPSELECTION-SCREEN_INCLUDE_BLOCK.md",
+      "finalScore": 0.03225806451612903,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.577183722391547,
+        "rank": 64,
+        "rrfScore": 0.008064516129032258,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPINITIALIZATION",
+      "text": "ABAPINITIALIZATION\n\nThis event keyword defines an event block for initializing an executable program. The associated event is raised by the [ABAP runtime framework](ABENABAP_RUNTIME_FRMWK_GLOSRY.html) during the [flow](ABENREPORTING_PROCESS.html) of an [executable program](ABENEXECUTABLE_PROGRAM_GLOSRY.html), directly after `LOAD-OF-PROGRAM` and before the [selection screen processing](ABENSELSCREEN_PROCESSING_GLOSRY\n\n/abap-docs-standard/ABAPINITIALIZATION",
+      "bm25": -15.021352822047888,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPINITIALIZATION",
+      "relFile": "ABAPINITIALIZATION.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.021352822047888,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_BLOCK",
+      "text": "ABAPSELECTION-SCREEN_BLOCK\n\n`SELECTION-SCREEN BEGIN OF BLOCK block`\\\\                                  `[WITH FRAME [TITLE title]]`\\\\  `SELECTION-SCREEN END OF BLOCK block.`\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_BLOCK",
+      "bm25": -14.399418889360835,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_BLOCK",
+      "relFile": "ABAPSELECTION-SCREEN_BLOCK.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.399418889360835,
+        "rank": 68,
+        "rrfScore": 0.0078125,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#using-elements-from-other-selection-screens",
+      "text": "Using Elements from Other Selection Screens\n\n- You can include screen elements created in other selection screens. - Statements include the `INCLUDE` addition. These are possible:    - `SELECTION-SCREEN INCLUDE PARAMETERS` PROGRAM TABLES sscrfields SELECTION SCREEN COMMENT txt1 SELECTION SCREEN SKIP\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#using-elements-from-other-selection-screens",
+      "bm25": -14.79341022715137,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#using-elements-from-other-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.030681818181818185,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.79341022715137,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLDB_USAGE_EXECUTABLE",
+      "text": "ABENLDB_USAGE_EXECUTABLE\n\nIf an [executable program](ABENEXECUTABLE_PROGRAM_GLOSRY.html) is linked with a logical database, that is, the logical database is entered in the program properties, the subroutines of the [database program](ABENLDB_PROGRAM.html) are combined with the [reporting event blocks](ABENABAP_PROCESSING_BLOCKS.html) of the executable program to create a complete modularized program for reading and process\n\n/abap-docs-standard/ABENLDB_USAGE_EXECUTABLE",
+      "bm25": -14.82984042533584,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLDB_USAGE_EXECUTABLE",
+      "relFile": "ABENLDB_USAGE_EXECUTABLE.md",
+      "finalScore": 0.030120481927710843,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.82984042533584,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
+      "text": "Adapting the Selection Screen Layout\n\n<table> <tr> <th> Subject/Statement </th> <th> Notes </th> <th> Code Snippet </th> abap PARAMETERS param1 TYPE LENGTH SELECTION SCREEN SKIP PARAMETERS param2\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
+      "bm25": -14.777993735500875,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.030000000000000002,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.777993735500875,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_NORMAL",
+      "text": "ABAPSELECTION-SCREEN_NORMAL\n\n`SELECTION-SCREEN BEGIN OF SCREEN dynnr [TITLE title]`\\\\  `SELECTION-SCREEN END OF SCREEN dynnr.` These statements can be specified in the global declaration part of executable programs, function pools, and module pools. They create a standalone [selection screen](ABENSELECTION_SCREEN_GLOSRY.html) with the [dynpro number](ABENDYNPRO_NUMBER_GLOSRY.html)\\\\ `dynnr`. The dynpro number must be specifie\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_NORMAL",
+      "bm25": -14.317376547509516,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_NORMAL",
+      "relFile": "ABAPSELECTION-SCREEN_NORMAL.md",
+      "finalScore": 0.029850746268656716,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.317376547509516,
+        "rank": 74,
+        "rrfScore": 0.007462686567164179,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN",
+      "text": "ABAPSELECTION-SCREEN\n\n1\\. `SELECTION-SCREEN BEGIN OF SCREEN ...`\\\\ `SELECTION-SCREEN END OF SCREEN ...` 2\\. `SELECTION-SCREEN screen_elements.`\n\n/abap-docs-standard/ABAPSELECTION-SCREEN",
+      "bm25": -14.279319866918224,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN",
+      "relFile": "ABAPSELECTION-SCREEN.md",
+      "finalScore": 0.029411764705882353,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.279319866918224,
+        "rank": 76,
+        "rrfScore": 0.007352941176470588,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLDB_SELECTIONS_EXAMPLE",
+      "text": "ABENLDB_SELECTIONS_EXAMPLE\n\nA logical database `TEST_LDB` has the structure shown in [Example of a Logical Database](ABENLDB_EXAMPLE.html). The generated proposal for the selection include is then as follows: \\*-----------------------------------------------------------\\* \\\\n\\* Include DBTEST\\_LDBSEL \\\\n\\* It will be automatically included into the database program \\\\n\\*-------------------------------------------------------\n\n/abap-docs-standard/ABENLDB_SELECTIONS_EXAMPLE",
+      "bm25": -14.777070382171196,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLDB_SELECTIONS_EXAMPLE",
+      "relFile": "ABENLDB_SELECTIONS_EXAMPLE.md",
+      "finalScore": 0.029347826086956522,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.777070382171196,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_CREATE",
+      "text": "ABENSELECTION_SCREEN_CREATE\n\n-   [`SELECTION-SCREEN`](ABAPSELECTION-SCREEN.html) -   [`PARAMETERS`](ABAPPARAMETERS.html) -   [`SELECT-OPTIONS`](ABAPSELECT-OPTIONS.html)\n\n/abap-docs-standard/ABENSELECTION_SCREEN_CREATE",
+      "bm25": -14.617807018891815,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_CREATE",
+      "relFile": "ABENSELECTION_SCREEN_CREATE.md",
+      "finalScore": 0.028688524590163935,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.617807018891815,
+        "rank": 62,
+        "rrfScore": 0.00819672131147541,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#creating-selection-screens",
+      "text": "Creating Selection Screens\n\n<table> <tr> <th> Subject/Statement </th> <th> Notes </th> <th> Code Snippet </th> abap PROGRAM SELECTION SCREEN BEGIN SCREEN 9000 PARAMETERS param TYPE\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#creating-selection-screens",
+      "bm25": -14.769563582220908,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#creating-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.028421052631578948,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.769563582220908,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
+      "text": "ABAP Statements for Selection Screens\n\nSelection screens can be created by using special ABAP statements in the global declaration part of executable programs:  - [`PARAMETERS`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapparameters.htm) - [`SELECT-OPTIONS`](https://help.sap.com/doc/abapdocu_latest_...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
+      "bm25": -14.762904693119115,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.027835051546391754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.762904693119115,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN_LAYOUT",
+      "text": "ABAPSELECTION-SCREEN_LAYOUT\n\n1\\. `SELECTION-SCREEN SKIP [n]\\ [ldb_additions].` 2\\. `SELECTION-SCREEN ULINE [[/][pos](len)]\\ [MODIF ID modid]`\\\\ 3\\. `SELECTION-SCREEN COMMENT [/][pos](len)`\\\\\n\n/abap-docs-standard/ABAPSELECTION-SCREEN_LAYOUT",
+      "bm25": -13.813718238909178,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN_LAYOUT",
+      "relFile": "ABAPSELECTION-SCREEN_LAYOUT.md",
+      "finalScore": 0.027586206896551724,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.813718238909178,
+        "rank": 85,
+        "rrfScore": 0.006896551724137931,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#calling-selection-screens",
+      "text": "Calling Selection Screens\n\n- There are several ways of how to call selection screens (see [here](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenselection_screen_call.htm)), among them [`CALL SELECTION-SCREEN`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=ab...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#calling-selection-screens",
+      "bm25": -14.756566662961957,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#calling-selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.027551020408163266,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.756566662961957,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists",
+      "text": "Selection Screens and Classic Lists\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/20_Selection_Screens_Lists",
+      "bm25": -14.747952853627922,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.027000000000000003,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.747952853627922,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-30-LDB",
+      "text": "ABENNEWS-30-LDB\n\nThe addition `AS MATCHCODE STRUCTURE` of `PARAMETERS` makes it possible to use matchcode selection for a [logical database](ABENLOGICAL_DATA_BASE_GLOSRY.html). The standard selection screen contains a box with input fields for matchcode ID and search string. In the [database program](ABENDATABASE_PROGRAM_GLOSRY.html), selected records can be processed in the subroutine `PUT_xxx_MATCHCODE`. Matchco\n\n/abap-docs-standard/ABENNEWS-30-LDB",
+      "bm25": -15.419959907075471,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-30-LDB",
+      "relFile": "ABENNEWS-30-LDB.md",
+      "finalScore": 0.026984126984126982,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.419959907075471,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_GLOSRY",
+      "text": "ABENSELECTION_SCREEN_GLOSRY\n\nSpecial [dynpro](ABENDYNPRO_GLOSRY.html) that can be defined without the use of the [Screen Painter](ABENSCREEN_PAINTER_GLOSRY.html) by using the statements [`SELECTION-SCREEN`](ABAPSELECTION-SCREEN.html), [`PARAMETERS`](ABAPPARAMETERS.html), or [`SELECT-OPTIONS`](ABAPSELECT-OPTIONS.html) in the [global declaration part](ABENGLOBAL_DECLARATION_SECT_GLOSRY.html) of [executable programs](ABENEXECUTA\n\n/abap-docs-standard/ABENSELECTION_SCREEN_GLOSRY",
+      "bm25": -14.677981970147917,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_GLOSRY",
+      "relFile": "ABENSELECTION_SCREEN_GLOSRY.md",
+      "finalScore": 0.02689075630252101,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.677981970147917,
+        "rank": 59,
+        "rrfScore": 0.008403361344537815,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-40-SELSCREEN",
+      "text": "More user-friendly design of the multiple selection GUI window\n\nThe language elements [`SELECTION-SCREEN BEGIN/END OF SCREEN`](ABAPSELECTION-SCREEN_DEFINITION.html) can be used to define multiple selection screens in module pools and function pools. These selection screens are called using [`CALL SELECTION-SCREEN`](ABAPCALL_SELECTION_SCREEN.html). Selection screen variants can be assigned to one or more selection screens. [`CALL SELECTION-SCREEN scrn USING SEL\n\n/abap-docs-standard/ABENNEWS-40-SELSCREEN",
+      "bm25": -14.849031994631554,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-40-SELSCREEN",
+      "relFile": "ABENNEWS-40-SELSCREEN.md",
+      "finalScore": 0.02682926829268293,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.849031994631554,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screens",
+      "text": "Selection Screens\n\n- Are special [dynpros](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abendynpro_glosry.htm) in [executable programs](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenexecutable_program_glosry.htm) (*\"reports\"*; they're also possible...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screens",
+      "bm25": -14.737625256410455,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screens",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.026732673267326736,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.737625256410455,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT-OPTIONS_VALUE",
+      "text": "ABAPSELECT-OPTIONS_VALUE\n\n`... [DEFAULT val1 [TO val2]\\ [OPTION opt]\\ [SIGN sgn]]`\\\\      `[MATCHCODE OBJECT search_help]`\\\\      `[MEMORY ID pid] ...`\n\n/abap-docs-standard/ABAPSELECT-OPTIONS_VALUE",
+      "bm25": -14.403751336341713,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT-OPTIONS_VALUE",
+      "relFile": "ABAPSELECT-OPTIONS_VALUE.md",
+      "finalScore": 0.023622047244094488,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.403751336341713,
+        "rank": 67,
+        "rrfScore": 0.007874015748031496,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_LIST_ABEXA",
+      "text": "ABENPRINT_LIST_ABEXA\n\nThe example demonstrates how to spool lists and how to stack spool list levels. The program creates five lists. If the user chooses *Execute* on the selection screen, one screen list and four spool lists are created. If the user chooses *Execute + Print* on the selection screen, five spool lists are created. In the event block `INITIALIZATION`, the spool parameters are placed in the structure `par\n\n/abap-docs-standard/ABENPRINT_LIST_ABEXA",
+      "bm25": -14.7707711822869,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_LIST_ABEXA",
+      "relFile": "ABENPRINT_LIST_ABEXA.md",
+      "finalScore": 0.02340425531914894,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.7707711822869,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 1.2
+      }
+    }
+  ]
+}

@@ -351,8 +351,9 @@ export async function search(
     let boost = sourceBoosts[sourceId] || 0;
     
     // Extra boost for official ABAP docs when "abap" is explicitly in the query
+    // Reduced from 2.0 to 0.5 to prevent generic docs from outranking specific content
     if (isExplicitAbapQuery && r.id.includes('/abap-docs-')) {
-      boost += 2.0;
+      boost += 1.0;
     }
     
     // Additional boost for library-specific queries

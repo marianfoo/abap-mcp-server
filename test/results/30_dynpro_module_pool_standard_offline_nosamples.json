@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "query": "MODULE POOL dynpro PBO PAI screen painter",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": false,
+      "includeSamples": false
+    },
+    "timestamp": "2026-02-01T20:19:27.772Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPRO_MODIFY_SCREENS_DYN",
+      "text": "ABENABAP_DYNPRO_MODIFY_SCREENS_DYN\n\nThe attributes of dynpro elements are set statically in the Screen Painter when you define them. However, it is possible to override some of these attributes in ABAP programs using a special predefined structure. The SAP system contains a function called field selection, which allows you to change the attributes of dynpros dynamically. It is also possible to set the cursor on a dynpro to a particu\n\n/abap-docs-standard/ABENABAP_DYNPRO_MODIFY_SCREENS_DYN",
+      "bm25": -43.4232126944819,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPRO_MODIFY_SCREENS_DYN",
+      "relFile": "ABENABAP_DYNPRO_MODIFY_SCREENS_DYN.md",
+      "finalScore": 0.050724637681159424,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -43.4232126944819,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_OVERVIEW",
+      "text": "ABENSELECTION_SCREEN_OVERVIEW\n\nSelection screens are special [dynpros](ABENDYNPRO_GLOSRY.html) that can be defined in executable programs, function pools, and module pools. Selection screens are defined in the global declaration part of the specified ABAP programs with the statements `SELECT-OPTIONS`, `SELECTION-SCREEN` and `PARAMETERS` without using the Screen Painter. The [screen layouts](ABENSCREEN_GLOSRY.html) of selection\n\n/abap-docs-standard/ABENSELECTION_SCREEN_OVERVIEW",
+      "bm25": -50.861725196851744,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_OVERVIEW",
+      "relFile": "ABENSELECTION_SCREEN_OVERVIEW.md",
+      "finalScore": 0.04918032786885246,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -50.861725196851744,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS",
+      "text": "ABENABAP_DYNPROS\n\nDynpro is an abbreviation for *Dynamic Program*. A dynpro is a [repository](ABENREPOSITORY_GLOSRY.html) object and is always a component of an ABAP program (a function pool, executable program, or module pool). It consists of a [screen layout](ABENSCREEN_GLOSRY.html) with its screen elements and the [dynpro flow logic](ABENDYNPRO_FLOW_LOGIC_GLOSRY.html). [Dynpro fields](ABENDYNPRO_FIELD_GLOSRY.htm\n\n/abap-docs-standard/ABENABAP_DYNPROS",
+      "bm25": -48.739867267166595,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS",
+      "relFile": "ABENABAP_DYNPROS.md",
+      "finalScore": 0.04838709677419355,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -48.739867267166595,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_DYNPRO_STATEMENTS",
+      "text": "ABENABAP_DYNPROS_DYNPRO_STATEMENTS\n\nThe dynpro flow logic is the procedural part of a [dynpro](ABENDYNPRO_GLOSRY.html). It is created using an ABAP-like programming language in the [Screen Painter](ABENSCREEN_PAINTER_GLOSRY.html) on the Flow Logic tab page. The syntax rules of the dynpro flow logic are largely like the rules for ABAP. In particular, statements are ended using a period, chained statements can be formed, and the same\n\n/abap-docs-standard/ABENABAP_DYNPROS_DYNPRO_STATEMENTS",
+      "bm25": -44.03458615903161,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_DYNPRO_STATEMENTS",
+      "relFile": "ABENABAP_DYNPROS_DYNPRO_STATEMENTS.md",
+      "finalScore": 0.045454545454545456,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -44.03458615903161,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNP_SUBSCREEN",
+      "text": "ABENDYNP_SUBSCREEN\n\nThe subscreen technique enables one dynpro to be embedded within another dynpro at runtime. The term *subscreen* applies both to the dynpro where it is embedded and the area on the main dynpro in which it is placed. This section is about subscreen areas. The actual dynpros that are embedded are called subscreen dynpros. When subscreens are embedded, the flow logic of the subscreen dynpro is also e\n\n/abap-docs-standard/ABENDYNP_SUBSCREEN",
+      "bm25": -43.2374972827202,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNP_SUBSCREEN",
+      "relFile": "ABENDYNP_SUBSCREEN.md",
+      "finalScore": 0.04285714285714286,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -43.2374972827202,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_STATUS_ICONS",
+      "text": "ABENDYNPRO_STATUS_ICONS\n\nStatus icons are [screen elements](ABENSCREEN_ELEMENT_GLOSRY.html) that you can use to represent the state of a program graphically. In principle, you can use any of the icons available in the [SAP GUI](ABENSAP_GUI_GLOSRY.html). However, the choice should be limited to those icons specifically for this purpose. You can only create status icons in the graphical [Screen Painter](ABENSCREEN_PAINTER_G\n\n/abap-docs-standard/ABENDYNPRO_STATUS_ICONS",
+      "bm25": -42.935088522341104,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_STATUS_ICONS",
+      "relFile": "ABENDYNPRO_STATUS_ICONS.md",
+      "finalScore": 0.04225352112676056,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -42.935088522341104,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_GET_CURSOR_ABEXA",
+      "text": "ABENDYNPRO_GET_CURSOR_ABEXA\n\nThis example demonstrates how to determine the cursor position on dynpros. The static next dynpro number of dynpro 100 is 100. All input/output fields except for the screen field of `input_output` are set as not ready for input in the Screen Painter. The module `init_screen_0100` sets the GUI status to `STATUS_100` in the PBO event. In the GUI status, the 'Cancel' symbol (F12) is activated using t\n\n/abap-docs-standard/ABENDYNPRO_GET_CURSOR_ABEXA",
+      "bm25": -46.030460983137296,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_GET_CURSOR_ABEXA",
+      "relFile": "ABENDYNPRO_GET_CURSOR_ABEXA.md",
+      "finalScore": 0.0421875,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -46.030460983137296,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_GUI_STATUS_ABEXA",
+      "text": "ABENDYNPRO_GUI_STATUS_ABEXA\n\nThis example demonstrates how to set the GUI status and evaluate function codes. The static next dynpro number of dynpro 100 is 100. The screen field of `output` is defined as not ready for input in Screen Painter. The module `init_screen_0100` sets the GUI status `status_0100` and the title 100 in the PBO event. All function codes exist as menu entries, but not all of them are assigned to functio\n\n/abap-docs-standard/ABENDYNPRO_GUI_STATUS_ABEXA",
+      "bm25": -45.69127037730043,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_GUI_STATUS_ABEXA",
+      "relFile": "ABENDYNPRO_GUI_STATUS_ABEXA.md",
+      "finalScore": 0.041538461538461545,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -45.69127037730043,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODIFY_SCREEN",
+      "text": "ABAPMODIFY_SCREEN\n\n`MODIFY SCREEN FROM wa.` This statement can be used in the statement block after [`LOOP AT SCREEN`](ABAPLOOP_AT_SCREEN.html) only and makes sense only during [PBO](ABENPBO_GLOSRY.html) processing. A work area `wa` of the type [`SCREEN`](ABENSCREEN.html) from the ABAP Dictionary must be specified after `FROM`. The statement modifies the properties of the current screen element with the values from\n\n/abap-docs-standard/ABAPMODIFY_SCREEN",
+      "bm25": -42.61129946057094,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODIFY_SCREEN",
+      "relFile": "ABAPMODIFY_SCREEN.md",
+      "finalScore": 0.04054054054054054,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -42.61129946057094,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_IN_OUT_FIELD_ABEXA",
+      "text": "ABENDYNPRO_IN_OUT_FIELD_ABEXA\n\nThe example shows how to process dynpro fields locally in the program. The static next dynpro number of dynpro 100 is 100. The screen fields of `output`, `box1`, `box2`, and `box3` were defined as not ready for input in the Screen Painter. The length of `input` is specified so that the user can enter a nine-digit integer without thousands separators. However, the display in the `output` field cont\n\n/abap-docs-standard/ABENDYNPRO_IN_OUT_FIELD_ABEXA",
+      "bm25": -43.63162495550693,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_IN_OUT_FIELD_ABEXA",
+      "relFile": "ABENDYNPRO_IN_OUT_FIELD_ABEXA.md",
+      "finalScore": 0.04029850746268657,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -43.63162495550693,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPRO_USER_ACTIONS",
+      "text": "ABENABAP_DYNPRO_USER_ACTIONS\n\nThere are various ways in which users can interact with dynpros: If the `ok_code` field in the element list has a name (and is therefore assigned to the corresponding dynpro field), it is filled with the corresponding function code when the user chooses the function. If there is a field in the ABAP program with the same name, you can find out the function that the user chose by querying its conten\n\n/abap-docs-standard/ABENABAP_DYNPRO_USER_ACTIONS",
+      "bm25": -42.11075832284547,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPRO_USER_ACTIONS",
+      "relFile": "ABENABAP_DYNPRO_USER_ACTIONS.md",
+      "finalScore": 0.04,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -42.11075832284547,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_STATUS_ICONS_ABEXA",
+      "text": "ABENDYNPRO_STATUS_ICONS_ABEXA\n\nThis example illustrates how status icons are used on dynpros. The static next dynpro number of dynpro 100 is 100. A status field called `status_icon` is created with a visible length of 16 and a defined length of 26. The status icon and the space for the text are represented by placeholders in the Screen Painter. The dynpro flow logic is as follows: PROCESS BEFORE OUTPUT. \\\\n  MODULE set\\_icon. \\\n\n/abap-docs-standard/ABENDYNPRO_STATUS_ICONS_ABEXA",
+      "bm25": -43.51816709461156,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_STATUS_ICONS_ABEXA",
+      "relFile": "ABENDYNPRO_STATUS_ICONS_ABEXA.md",
+      "finalScore": 0.03970588235294118,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -43.51816709461156,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSAP_GUI_GLOSSARY",
+      "text": "ABENSAP_GUI_GLOSSARY\n\nIn the following, terms of the [ABAP Glossary](ABENABAP_GLOSSARY.html) are listed, that are relevant for SAP GUI user dialogs. **application toolbar** Component of a [GUI window](ABENGUI_WINDOW_GLOSRY.html). Contains [pushbuttons](ABENPUSHBUTTON_GLOSRY.html) defined in the [Menu Painter](ABENMENU_PAINTER_GLOSRY.html) tool. Part of the [GUI status](ABENGUI_STATUS_GLOSRY.html) set using [`SET PF-STA\n\n/abap-docs-standard/ABENSAP_GUI_GLOSSARY",
+      "bm25": -47.94890244107734,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSAP_GUI_GLOSSARY",
+      "relFile": "ABENSAP_GUI_GLOSSARY.md",
+      "finalScore": 0.03968253968253968,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -47.94890244107734,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPRO_CALL_DIALOG_MOD",
+      "text": "ABENABAP_DYNPRO_CALL_DIALOG_MOD\n\nThe main task of the dynpro flow logic is to call dialog modules in an ABAP program. You can do this using the `MODULE` statement, which can be programmed in the four possible event blocks of dynpro flow logic. In the PBO event, you can use this statement to call any dialog module in the ABAP program that has been defined using the following: MODULE mod OUTPUT. \\\\n  ... \\\\nENDMODULE. In the PAI, P\n\n/abap-docs-standard/ABENABAP_DYNPRO_CALL_DIALOG_MOD",
+      "bm25": -41.69972435027704,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPRO_CALL_DIALOG_MOD",
+      "relFile": "ABENABAP_DYNPRO_CALL_DIALOG_MOD.md",
+      "finalScore": 0.039473684210526314,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -41.69972435027704,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_FIELDS",
+      "text": "ABENABAP_DYNPROS_FIELDS\n\nThe [dynpro flow logic](ABENDYNPRO_FLOW_LOGIC_GLOSRY.html) does not contain any data declarations. Apart from the [OK field](ABENOK_FIELD_GLOSRY.html) that is created when the [dynpro](ABENDYNPRO_GLOSRY.html) itself is created, all other data objects of a dynpro (dynpro fields) are created when the screen elements are defined in the Layout Editor and assigned to the latter. The technical propertie\n\n/abap-docs-standard/ABENABAP_DYNPROS_FIELDS",
+      "bm25": -41.61721373220724,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_FIELDS",
+      "relFile": "ABENABAP_DYNPROS_FIELDS.md",
+      "finalScore": 0.03896103896103896,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -41.61721373220724,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_PROCESSING",
+      "text": "ABENABAP_DYNPROS_PROCESSING\n\n**Dynpro Flow and Sequences in Detail** For the user, an application program consists of a series of dynpros that are displayed one after the other. The major difference between the program flow of an executable program and a dialog program is that, in a dialog program, dynpros can be programmed to appear in any sequence required. In executable programs, the dynpro sequence is controlled by events\n\n/abap-docs-standard/ABENABAP_DYNPROS_PROCESSING",
+      "bm25": -40.69655173515335,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_PROCESSING",
+      "relFile": "ABENABAP_DYNPROS_PROCESSING.md",
+      "finalScore": 0.0379746835443038,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -40.69655173515335,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_CUSTOM_CONTROLS",
+      "text": "ABENDYNPRO_CUSTOM_CONTROLS\n\nA custom control is a rectangular area on the screen of a dynpro. They are created in the [Screen Painter](ABENSCREEN_PAINTER_GLOSRY.html) and, like all other screen objects, have a unique name. Custom controls are used to embed controls in these areas. Controls are software components of the presentation server. Depending on the SAP GUI used, these components are either `ActiveX` controls or `Jav\n\n/abap-docs-standard/ABENDYNPRO_CUSTOM_CONTROLS",
+      "bm25": -40.20199169276411,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_CUSTOM_CONTROLS",
+      "relFile": "ABENDYNPRO_CUSTOM_CONTROLS.md",
+      "finalScore": 0.037500000000000006,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -40.20199169276411,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_PUSH_BUTTON_ABEXA",
+      "text": "ABENDYNPRO_PUSH_BUTTON_ABEXA\n\nThis example demonstrates how pushbuttons on dynpros can be processed. The static next dynpro number of dynpro 100 is 100. The screen field of `output` is defined as not ready for input in the Screen Painter. When the user chooses a pushbutton, the PAI event is raised. The function code of the pushbutton is assigned to the dynpro field `ok_code`, which is then assigned to the identically named ABA\n\n/abap-docs-standard/ABENDYNPRO_PUSH_BUTTON_ABEXA",
+      "bm25": -42.924191355528166,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_PUSH_BUTTON_ABEXA",
+      "relFile": "ABENDYNPRO_PUSH_BUTTON_ABEXA.md",
+      "finalScore": 0.0375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -42.924191355528166,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPRO_ATTRIBUTES",
+      "text": "ABENABAP_DYNPRO_ATTRIBUTES\n\nLike all objects in the repository, dynpros have attributes that both describe them and determine how they behave at runtime. The following are important dynpro attributes in ABAP programming: **Attribute** **Details**\\\\ Program The name of the ABAP program (executable program, module pool, or function group) to which the dynpro belongs. Dynpro number A four-digit number, unique within the ABAP pr\n\n/abap-docs-standard/ABENABAP_DYNPRO_ATTRIBUTES",
+      "bm25": -39.573302281381686,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPRO_ATTRIBUTES",
+      "relFile": "ABENABAP_DYNPRO_ATTRIBUTES.md",
+      "finalScore": 0.03614457831325302,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -39.573302281381686,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSET_PF-STATUS_DYNPRO",
+      "text": "ABAPSET_PF-STATUS_DYNPRO\n\n`SET PF-STATUS status [OF PROGRAM prog]\\ [EXCLUDING fcode].` In [dynpro](ABENDYNPRO_GLOSRY.html) processing, this statement defines the [GUI status](ABENGUI_STATUS_GLOSRY.html) specified in `status` for the subsequent [screen layouts](ABENSCREEN_GLOSRY.html). The components of the set status are active in the user interface from the next time a screen layout is sent and remain active until the en\n\n/abap-docs-standard/ABAPSET_PF-STATUS_DYNPRO",
+      "bm25": -38.64106088856489,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSET_PF-STATUS_DYNPRO",
+      "relFile": "ABAPSET_PF-STATUS_DYNPRO.md",
+      "finalScore": 0.03529411764705882,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -38.64106088856489,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_GLOSRY",
+      "text": "ABENSELECTION_SCREEN_GLOSRY\n\nSpecial [dynpro](ABENDYNPRO_GLOSRY.html) that can be defined without the use of the [Screen Painter](ABENSCREEN_PAINTER_GLOSRY.html) by using the statements [`SELECTION-SCREEN`](ABAPSELECTION-SCREEN.html), [`PARAMETERS`](ABAPPARAMETERS.html), or [`SELECT-OPTIONS`](ABAPSELECT-OPTIONS.html) in the [global declaration part](ABENGLOBAL_DECLARATION_SECT_GLOSRY.html) of [executable programs](ABENEXECUTA\n\n/abap-docs-standard/ABENSELECTION_SCREEN_GLOSRY",
+      "bm25": -40.8490955559808,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_GLOSRY",
+      "relFile": "ABENSELECTION_SCREEN_GLOSRY.md",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -40.8490955559808,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNP_TABLE_CONTROLS",
+      "text": "ABENDYNP_TABLE_CONTROLS\n\nTable controls are named dynpro elements used to display and process table-like data on [dynpros](ABENDYNPRO_GLOSRY.html). In a table control, a maximum of 255 dynpro elements is summarized in a table control row, which can be repeated multiple times within the table control on the [screen layout](ABENSCREEN_GLOSRY.html). The fields of a row must be created only once as [dynpro fields](ABENDYNPRO_\n\n/abap-docs-standard/ABENDYNP_TABLE_CONTROLS",
+      "bm25": -42.727609758828706,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNP_TABLE_CONTROLS",
+      "relFile": "ABENDYNP_TABLE_CONTROLS.md",
+      "finalScore": 0.03424657534246575,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -42.727609758828706,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_LISTBOX",
+      "text": "ABENABAP_DYNPROS_LISTBOX\n\nA dropdown list box is a single-column list of text fields with a maximum length of 80 characters. Internally, each text field is linked with a key of up to 40 characters. When the user selects a line, the content of the text field is entered in the input field on the screen and the content of the key is passed to the dynpro field. This means that the content and length of the screen field and dyn\n\n/abap-docs-standard/ABENABAP_DYNPROS_LISTBOX",
+      "bm25": -37.68722555774114,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_LISTBOX",
+      "relFile": "ABENABAP_DYNPROS_LISTBOX.md",
+      "finalScore": 0.03409090909090909,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -37.68722555774114,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_GLOSRY",
+      "text": "ABENDYNPRO_GLOSRY\n\nDynamic program, component of an [executable program](ABENEXECUTABLE_PROGRAM_GLOSRY.html), a [function pool](ABENFUNCTION_POOL_GLOSRY.html), or a [module pool](ABENMODUL_POOL_GLOSRY.html). Consists of a [screen layout](ABENSCREEN_GLOSRY.html) and a [dynpro flow logic](ABENDYNPRO_FLOW_LOGIC_GLOSRY.html) and contains [dynpro fields](ABENDYNPRO_FIELD_GLOSRY.html). General dynpros are created with the\n\n/abap-docs-standard/ABENDYNPRO_GLOSRY",
+      "bm25": -40.03032431710388,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_GLOSRY",
+      "relFile": "ABENDYNPRO_GLOSRY.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -40.03032431710388,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_FIELD_HELP",
+      "text": "ABENABAP_DYNPROS_FIELD_HELP\n\nThere are three ways of displaying field help for screen elements on dynpros: If a screen element in the Screen Painter was defined by copying a field from the ABAP Dictionary, the [documentation](ABENDDIC_DATA_ELEMENTS_SEMA.html) of the associated data element is displayed automatically when the `F1` help is selected for this field, unless this step is overridden in the dynpro flow logic. The doc\n\n/abap-docs-standard/ABENABAP_DYNPROS_FIELD_HELP",
+      "bm25": -36.35875017858942,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_FIELD_HELP",
+      "relFile": "ABENABAP_DYNPROS_FIELD_HELP.md",
+      "finalScore": 0.03296703296703297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -36.35875017858942,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_CHECKS_AUTO",
+      "text": "ABENABAP_DYNPROS_CHECKS_AUTO\n\nIn the PAI event, the dynpro makes a series of automatic input checks. These checks take place before data transports to the ABAP program and before the dynpro flow logic is processed. Before these automatic input checks, a single dialog module can be called using an unconditional module call and with a special function type. This dialog module is usually used to bypass the checks and exit the dyn\n\n/abap-docs-standard/ABENABAP_DYNPROS_CHECKS_AUTO",
+      "bm25": -35.788218570099424,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_CHECKS_AUTO",
+      "relFile": "ABENABAP_DYNPROS_CHECKS_AUTO.md",
+      "finalScore": 0.031914893617021274,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.788218570099424,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_EVENTS",
+      "text": "ABENSELECTION_SCREEN_EVENTS\n\nSelection screen processing encapsulates the [dynpro flow logic](ABENDYNPRO_FLOW_LOGIC_GLOSRY.html) together with the sending of the [selection screen](ABENSELECTION_SCREEN_GLOSRY.html). No dialog modules of the program are called. Instead, a series of [selection screen events](ABENSELECTION_SCREEN_EVENT_GLOSRY.html) are raised for which event blocks can be programmed. [PBO](ABENPBO_GLOSRY.html) p\n\n/abap-docs-standard/ABENSELECTION_SCREEN_EVENTS",
+      "bm25": -35.05026676346723,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_EVENTS",
+      "relFile": "ABENSELECTION_SCREEN_EVENTS.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.05026676346723,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENENCAP_CLASS_INTERF_GUIDL",
+      "text": "ABENENCAP_CLASS_INTERF_GUIDL\n\nThe [separation of concerns](ABENSEPARATION_CONCERNS_GUIDL.html) is one of the basic rules of these ABAP programming guidelines. This separation, which refers to a strict division of ABAP code into parts for presentation services, application services, and persistence services, is also technically possible for classic dynpro-based UI technologies. The MVC approach is not directly supported, but So\n\n/abap-docs-standard/ABENENCAP_CLASS_INTERF_GUIDL",
+      "bm25": -39.58046903755999,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENENCAP_CLASS_INTERF_GUIDL",
+      "relFile": "ABENENCAP_CLASS_INTERF_GUIDL.md",
+      "finalScore": 0.03048780487804878,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -39.58046903755999,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_SCREEN",
+      "text": "ABENABAP_DYNPROS_SCREEN\n\nThe [screen layout](ABENSCREEN_GLOSRY.html) of a [dynpro](ABENDYNPRO_GLOSRY.html) is created in the [Layout Editor](ABENLAYOUT_EDITOR_GLOSRY.html) in the [Screen Painter](ABENSCREEN_PAINTER_GLOSRY.html). The screen layout of the program `DEMO_DYNPRO` contains all possible screen elements. Above the screen layout, the menu bar, standard toolbar, title bar, and the application toolbar can be seen. T\n\n/abap-docs-standard/ABENABAP_DYNPROS_SCREEN",
+      "bm25": -30.734049990055585,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_SCREEN",
+      "relFile": "ABENABAP_DYNPROS_SCREEN.md",
+      "finalScore": 0.030434782608695653,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.734049990055585,
+        "rank": 55,
+        "rrfScore": 0.008695652173913044,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCONTROLS_TABLEVIEW",
+      "text": "ABAPCONTROLS_TABLEVIEW\n\n`CONTROLS contrl TYPE TABLEVIEW USING SCREEN dynnr.` Declares a [table control](ABENTABLE_CONTROL_GLOSRY.html). If the type `TABLEVIEW` is specified in the statement `CONTROLS`, a [deep structure](ABENDEEP_STRUCTURE_GLOSRY.html) is created with the name of the [control](ABENCONTROL_GLOSRY.html) and the type `cxtab_control` of the [type pool](ABENTYPE_POOL_GLOSRY.html)\\\\ `CXTAB`. In [dynpro](ABEND\n\n/abap-docs-standard/ABAPCONTROLS_TABLEVIEW",
+      "bm25": -38.77503854989046,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCONTROLS_TABLEVIEW",
+      "relFile": "ABAPCONTROLS_TABLEVIEW.md",
+      "finalScore": 0.02976190476190476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -38.77503854989046,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPROS_CHECKS_MOD",
+      "text": "ABENABAP_DYNPROS_CHECKS_MOD\n\nInput checks in PAI modules are enabled by first transporting the content of the input fields to the ABAP program. This is where the content can then be checked. Any errors can be corrected on the screen before further modules are called. This is achieved by combining the statements [`FIELD`](FIELD.html) and [`CHAIN`](CHAIN.html) of the dynpro flow logic with [messages](ABENDYNP_FIELD_MESSAGES.htm\n\n/abap-docs-standard/ABENABAP_DYNPROS_CHECKS_MOD",
+      "bm25": -33.27170256168105,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPROS_CHECKS_MOD",
+      "relFile": "ABENABAP_DYNPROS_CHECKS_MOD.md",
+      "finalScore": 0.0297029702970297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -33.27170256168105,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_RADIO_BUTTON_ABEXA",
+      "text": "ABENDYNPRO_RADIO_BUTTON_ABEXA\n\nThis example demonstrates how checkboxes and radio buttons can be processed on dynpros. The static next dynpro number of dynpro 100 is 100. The screen fields `field1` to `field3` are defined as not ready for input in the Screen Painter. Selecting one of the three radio buttons raises the event PAI, which passes the function code `RADIO` and the field content of the screen fields to the ABAP progra\n\n/abap-docs-standard/ABENDYNPRO_RADIO_BUTTON_ABEXA",
+      "bm25": -36.00215286885683,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_RADIO_BUTTON_ABEXA",
+      "relFile": "ABENDYNPRO_RADIO_BUTTON_ABEXA.md",
+      "finalScore": 0.029347826086956522,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -36.00215286885683,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODULE",
+      "text": "ABAPMODULE\n\n`MODULE mod \\{OUTPUT|[INPUT]\\}.`\\\\  The statement `MODULE` defines a [dialog module](ABENDIALOG_MODULE_GLOSRY.html)\\\\ `mod`. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `mod`. The functions of a dialog module `mod` are implemented between the statements `MODULE` ad `ENDMODULE`. A dialog module is called using the identically named statement [`MODULE`](MODULE.html) of th\n\n/abap-docs-standard/ABAPMODULE",
+      "bm25": -33.00429079618843,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODULE",
+      "relFile": "ABAPMODULE.md",
+      "finalScore": 0.029126213592233007,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -33.00429079618843,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSCREEN_PAINTER_GLOSRY",
+      "text": "ABENSCREEN_PAINTER_GLOSRY\n\nABENSAP\\_GUI\\_GLOSSARY.html\n\n/abap-docs-standard/ABENSCREEN_PAINTER_GLOSRY",
+      "bm25": -29.351700966986552,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSCREEN_PAINTER_GLOSRY",
+      "relFile": "ABENSCREEN_PAINTER_GLOSRY.md",
+      "finalScore": 0.02890625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -29.351700966986552,
+        "rank": 68,
+        "rrfScore": 0.0078125,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_CONTEXT_MENUS",
+      "text": "ABENDYNPRO_CONTEXT_MENUS\n\nThe user interface of a dynpro is defined by a [GUI status](ABENGUI_STATUS_GLOSRY.html) with type *dialog status*, defined in the [Menu Painter](ABENMENU_PAINTER_GLOSRY.html). For each dialog status, the system automatically creates a standard context menu, which the user can display by making a right-click on the screen of the dynpro (or by choosing Shift + F10). The standard context menu contain\n\n/abap-docs-standard/ABENDYNPRO_CONTEXT_MENUS",
+      "bm25": -32.69462244359738,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_CONTEXT_MENUS",
+      "relFile": "ABENDYNPRO_CONTEXT_MENUS.md",
+      "finalScore": 0.028846153846153848,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -32.69462244359738,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_SUBSCREEN_ABEXA",
+      "text": "ABENDYNPRO_SUBSCREEN_ABEXA\n\nThis example demonstrates how to include subscreens. The static next dynpro number of dynpro 100 is 100. Four pushbuttons with function codes *SUB1* to *SUB4* and two identically sized subscreen areas `area1` and `area2` have been created. In the same ABAP program, four subscreen dynpros 110 to 140 are defined. The input/output field of all four subscreen dynpro has the name `field`. The function\n\n/abap-docs-standard/ABENDYNPRO_SUBSCREEN_ABEXA",
+      "bm25": -30.78091284073362,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_SUBSCREEN_ABEXA",
+      "relFile": "ABENDYNPRO_SUBSCREEN_ABEXA.md",
+      "finalScore": 0.02831858407079646,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.78091284073362,
+        "rank": 53,
+        "rrfScore": 0.008849557522123894,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNP_SPLITTER_CONTROL_SPCL",
+      "text": "ABENDYNP_SPLITTER_CONTROL_SPCL\n\nA splitter control is a screen element that divides the area it covers either horizontally into two adjacent [subscreen areas](ABENSUBSCREEN_ARREA_GLOSRY.html) or vertically one above each other. The division is made by a sash. The horizontal or vertical position of the sash is specified statically in the definition of the splitter control. It can be set to PBO in the ABAP program and changed by t\n\n/abap-docs-standard/ABENDYNP_SPLITTER_CONTROL_SPCL",
+      "bm25": -36.88248335599035,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNP_SPLITTER_CONTROL_SPCL",
+      "relFile": "ABENDYNP_SPLITTER_CONTROL_SPCL.md",
+      "finalScore": 0.028089887640449437,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -36.88248335599035,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_STRINGS_ABEXA",
+      "text": "ABENDYNPRO_STRINGS_ABEXA\n\nThis example demonstrates how to bind strings to dynpro fields. The static next dynpro number of dynpro 100 is 0. There are four input fields `STRING1`, `STRING2`, `CHAR1`, and `CHAR2` of type `CHAR` with a length of 10. No modules are called in the dynpro flow logic. When the program is executed, the screen layout is displayed with the values *123* and *1234567890* in the fields `STRING1`\\\\ `CHAR\n\n/abap-docs-standard/ABENDYNPRO_STRINGS_ABEXA",
+      "bm25": -35.00691210583996,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_STRINGS_ABEXA",
+      "relFile": "ABENDYNPRO_STRINGS_ABEXA.md",
+      "finalScore": 0.027835051546391754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.00691210583996,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_CUSTOM_CONTROL_ABEXA",
+      "text": "ABENDYNPRO_CUSTOM_CONTROL_ABEXA\n\nThis example shows how CFW events are handled. Dynpro 100 contains an output field `field` and a custom control called `textedit`. The flow logic of dynpro 100 is: PROCESS BEFORE OUTPUT. \\\\n  MODULE status\\_0100. \\\\nPROCESS AFTER INPUT. \\\\n  MODULE cancel AT EXIT-COMMAND. \\\\n  MODULE user\\_command\\_0100.\n\n/abap-docs-standard/ABENDYNPRO_CUSTOM_CONTROL_ABEXA",
+      "bm25": -34.698503040287456,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_CUSTOM_CONTROL_ABEXA",
+      "relFile": "ABENDYNPRO_CUSTOM_CONTROL_ABEXA.md",
+      "finalScore": 0.02727272727272728,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.698503040287456,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUPPRESS",
+      "text": "ABAPSUPPRESS\n\nIf this statement is specified during [PBO](ABENPBO_GLOSRY.html) processing, the current [dynpro](ABENDYNPRO_NUMBER_GLOSRY.html) is processed without displaying the [screen layout](ABENSCREEN_GLOSRY.html), while the screen layout of the previous dynpro remains visible. After PBO processing, the system raises the event [PAI](ABENPAI_GLOSRY.html) in the same way as if a user had pressed *Enter*. The\n\n/abap-docs-standard/ABAPSUPPRESS",
+      "bm25": -35.8814525642492,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUPPRESS",
+      "relFile": "ABAPSUPPRESS.md",
+      "finalScore": 0.02688172043010753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.8814525642492,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNP_FIELD_MESSAGES",
+      "text": "ABENDYNP_FIELD_MESSAGES\n\nIf the statement [`FIELD`](FIELD.html) in the event block for [PAI](ABENPAI_GLOSRY.html) is [linked](FIELD_MODULE.html) with a `MODULE` statement, the statement controls the handling of [warnings](ABENWARNING_GLOSRY.html) and [error messages](ABENERROR_MESSAGE_GLOSRY.html), which are sent in the called module using the statement [`MESSAGE`](ABAPMESSAGE.html). If `FIELD` is specified outside a proc\n\n/abap-docs-standard/ABENDYNP_FIELD_MESSAGES",
+      "bm25": -35.27887253396142,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNP_FIELD_MESSAGES",
+      "relFile": "ABENDYNP_FIELD_MESSAGES.md",
+      "finalScore": 0.02631578947368421,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.27887253396142,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPRO_ELEMENTS",
+      "text": "ABENABAP_DYNPRO_ELEMENTS\n\nDynpros can only be defined using the [Screen Painter](ABENSCREEN_PAINTER_GLOSRY.html) tool in the [ABAP Workbench](ABENABAP_WORKBENCH_GLOSRY.html). The relevant documentation provides comprehensive information about creating dynpros and their elements. The following sections contain information about dynpro elements that is important for ABAP programming using dynpros. -   [dynpro - Attributes](A\n\n/abap-docs-standard/ABENABAP_DYNPRO_ELEMENTS",
+      "bm25": -30.667472118148428,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPRO_ELEMENTS",
+      "relFile": "ABENABAP_DYNPRO_ELEMENTS.md",
+      "finalScore": 0.025641025641025644,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.667472118148428,
+        "rank": 57,
+        "rrfScore": 0.008547008547008548,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPLEAVE_TO_LIST-PROCESSING",
+      "text": "ABAPLEAVE_TO_LIST-PROCESSING\n\n`LEAVE TO LIST-PROCESSING [AND RETURN TO SCREEN dynnr].` This statement can be executed during [PBO](ABENPBO_GLOSRY.html) and [PAI](ABENPAI_GLOSRY.html) processing. After the current dynpro is processed, this statement interrupts the current [dynpro sequence](ABENDYNPRO_SEQUENCE_GLOSRY.html), starts the list processor, and displays the basic list. The basic list consists of any list output of all\n\n/abap-docs-standard/ABAPLEAVE_TO_LIST-PROCESSING",
+      "bm25": -34.983659652735696,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPLEAVE_TO_LIST-PROCESSING",
+      "relFile": "ABAPLEAVE_TO_LIST-PROCESSING.md",
+      "finalScore": 0.02551020408163265,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.983659652735696,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTABLE_CONTROL2_ABEXA",
+      "text": "ABENTABLE_CONTROL2_ABEXA\n\nThis example demonstrates sorting by columns and how lines are deleted in table controls. The resizable table control `flights` is defined. The fields of the table control have been copied from the `DEMO_CONN` structure in the dictionary. The first two columns are lead columns. The corresponding fields are output fields. A title bar, columns headers, and a selection column are created. The selecti\n\n/abap-docs-standard/ABENTABLE_CONTROL2_ABEXA",
+      "bm25": -37.80473138480655,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTABLE_CONTROL2_ABEXA",
+      "relFile": "ABENTABLE_CONTROL2_ABEXA.md",
+      "finalScore": 0.025287356321839084,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -37.80473138480655,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSCREEN",
+      "text": "ABENSCREEN\n\nMost components of the structure `SCREEN` from the ABAP Dictionary correspond to the properties of a screen element on a dynpro. Data objects with the data type `SCREEN` can be used as a work area in the following ABAP statements: The following table shows the components of `SCREEN`, their assignment to the field properties in the dynpro, and the possible values.\n\n/abap-docs-standard/ABENSCREEN",
+      "bm25": -30.45717582035297,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSCREEN",
+      "relFile": "ABENSCREEN.md",
+      "finalScore": 0.025210084033613446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.45717582035297,
+        "rank": 59,
+        "rrfScore": 0.008403361344537815,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPLEAVE_LIST-PROCESSING",
+      "text": "ABAPLEAVE_LIST-PROCESSING\n\n`LEAVE LIST-PROCESSING.` This statement immediately exits the list processor. The runtime framework continues processing with the [PBO](ABENPBO_GLOSRY.html) event of the dynpro from which the list processor was called using [`LEAVE TO LIST-PROCESSING`](ABAPLEAVE_TO_LIST-PROCESSING.html) or the dynpro that was set using the addition [`AND RETURN TO SCREEN`](ABAPLEAVE_TO_LIST-PROCESSING.html) of thi\n\n/abap-docs-standard/ABAPLEAVE_LIST-PROCESSING",
+      "bm25": -34.477629892315626,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPLEAVE_LIST-PROCESSING",
+      "relFile": "ABAPLEAVE_LIST-PROCESSING.md",
+      "finalScore": 0.025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.477629892315626,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPFUNCTION-POOL",
+      "text": "ABAPFUNCTION-POOL\n\nThe statement `FUNCTION-POOL` introduces a [function pool](ABENFUNCTION_POOL_GLOSRY.html). It must be the first statement of a standalone program after any [include programs](ABENINCLUDE_PROGRAM_GLOSRY.html) are resolved. Function pools are maintained using the [Function Builder](ABENFUNCTION_BUILDER_GLOSRY.html) tool in the [ABAP Workbench](ABENABAP_WORKBENCH_GLOSRY.html), where a [master program\n\n/abap-docs-standard/ABAPFUNCTION-POOL",
+      "bm25": -30.407082063324903,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPFUNCTION-POOL",
+      "relFile": "ABAPFUNCTION-POOL.md",
+      "finalScore": 0.024793388429752067,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -30.407082063324903,
+        "rank": 61,
+        "rrfScore": 0.008264462809917356,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_F4_HELP_ABEXA",
+      "text": "ABENSEL_SCREEN_F4_HELP_ABEXA\n\nThe example demonstrates a user-defined `F4` help for a selection parameter on a selection screen. This program declares a selection screen with two selection parameters that both refer to the column `CARRID` of the database table `SPFLI`. While the dictionary input help is used for `p_carr_1`, a separate input help is programmed for `p_carr_2`. Dynpro 100 is called for this. In the flow logic, th\n\n/abap-docs-standard/ABENSEL_SCREEN_F4_HELP_ABEXA",
+      "bm25": -31.35189188867601,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_F4_HELP_ABEXA",
+      "relFile": "ABENSEL_SCREEN_F4_HELP_ABEXA.md",
+      "finalScore": 0.024545454545454547,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -31.35189188867601,
+        "rank": 50,
+        "rrfScore": 0.00909090909090909,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCONVERSION_EXITS",
+      "text": "ABENCONVERSION_EXITS\n\nA [conversion exit](ABENCONVERSION_EXIT_GLOSRY.html) overrides standard conversions that take place when values are passed from an ABAP data object to a dynpro field or from a dynpro field to an ABAP data object and in the formatting of data using the statements [`WRITE`](ABAPWRITE-.html) and [`WRITE TO`](ABAPWRITE_TO.html). A conversion exit has a five-character name `CNVRT` and can be used as fo\n\n/abap-docs-standard/ABENCONVERSION_EXITS",
+      "bm25": -33.18873050590751,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCONVERSION_EXITS",
+      "relFile": "ABENCONVERSION_EXITS.md",
+      "finalScore": 0.024509803921568627,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -33.18873050590751,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_DROP2_ABEXA",
+      "text": "ABENDYNPRO_DROP2_ABEXA\n\nThis example demonstrates a non-recommended way to enable a dropdown list box. The static next dynpro number of dynpro 100 is 200. The input field is assigned the component `CARRIER2` of the structure `DEMOF4HELP` from the ABAP Dictionary. Its *dropdown* attribute is L, the output length is 15, the *value list* attribute is empty, and it is assigned the function code `CARRIER`. The function code o\n\n/abap-docs-standard/ABENDYNPRO_DROP2_ABEXA",
+      "bm25": -31.290503140908033,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_DROP2_ABEXA",
+      "relFile": "ABENDYNPRO_DROP2_ABEXA.md",
+      "finalScore": 0.024324324324324326,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -31.290503140908033,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 1.7
+      }
+    }
+  ]
+}

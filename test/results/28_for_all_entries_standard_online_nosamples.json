@@ -1,0 +1,481 @@
+{
+  "meta": {
+    "query": "FOR ALL ENTRIES IN SELECT performance optimization",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-02-01T20:19:17.738Z",
+    "count": 30
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_JOIN",
+      "text": "ABAPSELECT_JOIN\n\nJoins the columns of two or more [data sources](ABAPSELECT_DATA_SOURCE.html) in a result set of a [query](ABENASQL_QUERY_GLOSRY.html) in a join expression. A join expression joins a left side with a right side, using Every join expression for an inner or outer join must contain a join condition [`sql_cond`](ABENABAP_SQL_STMT_LOGEXP.html) after `ON` (see below). A join expression for a cross join c\n\n/abap-docs-standard/ABAPSELECT_JOIN",
+      "bm25": -16.22915308772108,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_JOIN",
+      "relFile": "ABAPSELECT_JOIN.md",
+      "finalScore": 0.046153846153846156,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.22915308772108,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPREAD_TABLE_WHERE",
+      "text": "For a better understanding, the following tables show the relations between the index an line values in different sort orders\n\nStatic or dynamic `WHERE` condition. The internal table is searched for the first line whose values match the `WHERE` condition. A `WHERE` condition cannot be used together with the following transport options: **Note** The transport option [*TRANSPORTING NO FIELDS*](ABAPREAD_TABLE_TRANSPORT_OPTIONS.html) can be used together with a *WHERE* condition.\n\n/abap-docs-standard/ABAPREAD_TABLE_WHERE",
+      "bm25": -12.188710122619293,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPREAD_TABLE_WHERE",
+      "relFile": "ABAPREAD_TABLE_WHERE.md",
+      "finalScore": 0.041666666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.188710122619293,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_JOINED_DATA_SOURCE_V2",
+      "text": "The following non-parenthesized chaining of join expressions\n\nDefines a [join](ABENJOIN_GLOSRY.html) between two data sources of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). The code above is part of the syntax of a data source [`data_source`](ABENCDS_DATA_SOURCE_V2.html) and recursively contains the syntax of a second data source [`data_source`](ABENCDS_DATA_SOURCE_V2.html). Two joined data sources represent a join expression. Every join expression for\n\n/abap-docs-standard/ABENCDS_JOINED_DATA_SOURCE_V2",
+      "bm25": -19.22058996853149,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_JOINED_DATA_SOURCE_V2",
+      "relFile": "ABENCDS_JOINED_DATA_SOURCE_V2.md",
+      "finalScore": 0.04098360655737705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.22058996853149,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_KEY_SECONDARY_USAGE",
+      "text": "Notes on Using Secondary Table Keys\n\nNotes on Using Secondary Table Keys The program `DEMO_SECONDARY_KEYS` demonstrates how a secondary table key is specified and the resulting performance gain. -   The standard scenario for profitable use of secondary table keys is a very large internal table that is constructed once in the memory and whose content is then changed very infrequently. [Costs](ABENITAB_KEY_MEMORY.html) for the administ\n\n/abap-docs-standard/ABENITAB_KEY_SECONDARY_USAGE",
+      "bm25": -18.19603389999976,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_KEY_SECONDARY_USAGE",
+      "relFile": "ABENITAB_KEY_SECONDARY_USAGE.md",
+      "finalScore": 0.04032258064516129,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.19603389999976,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_CARDINALITY_V2",
+      "text": "Cardinality Syntax Written in Words\n\n`OF \\{\\{EXACT ONE\\}\\ | MANY | ONE\\} TO \\{\\{EXACT ONE\\}\\ | MANY | ONE\\}`\\\\ Specifies a [cardinality](ABENCARDINALITY_GLOSRY.html) to express the relation between the rows of the data sources. The following options are available: The cardinality specification documents the semantics of the data model. It is used by the [SAP HANA SQL Optimizer](ABENQUERY_OPTIMIZER_GLOSRY.html) for performance optimiz\n\n/abap-docs-standard/ABENCDS_CARDINALITY_V2",
+      "bm25": -16.4278106055771,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_CARDINALITY_V2",
+      "relFile": "ABENCDS_CARDINALITY_V2.md",
+      "finalScore": 0.03968253968253968,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.4278106055771,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECT_HIERARCHY_GEN_ASSOC",
+      "text": "ABENSELECT_HIERARCHY_GEN_ASSOC\n\nIn this variant of the hierarchy generator `HIERARCHY`, a [parent-child-based hierarchy](ABENPC_BASED_HIERA_GLOSRY.html) is generated that is defined by parent-child-relations between different columns of a so called hierarchy source that must expose a hierarchy annotation. The following needs to be specified: All other additions are optional and define further properties of the SQL hierarchy. The\n\n/abap-docs-standard/ABENSELECT_HIERARCHY_GEN_ASSOC",
+      "bm25": -11.735138809356782,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECT_HIERARCHY_GEN_ASSOC",
+      "relFile": "ABENSELECT_HIERARCHY_GEN_ASSOC.md",
+      "finalScore": 0.039473684210526314,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.735138809356782,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_PERFO",
+      "text": "ABENITAB_PERFO\n\nWhen assignments are made between internal tables of the same type whose line type does not contain any table types, only the internal administration functions are passed to the [table body](ABENTABLE_BODY_GLOSRY.html) for performance reasons. [Table sharing](ABENTABLE_SHARING_GLOSRY.html) is revoked only when write access to one of the tables involved is initiated. The actual copy process then ta\n\n/abap-docs-standard/ABENITAB_PERFO",
+      "bm25": -16.339252087738494,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_PERFO",
+      "relFile": "ABENITAB_PERFO.md",
+      "finalScore": 0.0390625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.339252087738494,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_JOINED_DATA_SOURCE_V1",
+      "text": "The following non-parenthesized chaining of join expressions\n\nDefines a [join](ABENJOIN_GLOSRY.html) between two data sources of a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). The code above is part of the syntax of a data source [`data_source`](ABENCDS_DATA_SOURCE_V1.html) and contains the recursive syntax of a data source [`data_source`](ABENCDS_DATA_SOURCE_V1.html). Two joined data sources represent a join expression. Every join expressi\n\n/abap-docs-standard/ABENCDS_JOINED_DATA_SOURCE_V1",
+      "bm25": -16.0374461492731,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_JOINED_DATA_SOURCE_V1",
+      "relFile": "ABENCDS_JOINED_DATA_SOURCE_V1.md",
+      "finalScore": 0.03787878787878788,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.0374461492731,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSECONDARY_KEY_GUIDL",
+      "text": "ABENSECONDARY_KEY_GUIDL\n\nSecondary keys can be declared for internal tables. The following options are possible: These keys are assigned a name when they are declared and can be created for any table category. The primary key (nameless up to this point) is assigned a predefined name (`primary_key`), which allows it to be explicitly addressed. A secondary table index is created internally for each sorted secondary key. Thi\n\n/abap-docs-standard/ABENSECONDARY_KEY_GUIDL",
+      "bm25": -15.638855140243402,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSECONDARY_KEY_GUIDL",
+      "relFile": "ABENSECONDARY_KEY_GUIDL.md",
+      "finalScore": 0.03731343283582089,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.638855140243402,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-a389cb53f0f67314e10000000a174cb4",
+      "text": "Optimizing Performance\n\n<b>Optimize</b> the <b>Performance</b> of Your Core Business Processes\n\nSAP EarlyWatch Alert\n\n\n Preventative Monitoring for your SAP Solution\n\n\n\nProcedure\n\n The following SAP Notes on <b>performance</b> <b>optimization</b> in ... Prerequisites\n\n Note the following SAP-specific factors to improve <b>performance</b>:\n\nSystem <b>Performance</b>\n\n\n Achieving Optimal <b>Performance</b> for mySAP Business Suite\n\nSAP Business Process <b>Performance</b> <b>Optimization</b> ... ICM are available:\n\nSAP Notes on <b>Performance</b> <b>Optimization</b> in Incentive and Commission Management\n\n\t Note No. ...  — Product: SAP ERP (6.0 EHP2 Latest)\n\nhttps://help.sap.com/docs/SAP_ERP/75721ed436354188aea60a1868a2a31c/a389cb53f0f67314e10000000a174cb4.html?locale=en-US&state=PRODUCTION&version=6.02.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_ERP/75721ed436354188aea60a1868a2a31c/a389cb53f0f67314e10000000a174cb4.html?locale=en-US&state=PRODUCTION&version=6.02.latest",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc9ebc859aa24b3c9407d5ed1bc7c258",
+      "text": "Slow Select for all Entries (FAE) Query\n\nSlow <b>Select</b> for all <b>Entries</b> (FAE) Query\nThere are a number of points to check if you have <b>performance</b> issues with <b>SELECT</b> FOR ALL\n<b>ENTRIES</b> (FAE) from an ABAP query. ... Required Actions: Apply parameters for ABAP <b>optimization</b>. For more information, see\nSAP Note 1987132 - SAP HANA: Parameter setting for <b>SELECT</b> FOR ALL\n<b>ENTRIES</b>. ... For FAE on SAP HANA, please generally refer to SAP Note 1662726 - <b>Optimization</b> of <b>select</b>\nwith FOR ALL <b>ENTRIES</b> on SAP HANA database. \n\nRoot cause: Indexes are missing. ...  — Product: SAP HANA Platform (2.0 SPS 08)\n\nhttps://help.sap.com/docs/SAP_HANA_PLATFORM/bed8c14f9f024763b0777aa72b5436f6/dc9ebc859aa24b3c9407d5ed1bc7c258.html?locale=en-US&state=PRODUCTION&version=2.0.08",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_HANA_PLATFORM/bed8c14f9f024763b0777aa72b5436f6/dc9ebc859aa24b3c9407d5ed1bc7c258.html?locale=en-US&state=PRODUCTION&version=2.0.08",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPWITH_ASSOCIATIONS_DEFINING",
+      "text": "ABAPWITH_ASSOCIATIONS_DEFINING\n\nSpecifying `JOIN` initiates the definition and exposure of a [CTE association](ABENCTE_ASSOCIATION_GLOSRY.html) with the name `_assoc` in the addition [`WITH ASSOCIATIONS`](ABAPWITH_ASSOCIATIONS.html) when a common table expression is defined in a [`WITH`](ABAPWITH.html) statement. A CTE association joins the current common table expression `+cte` as an [association source](ABENASSOCIATION_SOURCE_\n\n/abap-docs-standard/ABAPWITH_ASSOCIATIONS_DEFINING",
+      "bm25": -12.397653103405169,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPWITH_ASSOCIATIONS_DEFINING",
+      "relFile": "ABAPWITH_ASSOCIATIONS_DEFINING.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.397653103405169,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-e796b6796f0f1014b2e4ddc32c004e79",
+      "text": "Improving Aggregation Performance\n\n,\n\t\tcount(BaseInput.intData_1) AS counter,\n\t\tsum(BaseInput.dblData_1) AS summary\nFROM BaseInput\nGROUP BY BaseInput.intData_1;\n\n\n\nNote \nFor optimal <b>peformance</b>, when <b>selecting</b> only the column in a <b>SELECT</b> ... The following <b>SELECT</b> statement is not <b>optimized</b> for additive <b>optimization</b> since one of the\nnon-GROUP BY columns (name) directly <b>selects</b> a column which cannot be\ncomputed additively. ... In a <b>SELECT</b> statement, the server performs additive <b>optimization</b> provided functions eligible for\n<b>optimization</b> are used in all values being <b>selected</b>, with the exception of the columns\nreferenced in the ...  — Product: SAP Event Stream Processor (5.1 SP 12)\n\nhttps://help.sap.com/docs/SAP_EVENT_STREAM_PROCESSOR/9e59c12ae5304160baf3e3308fc2548f/e796b6796f0f1014b2e4ddc32c004e79.html?locale=en-US&state=PRODUCTION&version=5.1.12",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_EVENT_STREAM_PROCESSOR/9e59c12ae5304160baf3e3308fc2548f/e796b6796f0f1014b2e4ddc32c004e79.html?locale=en-US&state=PRODUCTION&version=5.1.12",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENEQUALS_STRING_EXPR",
+      "text": "ABENEQUALS_STRING_EXPR\n\nIf a [string expression](ABENSTRING_EXPRESSION_GLOSRY.html) [`string_exp`](ABAPCOMPUTE_STRING.html) is specified on the right side of the [assignment operator `=`](ABENEQUALS_OPERATOR.html), its result of type `string` is calculated and assigned to the left side `result`. The following can be specified for `result`: The first assignment declares a target field of the type `string` inline and assig\n\n/abap-docs-standard/ABENEQUALS_STRING_EXPR",
+      "bm25": -12.354545566383337,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENEQUALS_STRING_EXPR",
+      "relFile": "ABENEQUALS_STRING_EXPR.md",
+      "finalScore": 0.035211267605633804,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.354545566383337,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-7ff5a821152e4011a1b961712d570210",
+      "text": "Performance Improvements\n\n<b>Performance</b> improvements were made in the following areas:\n\n\tSearching for members\n\n\tDistribution lists\n\n\tApp load <b>performance</b> enhancement for SAP Jam Mobile App on Android, and\nadditional <b>optimizations</b> ... <b>Performance</b> Improvements\n<b>Perfromance</b> improvements have been implemented. ...  — Product: SAP Jam Collaboration (Latest)\n\nhttps://help.sap.com/docs/SAP_JAM_COLLABORATION/7fb83e5383ef43118c433a4987e52c25/7ff5a821152e4011a1b961712d570210.html?locale=en-US&state=PRODUCTION&version=LATEST",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_JAM_COLLABORATION/7fb83e5383ef43118c433a4987e52c25/7ff5a821152e4011a1b961712d570210.html?locale=en-US&state=PRODUCTION&version=LATEST",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-192a8e76f58a4112a125f983c25215ba",
+      "text": "Query Performance Optimization\n\nQuery <b>Performance</b> <b>Optimization</b>\nLearn about features that <b>optimize</b> data virtualization to enhance smart data access\nquery <b>performance</b> and minimize data movement across remote sources. ... To achieve high <b>performance</b> with queries, you need a deep\nunderstanding of how SAP HANA <b>optimizes</b> distributed queries and how to influence its\nbehavior. ... Remote SINGLE Aggregation\nPush SINGLE aggregation operations to the remote source to <b>optimize</b>\nprocessing of scalar subqueries and improve <b>performance</b>. ...  — Product: SAP HANA Cloud, SAP HANA Database (QRC 4/2025)\n\nhttps://help.sap.com/docs/HANA_CLOUD_DATABASE/477aa413a36c4a95878460696fcc8896/192a8e76f58a4112a125f983c25215ba.html?locale=en-US&state=PRODUCTION&version=2025_4_QRC",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/HANA_CLOUD_DATABASE/477aa413a36c4a95878460696fcc8896/192a8e76f58a4112a125f983c25215ba.html?locale=en-US&state=PRODUCTION&version=2025_4_QRC",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-44415fb830c34977ae75b6de65189515",
+      "text": "SQL Process\n\nFor example, the <b>performance</b>\nof an UPDATE statement is based on that of a <b>SELECT</b> statement because UPDATE is an\noperation that updates a <b>selected</b> <b>entry</b>. ... SQL Process\nAlthough database <b>performance</b> depends on many different operations, the <b>SELECT</b> statement\nis decisive for the SQL <b>optimizer</b> and <b>optimization</b> generally. ... These separate but\ncollectively executed statements also produce separate SQL plan cache <b>entries</b>.\n\nNote\n\nThe <b>performance</b> issues addressed here involve <b>SELECT</b> statements. ...  — Product: SAP HANA Platform (2.0 SPS 08)\n\nhttps://help.sap.com/docs/SAP_HANA_PLATFORM/9de0171a6027400bb3b9bee385222eff/44415fb830c34977ae75b6de65189515.html?locale=en-US&state=PRODUCTION&version=2.0.08",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_HANA_PLATFORM/9de0171a6027400bb3b9bee385222eff/44415fb830c34977ae75b6de65189515.html?locale=en-US&state=PRODUCTION&version=2.0.08",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_DDIC_ENTITY",
+      "text": "ABENCDS_DDIC_ENTITY\n\nIt is still possible, but not recommended, to create DDIC-based entities. SAP recommends creating CDS view entities instead of CDS DDIC-based views. A [CDS DDIC-based entity](ABENCDS_DDIC_BASED_ENTITY_GLOSRY.html) is a [CDS entity](ABENCDS_ENTITY_GLOSRY.html) for which a [CDS-managed DDIC view (obsolete)](ABENCDS_MNGDDDIC_VIEW_GLOSRY.html) is created in the ABAP Dictionary alongside the CDS entity\n\n/abap-docs-standard/ABENCDS_DDIC_ENTITY",
+      "bm25": -12.05243223911913,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_DDIC_ENTITY",
+      "relFile": "ABENCDS_DDIC_ENTITY.md",
+      "finalScore": 0.033783783783783786,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.05243223911913,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-6e86945870564a0fb4ba3cc1929ef1c6",
+      "text": "Best Practices\n\nAnalyze <b>performance</b> <b>optimization</b> within the entire system (for example:\n                                       \t\t\t\t\tWhich processes appear as especially expensive?) ... Such nested operations can be <b>detected</b> by respective static code checks\n                              \t\t\t\t(from Code Inspector or using ATC <b>performance</b> checks). ... General <b>performance</b> <b>optimizations</b>:\n\n                        \n                        \t\t\n                        \tFind database operations consuming considerably much time (per call or in total by ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/a24970c68fcf4770a64bf9a78e3719e2/6e86945870564a0fb4ba3cc1929ef1c6.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/a24970c68fcf4770a64bf9a78e3719e2/6e86945870564a0fb4ba3cc1929ef1c6.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-486002faf79007dbe10000000a42189b",
+      "text": "Checking Performance Settings for the Operating System\n\n<b>Select</b> the <b>entry</b> \n                                          \n                                          File and Printer Sharing for Microsoft Networks and choose ... <b>Optimize</b> the <b>performance</b> for background processes ... The Windows installation normally makes caching settings that are <b>optimized</b> for file servers. ...  — Product: SAP S/4HANA (1709 (Sep 2017))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/2376f7d6bbac4c4f9d776024b42e7848/486002faf79007dbe10000000a42189b.html?locale=en-US&state=PRODUCTION&version=1709 000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/2376f7d6bbac4c4f9d776024b42e7848/486002faf79007dbe10000000a42189b.html?locale=en-US&state=PRODUCTION&version=1709 000",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-9d6b197a503166459cbc7e6d10d97f66",
+      "text": "Checking Performance Settings for the Operating System\n\n<b>Select</b> the <b>entry</b> File and Printer Sharing for Microsoft Networks and choose Properties.\n\t<b>Select</b> Maximize data throughput for network applications. ... <b>Select</b> Background services under Adjust for best <b>performance</b> of. ... <b>Optimizing</b> <b>Performance</b> for Background Processes ...  — Product: SAP S/4HANA (1709 (Sep 2017))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/2376f7d6bbac4c4f9d776024b42e7848/9d6b197a503166459cbc7e6d10d97f66.html?locale=en-US&state=PRODUCTION&version=1709 000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/2376f7d6bbac4c4f9d776024b42e7848/9d6b197a503166459cbc7e6d10d97f66.html?locale=en-US&state=PRODUCTION&version=1709 000",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENHANA_DATA_AGING",
+      "text": "ABENHANA_DATA_AGING\n\nThe data aging concept makes it possible to distinguish between current (*HOT*) data and outdated (*COLD*) data within [SAP HANA database](ABENHANA_DATABASE_GLOSRY.html) tables. Application programming defines which data is current or outdated in a special [temperature column](ABENTEMPERATURE_COLUMN_GLOSRY.html) in the database table with the prescribed name `_DATAAGING`. The entries in this colum\n\n/abap-docs-standard/ABENHANA_DATA_AGING",
+      "bm25": -11.697185787360075,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENHANA_DATA_AGING",
+      "relFile": "ABENHANA_DATA_AGING.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.697185787360075,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENVIEW_CACHE_GLOSRY",
+      "text": "ABENVIEW_CACHE_GLOSRY\n\nA cache on the [SAP HANA database](ABENHANA_DATABASE_GLOSRY.html) that serves performance optimization. On the SAP HANA database, there are two types of view caches: -   [Static cache](ABENSTATIC_VIEW_CACHE_GLOSRY.html): -   A cache that is kept stable for a predefined retention time.\n\n/abap-docs-standard/ABENVIEW_CACHE_GLOSRY",
+      "bm25": -14.29303339206997,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENVIEW_CACHE_GLOSRY",
+      "relFile": "ABENVIEW_CACHE_GLOSRY.md",
+      "finalScore": 0.03235294117647059,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.29303339206997,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-3362697860",
+      "text": "ASE Server Level Performance Tuning\n\n<b>Optimizer</b>\n        Stats.pdf\n\n    Reducing\n        Maintenance With Semantic Partitions.pdf\n\n    Data\n        Partitioning in ASE15.pdf\n\n    Boosting\n        <b>Performance</b> with Partitions.pdf ... ASE Server Level <b>Performance</b> Tuning\n\n  ASE Server Level <b>Performance</b>\n      Tuning\n\n  \n    Reducing\n        Maintenance With Semantic Partitions.pdf\n\n    Wait Events\n\n    Spinlocks\n\n    Upgrading ... To ASE15 Migration.pdf\n\n    Using\n        MDA To Solve <b>Performace</b> Issues.pdf\n\n    Metadata\n        Cache.pdf\n\n    Tuning\n        Data Cache In ASE.pdf\n\n    Managing-DBMS-Workloads.pdf\n    \n\n    New-Threaded-Kernel.pdf ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/sybase/3362697860.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/sybase/3362697860.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13422164",
+      "text": "SAP ABAP/BI : ' SELECT ...FOR ALL ENTRIES ' Optimizat...\n\nDear Readers, This blog can be use to optim ize Performance of SELECT ....FOR ALL ENTRIES statements which are taking more time to execute.(Implementation of Note 1662726) Pre-requisite: S...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/sap-abap-bi-select-for-all-entries-optimization/ba-p/13422164?search-action-id=498800062556&search-result-uid=13422164",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-abap-bi-select-for-all-entries-optimization/ba-p/13422164?search-action-id=498800062556&search-result-uid=13422164",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13546382",
+      "text": "Query Performance Optimization in BW - Few Tips\n\n...rovider and want to optim ize each multi-Provider separately then we use this option, 3- Optim ized Access: In this setting we the optimization done as a whole i.e., jointly for all the in fo p...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/query-performance-optimization-in-bw-few-tips/ba-p/13546382?search-action-id=498800062556&search-result-uid=13546382",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/query-performance-optimization-in-bw-few-tips/ba-p/13546382?search-action-id=498800062556&search-result-uid=13546382",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-752-ABAP_SQL",
+      "text": "ABENNEWS-752-ABAP_SQL\n\nAn internal table can be specified as a [`data source`](ABAPSELECT_DATA_SOURCE.html) data source of a query. This statement cannot be executed on all database systems, if the data from the internal table needs to be passed to the database. The following is now possible for [conditions in expressions](ABENABAP_SQL_EXPR_LOGEXP.html): The new type conversion functions [`BINTOHEX`](ABENSQL_TYPE_CONV_F\n\n/abap-docs-standard/ABENNEWS-752-ABAP_SQL",
+      "bm25": -13.902518166892769,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-752-ABAP_SQL",
+      "relFile": "ABENNEWS-752-ABAP_SQL.md",
+      "finalScore": 0.02463768115942029,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.902518166892769,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "community-13554546",
+      "text": "New Cardinality Syntax for Performance Optimizatio...\n\n...4.Optimization opportunity: right-hand pruning A target cardinality of&nbsp;TO ONE is used by the SQL Optim izer for performance optimization by suppressing surplus joins. The optim izer decides w...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/new-cardinality-syntax-for-performance-optimization-in-abap-cds-and-abap/ba-p/13554546?search-action-id=498800062556&search-result-uid=13554546",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/new-cardinality-syntax-for-performance-optimization-in-abap-cds-and-abap/ba-p/13554546?search-action-id=498800062556&search-result-uid=13554546",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-40-PERFORMANCE",
+      "text": "Extracts\n\nLarge datasets in ABAP can be managed either as internal tables or [extract datasets](ABENEXTRACT_DATASET_GLOSRY.html). Internal tables are dynamic sequential datasets whose lines all have the same structure and a key. From ABAP release 4.5A, the performance of some crucial operations on internal tables and extracts has improved significantly.\n\n/abap-docs-standard/ABENNEWS-40-PERFORMANCE",
+      "bm25": -12.07100120823843,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-40-PERFORMANCE",
+      "relFile": "ABENNEWS-40-PERFORMANCE.md",
+      "finalScore": 0.02328767123287671,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.07100120823843,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-40-KEYTAB",
+      "text": "ABENNEWS-40-KEYTAB\n\nThe following features of internal tables have been improved considerably in ABAP release 4.0: The term [standard key](ABENSTANDARD_KEY_GLOSRY.html) has been expanded to include a user-defined key. In addition to the previous form of internal tables (standard tables), SAP has introduced new table types for [sorted](ABENSORTED_TABLE_GLOSRY.html) and hashed tables. The key of these tables is an inte\n\n/abap-docs-standard/ABENNEWS-40-KEYTAB",
+      "bm25": -11.740625911458958,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-40-KEYTAB",
+      "relFile": "ABENNEWS-40-KEYTAB.md",
+      "finalScore": 0.02266666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.740625911458958,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.7
+      }
+    }
+  ]
+}

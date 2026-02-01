@@ -6,26 +6,10 @@
       "includeOnline": true,
       "includeSamples": true
     },
-    "timestamp": "2026-01-31T19:19:02.024Z",
+    "timestamp": "2026-02-01T20:18:43.872Z",
     "count": 50
   },
   "results": [
-    {
-      "id": "/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
-      "text": "ABENSTEAMPUNK_GLOSRY\n\nInternal SAP project name for the [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). See also [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html). ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
-      "bm25": -27.07640740849976,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
-      "relFile": "ABENSTEAMPUNK_GLOSRY.md",
-      "finalScore": 0.09508196721311475,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -27.07640740849976,
-        "rank": 1,
-        "rrfScore": 0.01639344262295082,
-        "boost": 4.8
-      }
-    },
     {
       "id": "/abap-docs-cloud/ABENSAP_BTP_ABAP_ENV_GLOSRY",
       "text": "ABENSAP_BTP_ABAP_ENV_GLOSRY\n\nABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENSAP_BTP_ABAP_ENV_GLOSRY",
@@ -33,13 +17,29 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENSAP_BTP_ABAP_ENV_GLOSRY",
       "relFile": "ABENSAP_BTP_ABAP_ENV_GLOSRY.md",
-      "finalScore": 0.09402985074626866,
+      "finalScore": 0.07164179104477611,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -18.877055926816226,
         "rank": 7,
         "rrfScore": 0.014925373134328358,
-        "boost": 5.3
+        "boost": 3.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
+      "text": "ABENSTEAMPUNK_GLOSRY\n\nInternal SAP project name for the [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). See also [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html). ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
+      "bm25": -27.07640740849976,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
+      "relFile": "ABENSTEAMPUNK_GLOSRY.md",
+      "finalScore": 0.07049180327868852,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -27.07640740849976,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 3.3
       }
     },
     {
@@ -49,13 +49,13 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY",
       "relFile": "ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.md",
-      "finalScore": 0.09354838709677418,
+      "finalScore": 0.06935483870967742,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -26.09017106731694,
         "rank": 2,
         "rrfScore": 0.016129032258064516,
-        "boost": 4.8
+        "boost": 3.3
       }
     },
     {
@@ -65,29 +65,13 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENEMBEDDED_STEAMPUNK_GLOSRY",
       "relFile": "ABENEMBEDDED_STEAMPUNK_GLOSRY.md",
-      "finalScore": 0.08923076923076924,
+      "finalScore": 0.06615384615384616,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -20.16360471731576,
         "rank": 5,
         "rrfScore": 0.015384615384615385,
-        "boost": 4.8
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
-      "text": "ABENNEWS-756-ABAP_DOCU\n\nFrom release 7.56 on, important settings of the ABAP Keyword Documentation can be configured explicitly. Before, the documentation was configured implicitly from system settings. The configuration of the ABAP Keyword Documentation is saved in customizing table `ABDOCCONFIG`, that is maintained with transaction code `ABAP_DOCU_CONFIG` (based on executable program `ABAP_DOCU_CONFIG`) or with the con\n\n/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
-      "bm25": -22.2057523273515,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
-      "relFile": "ABENNEWS-756-ABAP_DOCU.md",
-      "finalScore": 0.08412698412698412,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -22.2057523273515,
-        "rank": 3,
-        "rrfScore": 0.015873015873015872,
-        "boost": 4.3
+        "boost": 3.3
       }
     },
     {
@@ -97,13 +81,13 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENABAP_ENVIRONMNENT_GLOSRY",
       "relFile": "ABENABAP_ENVIRONMNENT_GLOSRY.md",
-      "finalScore": 0.08405797101449275,
+      "finalScore": 0.06231884057971014,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -14.137846909312797,
         "rank": 9,
         "rrfScore": 0.014492753623188406,
-        "boost": 4.8
+        "boost": 3.3
       }
     },
     {
@@ -113,13 +97,29 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENSAP_BTP_GLOSRY",
       "relFile": "ABENSAP_BTP_GLOSRY.md",
-      "finalScore": 0.08285714285714285,
+      "finalScore": 0.06142857142857142,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -14.066986340965954,
         "rank": 10,
         "rrfScore": 0.014285714285714285,
-        "boost": 4.8
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
+      "text": "ABENNEWS-756-ABAP_DOCU\n\nFrom release 7.56 on, important settings of the ABAP Keyword Documentation can be configured explicitly. Before, the documentation was configured implicitly from system settings. The configuration of the ABAP Keyword Documentation is saved in customizing table `ABDOCCONFIG`, that is maintained with transaction code `ABAP_DOCU_CONFIG` (based on executable program `ABAP_DOCU_CONFIG`) or with the con\n\n/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
+      "bm25": -22.2057523273515,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
+      "relFile": "ABENNEWS-756-ABAP_DOCU.md",
+      "finalScore": 0.06031746031746031,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.2057523273515,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.8
       }
     },
     {
@@ -129,29 +129,13 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENNEWS-783-ABAP_DOCU",
       "relFile": "ABENNEWS-783-ABAP_DOCU.md",
-      "finalScore": 0.0828125,
+      "finalScore": 0.059375,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -22.2057523273515,
         "rank": 4,
         "rrfScore": 0.015625,
-        "boost": 4.3
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
-      "text": "ABENSAP_S4HANA_CPUB_GLOSRY\n\nSAP S/4HANA Cloud for short. Cloud version of [SAP S/4HANA](ABENSAP_S4HANA_GLOSRY.html). Partner and customer developments are governed by the [ABAP Cloud](ABENABAP_CLOUD_GLOSRY.html) paradigm. For that the [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html) (aka [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html)) can be used. See also [SAP S/4HANA Cloud Private Edit\n\n/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
-      "bm25": -19.60554448834505,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
-      "relFile": "ABENSAP_S4HANA_CPUB_GLOSRY.md",
-      "finalScore": 0.0803030303030303,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -19.60554448834505,
-        "rank": 6,
-        "rrfScore": 0.015151515151515152,
-        "boost": 4.3
+        "boost": 2.8
       }
     },
     {
@@ -161,13 +145,29 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENCDS_DDL_V5",
       "relFile": "ABENCDS_DDL_V5.md",
-      "finalScore": 0.07887323943661971,
+      "finalScore": 0.057746478873239436,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.983115510572011,
         "rank": 11,
         "rrfScore": 0.014084507042253521,
-        "boost": 4.6
+        "boost": 3.0999999999999996
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
+      "text": "ABENSAP_S4HANA_CPUB_GLOSRY\n\nSAP S/4HANA Cloud for short. Cloud version of [SAP S/4HANA](ABENSAP_S4HANA_GLOSRY.html). Partner and customer developments are governed by the [ABAP Cloud](ABENABAP_CLOUD_GLOSRY.html) paradigm. For that the [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html) (aka [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html)) can be used. See also [SAP S/4HANA Cloud Private Edit\n\n/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
+      "bm25": -19.60554448834505,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
+      "relFile": "ABENSAP_S4HANA_CPUB_GLOSRY.md",
+      "finalScore": 0.05757575757575757,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.60554448834505,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2.8
       }
     },
     {
@@ -177,13 +177,13 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENSAP_S4HANA_CPRIV_GLOSRY",
       "relFile": "ABENSAP_S4HANA_CPRIV_GLOSRY.md",
-      "finalScore": 0.07794117647058824,
+      "finalScore": 0.055882352941176466,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -17.74273647691986,
         "rank": 8,
         "rrfScore": 0.014705882352941176,
-        "boost": 4.3
+        "boost": 2.8
       }
     },
     {
@@ -193,109 +193,13 @@
       "sourceId": "abap-docs-cloud",
       "path": "/abap-docs-cloud/ABENDDIC_V5",
       "relFile": "ABENDDIC_V5.md",
-      "finalScore": 0.07567567567567568,
+      "finalScore": 0.0554054054054054,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.898028678269524,
         "rank": 14,
         "rrfScore": 0.013513513513513514,
-        "boost": 4.6
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
-      "text": "ABENCDS_F1_DCL_SYNTAX_V5\n\nIn [CDS DCL](ABENCDS_DCL_GLOSRY.html), the following restrictions apply to CDS roles and CDS access policies defined by customers and partners in [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html) and [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html): See [Released APIs](ABENRELEASED_APIS.html) for a list of repository objects that are released as APIs in the c\n\n/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
-      "bm25": -13.590733901183869,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
-      "relFile": "ABENCDS_F1_DCL_SYNTAX_V5.md",
-      "finalScore": 0.0691358024691358,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.590733901183869,
-        "rank": 21,
-        "rrfScore": 0.012345679012345678,
-        "boost": 4.6
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENNEWS-91",
-      "text": "ABENNEWS-91\n\nThe 9.1x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.9x](ABENNEWS-79.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). The first\n\n/abap-docs-cloud/ABENNEWS-91",
-      "bm25": -13.822758381259446,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENNEWS-91",
-      "relFile": "ABENNEWS-91.md",
-      "finalScore": 0.064,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.822758381259446,
-        "rank": 15,
-        "rrfScore": 0.013333333333333334,
-        "boost": 3.8
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENNEWS-76",
-      "text": "ABENNEWS-76\n\nThe following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). The first column links to the respective release news. The [ABAP technology](ABENABAP_TECHNO_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-76",
-      "bm25": -13.819333872229631,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENNEWS-76",
-      "relFile": "ABENNEWS-76.md",
-      "finalScore": 0.0631578947368421,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.819333872229631,
-        "rank": 16,
-        "rrfScore": 0.013157894736842105,
-        "boost": 3.8
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENNEWS-79",
-      "text": "ABENNEWS-79\n\nThe 7.9x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.8x](ABENNEWS-78.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-79",
-      "bm25": -13.81248995829632,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENNEWS-79",
-      "relFile": "ABENNEWS-79.md",
-      "finalScore": 0.06233766233766234,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.81248995829632,
-        "rank": 17,
-        "rrfScore": 0.012987012987012988,
-        "boost": 3.8
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENNEWS-77",
-      "text": "ABENNEWS-77\n\nThe 7.7x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.6x](ABENNEWS-76.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-77",
-      "bm25": -13.781776022314721,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENNEWS-77",
-      "relFile": "ABENNEWS-77.md",
-      "finalScore": 0.061538461538461535,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.781776022314721,
-        "rank": 18,
-        "rrfScore": 0.01282051282051282,
-        "boost": 3.8
-      }
-    },
-    {
-      "id": "/abap-docs-cloud/ABENNEWS-78",
-      "text": "ABENNEWS-78\n\nThe 7.8x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.7x](ABENNEWS-77.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-78",
-      "bm25": -13.776670307957122,
-      "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENNEWS-78",
-      "relFile": "ABENNEWS-78.md",
-      "finalScore": 0.060759493670886074,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -13.776670307957122,
-        "rank": 19,
-        "rrfScore": 0.012658227848101266,
-        "boost": 3.8
+        "boost": 3.0999999999999996
       }
     },
     {
@@ -331,19 +235,19 @@
       }
     },
     {
-      "id": "/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
-      "text": "ABENCDS_LANGUAGE_ELEMENTS\n\nThe following sections shows all available language elements of the [CDS DDL](ABENCDS_DDL_GLOSRY.html) and [CDS DCL](ABENCDS_DCL_GLOSRY.html) in [ABAP CDS](ABENABAP_CDS_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). In addition to the language elements shown here, C\n\n/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
-      "bm25": -12.62967650968975,
+      "id": "/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
+      "text": "ABENCDS_F1_DCL_SYNTAX_V5\n\nIn [CDS DCL](ABENCDS_DCL_GLOSRY.html), the following restrictions apply to CDS roles and CDS access policies defined by customers and partners in [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html) and [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html): See [Released APIs](ABENRELEASED_APIS.html) for a list of repository objects that are released as APIs in the c\n\n/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
+      "bm25": -13.590733901183869,
       "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
-      "relFile": "ABENCDS_LANGUAGE_ELEMENTS.md",
-      "finalScore": 0.04827586206896552,
+      "path": "/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
+      "relFile": "ABENCDS_F1_DCL_SYNTAX_V5.md",
+      "finalScore": 0.05061728395061728,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -12.62967650968975,
-        "rank": 56,
-        "rrfScore": 0.008620689655172414,
-        "boost": 4.6
+        "bm25Score": -13.590733901183869,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 3.0999999999999996
       }
     },
     {
@@ -379,19 +283,83 @@
       }
     },
     {
-      "id": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
-      "text": "ABENRAP_FEATURE_TABLE\n\nThe following sections shows all available language elements of the [RAP BDL](ABENCDS_BDL_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). The following tables list the keywords that can be used in BDEFs of type managed, unmanaged, and projection. If the release dates\n\n/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
-      "bm25": -11.600813545678447,
+      "id": "/abap-docs-cloud/ABENNEWS-91",
+      "text": "ABENNEWS-91\n\nThe 9.1x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.9x](ABENNEWS-79.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). The first\n\n/abap-docs-cloud/ABENNEWS-91",
+      "bm25": -13.822758381259446,
       "sourceId": "abap-docs-cloud",
-      "path": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
-      "relFile": "ABENRAP_FEATURE_TABLE.md",
-      "finalScore": 0.039716312056737584,
+      "path": "/abap-docs-cloud/ABENNEWS-91",
+      "relFile": "ABENNEWS-91.md",
+      "finalScore": 0.044,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -11.600813545678447,
-        "rank": 81,
-        "rrfScore": 0.0070921985815602835,
-        "boost": 4.6
+        "bm25Score": -13.822758381259446,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-76",
+      "text": "ABENNEWS-76\n\nThe following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). The first column links to the respective release news. The [ABAP technology](ABENABAP_TECHNO_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-76",
+      "bm25": -13.819333872229631,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-76",
+      "relFile": "ABENNEWS-76.md",
+      "finalScore": 0.043421052631578944,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.819333872229631,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-79",
+      "text": "ABENNEWS-79\n\nThe 7.9x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.8x](ABENNEWS-78.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-79",
+      "bm25": -13.81248995829632,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-79",
+      "relFile": "ABENNEWS-79.md",
+      "finalScore": 0.04285714285714286,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.81248995829632,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-77",
+      "text": "ABENNEWS-77\n\nThe 7.7x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.6x](ABENNEWS-76.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-77",
+      "bm25": -13.781776022314721,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-77",
+      "relFile": "ABENNEWS-77.md",
+      "finalScore": 0.0423076923076923,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.781776022314721,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-78",
+      "text": "ABENNEWS-78\n\nThe 7.8x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.7x](ABENNEWS-77.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-78",
+      "bm25": -13.776670307957122,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-78",
+      "relFile": "ABENNEWS-78.md",
+      "finalScore": 0.04177215189873418,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.776670307957122,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2.3
       }
     },
     {
@@ -453,6 +421,22 @@
         "rank": 3,
         "rrfScore": 0.014285714285714285,
         "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
+      "text": "ABENCDS_LANGUAGE_ELEMENTS\n\nThe following sections shows all available language elements of the [CDS DDL](ABENCDS_DDL_GLOSRY.html) and [CDS DCL](ABENCDS_DCL_GLOSRY.html) in [ABAP CDS](ABENABAP_CDS_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). In addition to the language elements shown here, C\n\n/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
+      "bm25": -12.62967650968975,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
+      "relFile": "ABENCDS_LANGUAGE_ELEMENTS.md",
+      "finalScore": 0.03534482758620689,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.62967650968975,
+        "rank": 56,
+        "rrfScore": 0.008620689655172414,
+        "boost": 3.0999999999999996
       }
     },
     {
@@ -577,6 +561,22 @@
       }
     },
     {
+      "id": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "text": "ABENRAP_FEATURE_TABLE\n\nThe following sections shows all available language elements of the [RAP BDL](ABENCDS_BDL_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). The following tables list the keywords that can be used in BDEFs of type managed, unmanaged, and projection. If the release dates\n\n/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "bm25": -11.600813545678447,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "relFile": "ABENRAP_FEATURE_TABLE.md",
+      "finalScore": 0.02907801418439716,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.600813545678447,
+        "rank": 81,
+        "rrfScore": 0.0070921985815602835,
+        "boost": 3.0999999999999996
+      }
+    },
+    {
       "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software#kollisionspr-fung-auf-dotabap-org",
       "text": "Kollisionsprüfung auf dotabap.org\n\nIst Ihr Projekt auf [dotabap.org](https://dotabap.org) gelistet, werden die enthaltenen Objekte automatisch auf Namenskollisionen mit allen anderen dort gelisteten Projekten geprüft. Die Bezeichner Ihrer Entwicklungsobjekte sollten neben dem Namensraum ein Projektkürzel, oft ein dreistelliges Akrony...\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software#kollisionspr-fung-auf-dotabap-org",
       "bm25": -13.0386889348419,
@@ -658,10 +658,10 @@
     },
     {
       "id": "community-13567772",
-      "text": "Demystifying: SAP BTP - ABAP Environment , Steampun...\n\nIntroduction: In the fast-paced world of SAP development, buzzwords can often create confusion and uncertainty. Among these buzzwords, SAP BTP - ABAP Environment , Steampunk , ABAP Cloud, and E...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/demystifying-sap-btp-abap-environment-steampunk-abap-on-cloud-embedded/ba-p/13567772?search-action-id=497478170866&search-result-uid=13567772",
+      "text": "Demystifying: SAP BTP - ABAP Environment , Steampun...\n\nIntroduction: In the fast-paced world of SAP development, buzzwords can often create confusion and uncertainty. Among these buzzwords, SAP BTP - ABAP Environment , Steampunk , ABAP Cloud, and E...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/demystifying-sap-btp-abap-environment-steampunk-abap-on-cloud-embedded/ba-p/13567772?search-action-id=498799530786&search-result-uid=13567772",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/demystifying-sap-btp-abap-environment-steampunk-abap-on-cloud-embedded/ba-p/13567772?search-action-id=497478170866&search-result-uid=13567772",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/demystifying-sap-btp-abap-environment-steampunk-abap-on-cloud-embedded/ba-p/13567772?search-action-id=498799530786&search-result-uid=13567772",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -673,10 +673,10 @@
     },
     {
       "id": "community-14094161",
-      "text": "SAP BTP ABAP Environment – New software delivery o...\n\n...icensing and pricing models. &nbsp; Introduction SAP BTP ABAP Environment &nbsp;(aka Steampunk ) supports now two options for partners to deliver products to their customers. Partners build side-by-s...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-new-software-delivery-option-add-on-product/ba-p/14094161?search-action-id=497478170866&search-result-uid=14094161",
+      "text": "SAP BTP ABAP Environment – New software delivery o...\n\n...icensing and pricing models. &nbsp; Introduction SAP BTP ABAP Environment &nbsp;(aka Steampunk ) supports now two options for partners to deliver products to their customers. Partners build side-by-s...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-new-software-delivery-option-add-on-product/ba-p/14094161?search-action-id=498799530786&search-result-uid=14094161",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-new-software-delivery-option-add-on-product/ba-p/14094161?search-action-id=497478170866&search-result-uid=14094161",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-new-software-delivery-option-add-on-product/ba-p/14094161?search-action-id=498799530786&search-result-uid=14094161",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -704,10 +704,10 @@
     },
     {
       "id": "community-14221722",
-      "text": "SAP BTP ABAP Environment on SAP Cloud Infrastructu...\n\nWith the availability of SAP BTP ABAP Environment on SAP Cloud Infrastructure&nbsp;on September 19th 2025, Steampunk has reached the next milestone in the multi-hyperscaler availability for our c...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-on-sap-cloud-infrastructure/ba-p/14221722?search-action-id=497478170866&search-result-uid=14221722",
+      "text": "SAP BTP ABAP Environment on SAP Cloud Infrastructu...\n\nWith the availability of SAP BTP ABAP Environment on SAP Cloud Infrastructure&nbsp;on September 19th 2025, Steampunk has reached the next milestone in the multi-hyperscaler availability for our c...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-on-sap-cloud-infrastructure/ba-p/14221722?search-action-id=498799530786&search-result-uid=14221722",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-on-sap-cloud-infrastructure/ba-p/14221722?search-action-id=497478170866&search-result-uid=14221722",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-on-sap-cloud-infrastructure/ba-p/14221722?search-action-id=498799530786&search-result-uid=14221722",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

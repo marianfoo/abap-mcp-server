@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "Smartforms SSF_FUNCTION_MODULE_NAME print output",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-02-01T20:19:15.118Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENPRINT_SPOOL",
+      "text": "ABENPRINT_SPOOL\n\nEvery output to a spool list is assigned to exactly one [spool request](ABENSPOOL_REQUEST_GLOSRY.html). For every spool request, [spool parameters](ABENPRINT_PARAMETERS.html) are specified that can no longer be changed. Spool lists can be stacked in spool list levels. A spool list level always has exactly one spool request assigned to it. The following operations create a new spool list level: Up\n\n/abap-docs-standard/ABENPRINT_SPOOL",
+      "bm25": -9.755798827540046,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_SPOOL",
+      "relFile": "ABENPRINT_SPOOL.md",
+      "finalScore": 0.04477611940298507,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.755798827540046,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPNEW-PAGE_PRINT",
+      "text": "ABAPNEW-PAGE_PRINT\n\n`... \\{ PRINT ON [NEW-SECTION] PARAMETERS pri_params`\\\\                               `[ARCHIVE PARAMETERS arc_params]`\\\\    `|\\ \\{ PRINT OFF \\} ...`\n\n/abap-docs-standard/ABAPNEW-PAGE_PRINT",
+      "bm25": -9.666361769204897,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPNEW-PAGE_PRINT",
+      "relFile": "ABAPNEW-PAGE_PRINT.md",
+      "finalScore": 0.044117647058823525,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.666361769204897,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_PARAMETERS_OVERVIEW",
+      "text": "ABENPRINT_PARAMETERS_OVERVIEW\n\nThe following table lists all spool parameters by their associated input parameters in the function modules [`GET_PRINT_PARAMETERS`](ABENPRINT_PARAMETERS_FUNCTION.html) and [`SET_PRINT_PARAMETERS`](ABENPRINT_PARAMETERS_WINDOW.html). The second column shows the label in the spool dialog box. The third column contains the name of the component in the structure `PRI_PARAMS` whose content, however, ca\n\n/abap-docs-standard/ABENPRINT_PARAMETERS_OVERVIEW",
+      "bm25": -9.637476277935134,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_PARAMETERS_OVERVIEW",
+      "relFile": "ABENPRINT_PARAMETERS_OVERVIEW.md",
+      "finalScore": 0.043478260869565216,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.637476277935134,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPPRINT-CONTROL_OBSOLETE",
+      "text": "ABAPPRINT-CONTROL_OBSOLETE\n\n`PRINT-CONTROL formats|\\{FUNCTION code\\}`\\\\                `[LINE line]\\ [POSITION col].` This obsolete variant of the statement [`PRINT-CONTROL`](ABAPPRINT-CONTROL.html) formats areas of spool lists. This applies only to spool lists created using [`NEW-PAGE PRINT ON`](ABAPNEW-PAGE_PRINT.html), [`SUBMIT TO SAP-SPOOL`](ABAPSUBMIT_LIST_OPTIONS.html), and when selecting *Execute and Print* on the [se\n\n/abap-docs-standard/ABAPPRINT-CONTROL_OBSOLETE",
+      "bm25": -9.368987301924443,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPPRINT-CONTROL_OBSOLETE",
+      "relFile": "ABAPPRINT-CONTROL_OBSOLETE.md",
+      "finalScore": 0.041666666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.368987301924443,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT",
+      "text": "ABENPRINT\n\nThe *spooling* of lists means the list output is not passed to the [list buffer](ABENLIST_BUFFER_GLOSRY.html) for [screen lists](ABENSCREEN_LIST_GLOSRY.html) and it is passed page by page to the [SAP spool system](ABENSAP_SPOOL_SYSTEM_GLOSRY.html) instead. After a page has been passed, it is deleted from the ABAP runtime framework and only exists in the SAP spool system. The size of a spool list i\n\n/abap-docs-standard/ABENPRINT",
+      "bm25": -9.190556004615603,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT",
+      "relFile": "ABENPRINT.md",
+      "finalScore": 0.04054054054054054,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.190556004615603,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_CONTROL",
+      "text": "ABENPRINT_CONTROL\n\nThe statement [`SET MARGIN`](ABAPSET_MARGIN.html) can be used to define the upper and left margins of a spool list. When spooling is active, the statement [`PRINT-CONTROL`](ABAPPRINT-CONTROL.html) can be used to write formatting information for optical archiving to the spool system. When spooling is active, an [obsolete variant](ABAPPRINT-CONTROL_OBSOLETE.html) of the statement `PRINT-CONTROL` can\n\n/abap-docs-standard/ABENPRINT_CONTROL",
+      "bm25": -9.049491097146598,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_CONTROL",
+      "relFile": "ABENPRINT_CONTROL.md",
+      "finalScore": 0.039473684210526314,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.049491097146598,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPPRINT-CONTROL",
+      "text": "ABAPPRINT-CONTROL\n\n`PRINT-CONTROL INDEX-LINE index_line.` In spool lists, this statement creates index entries for optical archiving using [ArchiveLink](ABENARCHIVELINK_GLOSRY.html). This applies only to spool lists created using [`NEW-PAGE PRINT ON`](ABAPNEW-PAGE_PRINT.html), [`SUBMIT TO SAP-SPOOL`](ABAPSUBMIT_LIST_OPTIONS.html), and when selecting *Execute and Print* on the [selection screen](ABENSELECTION_SCREEN_\n\n/abap-docs-standard/ABAPPRINT-CONTROL",
+      "bm25": -9.030555451529356,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPPRINT-CONTROL",
+      "relFile": "ABAPPRINT-CONTROL.md",
+      "finalScore": 0.03896103896103896,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.030555451529356,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_PARAMETERS_FUNCTION",
+      "text": "ABENPRINT_PARAMETERS_FUNCTION\n\nSpool and archiving parameters can only be set in a program using the following function module: `GET_PRINT_PARAMETERS`. If the corresponding structures are changed directly and the parameters in question are then used in `NEW-PAGE PRINT ON` or `SUBMIT TO SAP-SPOOL`, a runtime error occurs. The `GET_PRINT_PARAMETERS` function module can be used to execute the following functions: The interface par\n\n/abap-docs-standard/ABENPRINT_PARAMETERS_FUNCTION",
+      "bm25": -8.715614946310364,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_PARAMETERS_FUNCTION",
+      "relFile": "ABENPRINT_PARAMETERS_FUNCTION.md",
+      "finalScore": 0.037037037037037035,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.715614946310364,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-3353526011",
+      "text": "Smartform Changes not active after Transport\n\nWhen the application <b>print</b> program calls the function module\n            <b>SSF_FUNCTION_MODULE_NAME</b> the first time, the new <b>Smartform</b> function module should be generated within this\n            function ... module <b>SSF_FUNCTION_MODULE_NAME</b>. ... You can run <b>SSF_FUNCTION_MODULE_NAME</b> manually&nbsp;in SE37, and then enter your form in\n            the FORMNAME field. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abapoutput/3353526011.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abapoutput/3353526011.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3362937250",
+      "text": "How to test Smart Forms from SAP GUI\n\nYou can find the same in transaction <b>SMARTFORMS</b>:\n\n            \n            \n\n          \n\n\n      \n\n\n  \n\n\nOne of the <b>outputs</b> of the Smart Form is LS_JOB_OUTPUT_INFO. ... -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>SSF_FUNCTION_MODULE_NAME</b> is called to determine Function Module of Smart\n  Form. ... This is identical to\n  the <b>Print</b> preview functionality in SRM for the different document types, started from SAP GUI. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/srm/3362937250.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/srm/3362937250.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_SCREEN",
+      "text": "ABENPRINT_SCREEN\n\nAs well as the method of creating spool lists as already shown, screen lists can also be sent to the SAP spool system after they have been created. To do this, the *Print* function can be chosen in the list display. This function transforms the screen list into a spool list, where the spool format specified in the [spool parameters](ABENPRINT_PARAMETERS.html) is used to split the list and shorten\n\n/abap-docs-standard/ABENPRINT_SCREEN",
+      "bm25": -8.639775543559367,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_SCREEN",
+      "relFile": "ABENPRINT_SCREEN.md",
+      "finalScore": 0.03614457831325302,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.639775543559367,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT_PRINT_PARAMETERS",
+      "text": "ABAPSUBMIT_PRINT_PARAMETERS\n\n`... SPOOL PARAMETERS pri_params      [ARCHIVE PARAMETERS arc_params]\\      WITHOUT SPOOL DYNPRO...` These additions are used to supply the [spool request](ABENSPOOL_REQUEST_GLOSRY.html) with spool and archive parameters. The latter are necessary if the spool list is to be archived using [ArchiveLink](ABENARCHIVELINK_GLOSRY.html). The addition `SPOOL PARAMETERS` passes the [spool parameters](ABENP\n\n/abap-docs-standard/ABAPSUBMIT_PRINT_PARAMETERS",
+      "bm25": -8.594312863493425,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT_PRINT_PARAMETERS",
+      "relFile": "ABAPSUBMIT_PRINT_PARAMETERS.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.594312863493425,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-4edf0645e37c1f65e10000000a42189d",
+      "text": "Method PRINT\n\nThis method enables <b>output</b> ... CALL FUNCTION '<b>SSF_FUNCTION_MODULE_NAME</b> ... Creation of a suitable smart form (transaction <b>SMARTFORMS</b> ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/90b9777d9f8f4c6d88c047ced926251c/4edf0645e37c1f65e10000000a42189d.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/90b9777d9f8f4c6d88c047ced926251c/4edf0645e37c1f65e10000000a42189d.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_PARAMETERS_WINDOW",
+      "text": "ABENPRINT_PARAMETERS_WINDOW\n\nThe spool dialog box makes it possible to interactively determine all spool parameters and checks the input values for consistency and completeness. The call is either automatic or program controlled. When the *spool dialog box* is called automatically, the `SET_PRINT_PARAMETERS` function module can be used to set standard values. The function module `SET_PRINT_PARAMETERS` mainly has the same inpu\n\n/abap-docs-standard/ABENPRINT_PARAMETERS_WINDOW",
+      "bm25": -8.56819500428703,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_PARAMETERS_WINDOW",
+      "relFile": "ABENPRINT_PARAMETERS_WINDOW.md",
+      "finalScore": 0.03529411764705882,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.56819500428703,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_ON_OFF",
+      "text": "Calling the program\n\nIf spooling is switched off, all list output is written to the list buffer for the current screen list. When spooling is switched on, a spool list is created. Spooling can be switched on as follows: If `NEW-PAGE PRINT ON` is used, spooling is switched on explicitly in the program. With the other three options, spooling is switched on from the start of execution of an executable program. Switching\n\n/abap-docs-standard/ABENPRINT_ON_OFF",
+      "bm25": -9.405835489464044,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_ON_OFF",
+      "relFile": "ABENPRINT_ON_OFF.md",
+      "finalScore": 0.035211267605633804,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.405835489464044,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353525749",
+      "text": "Unique Driver Program for any smartform of a transaction\n\nENDFORM. &quot; SUB_GET_FORMNAME \n\n\n&nbsp;Say Ex: If you want a <b>Print</b> Preview for an Invoice, assign this program and &nbsp;your <b>smartform</b> ( where in you\n  are fetching the data based on NAST-objkey). Try it out. ... Unique Driver Program for any <b>smartform</b> of a transaction\nTABLES: nast.* Variable DeclarationDATA: g_retcode TYPE sy-subrc , &quot;\n  Returncode\n\ng_xscreen(1) TYPE c , &quot; <b>Output</b> on printer or screen\n\ng_fm_name ... ELSE. &quot; Form Does not exits\n\nMESSAGE e000(38) WITH 'No Form Found For This <b>Output</b> Type'(008)\n\nnast-kschl space space.\n\nENDIF. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abapoutput/3353525749.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abapoutput/3353525749.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524218",
+      "text": "How to include Watermark in all Smartform outputs including standard forms without changing individual forms\n\nFor\n  that purpose, retrieve the generated <b>smartform</b> function module name using <b>SSF_FUNCTION_MODULE_NAME</b> by passing the\n  <b>smartform</b> created in the second step. ... This will be reflected in the <b>print</b> outs/emails/fax <b>outputs</b>, even if standard forms are used. ... Enter the object\n  details/ <b>output</b> mode/resolution&nbsp;and position. \n\n  &nbsp;Activate the <b>smartform</b> and do a test run, just to make sure whether the watermark can be seen in <b>print</b> preview.\n  \n\n  \n\n  &nbsp; ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abaphowto/3353524218.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abaphowto/3353524218.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524207",
+      "text": "How to Set Print Settings for Duplex and Tray Selection\n\n<b>Output</b>\n  Settings:\n\n&nbsp;\n\n<b>Print</b> <b>output</b> settings are often used incorrectly between ABAP Lists, SAPScript and <b>Smartforms</b>.&nbsp; ... How to Set <b>Print</b> Settings for Duplex and Tray Selection\nApplies to: SAP Netweaver&nbsp;\n\nSummary:\n\n\n&nbsp;<b>Print</b> <b>output</b> settings are often used incorrectly between ABAP Lists, SAPScript and <b>Smartforms</b>.&nbsp; ... For ABAP lists and <b>Smartforms</b>, you can set the duplex printing via the <b>output</b> device definition in\n  transaction SPAD.&nbsp; ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abaphowto/3353524207.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abaphowto/3353524207.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINT_LIST_ABEXA",
+      "text": "ABENPRINT_LIST_ABEXA\n\nThe example demonstrates how to spool lists and how to stack spool list levels. The program creates five lists. If the user chooses *Execute* on the selection screen, one screen list and four spool lists are created. If the user chooses *Execute + Print* on the selection screen, five spool lists are created. In the event block `INITIALIZATION`, the spool parameters are placed in the structure `par\n\n/abap-docs-standard/ABENPRINT_LIST_ABEXA",
+      "bm25": -8.753453678505702,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINT_LIST_ABEXA",
+      "relFile": "ABENPRINT_LIST_ABEXA.md",
+      "finalScore": 0.03375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.753453678505702,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "sap-help-21ed75987a6f4b28b848352b30cd4ae2",
+      "text": "Accessing and Working with Smartforms\n\nOr, tap on any <b>smartform</b> in the <b>smarform</b> list\nfrom the side navigation bar, to display the <b>Smartforms</b>\ndetail screen. ... When the\n<b>smartform</b> is successfully completed, the status of that <b>smartform</b> will change to\ncompleted. You can see this completed <b>smartform</b> in the list of all <b>smartforms</b>. ... Accessing and Working with <b>Smartforms</b>\n\n\n\nIf you want to display and work with <b>smartforms</b>, you can access them either from: \t\nThe side navigation bar within the <b>smartform</b> list. ...  — Product: SAP Maintenance Assistant (2502)\n\nhttps://help.sap.com/docs/SAP_MAINTENANCE_ASSISTANT/1bff987d05a142d5870bfdf6c63456f5/21ed75987a6f4b28b848352b30cd4ae2.html?locale=en-US&state=PRODUCTION&version=2502",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_MAINTENANCE_ASSISTANT/1bff987d05a142d5870bfdf6c63456f5/21ed75987a6f4b28b848352b30cd4ae2.html?locale=en-US&state=PRODUCTION&version=2502",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353524219",
+      "text": "smart forms without printer\n\n&quot;Printer from\n  selection-screen\n\n&quot;Get Function module name for given <b>smartform</b>\n CALL FUNCTION '<b>SSF_FUNCTION_MODULE_NAME</b>'\n EXPORTING\n formname\n  = 'ZRKP_SMARTFORM'\n IMPORTING\n fm_name = fm_name. ... &quot;Call <b>Smartform</b> function module.\n CALL FUNCTION\n  fname\n EXPORTING\n control_parameters = ssfctrlop\n output_options = ssfcompop\n TABLES\n it_nfal =\n  it_nfal. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524219.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353524219.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#smartforms-2001-",
+      "text": "SmartForms (2001)\n\nIm Vergleich zu SAPscript hat SmartForms eine modernere SAP GUI Oberfläche, zur Gestaltung von Formularen. Ab dieser Technologie wurde auch mit einer Schnittstelle zur Datenübertragung zwischen Druckprogramm und Formular gearbeitet. Somit ist jedoch auch eine Möglichkeit mehr da, wo sich evtl. Codin...\n\n/dsag-abap-leitfaden/forms/form-technologies#smartforms-2001-",
+      "bm25": -35.39823414247406,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#smartforms-2001-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.03278688524590164,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.39823414247406,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1
+      }
+    },
+    {
+      "id": "sap-help-3353523871",
+      "text": "Learn making First Smartform Step by Step\n\nLearn making First <b>Smartform</b> Step by Step\nA many of times I found people included me who ran away from <b>Smartforms</b>. ... This document will help any ABAPER\n    to throw&nbsp;their fear from learning <b>smartforms</b>.\n\nOne can create and learn <b>Smartform</b> step by step and further explore more on <b>smartforms</b>. ... I am going to make below mentioned <b>Smarform</b> step by step. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353523871.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353523871.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353523557",
+      "text": "Check Box In Smartforms\n\nCheck Box In <b>Smartforms</b>\nHow to add a check box in <b>smartorm</b>?\n\n&nbsp; ... in your text general attributes insert-characters-SAP symbols-SYM_LARGE_SQUARE\n\n&amp; you can't find it in <b>print</b> preview you directly get it in printout. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abapoutput/3353523557.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abapoutput/3353523557.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPNEW-PAGE_SHORTREF",
+      "text": "ABAPNEW-PAGE_SHORTREF\n\n`NEW-PAGE [WITH-TITLE|NO-TITLE]\\           [WITH-HEADING|NO-HEADING]\\           [LINE-COUNT page_lines]\\           [LINE-SIZE width]\\           [NO-TOPOFPAGE]\\           [\\ \\{ PRINT ON [NEW-SECTION]\\                         PARAMETERS pri_params                        [ARCHIVE PARAMETERS arc_params]\\                         NO DIALOG \\}\\           |\\ \\{ PRINT OFF \\}\\ ].` Creates a new page in a li\n\n/abap-docs-standard/ABAPNEW-PAGE_SHORTREF",
+      "bm25": -8.872387019787462,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPNEW-PAGE_SHORTREF",
+      "relFile": "ABAPNEW-PAGE_SHORTREF.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.872387019787462,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_LISTS",
+      "text": "ABENABAP_LISTS\n\nThe following ABAP statements are used for creating classical lists: Classic lists are no longer intended to be used directly in production programs. The use of other suitable output media is recommended instead. -   [`WRITE`](ABAPWRITE-.html)\n\n/abap-docs-standard/ABENABAP_LISTS",
+      "bm25": -8.79213391182102,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_LISTS",
+      "relFile": "ABENABAP_LISTS.md",
+      "finalScore": 0.03164556962025317,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.79213391182102,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSAP_SPOOL_SYSTEM_GLOSRY",
+      "text": "ABENSAP_SPOOL_SYSTEM_GLOSRY\n\nProcess of an [AS instance](ABENAS_INSTANCE_GLOSRY.html) for managing sequential data streams that are stored as [spool lists](ABENSPOOL_LIST_GLOSRY.html), printed on a printer, or stored using [ArchiveLink](ABENARCHIVELINK_GLOSRY.html). [ABAP programs](ABENABAP_PROGRAM_GLOSRY.html) can create [spool requests](ABENSPOOL_REQUEST_GLOSRY.html) during the creation of lists by including pages of lists\n\n/abap-docs-standard/ABENSAP_SPOOL_SYSTEM_GLOSRY",
+      "bm25": -9.082429868653868,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSAP_SPOOL_SYSTEM_GLOSRY",
+      "relFile": "ABENSAP_SPOOL_SYSTEM_GLOSRY.md",
+      "finalScore": 0.029333333333333336,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.082429868653868,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSUBMIT_LIST_OPTIONS",
+      "text": "ABAPSUBMIT_LIST_OPTIONS\n\n`... [LINE-SIZE width]`\\\\      `[LINE-COUNT page_lines]`\\\\      `\\{\\ [EXPORTING LIST TO MEMORY]`\\\\\n\n/abap-docs-standard/ABAPSUBMIT_LIST_OPTIONS",
+      "bm25": -8.486555635682706,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSUBMIT_LIST_OPTIONS",
+      "relFile": "ABAPSUBMIT_LIST_OPTIONS.md",
+      "finalScore": 0.029069767441860465,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.486555635682706,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLIST_GUIDL",
+      "text": "ABENLIST_GUIDL\n\nA list is a medium used for the structured and formatted output of data. The following lists are available in ABAP: Classic lists are the only option to send ABAP data from ABAP programs directly to the SAP spool system as spool lists. If SAP List Viewer is used, the lists that are displayed in the viewer are automatically converted to classic spool lists during printing. **Use SAP List Viewer**\n\n/abap-docs-standard/ABENLIST_GUIDL",
+      "bm25": -9.423990828071169,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLIST_GUIDL",
+      "relFile": "ABENLIST_GUIDL.md",
+      "finalScore": 0.02857142857142857,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.423990828071169,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSEL_SCREEN_GUI_STATUS_ABEXA",
+      "text": "ABENSEL_SCREEN_GUI_STATUS_ABEXA\n\nThe example demonstrates how the GUI status of a selection screen can be changed. In this example program, the two functions *Print* and *Save as Variant* are disabled. The function codes of the default GUI status can be found in the field *GUI Status* which can be displayed by choosing *System -> Status*. REPORT demo\\_sel\\_screen\\_status .\\\\n\\\\nDATA itab TYPE TABLE OF sy-ucomm.\\\\n\\\\nPARAMETERS te\n\n/abap-docs-standard/ABENSEL_SCREEN_GUI_STATUS_ABEXA",
+      "bm25": -8.692755301328452,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSEL_SCREEN_GUI_STATUS_ABEXA",
+      "relFile": "ABENSEL_SCREEN_GUI_STATUS_ABEXA.md",
+      "finalScore": 0.02682926829268293,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.692755301328452,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPREPORT_LIST_OPTIONS",
+      "text": "ABAPREPORT_LIST_OPTIONS\n\n`... [NO STANDARD PAGE HEADING]\\      [LINE-SIZE width]\\      [LINE-COUNT page_lines[(footer_lines)]] ...` These additions affect the basic list of the program. This addition suppresses the output of the [standard page header](ABENSTANDARD_PAGE_HEADER_GLOSRY.html) (standard header and column headers) in the basic list of the program and sets the system field `sy-wtitl` to the value *N*. This setti\n\n/abap-docs-standard/ABAPREPORT_LIST_OPTIONS",
+      "bm25": -7.572655641927775,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPREPORT_LIST_OPTIONS",
+      "relFile": "ABAPREPORT_LIST_OPTIONS.md",
+      "finalScore": 0.026595744680851064,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.572655641927775,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPNEW-PAGE_OPTIONS",
+      "text": "ABAPNEW-PAGE_OPTIONS\n\n`... [WITH-TITLE|NO-TITLE]`\\\\      `[WITH-HEADING|NO-HEADING]`\\\\      `[LINE-COUNT page_lines]`\\\\\n\n/abap-docs-standard/ABAPNEW-PAGE_OPTIONS",
+      "bm25": -7.306161216862492,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPNEW-PAGE_OPTIONS",
+      "relFile": "ABAPNEW-PAGE_OPTIONS.md",
+      "finalScore": 0.02631578947368421,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.306161216862492,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLIST_OVERVIEW",
+      "text": "ABENLIST_OVERVIEW\n\nBy default, classic lists (or lists for short) are [screen lists](ABENSCREEN_LIST_GLOSRY.html). A screen list is displayed as the [screen layout](ABENSCREEN_GLOSRY.html) of a special [list dynpro](ABENLIST_DYNPRO_GLOSRY.html) that is a component of the list processor system program. Such a screen layout contains text output defined using ABAP statements instead of screen elements. An ABAP program\n\n/abap-docs-standard/ABENLIST_OVERVIEW",
+      "bm25": -7.115925277198161,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLIST_OVERVIEW",
+      "relFile": "ABENLIST_OVERVIEW.md",
+      "finalScore": 0.02577319587628866,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.115925277198161,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSYSTEM_FIELDS_OBSOLETE",
+      "text": "ABENSYSTEM_FIELDS_OBSOLETE\n\nThe following [system fields](ABENSYSTEM_FIELD_GLOSRY.html) are obsolete and should no longer be used. Many originate from the R/2 era. The transition from R/2 to R/3 retained some system fields which are no longer provided with data. **Name** **Type** **Length** **Content** **Name** **Type** **Length** **Content** `sy-appli` `x` 2 In R/2, ID for which SAP applications are installed. No longer fil\n\n/abap-docs-standard/ABENSYSTEM_FIELDS_OBSOLETE",
+      "bm25": -6.897223640074997,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSYSTEM_FIELDS_OBSOLETE",
+      "relFile": "ABENSYSTEM_FIELDS_OBSOLETE.md",
+      "finalScore": 0.025252525252525256,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.897223640074997,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13079728",
+      "text": "Label Printing in SmartForms\n\nNAVIGATION FOR LABEL PRINT ING IN SMART FORMS STEP 01:&nbsp; Open the smartForms application with Transaction Code ‘SmartFroms’. STEP 02: Go to the Form Interface and click on the Table T...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/label-printing-in-smartforms/ba-p/13079728?search-action-id=498799935767&search-result-uid=13079728",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/label-printing-in-smartforms/ba-p/13079728?search-action-id=498799935767&search-result-uid=13079728",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECTION_SCREEN_EVENTS",
+      "text": "ABENSELECTION_SCREEN_EVENTS\n\nSelection screen processing encapsulates the [dynpro flow logic](ABENDYNPRO_FLOW_LOGIC_GLOSRY.html) together with the sending of the [selection screen](ABENSELECTION_SCREEN_GLOSRY.html). No dialog modules of the program are called. Instead, a series of [selection screen events](ABENSELECTION_SCREEN_EVENT_GLOSRY.html) are raised for which event blocks can be programmed. [PBO](ABENPBO_GLOSRY.html) p\n\n/abap-docs-standard/ABENSELECTION_SCREEN_EVENTS",
+      "bm25": -6.7437879699416285,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECTION_SCREEN_EVENTS",
+      "relFile": "ABENSELECTION_SCREEN_EVENTS.md",
+      "finalScore": 0.025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.7437879699416285,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13260405",
+      "text": "Calling a smartform PDF output from the Webdynpro ...\n\n...WD_PRINT_SMARTFORM....................... 11 1. SummaryThis document explains how to print the Smartform as PDF output from a Webdynpro ABAP application. 2. Introduction to WebdynproWebdynpro A...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/calling-a-smartform-pdf-output-from-the-webdynpro-application/ba-p/13260405?search-action-id=498799935767&search-result-uid=13260405",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/calling-a-smartform-pdf-output-from-the-webdynpro-application/ba-p/13260405?search-action-id=498799935767&search-result-uid=13260405",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCALL_SELECTION_SCREEN",
+      "text": "ABAPCALL_SELECTION_SCREEN\n\n`CALL SELECTION-SCREEN dynnr`\\\\                        `[STARTING AT col1 lin1`\\\\                        `[ENDING   AT col2 lin2]]`\\\\\n\n/abap-docs-standard/ABAPCALL_SELECTION_SCREEN",
+      "bm25": -6.738530330440332,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCALL_SELECTION_SCREEN",
+      "relFile": "ABAPCALL_SELECTION_SCREEN.md",
+      "finalScore": 0.024752475247524754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.738530330440332,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-12972325",
+      "text": "To Print Multiple Smartform in a Loop at one Go an...\n\n...ot comes multiple times and all the smartforms will get displayed in one output on different pages. Step 1. Use function modul e SSF_FUNCTION_MODULE_NAME to retrieve the name of the function modul e g...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/to-print-multiple-smartform-in-a-loop-at-one-go-and-converting-into-pdf/ba-p/12972325?search-action-id=498799935767&search-result-uid=12972325",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/to-print-multiple-smartform-in-a-loop-at-one-go-and-converting-into-pdf/ba-p/12972325?search-action-id=498799935767&search-result-uid=12972325",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#fazit",
+      "text": "Fazit\n\nSAP empfiehlt für neue Formulare grundsätzlich SAP Interactive Forms by Adobe zu verwenden. Dies ist zukunftssicher, da SAPscript und SmartForms von SAP selbst nicht mehr weiterentwickelt werden. Unternehmen, welche bereits viele Smart Forms Formulare im Einsatz haben, wird empfohlen diese weiterzuv...\n\n/dsag-abap-leitfaden/forms/form-technologies#fazit",
+      "bm25": -35.034901980744465,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#fazit",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.024193548387096774,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -35.034901980744465,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies",
+      "text": "Formulartechnologien\n\n{: .no_toc}\n\n/dsag-abap-leitfaden/forms/form-technologies",
+      "bm25": -34.86717891693985,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.023809523809523808,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.86717891693985,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#sapscript-1992-r-3-",
+      "text": "SAPscript (1992 R/3)\n\nAuch im Jahr 2025 haben sehr viele Unternehmen weiterhin SAPscript Formulare im Einsatz. Häufig sind dies seit Jahren oder z.T. Jahrzehnten bestehende Formulare. Deshalb müssen ABAP Entwickler sich auch weiterhin mit dieser Technologie auskennen, um ggf. Anpassungen an den Formularen vornehmen zu kö...\n\n/dsag-abap-leitfaden/forms/form-technologies#sapscript-1992-r-3-",
+      "bm25": -34.72426081218064,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#sapscript-1992-r-3-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.0234375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.72426081218064,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#sap-s-4hana-forms-2015-s-4hana-",
+      "text": "SAP S/4HANA Forms (2015 S/4HANA)\n\nGrundlage sind Adobe Formulare mit Gateway-Schnittstellen, deren Datenbeschaffung mittels Gateway-Services (also keine klassischen Druckprogramme) erfolgt. Die Pflege erfolgt mit Fiori Apps und somit sind “SAP S/4HANA Forms” public-cloud-fähig. Das Layout wird ebenfalls mit dem LiveCycle Designer, j...\n\n/dsag-abap-leitfaden/forms/form-technologies#sap-s-4hana-forms-2015-s-4hana-",
+      "bm25": -34.72426081218064,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#sap-s-4hana-forms-2015-s-4hana-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.023076923076923078,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.72426081218064,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/form-technologies#sap-interactive-forms-by-adobe-2005-",
+      "text": "SAP Interactive Forms by Adobe (2005)\n\nLassen Sie sich von dem Teil „Interactive“ im Namen nicht täuschen – hierbei handelt es sich sehr wohl um „Druckformulare“ und nicht ausschließlich um interaktive Formulare.   Das Formularlayout wird mittels LiveCycle Designer (LCD von Adobe) in der Transaktion SFP gestaltet. Der LCD muss dafür im S...\n\n/dsag-abap-leitfaden/forms/form-technologies#sap-interactive-forms-by-adobe-2005-",
+      "bm25": -34.70812453559001,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/form-technologies#sap-interactive-forms-by-adobe-2005-",
+      "relFile": "forms/form-technologies.md",
+      "finalScore": 0.022727272727272728,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -34.70812453559001,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBIGINT_ABEXA",
+      "text": "ABENBIGINT_ABEXA\n\nThis example uses methods of the system class `CL_ABAP_BIGINT` to encrypt a text by generating public and private keys using the RSA algorithm. Public and private RSA key pairs are generated using methods of the system class `CL_ABAP_BIGINT`. These key pairs are used to encrypt a text. The key pairs, as well as the encrypted and decrypted text, are generated as screen output. \\* Public class defin\n\n/abap-docs-standard/ABENBIGINT_ABEXA",
+      "bm25": -6.97362797190544,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBIGINT_ABEXA",
+      "relFile": "ABENBIGINT_ABEXA.md",
+      "finalScore": 0.022448979591836733,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.97362797190544,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-platform-reuse-services/src/zreuse_cl_execute_fdp_delete.clas.abap",
+      "text": "zreuse_cl_execute_fdp_delete.clas.abap\n\nCLASS zreuse_cl_execute_fdp_delete DEFINITION\n\n/abap-platform-reuse-services/src/zreuse_cl_execute_fdp_delete.clas.abap",
+      "bm25": -9.203123186652197,
+      "sourceId": "abap-platform-reuse-services",
+      "path": "/abap-platform-reuse-services/src/zreuse_cl_execute_fdp_delete.clas.abap",
+      "relFile": "src/zreuse_cl_execute_fdp_delete.clas.abap",
+      "finalScore": 0.021917808219178082,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.203123186652197,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.6
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#formatting-output-using-format-statements",
+      "text": "Formatting Output Using FORMAT Statements\n\n- [`FORMAT`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapformat.htm) statements can be used to apply formattings to output statements. - The formats are valid until reverted by a new `FORMAT` statement, using the additions `OFF` or `RESET`. - Note that the addi...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#formatting-output-using-format-statements",
+      "bm25": -6.693052453935337,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#formatting-output-using-format-statements",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.021568627450980395,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.693052453935337,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPPRINT-CONTROL_SHORTREF",
+      "text": "ABAPPRINT-CONTROL_SHORTREF\n\n`PRINT-CONTROL   \\{ INDEX-LINE index_line \\}                |\\ \\{ formats|\\{FUNCTION code\\}\\                    [LINE line]\\ [POSITION col]\\ \\}.` Creates index entries for list archiving or sets a print format (obsolete). -   [`INDEX-LINE index_line`](ABAPPRINT-CONTROL.html)\\\\\n\n/abap-docs-standard/ABAPPRINT-CONTROL_SHORTREF",
+      "bm25": -5.124403724056168,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPPRINT-CONTROL_SHORTREF",
+      "relFile": "ABAPPRINT-CONTROL_SHORTREF.md",
+      "finalScore": 0.02112676056338028,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -5.124403724056168,
+        "rank": 82,
+        "rrfScore": 0.007042253521126761,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENUNKNOWN_CONTAINER_GUIDL",
+      "text": "ABENUNKNOWN_CONTAINER_GUIDL\n\nAnonymous containers are character-like or byte-like data objects of type `c` or `string` type (or `x`/`xstring` type). Data objects of other types (especially structures) are assigned using [casting](ABENCASTING_GUIDL.html) to these objects, to store them persistently in these containers. **Do not use character or byte fields as containers** Do not store structured data in unstructured character-\n\n/abap-docs-standard/ABENUNKNOWN_CONTAINER_GUIDL",
+      "bm25": -7.136333342546448,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENUNKNOWN_CONTAINER_GUIDL",
+      "relFile": "ABENUNKNOWN_CONTAINER_GUIDL.md",
+      "finalScore": 0.020833333333333332,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.136333342546448,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRINTING_OBSOLETE",
+      "text": "ABENPRINTING_OBSOLETE\n\n-   [Obsolete spool parameters specified](ABAPNEW-PAGE_PRINT_OBSOLETE.html) -   [`NEW-SECTION`](ABAPNEW-SECTION.html) -   [`PRINT-CONTROL - formats`](ABAPPRINT-CONTROL_OBSOLETE.html)\n\n/abap-docs-standard/ABENPRINTING_OBSOLETE",
+      "bm25": -4.964807547765592,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRINTING_OBSOLETE",
+      "relFile": "ABENPRINTING_OBSOLETE.md",
+      "finalScore": 0.020689655172413793,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -4.964807547765592,
+        "rank": 85,
+        "rrfScore": 0.006896551724137931,
+        "boost": 2
+      }
+    }
+  ]
+}

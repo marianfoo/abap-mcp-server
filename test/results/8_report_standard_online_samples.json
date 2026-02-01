@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": true
     },
-    "timestamp": "2026-01-31T19:18:41.319Z",
+    "timestamp": "2026-02-01T20:18:11.233Z",
     "count": 50
   },
   "results": [
@@ -17,13 +17,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABAPRETURN",
       "relFile": "ABAPRETURN.md",
-      "finalScore": 0.0967741935483871,
+      "finalScore": 0.07258064516129031,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -12.797291988540104,
         "rank": 2,
         "rrfScore": 0.016129032258064516,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -33,45 +33,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENSEPARATION_CONCERNS_GUIDL",
       "relFile": "ABENSEPARATION_CONCERNS_GUIDL.md",
-      "finalScore": 0.09016393442622951,
+      "finalScore": 0.06557377049180328,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -13.928612997036884,
         "rank": 1,
         "rrfScore": 0.01639344262295082,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
-      "text": "ABENSTRING_TEMPLATE_UTC_ABEXA\n\nThe example demonstrates the various time stamp formats for embedded expressions. UTC time stamps in [time stamp fields](ABENUTCLONG.html) and in [packed numbers](ABENTIME_STAMPS_PACKED.html) are formatted in all possible country-specific [date formats](ABENDATE_FORMATS.html) and [time formats](ABENCOUNTRY_FORMATS.html) using the parameter [`COUNTRY`](ABAPCOMPUTE_STRING_FORMAT_OPTIONS.html). For t\n\n/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
-      "bm25": -12.510036441314506,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
-      "relFile": "ABENSTRING_TEMPLATE_UTC_ABEXA.md",
-      "finalScore": 0.08253968253968254,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -12.510036441314506,
-        "rank": 3,
-        "rrfScore": 0.015873015873015872,
-        "boost": 4.2
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
-      "text": "ABENFREE_SELECTION_ABEXA\n\nThis example demonstrates how a dynamic selection is used in a program. This example shows the simplest way to use a [dynamic selection](ABENFREE_SELECTIONS.html) in a program. When the value *T* of the parameter `KIND` is passed, the function module `FREE_SELECTIONS_INIT` is set to prepare dynamic selections for database tables in the ABAP Dictionary. The names of the database tables (here only o\n\n/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
-      "bm25": -12.112157114695888,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
-      "relFile": "ABENFREE_SELECTION_ABEXA.md",
-      "finalScore": 0.08125,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -12.112157114695888,
-        "rank": 4,
-        "rrfScore": 0.015625,
-        "boost": 4.2
+        "boost": 3
       }
     },
     {
@@ -81,125 +49,45 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENACCESSIBILITY_GUIDL",
       "relFile": "ABENACCESSIBILITY_GUIDL.md",
-      "finalScore": 0.08088235294117647,
+      "finalScore": 0.058823529411764705,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -10.905050100928804,
         "rank": 8,
         "rrfScore": 0.014705882352941176,
-        "boost": 4.5
+        "boost": 3
       }
     },
     {
-      "id": "/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
-      "text": "ABAPSET_HANDLER_INSTANCE\n\n`SET HANDLER handler1 handler2 ... FOR \\{ oref |\\{ALL INSTANCES\\}\\ \\}`\\\\  This statement registers the [event handlers](ABENEVENT_HANDLER_GLOSRY.html)\\\\ `handler1 handler2 ...` for the associated [instance events](ABENINSTANCE_EVENT_GLOSRY.html) of the objects specified after `FOR`. The addition `ACTIVATION` can be used to deregister event handlers or perform a dynamic registration. An event handl\n\n/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
-      "bm25": -8.752362749513726,
+      "id": "/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
+      "text": "ABENSTRING_TEMPLATE_UTC_ABEXA\n\nThe example demonstrates the various time stamp formats for embedded expressions. UTC time stamps in [time stamp fields](ABENUTCLONG.html) and in [packed numbers](ABENTIME_STAMPS_PACKED.html) are formatted in all possible country-specific [date formats](ABENDATE_FORMATS.html) and [time formats](ABENCOUNTRY_FORMATS.html) using the parameter [`COUNTRY`](ABAPCOMPUTE_STRING_FORMAT_OPTIONS.html). For t\n\n/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
+      "bm25": -12.510036441314506,
       "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
-      "relFile": "ABAPSET_HANDLER_INSTANCE.md",
-      "finalScore": 0.061224489795918366,
+      "path": "/abap-docs-standard/ABENSTRING_TEMPLATE_UTC_ABEXA",
+      "relFile": "ABENSTRING_TEMPLATE_UTC_ABEXA.md",
+      "finalScore": 0.05873015873015873,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -8.752362749513726,
-        "rank": 38,
-        "rrfScore": 0.01020408163265306,
-        "boost": 5
+        "bm25Score": -12.510036441314506,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.7
       }
     },
     {
-      "id": "/abap-docs-standard/ABENLIST_GUIDL",
-      "text": "ABENLIST_GUIDL\n\nA list is a medium used for the structured and formatted output of data. The following lists are available in ABAP: Classic lists are the only option to send ABAP data from ABAP programs directly to the SAP spool system as spool lists. If SAP List Viewer is used, the lists that are displayed in the viewer are automatically converted to classic spool lists during printing. **Use SAP List Viewer**\n\n/abap-docs-standard/ABENLIST_GUIDL",
-      "bm25": -9.726673086428168,
+      "id": "/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
+      "text": "ABENFREE_SELECTION_ABEXA\n\nThis example demonstrates how a dynamic selection is used in a program. This example shows the simplest way to use a [dynamic selection](ABENFREE_SELECTIONS.html) in a program. When the value *T* of the parameter `KIND` is passed, the function module `FREE_SELECTIONS_INIT` is set to prepare dynamic selections for database tables in the ABAP Dictionary. The names of the database tables (here only o\n\n/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
+      "bm25": -12.112157114695888,
       "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENLIST_GUIDL",
-      "relFile": "ABENLIST_GUIDL.md",
-      "finalScore": 0.061111111111111116,
+      "path": "/abap-docs-standard/ABENFREE_SELECTION_ABEXA",
+      "relFile": "ABENFREE_SELECTION_ABEXA.md",
+      "finalScore": 0.0578125,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -9.726673086428168,
-        "rank": 30,
-        "rrfScore": 0.011111111111111112,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENABAP_LISTS",
-      "text": "ABENABAP_LISTS\n\nThe following ABAP statements are used for creating classical lists: Classic lists are no longer intended to be used directly in production programs. The use of other suitable output media is recommended instead. -   [`WRITE`](ABAPWRITE-.html)\n\n/abap-docs-standard/ABENABAP_LISTS",
-      "bm25": -7.895939529899812,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENABAP_LISTS",
-      "relFile": "ABENABAP_LISTS.md",
-      "finalScore": 0.05660377358490566,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -7.895939529899812,
-        "rank": 46,
-        "rrfScore": 0.009433962264150943,
-        "boost": 5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENABAP_DYNPRO_LIST",
-      "text": "ABENABAP_DYNPRO_LIST\n\nA classic list or list for short is a medium used for the structured and formatted output of data. List output is either written to a [list buffer](ABENLIST_BUFFER_GLOSRY.html) as a [screen list](ABENSCREEN_LIST_GLOSRY.html) and displayed on a [list dynpro](ABENLIST_DYNPRO_GLOSRY.html) or is sent to the [SAP spool system](ABENSAP_SPOOL_SYSTEM_GLOSRY.html) as a [spool list](ABENSPOOL_LIST_GLOSRY.ht\n\n/abap-docs-standard/ABENABAP_DYNPRO_LIST",
-      "bm25": -7.684996459204044,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENABAP_DYNPRO_LIST",
-      "relFile": "ABENABAP_DYNPRO_LIST.md",
-      "finalScore": 0.05555555555555555,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -7.684996459204044,
-        "rank": 48,
-        "rrfScore": 0.009259259259259259,
-        "boost": 5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENLISTS_OBSOLETE",
-      "text": "ABENLISTS_OBSOLETE\n\n-   [Obsolete formatting](ABENFORMAT_OBSOLETE.html) -   [Obsolete calculations](ABENCALCULATE_OBSOLETE.html) -   [Obsolete list event](ABENLIST_EVENT_OBSOLETE.html)\n\n/abap-docs-standard/ABENLISTS_OBSOLETE",
-      "bm25": -8.520918583799165,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENLISTS_OBSOLETE",
-      "relFile": "ABENLISTS_OBSOLETE.md",
-      "finalScore": 0.05238095238095239,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -8.520918583799165,
-        "rank": 45,
-        "rrfScore": 0.009523809523809525,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENDDICDDL_DEFINE_STRUCTURE",
-      "text": "ABENDDICDDL_DEFINE_STRUCTURE\n\nDefinition of the structure `DEMOFLI` in ADT. -   A structure is defined using the statement `DEFINE STRUCTURE`. The name `struct` is subject to the [naming rules for DDIC data types](ABENDDIC_TYPES_NAMES.html). -   [Annotations](ABENDDIC_ANNOTATION_GLOSRY.html)\\\\ `[structure_annos](ABENDDICDDL_DEFINE_STRUCT_PROPS.html)` in front of the statement `DEFINE STRUCTURE` define the mandatory structure p\n\n/abap-docs-standard/ABENDDICDDL_DEFINE_STRUCTURE",
-      "bm25": -7.705243929176607,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENDDICDDL_DEFINE_STRUCTURE",
-      "relFile": "ABENDDICDDL_DEFINE_STRUCTURE.md",
-      "finalScore": 0.0514018691588785,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -7.705243929176607,
-        "rank": 47,
-        "rrfScore": 0.009345794392523364,
-        "boost": 4.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENCDS_DTEL",
-      "text": "ABENCDS_DTEL\n\n`... data_element ...` A [CDS simple type](ABENCDS_SIMPLE_TYPE_GLOSRY.html) can be typed using a [DDIC data element](ABENDATA_ELEMENT_GLOSRY.html)\\\\ `data_element`. `data_element` can have any ABAP Dictionary type listed in the topic [ABAP CDS - Built-In Data Types](ABENCDS_OVERVIEW_BUILTIN_TYPES.html). ABAP Dictionary types which are not listed there, such as `abap.fltp`, are not available for [C\n\n/abap-docs-standard/ABENCDS_DTEL",
-      "bm25": -6.686423983754316,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENCDS_DTEL",
-      "relFile": "ABENCDS_DTEL.md",
-      "finalScore": 0.04741379310344827,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -6.686423983754316,
-        "rank": 56,
-        "rrfScore": 0.008620689655172414,
-        "boost": 4.5
+        "bm25Score": -12.112157114695888,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 2.7
       }
     },
     {
@@ -219,51 +107,67 @@
       }
     },
     {
-      "id": "/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
-      "text": "ABENDYNPRO_CFW_ABEXA\n\nThe example illustrates the use of different GUI controls in a dynpro. The screen of dynpro 100 contains a custom control named `CUSTOM_CONTROL` that covers the entire screen area. In the flow logic, both dialog modules `status_0100` and `cancel` are called. The addition `AT EXIT-COMMAND` is used at PAI. In the GUI status `SCREEN_100`, the usual symbols of the standard tool bar are filled with fun\n\n/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
-      "bm25": -6.757852892635967,
+      "id": "/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
+      "text": "ABAPSET_HANDLER_INSTANCE\n\n`SET HANDLER handler1 handler2 ... FOR \\{ oref |\\{ALL INSTANCES\\}\\ \\}`\\\\  This statement registers the [event handlers](ABENEVENT_HANDLER_GLOSRY.html)\\\\ `handler1 handler2 ...` for the associated [instance events](ABENINSTANCE_EVENT_GLOSRY.html) of the objects specified after `FOR`. The addition `ACTIVATION` can be used to deregister event handlers or perform a dynamic registration. An event handl\n\n/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
+      "bm25": -8.752362749513726,
       "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
-      "relFile": "ABENDYNPRO_CFW_ABEXA.md",
-      "finalScore": 0.04521739130434783,
+      "path": "/abap-docs-standard/ABAPSET_HANDLER_INSTANCE",
+      "relFile": "ABAPSET_HANDLER_INSTANCE.md",
+      "finalScore": 0.04591836734693877,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -6.757852892635967,
-        "rank": 55,
-        "rrfScore": 0.008695652173913044,
-        "boost": 4.2
+        "bm25Score": -8.752362749513726,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 3.5
       }
     },
     {
-      "id": "/abap-docs-standard/ABAPINSERT_REPORT_OBSOLETE",
-      "text": "ABAPINSERT_REPORT_OBSOLETE\n\n`INSERT REPORT ... UNICODE ENABLING ...` The addition `UNICODE ENABLING` of the statement [`INSERT REPORT`](ABAPINSERT_REPORT.html) has the same semantics as the addition `VERSION`, which replaces it. If `VERSION` is specified, `UNICODE ENABLING` cannot be specified. Before [ABAP language versions](ABENABAP_VERSIONS.html) were introduced, the addition `UNICODE ENABLING` was used exclusively to con\n\n/abap-docs-standard/ABAPINSERT_REPORT_OBSOLETE",
-      "bm25": -4.829984733665851,
+      "id": "/abap-docs-standard/ABENLIST_GUIDL",
+      "text": "ABENLIST_GUIDL\n\nA list is a medium used for the structured and formatted output of data. The following lists are available in ABAP: Classic lists are the only option to send ABAP data from ABAP programs directly to the SAP spool system as spool lists. If SAP List Viewer is used, the lists that are displayed in the viewer are automatically converted to classic spool lists during printing. **Use SAP List Viewer**\n\n/abap-docs-standard/ABENLIST_GUIDL",
+      "bm25": -9.726673086428168,
       "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABAPINSERT_REPORT_OBSOLETE",
-      "relFile": "ABAPINSERT_REPORT_OBSOLETE.md",
-      "finalScore": 0.04220779220779221,
+      "path": "/abap-docs-standard/ABENLIST_GUIDL",
+      "relFile": "ABENLIST_GUIDL.md",
+      "finalScore": 0.044444444444444446,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -4.829984733665851,
-        "rank": 94,
-        "rrfScore": 0.006493506493506494,
-        "boost": 5.5
+        "bm25Score": -9.726673086428168,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 3
       }
     },
     {
-      "id": "/abap-docs-standard/ABAPREAD_REPORT_SHORTREF",
-      "text": "ABAPREAD_REPORT_SHORTREF\n\n`READ REPORT prog INTO itab [MAXIMUM WIDTH INTO wid].` Imports the source code of the ABAP program `prog` into the internal table `itab`. -   `MAXIMUM WIDTH INTO wid`\\\\\n\n/abap-docs-standard/ABAPREAD_REPORT_SHORTREF",
-      "bm25": -4.790399680254467,
+      "id": "/abap-docs-standard/ABENABAP_LISTS",
+      "text": "ABENABAP_LISTS\n\nThe following ABAP statements are used for creating classical lists: Classic lists are no longer intended to be used directly in production programs. The use of other suitable output media is recommended instead. -   [`WRITE`](ABAPWRITE-.html)\n\n/abap-docs-standard/ABENABAP_LISTS",
+      "bm25": -7.895939529899812,
       "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABAPREAD_REPORT_SHORTREF",
-      "relFile": "ABAPREAD_REPORT_SHORTREF.md",
+      "path": "/abap-docs-standard/ABENABAP_LISTS",
+      "relFile": "ABENABAP_LISTS.md",
+      "finalScore": 0.04245283018867924,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.895939529899812,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_DYNPRO_LIST",
+      "text": "ABENABAP_DYNPRO_LIST\n\nA classic list or list for short is a medium used for the structured and formatted output of data. List output is either written to a [list buffer](ABENLIST_BUFFER_GLOSRY.html) as a [screen list](ABENSCREEN_LIST_GLOSRY.html) and displayed on a [list dynpro](ABENLIST_DYNPRO_GLOSRY.html) or is sent to the [SAP spool system](ABENSAP_SPOOL_SYSTEM_GLOSRY.html) as a [spool list](ABENSPOOL_LIST_GLOSRY.ht\n\n/abap-docs-standard/ABENABAP_DYNPRO_LIST",
+      "bm25": -7.684996459204044,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_DYNPRO_LIST",
+      "relFile": "ABENABAP_DYNPRO_LIST.md",
       "finalScore": 0.041666666666666664,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -4.790399680254467,
-        "rank": 96,
-        "rrfScore": 0.00641025641025641,
-        "boost": 5.5
+        "bm25Score": -7.684996459204044,
+        "rank": 48,
+        "rrfScore": 0.009259259259259259,
+        "boost": 3.5
       }
     },
     {
@@ -283,22 +187,6 @@
       }
     },
     {
-      "id": "/abap-docs-standard/ABENABAP_PROCESSING_BLOCKS",
-      "text": "ABENABAP_PROCESSING_BLOCKS\n\nThe following are event key words for [reporting](ABENREPORTING_GLOSRY.html) events: Reporting events occur in a [predefined order](ABENREPORTING_PROCESS.html) and only in [executable programs](ABENEXECUTABLE_PROGRAM_GLOSRY.html) started with `SUBMIT`. In general, every executable program is started implicitly using `SUBMIT`. Only starts with regular transaction codes (no reporting transactions) o\n\n/abap-docs-standard/ABENABAP_PROCESSING_BLOCKS",
-      "bm25": -4.835473393638252,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENABAP_PROCESSING_BLOCKS",
-      "relFile": "ABENABAP_PROCESSING_BLOCKS.md",
-      "finalScore": 0.0392156862745098,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -4.835473393638252,
-        "rank": 93,
-        "rrfScore": 0.006535947712418301,
-        "boost": 5
-      }
-    },
-    {
       "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
       "text": "ABAP Statements for Selection Screens\n\nSelection screens can be created by using special ABAP statements in the global declaration part of executable programs:  - [`PARAMETERS`](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abapparameters.htm) - [`SELECT-OPTIONS`](https://help.sap.com/doc/abapdocu_latest_...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#abap-statements-for-selection-screens",
       "bm25": -9.758409620330372,
@@ -315,35 +203,19 @@
       }
     },
     {
-      "id": "/abap-docs-standard/ABENNEWS-46-SE30",
-      "text": "ABENNEWS-46-SE30\n\nRuntime analysis can be activated for ten simultaneous [ABAP sessions](ABENABAP_SESSION_GLOSRY.html) (work processes). This makes it possible to switch to a long-running job from outside. It is possible to switch in and out of the work processes that are measured using a screen similar to transaction `SM50`. It is possible to restrict the duration of a measurement, the size of the performance data\n\n/abap-docs-standard/ABENNEWS-46-SE30",
-      "bm25": -6.483829819510057,
+      "id": "/abap-docs-standard/ABENLISTS_OBSOLETE",
+      "text": "ABENLISTS_OBSOLETE\n\n-   [Obsolete formatting](ABENFORMAT_OBSOLETE.html) -   [Obsolete calculations](ABENCALCULATE_OBSOLETE.html) -   [Obsolete list event](ABENLIST_EVENT_OBSOLETE.html)\n\n/abap-docs-standard/ABENLISTS_OBSOLETE",
+      "bm25": -8.520918583799165,
       "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENNEWS-46-SE30",
-      "relFile": "ABENNEWS-46-SE30.md",
-      "finalScore": 0.03852459016393443,
+      "path": "/abap-docs-standard/ABENLISTS_OBSOLETE",
+      "relFile": "ABENLISTS_OBSOLETE.md",
+      "finalScore": 0.0380952380952381,
       "sourceKind": "offline",
       "debug": {
-        "bm25Score": -6.483829819510057,
-        "rank": 62,
-        "rrfScore": 0.00819672131147541,
-        "boost": 3.7
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENCLASS_INTERACE_POOLS",
-      "text": "ABENCLASS_INTERACE_POOLS\n\nClass pools and interface pools are the ABAP programs where [global classes](ABENGLOBAL_CLASS_GLOSRY.html) and [global interfaces](ABENGLOBAL_INTERFACE_GLOSRY.html) of the class library are defined. They are created in the [ABAP development tools for Eclipse (ADT)](ABENADT_GLOSRY.html) or using the [Class Builder](ABENCLASS_BUILDER_GLOSRY.html) tool in the [ABAP Workbench](ABENABAP_WORKBENCH_GLOSR\n\n/abap-docs-standard/ABENCLASS_INTERACE_POOLS",
-      "bm25": -5.696591996695528,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENCLASS_INTERACE_POOLS",
-      "relFile": "ABENCLASS_INTERACE_POOLS.md",
-      "finalScore": 0.03793103448275862,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -5.696591996695528,
-        "rank": 85,
-        "rrfScore": 0.006896551724137931,
-        "boost": 4.5
+        "bm25Score": -8.520918583799165,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 3
       }
     },
     {
@@ -379,6 +251,22 @@
       }
     },
     {
+      "id": "/abap-docs-standard/ABENDDICDDL_DEFINE_STRUCTURE",
+      "text": "ABENDDICDDL_DEFINE_STRUCTURE\n\nDefinition of the structure `DEMOFLI` in ADT. -   A structure is defined using the statement `DEFINE STRUCTURE`. The name `struct` is subject to the [naming rules for DDIC data types](ABENDDIC_TYPES_NAMES.html). -   [Annotations](ABENDDIC_ANNOTATION_GLOSRY.html)\\\\ `[structure_annos](ABENDDICDDL_DEFINE_STRUCT_PROPS.html)` in front of the statement `DEFINE STRUCTURE` define the mandatory structure p\n\n/abap-docs-standard/ABENDDICDDL_DEFINE_STRUCTURE",
+      "bm25": -7.705243929176607,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDICDDL_DEFINE_STRUCTURE",
+      "relFile": "ABENDDICDDL_DEFINE_STRUCTURE.md",
+      "finalScore": 0.037383177570093455,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.705243929176607,
+        "rank": 47,
+        "rrfScore": 0.009345794392523364,
+        "boost": 3
+      }
+    },
+    {
       "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#getting-started",
       "text": "Getting Started\n\n- To get started quickly, you only need to ...   - instantiate an ALV table object using the `factory` method.   - define the display type for the ALV output. By default, full-screen display is enabled. TYPES BEGIN demo_struct col1 TYPE string col2 TYPE col3 TYPE\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#getting-started",
       "bm25": -11.03835413809721,
@@ -407,22 +295,6 @@
         "rank": 1,
         "rrfScore": 0.014754098360655738,
         "boost": 1.5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENDERIVED_TYPES_REPORTED_ABEXA",
-      "text": "ABENDERIVED_TYPES_REPORTED_ABEXA\n\nThis example demonstrates the use of the following message-related [BDEF derived type](ABENRAP_DERIVED_TYPE_GLOSRY.html) components with a [managed](ABENBDL_IMPL_TYPE.html)\\\\ [RAP BO](ABENRAP_BO_GLOSRY.html): See more details on message handling in the Development Guide for the ABAP RESTful Application Programming Model, section [Messages](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da\n\n/abap-docs-standard/ABENDERIVED_TYPES_REPORTED_ABEXA",
-      "bm25": -4.799185089176848,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENDERIVED_TYPES_REPORTED_ABEXA",
-      "relFile": "ABENDERIVED_TYPES_REPORTED_ABEXA.md",
-      "finalScore": 0.036774193548387096,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -4.799185089176848,
-        "rank": 95,
-        "rrfScore": 0.0064516129032258064,
-        "boost": 4.7
       }
     },
     {
@@ -534,6 +406,22 @@
       }
     },
     {
+      "id": "/abap-docs-standard/ABENCDS_DTEL",
+      "text": "ABENCDS_DTEL\n\n`... data_element ...` A [CDS simple type](ABENCDS_SIMPLE_TYPE_GLOSRY.html) can be typed using a [DDIC data element](ABENDATA_ELEMENT_GLOSRY.html)\\\\ `data_element`. `data_element` can have any ABAP Dictionary type listed in the topic [ABAP CDS - Built-In Data Types](ABENCDS_OVERVIEW_BUILTIN_TYPES.html). ABAP Dictionary types which are not listed there, such as `abap.fltp`, are not available for [C\n\n/abap-docs-standard/ABENCDS_DTEL",
+      "bm25": -6.686423983754316,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_DTEL",
+      "relFile": "ABENCDS_DTEL.md",
+      "finalScore": 0.034482758620689655,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.686423983754316,
+        "rank": 56,
+        "rrfScore": 0.008620689655172414,
+        "boost": 3
+      }
+    },
+    {
       "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
       "text": "Adapting the Selection Screen Layout\n\n<table> <tr> <th> Subject/Statement </th> <th> Notes </th> <th> Code Snippet </th> abap PARAMETERS param1 TYPE LENGTH SELECTION SCREEN SKIP PARAMETERS param2\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#adapting-the-selection-screen-layout",
       "bm25": -9.76653412700896,
@@ -642,6 +530,38 @@
       }
     },
     {
+      "id": "/abap-docs-standard/ABAPINSERT_REPORT_OBSOLETE",
+      "text": "ABAPINSERT_REPORT_OBSOLETE\n\n`INSERT REPORT ... UNICODE ENABLING ...` The addition `UNICODE ENABLING` of the statement [`INSERT REPORT`](ABAPINSERT_REPORT.html) has the same semantics as the addition `VERSION`, which replaces it. If `VERSION` is specified, `UNICODE ENABLING` cannot be specified. Before [ABAP language versions](ABENABAP_VERSIONS.html) were introduced, the addition `UNICODE ENABLING` was used exclusively to con\n\n/abap-docs-standard/ABAPINSERT_REPORT_OBSOLETE",
+      "bm25": -4.829984733665851,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPINSERT_REPORT_OBSOLETE",
+      "relFile": "ABAPINSERT_REPORT_OBSOLETE.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -4.829984733665851,
+        "rank": 94,
+        "rrfScore": 0.006493506493506494,
+        "boost": 4
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
+      "text": "ABENDYNPRO_CFW_ABEXA\n\nThe example illustrates the use of different GUI controls in a dynpro. The screen of dynpro 100 contains a custom control named `CUSTOM_CONTROL` that covers the entire screen area. In the flow logic, both dialog modules `status_0100` and `cancel` are called. The addition `AT EXIT-COMMAND` is used at PAI. In the GUI status `SCREEN_100`, the usual symbols of the standard tool bar are filled with fun\n\n/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
+      "bm25": -6.757852892635967,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_CFW_ABEXA",
+      "relFile": "ABENDYNPRO_CFW_ABEXA.md",
+      "finalScore": 0.03217391304347826,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.757852892635967,
+        "rank": 55,
+        "rrfScore": 0.008695652173913044,
+        "boost": 2.7
+      }
+    },
+    {
       "id": "sap-help-562c4366602b438298451c0e10c46ca8",
       "text": "Field Access Trace\n\n<b>reports</b>,\nand <b>ALVs</b>). ... Any free text added through a BAdI\n\n\n\n\n\nField access trace uses the same configuration tables as those tables used for field\nmasking and is carried out for the SAP UI (for example, SAP PBO screens, <b>ABAP</b> ...  — Product: Field Masking for SAP GUI (1.0 SP13)\n\nhttps://help.sap.com/docs/FIELD_MASKING_FOR_SAP_GUI/7a0e56f44f62457fbae43e834256cc3a/562c4366602b438298451c0e10c46ca8.html?locale=en-US&state=PRODUCTION&version=1.13.0.0",
       "bm25": 0,
@@ -670,6 +590,22 @@
         "rank": 18,
         "rrfScore": 0.01282051282051282,
         "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPREAD_REPORT_SHORTREF",
+      "text": "ABAPREAD_REPORT_SHORTREF\n\n`READ REPORT prog INTO itab [MAXIMUM WIDTH INTO wid].` Imports the source code of the ABAP program `prog` into the internal table `itab`. -   `MAXIMUM WIDTH INTO wid`\\\\\n\n/abap-docs-standard/ABAPREAD_REPORT_SHORTREF",
+      "bm25": -4.790399680254467,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPREAD_REPORT_SHORTREF",
+      "relFile": "ABAPREAD_REPORT_SHORTREF.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -4.790399680254467,
+        "rank": 96,
+        "rrfScore": 0.00641025641025641,
+        "boost": 4
       }
     },
     {
@@ -785,6 +721,22 @@
       }
     },
     {
+      "id": "/abap-docs-standard/ABENABAP_PROCESSING_BLOCKS",
+      "text": "ABENABAP_PROCESSING_BLOCKS\n\nThe following are event key words for [reporting](ABENREPORTING_GLOSRY.html) events: Reporting events occur in a [predefined order](ABENREPORTING_PROCESS.html) and only in [executable programs](ABENEXECUTABLE_PROGRAM_GLOSRY.html) started with `SUBMIT`. In general, every executable program is started implicitly using `SUBMIT`. Only starts with regular transaction codes (no reporting transactions) o\n\n/abap-docs-standard/ABENABAP_PROCESSING_BLOCKS",
+      "bm25": -4.835473393638252,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_PROCESSING_BLOCKS",
+      "relFile": "ABENABAP_PROCESSING_BLOCKS.md",
+      "finalScore": 0.029411764705882353,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -4.835473393638252,
+        "rank": 93,
+        "rrfScore": 0.006535947712418301,
+        "boost": 3.5
+      }
+    },
+    {
       "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
       "text": "SELECTION-SCREEN\n\n- `SELECTION-SCREEN` statements can be used to create and modify the layout of standalone selection screens. - Note: The standard selection screen for executable programs is created automatically. That is, each executable program contains a standard selection screen with dynpro number 1000. The scre...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#selection-screen",
       "bm25": -9.742207645121276,
@@ -797,6 +749,54 @@
         "bm25Score": -9.742207645121276,
         "rank": 26,
         "rrfScore": 0.011627906976744186,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#executable-examples",
+      "text": "Executable Examples\n\nAfter the import of the repository, proceed as follows:  - Find the program in ADT using the search by choosing `CTRL + SHIFT + A`. - Enter `ZDEMO_ABAP_SELSCR_LISTS_INTRO` and open the program. This program serves as an entry point for all selection screen and list examples. Program names of the ind...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#executable-examples",
+      "bm25": -9.735475270588775,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#executable-examples",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.028735632183908046,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.735475270588775,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#select-options",
+      "text": "SELECT-OPTIONS\n\n- Declares selection criteria for a data object - Unlike the `PARAMETERS` statement, which specifies a single value for a variable, the `SELECT-OPTIONS` statement allows you to specify complex criteria, such as an value range or a list of single values, to include or exclude values, that can be eval...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#select-options",
+      "bm25": -9.73413009313626,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#select-options",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.02840909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.73413009313626,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/20_Selection_Screens_Lists#optional-layout-settings-and-functionality",
+      "text": "Optional Layout Settings and Functionality\n\n- The following commented code snippet covers a selection of the many setting and functionality options. - For simplicity of the snippet, the code only uses the root exception class. Make sure that you implement appropriate error handling and exception classes.   - You can copy and paste the code in...\n\n/abap-cheat-sheets/20_Selection_Screens_Lists#optional-layout-settings-and-functionality",
+      "bm25": -9.73278534760022,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/20_Selection_Screens_Lists#optional-layout-settings-and-functionality",
+      "relFile": "20_Selection_Screens_Lists.md",
+      "finalScore": 0.028089887640449437,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.73278534760022,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
         "boost": 1.5
       }
     }

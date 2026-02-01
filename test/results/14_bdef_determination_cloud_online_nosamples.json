@@ -6,7 +6,7 @@
       "includeOnline": true,
       "includeSamples": false
     },
-    "timestamp": "2026-01-31T19:18:58.326Z",
+    "timestamp": "2026-02-01T20:18:40.489Z",
     "count": 37
   },
   "results": [
@@ -546,10 +546,10 @@
     },
     {
       "id": "community-14032642",
-      "text": "Precheck Methods, Validations, Determinations, Rea...\n\n...ame example as base we will implement&nbsp;Precheck Methods, Validation, Determination , Read and Modify EML Statements in ABAP&nbsp;RESTful Application Programming Model.&nbsp; Precheck Methods P...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/precheck-methods-validations-determinations-read-and-modify-eml-statements/ba-p/14032642?search-action-id=497478234922&search-result-uid=14032642",
+      "text": "Precheck Methods, Validations, Determinations, Rea...\n\n...ame example as base we will implement&nbsp;Precheck Methods, Validation, Determination , Read and Modify EML Statements in ABAP&nbsp;RESTful Application Programming Model.&nbsp; Precheck Methods P...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/precheck-methods-validations-determinations-read-and-modify-eml-statements/ba-p/14032642?search-action-id=498799456296&search-result-uid=14032642",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/precheck-methods-validations-determinations-read-and-modify-eml-statements/ba-p/14032642?search-action-id=497478234922&search-result-uid=14032642",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/precheck-methods-validations-determinations-read-and-modify-eml-statements/ba-p/14032642?search-action-id=498799456296&search-result-uid=14032642",
       "relFile": "",
       "finalScore": 0.025245901639344263,
       "sourceKind": "sap_community",
@@ -561,10 +561,10 @@
     },
     {
       "id": "community-14062042",
-      "text": "RAP: Augmentation\n\nAugmentation: used to enhance the modify request, before it reaches transactional buffer. augmentation is available for projection bdef s on ly. the augment methods are called before the&nbsp;c...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/rap-augmentation/ba-p/14062042?search-action-id=497478234922&search-result-uid=14062042",
+      "text": "RAP: Augmentation\n\nAugmentation: used to enhance the modify request, before it reaches transactional buffer. augmentation is available for projection bdef s on ly. the augment methods are called before the&nbsp;c...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/rap-augmentation/ba-p/14062042?search-action-id=498799456296&search-result-uid=14062042",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/rap-augmentation/ba-p/14062042?search-action-id=497478234922&search-result-uid=14062042",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/rap-augmentation/ba-p/14062042?search-action-id=498799456296&search-result-uid=14062042",
       "relFile": "",
       "finalScore": 0.024838709677419354,
       "sourceKind": "sap_community",
@@ -576,10 +576,10 @@
     },
     {
       "id": "community-13530605",
-      "text": "C0 Developer Extensibility for CDS Behavior Defini...\n\n...t&nbsp;fulfills all requirements for C0 release : &nbsp; managed implementation in class bp_demo_rap_base_det_val unique; strict(2); extensible { with determination s on modify ; with determination ...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/c0-developer-extensibility-for-cds-behavior-definitions/ba-p/13530605?search-action-id=497478234922&search-result-uid=13530605",
+      "text": "C0 Developer Extensibility for CDS Behavior Defini...\n\n...t&nbsp;fulfills all requirements for C0 release : &nbsp; managed implementation in class bp_demo_rap_base_det_val unique; strict(2); extensible { with determination s on modify ; with determination ...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/c0-developer-extensibility-for-cds-behavior-definitions/ba-p/13530605?search-action-id=498799456296&search-result-uid=13530605",
       "bm25": 0,
       "sourceId": "sap-community",
-      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/c0-developer-extensibility-for-cds-behavior-definitions/ba-p/13530605?search-action-id=497478234922&search-result-uid=13530605",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/c0-developer-extensibility-for-cds-behavior-definitions/ba-p/13530605?search-action-id=498799456296&search-result-uid=13530605",
       "relFile": "",
       "finalScore": 0.024444444444444442,
       "sourceKind": "sap_community",

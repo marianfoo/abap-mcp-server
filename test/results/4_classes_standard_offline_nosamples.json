@@ -6,7 +6,7 @@
       "includeOnline": false,
       "includeSamples": false
     },
-    "timestamp": "2026-01-31T19:18:33.888Z",
+    "timestamp": "2026-02-01T20:18:03.920Z",
     "count": 28
   },
   "results": [
@@ -17,13 +17,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_INTERFACES",
       "relFile": "ABENINHERITANCE_INTERFACES.md",
-      "finalScore": 0.0967741935483871,
+      "finalScore": 0.07258064516129031,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.397143518794639,
         "rank": 2,
         "rrfScore": 0.016129032258064516,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -33,13 +33,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_GUIDL",
       "relFile": "ABENINHERITANCE_GUIDL.md",
-      "finalScore": 0.09523809523809523,
+      "finalScore": 0.07142857142857142,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.395889560616077,
         "rank": 3,
         "rrfScore": 0.015873015873015872,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -49,13 +49,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_EVENTS",
       "relFile": "ABENINHERITANCE_EVENTS.md",
-      "finalScore": 0.09375,
+      "finalScore": 0.0703125,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.300855079950729,
         "rank": 4,
         "rrfScore": 0.015625,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -65,13 +65,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_HIERARCHY_GLOSRY",
       "relFile": "ABENINHERITANCE_HIERARCHY_GLOSRY.md",
-      "finalScore": 0.09344262295081968,
+      "finalScore": 0.06885245901639345,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.400986107967988,
         "rank": 1,
         "rrfScore": 0.01639344262295082,
-        "boost": 4.7
+        "boost": 3.2
       }
     },
     {
@@ -81,13 +81,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE",
       "relFile": "ABENINHERITANCE.md",
-      "finalScore": 0.09090909090909091,
+      "finalScore": 0.06818181818181818,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.287398838225025,
         "rank": 6,
         "rrfScore": 0.015151515151515152,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -97,13 +97,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_CONSTRUCTORS",
       "relFile": "ABENINHERITANCE_CONSTRUCTORS.md",
-      "finalScore": 0.08955223880597014,
+      "finalScore": 0.06716417910447761,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.27954690368601,
         "rank": 7,
         "rrfScore": 0.014925373134328358,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -113,29 +113,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_VISIBILITY",
       "relFile": "ABENINHERITANCE_VISIBILITY.md",
-      "finalScore": 0.08823529411764705,
+      "finalScore": 0.0661764705882353,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.219107099883523,
         "rank": 8,
         "rrfScore": 0.014705882352941176,
-        "boost": 5
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
-      "text": "ABENSINGLE_INHERITANCE_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
-      "bm25": -8.293052670512939,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
-      "relFile": "ABENSINGLE_INHERITANCE_GLOSRY.md",
-      "finalScore": 0.0876923076923077,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -8.293052670512939,
-        "rank": 5,
-        "rrfScore": 0.015384615384615385,
-        "boost": 4.7
+        "boost": 3.5
       }
     },
     {
@@ -145,13 +129,29 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENOS_PERSISTENCE_INHERITANCE",
       "relFile": "ABENOS_PERSISTENCE_INHERITANCE.md",
-      "finalScore": 0.08695652173913043,
+      "finalScore": 0.06521739130434782,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.15097035870931,
         "rank": 9,
         "rrfScore": 0.014492753623188406,
-        "boost": 5
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
+      "text": "ABENSINGLE_INHERITANCE_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
+      "bm25": -8.293052670512939,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
+      "relFile": "ABENSINGLE_INHERITANCE_GLOSRY.md",
+      "finalScore": 0.06461538461538462,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.293052670512939,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 3.2
       }
     },
     {
@@ -161,13 +161,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_ABSTRACT_FINAL",
       "relFile": "ABENINHERITANCE_ABSTRACT_FINAL.md",
-      "finalScore": 0.0821917808219178,
+      "finalScore": 0.06164383561643835,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.092492779816094,
         "rank": 13,
         "rrfScore": 0.0136986301369863,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -177,29 +177,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENABAP_OBJECTS_ABEXAS",
       "relFile": "ABENABAP_OBJECTS_ABEXAS.md",
-      "finalScore": 0.08028169014084507,
+      "finalScore": 0.05915492957746479,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.132117607986007,
         "rank": 11,
         "rrfScore": 0.014084507042253521,
-        "boost": 4.7
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENINHERITANCE_GLOSRY",
-      "text": "ABENINHERITANCE_GLOSRY\n\nGeneralization-specialization relationship between [classes](ABENCLASS_GLOSRY.html). Inheritance means that new [subclasses](ABENSUBCLASS_GLOSRY.html) are derived by adopting all [class components](ABENCLASS_COMPONENT_GLOSRY.html) from [superclasses](ABENSUPERCLASS_GLOSRY.html). A subclass can also be made more specific by declaring new components and [redefining](ABENREDEFINITION_GLOSRY.html)\\\\ [\n\n/abap-docs-standard/ABENINHERITANCE_GLOSRY",
-      "bm25": -8.08974291727551,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENINHERITANCE_GLOSRY",
-      "relFile": "ABENINHERITANCE_GLOSRY.md",
-      "finalScore": 0.07702702702702703,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -8.08974291727551,
-        "rank": 14,
-        "rrfScore": 0.013513513513513514,
-        "boost": 4.7
+        "boost": 3.2
       }
     },
     {
@@ -209,13 +193,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_REFERENCES",
       "relFile": "ABENINHERITANCE_REFERENCES.md",
-      "finalScore": 0.07692307692307693,
+      "finalScore": 0.05769230769230769,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.975258801271855,
         "rank": 18,
         "rrfScore": 0.01282051282051282,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -225,13 +209,29 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_NAME_SPACE",
       "relFile": "ABENINHERITANCE_NAME_SPACE.md",
-      "finalScore": 0.0759493670886076,
+      "finalScore": 0.056962025316455694,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.966547696692029,
         "rank": 19,
         "rrfScore": 0.012658227848101266,
-        "boost": 5
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_GLOSRY",
+      "text": "ABENINHERITANCE_GLOSRY\n\nGeneralization-specialization relationship between [classes](ABENCLASS_GLOSRY.html). Inheritance means that new [subclasses](ABENSUBCLASS_GLOSRY.html) are derived by adopting all [class components](ABENCLASS_COMPONENT_GLOSRY.html) from [superclasses](ABENSUPERCLASS_GLOSRY.html). A subclass can also be made more specific by declaring new components and [redefining](ABENREDEFINITION_GLOSRY.html)\\\\ [\n\n/abap-docs-standard/ABENINHERITANCE_GLOSRY",
+      "bm25": -8.08974291727551,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_GLOSRY",
+      "relFile": "ABENINHERITANCE_GLOSRY.md",
+      "finalScore": 0.05675675675675676,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.08974291727551,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 3.2
       }
     },
     {
@@ -241,13 +241,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENAMDP_INHERITANCE",
       "relFile": "ABENAMDP_INHERITANCE.md",
-      "finalScore": 0.07500000000000001,
+      "finalScore": 0.05625,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.948270638779988,
         "rank": 20,
         "rrfScore": 0.0125,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -257,13 +257,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_INSTANTIATION",
       "relFile": "ABENINHERITANCE_INSTANTIATION.md",
-      "finalScore": 0.07058823529411765,
+      "finalScore": 0.052941176470588235,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.851911773568694,
         "rank": 25,
         "rrfScore": 0.011764705882352941,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -273,13 +273,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_REDEFINITION",
       "relFile": "ABENINHERITANCE_REDEFINITION.md",
-      "finalScore": 0.06976744186046512,
+      "finalScore": 0.05232558139534883,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.816882713759647,
         "rank": 26,
         "rrfScore": 0.011627906976744186,
-        "boost": 5
+        "boost": 3.5
       }
     },
     {
@@ -289,29 +289,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENINHERITANCE_TREE_GLOSRY",
       "relFile": "ABENINHERITANCE_TREE_GLOSRY.md",
-      "finalScore": 0.06951219512195123,
+      "finalScore": 0.051219512195121955,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.870399003435997,
         "rank": 22,
         "rrfScore": 0.012195121951219513,
-        "boost": 4.7
-      }
-    },
-    {
-      "id": "/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
-      "text": "ABENNEWS-796-ABAP_OBJECTS\n\nFor technical reasons a [global class](ABENGLOBAL_CLASS_GLOSRY.html) that can be part of an inheritance tree that is must contain the statements [`PROTECTED SECTION`](ABAPPROTECTED.html) and [`PRIVATE SECTION`](ABAPPRIVATE.html) also for empty protected and private sections. Before Release 7.96, a syntax warning occurred in case of missing protected and private sections only for non-final classes.\n\n/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
-      "bm25": -8.01633523087521,
-      "sourceId": "abap-docs-standard",
-      "path": "/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
-      "relFile": "ABENNEWS-796-ABAP_OBJECTS.md",
-      "finalScore": 0.06933333333333334,
-      "sourceKind": "offline",
-      "debug": {
-        "bm25Score": -8.01633523087521,
-        "rank": 15,
-        "rrfScore": 0.013333333333333334,
-        "boost": 4.2
+        "boost": 3.2
       }
     },
     {
@@ -321,13 +305,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENROOT_CLASS_GLOSRY",
       "relFile": "ABENROOT_CLASS_GLOSRY.md",
-      "finalScore": 0.06867469879518073,
+      "finalScore": 0.050602409638554224,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.859495281896997,
         "rank": 23,
         "rrfScore": 0.012048192771084338,
-        "boost": 4.7
+        "boost": 3.2
       }
     },
     {
@@ -337,13 +321,29 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENABAP_OBJECTS_ABEXA",
       "relFile": "ABENABAP_OBJECTS_ABEXA.md",
-      "finalScore": 0.06785714285714285,
+      "finalScore": 0.05,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -7.853046083757586,
         "rank": 24,
         "rrfScore": 0.011904761904761904,
-        "boost": 4.7
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
+      "text": "ABENNEWS-796-ABAP_OBJECTS\n\nFor technical reasons a [global class](ABENGLOBAL_CLASS_GLOSRY.html) that can be part of an inheritance tree that is must contain the statements [`PROTECTED SECTION`](ABAPPROTECTED.html) and [`PRIVATE SECTION`](ABAPPRIVATE.html) also for empty protected and private sections. Before Release 7.96, a syntax warning occurred in case of missing protected and private sections only for non-final classes.\n\n/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
+      "bm25": -8.01633523087521,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
+      "relFile": "ABENNEWS-796-ABAP_OBJECTS.md",
+      "finalScore": 0.04933333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.01633523087521,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2.7
       }
     },
     {
@@ -353,13 +353,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENNEWS-46-OBJECTS-VERERBUNG",
       "relFile": "ABENNEWS-46-OBJECTS-VERERBUNG.md",
-      "finalScore": 0.06527777777777778,
+      "finalScore": 0.044444444444444446,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.119324763553458,
         "rank": 12,
         "rrfScore": 0.013888888888888888,
-        "boost": 3.7
+        "boost": 2.2
       }
     },
     {
@@ -369,13 +369,13 @@
       "sourceId": "abap-docs-standard",
       "path": "/abap-docs-standard/ABENNEWS-40-OBJECTS",
       "relFile": "ABENNEWS-40-OBJECTS.md",
-      "finalScore": 0.061038961038961045,
+      "finalScore": 0.041558441558441565,
       "sourceKind": "offline",
       "debug": {
         "bm25Score": -8.01041561632739,
         "rank": 17,
         "rrfScore": 0.012987012987012988,
-        "boost": 3.7
+        "boost": 2.2
       }
     },
     {

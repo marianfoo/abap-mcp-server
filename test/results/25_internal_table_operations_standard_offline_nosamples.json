@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "query": "READ TABLE WITH KEY LOOP AT WHERE MODIFY TABLE",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": false,
+      "includeSamples": false
+    },
+    "timestamp": "2026-02-01T20:19:13.591Z",
+    "count": 23
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENTABLE_OUTPUT_GUIDL",
+      "text": "ABENTABLE_OUTPUT_GUIDL\n\nInternal tables can be read by accessing individual lines using `READ TABLE` or [table expressions](ABENTABLE_EXPRESSION_GLOSRY.html), or sequentially using `LOOP AT`. In both cases, the following output behavior can be defined by using the statements with the following additions: In the case of [table expressions](ABENTABLE_EXPRESSIONS.html), the output behavior is controlled by the [category of\n\n/abap-docs-standard/ABENTABLE_OUTPUT_GUIDL",
+      "bm25": -10.923424229916817,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTABLE_OUTPUT_GUIDL",
+      "relFile": "ABENTABLE_OUTPUT_GUIDL.md",
+      "finalScore": 0.05555555555555555,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.923424229916817,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTABLE_CONTROL2_ABEXA",
+      "text": "ABENTABLE_CONTROL2_ABEXA\n\nThis example demonstrates sorting by columns and how lines are deleted in table controls. The resizable table control `flights` is defined. The fields of the table control have been copied from the `DEMO_CONN` structure in the dictionary. The first two columns are lead columns. The corresponding fields are output fields. A title bar, columns headers, and a selection column are created. The selecti\n\n/abap-docs-standard/ABENTABLE_CONTROL2_ABEXA",
+      "bm25": -10.725097185810757,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTABLE_CONTROL2_ABEXA",
+      "relFile": "ABENTABLE_CONTROL2_ABEXA.md",
+      "finalScore": 0.04923076923076924,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.725097185810757,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNESTED_INTERNAL_TABLES_ABEXA",
+      "text": "ABENNESTED_INTERNAL_TABLES_ABEXA\n\nThis example demonstrates how nested internal tables are declared and used. The example shows the declaration of two internal tables, `t_address_tab` and `company_tab`, where `t_address_tab` is contained in `company_tab`. For this, `t_address_tab` is defined as the table type. The component `addresses` of the `company` structure is declared with this type. The data type of `company` is used as the\n\n/abap-docs-standard/ABENNESTED_INTERNAL_TABLES_ABEXA",
+      "bm25": -10.6811367441696,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNESTED_INTERNAL_TABLES_ABEXA",
+      "relFile": "ABENNESTED_INTERNAL_TABLES_ABEXA.md",
+      "finalScore": 0.04848484848484849,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.6811367441696,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCLASS_ATTRIBUTES_AS_KEY",
+      "text": "ABENCLASS_ATTRIBUTES_AS_KEY\n\nIf the line type of an internal table contains object reference variables as components `comp`, the attributes `attr` of the object to which each reference of the line points can be used as key values when reading, sorting, and modifying table lines. This is possible in the following statements or expressions: If a table contains unstructured lines with the type of an object reference variable, th\n\n/abap-docs-standard/ABENCLASS_ATTRIBUTES_AS_KEY",
+      "bm25": -11.03825396304947,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCLASS_ATTRIBUTES_AS_KEY",
+      "relFile": "ABENCLASS_ATTRIBUTES_AS_KEY.md",
+      "finalScore": 0.04838709677419355,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.03825396304947,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTABLE_PROCESSING_STATEMENTS",
+      "text": "ABENTABLE_PROCESSING_STATEMENTS\n\n-   [`READ TABLE`](ABAPREAD_TABLE.html) -   [`LOOP AT`](ABAPLOOP_AT_ITAB_VARIANTS.html) -   [`INSERT`](ABAPINSERT_ITAB.html)\n\n/abap-docs-standard/ABENTABLE_PROCESSING_STATEMENTS",
+      "bm25": -10.276590520144165,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTABLE_PROCESSING_STATEMENTS",
+      "relFile": "ABENTABLE_PROCESSING_STATEMENTS.md",
+      "finalScore": 0.04666666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.276590520144165,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODIFY_ITAB",
+      "text": "ABAPMODIFY_ITAB\n\nThis statement changes the content either of a single line [`itab_line`](ABAPMODIFY_ITAB_SINGLE.html) or multiple lines [`itab_lines`](ABAPMODIFY_ITAB_MULTIPLE.html), which can be specified using a table key or a table index. The following restrictions apply with respect to modifications to key fields of the [primary](ABENPRIMARY_TABLE_KEY_GLOSRY.html) and [secondary table keys](ABENSECONDARY_TABL\n\n/abap-docs-standard/ABAPMODIFY_ITAB",
+      "bm25": -10.670843502395762,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODIFY_ITAB",
+      "relFile": "ABAPMODIFY_ITAB.md",
+      "finalScore": 0.044117647058823525,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.670843502395762,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODIFY_SCREEN",
+      "text": "ABAPMODIFY_SCREEN\n\n`MODIFY SCREEN FROM wa.` This statement can be used in the statement block after [`LOOP AT SCREEN`](ABAPLOOP_AT_SCREEN.html) only and makes sense only during [PBO](ABENPBO_GLOSRY.html) processing. A work area `wa` of the type [`SCREEN`](ABENSCREEN.html) from the ABAP Dictionary must be specified after `FROM`. The statement modifies the properties of the current screen element with the values from\n\n/abap-docs-standard/ABAPMODIFY_SCREEN",
+      "bm25": -10.442910033650511,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODIFY_SCREEN",
+      "relFile": "ABAPMODIFY_SCREEN.md",
+      "finalScore": 0.0410958904109589,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.442910033650511,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_OBSOLETE",
+      "text": "ABENITAB_OBSOLETE\n\n-   [`READ`, `LOOP`, `INSERT`, `COLLECT`, `APPEND`, `MODIFY`, `DELETE` - Short Forms](ABENITAB_SHORT_FORMS.html) -   [`*sys*`, Obsolete Pseudo Component](ABENSYS_TABLE_BODY.html) -   [`READ TABLE itab`](ABAPREAD_TABLE_OBSOLET.html)\n\n/abap-docs-standard/ABENITAB_OBSOLETE",
+      "bm25": -11.178641991369515,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_OBSOLETE",
+      "relFile": "ABENITAB_OBSOLETE.md",
+      "finalScore": 0.04098360655737705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.178641991369515,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODIFY_ITAB_RESULT",
+      "text": "ABAPMODIFY_ITAB_RESULT\n\n`... \\{ ASSIGNING <fs> [CASTING]\\ [ELSE UNASSIGN]\\}`\\\\    `|\\ \\{ REFERENCE INTO dref \\}.` These additions are possible only when modifying [single lines](ABAPMODIFY_ITAB_SINGLE.html). If modified successfully, the addition `ASSIGNING` is used to assign the line to a field symbol and the addition `REFERENCE INTO` is used to set a reference to the modified line in a reference variable.\n\n/abap-docs-standard/ABAPMODIFY_ITAB_RESULT",
+      "bm25": -10.253668829095869,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODIFY_ITAB_RESULT",
+      "relFile": "ABAPMODIFY_ITAB_RESULT.md",
+      "finalScore": 0.039473684210526314,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.253668829095869,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENUSE_OPERAND_POSITION_GUIDL",
+      "text": "ABENUSE_OPERAND_POSITION_GUIDL\n\nStatements that modify the content of system fields generally evaluate the operands first and then set the system fields. In some complex statements, however, a system field could be set first, before all operand positions are evaluated. **Do not use system fields in statements that set the fields** For reasons of robustness, do not use system fields as operands of statements that themselves set t\n\n/abap-docs-standard/ABENUSE_OPERAND_POSITION_GUIDL",
+      "bm25": -10.763459952882666,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENUSE_OPERAND_POSITION_GUIDL",
+      "relFile": "ABENUSE_OPERAND_POSITION_GUIDL.md",
+      "finalScore": 0.0390625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.763459952882666,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_KEY_SECONDARY",
+      "text": "ABENITAB_KEY_SECONDARY\n\nAccess to an internal table using a secondary key is always optimized. This allows additional optimized keys to be introduced for sorted and hashed tables as well as optimized key accesses for standard tables. The key fields of a secondary table key are only write-protected if the secondary table key is in use within a `LOOP` or a `MODIFY` statement. Otherwise, the secondary key fields are not wri\n\n/abap-docs-standard/ABENITAB_KEY_SECONDARY",
+      "bm25": -10.18799865983567,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_KEY_SECONDARY",
+      "relFile": "ABENITAB_KEY_SECONDARY.md",
+      "finalScore": 0.0379746835443038,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.18799865983567,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_SHORT_FORMS",
+      "text": "ABENITAB_SHORT_FORMS\n\n`[READ TABLE](ABAPREAD_TABLE.html) itab [table_key](ABAPREAD_TABLE_KEY.html)|[free_key](ABAPREAD_TABLE_FREE.html)|[index](ABAPREAD_TABLE_INDEX.html).`\\\\ `[LOOP AT](ABAPLOOP_AT_ITAB.html) itab [[cond](ABAPLOOP_AT_ITAB_COND.html)].`\\\\ `[INSERT](ABAPINSERT_ITAB.html)\\ [itab_position](ABAPINSERT_ITAB_POSITION.html)\\ [[result](ABAPINSERT_ITAB_RESULT.html)].`\\\\\n\n/abap-docs-standard/ABENITAB_SHORT_FORMS",
+      "bm25": -10.673371232608606,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_SHORT_FORMS",
+      "relFile": "ABENITAB_SHORT_FORMS.md",
+      "finalScore": 0.03731343283582089,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.673371232608606,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMETHODS_FOR_RAP_BEHV",
+      "text": "ABAPMETHODS_FOR_RAP_BEHV\n\n**Handler method definitions:** **Handler method implementations:** The following list provides an overview on parameters of handler methods:\n\n/abap-docs-standard/ABAPMETHODS_FOR_RAP_BEHV",
+      "bm25": -10.650218698252976,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMETHODS_FOR_RAP_BEHV",
+      "relFile": "ABAPMETHODS_FOR_RAP_BEHV.md",
+      "finalScore": 0.036231884057971016,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.650218698252976,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODIFY_ITAB_SINGLE",
+      "text": "ABAPMODIFY_ITAB_SINGLE\n\n`[TRANSPORTING comp1 comp2 ...]`\\\\  In this variant, the statement `MODIFY` assigns the content of work area `wa` to a line specified by a table key in [`table_key`](ABAPMODIFY_ITAB_TABLE_KEY.html) or a line number in [`index`](ABAPMODIFY_ITAB_INDEX.html). `wa` is a [general expression position](ABENGENERAL_EXPR_POSITION_GLOSRY.html). `TRANSPORTING` can be used to restric\n\n/abap-docs-standard/ABAPMODIFY_ITAB_SINGLE",
+      "bm25": -10.136665575881155,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODIFY_ITAB_SINGLE",
+      "relFile": "ABAPMODIFY_ITAB_SINGLE.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.136665575881155,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDB_ACCESS_OBSOLETE",
+      "text": "ABENDB_ACCESS_OBSOLETE\n\nThe following statements are predecessors of [ABAP SQL](ABENABAP_SQL_GLOSRY.html) and are not part of it. The keywords of the obsolete access statements are based on the [processing statements for internal tables](ABENTABLE_PROCESSING_STATEMENTS.html) and not on [SQL](ABENSQL_GLOSRY.html). The statements listed here are only possible for reasons of downward compatibility and only for database tabl\n\n/abap-docs-standard/ABENDB_ACCESS_OBSOLETE",
+      "bm25": -10.450292401275815,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDB_ACCESS_OBSOLETE",
+      "relFile": "ABENDB_ACCESS_OBSOLETE.md",
+      "finalScore": 0.034722222222222224,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.450292401275815,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENEML_MODIFY_OP_U_ABEXA",
+      "text": "ABENEML_MODIFY_OP_U_ABEXA\n\nThis example demonstrates all [standard operations](ABENCRUD_GLOSRY.html) to modify and read from a simple unmanaged [RAP BO](ABENRAP_BO_GLOSRY.html). The following operations are covered: In an unmanaged RAP scenario - as opposed to managed RAP scenarios - the developer is responsible for the implementation of the standard operations. This simplified example is not a real life scenario and rather\n\n/abap-docs-standard/ABENEML_MODIFY_OP_U_ABEXA",
+      "bm25": -10.18355307159302,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENEML_MODIFY_OP_U_ABEXA",
+      "relFile": "ABENEML_MODIFY_OP_U_ABEXA.md",
+      "finalScore": 0.03375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.18355307159302,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-46-INTERNAL-TABLES",
+      "text": "ABENNEWS-46-INTERNAL-TABLES\n\nIn Release 4.6A, the following new features have been introduced in internal tables: If the line type of an internal table does not have a structure, the [pseudo component](ABENPSEUDO_COMPONENT_GLOSRY.html)\\\\ `table_line` can be used to specify or address the entire table line as the key. The previous form `TABLE LINE` is now obsolete. If a [structure](ABAPTYPES_STRUC.html) contains a component ca\n\n/abap-docs-standard/ABENNEWS-46-INTERNAL-TABLES",
+      "bm25": -10.15237461403534,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-46-INTERNAL-TABLES",
+      "relFile": "ABENNEWS-46-INTERNAL-TABLES.md",
+      "finalScore": 0.032530120481927716,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.15237461403534,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSCREEN",
+      "text": "ABENSCREEN\n\nMost components of the structure `SCREEN` from the ABAP Dictionary correspond to the properties of a screen element on a dynpro. Data objects with the data type `SCREEN` can be used as a work area in the following ABAP statements: The following table shows the components of `SCREEN`, their assignment to the field properties in the dynpro, and the possible values.\n\n/abap-docs-standard/ABENSCREEN",
+      "bm25": -10.249489795530023,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSCREEN",
+      "relFile": "ABENSCREEN.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.249489795530023,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_MOD_SIMPLE_ABEXA",
+      "text": "ABENDYNPRO_MOD_SIMPLE_ABEXA\n\nThis example demonstrates how to modify dynpro fields at runtime. The static next dynpro number of dynpro 100 is 100. The input and output fields are from the structure `DEMO_CONN` in the ABAP Dictionary. The bottom four input and output fields are assigned to the modification group `MOD`. The dynpro flow logic is as follows: PROCESS BEFORE OUTPUT. \\\\n  MODULE status\\_0100. \\\\nPROCESS AFTER INPUT.\n\n/abap-docs-standard/ABENDYNPRO_MOD_SIMPLE_ABEXA",
+      "bm25": -10.62114067075926,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_MOD_SIMPLE_ABEXA",
+      "relFile": "ABENDYNPRO_MOD_SIMPLE_ABEXA.md",
+      "finalScore": 0.03142857142857143,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.62114067075926,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_SHORTREF",
+      "text": "ABENABAP_SHORTREF\n\nOverview of all ABAP statements in alphabetical order. **This short reference is out of maintenance. There is no guarantee that the information is complete and up-to-date.** abenabap.html abenabap\\_reference.html\n\n/abap-docs-standard/ABENABAP_SHORTREF",
+      "bm25": -10.166649535257356,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_SHORTREF",
+      "relFile": "ABENABAP_SHORTREF.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.166649535257356,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-785-ITAB",
+      "text": "ABENNEWS-785-ITAB\n\nEarlier, in statements for [accessing internal tables](ABENITAB_ACCESS.html), the internal table had to be known statically. The operand had to be typed at least with `any table`. Now, this restriction is partly removed. In the statements [`INSERT`](ABAPINSERT_ITAB.html), [`APPEND`](ABAPAPPEND.html), [`COLLECT`](ABAPCOLLECT.html), [`MODIFY`](ABAPMODIFY_ITAB.html), [`DELETE`](ABAPDELETE_ITAB.html),\n\n/abap-docs-standard/ABENNEWS-785-ITAB",
+      "bm25": -10.511063335717921,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-785-ITAB",
+      "relFile": "ABENNEWS-785-ITAB.md",
+      "finalScore": 0.023943661971830985,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.511063335717921,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-71-ITAB",
+      "text": "ABENNEWS-71-ITAB\n\nFrom ABAP release 7.0, EhP2, the statements [`LOOP AT itab`](ABAPLOOP_AT_ITAB.html), [`MODIFY itab`](ABAPMODIFY_ITAB.html), and [`DELETE itab`](ABAPDELETE_ITAB.html) make it possible to specify the [`WHERE`](ABAPLOOP_AT_ITAB_COND.html) condition in a `cond_syntax` data object dynamically. Previously, each internal table had just one [table key](ABENTABLE_KEY_GLOSRY.html). Any search key could be e\n\n/abap-docs-standard/ABENNEWS-71-ITAB",
+      "bm25": -10.20631159493087,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-71-ITAB",
+      "relFile": "ABENNEWS-71-ITAB.md",
+      "finalScore": 0.021794871794871794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.20631159493087,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-610-KERNEL",
+      "text": "ABENNEWS-610-KERNEL\n\nThe statement [`STOP`](ABAPSTOP.html) can no longer be used outside of reports or in [dynpros](ABENDYNPRO_GLOSRY.html) called using [`CALL SCREEN`](ABAPCALL_SCREEN.html). Such actions previously produced a runtime error or, in rarer cases, a non-traceable program flow. The addition [`ON ROLLBACK`](ABAPPERFORM.html) is now available for subroutines, similar to `PERFORM ... ON COMMIT`. This stops `F\n\n/abap-docs-standard/ABENNEWS-610-KERNEL",
+      "bm25": -10.160704119603254,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-610-KERNEL",
+      "relFile": "ABENNEWS-610-KERNEL.md",
+      "finalScore": 0.020731707317073172,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.160704119603254,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.7
+      }
+    }
+  ]
+}
