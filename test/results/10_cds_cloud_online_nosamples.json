@@ -1,0 +1,809 @@
+{
+  "meta": {
+    "query": "CDS view parameters",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:18:44.357Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SELECT_PARAMETERS_V2",
+      "text": "ABENCDS_SELECT_PARAMETERS_V2\n\n`... ( pname1 : act1, pname2 : act2, ... ) ...` Passes actual parameters `act1`, `act2`, ... to the [input parameters](ABENCDS_F1_PARAM.html)\\\\ `pname1`, `pname2`, ... of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). The following can be specified for actual parameters:\n\n/abap-docs-cloud/ABENCDS_SELECT_PARAMETERS_V2",
+      "bm25": -7.837510389081017,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SELECT_PARAMETERS_V2",
+      "relFile": "ABENCDS_SELECT_PARAMETERS_V2.md",
+      "finalScore": 0.07377049180327869,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.837510389081017,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SELECT_PARAMETERS_V1",
+      "text": "ABENCDS_SELECT_PARAMETERS_V1\n\n`... ( pname1 : act1, pname2 : act2, ... ) ...` Passes actual parameters `act1`, `act2`, ... to the [input parameters](ABENCDS_F1_PARAM.html)\\\\ `pname1`, `pname2`, ... of a [CDS entity](ABENCDS_ENTITY_GLOSRY.html). The following can be specified for actual parameters:\n\n/abap-docs-cloud/ABENCDS_SELECT_PARAMETERS_V1",
+      "bm25": -7.792266738276873,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SELECT_PARAMETERS_V1",
+      "relFile": "ABENCDS_SELECT_PARAMETERS_V1.md",
+      "finalScore": 0.07258064516129031,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.792266738276873,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_F1_ANNOTATE_VIEW_PARA_LIST",
+      "text": "ABENCDS_F1_ANNOTATE_VIEW_PARA_LIST\n\nSpecifies annotations for the following parameters: The parameters in a [CDS metadata extension](ABENCDS_METADATA_EXTENSION_GLOSRY.html) introduced using [`ANNOTATE`](ABENCDS_F1_ANNOTATE_VIEW.html). A comma-separated list `pname1`, `pname2`, ... prefixed with annotations `@parameter_annot` can be specified after `PARAMETERS`. There must not be comma after the last element of the list. Each paramet\n\n/abap-docs-cloud/ABENCDS_F1_ANNOTATE_VIEW_PARA_LIST",
+      "bm25": -7.741498517185572,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_F1_ANNOTATE_VIEW_PARA_LIST",
+      "relFile": "ABENCDS_F1_ANNOTATE_VIEW_PARA_LIST.md",
+      "finalScore": 0.06716417910447761,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.741498517185572,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PARAMETER_LIST_V1",
+      "text": "ABENCDS_PARAMETER_LIST_V1\n\nDefines [CDS parameters](ABENCDS_PARAMETER_GLOSRY.html)\\\\ [`parameter1`](ABENCDS_F1_PARAM.html), [`parameter2`](ABENCDS_F1_PARAM.html), ... as input parameters of a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html) in a comma-separated list. An input parameter called `pname` can be used as an operand in the following places in the [`SELECT`](ABENCDS_SELECT_STATEMENT_V1.html) statement\n\n/abap-docs-cloud/ABENCDS_PARAMETER_LIST_V1",
+      "bm25": -7.783499644563207,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PARAMETER_LIST_V1",
+      "relFile": "ABENCDS_PARAMETER_LIST_V1.md",
+      "finalScore": 0.06349206349206349,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.783499644563207,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PARAMETER_LIST_V2",
+      "text": "ABENCDS_PARAMETER_LIST_V2\n\nDefines [CDS parameters](ABENCDS_PARAMETER_GLOSRY.html)\\\\ [`parameter1`](ABENCDS_F1_PARAM.html), [`parameter2`](ABENCDS_F1_PARAM.html), ... as input parameters of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html) in a comma-separated list. An input parameter called `pname` can be accessed using the syntax `$parameters.pname`. A parameter must be typed with an elementary data type. All data types li\n\n/abap-docs-cloud/ABENCDS_PARAMETER_LIST_V2",
+      "bm25": -7.761197239614225,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PARAMETER_LIST_V2",
+      "relFile": "ABENCDS_PARAMETER_LIST_V2.md",
+      "finalScore": 0.0625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.761197239614225,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PARAMETER_LIST_APV",
+      "text": "ABENCDS_PARAMETER_LIST_APV\n\nDefines [CDS parameters](ABENCDS_PARAMETER_GLOSRY.html)\\\\ [`parameter1`](ABENCDS_F1_PARAM.html), [`parameter2`](ABENCDS_F1_PARAM.html), ... as input parameters of a [CDS analytical projection view](ABENCDS_ANALYTICAL_PV_GLOSRY.html) in a comma-separated list. An input parameter called `pname` can be accessed using the syntax `$parameters.pname`. It can be used as an operand in the following places\n\n/abap-docs-cloud/ABENCDS_PARAMETER_LIST_APV",
+      "bm25": -7.7597922291535735,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PARAMETER_LIST_APV",
+      "relFile": "ABENCDS_PARAMETER_LIST_APV.md",
+      "finalScore": 0.06153846153846154,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.7597922291535735,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_TYPING",
+      "text": "ABENCDS_TYPING\n\n`... dtype | data_element | cds_type  ...` Types elements or parameters of [CDS entities](ABENCDS_ENTITY_GLOSRY.html) and [aspects](ABENCDS_ASPECTS.html) in [CDS DDL](ABENCDS_DDL_GLOSRY.html). The following is typed: Typing can be specified as follows:\n\n/abap-docs-cloud/ABENCDS_TYPING",
+      "bm25": -7.742643269893708,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_TYPING",
+      "relFile": "ABENCDS_TYPING.md",
+      "finalScore": 0.06060606060606061,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.742643269893708,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PARAMETER_V2",
+      "text": "ABENCDS_PARAMETER_V2\n\n`... $parameters.pname ...` Specifies an input parameter `pname` from the parameter list [`parameter_list`](ABENCDS_PARAMETER_LIST_V2.html) in an operand position of a [`SELECT` statement](ABENCDS_SELECT_STATEMENT_V2.html) of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). The name of the parameter `pname` must be prefixed by `$parameters.`.\n\n/abap-docs-cloud/ABENCDS_PARAMETER_V2",
+      "bm25": -7.714685945012013,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PARAMETER_V2",
+      "relFile": "ABENCDS_PARAMETER_V2.md",
+      "finalScore": 0.058823529411764705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.714685945012013,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PARAMETER_V1",
+      "text": "ABENCDS_PARAMETER_V1\n\n`... :pname|$parameters.pname ...` Specifies an input parameter `pname` from the parameter list [`parameter_list`](ABENCDS_PARAMETER_LIST_V1.html) in an operand position of a [`SELECT` statement](ABENCDS_SELECT_STATEMENT_V1.html) of a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). The name of the parameter `pname` must be prefixed by a colon (`:`) or `$parameters.`.\n\n/abap-docs-cloud/ABENCDS_PARAMETER_V1",
+      "bm25": -7.6776624662689725,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PARAMETER_V1",
+      "relFile": "ABENCDS_PARAMETER_V1.md",
+      "finalScore": 0.05714285714285714,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.6776624662689725,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_F1_PARAM",
+      "text": "ABENCDS_F1_PARAM\n\nDefines a `CDS parameter` called `pname` in one of the following: The name `pname` must comply with the naming rules for [names](ABENCDS_GENERAL_SYNTAX_RULES.html). Furthermore, `pname` cannot contain any slash (/) characters and cannot be a reserved name in ABAP Dictionary. The name `pname` must be unique and be located in the namespace of the elements and exposed CDS associations of the current\n\n/abap-docs-cloud/ABENCDS_F1_PARAM",
+      "bm25": -7.675726181634685,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_F1_PARAM",
+      "relFile": "ABENCDS_F1_PARAM.md",
+      "finalScore": 0.056338028169014086,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.675726181634685,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_TIME_FUNCTIONS_V1",
+      "text": "ABENCDS_TIME_FUNCTIONS_V1\n\n`... TIMS_IS_VALID(time) ...` In a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html), these functions execute operations with arguments of the built-in data type [`TIMS`](ABENDDIC_BUILTIN_TYPES.html). The functions have [positional parameters](ABENPOSITIONAL_PARAMETER_GLOSRY.html) to which arguments need to be assigned when called. There are currently no optional parameters. Suitable f\n\n/abap-docs-cloud/ABENCDS_TIME_FUNCTIONS_V1",
+      "bm25": -7.638194980583296,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_TIME_FUNCTIONS_V1",
+      "relFile": "ABENCDS_TIME_FUNCTIONS_V1.md",
+      "finalScore": 0.0547945205479452,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.638194980583296,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DEFINE_VIEW_AS_ANALYTICAL",
+      "text": "ABENCDS_DEFINE_VIEW_AS_ANALYTICAL\n\nDefines a [CDS analytical projection view](ABENCDS_ANALYTICAL_PV_GLOSRY.html) with the name `analytical_query` in [CDS DDL](ABENCDS_DDL_GLOSRY.html). A CDS analytical projection view defines an analytical query in its [`element_list`](ABENCDS_ELEMENT_LIST_APV.html). The [projected entity](ABENCDS_PV_PROJECTED_ENTITY_GLOSRY.html)\\\\ `cds_entity` can be an [analytical cube view](ABENCDS_ANALYTICAL_CU\n\n/abap-docs-cloud/ABENCDS_DEFINE_VIEW_AS_ANALYTICAL",
+      "bm25": -7.5030015037956685,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DEFINE_VIEW_AS_ANALYTICAL",
+      "relFile": "ABENCDS_DEFINE_VIEW_AS_ANALYTICAL.md",
+      "finalScore": 0.05421686746987952,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.5030015037956685,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_1937921420_ANNO",
+      "text": "ABENCDS_1937921420_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. An input parameter can be annotated exactly once with the annotation `Environment.systemField`. If the CDS entity is used as a [data source](ABAPSELECT_DATA_SOURCE.html) of a [`SELECT`]\n\n/abap-docs-cloud/ABENCDS_1937921420_ANNO",
+      "bm25": -7.619649622959224,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_1937921420_ANNO",
+      "relFile": "ABENCDS_1937921420_ANNO.md",
+      "finalScore": 0.05333333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.619649622959224,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENABAP_SQL_PARAMETERS",
+      "text": "ABENABAP_SQL_PARAMETERS\n\n`... ( pname1 = act1, pname2 = act2, ... ) ...` Specifies actual parameters `act1`, `act2`, ... for input parameters [`pname1`](ABENCDS_F1_PARAM.html), [`pname2`](ABENCDS_F1_PARAM.html), ... of a [CDS entity](ABENCDS_ENTITY_GLOSRY.html) in a parenthesized comma-separated list. Parameters can be passed to [CDS persistent entities](ABENCDS_SQL_ENTITY_GLOSRY.html) in the following positions in ABAP S\n\n/abap-docs-cloud/ABENABAP_SQL_PARAMETERS",
+      "bm25": -7.601404332181369,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENABAP_SQL_PARAMETERS",
+      "relFile": "ABENABAP_SQL_PARAMETERS.md",
+      "finalScore": 0.05194805194805195,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.601404332181369,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DEFINE_SCALAR_FUNCTION",
+      "text": "ABENCDS_DEFINE_SCALAR_FUNCTION\n\nDefines a CDS scalar function definition `ScalarFunction` as a [CDS scalar function](ABENCDS_SCALAR_FUNCTION_GLOSRY.html). The name `ScalarFunction` must follow the naming conventions for [dictionary types](ABENDDIC_TYPES_NAMES.html). The following additional rules apply: Optionally, a list of [input parameters](ABENCDS_PARAMETER_GLOSRY.html)\\\\ `pname1`, `pname2`, ... can be declared using the add\n\n/abap-docs-cloud/ABENCDS_DEFINE_SCALAR_FUNCTION",
+      "bm25": -7.599805933372672,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DEFINE_SCALAR_FUNCTION",
+      "relFile": "ABENCDS_DEFINE_SCALAR_FUNCTION.md",
+      "finalScore": 0.05063291139240506,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.599805933372672,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DATA_SOURCE_V2",
+      "text": "ABENCDS_DATA_SOURCE_V2\n\nDefines a data source of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). A data source can be a [DDIC database table](ABENDDIC_DATABASE_TABLES.html), a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html), a [CDS table function](ABENCDS_TABLE_FUNCTION_GLOSRY.html), a [CDS hierarchy](ABENCDS_HIERARCHY_GLOSRY.html), or a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). Defines the CDS view\n\n/abap-docs-cloud/ABENCDS_DATA_SOURCE_V2",
+      "bm25": -7.590318563426197,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DATA_SOURCE_V2",
+      "relFile": "ABENCDS_DATA_SOURCE_V2.md",
+      "finalScore": 0.05,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.590318563426197,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DATA_SOURCE_V1",
+      "text": "ABENCDS_DATA_SOURCE_V1\n\nDefines a data source of a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). A data source can be a DDIC database table defined in ABAP Dictionary a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html), a [CDS table function](ABENCDS_TABLE_FUNCTION_GLOSRY.html), a [CDS hierarchy](ABENCDS_HIERARCHY_GLOSRY.html), or a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). For an overv\n\n/abap-docs-cloud/ABENCDS_DATA_SOURCE_V1",
+      "bm25": -7.55059638419078,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DATA_SOURCE_V1",
+      "relFile": "ABENCDS_DATA_SOURCE_V1.md",
+      "finalScore": 0.04938271604938271,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.55059638419078,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PROJ_VIEW_PATH_EXPR",
+      "text": "ABENCDS_PROJ_VIEW_PATH_EXPR\n\nA path expression in the CDS DDL is a sequence of CDS associations separated by periods (.) whose names are specified using `assoc1, assoc2,` and so on. The rules for path expressions in CDS projection views are similar to path expressions in CDS view entities, see topic [CDS DDL - CDS View Entity,  `path_expr`](ABENCDS_PATH_EXPRESSION_V2.html) with the following differences: -   The filter of a p\n\n/abap-docs-cloud/ABENCDS_PROJ_VIEW_PATH_EXPR",
+      "bm25": -7.367381422409707,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PROJ_VIEW_PATH_EXPR",
+      "relFile": "ABENCDS_PROJ_VIEW_PATH_EXPR.md",
+      "finalScore": 0.04736842105263158,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.367381422409707,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SCALAR_TYPING",
+      "text": "ABENCDS_SCALAR_TYPING\n\nThe input parameters of [SQL-based scalar functions](ABENCDS_SQL_SCALAR_GLOSRY.html) can be typed as follows: The return parameter of an SQL-based scalar function can be typed as follows: The following example demonstrates the definition, implementation, and use of an SQL-based scalar function with input parameters.\n\n/abap-docs-cloud/ABENCDS_SCALAR_TYPING",
+      "bm25": -7.448793336339198,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SCALAR_TYPING",
+      "relFile": "ABENCDS_SCALAR_TYPING.md",
+      "finalScore": 0.046511627906976744,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.448793336339198,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-788-ABAP_CDS",
+      "text": "ABENNEWS-788-ABAP_CDS\n\nIn [CDS view entities](ABENCDS_V2_VIEW_GLOSRY.html), the [`SUBSTRING`](ABENCDS_SQL_FUNCTIONS_CHARACTER_V2.html) function has been enhanced. It now accepts not only literals, but also fields, parameters, expressions, and built-in functions as arguments for the parameters `pos` and `len`. abenabap.html abennews.html abennews-78.html abennews-788.html\n\n/abap-docs-cloud/ABENNEWS-788-ABAP_CDS",
+      "bm25": -7.695867828962569,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-788-ABAP_CDS",
+      "relFile": "ABENNEWS-788-ABAP_CDS.md",
+      "finalScore": 0.0463768115942029,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.695867828962569,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SESSION_VAR_BUILTIN_V2",
+      "text": "ABENCDS_SESSION_VAR_BUILTIN_V2\n\n`... $session.vname ...` Specifies a built-in [session variable](ABENSESSION_VARIABLE_GLOSRY.html)\\\\ `vname` in an operand position in a [`SELECT` statement](ABENCDS_SELECT_STATEMENT_V2.html) of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). The variable must be prefixed by `$session.`. Session variables have a predefined name and provide context-dependent information. The following built-in se\n\n/abap-docs-cloud/ABENCDS_SESSION_VAR_BUILTIN_V2",
+      "bm25": -7.443726397478318,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SESSION_VAR_BUILTIN_V2",
+      "relFile": "ABENCDS_SESSION_VAR_BUILTIN_V2.md",
+      "finalScore": 0.04597701149425287,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.443726397478318,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PARAMETER_PASSING",
+      "text": "ABENCDS_PARAMETER_PASSING\n\n`... ( pname1 => act1, pname2 => act2, ... ) ...` Passes the actual parameters `act1`, `act2`, ... to the input parameters `pname1`, `pname2`, ... of an [SQL-based scalar function](ABENCDS_SQL_SCALAR_GLOSRY.html). The following can be specified as actual parameters:\n\n/abap-docs-cloud/ABENCDS_PARAMETER_PASSING",
+      "bm25": -7.441581191161659,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PARAMETER_PASSING",
+      "relFile": "ABENCDS_PARAMETER_PASSING.md",
+      "finalScore": 0.045454545454545456,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.441581191161659,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_USE_ENUM_TYPE",
+      "text": "ABENCDS_USE_ENUM_TYPE\n\nThis section summarizes the use of [CDS elements](ABENCDS_ELEMENT_GLOSRY.html) with an enumerated type. The following enumerated operands are available: The technical storage type of the content of an operand of an enumerated element is the [base type](ABENBASE_TYPE_GLOSRY.html) of the CDS enumerated type. However, in the code element information in ADT or in the debugger, the data type of CDS enu\n\n/abap-docs-cloud/ABENCDS_USE_ENUM_TYPE",
+      "bm25": -7.416068755051823,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_USE_ENUM_TYPE",
+      "relFile": "ABENCDS_USE_ENUM_TYPE.md",
+      "finalScore": 0.0449438202247191,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.416068755051823,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DEFINE_VIEW_ENTITY",
+      "text": "ABENCDS_DEFINE_VIEW_ENTITY\n\nDefines a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html) in the [CDS DDL](ABENCDS_DDL_GLOSRY.html). A CDS view entity is implemented using a [`select_statement`](ABENCDS_SELECT_STATEMENT_V2.html). The name of the CDS view entity is defined after the `DEFINE VIEW ENTITY` statement. The usual rules for ABAP Dictionary views apply to this name and it is not case-sensitive (it is transformed internall\n\n/abap-docs-cloud/ABENCDS_DEFINE_VIEW_ENTITY",
+      "bm25": -7.308754337691713,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DEFINE_VIEW_ENTITY",
+      "relFile": "ABENCDS_DEFINE_VIEW_ENTITY.md",
+      "finalScore": 0.04455445544554455,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.308754337691713,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 3.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-792-ABAP_CDS",
+      "text": "ABENNEWS-792-ABAP_CDS\n\nThe ABAP annotation [`Environment.sql.passValue`](ABENCDS_F1_PARAMETER_ANNOTATIONS.html) is now also available for [CDS parameters](ABENCDS_PARAMETER_GLOSRY.html) in CDS view entities, CDS projection views, and CDS hierarchies. The annotation scope has been enhanced. A new ABAP annotation is available in CDS view entities, CDS projection views, and CDS hierarchies: [`Environment.sql.passValueForCl\n\n/abap-docs-cloud/ABENNEWS-792-ABAP_CDS",
+      "bm25": -7.646092676567929,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-792-ABAP_CDS",
+      "relFile": "ABENNEWS-792-ABAP_CDS.md",
+      "finalScore": 0.044444444444444446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.646092676567929,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SESSION_VAR_APPLICATION_V2",
+      "text": "ABENCDS_SESSION_VAR_APPLICATION_V2\n\n`... $session.vname ...` Specifies an application [session variable](ABENSESSION_VARIABLE_GLOSRY.html)\\\\ `vname` in an operand position in a [`SELECT` statement](ABENCDS_SELECT_STATEMENT_V2.html) of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). The variable must be prefixed by `$session.`. Application session variables are required for specific applications and they can be set by dedicated sys\n\n/abap-docs-cloud/ABENCDS_SESSION_VAR_APPLICATION_V2",
+      "bm25": -7.4146432739097365,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SESSION_VAR_APPLICATION_V2",
+      "relFile": "ABENCDS_SESSION_VAR_APPLICATION_V2.md",
+      "finalScore": 0.044444444444444446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.4146432739097365,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_TIMEZONE_FUNCTIONS_V1",
+      "text": "ABENCDS_TIMEZONE_FUNCTIONS_V1\n\n`... ABAP_SYSTEM_TIMEZONE(clnt,on_error)    | ABAP_USER_TIMEZONE(user,clnt,on_error) ...` In a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html), these functions return the client-dependent [system time zone](ABENSYSTEM_TIME_ZONE_GLOSRY.html) and the user-dependent [user time zone](ABENUSER_TIME_ZONE_GLOSRY.html) of the current AS ABAP. The functions have [positional parameters](ABENPO\n\n/abap-docs-cloud/ABENCDS_TIMEZONE_FUNCTIONS_V1",
+      "bm25": -7.4134007429041056,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_TIMEZONE_FUNCTIONS_V1",
+      "relFile": "ABENCDS_TIMEZONE_FUNCTIONS_V1.md",
+      "finalScore": 0.04395604395604396,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.4134007429041056,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSELECT_CDS_PARA_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates a read performed on a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html) using parameter passing. The view `demo_cds_param_view_entity` used has the following CDS source code with a [list of input parameters](ABENCDS_PARAMETER_LIST_V2.html): Those rows are read from the DDIC database table `SPFLI` for which the distance in the transferred unit lies between the two passed valu\n\n/abap-docs-cloud/ABENSELECT_CDS_PARA_ABEXA",
+      "bm25": -7.633988880532358,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSELECT_CDS_PARA_ABEXA",
+      "relFile": "ABENSELECT_CDS_PARA_ABEXA.md",
+      "finalScore": 0.043243243243243246,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.633988880532358,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_ASPECT_ELEMENT",
+      "text": "ABENCDS_ASPECT_ELEMENT\n\nDefines an element of a [`element list`](ABENCDS_DDL_ASPECT_ELEMENT_LIST.html) of a CDS DDL aspect. The names of the elements in an `element` list must be unique and they are in the same namespace as the [parameters](ABENCDS_PARAMETER_LIST_V2.html) and [element list](ABENCDS_SELECT_LIST_ENTRY_V2.html) of the view that the CDS DDL aspect is to be included in. The types available in CDS aspects are\n\n/abap-docs-cloud/ABENCDS_ASPECT_ELEMENT",
+      "bm25": -7.388706442624355,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_ASPECT_ELEMENT",
+      "relFile": "ABENCDS_ASPECT_ELEMENT.md",
+      "finalScore": 0.043010752688172046,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.388706442624355,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_TIMEZONE_FUNCTIONS_V2",
+      "text": "ABENCDS_TIMEZONE_FUNCTIONS_V2\n\n`... ABAP_SYSTEM_TIMEZONE(clnt,on_error)    | ABAP_USER_TIMEZONE(user,clnt,on_error) ...` In a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html), these functions return the client-dependent [system time zone](ABENSYSTEM_TIME_ZONE_GLOSRY.html) and the user-dependent [user time zone](ABENUSER_TIME_ZONE_GLOSRY.html) of the current AS ABAP. The functions have [positional parameters](ABENPOSITIONAL_PARAME\n\n/abap-docs-cloud/ABENCDS_TIMEZONE_FUNCTIONS_V2",
+      "bm25": -7.3868360954216445,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_TIMEZONE_FUNCTIONS_V2",
+      "relFile": "ABENCDS_TIMEZONE_FUNCTIONS_V2.md",
+      "finalScore": 0.0425531914893617,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.3868360954216445,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-757-ABAP_CDS",
+      "text": "ABENNEWS-757-ABAP_CDS\n\nIn [CDS view entities](ABENCDS_V2_VIEW_GLOSRY.html), the addition [`ELSE NULL`](ABENCDS_CASE_EXPRESSION_V2.html) is available in simple and complex [case distinctions](ABENCDS_CASE_EXPRESSION_V2.html). It defines the [null value](ABENNULL_VALUE_GLOSRY.html) as return value of the `ELSE` branch. New [casting options](ABENCDS_CAST_EXPRESSION_V2.html) have been added in [CDS view entities](ABENCDS_V2\n\n/abap-docs-cloud/ABENNEWS-757-ABAP_CDS",
+      "bm25": -7.603207669556078,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-757-ABAP_CDS",
+      "relFile": "ABENNEWS-757-ABAP_CDS.md",
+      "finalScore": 0.042105263157894736,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.603207669556078,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_CONV_FUNC_UNIT_CURR_V2",
+      "text": "ABENCDS_CONV_FUNC_UNIT_CURR_V2\n\n`... UNIT_CONVERSION(    quantity           => arg1,                          source_unit        => arg2,                          target_unit        => arg3[,                          client             => arg4][,                          error_handling     => arg5])    | CURRENCY_CONVERSION(amount             => arg1,                          source_currency    => arg2,\n\n/abap-docs-cloud/ABENCDS_CONV_FUNC_UNIT_CURR_V2",
+      "bm25": -7.34078708286426,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_CONV_FUNC_UNIT_CURR_V2",
+      "relFile": "ABENCDS_CONV_FUNC_UNIT_CURR_V2.md",
+      "finalScore": 0.041666666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.34078708286426,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-786-ABAP_CDS",
+      "text": "ABENNEWS-786-ABAP_CDS\n\nIn [CDS view entities](ABENCDS_V2_VIEW_GLOSRY.html), [casting](ABENCDS_CAST_EXPRESSION_V2.html) from data type `FLTP` into data types `DEC`, `CURR`, `QUAN`, `INT1`, `INT2`, `INT4`, `INT8`, `DECFLOAT16`, and `DECFLOAT34` is now possible. In [CDS view entities](ABENCDS_V2_VIEW_GLOSRY.html), two new [application session variables](ABENCDS_SESSION_VAR_APPLICATION_V2.html) are available: A new type of\n\n/abap-docs-cloud/ABENNEWS-786-ABAP_CDS",
+      "bm25": -7.599999634420202,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-786-ABAP_CDS",
+      "relFile": "ABENNEWS-786-ABAP_CDS.md",
+      "finalScore": 0.041025641025641026,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.599999634420202,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DCL_ROLE_PROJ_RULE",
+      "text": "ABENCDS_DCL_ROLE_PROJ_RULE\n\n`GRANT SELECT ON cds_entity_projection    AS PROJECTION ON cds_entity_base      FALLBACK ASSOCIATION fallback_association;` Creates an access rule for the [CDS projection view](ABENCDS_PROJECTION_VIEW_GLOSRY.html)\\\\ `cds_entity_projection` which is a projection on the base view `cds_entity_base`. `cds_entity_projection` must be a [CDS transactional query](ABENCDS_TRANSACTIONAL_PV_GLOSRY.html), i.e\n\n/abap-docs-cloud/ABENCDS_DCL_ROLE_PROJ_RULE",
+      "bm25": -7.327085103093132,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DCL_ROLE_PROJ_RULE",
+      "relFile": "ABENCDS_DCL_ROLE_PROJ_RULE.md",
+      "finalScore": 0.04081632653061224,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.327085103093132,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SESSION_VARIABLE_V1",
+      "text": "ABENCDS_SESSION_VARIABLE_V1\n\n`... $session.vname ...` Specifies a [session variable](ABENSESSION_VARIABLE_GLOSRY.html)\\\\ `vname` in an operand position in a [`SELECT` statement](ABENCDS_SELECT_STATEMENT_V1.html) of a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). The variable must be prefixed by `$session.`. The prefix and the variable are case-sensitive. `$session.vname`, `$Session.Vname`, and `$SESSION.VNAME\n\n/abap-docs-cloud/ABENCDS_SESSION_VARIABLE_V1",
+      "bm25": -7.323929743672069,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SESSION_VARIABLE_V1",
+      "relFile": "ABENCDS_SESSION_VARIABLE_V1.md",
+      "finalScore": 0.04040404040404041,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.323929743672069,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PATH_EXPR_APV",
+      "text": "ABENCDS_PATH_EXPR_APV\n\nA [path expression](ABENPATH_EXPRESSION_GLOSRY.html) in the [CDS DDL](ABENCDS_DDL_GLOSRY.html) is a sequence of CDS associations separated by periods (.) whose names are specified using `assoc1, assoc2,` and so on. In analytical projection views, path expressions are only supported in the following scenarios: Fields included via path expressions can be texts, display attributes, or texts belonging\n\n/abap-docs-cloud/ABENCDS_PATH_EXPR_APV",
+      "bm25": -7.321959972021352,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PATH_EXPR_APV",
+      "relFile": "ABENCDS_PATH_EXPR_APV.md",
+      "finalScore": 0.04,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.321959972021352,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PATH_EXPRESSION_V1",
+      "text": "ABENCDS_PATH_EXPRESSION_V1\n\nSpecifies an [SQL path expression](ABENSQL_PATH_EXPRESSION_GLOSRY.html) that can be used in a `SELECT` statement of a [CDS DDIC-based view (obsolete)](ABENCDS_V1_VIEW_GLOSRY.html). A path expression of the [CDS DDL](ABENCDS_DDL_GLOSRY.html) is a sequence of [CDS associations](ABENCDS_ASSOCIATION_GLOSRY.html) separated by periods (`.`) whose names are specified using `_assoc1`, `_assoc2`, and so on\n\n/abap-docs-cloud/ABENCDS_PATH_EXPRESSION_V1",
+      "bm25": -7.298150641033784,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PATH_EXPRESSION_V1",
+      "relFile": "ABENCDS_PATH_EXPRESSION_V1.md",
+      "finalScore": 0.0392156862745098,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.298150641033784,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSELECT_UNION_CDS_PARA_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates a union of a CDS view with input parameters. This example uses two `SELECT` statements joined using [`UNION`](ABAPUNION.html) to access the following CDS view entity. This fills the input parameter `p_unit` with different values.\n\n/abap-docs-cloud/ABENSELECT_UNION_CDS_PARA_ABEXA",
+      "bm25": -7.510099228281406,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSELECT_UNION_CDS_PARA_ABEXA",
+      "relFile": "ABENSELECT_UNION_CDS_PARA_ABEXA.md",
+      "finalScore": 0.039024390243902446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.510099228281406,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_PATH_EXPRESSION_V2",
+      "text": "ABENCDS_PATH_EXPRESSION_V2\n\nSpecifies an [SQL path expression](ABENSQL_PATH_EXPRESSION_GLOSRY.html) that can be used in a `SELECT` statement of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). A path expression of the [CDS DDL](ABENCDS_DDL_GLOSRY.html) is a sequence of [CDS associations](ABENCDS_ASSOCIATION_GLOSRY.html) separated by periods (`.`) whose names are specified using `_assoc1`, `_assoc2`, and so on. If the first\n\n/abap-docs-cloud/ABENCDS_PATH_EXPRESSION_V2",
+      "bm25": -7.292416484716263,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_PATH_EXPRESSION_V2",
+      "relFile": "ABENCDS_PATH_EXPRESSION_V2.md",
+      "finalScore": 0.038834951456310676,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.292416484716263,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_SELECT_LIST_ENTRY_V2",
+      "text": "ABENCDS_SELECT_LIST_ENTRY_V2\n\nSpecifies individual elements in the [`SELECT` list](ABENCDS_SELECT_LIST_V2.html) of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html). The names of the elements in a `SELECT` list must be unique and they are in the same namespace as the [parameters](ABENCDS_PARAMETER_LIST_V2.html) of the view. Elements with the type `CHAR` can have a maximum of 1333 characters. Elements with the type `LRAW` or `LC\n\n/abap-docs-cloud/ABENCDS_SELECT_LIST_ENTRY_V2",
+      "bm25": -7.28553552004542,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_SELECT_LIST_ENTRY_V2",
+      "relFile": "ABENCDS_SELECT_LIST_ENTRY_V2.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.28553552004542,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSELECT_EXCEPT_CDS_PARA_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates a difference of a CDS view with input parameters. This example uses a [common table expression](ABENCOMMON_TABLE_EXPRESSION_GLOSRY.html) and two `SELECT` statements joined using [`EXCEPT`](ABAPUNION.html) to access the following CDS view entity. This fills the input parameter `p_unit` with different values.\n\n/abap-docs-cloud/ABENSELECT_EXCEPT_CDS_PARA_ABEXA",
+      "bm25": -7.456343429422037,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSELECT_EXCEPT_CDS_PARA_ABEXA",
+      "relFile": "ABENSELECT_EXCEPT_CDS_PARA_ABEXA.md",
+      "finalScore": 0.0380952380952381,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.456343429422037,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_1253171795-_ANNO",
+      "text": "ABENCDS_1253171795-_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. To enable Analytics, there has to be defined CDS views which represent the Analytical Provider and CDS view, which represent analytical queries. Analytical queries must select from an A\n\n/abap-docs-cloud/ABENCDS_1253171795-_ANNO",
+      "bm25": -7.283913787839515,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_1253171795-_ANNO",
+      "relFile": "ABENCDS_1253171795-_ANNO.md",
+      "finalScore": 0.0380952380952381,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.283913787839515,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSELECT_INTER_CDS_PARA_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates an intersection of a CDS view with input parameters. This example uses a [common table expression](ABENCOMMON_TABLE_EXPRESSION_GLOSRY.html) and two `SELECT` statements joined using [`INTERSECT`](ABAPUNION.html) to access the following CDS view entity. This fills the input parameter `p_unit` with different values.\n\n/abap-docs-cloud/ABENSELECT_INTER_CDS_PARA_ABEXA",
+      "bm25": -7.4553643554913664,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSELECT_INTER_CDS_PARA_ABEXA",
+      "relFile": "ABENSELECT_INTER_CDS_PARA_ABEXA.md",
+      "finalScore": 0.037647058823529415,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.4553643554913664,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "sap-help-18988d1b1f4e494bb5a33b3186aff3e7",
+      "text": "Set the Entity Parameters for Core Data Services (CDS) and External Views\n\nNote  <b>CDS</b> <b>views</b> with <b>parameters</b> are not supported by all databases. ... with <b>parameters</b> or\n                                 \n\t<b>CDS</b> <b>views</b> with <b>parameters</b>\n\n\n                              need to provide values for these <b>parameters</b> before selection. ... The <b>CDS</b> <b>view</b> <b>parameters</b> can be used since SAP NetWeaver 7.40 SP08. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/23969e5c00e1475283553381af0b1a12/18988d1b1f4e494bb5a33b3186aff3e7.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/23969e5c00e1475283553381af0b1a12/18988d1b1f4e494bb5a33b3186aff3e7.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-aa41009a2c654bbfb12b86a0aa6e3afe",
+      "text": "Defining Parameters in a Custom CDS View\n\nDefining <b>Parameters</b> in a Custom <b>CDS</b> <b>View</b>\nGet an overview of how to display, create, and edit <b>CDS</b> <b>views</b> with\n<b>parameters</b>. ... To display a <b>CDS</b> <b>view</b> with <b>parameters</b>, open the <b>CDS</b> <b>view</b> and click the\nPreview button. A popover is displayed with\npredefined <b>parameters</b>. Click the Apply button to <b>view</b> the\ndata. ... Prerequisites\n\n\n\n\tYou can create and edit a <b>CDS</b> <b>View</b> with <b>parameters</b> only if the underlying\nprimary data source of the <b>view</b> contains <b>parameters</b>. ...  — Product: SAP S/4HANA (1809 Latest)\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/1e30a6dbe1084049b914baf8f0348bbb/aa41009a2c654bbfb12b86a0aa6e3afe.html?locale=en-US&state=PRODUCTION&version=1809.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/1e30a6dbe1084049b914baf8f0348bbb/aa41009a2c654bbfb12b86a0aa6e3afe.html?locale=en-US&state=PRODUCTION&version=1809.latest",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRESTRICTED_APIS_ATC_COMPA",
+      "text": "ABENRESTRICTED_APIS_ATC_COMPA\n\nThe following shows the documentation ([KTD](ABENKTD_GLOSRY.html)) of the [ATC](ABENATC_GLOSRY.html) check `API_COMPATIBILITY`: Development objects like CDS views, classes or interfaces can be released as stable APIs for a dedicated purpose. Released APIs must not be changed incompatibly, because these changes can lead to syntax errors or runtime errors in source code and objects based on these AP\n\n/abap-docs-cloud/ABENRESTRICTED_APIS_ATC_COMPA",
+      "bm25": -7.334901013732647,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRESTRICTED_APIS_ATC_COMPA",
+      "relFile": "ABENRESTRICTED_APIS_ATC_COMPA.md",
+      "finalScore": 0.03608247422680412,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.334901013732647,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "sap-help-97c5057a2302453b97e19641b0d8cbc7",
+      "text": "Exposing CDS Entities with Parameters\n\nAs a consequence, a <b>CDS</b> <b>view</b> with <b>parameters</b> has to be\n                                 \t\t\t\tmapped to two OData enttity sets - <b>parameter</b> and result entity set. ... Visible <b>Parameters</b>\n\n                              \t\t\t\n                              \t\t\t\n                              The following is an example of a <b>CDS</b> <b>view</b> with a Currency <b>parameter</b>, which has to be ... <b>Parameters</b>\n                              \t\t\t\tcan be used for calculations and data selections within a <b>CDS</b> <b>view</b>. <b>Parameter</b> values\n                              \t\t\t\tmust be supplied for each DB query. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/cc0c305d2fab47bd808adcad3ca7ee9d/97c5057a2302453b97e19641b0d8cbc7.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/cc0c305d2fab47bd808adcad3ca7ee9d/97c5057a2302453b97e19641b0d8cbc7.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-cbedc08ff4de48ffa8d04d3067ef08e7",
+      "text": "ABAP CDS Test Double Framework\n\nas code under test:\t<b>CDS</b> <b>views</b>\n\n\t<b>CDS</b> <b>views</b> with <b>parameters</b>\n\n\t<b>CDS</b> <b>views</b> with DCL\n\n\t<b>CDS</b> <b>view</b> entities\n\n\t<b>CDS</b> <b>view</b> entities with <b>parameters</b>\n\n\t<b>CDS</b> <b>view</b> entities with DCL\n\n\tProjection <b>views</b>\n\n\t<b>CDS</b> hierarchies ... ABAP Dictionary <b>views</b>\n\n\t<b>CDS</b> <b>views</b>\n\n\t<b>CDS</b> <b>views</b> with <b>parameters</b>\n\n\t<b>CDS</b> <b>view</b> entities\n\n\t<b>CDS</b> <b>view</b> entities with <b>parameters</b>\n\n\tProjection <b>views</b>\n\n\tExternal <b>views</b>\n\n\tTable functions\n\n\tSpecial <b>CDS</b> functions\n(CURRENCY_CONVERSION ... <b>CDS</b> Test Double Framework\n\nThe figure below shows an ABAP Unit test for a <b>CDS</b> <b>view</b>. The\ndependent\n<b>CDS</b> <b>Views</b> have been replaced with test double tables. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/cbedc08ff4de48ffa8d04d3067ef08e7.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/cbedc08ff4de48ffa8d04d3067ef08e7.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-750-ABAP_CDS",
+      "text": "ABENNEWS-750-ABAP_CDS\n\nThe new DDL statement [`DEFINE TABLE FUNCTION`](ABENCDS_F1_DEFINE_TABLE_FUNCTION.html) can be used to define [CDS table functions](ABENCDS_TABLE_FUNCTION_GLOSRY.html) as a new category of [CDS entities](ABENCDS_ENTITY_GLOSRY.html). In platform-specific SQL, a CDS table function is implemented in an associated [AMDP function implementation](ABENAMDP_FUNCTION_METHOD_GLOSRY.html). The following enhan\n\n/abap-docs-cloud/ABENNEWS-750-ABAP_CDS",
+      "bm25": -7.402332914140085,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-750-ABAP_CDS",
+      "relFile": "ABENNEWS-750-ABAP_CDS.md",
+      "finalScore": 0.034782608695652174,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.402332914140085,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "sap-help-9bba4e877a4d4e608eaf6738e4e3ecb6",
+      "text": "Configuring CDS view with Parameters as a Dependency\n\nConfiguring <b>CDS</b> <b>view</b> with <b>Parameters</b> as a Dependency\nTest data configuration for <b>CDS</b> <b>view</b> with <b>parameters</b> as a dependency also allows configuring different sets of test data for different\ninput <b>parameters</b> ... Sample Code\n\n&quot; Suppose the code under test has a dependency on the <b>CDS</b> <b>view</b> '/DMO/I_BOOKING_M' and suppose the <b>CDS</b> <b>view</b> has an input <b>parameter</b> named 'booking_id'. ... This allows the <b>CDS</b> dependency to return different results when invoked with different input <b>parameter</b>\ncombinations. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/9bba4e877a4d4e608eaf6738e4e3ecb6.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/9bba4e877a4d4e608eaf6738e4e3ecb6.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    }
+  ]
+}

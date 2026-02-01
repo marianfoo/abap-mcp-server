@@ -1,0 +1,804 @@
+{
+  "meta": {
+    "query": "RAP managed business object",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:32.009Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENBDL_RAP_MANAGED_BY_BOPF",
+      "text": "ABENBDL_RAP_MANAGED_BY_BOPF\n\n`managed by BOPF [...];` Defines a [BOPF-based RAP BO](ABENRAP_BOPF_BO_GLOSRY.html) in [BDL source code](ABENBDL_SOURCE_CODE_GLOSRY.html) in the [RAP BDL](ABENCDS_BDL_GLOSRY.html). A BOPF-based RAP BO is the result of migrating a [CDS-based BOPF business object](ABENCDS_BOPF_BO_GLOSRY.html) to a RAP business object. BOPF-based RAP BOs cannot be built from scratch. The [transactional buffer](ABENTR\n\n/abap-docs-standard/ABENBDL_RAP_MANAGED_BY_BOPF",
+      "bm25": -12.703918394092176,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_RAP_MANAGED_BY_BOPF",
+      "relFile": "ABENBDL_RAP_MANAGED_BY_BOPF.md",
+      "finalScore": 0.06393442622950819,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.703918394092176,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENMANAGED_RAP_BO_GLOSRY",
+      "text": "ABENMANAGED_RAP_BO_GLOSRY\n\nManaged RAP BO for short. A provisioning type of the [business object behavior](ABENRAP_BO_BEHAVIOR_GLOSRY.html) of a [RAP BO](ABENRAP_BO_GLOSRY.html). The [transactional buffer](ABENTRANSACTIONAL_BUFFER_GLOSRY.html) of a managed RAP BO is provided by the [managed RAP BO provider](ABENMANAGED_RAP_BO_PROV_GLOSRY.html). The implementation can partly be provided by an [unmanaged RAP BO provider](ABEN\n\n/abap-docs-standard/ABENMANAGED_RAP_BO_GLOSRY",
+      "bm25": -12.606133147063314,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENMANAGED_RAP_BO_GLOSRY",
+      "relFile": "ABENMANAGED_RAP_BO_GLOSRY.md",
+      "finalScore": 0.05806451612903226,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.606133147063314,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.6
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_RAP_BO",
+      "text": "ABENBDL_RAP_BO\n\nRAP business objects of the [implementation types](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html)\\\\ `managed` and `unmanaged` are realized through the same set of keywords. These keywords are listed in the following sections, structured by their position within the behavior definition. Some keywords are used differently in managed and unmanaged RAP BOs, or they are handled by the RAP framework in managed sce\n\n/abap-docs-standard/ABENBDL_RAP_BO",
+      "bm25": -12.567821957112649,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_RAP_BO",
+      "relFile": "ABENBDL_RAP_BO.md",
+      "finalScore": 0.053125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.567821957112649,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRAP_BOPF_BO_GLOSRY",
+      "text": "ABENRAP_BOPF_BO_GLOSRY\n\nBOPF-based RAP BO for short. A BOPF-based RAP BO is the result of the migration of a [CDS-based BOPF business object](ABENCDS_BOPF_BO_GLOSRY.html) to a RAP business object. Special syntax statements for BOPF-based RAP BOs are [`managed by BOPF`](ABENBDL_RAP_MANAGED_BY_BOPF.html) and [`with BOPF draft`](ABENBDL_RAP_WITH_BOPF_DRAFT.html). The [transactional buffer](ABENTRANSACTIONAL_BUFFER_GLOSRY.ht\n\n/abap-docs-standard/ABENRAP_BOPF_BO_GLOSRY",
+      "bm25": -12.592419737987044,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRAP_BOPF_BO_GLOSRY",
+      "relFile": "ABENRAP_BOPF_BO_GLOSRY.md",
+      "finalScore": 0.049206349206349205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.592419737987044,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_FOR_RAP_BOS",
+      "text": "ABENABAP_FOR_RAP_BOS\n\nThis section describes the ABAP language elements for providing and consuming [RAP business objects (RAP BOs)](ABENRAP_BO_GLOSRY.html). A RAP BO is mainly defined by a [RAP behavior definition (BDEF)](ABENCDS_BEHAVIOR_DEFINITION_GLOSRY.html). The Behavior Definition defines: The data content of a RAP BO is stored in a [transactional buffer](ABENTRANSACTIONAL_BUFFER_GLOSRY.html). The RAP BO operati\n\n/abap-docs-standard/ABENABAP_FOR_RAP_BOS",
+      "bm25": -12.413649071285702,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_FOR_RAP_BOS",
+      "relFile": "ABENABAP_FOR_RAP_BOS.md",
+      "finalScore": 0.04857142857142857,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.413649071285702,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBOPF_MAN_RAP_DRA_PROV_GLOSRY",
+      "text": "ABENBOPF_MAN_RAP_DRA_PROV_GLOSRY\n\nThe draft provider of [BOPF-based RAP BOs](ABENRAP_BOPF_BO_GLOSRY.html) with BOPF-managed draft. The [draft handling](ABENRAP_DRAFT_HANDLING_GLOSRY.html) is managed by the [Business Object Processing Framework](ABENBO_PROCESSING_FW_GLOSRY.html) (BOPF). ABENRAP\\_GLOSSARY.html\n\n/abap-docs-standard/ABENBOPF_MAN_RAP_DRA_PROV_GLOSRY",
+      "bm25": -12.531293324572268,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBOPF_MAN_RAP_DRA_PROV_GLOSRY",
+      "relFile": "ABENBOPF_MAN_RAP_DRA_PROV_GLOSRY.md",
+      "finalScore": 0.047692307692307694,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.531293324572268,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#handling-dependencies-on-rap-business-objects-in-abap-unit",
+      "text": "Handling Dependencies on RAP Business Objects in ABAP Unit\n\nThe [ABAP Unit Tests](14_ABAP_Unit_Tests.md) cheat sheet includes an example demonstrating the handling of dependencies on RAP business objects:  - Creating transactional buffer test doubles using the `CL_BOTD_TXBUFDBL_BO_TEST_ENV` class - Mocking ABAP EML APIs using the `CL_BOTD_MOCKEMLAPI_BO_TEST_...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#handling-dependencies-on-rap-business-objects-in-abap-unit",
+      "bm25": -12.099763182206676,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#handling-dependencies-on-rap-business-objects-in-abap-unit",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.047058823529411764,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.099763182206676,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_ASSOC_IMPL_TYPE",
+      "text": "ABENBDL_ASSOC_IMPL_TYPE\n\n`... [ managed | unmanaged ]` RAP BDL offers the following statements to define the [association implementation type](ABENRAP_ASSOC_IMPL_TYPE_GLOSRY.html): -   `managed`: Can only be used in business objects with [implementation type](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html)\\\\ [unmanaged](ABENUNMANAGED_RAP_BO_GLOSRY.html).\n\n/abap-docs-standard/ABENBDL_ASSOC_IMPL_TYPE",
+      "bm25": -12.518984045421194,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_ASSOC_IMPL_TYPE",
+      "relFile": "ABENBDL_ASSOC_IMPL_TYPE.md",
+      "finalScore": 0.04393939393939394,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.518984045421194,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRAP_PROJECTED_BO_GLOSRY",
+      "text": "ABENRAP_PROJECTED_BO_GLOSRY\n\nA [RAP business object](ABENRAP_BO_GLOSRY.html) that is used as a basis of a [RAP projection BO](ABENRAP_PROJECTION_BO_GLOSRY.html). It can be of [BDEF implementation type](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html)\\\\ [managed](ABENMANAGED_RAP_BO_GLOSRY.html) or [unmanaged](ABENUNMANAGED_RAP_BO_GLOSRY.html). ABENRAP\\_GLOSSARY.html\n\n/abap-docs-standard/ABENRAP_PROJECTED_BO_GLOSRY",
+      "bm25": -12.382972844521356,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRAP_PROJECTED_BO_GLOSRY",
+      "relFile": "ABENRAP_PROJECTED_BO_GLOSRY.md",
+      "finalScore": 0.04366197183098592,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.382972844521356,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_EVENT_SIDE_EFFECT",
+      "text": "ABENBDL_EVENT_SIDE_EFFECT\n\n`event EventName for side effects;` Defines a [RAP business event for side effects](ABENRAP_SIDE_EFFCT_EVENT_GLOSRY.html) used exclusively for an [event-driven side effect](ABENRAP_EVENT_SIDEEF_GLOSRY.html) in a [managed](ABENMANAGED_RAP_BO_GLOSRY.html) or [unmanaged RAP BO](ABENUNMANAGED_RAP_BO_GLOSRY.html). A RAP business event must be raised in the [ABAP behavior pool](ABENBEHAVIOR_POOL_GLOSRY.\n\n/abap-docs-standard/ABENBDL_EVENT_SIDE_EFFECT",
+      "bm25": -12.479435266212699,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_EVENT_SIDE_EFFECT",
+      "relFile": "ABENBDL_EVENT_SIDE_EFFECT.md",
+      "finalScore": 0.043283582089552235,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.479435266212699,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRAP_BO_GLOSRY",
+      "text": "ABENRAP_BO_GLOSRY\n\nRAP BO for short. A [business object](ABENBUSINESS_OBJECT_GLOSRY.html) in the context of [ABAP RAP](ABENABAP_RAP_GLOSRY.html). A RAP BO is mainly described by a [RAP behavior definition](ABENCDS_BEHAVIOR_DEFINITION_GLOSRY.html) that defines the [RAP business object behavior](ABENRAP_BO_BEHAVIOR_GLOSRY.html) for a set of special hierarchical [CDS entities](ABENCDS_ENTITY_GLOSRY.html) in form of RAP\n\n/abap-docs-standard/ABENRAP_BO_GLOSRY",
+      "bm25": -12.336755553868386,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRAP_BO_GLOSRY",
+      "relFile": "ABENRAP_BO_GLOSRY.md",
+      "finalScore": 0.04246575342465753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.336755553868386,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_RAP",
+      "text": "ABENABAP_RAP\n\nThis section of the ABAP keyword documentation describes the syntax and semantics of all language elements of [ABAP RAP](ABENABAP_RAP_GLOSRY.html). A RAP business object (RAP BO) is a [business object (BO)](ABENBUSINESS_OBJECT_GLOSRY.html) that plays a central role in [ABAP RAP](ABENABAP_RAP_GLOSRY.html) by enabling transactional access to data that are described by [ABAP CDS](ABENABAP_CDS_GLOSRY.\n\n/abap-docs-standard/ABENABAP_RAP",
+      "bm25": -12.110698100768616,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_RAP",
+      "relFile": "ABENABAP_RAP.md",
+      "finalScore": 0.0419753086419753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.110698100768616,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#raising-rap-business-events",
+      "text": "Raising RAP Business Events\n\n- [RAP business events](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_entity_event_glosry.htm) can be raised in ABAP behavior pools with [`RAISE ENTITY EVENT`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abapraise_entity_event.htm) st...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#raising-rap-business-events",
+      "bm25": -12.100799765808397,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#raising-rap-business-events",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.041666666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.100799765808397,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_EVENT_OVERVIEW",
+      "text": "ABENBDL_EVENT_OVERVIEW\n\n`event EventName [[deep] parameter ParamName];` `managed event DerivedEventName on RefEvent parameter ViewEntityName;` `event EventName for side effects;`\n\n/abap-docs-standard/ABENBDL_EVENT_OVERVIEW",
+      "bm25": -12.375884066694379,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_EVENT_OVERVIEW",
+      "relFile": "ABENBDL_EVENT_OVERVIEW.md",
+      "finalScore": 0.04027777777777777,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.375884066694379,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline#sample-json-file-managed-scenario-with-semantic-keys",
+      "text": "Sample JSON file - managed scenario with semantic keys\n\nA simple sample of such a JSON file that would generate a managed business object based on the two tables **/dmo/a_travel_d** and **/dmo/a_booking_d** would look like follows. <pre> {\n\n/cloud-abap-rap/readme_commandline#sample-json-file-managed-scenario-with-semantic-keys",
+      "bm25": -12.12375590812331,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline#sample-json-file-managed-scenario-with-semantic-keys",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.04000000000000001,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.12375590812331,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_IMPL_TYPE",
+      "text": "ABENBDL_IMPL_TYPE\n\n`\\{ managed  | unmanaged  | abstract  | projection \\}\\  | interface ...` RAP BDL offers the following statements for different [implementation types](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html): The syntax `implementation \\{managed|unmanaged|projection|abstract\\}` is obsolete and should not be used. The keyword `implementation` should be left out. If [BDEF strict mode](ABENBDL_STRICT.html) is enabled, the\n\n/abap-docs-standard/ABENBDL_IMPL_TYPE",
+      "bm25": -12.32940868638307,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_IMPL_TYPE",
+      "relFile": "ABENBDL_IMPL_TYPE.md",
+      "finalScore": 0.03918918918918919,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.32940868638307,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_EVENT",
+      "text": "ABENBDL_EVENT\n\n`event EventName [[deep] parameter ParamName];` Defines a [RAP business event](ABENRAP_ENTITY_EVENT_GLOSRY.html) in a [managed](ABENMANAGED_RAP_BO_GLOSRY.html) or [unmanaged RAP BO](ABENUNMANAGED_RAP_BO_GLOSRY.html). A RAP business event is a data record that expresses a significant change in the state of a [RAP BO entity](ABENRAP_BO_ENTITY_GLOSRY.html). An interested party that has subscribed to\n\n/abap-docs-standard/ABENBDL_EVENT",
+      "bm25": -12.285798279499804,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_EVENT",
+      "relFile": "ABENBDL_EVENT.md",
+      "finalScore": 0.0381578947368421,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.285798279499804,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_RAP_WITH_BOPF_DRAFT",
+      "text": "ABENBDL_RAP_WITH_BOPF_DRAFT\n\n`...  with BOPF draft;  ...` The addition `with BOPF draft` enables draft handling for a [BOPF-based RAP BO](ABENRAP_BOPF_BO_GLOSRY.html). It is added in the [behavior definition header](ABENCDS_BDEF_HEADER_GLOSRY.html) and it draft-enables the entire business object. The draft handling is delegated to the [Business Object Processing Framework](ABENBO_PROCESSING_FW_GLOSRY.html) (BOPF) by the [BOPF\n\n/abap-docs-standard/ABENBDL_RAP_WITH_BOPF_DRAFT",
+      "bm25": -12.041021743569042,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_RAP_WITH_BOPF_DRAFT",
+      "relFile": "ABENBDL_RAP_WITH_BOPF_DRAFT.md",
+      "finalScore": 0.03777777777777778,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.041021743569042,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "sap-help-af72f4d217c14e1883d6b827e1609d99",
+      "text": "BAPI Consumption in RAP: RAP Implementation Type\n\nBAPI-Based <b>RAP</b> BO: <b>Managed</b> with Unmanaged Save\n\n\nFor creating a BAPI-based <b>RAP</b> <b>business</b> <b>object</b> (<b>RAP</b> BO), use a <b>managed</b> <b>RAP</b> BO with an unmanaged\nsave. ... BAPI Consumption in <b>RAP</b>: <b>RAP</b> Implementation Type\nIf you want to integrate BAPI <b>business</b> logic into a <b>business</b> <b>object</b> in the ABAP RESTful\nApplication Programming Model (<b>RAP</b>), use a <b>managed</b> <b>RAP</b> <b>business</b> ... <b>object</b> (<b>RAP</b> BO) with\nunmanaged save. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/af72f4d217c14e1883d6b827e1609d99.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/af72f4d217c14e1883d6b827e1609d99.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL",
+      "text": "ABENBDL\n\nThe general syntax rules for the RAP BDL are described in the topic [RAP BDL - General Syntax Rules](ABENBDL_GENERAL_SYNTAX_RULES.html). A list of all available BDL language elements can be found in topic [RAP BDL - Feature Tables](ABENRAP_FEATURE_TABLE.html). RAP BDL offers the following statements for different [implementation types](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html):\n\n/abap-docs-standard/ABENBDL",
+      "bm25": -12.188403477954495,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL",
+      "relFile": "ABENBDL.md",
+      "finalScore": 0.03670886075949367,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.188403477954495,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-additional-and-unmanaged-save",
+      "text": "RAP Additional and Unmanaged Save\n\n- As covered in the RAP terms section, *managed* is an implementation type that is specified in the BDEF, and which determines the [RAP BO provider](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_bo_provider_glosry.htm \"Glossary Entry\"), and thus,  how the transact...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-additional-and-unmanaged-save",
+      "bm25": -11.996614226354204,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-additional-and-unmanaged-save",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03645833333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.996614226354204,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "sap-help-ca9a856a93ce41ec893a305df2b3fbf3",
+      "text": "Log Custom Change Documents\n\nFor information on defining change\ndocuments for a <b>managed</b> <b>RAP</b> <b>business</b> <b>object</b> as a customer, see Enabling Change Documents Integration. ... Log Custom Change Documents\n\n\nChange documents defined in custom <b>RAP</b> <b>business</b> <b>objects</b> are automatically logged as\n<b>business</b> events when the corresponding <b>business</b> is activated for logging in the\nActivate ... <b>Business</b> Event Logging configuration. ...  — Product: SAP BTP ABAP environment (Cloud)\n\nhttps://help.sap.com/docs/ABAP_ENVIRONMENT/250515df61b74848810389e964f8c367/ca9a856a93ce41ec893a305df2b3fbf3.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_ENVIRONMENT/250515df61b74848810389e964f8c367/ca9a856a93ce41ec893a305df2b3fbf3.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-a52d259967034eec88d8106c751bb91e",
+      "text": "Log Custom Change Documents\n\nFor information on defining change\ndocuments for a <b>managed</b> <b>RAP</b> <b>business</b> <b>object</b> as a customer, see Enabling Change Documents Integration. ... Log Custom Change Documents\n\n\nChange documents defined in custom <b>RAP</b> <b>business</b> <b>objects</b> are automatically logged as\n<b>business</b> events when the corresponding <b>business</b> is activated for logging in the\nActivate ... <b>Business</b> Event Logging configuration. ...  — Product: SAP S/4HANA Cloud Public Edition (2602 Latest)\n\nhttps://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/a52d259967034eec88d8106c751bb91e.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_CLOUD/6aa39f1ac05441e5a23f484f31e477e7/a52d259967034eec88d8106c751bb91e.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3e52b69b97b84d7e85e3de4823133c5c",
+      "text": "Managing Dependencies on RAP Business Objects with ABAP Unit\n\n<b>Managing</b> Dependencies on <b>RAP</b> <b>Business</b> <b>Objects</b> with ABAP Unit\nYou can <b>manage</b> dependencies on <b>RAP</b> <b>Business</b> <b>Objects</b> using <b>RAP</b> <b>Business</b> <b>Objects</b> test\ndouble framework. ... The test double framework helps to isolate the <b>RAP</b> <b>Business</b> <b>Objects</b> as a dependency and to\nfocus on testing the functional logic of the ABAP code. ... There is already a way to mock the <b>RAP</b>\n<b>Business</b> <b>Objects</b> by implementing an interface, IF_ABAP_BEHAVIOR_TESTDOUBLE\nand providing the logic inside the required method. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/3e52b69b97b84d7e85e3de4823133c5c.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/3e52b69b97b84d7e85e3de4823133c5c.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_BDEF_HEADER",
+      "text": "The behavior definition header is followed by\n\nDefines a RAP behavior definition in the [RAP BDL](ABENCDS_BDL_GLOSRY.html). A RAP behavior definition consists of a [RAP behavior definition header](ABENCDS_BDEF_HEADER_GLOSRY.html) and one or more [entity behavior definitions](ABENCDS_ENTITY_BDEF_GLOSRY.html)\\\\ [`EntityBehaviorDefinition1`](ABENBDL_DEFINE_BEH.html), [`EntityBehaviorDefinition2`](ABENBDL_DEFINE_BEH.html), ... Optionally, one or m\n\n/abap-docs-standard/ABENBDL_BDEF_HEADER",
+      "bm25": -12.10121022969075,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_BDEF_HEADER",
+      "relFile": "ABENBDL_BDEF_HEADER.md",
+      "finalScore": 0.03493975903614458,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.10121022969075,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "sap-help-2b2c4df06bf149b89d8cffb5c3f22e84",
+      "text": "Consumption of Classic APIs in RAP: Prerequisites and Guidelines\n\nBAPI Consumption in <b>RAP</b>: <b>RAP</b> Implementation Type\nIf you want to integrate BAPI <b>business</b> logic into a <b>business</b> <b>object</b> in the ABAP RESTful\nApplication Programming Model (<b>RAP</b>), use a <b>managed</b> <b>RAP</b> <b>business</b> ... BAPI Consumption in <b>RAP</b>: Late Numbering and Save Sequence\nWhen you create a BAPI-based <b>managed</b> <b>business</b> <b>object</b> (BO) using the ABAP RESTful\nApplication Programming Model (<b>RAP</b>), we recommend that you use ... <b>object</b> (<b>RAP</b> BO) with\nunmanaged save. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/2b2c4df06bf149b89d8cffb5c3f22e84.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/2b2c4df06bf149b89d8cffb5c3f22e84.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-0589dcadf925452693ae46bf2a90465a",
+      "text": "Build a Custom Process Based on Standard Business Objects Using Developer Extensibility\n\nKey user extensibility tools used in this sample scenario:\t\nCustom Fields\n\n\n\n\n\nDeveloper extensibility concepts used in this sample scenario:\t\nCreate a <b>managed</b> <b>RAP</b> <b>business</b> <b>object</b>. ... A\ntransactional UI application and a corresponding remote API are created for a custom <b>RAP</b>\nBO. This scenario also shows the consumption of released <b>RAP</b> <b>business</b> <b>objects</b>\n(I_DefectTP_2). ... Create an <b>SAP</b> Fiori app in <b>SAP</b> <b>Business</b> Application Studio and deploy it in an <b>SAP</b> S/4HANA\nCloud system.\n\n\n\t\nCreate a communication scenario to expose the <b>RAP</b> BO as an API. ...  — Product: SAP Extensibility Explorer for SAP S/4HANA Cloud (SHIP)\n\nhttps://help.sap.com/docs/SAP_EXTENSIBILITY_EXPLORER/c21ae1a6db734955b8866a59b6312b96/0589dcadf925452693ae46bf2a90465a.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_EXTENSIBILITY_EXPLORER/c21ae1a6db734955b8866a59b6312b96/0589dcadf925452693ae46bf2a90465a.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-46c4bed389b04c27bbd5db7731c01545",
+      "text": "Role-Based Access to Price Elements in Sales Documents\n\nSAP_A4C_BC_DEV_TST_SD0_PC (relevant for <b>RAP</b> <b>business</b> <b>objects</b> only)\n\n\n\t \t<b>Manage</b> Sales Quotations - Version 2\n\n\tCreate Sales Quotations - VA21\n\n\tChange Sales Quotations - VA22\n\n\tDisplay Sales Quotations ... <b>business</b> <b>objects</b> only)\n\n\n\t \t<b>Manage</b> Sales Orders - Version 2\n\n\tCreate Sales Orders - VA01\n\n\tChange Sales Orders - VA02\n\n\tDisplay Sales Orders - VA03\n\n\tImport Sales Orders\n\n\t<b>Manage</b> Sales Documents with ... <b>business</b> <b>objects</b> only)\n\n\n\t\t<b>Manage</b> Customer Returns &ndash; Version 2\n\n\tCreate Customer Return\n\n\tCreate Customer Return Without Reference - VA01\n\n\tChange Customer Return\n\n\tDisplay Customer Return\n\n\n\n\tCredit ...  — Product: SAP S/4HANA Cloud Public Edition (2602 Latest)\n\nhttps://help.sap.com/docs/SAP_S4HANA_CLOUD/a376cd9ea00d476b96f18dea1247e6a5/46c4bed389b04c27bbd5db7731c01545.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_CLOUD/a376cd9ea00d476b96f18dea1247e6a5/46c4bed389b04c27bbd5db7731c01545.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_WITH_CROSS_ASSOC",
+      "text": "ABENBDL_WITH_CROSS_ASSOC\n\n`...  with cross associations;  ...` The addition `with cross associations` prepares a [managed RAP business objects](ABENMANAGED_RAP_BO_GLOSRY.html) for cross-BO transactional interaction. It offers an improved runtime implementation for operations for associations, including syntax checks and error handling. The [operations for associations](ABENRAP_OPERATION_ASSOC_GLOSRY.html) are handled and o\n\n/abap-docs-standard/ABENBDL_WITH_CROSS_ASSOC",
+      "bm25": -12.079815642806603,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_WITH_CROSS_ASSOC",
+      "relFile": "ABENBDL_WITH_CROSS_ASSOC.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.079815642806603,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRAP_GLOSSARY",
+      "text": "ABENRAP_GLOSSARY\n\nRAP stands for the [ABAP RESTful Application Programming Model](ABENARAP_GLOSRY.html). In the following, terms of the [ABAP Glossary](ABENABAP_GLOSSARY.html) are listed, that are relevant for RAP. **ABAP behavior pool** ABP for short. A special [class pool](ABENCLASS_POOL_GLOSRY.html) for an [ABAP behavior implementation](ABENBEHAVIOR_IMPLEMENT_GLOSRY.html). A behavior pool is based on a [RAP beha\n\n/abap-docs-standard/ABENRAP_GLOSSARY",
+      "bm25": -11.97702563058827,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRAP_GLOSSARY",
+      "relFile": "ABENRAP_GLOSSARY.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.97702563058827,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "sap-help-006c33ea6af84d9d8bf039ce557cb709",
+      "text": "Enabling Change Documents Integration\n\nEnabling Change Documents Integration\nThe following simplified example shows how to enable change documents for a <b>managed</b> <b>RAP</b> <b>business</b> <b>object</b>. ... The change document <b>object</b> /DMO/TRAVEL_CHD is\nused for logging changes.\n\n\tThe logging options are defined in the entity behavior body. ... Sample Code\n\n\n<b>managed</b> implementation in class /dmo/bp_trvl unique;\nstrict(2);\n\t\t\t\t\t\t\t\t\t\t\ndefine behavior for /DMO/R_Travel alias Travel\nimplementation in class /dmo/bp_trvl unique\npersistent table /dmo ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/006c33ea6af84d9d8bf039ce557cb709.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/006c33ea6af84d9d8bf039ce557cb709.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/36_RAP_Behavior_Definition_Language#rap-bo-related-repository-objects-in-a-nutshell",
+      "text": "RAP-BO-Related Repository Objects in a Nutshell\n\nThis section highlights typical repository objects for a typical RAP BO setup, and how the BDEF fits in. > [!NOTE]   > What is a RAP BO?\n\n/abap-cheat-sheets/36_RAP_Behavior_Definition_Language#rap-bo-related-repository-objects-in-a-nutshell",
+      "bm25": -11.940432299300792,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/36_RAP_Behavior_Definition_Language#rap-bo-related-repository-objects-in-a-nutshell",
+      "relFile": "36_RAP_Behavior_Definition_Language.md",
+      "finalScore": 0.0330188679245283,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.940432299300792,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "sap-help-7022b474873a4b5b8b2be3998e0b382c",
+      "text": "Unmanaged Implementation Type\n\nThe main approaches are the two standard implementation types of <b>RAP</b> <b>business</b>\n<b>objects</b>, <b>managed</b> or unmanaged. Both approaches are based on a data model that is defined in\nCDS view entities. ... See Integrating Additional Save in <b>Managed</b> <b>Business</b> <b>Objects</b> and Integrating Unmanaged Save in <b>Managed</b> <b>Business</b> <b>Objects</b>. ... Like this, you can reuse existing <b>business</b> logic in your <b>RAP</b> <b>business</b> <b>objects</b> and you still benefit from the standardized <b>RAP</b> runtime orchestration to easily create a <b>RAP</b> service. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/e11757cf7e664121b9f583e7ca0eeb39.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loio7022b474873a4b5b8b2be3998e0b382c",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/e11757cf7e664121b9f583e7ca0eeb39.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loio7022b474873a4b5b8b2be3998e0b382c",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENBDL_IN_CLASS_UNIQUE",
+      "text": "ABENBDL_IN_CLASS_UNIQUE\n\n`... implementation in class ClassName unique` Specifies an [ABAP behavior pool](ABENBEHAVIOR_POOL_GLOSRY.html) for the [RAP business object](ABENRAP_BO_GLOSRY.html). An ABAP behavior pool is a special class pool for an ABAP behavior implementation. The name of the [global class](ABENGLOBAL_CLASS_GLOSRY.html) of a behavior pool is usually prefixed with `BP_`. It does not implement the behavior its\n\n/abap-docs-standard/ABENBDL_IN_CLASS_UNIQUE",
+      "bm25": -12.044918450147165,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENBDL_IN_CLASS_UNIQUE",
+      "relFile": "ABENBDL_IN_CLASS_UNIQUE.md",
+      "finalScore": 0.03258426966292135,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.044918450147165,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 1.9
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/36_RAP_Behavior_Definition_Language#rap-bdl-syntax",
+      "text": "RAP BDL Syntax\n\nThe following sections illustrate the structure of BDEFs and syntax options. Demo BDEF that highlights the structure: ``` Behavior Definition Header managed implementation class ZBP_R_DEMO_ABAP unique strict with\n\n/abap-cheat-sheets/36_RAP_Behavior_Definition_Language#rap-bdl-syntax",
+      "bm25": -12.009428821263054,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/36_RAP_Behavior_Definition_Language#rap-bdl-syntax",
+      "relFile": "36_RAP_Behavior_Definition_Language.md",
+      "finalScore": 0.03225806451612903,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.009428821263054,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-761d389302e8463a9c3509907f22f22f",
+      "text": "Strict Mode - Implementation Requirements\n\n<b>RAP</b>\n<b>business</b> <b>object</b>. ... If\nyou define strict mode for an already existing <b>RAP</b> <b>business</b> <b>object</b>, your\nimplementations or modeling may need to be adapted. ... <b>Managed</b>\n\n\tUnmanaged\n\n\n\t\tStrict mode version 1: strict\n\n\n\t\tProjection Behavior Definition\n\n\n\t\n\tUse view entities as data sources for a <b>RAP</b> <b>business</b>\n<b>objects</b>. CDS views aren't supported in strictmode. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/761d389302e8463a9c3509907f22f22f.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/761d389302e8463a9c3509907f22f22f.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-754-CDS_BDL",
+      "text": "ABENNEWS-754-CDS_BDL\n\nThe new statement [`managed`](ABENBDL_IMPL_TYPE.html) can be used to create [managed RAP BOs](ABENMANAGED_RAP_BO_GLOSRY.html) within the framework of the ABAP RESTful Application Programming Model. This scenario is intended for greenfield developments that are developed from scratch. Standard operations and services are provided by the RAP framework. The new statement [`projection`](ABENBDL_IMPL_T\n\n/abap-docs-standard/ABENNEWS-754-CDS_BDL",
+      "bm25": -12.46880378322992,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-754-CDS_BDL",
+      "relFile": "ABENNEWS-754-CDS_BDL.md",
+      "finalScore": 0.030882352941176465,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.46880378322992,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.0999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENRAP_BO_PROVIDER_GLOSRY",
+      "text": "ABENRAP_BO_PROVIDER_GLOSRY\n\nA piece of software that provides the [transactional buffer](ABENTRANSACTIONAL_BUFFER_GLOSRY.html) and the implementation of a [RAP BO](ABENRAP_BO_GLOSRY.html) based on its [RAP behavior definition](ABENCDS_BEHAVIOR_DEFINITION_GLOSRY.html). -   A [managed RAP BO](ABENMANAGED_RAP_BO_GLOSRY.html) is provided fully or partly by the [managed RAP BO provider](ABENMANAGED_RAP_BO_PROV_GLOSRY.html). -   A\n\n/abap-docs-standard/ABENRAP_BO_PROVIDER_GLOSRY",
+      "bm25": -11.966320694050305,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENRAP_BO_PROVIDER_GLOSRY",
+      "relFile": "ABENRAP_BO_PROVIDER_GLOSRY.md",
+      "finalScore": 0.030097087378640777,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.966320694050305,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-behavior-definition-bdef-",
+      "text": "RAP Behavior Definition (BDEF)\n\n- As the name implies, a RAP behavior definition describes a RAP business object (RAP BO) by defining its behavior for all of its RAP BO entities.  - BDL source code is used in a BDEF. - Once you have created ...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-behavior-definition-bdef-",
+      "bm25": -11.988349613194584,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-behavior-definition-bdef-",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.988349613194584,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline#-package-",
+      "text": "\"package\"\n\nWith the parameter **“package”** you have to provide the name of a package where all repository objects of your RAP business object will be generated in. Please note that in on premise systems the ABAP language version of the package must match static method being used for creating the RAP Generator...\n\n/cloud-abap-rap/readme_commandline#-package-",
+      "bm25": -12.032240107786588,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline#-package-",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.029670329670329676,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.032240107786588,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline#run-the-rap-generator-using-a-json-input-file",
+      "text": "Run the RAP Generator using a JSON input file\n\nThis is a short description how the RAP Generator can be used. 1. Make sure you have set the following option **Wrap and escape text when pasting into string literal** for your ABAP source code editor in your ADT preferences as described in my blog [How to wrap long strings automatically in ADT](htt...\n\n/cloud-abap-rap/readme_commandline#run-the-rap-generator-using-a-json-input-file",
+      "bm25": -11.929193207600893,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline#run-the-rap-generator-using-a-json-input-file",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.029357798165137616,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.929193207600893,
+        "rank": 49,
+        "rrfScore": 0.009174311926605505,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline#drafttable",
+      "text": "drafttable\n\nWhen you specify that a RAP business object shall support draft using the parameter **\"draftenabled\" : true** you can specifiy the name of the draft table that is being generated for each node using the following syntax <pre> \"drafttable\": \"zd_book_0000\",\n\n/cloud-abap-rap/readme_commandline#drafttable",
+      "bm25": -12.024806460937363,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline#drafttable",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.029347826086956522,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.024806460937363,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/36_RAP_Behavior_Definition_Language",
+      "text": "RAP Behavior Definition Language\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/36_RAP_Behavior_Definition_Language",
+      "bm25": -11.942287730467307,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/36_RAP_Behavior_Definition_Language",
+      "relFile": "36_RAP_Behavior_Definition_Language.md",
+      "finalScore": 0.028846153846153848,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.942287730467307,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#augmenting-addition-to-abap-eml-modify-statements",
+      "text": "AUGMENTING Addition to ABAP EML MODIFY Statements\n\n- ABAP EML `MODIFY` statements include a special syntax variant used only in the context of projections: `MODIFY AUGMENTING ENTITY|ENTITIES`.   - RAP projection business objects prepare a business object for specific services, allowing flexible service consumption and role-based service design. Find...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#augmenting-addition-to-abap-eml-modify-statements",
+      "bm25": -12.047247670343731,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#augmenting-addition-to-abap-eml-modify-statements",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.02840909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.047247670343731,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-755-CDS_BDL",
+      "text": "ABENNEWS-755-CDS_BDL\n\nThe new statement [`mapping for`](ABENBDL_TYPE_MAPPING.html) can be used to map field names from legacy code to field names from the current data model. Available for unmanaged and managed business objects. The new statement [`with additional save`](ABENBDL_SAVING.html) can be used to enhance the default save sequence in a managed implementation scenario. The new statement [`with unmanaged save`](\n\n/abap-docs-standard/ABENNEWS-755-CDS_BDL",
+      "bm25": -12.31919648397621,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-755-CDS_BDL",
+      "relFile": "ABENNEWS-755-CDS_BDL.md",
+      "finalScore": 0.027999999999999997,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.31919648397621,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 1.0999999999999999
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline#-implementationtype-",
+      "text": "\"implementationType\"\n\nThe generator currently supports three implementation types -\tmanaged_uuid -\tmanaged_semantic_key\n\n/cloud-abap-rap/readme_commandline#-implementationtype-",
+      "bm25": -11.996423900064064,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline#-implementationtype-",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.027835051546391754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.996423900064064,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline",
+      "text": "Changing the repository object names of the generated objects\n\n**JSON schemas**\n\n/cloud-abap-rap/readme_commandline",
+      "bm25": -11.913111220254867,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.02782608695652174,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.913111220254867,
+        "rank": 55,
+        "rrfScore": 0.008695652173913044,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/readme_commandline#supported-scenarios",
+      "text": "Supported scenarios\n\nThe generator supports various implementation type (\"implementationtype\") - \"managed_uuid\" - \"managed_semantic\"\n\n/cloud-abap-rap/readme_commandline#supported-scenarios",
+      "bm25": -11.996036199205701,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/readme_commandline#supported-scenarios",
+      "relFile": "readme_commandline.md",
+      "finalScore": 0.027551020408163266,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.996036199205701,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-757-CDS_BDL",
+      "text": "ABENNEWS-757-CDS_BDL\n\nA new syntax variant of [`with privileged mode`](ABENBDL_PRIVILEGED_MODE.html) is now available for RAP projection BOs. A new [implementation type](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html) is available: the [RAP interface behavior definition](ABENBDL_RAP_BO_INTERFACE.html). Such interface BDEFs are based on [CDS transactional interfaces](ABENCDS_TRANS_INTERFACE_GLOSRY.html) and define the behavior of a\n\n/abap-docs-standard/ABENNEWS-757-CDS_BDL",
+      "bm25": -12.268085220154347,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-757-CDS_BDL",
+      "relFile": "ABENNEWS-757-CDS_BDL.md",
+      "finalScore": 0.02727272727272727,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.268085220154347,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.0999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-758-CDS_BDL",
+      "text": "ABENNEWS-758-CDS_BDL\n\nIn [RAP interface behavior definitions](ABENCDS_INTERFACE_BDEF_GLOSRY.html), the following [RAP field characteristics](ABENRAP_FIELD_CHAR_GLOSRY.html) are now available: In [RAP interface behavior definitions](ABENCDS_INTERFACE_BDEF_GLOSRY.html), [RAP business events](ABENRAP_ENTITY_EVENT_GLOSRY.html) can be reused using the syntax [`use event`](ABENBDL_USE_PROJECTION.html). A new [RAP field chara\n\n/abap-docs-standard/ABENNEWS-758-CDS_BDL",
+      "bm25": -12.222931078172454,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-758-CDS_BDL",
+      "relFile": "ABENNEWS-758-CDS_BDL.md",
+      "finalScore": 0.026923076923076918,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.222931078172454,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.0999999999999999
+      }
+    }
+  ]
+}

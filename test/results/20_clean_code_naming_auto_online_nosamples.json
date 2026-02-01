@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "clean code naming conventions variables methods",
+    "options": {
+      "abapFlavor": "auto",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:19:09.114Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings",
+      "text": "Avoid Encodings\n\n> [Back to the guide](../CleanABAP.md)\n\n/sap-styleguides/clean-abap/sub-sections/AvoidEncodings",
+      "bm25": -22.349567194892153,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings",
+      "relFile": "clean-abap/sub-sections/AvoidEncodings.md",
+      "finalScore": 0.07419354838709677,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.349567194892153,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 3.6
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#abstract",
+      "text": "Abstract\n\nWe encourage you to get rid of _all_ encoding prefixes. ```ABAP METHOD add_two_numbers. METHOD add_two_numbers result ENDMETHOD anti pattern METHOD add_two_numbers rv_result iv_a\n\n/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#abstract",
+      "bm25": -22.274083647087505,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#abstract",
+      "relFile": "clean-abap/sub-sections/AvoidEncodings.md",
+      "finalScore": 0.073015873015873,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.274083647087505,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 3.6
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#reasoning",
+      "text": "Reasoning\n\nWith ABAP there is a legacy practice of adding prefixes to each and everything, to encode things like - `cl_` for classes - `if_` for interfaces\n\n/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#reasoning",
+      "bm25": -22.269385698502234,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#reasoning",
+      "relFile": "clean-abap/sub-sections/AvoidEncodings.md",
+      "finalScore": 0.071875,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.269385698502234,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 3.6
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#arguments",
+      "text": "Arguments\n\nBefore you disagree, consider these: - ABAP's 30 character limitation makes it hard enough to squeeze meaningful names   into the available space without wasting another 3-4 characters for needless encodings.\n\n/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#arguments",
+      "bm25": -22.23656476803716,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#arguments",
+      "relFile": "clean-abap/sub-sections/AvoidEncodings.md",
+      "finalScore": 0.07076923076923076,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.23656476803716,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 3.6
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#compromises",
+      "text": "Compromises\n\nThe only prefix that ABAP forces you to use is your application's namespace, to avoid conflicts with objects from other teams in the global dictionary, where every thing needs a unique name. If this rule is too hard for you, consider a compromise:\n\n/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#compromises",
+      "bm25": -22.175910339200293,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#compromises",
+      "relFile": "clean-abap/sub-sections/AvoidEncodings.md",
+      "finalScore": 0.06969696969696969,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.175910339200293,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 3.6
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#avoiding-name-clashes",
+      "text": "Avoiding name clashes\n\nOne consequence of removing the prefixes is a potential name clash of entities which are in the the same namespace. So far it was a common practice to have interfaces and classes named identical, only differentiated by the prefix. While this practice was not correct in the first place, as an interfa...\n\n/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#avoiding-name-clashes",
+      "bm25": -22.129515204026852,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/AvoidEncodings#avoiding-name-clashes",
+      "relFile": "clean-abap/sub-sections/AvoidEncodings.md",
+      "finalScore": 0.06865671641791044,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.129515204026852,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 3.6
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSTATICS",
+      "text": "ABAPSTATICS\n\nDeclares static variables `stat`. The statement `STATICS` for declaring static variables can only be used in [static methods](ABENSTATIC_METHOD_GLOSRY.html), [function modules](ABENFUNCTION_MODULE_GLOSRY.html), and [subroutines](ABENSUBROUTINE_GLOSRY.html). The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `stat`. The syntax of the additions `options` is the same as for the s\n\n/abap-docs-standard/ABAPSTATICS",
+      "bm25": -22.946381338782736,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSTATICS",
+      "relFile": "ABAPSTATICS.md",
+      "finalScore": 0.04098360655737705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.946381338782736,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCODE_INSPECTOR_GUIDL",
+      "text": "ABENCODE_INSPECTOR_GUIDL\n\nThe Code Inspector tool performs a static check of repository objects regarding performance, security, syntax, and adherence to naming conventions. Transaction `SCI` can be called to use the full range of functions of Code Inspector to perform complex static checks and regular mass tests for large numbers of development objects. Code Inspector can also be called from ABAP Workbench to perform a st\n\n/abap-docs-standard/ABENCODE_INSPECTOR_GUIDL",
+      "bm25": -18.432852893714056,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCODE_INSPECTOR_GUIDL",
+      "relFile": "ABENCODE_INSPECTOR_GUIDL.md",
+      "finalScore": 0.04,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.432852893714056,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNAMING_GDL",
+      "text": "ABENNAMING_GDL\n\nThe naming of the repository objects defined outside of a program and of the entities declared within the program (such as data types, data objects, and procedures) is of vital importance for understanding and editing the program. All names used must be readable, easy to learn, and appropriate. You can meet these requirements by using meaningful names. It is also important to avoid naming conflict\n\n/abap-docs-standard/ABENNAMING_GDL",
+      "bm25": -18.411213063303073,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNAMING_GDL",
+      "relFile": "ABENNAMING_GDL.md",
+      "finalScore": 0.039473684210526314,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.411213063303073,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCODE_INSPECTOR_GLOSRY",
+      "text": "ABENCODE_INSPECTOR_GLOSRY\n\nCI for short. Tool for checking [repository objects](ABENREPOSITORY_OBJECT_GLOSRY.html) in terms of performance, security, syntax, and adherence to naming conventions. Called using [transaction code](ABENTRANSACTION_CODE_GLOSRY.html)\\\\ `SCI`. ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENCODE_INSPECTOR_GLOSRY",
+      "bm25": -18.661862430009876,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCODE_INSPECTOR_GLOSRY",
+      "relFile": "ABENCODE_INSPECTOR_GLOSRY.md",
+      "finalScore": 0.0375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.661862430009876,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "sap-help-90000e3a24d3429fa6e6c86c2a4c6e36",
+      "text": "Cleaning Object\n\n<b>CLEAN2</b>\n\t<b>CLEAN3</b>\t<b>Cleaning</b> <b>Method</b> 3\tEEWA_ROB\t<b>CLEAN3</b>\n\t<b>CLEAN4</b>\t<b>Cleaning</b> <b>Method</b> 4\tEEWA_ROB\t<b>CLEAN4</b>\n\t<b>CLEAN5</b>\t<b>Cleaning</b> <b>Method</b> 5\tEEWA_ROB\t<b>CLEAN5</b> ... EEWA_ROB\tAB\n\tROBTYP\t<b>Cleaning</b> Object Category\tEEWA_ROB\tROBTYP\n\tGESREMENG\tTotal of Allocated Measurement Amounts\tEEWA_ROB\tGESREMENG\n\t<b>CLEAN1</b>\t<b>Cleaning</b> <b>Method</b> 1\tEEWA_ROB\t<b>CLEAN1</b>\n\t<b>CLEAN2</b>\t<b>Cleaning</b> <b>Method</b> 2\tEEWA_ROB ... <b>Cleaning</b> ...  — Product: BI Content 7.07 (7.07 SP24)\n\nhttps://help.sap.com/docs/BI_CONTENT_707/0d74d6667d234d4fa1dcd4440b7334be/90000e3a24d3429fa6e6c86c2a4c6e36.html?locale=en-US&state=PRODUCTION&version=7.07.24",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/BI_CONTENT_707/0d74d6667d234d4fa1dcd4440b7334be/90000e3a24d3429fa6e6c86c2a4c6e36.html?locale=en-US&state=PRODUCTION&version=7.07.24",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENEXCEPTION_CLASS_CREATE",
+      "text": "ABENEXCEPTION_CLASS_CREATE\n\nException classes can be defined globally in the [Class Library](ABENCLASS_LIBRARY_GLOSRY.html) or locally in a program. The naming conventions for global exception classes prescribe the prefix `CX_` or, in the case of exception classes created in customer systems, `YCX_` or `ZCX_`. There is a set of predefined global exception classes, such as those prefixed with `CX_SY_`, whose exceptions are ra\n\n/abap-docs-standard/ABENEXCEPTION_CLASS_CREATE",
+      "bm25": -20.603612159438157,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENEXCEPTION_CLASS_CREATE",
+      "relFile": "ABENEXCEPTION_CLASS_CREATE.md",
+      "finalScore": 0.03676470588235294,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.603612159438157,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-4f3cd6fab4d51a5be10000000a42189e",
+      "text": "Programming Exceptions (BOR)\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. ... You must declare \n                                 &lt;<b>Code</b>&gt; with the type \n                                 SWOTINVOKE-<b>CODE</b>. ... For <b>Code</b>, enter the exception's four-digit number specified when the exception was defined. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/a602ff71a47c441bb3000504ec938fea/4f3cd6fab4d51a5be10000000a42189e.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/a602ff71a47c441bb3000504ec938fea/4f3cd6fab4d51a5be10000000a42189e.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_F1_DEFINE_ABSTRACT_ENTITY",
+      "text": "ABENCDS_F1_DEFINE_ABSTRACT_ENTITY\n\nDefines an [CDS abstract entity](ABENCDS_ABSTRACT_ENTITY_GLOSRY.html)\\\\ `abstract_entity` in [CDS DDL](ABENCDS_DDL_GLOSRY.html). When a CDS abstract entity is activated, its metadata is created but no other object instances are created on the database or in AS ABAP. The name `abstract_entity` must comply with the naming conventions for [dictionary types](ABENDDIC_DATA_TYPES.html) and can have a ma\n\n/abap-docs-standard/ABENCDS_F1_DEFINE_ABSTRACT_ENTITY",
+      "bm25": -18.886448450864403,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_F1_DEFINE_ABSTRACT_ENTITY",
+      "relFile": "ABENCDS_F1_DEFINE_ABSTRACT_ENTITY.md",
+      "finalScore": 0.036231884057971016,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.886448450864403,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPROG_INTERN_NAMES_GUIDL",
+      "text": "ABENPROG_INTERN_NAMES_GUIDL\n\nProgram-internal names describe entities that are declared in the program and are called within the program or called by other programs. Typical examples include identifiers for data types and data objects as well as methods and method interface parameters. Program-internal declarations can be configured in different contexts that all span a separate namespace. These contexts are arranged in the o\n\n/abap-docs-standard/ABENPROG_INTERN_NAMES_GUIDL",
+      "bm25": -18.752706317367572,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPROG_INTERN_NAMES_GUIDL",
+      "relFile": "ABENPROG_INTERN_NAMES_GUIDL.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.752706317367572,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-4f382367bd13553fe10000000a421937",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP ERP (6.0 EHP5 Latest)\n\nhttps://help.sap.com/docs/SAP_ERP/142f8559883b4c11966ebfb99dd61164/4f382367bd13553fe10000000a421937.html?locale=en-US&state=PRODUCTION&version=6.05.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_ERP/142f8559883b4c11966ebfb99dd61164/4f382367bd13553fe10000000a421937.html?locale=en-US&state=PRODUCTION&version=6.05.latest",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCLASS-EVENTS",
+      "text": "ABAPCLASS-EVENTS\n\nThis statement declares a static event `evt` in a class or interface. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `evt`. The statement [`RAISE EVENT`](ABAPRAISE_EVENT.html) can be used to raise the static event `evt` in all methods of the same class or of a class that implements the interface, as well as in the methods of subclasses if it is visible here. Event handlers\n\n/abap-docs-standard/ABAPCLASS-EVENTS",
+      "bm25": -18.713953510730985,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCLASS-EVENTS",
+      "relFile": "ABAPCLASS-EVENTS.md",
+      "finalScore": 0.035211267605633804,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.713953510730985,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-4f382367bd13553fe10000000a421937-1005",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP2 (SPS26)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/4f382367bd13553fe10000000a421937-1005.html?locale=en-US&state=PRODUCTION&version=7.02.26",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/4f382367bd13553fe10000000a421937-1005.html?locale=en-US&state=PRODUCTION&version=7.02.26",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-4f382367bd13553fe10000000a421937-1002",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP2 (SPS25)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/4f382367bd13553fe10000000a421937-1002.html?locale=en-US&state=PRODUCTION&version=7.02.25",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/4f382367bd13553fe10000000a421937-1002.html?locale=en-US&state=PRODUCTION&version=7.02.25",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_DEFINE_SCALAR_FUNCTION",
+      "text": "ABENCDS_DEFINE_SCALAR_FUNCTION\n\nDefines a CDS scalar function definition `ScalarFunction` as a [CDS scalar function](ABENCDS_SCALAR_FUNCTION_GLOSRY.html) in the [CDS FDL](ABENCDS_FDL_GLOSRY.html). The name `ScalarFunction` must follow the naming conventions for [dictionary types](ABENDDIC_TYPES_NAMES.html). The following additional rules apply: Optionally, a list of [input parameters](ABENCDS_PARAMETER_GLOSRY.html)\\\\ `pname1`, `\n\n/abap-docs-standard/ABENCDS_DEFINE_SCALAR_FUNCTION",
+      "bm25": -18.53573257809744,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_DEFINE_SCALAR_FUNCTION",
+      "relFile": "ABENCDS_DEFINE_SCALAR_FUNCTION.md",
+      "finalScore": 0.03424657534246575,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.53573257809744,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-08a5d227-f72f-4e27-befa-51fd847d91ab",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP2 (SPS23)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/08a5d227-f72f-4e27-befa-51fd847d91ab.html?locale=en-US&state=PRODUCTION&version=7.02.23",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_702/fe1eec266c551014a965feb5b6d5dade/08a5d227-f72f-4e27-befa-51fd847d91ab.html?locale=en-US&state=PRODUCTION&version=7.02.23",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPALIASES",
+      "text": "ABAPALIASES\n\n`ALIASES alias FOR intf~comp.` In the declaration part of a class or interface, this statement declares an alias name `alias` for a component `comp` of the interface `intf`. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `alias`. The interface `intf` must be implemented in the same class or included in the same interface. The alias name can be used anywhere, where it is vi\n\n/abap-docs-standard/ABAPALIASES",
+      "bm25": -18.51478278363335,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPALIASES",
+      "relFile": "ABAPALIASES.md",
+      "finalScore": 0.033783783783783786,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.51478278363335,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSOURCE_CODE_MODULAR_GUIDL",
+      "text": "ABENSOURCE_CODE_MODULAR_GUIDL\n\nThe unit in ABAP that corresponds to a source code file capable of being inserted into another program is known as an *include program*. Include programs are used for source code modularization and are inserted into compilation units for this purpose. Include programs are not compilation units (which means they cannot be compiled as standalone programs), but can be activated and transported separa\n\n/abap-docs-standard/ABENSOURCE_CODE_MODULAR_GUIDL",
+      "bm25": -16.85078078390188,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSOURCE_CODE_MODULAR_GUIDL",
+      "relFile": "ABENSOURCE_CODE_MODULAR_GUIDL.md",
+      "finalScore": 0.033707865168539325,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.85078078390188,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-copy086fd0bc1fef4532a63a972397cfc6b8",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 (SPS39)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/copy086fd0bc1fef4532a63a972397cfc6b8.html?locale=en-US&state=PRODUCTION&version=7.0.39",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/copy086fd0bc1fef4532a63a972397cfc6b8.html?locale=en-US&state=PRODUCTION&version=7.0.39",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-1a91400a-8351-4ec1-8384-7166ef72ba55",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP1 (SPS23)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/1a91400a-8351-4ec1-8384-7166ef72ba55.html?locale=en-US&state=PRODUCTION&version=7.01.23",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/1a91400a-8351-4ec1-8384-7166ef72ba55.html?locale=en-US&state=PRODUCTION&version=7.01.23",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-5082895e-3e73-4e04-b03e-a62721a16558",
+      "text": "Interface Create\n\nUse the following macro command:\n\nEXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt;<b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. \n\n As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... Activities\n\n Position the cursor on the entry with a blue background that has the component <b>name</b> Interfaces, and choose . Enter IFCREATE in the input field. ... Interface Create\n\nUse\n\n When you want to offer a <b>method</b> for creating an object for your object type, you use the interface Create with its <b>method</b> Create. ...  — Product: SAP NetWeaver 7.0 EHP1 (SPS22)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/5082895e-3e73-4e04-b03e-a62721a16558.html?locale=en-US&state=PRODUCTION&version=7.01.22",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_701/6d9feefa6c4b101494abec9186d53d58/5082895e-3e73-4e04-b03e-a62721a16558.html?locale=en-US&state=PRODUCTION&version=7.01.22",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPEVENTS",
+      "text": "ABAPEVENTS\n\nThis statement declares an instance event `evt` in a class or interface. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `evt`. The statement [`RAISE EVENT`](ABAPRAISE_EVENT.html) can be used to raise the instance event `evt` in any instance method of the same class, or of any class that implements the interface, as well as in the instance methods of subclasses if they are\n\n/abap-docs-standard/ABAPEVENTS",
+      "bm25": -18.3800897283884,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPEVENTS",
+      "relFile": "ABAPEVENTS.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.3800897283884,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8",
+      "text": "Interface Create\n\nUse the following macro command:\n                              \n\n                              \n                              \n                              EXIT_RETURN &lt;<b>Code</b>&gt; &lt;<b>Variable1</b>&gt; &lt;<b>Variable2</b>&gt; &lt; ... As the &lt;<b>Code</b>&gt;, enter the exception&rsquo;s 4-digit number specified when the exception was defined. ... <b>Variable3</b>&gt; &lt;<b>Variable4</b>&gt;. ...  — Product: SAP NetWeaver 7.0 (SPS36)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8.html?locale=en-US&state=PRODUCTION&version=7.0.36",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_700/109b51f56c531014b4e7c143c4b731a9/d5ab3660-6ecd-443a-8885-e1f7bb4bdaf8.html?locale=en-US&state=PRODUCTION&version=7.0.36",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCLASS_DEFINITION",
+      "text": "ABAPCLASS_DEFINITION\n\nThe statement block `CLASS class DEFINITION - ENDCLASS` declares a class named `class`. [Naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `class`. The components [`components`](ABENCLASS_COMPONENT.html) of the class are declared between `CLASS` and `ENDCLASS`. Each component must be listed in a [visibility section](ABENVISIBILITY_SECTION_GLOSRY.html) after one of the statements `\n\n/abap-docs-standard/ABAPCLASS_DEFINITION",
+      "bm25": -18.335591107993732,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCLASS_DEFINITION",
+      "relFile": "ABAPCLASS_DEFINITION.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.335591107993732,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPINTERFACE_DEFINITION",
+      "text": "ABAPINTERFACE_DEFINITION\n\n`INTERFACE intf [PUBLIC].`\\\\  The statement block `INTERFACE - ENDINTERFACE` defines an [interface](ABENOO_INTF_GLOSRY.html)\\\\ `intf`. [Naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `intf`. The [`components`](ABENINTERFACE_COMPONENT.html) of the interface are declared between `INTERFACE` and `ENDINTERFACE`. An interface defined using `INTERFACE` can be implemented in classes a\n\n/abap-docs-standard/ABAPINTERFACE_DEFINITION",
+      "bm25": -18.187167269054054,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPINTERFACE_DEFINITION",
+      "relFile": "ABAPINTERFACE_DEFINITION.md",
+      "finalScore": 0.03164556962025317,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.187167269054054,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCONSTANTS",
+      "text": "ABAPCONSTANTS\n\nThis statement declares a constant data object or a constant `const` for short. Its content cannot be changed at runtime of an ABAP program. It can only be used as an operand in [read positions](ABENREAD_POSITION_GLOSRY.html) of ABAP statements. Constants declared in the declaration part of a class or an interface belong to their [static attributes](ABENSTATIC_ATTRIBUTE_GLOSRY.html). The [naming c\n\n/abap-docs-standard/ABAPCONSTANTS",
+      "bm25": -17.962301923070356,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCONSTANTS",
+      "relFile": "ABAPCONSTANTS.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.962301923070356,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSHM_AREA_BASIC_PROPERTIES",
+      "text": "ABENSHM_AREA_BASIC_PROPERTIES\n\nAn area has the following basic properties: -   The name of an area. This is also the name of the generated global [area class](ABENSHM_AREA_CLASS.html) and is therefore unique across the system. It is recommended that the naming conventions for global classes use the prefix `CL_`. -   *Area root class*\n\n/abap-docs-standard/ABENSHM_AREA_BASIC_PROPERTIES",
+      "bm25": -17.690849208297163,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSHM_AREA_BASIC_PROPERTIES",
+      "relFile": "ABENSHM_AREA_BASIC_PROPERTIES.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.690849208297163,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSRVD_DEFINE_SERVICE",
+      "text": "ABENSRVD_DEFINE_SERVICE\n\nThe statement `DEFINE SERVICE` implements a [CDS service definition](ABENCDS_SERVICE_DEFINITION_GLOSRY.html) with the name `service` in [CDS SDL](ABENCDS_SDL_GLOSRY.html). The name `service` is in the same namespace as the [CDS entities](ABENCDS_ENTITY_GLOSRY.html) defined with [CDS DDL](ABENCDS_DDL_GLOSRY.html) and must satisfy the appropriate naming conventions. The service definition can expose\n\n/abap-docs-standard/ABENSRVD_DEFINE_SERVICE",
+      "bm25": -17.68211348793886,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSRVD_DEFINE_SERVICE",
+      "relFile": "ABENSRVD_DEFINE_SERVICE.md",
+      "finalScore": 0.03048780487804878,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.68211348793886,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCLASS-DATA",
+      "text": "ABAPCLASS-DATA\n\nThe statement `CLASS-DATA` can only be used in the declaration part of a class or an interface. It declares a static attribute `attr` whose validity is not tied to instances of a class, but to the class itself. All instances of the class and its subclasses access a static attribute. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `attr`. The syntax of the additions `options\n\n/abap-docs-standard/ABAPCLASS-DATA",
+      "bm25": -17.666607076964272,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCLASS-DATA",
+      "relFile": "ABAPCLASS-DATA.md",
+      "finalScore": 0.030120481927710843,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.666607076964272,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPFIELD-SYMBOLS",
+      "text": "ABAPFIELD-SYMBOLS\n\nThe statement `FIELD-SYMBOLS` declares a [field symbol](ABENFIELD_SYMBOL_GLOSRY.html)\\\\ `<fs>`. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `fs`. The angle brackets distinguish field symbols from data objects and are mandatory. Field symbols can be declared in any [procedure](ABENPROCEDURE_GLOSRY.html) and in the global declaration part of an ABAP program, but not in th\n\n/abap-docs-standard/ABAPFIELD-SYMBOLS",
+      "bm25": -17.604807021541415,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPFIELD-SYMBOLS",
+      "relFile": "ABAPFIELD-SYMBOLS.md",
+      "finalScore": 0.02976190476190476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.604807021541415,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDEFINE",
+      "text": "ABAPDEFINE\n\n`... &1 ... &9 ...`\\\\  The statement `DEFINE` defines a [macro](ABENMACRO_GLOSRY.html)\\\\ `macro`. The following [naming conventions](ABENNAMING_CONVENTIONS.html) apply to `macro` and [ABAP words](ABENABAP_WORD_GLOSRY.html) cannot be used. Macros can be defined in all [program types](ABENPROGRAM_TYPE_GLOSRY.html), particularly in [type pools](ABENTYPE_POOL_GLOSRY.html). Any content can be found b\n\n/abap-docs-standard/ABAPDEFINE",
+      "bm25": -17.417560881313594,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDEFINE",
+      "relFile": "ABAPDEFINE.md",
+      "finalScore": 0.029411764705882353,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.417560881313594,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNAMES_REPOS_OBJ_GUIDL",
+      "text": "ABENNAMES_REPOS_OBJ_GUIDL\n\nRepository objects are development objects maintained using the tools in ADT or ABAP Workbench. Each repository object is assigned to a package. Packages encapsulate the repository objects contained and use package interfaces to make objects available that should be usable outside the package. This complies with the [SoC principle](ABENSEPARATION_CONCERNS_GUIDL.html). From a semantic point of view\n\n/abap-docs-standard/ABENNAMES_REPOS_OBJ_GUIDL",
+      "bm25": -17.366767940674467,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNAMES_REPOS_OBJ_GUIDL",
+      "relFile": "ABENNAMES_REPOS_OBJ_GUIDL.md",
+      "finalScore": 0.029069767441860465,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.366767940674467,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDICDDL_DEFINE_DRUL",
+      "text": "ABENDDICDDL_DEFINE_DRUL\n\nThe name `drul` of a dependency rule must comply with the [naming conventions for data types](ABENDDIC_TYPES_NAMES.html) and can have a maximum of 30 characters. The name is in the namespace of the [DDIC data types](ABENDDIC_DATA_TYPES.html) and must match the name of the [DRUL source code](ABENDRUL_SOURCE_CODE_GLOSRY.html). After `ON`, the name(s) `dbtab` of DDIC database table(s) for which the d\n\n/abap-docs-standard/ABENDDICDDL_DEFINE_DRUL",
+      "bm25": -17.18865803083355,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDICDDL_DEFINE_DRUL",
+      "relFile": "ABENDDICDDL_DEFINE_DRUL.md",
+      "finalScore": 0.028735632183908046,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.18865803083355,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDICDDL_DEFINE_DYNAMIC_CACHE",
+      "text": "ABENDDICDDL_DEFINE_DYNAMIC_CACHE\n\n`DEFINE DYNAMIC CACHE cache_name    ON dbtab  \\{ projection_list \\}    [WHERE filter_cond]\\    [SEGREGATE CACHE DATA BY filter_cond]\\    [CREATION CONFIGURABLE DEFAULT \\{ON|OFF\\}];` The name `cache_name` of a dynamic cache must comply with the [naming conventions for DDIC data types](ABENDDIC_TYPES_NAMES.html) and can have a maximum of 30 characters. The name is in the namespace of the [DDIC data\n\n/abap-docs-standard/ABENDDICDDL_DEFINE_DYNAMIC_CACHE",
+      "bm25": -16.94139816274714,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDICDDL_DEFINE_DYNAMIC_CACHE",
+      "relFile": "ABENDDICDDL_DEFINE_DYNAMIC_CACHE.md",
+      "finalScore": 0.02840909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.94139816274714,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_F1_DEFINE_CUSTOM_ENTITY",
+      "text": "ABENCDS_F1_DEFINE_CUSTOM_ENTITY\n\nDefines a [CDS custom entity](ABENCDS_CUSTOM_ENTITY_GLOSRY.html)\\\\ `custom_entity` in the [CDS DDL](ABENCDS_DDL_GLOSRY.html). When a CDS custom entity is activated, its metadata is created but no other object instances are created on the database or in AS ABAP. The name `custom_entity` must comply with the naming conventions for [dictionary types](ABENDDIC_DATA_TYPES.html) and can have a maximum o\n\n/abap-docs-standard/ABENCDS_F1_DEFINE_CUSTOM_ENTITY",
+      "bm25": -16.779864920196815,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_F1_DEFINE_CUSTOM_ENTITY",
+      "relFile": "ABENCDS_F1_DEFINE_CUSTOM_ENTITY.md",
+      "finalScore": 0.02777777777777778,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.779864920196815,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODULE",
+      "text": "ABAPMODULE\n\n`MODULE mod \\{OUTPUT|[INPUT]\\}.`\\\\  The statement `MODULE` defines a [dialog module](ABENDIALOG_MODULE_GLOSRY.html)\\\\ `mod`. The [naming conventions](ABENNAMING_CONVENTIONS.html) apply to the name `mod`. The functions of a dialog module `mod` are implemented between the statements `MODULE` ad `ENDMODULE`. A dialog module is called using the identically named statement [`MODULE`](MODULE.html) of th\n\n/abap-docs-standard/ABAPMODULE",
+      "bm25": -16.30624218252102,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODULE",
+      "relFile": "ABAPMODULE.md",
+      "finalScore": 0.027472527472527476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.30624218252102,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDATA",
+      "text": "ABAPDATA\n\n1\\. `DATA \\{\\ \\{var[(len)] TYPE abap_type [DECIMALS dec]\\}`\\\\ `|\\ \\{var TYPE abap_type [LENGTH len]\\ [DECIMALS dec]\\}\\ \\}`\\\\ `[VALUE val|\\{IS INITIAL\\}]`\\\\\n\n/abap-docs-standard/ABAPDATA",
+      "bm25": -15.486551469394328,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDATA",
+      "relFile": "ABAPDATA.md",
+      "finalScore": 0.02717391304347826,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.486551469394328,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTELLING_NAMES_GUIDL",
+      "text": "ABENTELLING_NAMES_GUIDL\n\nA name can include technical and semantic information: The technical information about a repository object or internal program entity can be viewed directly in ABAP Workbench. This information is also displayed in tooltips or can be displayed with a simple double-click. However, in contrast to purely technical type information, the semantics of a variable are more difficult to identify without the\n\n/abap-docs-standard/ABENTELLING_NAMES_GUIDL",
+      "bm25": -15.268252987589879,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTELLING_NAMES_GUIDL",
+      "relFile": "ABENTELLING_NAMES_GUIDL.md",
+      "finalScore": 0.02688172043010753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.268252987589879,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_SECONDARY_KEY",
+      "text": "ABAPTYPES_SECONDARY_KEY\n\n`... \\{UNIQUE HASHED\\}|\\{UNIQUE SORTED\\}|\\{NON-UNIQUE SORTED\\}`\\\\      `KEY key_name [ALIAS alias_name] COMPONENTS comp1 comp2 ...` Definition of a [secondary table key](ABENSECONDARY_TABLE_KEY_GLOSRY.html) with an internal table type. An internal table can have up to 15 secondary keys.\n\n/abap-docs-standard/ABAPTYPES_SECONDARY_KEY",
+      "bm25": -14.546581396994261,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_SECONDARY_KEY",
+      "relFile": "ABAPTYPES_SECONDARY_KEY.md",
+      "finalScore": 0.026041666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.546581396994261,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENEXTERNAL_VIEWS",
+      "text": "ABENEXTERNAL_VIEWS\n\n**Note**\\\\ [SAP HANA XSA](ABENXSA_GLOSRY.html) replaces [SAP HANA XSC](ABENXSC_GLOSRY.html). The [access methods](ABENSAP_HANA_ACCESS_XSC.html) designed specifically for XSC objects are not suitable for XSA objects. After all XSC objects have been migrated to XSA, the access methods designed for XSC became mostly obsolete. [DDIC external views](ABENEXTERNAL_VIEW_GLOSRY.html) represent one such acc\n\n/abap-docs-standard/ABENEXTERNAL_VIEWS",
+      "bm25": -14.432553659599852,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENEXTERNAL_VIEWS",
+      "relFile": "ABENEXTERNAL_VIEWS.md",
+      "finalScore": 0.02577319587628866,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.432553659599852,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_F1_DEFINE_TABLE_FUNCTION",
+      "text": "ABENCDS_F1_DEFINE_TABLE_FUNCTION\n\nDefines a [CDS entity](ABENCDS_ENTITY_GLOSRY.html)\\\\ `table_function` as a [CDS table function](ABENCDS_TABLE_FUNCTION_GLOSRY.html) in the [CDS DDL](ABENCDS_DDL_GLOSRY.html). In platform-dependent SQL, the CDS table function is implemented in an [AMDP method](ABENAMDP_METHOD_GLOSRY.html)\\\\ `amdp_function`, which is created using the [AMDP framework](ABENAMDP_GLOSRY.html) in the database system as\n\n/abap-docs-standard/ABENCDS_F1_DEFINE_TABLE_FUNCTION",
+      "bm25": -14.41360991520745,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_F1_DEFINE_TABLE_FUNCTION",
+      "relFile": "ABENCDS_F1_DEFINE_TABLE_FUNCTION.md",
+      "finalScore": 0.02551020408163265,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.41360991520745,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENMACRO_INCLUDE",
+      "text": "ABENMACRO_INCLUDE\n\n`macro [p1 p2 ... ].` If a macro is listed as the first word in an ABAP statement instead of a valid [ABAP keyword](ABENABAP_KEYWORD_GLOSRY.html), then its content is included in the source code at this position. To create a syntactically correct program, the included macro may only contain complete ABAP statements except for [`DEFINE`](ABAPDEFINE.html) and [`END-OF-DEFINITION`](ABAPEND-OF-DEFINIT\n\n/abap-docs-standard/ABENMACRO_INCLUDE",
+      "bm25": -14.26856744216711,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENMACRO_INCLUDE",
+      "relFile": "ABENMACRO_INCLUDE.md",
+      "finalScore": 0.025252525252525256,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.26856744216711,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13977859",
+      "text": "Writing Clean Code and Best Practices in SAP ABAP\n\n...ractices can significantly enhance the quality of your programs. Here are some key points to keep in mind: 1. Use Meaningful Name s Choose clear, descriptive name s for variables , methods , and classes....\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/writing-clean-code-and-best-practices-in-sap-abap/ba-p/13977859?search-action-id=497478237655&search-result-uid=13977859",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/writing-clean-code-and-best-practices-in-sap-abap/ba-p/13977859?search-action-id=497478237655&search-result-uid=13977859",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13578235",
+      "text": "[ Clean Code Practices] Mess to Masterpiece with an...\n\n...evelopers to write comments for their methods , classes, and variables in a structured manner. Why is it important? Onboarding: New developers can understand the code ’s intent and f...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/clean-code-practices-mess-to-masterpiece-with-an-example/ba-p/13578235?search-action-id=497478237655&search-result-uid=13578235",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/clean-code-practices-mess-to-masterpiece-with-an-example/ba-p/13578235?search-action-id=497478237655&search-result-uid=13578235",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13198805",
+      "text": "Fanning the Flames: Prefixing Variable/Attribute N...\n\n...reaming of a world without global variables , methods no longer than (insert number here) lines of code and pure object orientation may be an enjoyable pastime, but it doesn't get the job done. The w...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/fanning-the-flames-prefixing-variable-attribute-names/ba-p/13198805?search-action-id=497478237655&search-result-uid=13198805",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/fanning-the-flames-prefixing-variable-attribute-names/ba-p/13198805?search-action-id=497478237655&search-result-uid=13198805",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    }
+  ]
+}

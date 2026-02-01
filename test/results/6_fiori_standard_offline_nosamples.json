@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "query": "Fiori Elements List Report",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": false,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:18:35.243Z",
+    "count": 9
+  },
+  "results": [
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#fiori-elements",
+      "text": "Fiori Elements\n\nDas Fiori Elements Framework ermöglicht es, größtenteils ohne Frontend-Erfahrungen (JavaScript, XML) vollwertige Fiori-Unternehmensanwendungen umzusetzen. Dazu gibt es einige vorgefertigte Floorplans (App-Typen) der SAP, die basierend auf einem OData-Service generiert werden. Der am weitesten verbre...\n\n/dsag-abap-leitfaden/user-interface/index#fiori-elements",
+      "bm25": -15.07375168208828,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#fiori-elements",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.04098360655737705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.07375168208828,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_741130102_ANNO",
+      "text": "The following values are only available for analytic manager\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n/abap-docs-standard/ABENCDS_741130102_ANNO",
+      "bm25": -13.22218222728402,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_741130102_ANNO",
+      "relFile": "ABENCDS_741130102_ANNO.md",
+      "finalScore": 0.03731343283582089,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.22218222728402,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_467685227-_ANNO",
+      "text": "ABENCDS_467685227-_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`Consumption Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8\n\n/abap-docs-standard/ABENCDS_467685227-_ANNO",
+      "bm25": -12.412891808910915,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_467685227-_ANNO",
+      "relFile": "ABENCDS_467685227-_ANNO.md",
+      "finalScore": 0.03676470588235294,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.412891808910915,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#fiori-sapui5",
+      "text": "Fiori & SAPUI5\n\nSAP Fiori bezeichnet die neue User Experience aktueller Lösungen der SAP, die auf Basis moderner Design-Prinzipien entstanden sind. Fiori ist die strategische Oberflächentechnologie der SAP und sollte in den meisten Fällen von Neuentwicklungen als gesetzte Technologie angesehen werden. Der Begriff *...\n\n/dsag-abap-leitfaden/user-interface/index#fiori-sapui5",
+      "bm25": -15.010548935589984,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#fiori-sapui5",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.010548935589984,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#fiori-freestyle",
+      "text": "Fiori Freestyle\n\nWenn für eine zu entwickelnde Anwendung die von der SAP zur Verfügung gestellten Floorplans nicht ausreichend sind muss die UI-Oberfläche manuell entwickelt werden. Hierfür kommt eine Fiori Freestyle Entwicklung zum Einsatz. Die Fiori-Entwicklung wird mit dem SAPUI5-Framework umgesetzt, hierfür sind...\n\n/dsag-abap-leitfaden/user-interface/index#fiori-freestyle",
+      "bm25": -15.009561719191082,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#fiori-freestyle",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.03076923076923077,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.009561719191082,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#flexible-programming-model",
+      "text": "Flexible Programming Model\n\nDas [Flexible Programmiermodell (FPM)](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/overview/introduction) bietet eine Mischform aus generierten Fiori Elements- und manuell entwickelten SAPUI5 Freestyle-Oberflächen. Es steht ab SAPUI5 v1.94 und nur mit OData V4 zur Verfügun...\n\n/dsag-abap-leitfaden/user-interface/index#flexible-programming-model",
+      "bm25": -15.026134888000087,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#flexible-programming-model",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.024193548387096774,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.026134888000087,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index",
+      "text": "User Interface (UI)\n\n{: .no_toc}\n\n/dsag-abap-leitfaden/user-interface/index",
+      "bm25": -15.025583010225798,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.023809523809523808,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.025583010225798,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#legacy-technologien",
+      "text": "Legacy Technologien\n\nDieses Kapitel soll einen kurzen Überblick über bisher nicht genannte Oberflächentechnologien geben. Da diese im Laufe der Zeit immer mehr an Relevanz verlieren wird an dieser Stelle nicht näher auf einzelne Technologien eingegangen.   | UI-Technologie                       | SAP-Roadmap            ...\n\n/dsag-abap-leitfaden/user-interface/index#legacy-technologien",
+      "bm25": -14.991432147516761,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#legacy-technologien",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.022727272727272728,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.991432147516761,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/abap/restful_abap#rap-feature-showcase-app",
+      "text": "RAP Feature Showcase App\n\nDie SAP stellt ein zentrales Repository bereit, das als Beispielapplikation in ihrem S/4 System installiert werden kann. Diese [RAP Feature Showcase App](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase) zeigt Ihnen interaktiv, welche Funktionalitäten mit RAP und Fiori Elements ge...\n\n/dsag-abap-leitfaden/abap/restful_abap#rap-feature-showcase-app",
+      "bm25": -11.894492743927291,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/abap/restful_abap#rap-feature-showcase-app",
+      "relFile": "abap/restful_abap.md",
+      "finalScore": 0.021739130434782608,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.894492743927291,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.5
+      }
+    }
+  ]
+}

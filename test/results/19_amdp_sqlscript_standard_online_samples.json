@@ -1,0 +1,806 @@
+{
+  "meta": {
+    "query": "AMDP SQLScript CDS table function",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:19:04.398Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-table-functions-for-cds-table-functions",
+      "text": "AMDP Table Functions for CDS Table Functions\n\n- Each [CDS table function](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abencds_table_function_glosry.htm \"Glossary Entry\") is linked with an AMDP function in which it is implemented using SQLScript. - Can be used as data sources of ABAP SQL read statements. - Character...\n\n/abap-cheat-sheets/12_AMDP#amdp-table-functions-for-cds-table-functions",
+      "bm25": -20.842224987237195,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-table-functions-for-cds-table-functions",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.07580645161290323,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.842224987237195,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 3.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_HDB_SQLSCRIPT",
+      "text": "ABENAMDP_HDB_SQLSCRIPT\n\nThe SQLScript implementation of an AMDP method with the name `meth` that belongs to an AMDP class `class` is stored by the ABAP runtime framework as an SQLScript procedure under the name `CLASS=>METH` in the [ABAP database schema](ABENABAP_DB_SCHEMA_GLOSRY.html) of the SAP HANA database. The names must be written in uppercase letters when used in the database system. AS ABAP is responsible for all\n\n/abap-docs-standard/ABENAMDP_HDB_SQLSCRIPT",
+      "bm25": -21.160616115284725,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_HDB_SQLSCRIPT",
+      "relFile": "ABENAMDP_HDB_SQLSCRIPT.md",
+      "finalScore": 0.06885245901639345,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.160616115284725,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-scalar-functions-for-cds-scalar-functions",
+      "text": "AMDP Scalar Functions for CDS Scalar Functions\n\n- Unlike *AMDP scalar functions for AMDP methods*, *AMDP scalar functions for CDS scalar functions*:   - Must be declared in the public visibility section of a class as static methods using `CLASS-METHODS`.   - Cannot be called in ABAP like a regular method. define scalar zdemo_abap_scalar_func with...\n\n/abap-cheat-sheets/12_AMDP#amdp-scalar-functions-for-cds-scalar-functions",
+      "bm25": -20.70279547504263,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-scalar-functions-for-cds-scalar-functions",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.065625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.70279547504263,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_TABLE_FUNCTION_GLOSRY",
+      "text": "ABENCDS_TABLE_FUNCTION_GLOSRY\n\nA [CDS persistent entity](ABENCDS_SQL_ENTITY_GLOSRY.html) defined using [`DEFINE TABLE FUNCTION`](ABENCDS_F1_DEFINE_TABLE_FUNCTION.html) in a [CDS data definition](ABENCDS_DATA_DEFINITION_GLOSRY.html). Each CDS table function is linked with an [AMDP table function](ABENAMDP_TABLE_FUNCTION_GLOSRY.html) in which it is implemented using [SQLScript](ABENSQL_SCRIPT_GLOSRY.html). A CDS table function re\n\n/abap-docs-standard/ABENCDS_TABLE_FUNCTION_GLOSRY",
+      "bm25": -20.659083966609238,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_TABLE_FUNCTION_GLOSRY",
+      "relFile": "ABENCDS_TABLE_FUNCTION_GLOSRY.md",
+      "finalScore": 0.06470588235294118,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.659083966609238,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 3.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-table-functions",
+      "text": "AMDP Table Functions\n\nTwo kinds of AMDP table functions are available: - *AMDP table functions for AMDP methods*: Functions that can only be accessed in other AMDP methods (i. e. other AMDP functions or procedures) and cannot be called directly in ABAP - *AMDP table functions for CDS table functions*: Functions that impl...\n\n/abap-cheat-sheets/12_AMDP#amdp-table-functions",
+      "bm25": -20.676945014210165,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-table-functions",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.06363636363636364,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.676945014210165,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-scalar-functions",
+      "text": "AMDP Scalar Functions\n\nTwo kinds of AMDP scalar functions are available: - *AMDP scalar functions for AMDP methods*: Functions that can be accessed in other AMDP methods (i. e. other AMDP functions or procedures) and called directly in ABAP - *AMDP scalar functions for CDS scalar functions*: Functions that implement [CDS ...\n\n/abap-cheat-sheets/12_AMDP#amdp-scalar-functions",
+      "bm25": -20.696749949011224,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-scalar-functions",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.05692307692307693,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.696749949011224,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-table-functions-for-amdp-methods",
+      "text": "AMDP Table Functions for AMDP Methods\n\nCharacteristics of method declaration parts of AMDP table functions for AMDP methods: - Similar to AMDP procedures, the methods can be declared as static or instance methods in any visibility section.  - The method parameters must include a return value using `RETURNING` and having a tabular data ty...\n\n/abap-cheat-sheets/12_AMDP#amdp-table-functions-for-amdp-methods",
+      "bm25": -20.640370713806202,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-table-functions-for-amdp-methods",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.05600000000000001,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.640370713806202,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-scalar-functions-for-amdp-methods",
+      "text": "AMDP Scalar Functions for AMDP Methods\n\nThe characteristics of method declaration parts of *AMDP scalar functions for AMDP methods* are similar to AMDP table functions. Among the differences are:  - The return value and the input parameters must have an elementary type.\n\n/abap-cheat-sheets/12_AMDP#amdp-scalar-functions-for-amdp-methods",
+      "bm25": -20.647532259571005,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-scalar-functions-for-amdp-methods",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.05285714285714286,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.647532259571005,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-functions",
+      "text": "AMDP Functions\n\n[Scalar](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenamdp_scalar_function_glosry.htm \"Glossary Entry\") and [table functions](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abentable_function_glosry.htm \"Glossary Entry\") can be managed as [...\n\n/abap-cheat-sheets/12_AMDP#amdp-functions",
+      "bm25": -20.644998742994904,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-functions",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.052112676056338035,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.644998742994904,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#restrictions-for-amdp-methods-in-abap-for-cloud-development",
+      "text": "Restrictions for AMDP Methods in ABAP for Cloud Development\n\n- The AMDP procedure implementation must be restricted to reads. The relevant additions are `AMDP OPTIONS READ-ONLY` in AMDP method declarations and `OPTIONS READ-ONLY` in AMDP method implementations. - AMDP method implementations can only use SQLScript code. - The data sources accessed must be rele...\n\n/abap-cheat-sheets/12_AMDP#restrictions-for-amdp-methods-in-abap-for-cloud-development",
+      "bm25": -20.77547024085997,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#restrictions-for-amdp-methods-in-abap-for-cloud-development",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.050793650793650794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.77547024085997,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#making-amdp-methods-client-safe",
+      "text": "Making AMDP Methods Client-Safe\n\nTo ensure client safety, the following prerequisites must be met.  - **AMDP method declarations** must use one of the following additions and specify particular objects in the **`USING` list**:     - `CDS SESSION CLIENT DEPENDENT`\n\n/abap-cheat-sheets/12_AMDP#making-amdp-methods-client-safe",
+      "bm25": -20.662887258266537,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#making-amdp-methods-client-safe",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.04776119402985075,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.662887258266537,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP",
+      "text": "ABAP Managed Database Procedures (AMDP)\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/12_AMDP",
+      "bm25": -20.648174721848218,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.0463768115942029,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.648174721848218,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#executable-example",
+      "text": "Executable Example\n\n[zcl_demo_abap_amdp](./src/zcl_demo_abap_amdp.clas.abap) > [!NOTE] > - The executable example covers the following topics:\n\n/abap-cheat-sheets/12_AMDP#executable-example",
+      "bm25": -20.642600242331483,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#executable-example",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.044444444444444446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.642600242331483,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-classes",
+      "text": "AMDP Classes\n\n-   An [AMDP class](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenamdp_class_glosry.htm \"Glossary Entry\")     is an [ABAP repository](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenabap_repository_glosry.htm \"Glossary Entry\")     object ...\n\n/abap-cheat-sheets/12_AMDP#amdp-classes",
+      "bm25": -20.64221756747204,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-classes",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.043835616438356165,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.64221756747204,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_FUNCTIONS_CS_ABEXA",
+      "text": "ABENAMDP_FUNCTIONS_CS_ABEXA\n\nThis example demonstrates AMDP functions and how they are used. The AMDP methods implementing the functions are [client-safe](ABENCLIENT_SAFE_GLOSRY.html) and are suited for [ABAP for Cloud Development](ABENABAP_FOR_CLOUD_DEV_GLOSRY.html). This example accesses [AMDP functions](ABENAMDP_FUNCTION_GLOSRY.html) that are declared and implemented in the [AMDP class](ABENAMDP_CLASS_GLOSRY.html)\\\\ `CL_DE\n\n/abap-docs-standard/ABENAMDP_FUNCTIONS_CS_ABEXA",
+      "bm25": -19.588075474217213,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_FUNCTIONS_CS_ABEXA",
+      "relFile": "ABENAMDP_FUNCTIONS_CS_ABEXA.md",
+      "finalScore": 0.043820224719101124,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.588075474217213,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 2.9000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_CLIENT_SAFETY",
+      "text": "ABENAMDP_CLIENT_SAFETY\n\nThe AMDP framework does not introduce implicit client conditions into the AMDP method implementations and there is no implicit client handling when executing an AMDP method. Therefore, [client safety](ABENCLIENT_SAFE_GLOSRY.html) must be delegated to the objects accessed in an AMDP method and declared in its [`USING`](ABAPMETHOD_BY_DB_PROC.html) list. An AMDP method is [client-safe](ABENCLIENT_SAF\n\n/abap-docs-standard/ABENAMDP_CLIENT_SAFETY",
+      "bm25": -19.78962294983125,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_CLIENT_SAFETY",
+      "relFile": "ABENAMDP_CLIENT_SAFETY.md",
+      "finalScore": 0.043529411764705886,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.78962294983125,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_FUNCTIONS_ABEXA",
+      "text": "ABENAMDP_FUNCTIONS_ABEXA\n\nThis example demonstrates AMDP functions and how they are used. The AMDP methods implementing the functions are not [client-safe](ABENCLIENT_SAFE_GLOSRY.html) and are not suited for [ABAP for Cloud Development](ABENABAP_FOR_CLOUD_DEV_GLOSRY.html). This example accesses [AMDP functions](ABENAMDP_FUNCTION_GLOSRY.html) that are declared and implemented in the [AMDP class](ABENAMDP_CLASS_GLOSRY.html)\\\n\n/abap-docs-standard/ABENAMDP_FUNCTIONS_ABEXA",
+      "bm25": -19.548650426489157,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_FUNCTIONS_ABEXA",
+      "relFile": "ABENAMDP_FUNCTIONS_ABEXA.md",
+      "finalScore": 0.042857142857142864,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.548650426489157,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 2.9000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_CS_ABEXA",
+      "text": "ABENAMDP_CS_ABEXA\n\nThis example demonstrates how SQLScript procedures are implemented using AMDP. Since they implement a read access and are [client-safe](ABENCLIENT_SAFE_GLOSRY.html) by using the AMDP option [`CDS SESSION CLIENT DEPENDENT`](ABAPMETHODS_AMDP_OPTIONS_CLIENT.html), the AMDP class can have the ABAP language version [ABAP for Cloud Development](ABENABAP_FOR_CLOUD_DEV_GLOSRY.html). Simple [SQLScript proc\n\n/abap-docs-standard/ABENAMDP_CS_ABEXA",
+      "bm25": -20.29633613481431,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_CS_ABEXA",
+      "relFile": "ABENAMDP_CS_ABEXA.md",
+      "finalScore": 0.04250000000000001,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.29633613481431,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-procedures",
+      "text": "AMDP Procedures\n\nDespite the fact that AMDP methods cannot be identified as such from the [declaration part](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abendeclaration_part_glosry.htm \"Glossary Entry\") PUBLIC SECTION Table type with structured type TYPES tab_type TYPE\n\n/abap-cheat-sheets/12_AMDP#amdp-procedures",
+      "bm25": -20.63744911036003,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-procedures",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.042105263157894736,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.63744911036003,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_MANAGED_DB_OBJECTS_AMDP",
+      "text": "ABENABAP_MANAGED_DB_OBJECTS_AMDP\n\nAMDP can be used to access [ABAP-managed database objects](ABENABAP_MANAGED_DB_OBJECT_GLOSRY.html) as follows: The most important AMDP features are as follows: Implementations of AMDP methods can be debugged in the [ABAP development tools for Eclipse (ADT)](ABENADT_GLOSRY.html).\n\n/abap-docs-standard/ABENABAP_MANAGED_DB_OBJECTS_AMDP",
+      "bm25": -19.64744118901449,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_MANAGED_DB_OBJECTS_AMDP",
+      "relFile": "ABENABAP_MANAGED_DB_OBJECTS_AMDP.md",
+      "finalScore": 0.042045454545454546,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.64744118901449,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#amdp-methods",
+      "text": "AMDP Methods\n\n-   Can be created as [instance     methods](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abeninstance_method_glosry.htm \"Glossary Entry\")     using <code>METHODS</code> or [static PUBLIC SECTION METHODS some_amdp_meth Here parameters PRIVATE SECTION CLASS METHODS\n\n/abap-cheat-sheets/12_AMDP#amdp-methods",
+      "bm25": -20.636952806337085,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#amdp-methods",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.041558441558441565,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.636952806337085,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_CHANGING_CS_ABEXA",
+      "text": "ABENAMDP_CHANGING_CS_ABEXA\n\nThis example demonstrates how an SQLScript procedure is implemented using AMDP with a tabular `CHANGING` parameter. Since the AMDP option [`CDS SESSION CLIENT DEPENDENT`](ABAPMETHODS_AMDP_OPTIONS_CLIENT.html) is used for the AMDP methods, they are [client-safe](ABENCLIENT_SAFE_GLOSRY.html). The following [SQLScript procedure](ABENSQL_SCRIPT_PROCEDURE_GLOSRY.html) is implemented in the AMDP method\n\n/abap-docs-standard/ABENAMDP_CHANGING_CS_ABEXA",
+      "bm25": -19.941633736375792,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_CHANGING_CS_ABEXA",
+      "relFile": "ABENAMDP_CHANGING_CS_ABEXA.md",
+      "finalScore": 0.040963855421686755,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.941633736375792,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_CHANGING_ABEXA",
+      "text": "ABENAMDP_CHANGING_ABEXA\n\nThis example demonstrates how an SQLScript procedure is implemented using AMDP with a tabular `CHANGING` parameter. Since the AMDP option [`CDS SESSION CLIENT CURRENT`](ABAPMETHODS_AMDP_OPTIONS_CLIENT.html) is used for the AMDP methods, they are not [client-safe](ABENCLIENT_SAFE_GLOSRY.html). The following [SQLScript procedure](ABENSQL_SCRIPT_PROCEDURE_GLOSRY.html) is implemented in the AMDP metho\n\n/abap-docs-standard/ABENAMDP_CHANGING_ABEXA",
+      "bm25": -19.899511566110824,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_CHANGING_ABEXA",
+      "relFile": "ABENAMDP_CHANGING_ABEXA.md",
+      "finalScore": 0.04047619047619048,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.899511566110824,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_HDB_SQLSCRIPT_MAPPING",
+      "text": "ABENAMDP_HDB_SQLSCRIPT_MAPPING\n\nElementary ABAP types are mapped to the appropriate types in SQLScript as shown in the following tables. The type mapping includes: The tables distinguish parameters that reference a type defined in ABAP from those that reference a [built-in type in the ABAP Dictionary](ABENDDIC_BUILTIN_TYPES.html). No parameters or type references can be defined for SQLScript types that are not listed here. **Cha\n\n/abap-docs-standard/ABENAMDP_HDB_SQLSCRIPT_MAPPING",
+      "bm25": -17.951624637826388,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_HDB_SQLSCRIPT_MAPPING",
+      "relFile": "ABENAMDP_HDB_SQLSCRIPT_MAPPING.md",
+      "finalScore": 0.04038461538461539,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.951624637826388,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_SQL_SCALAR_FUNCTION",
+      "text": "ABENCDS_SQL_SCALAR_FUNCTION\n\nWhile [analytical scalar functions](ABENCDS_ANA_SCALAR_FUNCTION.html) are defined and implemented by SAP, SQL-based scalar functions can also be defined and implemented by customers and partners. SQL-based scalar functions make user-defined [AMDP scalar functions](ABENAMDP_SCALAR_FUNCTION_GLOSRY.html) known to the ABAP Dictionary and available in ABAP CDS. An SQL-based scalar function consists of\n\n/abap-docs-standard/ABENCDS_SQL_SCALAR_FUNCTION",
+      "bm25": -17.87489056291851,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_SQL_SCALAR_FUNCTION",
+      "relFile": "ABENCDS_SQL_SCALAR_FUNCTION.md",
+      "finalScore": 0.04000000000000001,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.87489056291851,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_SCALAR_FUNCTIONS",
+      "text": "ABENCDS_SCALAR_FUNCTIONS\n\nA [CDS scalar function](ABENCDS_SCALAR_FUNCTION_GLOSRY.html) is defined in the [FDL source code](ABENFDL_SOURCE_CODE_GLOSRY.html) of a [CDS function definition](ABENCDS_FUNCTION_DEFINITION_GLOSRY.html) in the [ABAP development tools for Eclipse](ABENADT_GLOSRY.html) using the statement [`DEFINE SCALAR FUNCTION`](ABENCDS_DEFINE_SCALAR_FUNCTION.html). A CDS scalar function is a user-defined [CDS fun\n\n/abap-docs-standard/ABENCDS_SCALAR_FUNCTIONS",
+      "bm25": -17.62316810170755,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_SCALAR_FUNCTIONS",
+      "relFile": "ABENCDS_SCALAR_FUNCTIONS.md",
+      "finalScore": 0.03962264150943396,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.62316810170755,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 3.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_ABEXA",
+      "text": "ABENAMDP_ABEXA\n\nThis example demonstrates how an SQLScript procedure is implemented using AMDP. Since it implements a write access and is not [client-safe](ABENCLIENT_SAFE_GLOSRY.html), the AMDP class cannot have the ABAP language version [ABAP for Cloud Development](ABENABAP_FOR_CLOUD_DEV_GLOSRY.html). A simple [SQLScript procedure](ABENSQL_SCRIPT_PROCEDURE_GLOSRY.html) is implemented in three AMDP methods, show\n\n/abap-docs-standard/ABENAMDP_ABEXA",
+      "bm25": -19.75076040757205,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_ABEXA",
+      "relFile": "ABENAMDP_ABEXA.md",
+      "finalScore": 0.03953488372093024,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.75076040757205,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP",
+      "text": "ABAP Managed Database Procedures are a framework for managing and calling\n\nABAP Managed Database Procedures are a framework for managing and calling in [AS ABAP](ABENAS_ABAP_GLOSRY.html). Accordingly, the ABAP Managed Database Procedures manage A procedure or function of this type is implemented in a database-specific language ([SQLScript](ABENSQL_SCRIPT_GLOSRY.html), [L](ABENLLANG_GLOSRY.html), ... ) in an\n\n/abap-docs-standard/ABENAMDP",
+      "bm25": -20.128725133322448,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP",
+      "relFile": "ABENAMDP.md",
+      "finalScore": 0.039024390243902446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.128725133322448,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTABLE_FUNCTION_GLOSRY",
+      "text": "ABENTABLE_FUNCTION_GLOSRY\n\nGenerally, a table function is a function that returns a tabular result set. Usable in ABAP as follows: Besides function that return tabular results, there are also [built-in functions](ABENITAB_FUNCTIONS.html) that work with [internal tables](ABENINTERNAL_TABLE_GLOSRY.html) as arguments. Those might also be called table functions. -   In [ABAP SQL](ABENABAP_SQL_GLOSRY.html), a table function is a\n\n/abap-docs-standard/ABENTABLE_FUNCTION_GLOSRY",
+      "bm25": -18.048973241170668,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTABLE_FUNCTION_GLOSRY",
+      "relFile": "ABENTABLE_FUNCTION_GLOSRY.md",
+      "finalScore": 0.037864077669902914,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.048973241170668,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 2.9000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_ABEXAS",
+      "text": "ABENAMDP_ABEXAS\n\n-   [AMDP - Implementation of an SQLScript Procedure (not Client-safe)](ABENAMDP_ABEXA.html) -   [AMDP - Calling an AMDP Procedure from SQLScript (not Client-safe)](ABENAMDP_CALL_AMDP_ABEXA.html) -   [AMDP - Calling an SQLScript Procedure from AMDP (not Client-safe)](ABENAMDP_CALL_ABEXA.html)\n\n/abap-docs-standard/ABENAMDP_ABEXAS",
+      "bm25": -19.555639522177625,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_ABEXAS",
+      "relFile": "ABENAMDP_ABEXAS.md",
+      "finalScore": 0.037777777777777785,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.555639522177625,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_CS_ABEXAS",
+      "text": "ABENAMDP_CS_ABEXAS\n\n-   [AMDP - Implementation of SQLScript Procedures (Client-safe)](ABENAMDP_CS_ABEXA.html) -   [AMDP - Calling an AMDP Procedure from SQLScript (Client-safe)](ABENAMDP_CALL_AMDP_CS_ABEXA.html) -   [AMDP - AMDP Methods in Interfaces and Superclasses (Client-safe)](ABENAMDP_POLYMORPHISM_CS_ABEXA.html)\n\n/abap-docs-standard/ABENAMDP_CS_ABEXAS",
+      "bm25": -19.523211533637053,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_CS_ABEXAS",
+      "relFile": "ABENAMDP_CS_ABEXAS.md",
+      "finalScore": 0.03695652173913044,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.523211533637053,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "sap-help-79eae83dbf594660bd91cefdd55f7791",
+      "text": "Debugging AMDPs and CDS Table Functions\n\noption of debugging <b>CDS</b> <b>table</b> <b>functions</b> using the <b>AMDP</b> debugger. ... A <b>table</b> <b>function</b>\n                              \t\t\tconsists of a <b>CDS</b> definition and a <b>SQLScript</b> procedure implementation that is used for\n                              \t\t\tdata retrieval when the <b>table</b> <b>function</b> ... The <b>AMDP</b> Debugger that is part of the ADT client installation, allows you to debug\n                                 \t\t\t\tthe embedded <b>AMDP</b> code and <b>CDS</b> <b>table</b> <b>functions</b> within ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/c238d694b825421f940829321ffa326a/79eae83dbf594660bd91cefdd55f7791.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/c238d694b825421f940829321ffa326a/79eae83dbf594660bd91cefdd55f7791.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSQL_SCRIPT_FUNCTION_GLOSRY",
+      "text": "ABENSQL_SCRIPT_FUNCTION_GLOSRY\n\nA [database function](ABENDATABASE_FUNCTION_GLOSRY.html) of the [SAP HANA database](ABENHANA_DATABASE_GLOSRY.html) programmed in the language [SQLScript](ABENSQL_SCRIPT_GLOSRY.html). SQLScript functions can be created using tools such as [SAP Web IDE for SAP HANA](ABENSAP_WEB_IDE_FOR_SAP_HAN_GLOSRY.html) or [Native SQL](ABENNATIVE_SQL_GLOSRY.html) in programs. [ABAP Managed Database Procedures (AM\n\n/abap-docs-standard/ABENSQL_SCRIPT_FUNCTION_GLOSRY",
+      "bm25": -19.383132909995687,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_SCRIPT_FUNCTION_GLOSRY",
+      "relFile": "ABENSQL_SCRIPT_FUNCTION_GLOSRY.md",
+      "finalScore": 0.036559139784946244,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.383132909995687,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#introduction",
+      "text": "Introduction\n\n-   AMDP are a class-based framework for managing and calling     -   [database         procedures](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abendatabase_procedure_glosry.htm \"Glossary Entry\")\n\n/abap-cheat-sheets/12_AMDP#introduction",
+      "bm25": -20.640617424655577,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#introduction",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.03648648648648649,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.640617424655577,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "sap-help-ed4c5fc6d3fd43ebb355f12aa1e73757",
+      "text": "Table Functions\n\nRelated Information\n<b>AMDP</b> Client Handling (ABAP Keyword Documentation)\n<b>CDS</b> DDL - <b>CDS</b> <b>Table</b> <b>Functions</b> (ABAP Keyword Documentation)\nImplementing <b>Table</b> <b>Functions</b> ... About\n\n\n<b>CDS</b> <b>table</b> <b>functions</b> allow you to make use of ABAP-managed database procedures (<b>AMDP</b>) in <b>CDS</b>, to query database <b>tables</b> and perform\ncalculations otherwise unavailable in <b>CDS</b>. ... Defining <b>CDS</b> <b>Table</b> <b>Functions</b>\n\n\n<b>CDS</b> <b>table</b> <b>functions</b> are defined using the syntax define <b>table</b> <b>function</b>. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/ed4c5fc6d3fd43ebb355f12aa1e73757.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/ed4c5fc6d3fd43ebb355f12aa1e73757.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSQL_INJ_AMDP_SCRTY",
+      "text": "ABENSQL_INJ_AMDP_SCRTY\n\nWhen [AMDP](ABENAMDP_GLOSRY.html) is used, database procedures are created and called that are currently usually implemented in [SQLScript](ABENSQL_SCRIPT_GLOSRY.html) for the [SAP HANA database](ABENHANA_DATABASE_GLOSRY.html). The implementation of the database procedures in AMDP methods is managed by ABAP, but their content and security is not ABAP's responsibility. Risks are incurred whenever a\n\n/abap-docs-standard/ABENSQL_INJ_AMDP_SCRTY",
+      "bm25": -18.467667340387354,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_INJ_AMDP_SCRTY",
+      "relFile": "ABENSQL_INJ_AMDP_SCRTY.md",
+      "finalScore": 0.03627450980392157,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.467667340387354,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_EXAMPLES",
+      "text": "ABENABAP_EXAMPLES\n\n-   [ABAP - Docu Templates, Executable Example](ABENABAP_DOCU_TEMPLATES_ABEXA.html) -   [ABAP CDS - Consuming Business Services with Demo Class](ABENCONSUME_BS_ABEXA.html) -   [ABAP CDS - Consuming Business Services with OData Client Proxy](ABENCONSUME_BS_CLIENT_PROXY_ABEXA.html)\n\n/abap-docs-standard/ABENABAP_EXAMPLES",
+      "bm25": -20.226243006398068,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_EXAMPLES",
+      "relFile": "ABENABAP_EXAMPLES.md",
+      "finalScore": 0.03580246913580247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.226243006398068,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.9000000000000001
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSCALAR_FUNCTION_GLOSRY",
+      "text": "ABENSCALAR_FUNCTION_GLOSRY\n\nIn the [SAP HANA database](ABENHANA_DATABASE_GLOSRY.html), a [database function](ABENDATABASE_FUNCTION_GLOSRY.html) with a scalar or elementary return value. In [SQLScript](ABENSQL_SCRIPT_GLOSRY.html), scalar functions can be used as operands in the same places as elementary variables or columns of database tables or views. A scalar function can be managed as an [AMDP function](ABENAMDP_FUNCTION_G\n\n/abap-docs-standard/ABENSCALAR_FUNCTION_GLOSRY",
+      "bm25": -19.199791407152375,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSCALAR_FUNCTION_GLOSRY",
+      "relFile": "ABENSCALAR_FUNCTION_GLOSRY.md",
+      "finalScore": 0.03578947368421053,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.199791407152375,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "sap-help-5b87b9c5eaa74ff58d1b397f9d608452",
+      "text": "Developing Unit Tests for a CDS Table Function\n\n<b>CDS</b> <b>table</b> <b>functions</b> are <b>CDS</b> objects that are linked with an <b>AMDP</b> <b>table</b> <b>function</b>, in which\nthey are implementd using the SAP HANA native language <b>SQLScript</b>. ... Therefore, you need\nthe <b>AMDP</b> test double framework for testing a <b>CDS</b> <b>table</b> <b>function</b>. ... Developing Unit Tests for a <b>CDS</b> <b>Table</b> <b>Function</b>\n\n\nIn this chapter, you are guided through all the steps necessary to develop unit tests for a <b>CDS</b>\n<b>table</b> <b>function</b> by an example test implementation. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/5b87b9c5eaa74ff58d1b397f9d608452.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/5b87b9c5eaa74ff58d1b397f9d608452.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-e5529f75afbc43e7803b30346a56f963",
+      "text": "ABAP CDS Table Functions\n\nImplementing a <b>CDS</b> <b>table</b> <b>function</b> in the <b>AMDP</b> class\n\tDebugging <b>CDS</b> <b>Table</b> <b>Functions</b> \n                                    See also: Debugging <b>AMDPs</b> and <b>CDS</b> <b>Table</b> <b>Functions</b> ... Defining ABAP <b>CDS</b> <b>Table</b> <b>Functions</b>\n\n                              A <b>CDS</b> <b>table</b> <b>function</b> is defined\n                                 \t\t\t\tusing the ABAP <b>CDS</b> statement DEFINE <b>TABLE</b> <b>FUNCTION</b> and can be used ... ABAP <b>CDS</b> <b>table</b> <b>functions</b> define <b>table</b> <b>functions</b> that are implemented natively on the\n                           \t\tdatabase and can be called in <b>CDS</b>. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/f2e545608079437ab165c105649b89db/e5529f75afbc43e7803b30346a56f963.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/f2e545608079437ab165c105649b89db/e5529f75afbc43e7803b30346a56f963.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#more-information",
+      "text": "More Information\n\n- AMDP in ABAP for Cloud Development: [ABAP Keyword Documentation (ABAP for Cloud Development)](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenamdp.htm) - AMDP in Standard ABAP: [ABAP Keyword Documentation (Standard ABAP)](https://help.sap.com/doc/abapdocu_latest_index...\n\n/abap-cheat-sheets/12_AMDP#more-information",
+      "bm25": -20.636952806337085,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#more-information",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.636952806337085,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "sap-help-80e471619ba4443585f20ce526bbe918",
+      "text": "Unit Testing AMDP\n\nThe first level dependencies can be of the type, <b>TABLE</b>, <b>CDS</b> VIEW, DATABASE VIEW, SYNONYM, <b>AMDP</b> PROCEDURE, <b>AMDP</b> <b>FUNCTION</b>, and <b>AMDP</b>\nBADI. ... Unit Testing <b>AMDP</b>\n<b>AMDP</b> Unit testing involves testing <b>SQLScript</b> logic written inside an <b>AMDP</b> method under test by isolating the method under test from all of\nthe first-level dependencies. ... The unit test environment generates test doubles for all the first-level dependencies and a test clone is generated for the <b>AMDP</b> method under\ntest. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/80e471619ba4443585f20ce526bbe918.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/80e471619ba4443585f20ce526bbe918.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_CALL_AMDP_CS_ABEXA",
+      "text": "ABENAMDP_CALL_AMDP_CS_ABEXA\n\nThis example demonstrates how am AMDP procedure is called from an AMDP procedure. The AMDP methods involved use the AMDP options [`READ-ONLY`](ABAPMETHODS_AMDP_OPTIONS.html) and [`CDS SESSION CLIENT DEPENDENT`](ABAPMETHODS_AMDP_OPTIONS_CLIENT.html) and are [client-safe](ABENCLIENT_SAFE_GLOSRY.html). The [SQLScript procedure](ABENSQL_SCRIPT_PROCEDURE_GLOSRY.html) of the AMDP method `GET_SCARR` of t\n\n/abap-docs-standard/ABENAMDP_CALL_AMDP_CS_ABEXA",
+      "bm25": -18.596552288836214,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_CALL_AMDP_CS_ABEXA",
+      "relFile": "ABENAMDP_CALL_AMDP_CS_ABEXA.md",
+      "finalScore": 0.03434343434343435,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.596552288836214,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 2.4000000000000004
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/12_AMDP#notes-on-client-handling-and-client-safety",
+      "text": "Notes on Client Handling and Client Safety\n\n> [!IMPORTANT]   > - ABAP SQL features implicit client handling. > - You cannot disable this feature in ABAP for Cloud Development, as you can in [Standard ABAP](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenstandard_abap_glosry.htm). You can only access your own clie...\n\n/abap-cheat-sheets/12_AMDP#notes-on-client-handling-and-client-safety",
+      "bm25": -20.62607944207677,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/12_AMDP#notes-on-client-handling-and-client-safety",
+      "relFile": "12_AMDP.md",
+      "finalScore": 0.03417721518987342,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.62607944207677,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "sap-help-20dfd5ccb940460dba191957eaeedf79",
+      "text": "Used Frameworks and Tools\n\nThere are <b>CDS</b> entities that are implemented as <b>AMDP</b> methods in <b>SQLscript</b> on the SAP HANA database, such as <b>CDS</b> <b>table</b> <b>functions</b> and\n<b>CDS</b> scalar <b>functions</b>. ... When the data access in your code under test is performed via <b>CDS</b>\nview entities, the <b>CDS</b> test double framework redirects entity calls to\ndoubled database <b>tables</b>. ... For these entities, the <b>AMDP</b> test double framework is used to isolate and test the logic encapsulated within an <b>AMDP</b> method. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/20dfd5ccb940460dba191957eaeedf79.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/20dfd5ccb940460dba191957eaeedf79.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMETHODS_AMDP_OPTIONS_CLIENT",
+      "text": "Client-Safe Variants\n\n`... AMDP OPTIONS \\{CDS SESSION CLIENT DEPENDENT\\}\\ |\\ \\{CLIENT INDEPENDENT\\} ...` `... AMDP OPTIONS [CDS SESSION CLIENT CURRENT|clnt] ...` These variants of the addition [`AMDP OPTIONS`](ABAPMETHODS_AMDP_OPTIONS.html) define the [client handling](ABENAMDP_CLIENT_HANDLING.html) of an [AMDP method](ABENAMDP_METHOD_GLOSRY.html). The variants\n\n/abap-docs-standard/ABAPMETHODS_AMDP_OPTIONS_CLIENT",
+      "bm25": -19.330014574501092,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMETHODS_AMDP_OPTIONS_CLIENT",
+      "relFile": "ABAPMETHODS_AMDP_OPTIONS_CLIENT.md",
+      "finalScore": 0.03404255319148936,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.330014574501092,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "sap-help-7370f3f78a6d4940af29ab89abf7f1b0",
+      "text": "SQL-Based Scalar Functions\n\nA scalar <b>function</b> is linked with an\n<b>AMDP</b> <b>function</b> in which it is implemented using <b>SQLScript</b>. ... <b>AMDP</b> <b>function</b> implementation: Static\nmethod in an <b>AMDP</b> class that implements a database <b>function</b> in <b>SQLScript</b> on the\nSAP HANA database and returns a scalar value. ... Binds a <b>CDS</b> scalar <b>function</b> definition to a\nruntime and to an <b>AMDP</b> method that implements the <b>function</b>. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/7370f3f78a6d4940af29ab89abf7f1b0.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/aaae421481034feab3e71dd9e0f643bf/7370f3f78a6d4940af29ab89abf7f1b0.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSQL_SCRIPT_CURR_CONV_ABEXA",
+      "text": "See also\n\nThis example demonstrates how a built-in HANA SQL function is called in SQLScript. If possible, the example class calls the [AMDP method](ABENAMDP_METHOD_GLOSRY.html)\\\\ `CONVERT` of the [AMDP class](ABENAMDP_CLASS_GLOSRY.html)\\\\ `CL_DEMO_SQLSCRIPT_CURR_CONV`. The SQLScript implementation of this method uses the built-in SQL function [`CONVERT_CURRENCY`](https://help.sap.com/docs/SAP_HANA_PLATFORM/\n\n/abap-docs-standard/ABENSQL_SCRIPT_CURR_CONV_ABEXA",
+      "bm25": -19.736885078464837,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_SCRIPT_CURR_CONV_ABEXA",
+      "relFile": "ABENSQL_SCRIPT_CURR_CONV_ABEXA.md",
+      "finalScore": 0.03333333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.736885078464837,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.9000000000000001
+      }
+    },
+    {
+      "id": "sap-help-57a8c7f0322346859fe69e9ddd9bcc17",
+      "text": "Example: AMDP Procedure\n\n@parameter items_tab_out       | &lt;p class=&quot;shorttext synchronized&quot;&gt;2nd <b>table</b> OUT param&lt;/p&gt;\n\n      class-methods test_amdp_proc for sql service\n        <b>amdp</b> options <b>cds</b> session client dependent read-only ... <b>AMDP</b> should be used only if it enables access to database-specific <b>functions</b> that do\nnot exist in ABAP SQL, or if large process flows or analyses that incur repeated transports\nof large amounts of data ... method test_amdp_proc by database procedure for hdb language <b>sqlscript</b>\n    using ZORDERSVIEW ZORDERITEMSVIEW . ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/eede1416d18c436e8810eaaeb20c38ae/57a8c7f0322346859fe69e9ddd9bcc17.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/eede1416d18c436e8810eaaeb20c38ae/57a8c7f0322346859fe69e9ddd9bcc17.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMETHOD_BY_DB_PROC",
+      "text": "ABAPMETHOD_BY_DB_PROC\n\n`METHOD meth BY DATABASE PROCEDURE|FUNCTION|\\{GRAPH WORKSPACE\\}\\              FOR db              LANGUAGE db_lang              [OPTIONS db_options]\\              [USING   entities]\\              [USING   SCHEMA schema1 OBJECTS db_entities]\\              [USING   SCHEMA schema2 OBJECTS db_entities]\\              ... .    ...  ENDMETHOD.` Implements an [AMDP procedure](ABENAMDP_PROCEDURE_GLOSRY.htm\n\n/abap-docs-standard/ABAPMETHOD_BY_DB_PROC",
+      "bm25": -18.97640074099273,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMETHOD_BY_DB_PROC",
+      "relFile": "ABAPMETHOD_BY_DB_PROC.md",
+      "finalScore": 0.032989690721649485,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.97640074099273,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2.2
+      }
+    }
+  ]
+}

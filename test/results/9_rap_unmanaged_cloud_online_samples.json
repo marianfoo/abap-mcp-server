@@ -1,0 +1,804 @@
+{
+  "meta": {
+    "query": "RAP unmanaged save",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:42.615Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-cloud/ABENABP_CL_ABAP_BEH_SAVER",
+      "text": "ABENABP_CL_ABAP_BEH_SAVER\n\nSyntax for [unmanaged](ABENBDL_IMPL_TYPE.html) scenarios. The `adjust_numbers` method is only available for [`late numbering`](ABENBDL_LATE_NUMBERING.html) scenarios. Syntax for managed scenarios with [additional or unmanaged save](ABENBDL_SAVING.html). The `adjust_numbers` method is only available for [`late numbering`](ABENBDL_LATE_NUMBERING.html) scenarios. Used as base class from which a [RAP\n\n/abap-docs-cloud/ABENABP_CL_ABAP_BEH_SAVER",
+      "bm25": -16.368515565507465,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENABP_CL_ABAP_BEH_SAVER",
+      "relFile": "ABENABP_CL_ABAP_BEH_SAVER.md",
+      "finalScore": 0.06290322580645161,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.368515565507465,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENABP_CL_ABAP_BEH_SAVER_FAILED",
+      "text": "ABENABP_CL_ABAP_BEH_SAVER_FAILED\n\nSyntax for [unmanaged](ABENBDL_IMPL_TYPE.html) scenarios. The `adjust_numbers` method is only available for [`late numbering`](ABENBDL_LATE_NUMBERING.html) scenarios. See more methods that can be implemented [here](ABENABP_CL_ABAP_BEH_HANDLER.html). Syntax for managed scenarios with [additional or unmanaged save](ABENBDL_SAVING.html). See more methods that can be implemented [here](ABENABP_CL_ABAP\n\n/abap-docs-cloud/ABENABP_CL_ABAP_BEH_SAVER_FAILED",
+      "bm25": -16.14877721796185,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENABP_CL_ABAP_BEH_SAVER_FAILED",
+      "relFile": "ABENABP_CL_ABAP_BEH_SAVER_FAILED.md",
+      "finalScore": 0.060000000000000005,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.14877721796185,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "text": "ABENRAP_FEATURE_TABLE\n\nThe following sections shows all available language elements of the [RAP BDL](ABENCDS_BDL_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). The following tables list the keywords that can be used in BDEFs of type managed, unmanaged, and projection. If the release dates\n\n/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "bm25": -16.089598088011837,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "relFile": "ABENRAP_FEATURE_TABLE.md",
+      "finalScore": 0.058208955223880594,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.089598088011837,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_SAVING",
+      "text": "ABENBDL_SAVING\n\n`... \\{with additional save [and cleanup][with full data]\\}\\    |\\ \\{with unmanaged save [and cleanup][with full data]\\} ...` Defines a [RAP unmanaged save](ABENRAP_UNMAN_SAVE_GLOSRY.html) or a [RAP additional save](ABENRAP_ADD_SAVE_GLOSRY.html): By default, the [RAP framework](ABENRAP_FRAMEWORK_GLOSRY.html) performs a managed save. With an [additional save](ABENRAP_ADD_SAVE_GLOSRY.html), steps ca\n\n/abap-docs-cloud/ABENBDL_SAVING",
+      "bm25": -16.39252364010033,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_SAVING",
+      "relFile": "ABENBDL_SAVING.md",
+      "finalScore": 0.05573770491803279,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.39252364010033,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-additional-and-unmanaged-save",
+      "text": "RAP Additional and Unmanaged Save\n\n- As covered in the RAP terms section, *managed* is an implementation type that is specified in the BDEF, and which determines the [RAP BO provider](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_bo_provider_glosry.htm \"Glossary Entry\"), and thus,  how the transact...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-additional-and-unmanaged-save",
+      "bm25": -15.957968408507933,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-additional-and-unmanaged-save",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.05555555555555555,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.957968408507933,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAVER_METHOD_CLEANUP",
+      "text": "ABENSAVER_METHOD_CLEANUP\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: -   Its use is optional.\n\n/abap-docs-cloud/ABENSAVER_METHOD_CLEANUP",
+      "bm25": -15.993548697512933,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAVER_METHOD_CLEANUP",
+      "relFile": "ABENSAVER_METHOD_CLEANUP.md",
+      "finalScore": 0.054929577464788736,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.993548697512933,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPSAVER_CLASS_CLEANUP_FINALIZE",
+      "text": "ABAPSAVER_CLASS_CLEANUP_FINALIZE\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: Development guide for the ABAP RESTful Application Programming Model, section [Save Sequence Runtime](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/ab7459048c7e4ecda98d0b6f51b01e7b?version=sap_cro\n\n/abap-docs-cloud/ABAPSAVER_CLASS_CLEANUP_FINALIZE",
+      "bm25": -15.869552825260296,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPSAVER_CLASS_CLEANUP_FINALIZE",
+      "relFile": "ABAPSAVER_CLASS_CLEANUP_FINALIZE.md",
+      "finalScore": 0.05342465753424657,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.869552825260296,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRAP_SAVER_METH_SAVE_MODIFIED",
+      "text": "ABAPRAP_SAVER_METH_SAVE_MODIFIED\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: Development guide for the ABAP RESTful Application Programming Model, section [Save Sequence Runtime](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/ab7459048c7e4ecda98d0b6f51b01e7b?version=sap_cro\n\n/abap-docs-cloud/ABAPRAP_SAVER_METH_SAVE_MODIFIED",
+      "bm25": -15.649593647414274,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRAP_SAVER_METH_SAVE_MODIFIED",
+      "relFile": "ABAPRAP_SAVER_METH_SAVE_MODIFIED.md",
+      "finalScore": 0.05301204819277109,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.649593647414274,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 3.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPTYPE_REQUEST_FOR",
+      "text": "ABAPTYPE_REQUEST_FOR\n\n`... REQUEST FOR \\{\\ \\{ CHANGE                    | DELETE \\}\\                      bdef \\} ...` A structured data type that is only used in the context of managed implementations [`with additional save`](ABENBDL_SAVING.html) and [`with unmanaged save`](ABENBDL_SAVING.html). In these cases, the [ABP](ABENBEHAVIOR_POOL_GLOSRY.html) contains the `save_modified` method that is part of a local saver c\n\n/abap-docs-cloud/ABAPTYPE_REQUEST_FOR",
+      "bm25": -16.132459663655904,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPTYPE_REQUEST_FOR",
+      "relFile": "ABAPTYPE_REQUEST_FOR.md",
+      "finalScore": 0.051515151515151514,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.132459663655904,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAVER_METHOD_SAVE",
+      "text": "ABENSAVER_METHOD_SAVE\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: Development guide for the ABAP RESTful Application Programming Model, section [Save Sequence Runtime](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/ab7459048c7e4ecda98d0b6f51b01e7b?version=sap_cro\n\n/abap-docs-cloud/ABENSAVER_METHOD_SAVE",
+      "bm25": -15.800612563988464,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAVER_METHOD_SAVE",
+      "relFile": "ABENSAVER_METHOD_SAVE.md",
+      "finalScore": 0.051315789473684204,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.800612563988464,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_EXTENSIBILITY_ENABLING_M_U",
+      "text": "ABENBDL_EXTENSIBILITY_ENABLING_M_U\n\nTo allow [BDEF extensions](ABENRAP_EXTENSION_GLOSRY.html) to a managed or unmanaged RAP behavior definition, [BDEF strict mode](ABENRAP_STRICT_MODE_GLOSRY.html) must be switched on using the keyword [`strict[(version)]`](ABENBDL_STRICT.html). The keyword `extensible` can be specified at different places to allow for extensions: In the header declaration, the following optional additions are availa\n\n/abap-docs-cloud/ABENBDL_EXTENSIBILITY_ENABLING_M_U",
+      "bm25": -16.064863550414607,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_EXTENSIBILITY_ENABLING_M_U",
+      "relFile": "ABENBDL_EXTENSIBILITY_ENABLING_M_U.md",
+      "finalScore": 0.049999999999999996,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.064863550414607,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-saver-class-and-saver-methods",
+      "text": "RAP Saver Class and Saver Methods\n\n-   A RAP saver class implements the [RAP save     sequence](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_save_seq_glosry.htm \"Glossary Entry\").     A saver class is usually only available in unmanaged RAP BOs (except abap CLASS lsc_bdef DEFINITION INHERITING FRO...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-saver-class-and-saver-methods",
+      "bm25": -16.000377363267663,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-saver-class-and-saver-methods",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.049999999999999996,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.000377363267663,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_EXT_ENABL_EXT_BASE",
+      "text": "ABENBDL_EXT_ENABL_EXT_BASE\n\nTo extend a [base BDEF extension](ABENRAP_BASE_BDEF_EXT_GLOSRY.html), the keyword `extensible` can be specified in the following places: In the header declaration, the following optional additions are available: In BDEF extensions to unmanaged RAP BOs, there are the following limitations:\n\n/abap-docs-cloud/ABENBDL_EXT_ENABL_EXT_BASE",
+      "bm25": -15.841552392441445,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_EXT_ENABL_EXT_BASE",
+      "relFile": "ABENBDL_EXT_ENABL_EXT_BASE.md",
+      "finalScore": 0.04594594594594595,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.841552392441445,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#late-numbering-and-key-identification-in-the-late-phase-of-the-rap-save-sequence",
+      "text": "Late Numbering and Key Identification in the Late Phase of the RAP Save Sequence\n\n- Context: RAP saver method [`adjust_numbers`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abensaver_adjust_numbers.htm) in which the final key values are assigned; the preliminary keys can     be included in `%key` or `%pid` or both of them. - `%pid` and the preliminar...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#late-numbering-and-key-identification-in-the-late-phase-of-the-rap-save-sequence",
+      "bm25": -15.77123968907425,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#late-numbering-and-key-identification-in-the-late-phase-of-the-rap-save-sequence",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.045454545454545456,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.77123968907425,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_EVENT_SIDE_EFFECT",
+      "text": "ABENBDL_EVENT_SIDE_EFFECT\n\n`event EventName for side effects;` Defines a [RAP business event for side effects](ABENRAP_SIDE_EFFCT_EVENT_GLOSRY.html) used exclusively for an [event-driven side effect](ABENRAP_EVENT_SIDEEF_GLOSRY.html) in a [managed](ABENMANAGED_RAP_BO_GLOSRY.html) or [unmanaged RAP BO](ABENUNMANAGED_RAP_BO_GLOSRY.html). A RAP business event must be raised in the [ABAP behavior pool](ABENBEHAVIOR_POOL_GLOSRY.\n\n/abap-docs-cloud/ABENBDL_EVENT_SIDE_EFFECT",
+      "bm25": -15.810324536533278,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_EVENT_SIDE_EFFECT",
+      "relFile": "ABENBDL_EVENT_SIDE_EFFECT.md",
+      "finalScore": 0.04533333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.810324536533278,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-778-CDS_BDL",
+      "text": "ABENNEWS-778-CDS_BDL\n\nThe new statement [`mapping for`](ABENBDL_TYPE_MAPPING.html) can be used to map field names from legacy code to field names from the current data model. Available for unmanaged and managed RAP BOs. The new statement [`with additional save`](ABENBDL_SAVING.html) can be used to enhance the default save sequence in a managed RAP BO. The new statement [`with unmanaged save`](ABENBDL_SAVING.html) can b\n\n/abap-docs-cloud/ABENNEWS-778-CDS_BDL",
+      "bm25": -16.35676406633543,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-778-CDS_BDL",
+      "relFile": "ABENNEWS-778-CDS_BDL.md",
+      "finalScore": 0.04126984126984126,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.35676406633543,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-related-system-classes-and-functionality",
+      "text": "RAP-Related System Classes and Functionality\n\nSeveral RAP-related system classes and functionality are available, including (some of them are mentioned in the cheat sheet):  - Classes related to implementations of the saver class:   - `CL_ABAP_BEHAVIOR_SAVER`: Saver classes inherit from that class Context information current handler cl_abap_beh...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-related-system-classes-and-functionality",
+      "bm25": -15.736053442238696,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-related-system-classes-and-functionality",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.0379746835443038,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.736053442238696,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-783-CDS_BDL",
+      "text": "ABENNEWS-783-CDS_BDL\n\nThe entity behavior characteristic [`early numbering`](ABENBDL_EARLY_NUMB.html) can be used to define unmanaged [early numbering](ABENRAP_EARLY_NUMBERING_GLOSRY.html) for all primary key fields of a managed RAP BO. The new addition [`and cleanup`](ABENBDL_SAVING.html) is available for additional and unmanaged save in managed RAP BOs. It allows the application developer to implement the cleanup met\n\n/abap-docs-cloud/ABENNEWS-783-CDS_BDL",
+      "bm25": -16.064829322807853,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-783-CDS_BDL",
+      "relFile": "ABENNEWS-783-CDS_BDL.md",
+      "finalScore": 0.03768115942028985,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.064829322807853,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "sap-help-af72f4d217c14e1883d6b827e1609d99",
+      "text": "BAPI Consumption in RAP: RAP Implementation Type\n\nobject (<b>RAP</b> BO) with\n<b>unmanaged</b> <b>save</b>. ... BAPI-Based <b>RAP</b> BO: Managed with <b>Unmanaged</b> <b>Save</b>\n\n\nFor creating a BAPI-based <b>RAP</b> business object (<b>RAP</b> BO), use a managed <b>RAP</b> BO with an <b>unmanaged</b>\n<b>save</b>. ... In a <b>RAP</b> BO with managed implementation and <b>unmanaged</b> <b>save</b>, the <b>RAP</b>-managed\nprovider controls the interaction phase. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/af72f4d217c14e1883d6b827e1609d99.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/af72f4d217c14e1883d6b827e1609d99.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#commit-and-rollback-in-a-rap-transaction",
+      "text": "Commit and Rollback in a RAP Transaction\n\nThe default ABAP statements for RAP are `COMMIT ENTITIES` (triggers the RAP save sequence and the final database commit; in natively supported RAP scenarios, the commit is performed implicitly and automatically by the RAP runtime engine) and `ROLLBACK ENTITIES` (rolls back all changes of the current...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#commit-and-rollback-in-a-rap-transaction",
+      "bm25": -15.687496471644044,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#commit-and-rollback-in-a-rap-transaction",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03658536585365854,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.687496471644044,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-45a3c92c8c894c7bb2d60b9870ff3652",
+      "text": "Defining the Behavior of a BAPI-Based RAP BO\n\ncharacteristics\nsuch as <b>unmanaged</b> <b>save</b>, late numbering, and <b>unmanaged</b> lock master. ... In some use cases, you might want to replace the\ndefault <b>save</b> sequence with custom logic by defining an <b>unmanaged</b> <b>save</b>. For more\ninformation, see <b>Unmanaged</b> <b>Save</b>. ... Only late numbering in <b>RAP</b> supports\nthis scenario. \n\nFor more information, see BAPI Consumption in <b>RAP</b>: Transactional Consistency and\nBAPI Consumption in <b>RAP</b>: Late Numbering and <b>Save</b> Sequence. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/45a3c92c8c894c7bb2d60b9870ff3652.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/45a3c92c8c894c7bb2d60b9870ff3652.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP",
+      "text": "ABAP for RAP: Entity Manipulation Language (ABAP EML)\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP",
+      "bm25": -15.640035653772134,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.640035653772134,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-877b632cca704ba8bc26404129094483",
+      "text": "Creating a BAPI-Based RAP Business Object\n\ncharacteristics\nsuch as <b>unmanaged</b> <b>save</b>, late numbering, and <b>unmanaged</b> lock master. ... Defining the Behavior of a BAPI-Based <b>RAP</b> BO\nFor BAPI-based business objects (BOs) in the ABAP RESTful Application Programming Model\n(<b>RAP</b>), you create a behavior definition for your managed <b>RAP</b> BO, including ... Creating a BAPI-Based <b>RAP</b> Business Object\nFor a BAPI-based <b>RAP</b> business object (<b>RAP</b> BO), you model its structure, create the\ncorresponding CDS artifacts, and define the behavior of the <b>RAP</b> BO. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/877b632cca704ba8bc26404129094483.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/877b632cca704ba8bc26404129094483.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-f3de16da5990433a9a6c8f8af026b68a",
+      "text": "BAPI Consumption in RAP: Late Numbering and Save Sequence\n\nRelated Information\nImplementing BAPI Call, Late Numbering, and <b>Unmanaged</b> <b>Save</b> for BAPI-Based <b>RAP</b> BOs ... Example\n\n\nThe following flow diagram illustrates the <b>save</b> phases with late numbering for the\nBAPI-managed <b>RAP</b> business object of the reference scenario:\n\n\n\n\n\nBAPI-Based, Managed <b>RAP</b> BO with <b>Unmanaged</b> <b>Save</b> ... and Late Numbering: Flow\nDiagram\n\nAfter all requested data records <b>have</b> been put into the <b>RAP</b> transactional buffer using the <b>RAP</b>\ncreate operation, the OData runtime triggers the <b>RAP</b> <b>save</b>\nsequence. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/f3de16da5990433a9a6c8f8af026b68a.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/f3de16da5990433a9a6c8f8af026b68a.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-9114469bff7a4c9a8e407a9b217e31ab",
+      "text": "Managed Internal Early Numbering\n\nInternal numbering can be managed by\nthe <b>RAP</b> runtime. It can also be\n<b>unmanaged</b>, that is implemented by the application developer. ... Consequently, you must <b>map</b> all key fields in your\nimplementation in the <b>MAPPED</b> result parameter of the FOR\nNUMBERING method . ... <b>Unmanaged</b> Internal Early Numbering\n\n\n\n\n<b>Unmanaged</b> Early Numbering in <b>Unmanaged</b> Implementation Scenarios\nIn <b>unmanaged</b> BOs, the\nCREATE operation implements the assignment of a primary key value during the ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/92f62bb393414b4d9b30653e070d2530.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loio9114469bff7a4c9a8e407a9b217e31ab",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/92f62bb393414b4d9b30653e070d2530.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loio9114469bff7a4c9a8e407a9b217e31ab",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-aaaa460e6ae0446a9c8e9b0200fd8747",
+      "text": "Unmanaged Internal Early Numbering\n\nInternal numbering can be managed by\nthe <b>RAP</b> runtime. It can also be\n<b>unmanaged</b>, that is implemented by the application developer. ... Consequently, you must <b>map</b> all key fields in your\nimplementation in the <b>MAPPED</b> result parameter of the FOR\nNUMBERING method . ... <b>Unmanaged</b> Internal Early Numbering\n\n\n\n\n<b>Unmanaged</b> Early Numbering in <b>Unmanaged</b> Implementation Scenarios\nIn <b>unmanaged</b> BOs, the\nCREATE operation implements the assignment of a primary key value during the ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/92f62bb393414b4d9b30653e070d2530.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loioaaaa460e6ae0446a9c8e9b0200fd8747",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/92f62bb393414b4d9b30653e070d2530.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loioaaaa460e6ae0446a9c8e9b0200fd8747",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-concepts",
+      "text": "RAP Concepts\n\n**RAP numbering** -   A concept that deals with setting values for primary key fields. -   There are multiple options to handle the numbering for primary key\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-concepts",
+      "bm25": -15.636483882067786,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-concepts",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03409090909090909,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.636483882067786,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#raising-rap-business-events",
+      "text": "Raising RAP Business Events\n\n- [RAP business events](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_entity_event_glosry.htm) can be raised in ABAP behavior pools with [`RAISE ENTITY EVENT`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abapraise_entity_event.htm) st...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#raising-rap-business-events",
+      "bm25": -15.634867072347484,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#raising-rap-business-events",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.033707865168539325,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.634867072347484,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-92f62bb393414b4d9b30653e070d2530",
+      "text": "Internal Early Numbering\n\nInternal numbering can be managed by\nthe <b>RAP</b> runtime. It can also be\n<b>unmanaged</b>, that is implemented by the application developer. ... Consequently, you must <b>map</b> all key fields in your\nimplementation in the <b>MAPPED</b> result parameter of the FOR\nNUMBERING method . ... <b>Unmanaged</b> Internal Early Numbering\n\n\n\n\n<b>Unmanaged</b> Early Numbering in <b>Unmanaged</b> Implementation Scenarios\nIn <b>unmanaged</b> BOs, the\nCREATE operation implements the assignment of a primary key value during the ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/92f62bb393414b4d9b30653e070d2530.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/92f62bb393414b4d9b30653e070d2530.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-399a5d5bd0d84c16a1cdc8c08e3ed701",
+      "text": "Early Numbering\n\nInternal numbering can be managed by the <b>RAP</b> runtime or\n<b>unmanaged</b>, that is implemented by the application developer. ... Consequently, you must <b>map</b> all key\nfields in your implementation in the <b>MAPPED</b> result parameter of\nthe FOR NUMBERING method . ... New instances with an already existing primary key value are\nrejected during the <b>save</b> sequence. ...  — Product: ABAP_PLATFORM_NEW (2021 Latest)\n\nhttps://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/399a5d5bd0d84c16a1cdc8c08e3ed701.html?locale=en-US&state=PRODUCTION&version=202110.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/399a5d5bd0d84c16a1cdc8c08e3ed701.html?locale=en-US&state=PRODUCTION&version=202110.latest",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-terms",
+      "text": "RAP Terms\n\n[ABAP Entity Manipulation Language](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenaeml_glosry.htm) (or EML for short) is a subset of ABAP that allows you to access the data of [RAP](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=ab...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-terms",
+      "bm25": -15.632173298723963,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-terms",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03296703296703297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.632173298723963,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-2b2c4df06bf149b89d8cffb5c3f22e84",
+      "text": "Consumption of Classic APIs in RAP: Prerequisites and Guidelines\n\nobject (<b>RAP</b> BO) with\n<b>unmanaged</b> <b>save</b>. ... BAPI Consumption in <b>RAP</b>: Late Numbering and <b>Save</b> Sequence\nWhen you create a BAPI-based managed business object (BO) using the ABAP RESTful\nApplication Programming Model (<b>RAP</b>), we recommend that you use ... To prevent\nthat a BAPI-based <b>RAP</b> BO performs authorization checks during validation or late <b>save</b> phases\nwhere it's not allowed, you define an authorization context in the behavior definition of\nthe <b>RAP</b> ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/2b2c4df06bf149b89d8cffb5c3f22e84.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bfed5a0f77a2488990788127f9271d15/2b2c4df06bf149b89d8cffb5c3f22e84.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-7022b474873a4b5b8b2be3998e0b382c",
+      "text": "Unmanaged Implementation Type\n\nSee Integrating Additional <b>Save</b> in Managed Business Objects and Integrating <b>Unmanaged</b> <b>Save</b> in Managed Business Objects. ... These use cases are supported in managed\nbusiness objects that support <b>unmanaged</b> or additional <b>save</b>. ... The developer guide for managed business objects provides a description on how to implement additional or <b>unmanaged</b> <b>save</b> options. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/e11757cf7e664121b9f583e7ca0eeb39.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loio7022b474873a4b5b8b2be3998e0b382c",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/e11757cf7e664121b9f583e7ca0eeb39.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap#loio7022b474873a4b5b8b2be3998e0b382c",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#executable-examples",
+      "text": "Executable Examples\n\nThis cheat sheet is supported by different executable examples demonstrating various scenarios: - Demo RAP scenario with a managed RAP BO, external numbering: [zcl_demo_abap_rap_ext_num_m](./src/zcl_demo_abap_rap_ext_num_m.clas.abap) - Demo RAP scenario with an unmanaged RAP BO, external numbering: ...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#executable-examples",
+      "bm25": -15.759640093395925,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#executable-examples",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.759640093395925,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#using-keys-and-identifying-rap-bo-instances-in-a-nutshell",
+      "text": "Using Keys and Identifying RAP BO Instances in a Nutshell\n\nThe following bullet points outline important aspects regarding  keys and identifying [RAP BO instances](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_bo_instance_glosry.htm \"Glossary Entry\") in ABAP EML statements.\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#using-keys-and-identifying-rap-bo-instances-in-a-nutshell",
+      "bm25": -15.631634680331564,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#using-keys-and-identifying-rap-bo-instances-in-a-nutshell",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.031914893617021274,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.631634680331564,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRAP_SAVER_METHODS_ABEXAS",
+      "text": "ABENRAP_SAVER_METHODS_ABEXAS\n\n-   [Example for RAP Saver Methods](ABENABP_SAVER_CLASS_ABEXA.html) -   [Example for RAP Saver Methods (Late Numbering Scenario)](ABENABP_SAVER_LN_ABEXA.html) -   [Example for `save_modified` in a Managed RAP BO with Additional Save](ABENSAVE_MODIFIED_ADD_SAVE_ABEXA.html)\n\n/abap-docs-cloud/ABENRAP_SAVER_METHODS_ABEXAS",
+      "bm25": -15.362514936006514,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_SAVER_METHODS_ABEXAS",
+      "relFile": "ABENRAP_SAVER_METHODS_ABEXAS.md",
+      "finalScore": 0.03178294573643411,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.362514936006514,
+        "rank": 69,
+        "rrfScore": 0.007751937984496124,
+        "boost": 3.1
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#commit-entities-persisting-to-the-database",
+      "text": "COMMIT ENTITIES: Persisting to the Database\n\n-   A [`COMMIT     ENTITIES`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abapcommit_entities.htm)     statement triggers the RAP save sequence. Without such a statement, MODIFY ENTITIES root_ent ENTITY root_ent CREATE FIELDS key_field field1 field2\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#commit-entities-persisting-to-the-database",
+      "bm25": -15.691770135029293,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#commit-entities-persisting-to-the-database",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.691770135029293,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-behavior-definition-bdef-",
+      "text": "RAP Behavior Definition (BDEF)\n\n- As the name implies, a RAP behavior definition describes a RAP business object (RAP BO) by defining its behavior for all of its RAP BO entities.  - BDL source code is used in a BDEF. - Once you have created ...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-behavior-definition-bdef-",
+      "bm25": -15.630450623358943,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-behavior-definition-bdef-",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.030927835051546393,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.630450623358943,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#bdef-derived-types",
+      "text": "BDEF Derived Types\n\nThe operands of EML statements and parameters of handler and saver methods are mainly special messenger tables for passing data and receiving results or messages, i. e. the communication between a [RAP BO consumer](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_bo_...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#bdef-derived-types",
+      "bm25": -15.687652182194034,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#bdef-derived-types",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.687652182194034,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAVER_CHECK_BEFORE_SAVE",
+      "text": "ABENSAVER_CHECK_BEFORE_SAVE\n\n`base_class` stands for the base class from which the RAP saver class inherits, for example, `CL_ABAP_BEHAVIOR_SAVER`. The following points are relevant for this RAP saver method: -   Its use is optional.\n\n/abap-docs-cloud/ABENSAVER_CHECK_BEFORE_SAVE",
+      "bm25": -15.446494527792188,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAVER_CHECK_BEFORE_SAVE",
+      "relFile": "ABENSAVER_CHECK_BEFORE_SAVE.md",
+      "finalScore": 0.030708661417322834,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.446494527792188,
+        "rank": 67,
+        "rrfScore": 0.007874015748031496,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-specific-additions-to-the-corresponding-operator",
+      "text": "RAP-Specific Additions to the CORRESPONDING Operator\n\nThe [`CORRESPONDING`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenconstructor_expr_corresponding.htm) operator offers RAP-specific additions for handling type mappings related to BDEF derived types and other types. For more information, see the [ABAP Keyword Documen...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-specific-additions-to-the-corresponding-operator",
+      "bm25": -15.629480661002209,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-specific-additions-to-the-corresponding-operator",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.030612244897959183,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.629480661002209,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#phases-of-a-rap-transaction",
+      "text": "Phases of a RAP Transaction\n\nA RAP transaction is divided into two phases during the runtime of a RAP BO, while the second phase can be divided into two subphases that serve different purposes.  ![Phases of a RAP Transaction](files/phases_of_rap_luw.png) [RAP interaction phase](https://help.sap.com/doc/abapdocu_cp_index_htm/CLO...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#phases-of-a-rap-transaction",
+      "bm25": -15.629377091062404,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#phases-of-a-rap-transaction",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.030303030303030304,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.629377091062404,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#ensuring-data-consistency-in-a-rap-transaction",
+      "text": "Ensuring Data Consistency in a RAP Transaction\n\nThe [LUW](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenluw_glosry.htm) concept, which deals with the transfer of data from one consistent state to another, applies to applications using RAP. RAP transactions are integrated with the [SAP LUW](https://help.sap.com/doc/...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#ensuring-data-consistency-in-a-rap-transaction",
+      "bm25": -15.628418859962341,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#ensuring-data-consistency-in-a-rap-transaction",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.0297029702970297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.628418859962341,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#more-information",
+      "text": "More Information\n\n-   Section [ABAP for RAP Business     Objects](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenabap_for_rap_bos.htm)     in the ABAP Keyword Documentation including EML\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#more-information",
+      "bm25": -15.637389387951718,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#more-information",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.029411764705882353,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.637389387951718,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#update-operations",
+      "text": "Update Operations\n\n``` abap *&---------------------------------------------------------------------* *& Short form of EML MODIFY statement abap Short form MODIFY statement example code snippet uses data\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#update-operations",
+      "bm25": -15.636671996458116,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#update-operations",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.029069767441860465,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.636671996458116,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#delete-operations",
+      "text": "Delete Operations\n\n``` abap *&---------------------------------------------------------------------* *& Short form of EML MODIFY statement abap Short form MODIFY statement example code snippet uses data\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#delete-operations",
+      "bm25": -15.636671996458116,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#delete-operations",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.028735632183908046,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.636671996458116,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#handling-dependencies-on-rap-business-objects-in-abap-unit",
+      "text": "Handling Dependencies on RAP Business Objects in ABAP Unit\n\nThe [ABAP Unit Tests](14_ABAP_Unit_Tests.md) cheat sheet includes an example demonstrating the handling of dependencies on RAP business objects:  - Creating transactional buffer test doubles using the `CL_BOTD_TXBUFDBL_BO_TEST_ENV` class - Mocking ABAP EML APIs using the `CL_BOTD_MOCKEMLAPI_BO_TEST_...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#handling-dependencies-on-rap-business-objects-in-abap-unit",
+      "bm25": -15.626789158429615,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#handling-dependencies-on-rap-business-objects-in-abap-unit",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.028571428571428574,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.626789158429615,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-handler-classes-and-methods",
+      "text": "RAP Handler Classes and Methods\n\n-   One or more handler classes implement the RAP interaction phase. For     modularization purposes, one behavior pool can define multiple     handler classes. For example, each entity can have its own handler abap CLASS lhc_root DEFINITION INHERITING FROM cl_abap_behavior_handler ENDCLASS abap Cre...\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-handler-classes-and-methods",
+      "bm25": -15.62625099406681,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#rap-handler-classes-and-methods",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.02830188679245283,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.62625099406681,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#additions-to-abap-eml-statements-in-abap-behavior-pools",
+      "text": "Additions to ABAP EML Statements in ABAP Behavior Pools\n\nThere are a [special additions when using EML in behavior pools](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abeneml_in_abp.htm).\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#additions-to-abap-eml-statements-in-abap-behavior-pools",
+      "bm25": -15.632886318491998,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#additions-to-abap-eml-statements-in-abap-behavior-pools",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.02777777777777778,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.632886318491998,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#parameters-of-handler-methods",
+      "text": "Parameters of Handler Methods\n\n-   The handler method definitions contain RAP-specific additions like     `FOR MODIFY`, `FOR CREATE` or `FOR READ` as     well as mandatory or optional additions like `RESULT` that\n\n/abap-cheat-sheets/08_EML_ABAP_for_RAP#parameters-of-handler-methods",
+      "bm25": -15.631988187703175,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/08_EML_ABAP_for_RAP#parameters-of-handler-methods",
+      "relFile": "08_EML_ABAP_for_RAP.md",
+      "finalScore": 0.02717391304347826,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.631988187703175,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.5
+      }
+    }
+  ]
+}

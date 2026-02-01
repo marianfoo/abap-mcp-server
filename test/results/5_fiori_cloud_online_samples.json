@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "Fiori Elements List Report",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:35.234Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-fiori-showcase/README",
+      "text": "SAP Fiori Element Feature Showcase App for the ABAP RESTful Application Programming Model\n\n[![REUSE status](https://api.reuse.software/badge/github.com/sap-samples/abap-platform-fiori-feature-showcase)](https://api.reuse.software/info/github.com/sap-samples/abap-platform-fiori-feature-showcase)\n\n/abap-fiori-showcase/README",
+      "bm25": -15.62412786592878,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README",
+      "relFile": "README.md",
+      "finalScore": 0.03770491803278688,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.62412786592878,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.3
+      }
+    },
+    {
+      "id": "sap-help-1563e7fa7d334540929edeb90fb1c489",
+      "text": "Add Page to SAP Fiori Elements Project\n\nAdd Page to SAP <b>Fiori</b> <b>Elements</b> Project\nYou can add a new child page to an SAP <b>Fiori</b> <b>Elements</b> <b>List</b> <b>Report</b> type project in the\nstoryboard. ...  — Product: SAP Web IDE (Full-Stack)\n\nhttps://help.sap.com/docs/SAP_Web_IDE/825270ffffe74d9f988a0f0066ad59f0/1563e7fa7d334540929edeb90fb1c489.html?locale=en-US&state=PRODUCTION&version=CF",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_Web_IDE/825270ffffe74d9f988a0f0066ad59f0/1563e7fa7d334540929edeb90fb1c489.html?locale=en-US&state=PRODUCTION&version=CF",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-980bd40f45134737b73a68779e318174",
+      "text": "Storyboard\n\nFor SAP <b>Fiori</b> <b>Elements</b> <b>List</b> <b>Report</b> projects, pages and\nentity sets are displayed as shown below. ... You have created a freestyle or SAP <b>Fiori</b> <b>Elements</b> <b>List</b> <b>Report</b> project.\n\n\n\n\n\n\nProcedure\n\n\t\nOpen the Storyboard perspective from the left\nsidebar. ...  — Product: SAP Web IDE (Full-Stack)\n\nhttps://help.sap.com/docs/SAP_Web_IDE/825270ffffe74d9f988a0f0066ad59f0/980bd40f45134737b73a68779e318174.html?locale=en-US&state=PRODUCTION&version=CF",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_Web_IDE/825270ffffe74d9f988a0f0066ad59f0/980bd40f45134737b73a68779e318174.html?locale=en-US&state=PRODUCTION&version=CF",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#fiori-elements",
+      "text": "Fiori Elements\n\nDas Fiori Elements Framework ermöglicht es, größtenteils ohne Frontend-Erfahrungen (JavaScript, XML) vollwertige Fiori-Unternehmensanwendungen umzusetzen. Dazu gibt es einige vorgefertigte Floorplans (App-Typen) der SAP, die basierend auf einem OData-Service generiert werden. Der am weitesten verbre...\n\n/dsag-abap-leitfaden/user-interface/index#fiori-elements",
+      "bm25": -15.07375168208828,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#fiori-elements",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.07375168208828,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_aifeature_f846ad86-9275-4c9f-ba71-eb677bc452b6",
+      "text": "SAP S/4HANA Cloud Public Edition, easy filter\n\nBenefits\nEasier understanding of filtering in SAP <b>Fiori</b> <b>elements</b> <b>list</b> <b>report</b>-based applications for new users\nImproved employee productivity, streamlining how to find relevant information, make it easier ... <b>elements</b>-based <b>list</b> <b>reports</b>\n\nResources- \n Product - What's New\nProduct Tour\nInitial Setup - SAP Help Portal\nProduct - Feature Scope Description\nProduct Security\nProduct - Community\nProduct - SAP Help ... AI Feature -SAP S/4HANA Cloud Public Edition, easy filter\nProduct -SAP S/4HANA Cloud Public Edition\n\nFilter your <b>list</b> <b>report</b> by describing the required data using natural language. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_aifeature/dc_aifeature_f846ad86-9275-4c9f-ba71-eb677bc452b6.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_aifeature/dc_aifeature_f846ad86-9275-4c9f-ba71-eb677bc452b6.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-8951a06d9df7452e96023b63cd5b2042",
+      "text": "Develop UI-Specifics\n\n<b>Fiori</b> <b>Elements</b> Settings in the Business Configuration Maintenance Objects\n\n\n\n\n\nYou can configure the <b>list</b> <b>report</b>, object pages and table settings of the\n<b>Fiori</b> <b>Elements</b> <b>List</b> <b>Report</b> Floor Plan rendered by ...  — Product: SAP Business Technology Platform (SAP BTP) (Cloud)\n\nhttps://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/8951a06d9df7452e96023b63cd5b2042.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/8951a06d9df7452e96023b63cd5b2042.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/README",
+      "text": "READme file for WEEK 2: DEVELOPING A READ-ONLY LIST REPORT APP\n\n> [!CAUTION]\n\n/abap-platform-rap-opensap/week2/README",
+      "bm25": -14.647234542118651,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/README",
+      "relFile": "week2/README.md",
+      "finalScore": 0.03506493506493507,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.647234542118651,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "sap-help-9b4aa865c1e84634b6e105173fc3a5e7",
+      "text": "Defining CDS Annotations for Metadata-Driven UIs\n\nFind more information about <b>Fiori</b> in the Introduction to SAP <b>Fiori</b> <b>Elements</b>.\n\n\n\n\n <b>List</b> <b>Report</b> Page \n\nThe <b>list</b> <b>report</b> is used to display all the entries of a dataset in one <b>list</b> or table. ... A &ndash; <b>List</b> <b>Report</b> Header\n\nB &ndash; <b>List</b> <b>Report</b> Table Header\n\nC &ndash; <b>List</b> <b>Report</b> Columns\n\nD &ndash; <b>List</b> <b>Report</b> Entries\n\nTo navigate from the <b>list</b> <b>report</b> to the object page of an entry, click anywhere on\nthe row of that ... In this guide, we use the two most common page layouts, also\ncalled <b>Fiori</b> floorplans, namely:\n\n\t<b>List</b> <b>Reports</b> and \n\n\tObject Pages. ...  — Product: ABAP_PLATFORM_NEW (2023 Latest)\n\nhttps://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/9b4aa865c1e84634b6e105173fc3a5e7.html?locale=en-US&state=PRODUCTION&version=202310.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/9b4aa865c1e84634b6e105173fc3a5e7.html?locale=en-US&state=PRODUCTION&version=202310.latest",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-89079c9f142742c6b4b7331e2c134e9f",
+      "text": "Analytical Technology Components\n\nYou can find detailed information about the technology components that are used for analytics\nin SAP <b>Fiori</b> in the following documentation:\n\n\t\nFor the SAP <b>Fiori</b> <b>elements</b> <b>list</b> <b>report</b>, analytical <b>list</b> page ... , and\noverview page, see Developing Apps with SAP <b>Fiori</b> <b>Elements</b>. ... For the ABAP Programming Model to develop SAP <b>Fiori</b> Apps based on an aggregating\nview without Analytics annotations, see Developing <b>List</b> <b>Reporting</b> Apps with Search and Analytical\nCapabilities\n\nFor using ...  — Product: SAP S/4HANA (2025 (Oct 2025))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/89079c9f142742c6b4b7331e2c134e9f.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/89079c9f142742c6b4b7331e2c134e9f.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-b2d51ef92f2141e6be59deb2fe5a779a",
+      "text": "Business Scenario\n\nAn SAP <b>Fiori</b>\napplication is developed based on the SAP <b>Fiori</b> <b>elements</b> <b>list</b> <b>report</b> template. ... The\nSAP <b>Fiori</b> <b>elements</b> application is extended to create a custom logic, which is\nrelated to reading the parameters passed in the query string and filtering the <b>list</b>\n<b>report</b>. ...  — Product: SAP Extensibility Explorer for SAP S/4HANA Cloud (SHIP)\n\nhttps://help.sap.com/docs/SAP_EXTENSIBILITY_EXPLORER/09d41a6fb0914914b1c6eb9964f18f73/b2d51ef92f2141e6be59deb2fe5a779a.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_EXTENSIBILITY_EXPLORER/09d41a6fb0914914b1c6eb9964f18f73/b2d51ef92f2141e6be59deb2fe5a779a.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-90652967818140179d226108db7b24bb",
+      "text": "Dialog for Keeping or Discarding Draft Input\n\nThe functionality is\napplicable for SAP <b>Fiori</b> apps that are based on SAP <b>Fiori</b> <b>elements</b> using <b>List</b> <b>Report</b>\nand Object Pages technology and have enabled draft input by design. ... The functionality is\napplicable for SAP <b>Fiori</b> apps that are based on SAP <b>Fiori</b> <b>elements</b> using <b>List</b> <b>Report</b>\nand Object Pages technology and have enabled draft input by design. ... during Create or\nEdit activities in SAP <b>Fiori</b> apps. ...  — Product: ABAP_PLATFORM (100)\n\nhttps://help.sap.com/docs/ABAP_PLATFORM/66906ae3920c4fc684cf588290fb9267/90652967818140179d226108db7b24bb.html?locale=en-US&state=PRODUCTION&version=100",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_PLATFORM/66906ae3920c4fc684cf588290fb9267/90652967818140179d226108db7b24bb.html?locale=en-US&state=PRODUCTION&version=100",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_741130102_ANNO",
+      "text": "The following values are only available for analytic manager\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n/abap-docs-cloud/ABENCDS_741130102_ANNO",
+      "bm25": -13.262926538253964,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_741130102_ANNO",
+      "relFile": "ABENCDS_741130102_ANNO.md",
+      "finalScore": 0.03294117647058823,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.262926538253964,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "sap-help-03265b0408e2432c9571d6b3feb6b1fd",
+      "text": "Developing Apps with SAP Fiori Elements\n\nSAP <b>Fiori</b> <b>elements</b> contain predefined templates for <b>list</b> <b>reports</b> and object\n                                    \t\t\t\t\t\tpages. ... <b>elements</b>:\n                           \t\n                                 \t\t\t\t\t\n                                 <b>List</b> <b>Report</b> and Object Page ... A <b>list</b> <b>report</b> allows users to view and work with items (objects)\n                                    \t\t\t\t\t\torganized in <b>list</b> (table) format. ...  — Product: SAP S/4HANA (1709 FPS02 (May 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/468a97775123488ab3345a0c48cadd8f/03265b0408e2432c9571d6b3feb6b1fd.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/468a97775123488ab3345a0c48cadd8f/03265b0408e2432c9571d6b3feb6b1fd.html?locale=en-US&state=PRODUCTION&version=1709 002",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3362389811",
+      "text": "Application Modeler\n\nSupported Floorplans of SAP <b>Fiori</b> <b>Elements</b>\n        \n\n        \t<b>List</b> <b>Report</b> Object Page with OData V2 and OData V4\n\tOverview Page with OData V2\n\tAnalytical <b>List</b> Page with OData V2 and OData V4 ... Page Editor\n\n        Features\n\n        The&nbsp;SAP <b>Fiori</b> tools - Page Editor&nbsp;provides an outline\n          view of the configurable <b>elements</b> on the selected page. ... Introduction\n\n        The Application Modeler extension allows you to visualize and change the pages structure of SAP <b>Fiori</b>\n          <b>elements</b> applications (Page Map), and to configure individual pages ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/img/3362389811.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/img/3362389811.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#-telephone-receiver-how-to-obtain-support",
+      "text": ":telephone_receiver: How To... Obtain Support\n\nThis project is provided \"as-is\": there is no guarantee that raised issues will be answered or addressed in future releases. However we do welcome your comments or reports, so please use the Issues feature to report them. <br/>\n\n/abap-fiori-showcase/README#-telephone-receiver-how-to-obtain-support",
+      "bm25": -15.416932930795634,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#-telephone-receiver-how-to-obtain-support",
+      "relFile": "README.md",
+      "finalScore": 0.02903225806451613,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.416932930795634,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#if-you-don-t-have-a-user-in-github",
+      "text": "If you *don't* have a user in GitHub\n\n...you can still use the old way and search in the [Wiki](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/wiki/Feature-Showcase-App-Guide) instead. <img src=\"/Images/old_search.gif\" alt=\"How to search\" title=\"How to Search - The Old Way\" > From the Guide, you will get\n\n/abap-fiori-showcase/README#if-you-don-t-have-a-user-in-github",
+      "bm25": -15.410409072073875,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#if-you-don-t-have-a-user-in-github",
+      "relFile": "README.md",
+      "finalScore": 0.02857142857142857,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.410409072073875,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#-book-how-to-use-the-guide",
+      "text": ":book: How To... Use the Guide\n\nThe Updated Guide is divided into 6 sections. You can peruse it on your own without refering to the app, based on what you want to implement. | Documentation | Description | | ----- | ----- |\n\n/abap-fiori-showcase/README#-book-how-to-use-the-guide",
+      "bm25": -15.294773666926481,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#-book-how-to-use-the-guide",
+      "relFile": "README.md",
+      "finalScore": 0.028125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.294773666926481,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#-memo-license",
+      "text": ":memo: License\n\nCopyright (c) 2022 - 2024 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the SAP Sample Code License except as noted otherwise in the [LICENSE](/LICENSES/Apache-2.0.txt) file.\n\n/abap-fiori-showcase/README#-memo-license",
+      "bm25": -15.29314682507688,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#-memo-license",
+      "relFile": "README.md",
+      "finalScore": 0.027692307692307693,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.29314682507688,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#fiori-sapui5",
+      "text": "Fiori & SAPUI5\n\nSAP Fiori bezeichnet die neue User Experience aktueller Lösungen der SAP, die auf Basis moderner Design-Prinzipien entstanden sind. Fiori ist die strategische Oberflächentechnologie der SAP und sollte in den meisten Fällen von Neuentwicklungen als gesetzte Technologie angesehen werden. Der Begriff *...\n\n/dsag-abap-leitfaden/user-interface/index#fiori-sapui5",
+      "bm25": -15.010548935589984,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#fiori-sapui5",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.0273972602739726,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.010548935589984,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#sap-btp-abap-environment-trial",
+      "text": "SAP BTP ABAP Environment Trial\n\nIf you don’t have a system available, you could also try it out in the SAP BTP ABAP Environment Trial systems. Check out this [tutorial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) on how to get a trial user. <br/>\n\n/abap-fiori-showcase/README#sap-btp-abap-environment-trial",
+      "bm25": -15.280148297018412,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#sap-btp-abap-environment-trial",
+      "relFile": "README.md",
+      "finalScore": 0.027272727272727275,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.280148297018412,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#fiori-freestyle",
+      "text": "Fiori Freestyle\n\nWenn für eine zu entwickelnde Anwendung die von der SAP zur Verfügung gestellten Floorplans nicht ausreichend sind muss die UI-Oberfläche manuell entwickelt werden. Hierfür kommt eine Fiori Freestyle Entwicklung zum Einsatz. Die Fiori-Entwicklung wird mit dem SAPUI5-Framework umgesetzt, hierfür sind...\n\n/dsag-abap-leitfaden/user-interface/index#fiori-freestyle",
+      "bm25": -15.009561719191082,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#fiori-freestyle",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.02702702702702703,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.009561719191082,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#for-abap-platform",
+      "text": "For ABAP Platform\n\nChoose this if you are working on SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, private edition. To import the feature showcase app into your ABAP system, follow the steps in the relevant README file and download the sources from the branch corresponding to your backend version:  * [README](...\n\n/abap-fiori-showcase/README#for-abap-platform",
+      "bm25": -15.26555928374141,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#for-abap-platform",
+      "relFile": "README.md",
+      "finalScore": 0.026865671641791045,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.26555928374141,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#for-abap-platform-cloud",
+      "text": "For ABAP Platform Cloud\n\nChoose this if you are working on SAP BTP or SAP S/4HANA Cloud, public edition.  To import the feature showcase app into your ABAP Environment, follow the steps in the [README](../ABAP-platform-cloud/README.md) file of the branch <em>ABAP-platform-cloud</em> and download the sources from this branch...\n\n/abap-fiori-showcase/README#for-abap-platform-cloud",
+      "bm25": -15.263940519042238,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#for-abap-platform-cloud",
+      "relFile": "README.md",
+      "finalScore": 0.026470588235294117,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.263940519042238,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#if-you-have-a-user-in-github",
+      "text": "If you have a user in GitHub\n\n...when you see a feature that you would like to implement, copy or take note of the search term (e.g., **#SearchTermExample**) and perform a search in the Repository. Clicking on a result brings you to the markdown code of the respective Guide, so just click on the Preview and search for the term a...\n\n/abap-fiori-showcase/README#if-you-have-a-user-in-github",
+      "bm25": -15.252621654908408,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#if-you-have-a-user-in-github",
+      "relFile": "README.md",
+      "finalScore": 0.026086956521739132,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.252621654908408,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "community-14240957",
+      "text": "File upload for items in Fiori Elements List Repor...\n\n...ESTful Application Programming Model (RAP), you can use the \"Attachment\" for each row (item) in the SAP Fiori Elements List Report . It is possible to upload, read, and delete files on a line-by-line basis....\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/file-upload-for-items-in-fiori-elements-list-report/ba-p/14240957?search-action-id=497478174122&search-result-uid=14240957",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/file-upload-for-items-in-fiori-elements-list-report/ba-p/14240957?search-action-id=497478174122&search-result-uid=14240957",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-14240934",
+      "text": "Fiori Elements List Report でのファイルアップロード\n\n1. はじめに このブログでは、SAP Fiori Elements の List Report で、各行（アイテム）に対して“添付ファイル“のような項目を持たせ、行単位でファイルのアップロード・参照・削除の実現方法を紹介します。 List Report のデータソースは、ABAP RESTful Application Programming Model（RAP）フレームワークを使用して開発したO...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/fiori-elements-list-report%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89/ba-p/14240934?search-action-id=497478174122&search-result-uid=14240934",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/fiori-elements-list-report%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%AD%E3%83%BC%E3%83%89/ba-p/14240934?search-action-id=497478174122&search-result-uid=14240934",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13874000",
+      "text": "Column editable on Fiori Element List report\n\nStep1: Create list report fiori elements app Step2: Add action buttons (Edit,Save,Cancel) Step3: Once action buttons are added then ext/controller file will be generated Step4: P...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/column-editable-on-fiori-element-list-report/ba-p/13874000?search-action-id=497478174122&search-result-uid=13874000",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/column-editable-on-fiori-element-list-report/ba-p/13874000?search-action-id=497478174122&search-result-uid=13874000",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content",
+      "text": "List Report - Content Area\n\n- [List Report - Content Area](#list-report---content-area)\n\n/abap-fiori-showcase/03_list_report_content",
+      "bm25": -12.537428691674082,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02434782608695652,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.537428691674082,
+        "rank": 55,
+        "rrfScore": 0.008695652173913044,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_467685227-_ANNO",
+      "text": "ABENCDS_467685227-_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`Consumption Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8\n\n/abap-docs-cloud/ABENCDS_467685227-_ANNO",
+      "bm25": -12.4933938128245,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_467685227-_ANNO",
+      "relFile": "ABENCDS_467685227-_ANNO.md",
+      "finalScore": 0.02413793103448276,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.4933938128245,
+        "rank": 56,
+        "rrfScore": 0.008620689655172414,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#presentation-variant-list-report",
+      "text": "Presentation Variant - List Report\n\n*Search term:* `#PresentationVariant` A presentation variant defines how the result of a queried collection of entities is shaped and how this result is displayed, for example as a list report or a chart (`@UI.presentationVariant.visualizations`), the sorting order (`@UI.presentationVariant.sortOrde...\n\n/abap-fiori-showcase/03_list_report_content#presentation-variant-list-report",
+      "bm25": -12.453967493242958,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#presentation-variant-list-report",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.023140495867768594,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.453967493242958,
+        "rank": 61,
+        "rrfScore": 0.008264462809917356,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/04_object_page_general#time-and-date",
+      "text": "Time and Date\n\n*Search term:* `#TimeAndDate` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/time_and_date.jpg\" title=\"Time and Date - Object Page\" /> SAP Fiori Elements provides out of the box support for displaying and editing dates and times, as wel...\n\n/abap-fiori-showcase/04_object_page_general#time-and-date",
+      "bm25": -13.842041863818778,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/04_object_page_general#time-and-date",
+      "relFile": "04_object_page_general.md",
+      "finalScore": 0.02278481012658228,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.842041863818778,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#selection-presentation-variant-list-report",
+      "text": "Selection Presentation Variant - List Report\n\n*Search term:* `#SelectionPresentationVariant` A SelectionPresentationVariant bundles a Selection Variant and a Presentation Variant. > [!NOTE] @UI.presentationVariant qualifier pvariant maxItems Search Term #DefaultSort sortOrder StringProperty direction\n\n/abap-fiori-showcase/03_list_report_content#selection-presentation-variant-list-report",
+      "bm25": -12.404421727248664,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#selection-presentation-variant-list-report",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.0224,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.404421727248664,
+        "rank": 65,
+        "rrfScore": 0.008,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#introduction",
+      "text": "Introduction\n\nIn the present hands-on exercise, you will enrich your CDS data model projection with UI metadata for the latter generation of an SAP Fiori elements-based Travel list report app. The focus of this course is on the RESTful back-end implementation of apps. Therefore, we will use only a few UI annotati...\n\n/abap-platform-rap-opensap/week2/unit5#introduction",
+      "bm25": -14.754228150463554,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#introduction",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.022368421052631576,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.754228150463554,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#selection-variant-list-report",
+      "text": "Selection Variant - List Report\n\n*Search term:* `#SelectionVariant` With a selection variant, you can define how the properties of an entity set should be filtered. The attribute `text` of the annotation is the title of the view and the attribute `filter` contains all filter parameters. > [!NOTE] Search Term #SelectionVariant @UI.s...\n\n/abap-fiori-showcase/03_list_report_content#selection-variant-list-report",
+      "bm25": -12.396009770159974,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#selection-variant-list-report",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02222222222222222,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.396009770159974,
+        "rank": 66,
+        "rrfScore": 0.007936507936507936,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/02_list_report_header",
+      "text": "List Report - Header Area\n\n- [List Report - Header Area](#list-report---header-area)\n\n/abap-fiori-showcase/02_list_report_header",
+      "bm25": -12.370740260659778,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/02_list_report_header",
+      "relFile": "02_list_report_header.md",
+      "finalScore": 0.02204724409448819,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.370740260659778,
+        "rank": 67,
+        "rrfScore": 0.007874015748031496,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README#sap-s-4hana-2021-2022-or-2023",
+      "text": "SAP S/4HANA 2021, 2022 or 2023\n\n1. Create a package **'TEST_RAP_GENERATOR'**. 2. Start the report `ZABAPGIT_STANDALONE`. You might have to download the [source code](https://raw.githubusercontent.com/abapGit/build/main/zabapgit_standalone.prog.abap) of this open source tool. 3. Create an an online repository with the package and w...\n\n/cloud-abap-rap/README#sap-s-4hana-2021-2022-or-2023",
+      "bm25": -14.364703074451999,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README#sap-s-4hana-2021-2022-or-2023",
+      "relFile": "README.md",
+      "finalScore": 0.021794871794871794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.364703074451999,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#metadata-extension-dmo-fsa-c-roottp",
+      "text": "Metadata Extension /DMO/FSA_C_RootTP\n\nA facet is added to show the treeview as a list report within the object page. > [!NOTE]  > Source: Metadata Extension **/DMO/FSA_C_FolderTP** annotate entity FSA_C_RootTP with @UI.facet Search Term #RAPTreeviewSection purpose #STANDARD\n\n/abap-fiori-showcase/06_object_page_content#metadata-extension-dmo-fsa-c-roottp",
+      "bm25": -13.266084888012024,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#metadata-extension-dmo-fsa-c-roottp",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.02142857142857143,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.266084888012024,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/README#additional-reading-material",
+      "text": "Additional Reading Material\n\nFor more information, links to documentation, and more, please visit the [RAP at openSAP information page](https://community.sap.com/topics/cloud-platform-abap-environment/rap-opensap).\n\n/abap-platform-rap-opensap/week2/README#additional-reading-material",
+      "bm25": -13.785243281606457,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/README#additional-reading-material",
+      "relFile": "week2/README.md",
+      "finalScore": 0.02125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.785243281606457,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#flexible-programming-model",
+      "text": "Flexible Programming Model\n\nDas [Flexible Programmiermodell (FPM)](https://ui5.sap.com/test-resources/sap/fe/core/fpmExplorer/index.html#/overview/introduction) bietet eine Mischform aus generierten Fiori Elements- und manuell entwickelten SAPUI5 Freestyle-Oberflächen. Es steht ab SAPUI5 v1.94 und nur mit OData V4 zur Verfügun...\n\n/dsag-abap-leitfaden/user-interface/index#flexible-programming-model",
+      "bm25": -15.026134888000087,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#flexible-programming-model",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.02112676056338028,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.026134888000087,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/README#week-2-unit-1-the-business-scenario",
+      "text": "Week 2 Unit 1:\tThe Business Scenario\n\nThere is no hands-on exercise provided for this unit, but you can watch the [corresponding video](https://open.sap.com/courses/cp13/items/2ZIu1QOORpyLl8PkiFOgJq) on openSAP.com.\n\n/abap-platform-rap-opensap/week2/README#week-2-unit-1-the-business-scenario",
+      "bm25": -13.775606687960686,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/README#week-2-unit-1-the-business-scenario",
+      "relFile": "week2/README.md",
+      "finalScore": 0.02098765432098765,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.775606687960686,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index",
+      "text": "User Interface (UI)\n\n{: .no_toc}\n\n/dsag-abap-leitfaden/user-interface/index",
+      "bm25": -15.025583010225798,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.020833333333333332,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.025583010225798,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/README#license",
+      "text": "License\n\nCopyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.\n\n/abap-platform-rap-opensap/week2/README#license",
+      "bm25": -13.74199198241173,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/README#license",
+      "relFile": "week2/README.md",
+      "finalScore": 0.020731707317073172,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.74199198241173,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#presentation-variant-object-page",
+      "text": "Presentation Variant - Object Page\n\n*Search term:* `#PresentationVariant-Child` A presentation variant defines how the result of a queried collection of entities is shaped and how this result is displayed, for example as a list report or a chart (`@UI.presentationVariant.visualizations`), the sorting order (`@UI.presentationVariant.so...\n\n/abap-fiori-showcase/06_object_page_content#presentation-variant-object-page",
+      "bm25": -13.25308384089598,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#presentation-variant-object-page",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.020689655172413793,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.25308384089598,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week3/unit2",
+      "text": "HANDS-ON EXERCISE FOR WEEK 3 UNIT 2: DEFINING THE BASIC BUSINESS OBJECT BEHAVIOR\n\n[Week 2: Developing a Read-Only List Report App](/week2/README.md)\n\n/abap-platform-rap-opensap/week3/unit2",
+      "bm25": -13.586782335525607,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week3/unit2",
+      "relFile": "week3/unit2.md",
+      "finalScore": 0.020481927710843374,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.586782335525607,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/user-interface/index#legacy-technologien",
+      "text": "Legacy Technologien\n\nDieses Kapitel soll einen kurzen Überblick über bisher nicht genannte Oberflächentechnologien geben. Da diese im Laufe der Zeit immer mehr an Relevanz verlieren wird an dieser Stelle nicht näher auf einzelne Technologien eingegangen.   | UI-Technologie                       | SAP-Roadmap            ...\n\n/dsag-abap-leitfaden/user-interface/index#legacy-technologien",
+      "bm25": -14.991432147516761,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/user-interface/index#legacy-technologien",
+      "relFile": "user-interface/index.md",
+      "finalScore": 0.02,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.991432147516761,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README",
+      "text": "Description\n\n[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-abap-rap)](https://api.reuse.software/info/github.com/SAP-samples/cloud-abap-rap)\n\n/cloud-abap-rap/README",
+      "bm25": -13.254634216848453,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README",
+      "relFile": "README.md",
+      "finalScore": 0.019767441860465116,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.254634216848453,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#solution",
+      "text": "Solution\n\nFind the source code for the created CDS metadata extensions in the **[/week2/sources](/week2/sources)** folder: - [W2U5_DDLX_ZC_RAP_TRAVEL_####](/week2/sources/W2U5_DDLX_ZC_RAP_TRAVEL.txt)  - [W2U5_DDLX_ZC_RAP_BOOKING_####](/week2/sources/W2U5_DDLX_ZC_RAP_BOOKING.txt)\n\n/abap-platform-rap-opensap/week2/unit5#solution",
+      "bm25": -13.249673886547042,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#solution",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.019318181818181818,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.249673886547042,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#summary",
+      "text": "Summary\n\nYou have completed the exercise!   In this unit, you have learned how to create and use CDS metadata extensions to enrich a CDS data model with UI-specific annotations.\n\n/abap-platform-rap-opensap/week2/unit5#summary",
+      "bm25": -13.236072595780492,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#summary",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.019101123595505618,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.236072595780492,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5",
+      "text": "HANDS-ON EXERCISE FOR WEEK 2 UNIT 5: ENRICHING THE PROJECTED DATA MODEL WITH UI METADATA\n\n[Week 2 Unit 4: Defining the CDS Data Model Projection](unit4.md)\n\n/abap-platform-rap-opensap/week2/unit5",
+      "bm25": -13.219800879300667,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.01888888888888889,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.219800879300667,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#step-1-annotate-the-travel-projection-view",
+      "text": "Step 1. Annotate the Travel Projection View\n\nFirst, create the CDS metadata extensions **`ZC_RAP_Travel_####`** (where `####` is your chosen suffix)  to enrich the Travel BO projection view with UI semantics. 1.\tRight-click on your Travel BO projection view **`ZC_RAP_Travel_####`** in the Project Explorer and select **New Metadata Extension** ...\n\n/abap-platform-rap-opensap/week2/unit5#step-1-annotate-the-travel-projection-view",
+      "bm25": -13.210334036248058,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#step-1-annotate-the-travel-projection-view",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.01868131868131868,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.210334036248058,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 0.7
+      }
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "SELECT SINGLE INTO DATA",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:55.919Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_SINGLE",
+      "text": "ABAPSELECT_SINGLE\n\n`... SINGLE ... [FOR UPDATE] ...` `... SINGLE ... [FOR UPDATE NOWAIT].` Using the ABAP-specific addition `SINGLE`, the result set of a [query](ABENASQL_QUERY_GLOSRY.html) contains a single row set. The addition is possible with a standalone [`SELECT`](ABAPSELECT.html) statement or with the [main query](ABENMAINQUERY_GLOSRY.html) of a standalone [`WITH`](ABAPWITH.html) statement. If `SINGLE` is spe\n\n/abap-docs-standard/ABAPSELECT_SINGLE",
+      "bm25": -6.909706201385208,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_SINGLE",
+      "relFile": "ABAPSELECT_SINGLE.md",
+      "finalScore": 0.05737704918032787,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.909706201385208,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_OBSOLETE",
+      "text": "ABAPSELECT_OBSOLETE\n\n`SELECT [SINGLE] * FROM \\{ dbtab | *dbtab \\} ...    ...  ENDSELECT.` This statement is a short form of the following [ABAP SQL](ABENABAP_SQL_GLOSRY.html) statement for accessing an individual DDIC database table `dbtab`: The explicit specification of a work area in an [`INTO`](ABAPINTO_CLAUSE.html) clause is not required in the short form. A [table work area](ABENTABLE_WORK_AREA_GLOSRY.html)\\\\ `db\n\n/abap-docs-standard/ABAPSELECT_OBSOLETE",
+      "bm25": -6.8393462301407455,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_OBSOLETE",
+      "relFile": "ABAPSELECT_OBSOLETE.md",
+      "finalScore": 0.047619047619047616,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.8393462301407455,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_INTO_TARGET",
+      "text": "ABAPSELECT_INTO_TARGET\n\n`... \\{     @dobj       \\}\\    |\\ \\{     @DATA(dobj)|@FINAL(dobj) \\}\\    |\\ \\{ NEW @dref       \\}\\    |\\ \\{ NEW @DATA(dref)|@FINAL(dref) \\} ...` Specifies a target area of the [`INTO`](ABAPINTO_CLAUSE.html) clause of an ABAP SQL query. The possible target areas of the [`INTO`](ABAPINTO_CLAUSE.html) clause are as follows: Each target area can be specified as follows:\n\n/abap-docs-standard/ABAPSELECT_INTO_TARGET",
+      "bm25": -6.4767482697426795,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_INTO_TARGET",
+      "relFile": "ABAPSELECT_INTO_TARGET.md",
+      "finalScore": 0.0472972972972973,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.4767482697426795,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT",
+      "text": "ABAPSELECT\n\nUse of the [ABAP SQL](ABENABAP_SQL_GLOSRY.html) statement `SELECT` as a standalone statement. This statement reads data from one or more [DDIC database tables](ABENDDIC_DB_TABLE_GLOSRY.html), [DDIC views](ABENDDIC_VIEW_GLOSRY.html), or [CDS persistent entities](ABENCDS_SQL_ENTITY_GLOSRY.html), uses this data to create a multirow or a single row result set, and assigns this result set to suitable A\n\n/abap-docs-standard/ABAPSELECT",
+      "bm25": -6.634374569289864,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT",
+      "relFile": "ABAPSELECT.md",
+      "finalScore": 0.04477611940298507,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.634374569289864,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECT_CLAUSES",
+      "text": "ABENSELECT_CLAUSES\n\nThis section describes the clauses and additions possible for the `SELECT` statements of [main queries](ABENMAINQUERY_GLOSRY.html) and [subqueries](ABENSUBQUERY_GLOSRY.html). Information on which clauses are possible in which queries can be found in the relevant statements and clauses. -   [`SINGLE`](ABAPSELECT_SINGLE.html) -   [`FROM`](ABAPFROM_CLAUSE.html)\n\n/abap-docs-standard/ABENSELECT_CLAUSES",
+      "bm25": -6.607956428462331,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECT_CLAUSES",
+      "relFile": "ABENSELECT_CLAUSES.md",
+      "finalScore": 0.044117647058823525,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.607956428462331,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_CLAUSE",
+      "text": "ABAPSELECT_CLAUSE\n\n`SELECT` clause of a [query](ABENASQL_QUERY_GLOSRY.html). The `SELECT` clause defines the structure of the result set of the `SELECT` statement. It consists of a [`SELECT` list](ABAPSELECT_LIST.html), which defines the columns of the result set, and an optional addition `DISTINCT`, which removes duplicative rows from the result set. The `SELECT` list [`select_list`](ABAPSELECT_LIST.html) can indic\n\n/abap-docs-standard/ABAPSELECT_CLAUSE",
+      "bm25": -6.498860210938781,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_CLAUSE",
+      "relFile": "ABAPSELECT_CLAUSE.md",
+      "finalScore": 0.04285714285714286,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.498860210938781,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_UP_TO_OFFSET",
+      "text": "ABAPSELECT_UP_TO_OFFSET\n\n`... [UP TO n ROWS]`\\\\  These optional additions of a [query](ABENASQL_QUERY_GLOSRY.html) of a [`SELECT`](ABAPSELECT.html) statement or [`WITH`](ABAPWITH.html) statement restrict the result set using an offset and the maximum number of rows to be read. The syntax varies as follows for [main queries](ABENMAINQUERY_GLOSRY.html) and [subqueries](ABENSUBQUERY_GLOSRY.html): These additions affect the r\n\n/abap-docs-standard/ABAPSELECT_UP_TO_OFFSET",
+      "bm25": -6.486443507797258,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_UP_TO_OFFSET",
+      "relFile": "ABAPSELECT_UP_TO_OFFSET.md",
+      "finalScore": 0.04225352112676056,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.486443507797258,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECT_INTO_LOB_HANDLES",
+      "text": "ABENSELECT_INTO_LOB_HANDLES\n\nIn a standalone [`SELECT`](ABAPSELECT.html) statement or a [`WITH`](ABAPWITH.html) statement, but not in a [`FETCH`](ABAPFETCH.html) statement, [LOB handles](ABENLOB_HANDLE_GLOSRY.html) can be created as [reader streams](ABENREADER_STREAM_GLOSRY.html) and as [locators](ABENLOCATOR_GLOSRY.html) in the [`INTO`](ABAPINTO_CLAUSE.html) clause. An [LOB](ABENLOB_GLOSRY.html) from the result set can be as\n\n/abap-docs-standard/ABENSELECT_INTO_LOB_HANDLES",
+      "bm25": -6.3902816300248615,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECT_INTO_LOB_HANDLES",
+      "relFile": "ABENSELECT_INTO_LOB_HANDLES.md",
+      "finalScore": 0.040697674418604654,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.3902816300248615,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSQL_HIERARCHY_COMP_ID",
+      "text": "ABENSQL_HIERARCHY_COMP_ID\n\n`... HIERARCHY_COMPOSITE_ID( sql_exp1, ..., sql_expn ) ...` Calls the hierarchy composite ID function as an [SQL expression](ABAPSQL_EXPR.html) or operand of an expression in ABAP SQL. The hierarchy composite ID function can have a comma-separated list with at least one argument. This function concatenates multicolumn tuple-like node identifiers into single scalar values.\n\n/abap-docs-standard/ABENSQL_HIERARCHY_COMP_ID",
+      "bm25": -6.72653819895208,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_HIERARCHY_COMP_ID",
+      "relFile": "ABENSQL_HIERARCHY_COMP_ID.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.72653819895208,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_SHORTREF",
+      "text": "ABAPSELECT_SHORTREF\n\n**Specifying the Rows** **Structure of the result set** **Specifying the Database Tables**\n\n/abap-docs-standard/ABAPSELECT_SHORTREF",
+      "bm25": -6.453358998949175,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_SHORTREF",
+      "relFile": "ABAPSELECT_SHORTREF.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.453358998949175,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTABLES_ASTERISK",
+      "text": "ABAPTABLES_ASTERISK\n\nThis statement declares an additional [table work area](ABENTABLE_WORK_AREA_GLOSRY.html)\\\\ `*table_wa`, whose data type, like that of the regular [`TABLES`](ABAPTABLES.html) statement with its [flat](ABENFLAT_GLOSRY.html) structured data type `table_wa`, is taken from the ABAP Dictionary. The additional table work area can be used just like the regular table work area. This applies in particular t\n\n/abap-docs-standard/ABAPTABLES_ASTERISK",
+      "bm25": -6.684669014363489,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTABLES_ASTERISK",
+      "relFile": "ABAPTABLES_ASTERISK.md",
+      "finalScore": 0.03787878787878788,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.684669014363489,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEW_CONSTRUCTOR_PARAMS_SINGLE",
+      "text": "ABENNEW_CONSTRUCTOR_PARAMS_SINGLE\n\nIf `dtype` is a non-generic elementary data type, a structured type, a table type, or a reference type or `#` is used for a type like this, a single data object `dobj` can be specified as a single operand `dobj` that is convertible to or from data type `dtype`. `dobj` is a [general expression position](ABENGENERAL_EXPR_POSITION_GLOSRY.html). The value of `dobj` is assigned to the created anonymous\n\n/abap-docs-standard/ABENNEW_CONSTRUCTOR_PARAMS_SINGLE",
+      "bm25": -6.424720877125029,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEW_CONSTRUCTOR_PARAMS_SINGLE",
+      "relFile": "ABENNEW_CONSTRUCTOR_PARAMS_SINGLE.md",
+      "finalScore": 0.037500000000000006,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.424720877125029,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-3361892517",
+      "text": "Difference between select single and select up to 1 rows\n\n<b>Data</b>: <b>w_Single</b> type Posnr,\n\nt_Rows type standard table of Posnr\n\ninitial size 0\n\nwith header line.\n\n*\n\n<b>Select</b> <b>single</b> Posnr\n\nfrom zDifference\n\ninto <b>w_Single</b>. ... <b>SELECT</b> <b>SINGLE</b> is to be preferred\n  as it is <b>simpler</b> coding.\n\nIf there is a performance issue with a program, you may try substituting multiple <b>SELECT</b> <b>SINGLES</b> with <b>SELECT</b> UP TO 1\n  ROWS. ... Difference between <b>select</b> <b>single</b> and <b>select</b> up to 1 rows\nIt used to be the case that <b>SELECT</b> <b>SINGLE</b>, and <b>SELECT</b> UP TO 1 ROWS had performance considerations. In most modern\n  database systems (e.g. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/home/3361892517.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/home/3361892517.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-2c26d9ce6fe810148a85eb6e4593df2b",
+      "text": "Data source category\n\n<b>Data</b> source category\n<b>Select</b> the <b>data</b> source category, either &quot;<b>Single</b> <b>data</b> source&quot; or\n&quot;<b>Data</b> source group&quot;. ... Depending on what you <b>select</b> here, the\ncontents of the &quot;Source&quot; list either contains the <b>data</b> sources\nlisted under &quot;<b>Singles</b>&quot; or &quot;Groups&quot;. ...  — Product: SAP Identity Management (8.0)\n\nhttps://help.sap.com/docs/SAP_IDENTITY_MANAGEMENT/4de7a9084e1f425684e9732cc0680aff/2c26d9ce6fe810148a85eb6e4593df2b.html?locale=en-US&state=PRODUCTION&version=8.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_IDENTITY_MANAGEMENT/4de7a9084e1f425684e9732cc0680aff/2c26d9ce6fe810148a85eb6e4593df2b.html?locale=en-US&state=PRODUCTION&version=8.0",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPMODIFY_ITAB_RESULT",
+      "text": "ABAPMODIFY_ITAB_RESULT\n\n`... \\{ ASSIGNING <fs> [CASTING]\\ [ELSE UNASSIGN]\\}`\\\\    `|\\ \\{ REFERENCE INTO dref \\}.` These additions are possible only when modifying [single lines](ABAPMODIFY_ITAB_SINGLE.html). If modified successfully, the addition `ASSIGNING` is used to assign the line to a field symbol and the addition `REFERENCE INTO` is used to set a reference to the modified line in a reference variable.\n\n/abap-docs-standard/ABAPMODIFY_ITAB_RESULT",
+      "bm25": -6.591110175161617,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPMODIFY_ITAB_RESULT",
+      "relFile": "ABAPMODIFY_ITAB_RESULT.md",
+      "finalScore": 0.036231884057971016,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.591110175161617,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-575a3c416d6d1014b3fc9283b0e91070",
+      "text": "Example 5: Push-down SQL join\n\nIf the optimized SQL\nshows a <b>single</b> <b>SELECT</b> statement, then <b>Data</b> Services performs a full push-down operation. ... The resulting optimized SQL contains a <b>single</b> <b>select</b> statement. Therefore, <b>Data</b> Services pushes down the entire query to the database\nserver. ... After you configure the dataflow, confirm that <b>Data</b> Services will use a push-down operation by reviewing the optimized SQL. ...  — Product: SAP Data Services (2025)\n\nhttps://help.sap.com/docs/SAP_DATA_SERVICES/5d0c467218d5489791d04ced984a8f89/575a3c416d6d1014b3fc9283b0e91070.html?locale=en-US&state=PRODUCTION&version=2025.00",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_DATA_SERVICES/5d0c467218d5489791d04ced984a8f89/575a3c416d6d1014b3fc9283b0e91070.html?locale=en-US&state=PRODUCTION&version=2025.00",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNATIVE_SQL_TRAILBLANKS_ABEXA",
+      "text": "ABENNATIVE_SQL_TRAILBLANKS_ABEXA\n\nThis example demonstrates a difference between ABAP SQL and Native SQL regarding the handling of trailing blanks. The columns `STRING` and `CHAR10` of DDIC database table `DEMO_DDIC_TYPES` is updated by using [set expressions](ABENSET_EXPRESSION_GLOSRY.html) in [ABAP SQL](ABENABAP_SQL_GLOSRY.html), [ADBC](ABENADBC_GLOSRY.html) and with [`EXEC SQL`](ABENNATIVESQL.html). -   The column `STRING` has\n\n/abap-docs-standard/ABENNATIVE_SQL_TRAILBLANKS_ABEXA",
+      "bm25": -6.8819087557757666,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNATIVE_SQL_TRAILBLANKS_ABEXA",
+      "relFile": "ABENNATIVE_SQL_TRAILBLANKS_ABEXA.md",
+      "finalScore": 0.035483870967741936,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.8819087557757666,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-b85f552921cc485c910b319453ed02a7",
+      "text": "Enabling Single Sign-On in Data Lake Files\n\nIn the <b>Data</b> Lake Files app.\n\n\n\n\n\t\n<b>Select</b> Enable <b>Single</b> Sign-On for <b>Data</b> Lake Files. ... Tip\n\nAfter <b>Single</b> Sign-On is enabled, you can later disable\nSSO by <b>selecting</b> Disable <b>Single</b> Sign-On for <b>Data</b> Lake\nFiles.\n\n\n\n\n\t\nConfirm by <b>selecting</b> Enable. ... <b>Select</b> your instance.\n\n\t\nIn the <b>Select</b> Authentication Method dialog,\n<b>select</b> <b>Single</b> Sign-On.\n\n\n\n\n\n\nResults\n\n\n\tIn the <b>Data</b> Lake Files app under Policy\nList, a new access policy is generated. ...  — Product: SAP HANA Cloud, Data Lake in CN Regions (QRC 4/2025)\n\nhttps://help.sap.com/docs/SAP_HANA_DATA_LAKE_CN/81f9c7a9a3ff4f03a479cb00b1d3b699/b85f552921cc485c910b319453ed02a7.html?locale=en-US&state=PRODUCTION&version=data_lake_CN",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_HANA_DATA_LAKE_CN/81f9c7a9a3ff4f03a479cb00b1d3b699/b85f552921cc485c910b319453ed02a7.html?locale=en-US&state=PRODUCTION&version=data_lake_CN",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-5778b51a6d6d1014b3fc9283b0e91070",
+      "text": "Optimizing outer joins\n\ncannot create a\n                           \t\t  <b>single</b> <b>SELECT</b> statement. ... When the outer join only uses one table as the outer\n                           \t\ttable in the join, <b>Data</b> Services\n                           \t\tcan create a <b>single</b> <b>SELECT</b> statement using the LEFT OUTER ... When you create ABAP <b>data</b> flows with an outer join\n                           \t\tthat joins transparent tables and uses <b>simple</b> expressions in the ON clause,\n                           \t\t<b>Data</b> Services attempts ...  — Product: SAP Data Services (4.2 SP10)\n\nhttps://help.sap.com/docs/SAP_DATA_SERVICES/e54136ab6a4a43e6a370265bf0a2d744/5778b51a6d6d1014b3fc9283b0e91070.html?locale=en-US&state=PRODUCTION&version=4.2.10",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_DATA_SERVICES/e54136ab6a4a43e6a370265bf0a2d744/5778b51a6d6d1014b3fc9283b0e91070.html?locale=en-US&state=PRODUCTION&version=4.2.10",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDIC_GTT_ABEXA",
+      "text": "ABENDDIC_GTT_ABEXA\n\nThis example demonstrates how [global temporary tables](ABENDDIC_DATABASE_TABLES_GTT.html) in ABAP Dictionary are accessed. This example uses Native SQL to fill the GTT for demonstration purposes only. Only ABAP SQL should be used to access GTTs. -   After the GTT is filled using the ABAP SQL statement [`INSERT`](ABAPINSERT_DBTAB.html), the table is cleared again using the ABAP SQL statement [`DEL\n\n/abap-docs-standard/ABENDDIC_GTT_ABEXA",
+      "bm25": -6.7316769321942935,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDIC_GTT_ABEXA",
+      "relFile": "ABENDDIC_GTT_ABEXA.md",
+      "finalScore": 0.034375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.7316769321942935,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-a401062b8f474be3a95e791f43323456",
+      "text": "Properties with Single Values\n\nThere are multiple binding types to\n<b>select</b> for <b>single</b> value properties:\t\n<b>Single</b> <b>data</b> cell value\n\n\n\tConditional Format Value\n-&gt; details\n\t\nAttribute Member Content\n\n\n\t\nDimension Member Content\n\n\n\t\nMultiple ... Properties with <b>Single</b> Values\n\nThe majority of the properties which can be bound to a <b>data</b> source are of the the <b>single</b> value\ntype. ... Depending on the binding type you have <b>selected</b> for a <b>single</b> value property, you have to\nset further properties relating to the chosen binding type. ...  — Product: SAP Lumira (2.4 SP00)\n\nhttps://help.sap.com/docs/SAP_LUMIRA/4f58d91f03e441b68d3187e94be27df2/a401062b8f474be3a95e791f43323456.html?locale=en-US&state=PRODUCTION&version=2.4.0.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_LUMIRA/4f58d91f03e441b68d3187e94be27df2/a401062b8f474be3a95e791f43323456.html?locale=en-US&state=PRODUCTION&version=2.4.0.0",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-1d57227069f1419c88746c3d72c44ba3",
+      "text": "User Exit for Billing Documents\n\n&quot;get Tax procedure based on tax country\n      <b>SELECT</b> <b>SINGLE</b> kalsm FROM t005 INTO @<b>DATA</b>(lv_kalsm) WHERE land1 = @lv_tax_country.\n      IF sy-subrc EQ 0. ... &quot;Execute only when company code is of Spain\n\n  &quot;Get Country based on company code\n  <b>SELECT</b> <b>SINGLE</b> land1 FROM t001 INTO @<b>DATA</b>(lv_tax_country) WHERE bukrs = @cvbrk-bukrs.\n\n  <b>DATA</b>(lt_vbrp) = cvbrp[]. ... <b>SELECT</b> <b>SINGLE</b> inv_typerev FROM fiessii_doctype INTO @<b>DATA</b>(lv_revtype)\n                                                         WHERE bukrs = @cvbrk-bukrs ...  — Product: SAP Self-Billing Cockpit (SHIP)\n\nhttps://help.sap.com/docs/CP_SELF_BILLING/86e3607c4c1d43eca25d4c9433799c08/1d57227069f1419c88746c3d72c44ba3.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/CP_SELF_BILLING/86e3607c4c1d43eca25d4c9433799c08/1d57227069f1419c88746c3d72c44ba3.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-5778ad696d6d1014b3fc9283b0e91070",
+      "text": "Optimize inner joins\n\nSAP applications can retrieve related <b>data</b> from multiple tables with a <b>single</b> <b>SELECT</b> statement using the JOIN command. Sometimes\n<b>Data</b> Services uses nested <b>SELECT</b> loops. ... Next, <b>Data</b>\nServices creates a <b>single</b> <b>select</b> statement that joins tables D and E. It pushes the operation to SAP. ... When an ABAP <b>data</b> flow joins transparent tables with at lease one <b>simple</b> join predicate in the ON clause, <b>Data</b> Services does the following:\tCreates a <b>single</b> <b>SELECT</b> statement using the JOIN command\n\n\tPushes ...  — Product: SAP Data Services (2025)\n\nhttps://help.sap.com/docs/SAP_DATA_SERVICES/df959412681b4619a38f03ff90207e6b/5778ad696d6d1014b3fc9283b0e91070.html?locale=en-US&state=PRODUCTION&version=2025.00",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_DATA_SERVICES/df959412681b4619a38f03ff90207e6b/5778ad696d6d1014b3fc9283b0e91070.html?locale=en-US&state=PRODUCTION&version=2025.00",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_AGGREGATE",
+      "text": "ABAPSELECT_AGGREGATE\n\nAll [aggregate functions](ABENSQL_AGG_FUNC.html) can be used as an aggregate expression except for `PRODUCT`. An aggregate function used as an aggregate expression can have one of the following arguments: The aggregate functions take the values of the column or the results of the SQL expression of multiple rows of the query result set and determine a single value. Either all rows of the result set\n\n/abap-docs-standard/ABAPSELECT_AGGREGATE",
+      "bm25": -6.332677366065023,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_AGGREGATE",
+      "relFile": "ABAPSELECT_AGGREGATE.md",
+      "finalScore": 0.03296703296703297,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.332677366065023,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-8e186fe85ecc47699f51bba7f0f69615",
+      "text": "Number of Direct Reads\n\nDatabase calls of this type are initiated with ABAP commands such as <b>SELECT</b> <b>SINGLE</b>. If possible, the <b>data</b> is read from the local SAP buffer, otherwise it is read from the database itself. ... Number of Direct Reads\n0CCMARDCN\n\nUse\nFor ABAP statistics <b>data</b>, this key figure contains the number of direct read accesses. ... Technical <b>Data</b>\n\tExchange Available as of Release\tBI Content 7.03 Add-On\n\tAggregation\tTotaling\n\tException Aggregation\tTotaling\n\tCalculation\tNo\n\tValue Restriction / Calculation\tNo\n\n\n\n\n\n\nNumber of Direct ...  — Product: BI Content 7.57 (7.57 SP33)\n\nhttps://help.sap.com/docs/BI_CONTENT_757/38158ac8a98f4b7d8947a57267d773f4/8e186fe85ecc47699f51bba7f0f69615.html?locale=en-US&state=PRODUCTION&version=7.57.33",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/BI_CONTENT_757/38158ac8a98f4b7d8947a57267d773f4/8e186fe85ecc47699f51bba7f0f69615.html?locale=en-US&state=PRODUCTION&version=7.57.33",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPREAD_TABLE_ITAB_SHORTREF",
+      "text": "ABAPREAD_TABLE_ITAB_SHORTREF\n\nReads a single line from an internal table `itab`. -   [`INTO wa`](ABAPREAD_TABLE_OUTDESC.html)\\\\     Assigns the read line to a work area `wa`.\n\n/abap-docs-standard/ABAPREAD_TABLE_ITAB_SHORTREF",
+      "bm25": -6.466988326406913,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPREAD_TABLE_ITAB_SHORTREF",
+      "relFile": "ABAPREAD_TABLE_ITAB_SHORTREF.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.466988326406913,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-43d88eb1ea7d413fb59912ab96890433",
+      "text": "CDS Unit Tests: Refining the Test Class Structure\n\n<b>SELECT</b> <b>SINGLE</b> PriceWithDiscount FROM /DMO/I_FLIGHT_R INTO @<b>DATA</b>(act_result).\n  ENDMETHOD.\n\n  METHOD below_threshold.\n    <b>SELECT</b> <b>SINGLE</b> PriceWithDiscount FROM /DMO/I_FLIGHT_R INTO @<b>DATA</b>(act_result). ... Hence, adjust the <b>SELECT</b>\nstatement as follows:\n\n<b>SELECT</b> <b>SINGLE</b> PriceWithDiscount FROM /DMO/I_FLIGHT_R INTO @<b>DATA</b>(act_result). ... <b>SELECT</b> <b>SINGLE</b> PriceWithDiscount FROM /DMO/I_FLIGHT_R INTO @<b>DATA</b>(act_result).\n  ENDMETHOD.\n\n\n\nENDCLASS. ...  — Product: ABAP_PLATFORM_NEW (2023 Latest)\n\nhttps://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/43d88eb1ea7d413fb59912ab96890433.html?locale=en-US&state=PRODUCTION&version=202310.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/43d88eb1ea7d413fb59912ab96890433.html?locale=en-US&state=PRODUCTION&version=202310.latest",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSQL_STRING",
+      "text": "ABENSQL_STRING\n\n`... sql_elem1 && sql_elem2  [&& sql_elem3 ... ] ...` String expression in ABAP SQL. The operator `&&` concatenates the character strings in two adjacent operands into a single character string. [Elementary SQL expressions](ABENSQL_ELEM.html) can be specified as the operands `sql_elem1`, `sql_elem2` with the following restrictions: The result of the concatenation must be no longer than 255 charact\n\n/abap-docs-standard/ABENSQL_STRING",
+      "bm25": -6.443429905223652,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_STRING",
+      "relFile": "ABENSQL_STRING.md",
+      "finalScore": 0.03164556962025317,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.443429905223652,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECT_INTO_CONVERSION",
+      "text": "ABENSELECT_INTO_CONVERSION\n\nThe following assignment rules apply to assignments of the result fields of the result set of a standalone [`SELECT`](ABAPSELECT.html), [`WITH`](ABAPWITH.html), or [`FETCH`](ABAPFETCH.html) statement to the target fields defined in the [`INTO`](ABAPINTO_CLAUSE.html) clause. The following table shows the prerequisites for assigning individual columns of the result set to individual data objects, th\n\n/abap-docs-standard/ABENSELECT_INTO_CONVERSION",
+      "bm25": -6.218592937381815,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECT_INTO_CONVERSION",
+      "relFile": "ABENSELECT_INTO_CONVERSION.md",
+      "finalScore": 0.03153153153153153,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.218592937381815,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECT_IND_BITFIELD_ABEXA",
+      "text": "ABENSELECT_IND_BITFIELD_ABEXA\n\nThis example demonstrates a [condensed indicator structure](ABENCONDENSED_IND_STRUCTURE_GLOSRY.html) as a [null indicator](ABENNULL_INDICATOR_GLOSRY.html) in a `SELECT` statement. It shows the difference between position-based and name-based assignments of indicator bits without and with `CORRESPONDING FIELDS`. Data are selected with and without `CORRESPONDING FIELDS` from an internal table `@data\n\n/abap-docs-standard/ABENSELECT_IND_BITFIELD_ABEXA",
+      "bm25": -6.359526266094814,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECT_IND_BITFIELD_ABEXA",
+      "relFile": "ABENSELECT_IND_BITFIELD_ABEXA.md",
+      "finalScore": 0.030337078651685393,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.359526266094814,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_370562965-_ANNO",
+      "text": "ABENCDS_370562965-_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`Consumption Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8\n\n/abap-docs-standard/ABENCDS_370562965-_ANNO",
+      "bm25": -6.395631532243696,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_370562965-_ANNO",
+      "relFile": "ABENCDS_370562965-_ANNO.md",
+      "finalScore": 0.030120481927710843,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.395631532243696,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/01_Internal_Tables#internal-tables-as-target-data-objects-in-select-queries",
+      "text": "Internal Tables as Target Data Objects in SELECT Queries\n\nAdding multiple lines from a database table to an internal table using [`SELECT`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abapselect.htm), for example, based on a condition. In the case below, the internal table abap SELECT FROM dbtab FIELDS comp1 comp2 WHERE INTO T...\n\n/abap-cheat-sheets/01_Internal_Tables#internal-tables-as-target-data-objects-in-select-queries",
+      "bm25": -6.333876683998878,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/01_Internal_Tables#internal-tables-as-target-data-objects-in-select-queries",
+      "relFile": "01_Internal_Tables.md",
+      "finalScore": 0.030000000000000002,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.333876683998878,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_GROUP_BY_V2",
+      "text": "ABENCDS_GROUP_BY_V2\n\nGroups those rows in the result set of a [CDS view entity](ABENCDS_V2_VIEW_GLOSRY.html) that have the same content in the elements specified by the fields `field1`, `field2, ...` or [path expressions](ABENCDS_PATH_EXPRESSION_V2.html)\\\\ `path_expr1`, `path_expr2` ... as a single row. The fields must be specified using the same names as the fields in the data source [`data_source`](ABENCDS_DATA_SOUR\n\n/abap-docs-standard/ABENCDS_GROUP_BY_V2",
+      "bm25": -6.39119953200507,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_GROUP_BY_V2",
+      "relFile": "ABENCDS_GROUP_BY_V2.md",
+      "finalScore": 0.029411764705882353,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.39119953200507,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_CLAUSE_COL_SPEC",
+      "text": "ABAPSELECT_CLAUSE_COL_SPEC\n\nSpecifies columns in the [`SELECT` list](ABAPSELECT_LIST.html) of the [`SELECT` clause](ABAPSELECT_CLAUSE.html) of a [query](ABENASQL_QUERY_GLOSRY.html). The specified columns are used to construct the result set of a [query](ABENASQL_QUERY_GLOSRY.html) from individual columns. Each column is specified using an [SQL expression](ABENSQL_EXPRESSION_GLOSRY.html)\\\\ [`sql_exp`](ABAPSQL_EXPR.html). Any\n\n/abap-docs-standard/ABAPSELECT_CLAUSE_COL_SPEC",
+      "bm25": -6.24912591906607,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_CLAUSE_COL_SPEC",
+      "relFile": "ABAPSELECT_CLAUSE_COL_SPEC.md",
+      "finalScore": 0.027777777777777776,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.24912591906607,
+        "rank": 48,
+        "rrfScore": 0.009259259259259259,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLEAVE_TO_LIST_PROC_ABEXA",
+      "text": "ABENLEAVE_TO_LIST_PROC_ABEXA\n\nThis example shows how to switch from dynpro processing to list processing. This example switches to list processing while processing dynpro 100. The screen layout of dynpro 100 has a single input field, the component `CARRID` of the structure `SDYN_CONN` from the ABAP Dictionary. The flow logic of dynpro 100 is: PROCESS BEFORE OUTPUT. \\\\n  MODULE status\\_0100. \\\\nPROCESS AFTER INPUT. \\\\n  MODULE\n\n/abap-docs-standard/ABENLEAVE_TO_LIST_PROC_ABEXA",
+      "bm25": -6.398982517282036,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLEAVE_TO_LIST_PROC_ABEXA",
+      "relFile": "ABENLEAVE_TO_LIST_PROC_ABEXA.md",
+      "finalScore": 0.02682926829268293,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.398982517282036,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDYNPRO_DROP1_ABEXA",
+      "text": "ABENDYNPRO_DROP1_ABEXA\n\nThis example demonstrates the recommended way to enable a dropdown list box. The static dynpro number of dynpro 100 is 100. The screen layout contains a single input field, namely the component `SDYN_CONN-CARRID`. Its attribute *dropdown* is *Listbox*, the output length is 20, the attribute *value list* is empty, and it is assigned function code `SELECTED`. The functions *BACK*, *EXIT*, and *CANCE\n\n/abap-docs-standard/ABENDYNPRO_DROP1_ABEXA",
+      "bm25": -6.392659763525886,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDYNPRO_DROP1_ABEXA",
+      "relFile": "ABENDYNPRO_DROP1_ABEXA.md",
+      "finalScore": 0.02619047619047619,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.392659763525886,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSTRUCTURE_COMPONENT_SELECTOR",
+      "text": "ABENSTRUCTURE_COMPONENT_SELECTOR\n\nComponents of a structure can be specified statically and dynamically. The structure component selector can especially used for [chainings](ABENTABLE_EXP_CHAINING.html) behind [table expressions](ABENTABLE_EXPRESSIONS.html), statically as well as dynamically. The following syntax accesses a component `comp` of a structure or structured data type statically:\n\n/abap-docs-standard/ABENSTRUCTURE_COMPONENT_SELECTOR",
+      "bm25": -6.20948117614292,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSTRUCTURE_COMPONENT_SELECTOR",
+      "relFile": "ABENSTRUCTURE_COMPONENT_SELECTOR.md",
+      "finalScore": 0.026086956521739132,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.20948117614292,
+        "rank": 55,
+        "rrfScore": 0.008695652173913044,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECT_CREATING",
+      "text": "ABAPSELECT_CREATING\n\n`... CREATING \\{  READER|LOCATOR FOR \\{ COLUMNS blob1 blob2 ... clob1 clob2 ... \\}\\                                   |\\ \\{ ALL [OTHER]\\ [BLOB|CLOB] COLUMNS \\}\\                 [READER|LOCATOR FOR ...]\\ \\}`\\\\             `|\\ \\{  (crea_syntax) \\}  ...` The addition `CREATING` must be specified after [`INTO`](ABAPINTO_CLAUSE.html) or [`APPENDING`](ABAPINTO_CLAUSE.html) when a reference variable for\n\n/abap-docs-standard/ABAPSELECT_CREATING",
+      "bm25": -6.198991029635214,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECT_CREATING",
+      "relFile": "ABAPSELECT_CREATING.md",
+      "finalScore": 0.02586206896551724,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.198991029635214,
+        "rank": 56,
+        "rrfScore": 0.008620689655172414,
+        "boost": 2
+      }
+    },
+    {
+      "id": "community-14143325",
+      "text": "Selection of optimal scenario for Selective Data T...\n\n...cenarios are illustrated in the image above. Option 3. Special case – Systems Consolidation When it is necessary to consolidate multiple SAP ECC systems into a single instance of SAP S/4HANA, and there a...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/selection-of-optimal-scenario-for-selective-data-transition-to-sap-s-4hana/ba-p/14143325?search-action-id=497478315063&search-result-uid=14143325",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/selection-of-optimal-scenario-for-selective-data-transition-to-sap-s-4hana/ba-p/14143325?search-action-id=497478315063&search-result-uid=14143325",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSELECTION-SCREEN",
+      "text": "ABAPSELECTION-SCREEN\n\n1\\. `SELECTION-SCREEN BEGIN OF SCREEN ...`\\\\ `SELECTION-SCREEN END OF SCREEN ...` 2\\. `SELECTION-SCREEN screen_elements.`\n\n/abap-docs-standard/ABAPSELECTION-SCREEN",
+      "bm25": -6.156820422191371,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSELECTION-SCREEN",
+      "relFile": "ABAPSELECTION-SCREEN.md",
+      "finalScore": 0.025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.156820422191371,
+        "rank": 60,
+        "rrfScore": 0.008333333333333333,
+        "boost": 2
+      }
+    },
+    {
+      "id": "community-13216444",
+      "text": "SELECT SINGLE vs. SELECT UP TO 1 ROWS\n\nSome time ago I´ve written a small block Select ing One Row From a Data base Table in order to explain the usage of SELECT SINGLE and SELECT UP TO 1 ROWS. Obviously, there are still discussions about t...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/select-single-vs-select-up-to-1-rows/ba-p/13216444?search-action-id=497478315063&search-result-uid=13216444",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/select-single-vs-select-up-to-1-rows/ba-p/13216444?search-action-id=497478315063&search-result-uid=13216444",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPORDERBY_CLAUSE_ADDITIONS",
+      "text": "ABAPORDERBY_CLAUSE_ADDITIONS\n\n`... [ASCENDING|DESCENDING]\\      [\\{NULLS FIRST\\}|\\{NULLS LAST\\}] ...` These additions to single column specifications in the [`ORDER BY`](ABAPORDERBY_CLAUSE.html) clause of a `SELECT` statement determine the sort direction and the handling of [null values](ABENNULL_VALUE_GLOSRY.html). The additions `ASCENDING` and `DESCENDING` determine whether the column or expression in question is sorted in a\n\n/abap-docs-standard/ABAPORDERBY_CLAUSE_ADDITIONS",
+      "bm25": -6.282670593622559,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPORDERBY_CLAUSE_ADDITIONS",
+      "relFile": "ABAPORDERBY_CLAUSE_ADDITIONS.md",
+      "finalScore": 0.024752475247524754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.282670593622559,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-14180186",
+      "text": "Selective Data Transition: HCM migration to the cl...\n\n...ver the years. The greenfield and brownfield approaches can be combined into a single project, while applying SDT precepts to the HCM data . As we saw earlier, a 30-year historical data base is too much f...\n\nhttps://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/selective-data-transition-hcm-migration-to-the-cloud/ba-p/14180186?search-action-id=497478315063&search-result-uid=14180186",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/selective-data-transition-hcm-migration-to-the-cloud/ba-p/14180186?search-action-id=497478315063&search-result-uid=14180186",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDIC_PROJECTION_VIEWS",
+      "text": "ABENDDIC_PROJECTION_VIEWS\n\nA DDIC projection view is a DDIC table view that can be used to hide fields from a single basis table. No SQL view is created on the database. No selection conditions can be specified for a DDIC projection view. The structure type defined by the view fields of the projection view can be referenced in ABAP programs using `TYPE`. A projection view can be accessed using ABAP SQL but not using CDS vie\n\n/abap-docs-standard/ABENDDIC_PROJECTION_VIEWS",
+      "bm25": -6.278203456225043,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDIC_PROJECTION_VIEWS",
+      "relFile": "ABENDDIC_PROJECTION_VIEWS.md",
+      "finalScore": 0.02403846153846154,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.278203456225043,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/01_Internal_Tables#excursion-joining-merging-internal-tables-into-internal-tables",
+      "text": "Excursion: Joining/Merging Internal Tables into Internal Tables\n\nThe following code snippets demonstrate joining/merging the content of two simple internal tables into another table. There may be several ways to achieve this. Here, the intention is to give an idea and, in particular, to emphasize SQL functionalities also available for internal tables (note the re...\n\n/abap-cheat-sheets/01_Internal_Tables#excursion-joining-merging-internal-tables-into-internal-tables",
+      "bm25": -6.329583552262536,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/01_Internal_Tables#excursion-joining-merging-internal-tables-into-internal-tables",
+      "relFile": "01_Internal_Tables.md",
+      "finalScore": 0.02391304347826087,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.329583552262536,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDICTIONARY_STRUCTURE_ABEXA",
+      "text": "ABENDICTIONARY_STRUCTURE_ABEXA\n\nThis example demonstrates a structure from the ABAP Dictionary and its use. Structure types of the ABAP Dictionary are typically used in ABAP programs to define structures or internal tables with a structured line type to process data that is imported from the database. The example shows how a structure `carrier` local to a method is declared by reference to a database table `SCARR` defined in the\n\n/abap-docs-standard/ABENDICTIONARY_STRUCTURE_ABEXA",
+      "bm25": -6.315112973548406,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDICTIONARY_STRUCTURE_ABEXA",
+      "relFile": "ABENDICTIONARY_STRUCTURE_ABEXA.md",
+      "finalScore": 0.023655913978494626,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.315112973548406,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/31_WHERE_Conditions",
+      "text": "WHERE Conditions in ABAP Statements\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/31_WHERE_Conditions",
+      "bm25": -6.48078047458653,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/31_WHERE_Conditions",
+      "relFile": "31_WHERE_Conditions.md",
+      "finalScore": 0.02361111111111111,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.48078047458653,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCONSTRUCTOR_EXPR_FILTER_BASIC",
+      "text": "ABENCONSTRUCTOR_EXPR_FILTER_BASIC\n\nThis variant of the filter operator [`FILTER`](ABENCONSTRUCTOR_EXPRESSION_FILTER.html) filters `itab` using single values. The columns of a table key of `itab` are compared with single values in the `WHERE` condition. Those lines of `itab` are used that meet the `WHERE` condition or do not meet it when `EXCEPT` is specified. Here, the internal table `itab` must have at least one [sorted key](ABENS\n\n/abap-docs-standard/ABENCONSTRUCTOR_EXPR_FILTER_BASIC",
+      "bm25": -6.254489088731153,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCONSTRUCTOR_EXPR_FILTER_BASIC",
+      "relFile": "ABENCONSTRUCTOR_EXPR_FILTER_BASIC.md",
+      "finalScore": 0.023584905660377357,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.254489088731153,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSQL_EXPR_LITERAL_ABEXA",
+      "text": "ABENSQL_EXPR_LITERAL_ABEXA\n\nThis example demonstrates one way to use a constant value in the `SELECT` list. It is to be determined whether a row exists for a `WHERE` condition, regardless of the content of the row. A constant is specified to make specifying a column of the database and transporting it unnecessary. The target object `exists` is created using an inline declaration. \\* Public class definition \\\\nCLASS cl\\_demo\\\n\n/abap-docs-standard/ABENSQL_EXPR_LITERAL_ABEXA",
+      "bm25": -6.312465809756669,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_EXPR_LITERAL_ABEXA",
+      "relFile": "ABENSQL_EXPR_LITERAL_ABEXA.md",
+      "finalScore": 0.02340425531914894,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.312465809756669,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/31_WHERE_Conditions#executable-example",
+      "text": "Executable Example\n\n[zcl_demo_abap_where_conditions](./src/zcl_demo_abap_where_conditions.clas.abap) > [!NOTE] > - The steps to import and run the code are outlined [here](README.md#-getting-started-with-the-examples).\n\n/abap-cheat-sheets/31_WHERE_Conditions#executable-example",
+      "bm25": -6.4784706633343365,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/31_WHERE_Conditions#executable-example",
+      "relFile": "31_WHERE_Conditions.md",
+      "finalScore": 0.02328767123287671,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -6.4784706633343365,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.7
+      }
+    }
+  ]
+}

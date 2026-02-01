@@ -1,0 +1,804 @@
+{
+  "meta": {
+    "query": "ABAP class inheritance",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:33.855Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_INTERFACES",
+      "text": "ABENINHERITANCE_INTERFACES\n\nThe interface concept exists completely independent of and in addition to the inheritance concept. The classes of an inheritance tree can implement any number of interfaces, but each interface can be implemented only once in each inheritance tree. This ensures that each interface component `comp` has a unique name across the entire inheritance tree `intf~icomp` and that it is contained in all subc\n\n/abap-docs-standard/ABENINHERITANCE_INTERFACES",
+      "bm25": -8.397143518794639,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_INTERFACES",
+      "relFile": "ABENINHERITANCE_INTERFACES.md",
+      "finalScore": 0.0967741935483871,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.397143518794639,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_GUIDL",
+      "text": "ABENINHERITANCE_GUIDL\n\nInheritance is the method by which subclasses are derived from a superclass while inheriting the components of the superclass. A subclass can be made more specific by declaring new components and redefining instance methods. ABAP Objects supports simple inheritance, in which a class can have multiple subclasses but only one direct superclass. (Despite this, the interface concept does enable someth\n\n/abap-docs-standard/ABENINHERITANCE_GUIDL",
+      "bm25": -8.395889560616077,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_GUIDL",
+      "relFile": "ABENINHERITANCE_GUIDL.md",
+      "finalScore": 0.09523809523809523,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.395889560616077,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_EVENTS",
+      "text": "ABENINHERITANCE_EVENTS\n\nOnce declared in a superclass, an event is known in all subclasses of the inheritance tree in which it is visible and can be raised in the methods there. An event handler can be declared with reference to all classes of the inheritance tree in which the event is visible for the event handler. However, it can only handle events raised in classes that are more specific than or equal to the class for\n\n/abap-docs-standard/ABENINHERITANCE_EVENTS",
+      "bm25": -8.300855079950729,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_EVENTS",
+      "relFile": "ABENINHERITANCE_EVENTS.md",
+      "finalScore": 0.09375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.300855079950729,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_HIERARCHY_GLOSRY",
+      "text": "ABENINHERITANCE_HIERARCHY_GLOSRY\n\nHierarchical relationship between [superclasses](ABENSUPERCLASS_GLOSRY.html) and [subclasses](ABENSUBCLASS_GLOSRY.html) in [inheritance](ABENINHERITANCE_GLOSRY.html) functions. When [single inheritance](ABENSINGLE_INHERITANCE_GLOSRY.html) is used, the inheritance hierarchy forms an [inheritance tree](ABENINHERITANCE_TREE_GLOSRY.html). ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENINHERITANCE_HIERARCHY_GLOSRY",
+      "bm25": -8.400986107967988,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_HIERARCHY_GLOSRY",
+      "relFile": "ABENINHERITANCE_HIERARCHY_GLOSRY.md",
+      "finalScore": 0.09344262295081968,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.400986107967988,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE",
+      "text": "ABENINHERITANCE\n\nThe concept of inheritance makes it possible to derive new classes from existing classes. This is done using the addition [`INHERITING FROM`](ABAPCLASS_OPTIONS.html) of the statement [`CLASS ... DEFINITION`](ABAPCLASS_DEFINITION.html). The new class adopts or inherits all components of the existing class. The new class is called the subclass and the existing class is called the superclass. Without\n\n/abap-docs-standard/ABENINHERITANCE",
+      "bm25": -8.287398838225025,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE",
+      "relFile": "ABENINHERITANCE.md",
+      "finalScore": 0.09090909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.287398838225025,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_CONSTRUCTORS",
+      "text": "ABENINHERITANCE_CONSTRUCTORS\n\nThere are special rules governing [constructors](ABENCONSTRUCTOR.html) in inheritance. Each class has an instance constructor called `constructor`. This is a derivation from the rule of unique component names along a path of an inheritance tree. The instance constructors of the individual classes of an inheritance tree, however, are fully independent of one another. This means that no namespace co\n\n/abap-docs-standard/ABENINHERITANCE_CONSTRUCTORS",
+      "bm25": -8.27954690368601,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_CONSTRUCTORS",
+      "relFile": "ABENINHERITANCE_CONSTRUCTORS.md",
+      "finalScore": 0.08955223880597014,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.27954690368601,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_VISIBILITY",
+      "text": "ABENINHERITANCE_VISIBILITY\n\nIt is not possible to change the [visibility section](ABENCLASS_VISIBILITY.html) to which a component is assigned using inheritance. The visibility of components has the following consequences in inheritance: The public visibility area of a subclass consists of all its own public components plus the public components of all its superclasses. Public components are visible externally without restric\n\n/abap-docs-standard/ABENINHERITANCE_VISIBILITY",
+      "bm25": -8.219107099883523,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_VISIBILITY",
+      "relFile": "ABENINHERITANCE_VISIBILITY.md",
+      "finalScore": 0.08823529411764705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.219107099883523,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
+      "text": "ABENSINGLE_INHERITANCE_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
+      "bm25": -8.293052670512939,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSINGLE_INHERITANCE_GLOSRY",
+      "relFile": "ABENSINGLE_INHERITANCE_GLOSRY.md",
+      "finalScore": 0.0876923076923077,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.293052670512939,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENOS_PERSISTENCE_INHERITANCE",
+      "text": "ABENOS_PERSISTENCE_INHERITANCE\n\nPersistent classes can have subclasses. These subclasses are also persistent classes, in that they inherit the persistence mapping of the superclass to the database table or tables. The persistence mapping of the superclass is defined in the subclass. If not, the general polymorphic principle of inheritance, in which the consumer handles subclasses in the same way as superclasses, is violated. The\n\n/abap-docs-standard/ABENOS_PERSISTENCE_INHERITANCE",
+      "bm25": -8.15097035870931,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENOS_PERSISTENCE_INHERITANCE",
+      "relFile": "ABENOS_PERSISTENCE_INHERITANCE.md",
+      "finalScore": 0.08695652173913043,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.15097035870931,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_ABSTRACT_FINAL",
+      "text": "ABENINHERITANCE_ABSTRACT_FINAL\n\nAbstract and final methods or classes can be defined using the additions **`ABSTRACT`** and **`FINAL`** of the statements [`METHODS`](ABAPMETHODS.html) and [`CLASS`](ABAPCLASS.html). Abstract methods are declared in abstract classes and cannot be implemented in the same class, only in a subclass of the inheritance tree. Abstract classes cannot, therefore, be instantiated. A non-abstract method is\n\n/abap-docs-standard/ABENINHERITANCE_ABSTRACT_FINAL",
+      "bm25": -8.092492779816094,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_ABSTRACT_FINAL",
+      "relFile": "ABENINHERITANCE_ABSTRACT_FINAL.md",
+      "finalScore": 0.0821917808219178,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.092492779816094,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_OBJECTS_ABEXAS",
+      "text": "ABENABAP_OBJECTS_ABEXAS\n\n-   [ABAP Objects - Overview](ABENABAP_OBJECTS_ABEXA.html) -   [ABAP Objects - Classes](ABENCLASS_ABEXA.html) -   [ABAP Objects - Inheritance](ABENINHERITANCE_ABEXA.html)\n\n/abap-docs-standard/ABENABAP_OBJECTS_ABEXAS",
+      "bm25": -8.132117607986007,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_OBJECTS_ABEXAS",
+      "relFile": "ABENABAP_OBJECTS_ABEXAS.md",
+      "finalScore": 0.08028169014084507,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.132117607986007,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_GLOSRY",
+      "text": "ABENINHERITANCE_GLOSRY\n\nGeneralization-specialization relationship between [classes](ABENCLASS_GLOSRY.html). Inheritance means that new [subclasses](ABENSUBCLASS_GLOSRY.html) are derived by adopting all [class components](ABENCLASS_COMPONENT_GLOSRY.html) from [superclasses](ABENSUPERCLASS_GLOSRY.html). A subclass can also be made more specific by declaring new components and [redefining](ABENREDEFINITION_GLOSRY.html)\\\\ [\n\n/abap-docs-standard/ABENINHERITANCE_GLOSRY",
+      "bm25": -8.08974291727551,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_GLOSRY",
+      "relFile": "ABENINHERITANCE_GLOSRY.md",
+      "finalScore": 0.07702702702702703,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.08974291727551,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_REFERENCES",
+      "text": "ABENINHERITANCE_REFERENCES\n\nSince a subclass contains all components of all superclasses along the inheritance tree and the interfaces of methods cannot be changed, a reference variable that is typed with reference to a superclass or with reference to an interface implemented by a superclass may contain references to objects of all subclasses of this superclass. This means that the content of a reference variable typed with\n\n/abap-docs-standard/ABENINHERITANCE_REFERENCES",
+      "bm25": -7.975258801271855,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_REFERENCES",
+      "relFile": "ABENINHERITANCE_REFERENCES.md",
+      "finalScore": 0.07142857142857142,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.975258801271855,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_NAME_SPACE",
+      "text": "ABENINHERITANCE_NAME_SPACE\n\nA subclass contains all components of all its superclasses. Only the public and the protected components are visible. This is why all public and protected components of a path of an inheritance tree are located in a single namespace and must have unique names. Private components, on the other hand, must have unique names within a class. When methods are [redefined](ABENINHERITANCE_REDEFINITION.htm\n\n/abap-docs-standard/ABENINHERITANCE_NAME_SPACE",
+      "bm25": -7.966547696692029,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_NAME_SPACE",
+      "relFile": "ABENINHERITANCE_NAME_SPACE.md",
+      "finalScore": 0.07058823529411765,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.966547696692029,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMDP_INHERITANCE",
+      "text": "ABENAMDP_INHERITANCE\n\nBoth interface methods and redefined methods inherited from superclasses can become [AMDP methods](ABENAMDP_METHODS.html) in the implementation, provided that their prerequisites are met and the class contains the corresponding tag interface. If a superclass contains a tag interface, this also applies to its subclasses. If an interface contains a tag interface, this also applies to classes that im\n\n/abap-docs-standard/ABENAMDP_INHERITANCE",
+      "bm25": -7.948270638779988,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMDP_INHERITANCE",
+      "relFile": "ABENAMDP_INHERITANCE.md",
+      "finalScore": 0.06976744186046512,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.948270638779988,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
+      "text": "ABENNEWS-796-ABAP_OBJECTS\n\nFor technical reasons a [global class](ABENGLOBAL_CLASS_GLOSRY.html) that can be part of an inheritance tree that is must contain the statements [`PROTECTED SECTION`](ABAPPROTECTED.html) and [`PRIVATE SECTION`](ABAPPRIVATE.html) also for empty protected and private sections. Before Release 7.96, a syntax warning occurred in case of missing protected and private sections only for non-final classes.\n\n/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
+      "bm25": -8.01633523087521,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-796-ABAP_OBJECTS",
+      "relFile": "ABENNEWS-796-ABAP_OBJECTS.md",
+      "finalScore": 0.06666666666666667,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.01633523087521,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 4.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_INSTANTIATION",
+      "text": "ABENINHERITANCE_INSTANTIATION\n\nWhen a subclass is instantiated, all superclasses are instantiated simultaneously, whereby the initialization of superclass attributes is ensured by calling the superclass constructors, as described in [Inheritance and Constructors](ABENINHERITANCE_CONSTRUCTORS.html). In each individual class, the additions `CREATE PUBLIC|PROTECTED|PRIVATE` of the statement [`CLASS`](ABAPCLASS.html) control who ca\n\n/abap-docs-standard/ABENINHERITANCE_INSTANTIATION",
+      "bm25": -7.851911773568694,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_INSTANTIATION",
+      "relFile": "ABENINHERITANCE_INSTANTIATION.md",
+      "finalScore": 0.06593406593406594,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.851911773568694,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-46-OBJECTS-VERERBUNG",
+      "text": "ABENNEWS-46-OBJECTS-VERERBUNG\n\nIn Release 4.6A the following components are added to the core ABAP Objects functions: ABAP Objects enables [`inheritance`](ABENINHERITANCE.html). The addition `INHERITING FROM` of the statement [`CLASS class DEFINITION`](ABAPCLASS.html) can be used to derive a class from a superclass. Each subclass inherits all components from all superclasses and enables specialization by adding its own componen\n\n/abap-docs-standard/ABENNEWS-46-OBJECTS-VERERBUNG",
+      "bm25": -8.119324763553458,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-46-OBJECTS-VERERBUNG",
+      "relFile": "ABENNEWS-46-OBJECTS-VERERBUNG.md",
+      "finalScore": 0.06527777777777778,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.119324763553458,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 3.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_REDEFINITION",
+      "text": "ABENINHERITANCE_REDEFINITION\n\nEach subclass contains the components of all classes that are located between this class and the root node in the inheritance tree. The visibility of a component is always the same and cannot be changed. However, it is possible to redefine the public and protected instance methods of all preceding superclasses using the addition [`REDEFINITION`](ABAPMETHODS_REDEFINITION.html) of the statement [`ME\n\n/abap-docs-standard/ABENINHERITANCE_REDEFINITION",
+      "bm25": -7.816882713759647,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_REDEFINITION",
+      "relFile": "ABENINHERITANCE_REDEFINITION.md",
+      "finalScore": 0.06521739130434782,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.816882713759647,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINHERITANCE_TREE_GLOSRY",
+      "text": "ABENINHERITANCE_TREE_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENINHERITANCE_TREE_GLOSRY",
+      "bm25": -7.870399003435997,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINHERITANCE_TREE_GLOSRY",
+      "relFile": "ABENINHERITANCE_TREE_GLOSRY.md",
+      "finalScore": 0.06477272727272727,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.870399003435997,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENROOT_CLASS_GLOSRY",
+      "text": "ABENROOT_CLASS_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENROOT_CLASS_GLOSRY",
+      "bm25": -7.859495281896997,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENROOT_CLASS_GLOSRY",
+      "relFile": "ABENROOT_CLASS_GLOSRY.md",
+      "finalScore": 0.06404494382022471,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.859495281896997,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_OBJECTS_ABEXA",
+      "text": "ABENABAP_OBJECTS_ABEXA\n\nThe example demonstrates objects, object references, inheritance, interfaces, and events. The class demonstrates how ABAP Objects can be used based on example classes for boats. \\* CCDEF \\\\nCLASS o DEFINITION. \\\\n PUBLIC SECTION. \\\\n CLASS-DATA out TYPE REF TO if\\_demo\\_output. \\\\nENDCLASS. \\\\n\\\\ \\\\n\\*---------------------------------------------------------------------\\* \\\\n\\* INTERFACE status \\\\\n\n/abap-docs-standard/ABENABAP_OBJECTS_ABEXA",
+      "bm25": -7.853046083757586,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_OBJECTS_ABEXA",
+      "relFile": "ABENABAP_OBJECTS_ABEXA.md",
+      "finalScore": 0.06333333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.853046083757586,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 4.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-40-OBJECTS",
+      "text": "ABENNEWS-40-OBJECTS\n\nThe kernel functions of ABAP Objects are available from ABAP release 4.5A. The following enhancements are planned for the coming functional releases: simple inheritance for classes, composition of interfaces, dynamic invocation interfaces, persistent objects, GUI integration, virtual attributes, friends, final classes and methods, embedded objects. ABAP Objects will first be used in pilot projects\n\n/abap-docs-standard/ABENNEWS-40-OBJECTS",
+      "bm25": -8.01041561632739,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-40-OBJECTS",
+      "relFile": "ABENNEWS-40-OBJECTS.md",
+      "finalScore": 0.058750000000000004,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.01041561632739,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 3.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#inheritance",
+      "text": "Inheritance\n\nThe following table covers a selection of aspects about inheritance. The code snippets demonstrate local classes. <table> <tr> LCL1 LCL2 LCL3 LCL4 LCL5 LCL6 abap CLASS lcl1 DEFINITION\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#inheritance",
+      "bm25": -8.072666275216989,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#inheritance",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.04,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.072666275216989,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/sub-sections/FunctionGroupsVsClasses#no-inheritance",
+      "text": "No inheritance\n\nYou cannot inherit from or let inherit function groups. Prevents implementing some design patterns, such as [Composite](https://en.wikipedia.org/wiki/Composite_pattern).\n\n/sap-styleguides/clean-abap/sub-sections/FunctionGroupsVsClasses#no-inheritance",
+      "bm25": -8.139897810188007,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/sub-sections/FunctionGroupsVsClasses#no-inheritance",
+      "relFile": "clean-abap/sub-sections/FunctionGroupsVsClasses.md",
+      "finalScore": 0.039999999999999994,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.139897810188007,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.7999999999999998
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#excursion-inheritance-example",
+      "text": "Excursion: Inheritance Example\n\n> [!NOTE]  > This example is also included in the ABAP cheat sheet repository: [zcl_demo_abap_oo_inheritance_1](./src/zcl_demo_abap_oo_inheritance_1.clas.abap) Expand the following collapsible section for example classes. The example classes explore inheritance and demonstrate a selection of the inh...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#excursion-inheritance-example",
+      "bm25": -8.070941057067941,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#excursion-inheritance-example",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.039473684210526314,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.070941057067941,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#additions-related-to-inheritance-and-instantiation",
+      "text": "Additions Related to Inheritance and Instantiation\n\nThe table below includes selected syntax related to inheritance in class and method declarations. It also includes additions related to instantiation.   > [!NOTE]  > - Some of the syntax options have already been mentioned previously. This is to summarize. abap CLASS zcl_demo DEFINITION PUBLIC FINAL...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#additions-related-to-inheritance-and-instantiation",
+      "bm25": -8.068570198588267,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#additions-related-to-inheritance-and-instantiation",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.03896103896103896,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.068570198588267,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-3363507413",
+      "text": "BAPI_HIERA_GETSUBSTRUCTURE - Read Hierarchy Downward\n\nis assigned to <b>Class1</b>\n<b>Class4</b> is assigned to <b>Class9</b>\n<b>Class5</b> is\n  assigned to <b>Class2</b>\n<b>Class6</b> is assigned to <b>Class2</b>\n<b>Class6</b> is assigned to <b>Class3</b>\n<b>Class7</b> is assigned to\n  <b>Class6</b>\n<b>Class8</b> is assigned to <b>Class6</b> ... <b>Class4</b>, <b>Class5</b>, <b>Class7</b>, and <b>Class8</b> are end nodes. ... <b>Class4</b>\n\n<b>Class2</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n  2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Class5</b>\n\n<b>Class2</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n  2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Class6</b>\n\n<b>Class3</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n  &nbsp;X&nbsp;&nbsp;&nbsp;&nbsp; <b>Class6</b>\n\n<b>Class4</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2\n\n<b>Class5</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3\n\n<b>Class6</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n  3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Class7</b> ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/sapclass/3363507413.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/sapclass/3363507413.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#additions-in-the-class-declaration-part",
+      "text": "Additions in the Class Declaration Part\n\nThis section covers a selection of additions to declare classes. They are also covered in other sections below, e.g. [Additions Related to Inheritance and Instantiation](#additions-related-to-inheritance-and-instantiation). Find more information on the additions in the [ABAP Keyword Documentation](h...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#additions-in-the-class-declaration-part",
+      "bm25": -7.996043728957907,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#additions-in-the-class-declaration-part",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.03658536585365854,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.996043728957907,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-3363507417",
+      "text": "BAPI_HIERA_GETSUPERSTRUCTURE - Read Hierarchy Upward\n\nto <b>Class9</b>\n<b>Class5</b> is assigned to <b>Class2</b>\n<b>Class6</b> is\n  assigned to <b>Class2</b>\n<b>Class6</b> is assigned to <b>Class3</b>\n<b>Class7</b> is assigned to <b>Class6</b>\n<b>Class8</b> is assigned to <b>Class6</b>\n\n<b>Class4</b>, <b>Class7</b>, and <b>Class8</b> are outside the ... The complete hierarchy looks like this:\n\n<b>Class1</b> is assigned to <b>Class0</b>\n<b>Class1</b> is assigned to <b>Class9</b>\n<b>Class2</b> is assigned to <b>Class1</b>\n<b>Class3</b> is assigned to\n  <b>Class1</b>\n<b>Class4</b> is assigned to <b>Class1</b>\n<b>Class4</b> is assigned ... <b>Class0</b> is the root <b>class</b>. <b>Class9</b> is another root <b>class</b>, due to multiple\n  classification. <b>Class6</b> is assigned to more than one <b>class</b> in the hierarchy path. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/sapclass/3363507417.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/sapclass/3363507417.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#upcasts-and-downcasts-using-the-rtts-inheritance-tree",
+      "text": "Upcasts and Downcasts Using the RTTS Inheritance Tree\n\nThe examples in the following code snippet use object reference variables to illustrate the class hierarchy of the [Runtime Type Services (RTTS)](#runtime-type-services-rtts), which is covered in more detail in the [Dynamic Programming](06_Dynamic_Programming.md) cheat sheet.  Hierarchy tree of the ...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#upcasts-and-downcasts-using-the-rtts-inheritance-tree",
+      "bm25": -7.994977255811552,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#upcasts-and-downcasts-using-the-rtts-inheritance-tree",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.03614457831325302,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.994977255811552,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-baf1b5eb64254b8e8a4e5e79437cd441",
+      "text": "ABAP Unit Test Execution Sequence\n\n<b>ABAP</b> Unit Run Time\n\n\n\n\n\n\n\n\n\n\n\n\n\nTest <b>Class</b> <b>Inheritance</b>\n\n\nWhen <b>ABAP</b> Unit executes a test <b>class</b>, methods from its superclass are executed as\nwell. ... <b>Inheritance</b> Pattern\n\n\n\n\n\n\n Related Information\nLaunching <b>ABAP</b> Unit Tests ... For more information, see:\t<b>CLASS</b>, FOR TESTING (<b>ABAP</b>- Keyword Documentation)\n\n\t<b>CLASS</b>, FOR TESTING (<b>ABAP</b>\nKeyword Documentation)\n\n\n\n\nWhen executing <b>ABAP</b> Unit tests, consider the following:\n\tAll test methods ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/baf1b5eb64254b8e8a4e5e79437cd441.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/bbcee501b99848bdadecd4e290db3ae4/baf1b5eb64254b8e8a4e5e79437cd441.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-1ddf5f54127111d3b9390000e8353423",
+      "text": "Inheritance: Overview Graphic\n\nThe empty <b>class</b> OBJECT is the root node of every <b>inheritance</b> tree in <b>ABAP</b> Objects. ... Single <b>Inheritance</b>\n\n\n\n\n\n\nThis graphic illustrates single <b>inheritance</b>. A <b>class</b> may only have one direct superclass, but it can have more than one direct subclass. ... <b>Inheritance</b>: Overview Graphic\n\n<b>Inheritance</b>: Overview\n\n\n\n\n\n\nThe left-hand part of the graphic shows how you can derive a subclass c2 from a superclass c1 using the INHERTINGFROM addition in the <b>CLASS</b> statement ...  — Product: SAP_NETWEAVER_731_BW_ABAP (SPS32)\n\nhttps://help.sap.com/docs/SAP_NETWEAVER_731_BW_ABAP/cfae740a0a21455dbe6e510c2d86e36a/1ddf5f54127111d3b9390000e8353423.html?locale=en-US&state=PRODUCTION&version=7.31.32",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_NETWEAVER_731_BW_ABAP/cfae740a0a21455dbe6e510c2d86e36a/1ddf5f54127111d3b9390000e8353423.html?locale=en-US&state=PRODUCTION&version=7.31.32",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-8614ca4fd90bfe40bda94c4f115c7a43",
+      "text": "\n\nroot <b>class</b> (BC-<b>ABA</b>)\n\n\n\n<b>ABAP</b> Runtime Environment (BC-<b>ABA</b>)\n\n\n\nCommon superclass of the subclasses of an <b>inheritance</b> tree in\n single <b>inheritance</b>. ... In <b>ABAP</b> objects all <b>classes</b> are subclasses of the predefined\n abstract root <b>class</b> object. ...  — Product: SAP Test Data Migration Server (4.0 SP11)\n\nhttps://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/86/14ca4fd90bfe40bda94c4f115c7a43/content.htm",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/86/14ca4fd90bfe40bda94c4f115c7a43/content.htm",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3ae9f4e8ea780341afc770c41dd90f52",
+      "text": "\n\nsingle <b>inheritance</b> (BC-<b>ABA</b>)\n\n\n\n<b>ABAP</b> Runtime Environment (BC-<b>ABA</b>)\n\n\n\n<b>Inheritance</b> where, in contrast to multiple <b>inheritance</b>, a <b>class</b> can have multiple\n subclasses\nbut only one direct superclass. ... See also <b>inheritance</b> hierarchy. ...  — Product: SAP Test Data Migration Server (4.0 SP11)\n\nhttps://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/3a/e9f4e8ea780341afc770c41dd90f52/content.htm",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/3a/e9f4e8ea780341afc770c41dd90f52/content.htm",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-ccf534d09a85e041bc999931c18115aa",
+      "text": "\n\n<b>inheritance</b> tree (BC-<b>ABA</b>)\n\n\n\n<b>ABAP</b> Runtime Environment (BC-<b>ABA</b>)\n\n<b>Inheritance</b> hierarchy of the single <b>inheritance</b> in which a\n unique path leads from every subclass to a root <b>class</b>. ...  — Product: SAP Test Data Migration Server (4.0 SP11)\n\nhttps://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/cc/f534d09a85e041bc999931c18115aa/content.htm",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/cc/f534d09a85e041bc999931c18115aa/content.htm",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc417c30b1b3460c8860f6c7ea2a7faa",
+      "text": "CREATE WORKLOAD CLASS Statement (Workload Management)\n\n&lt;workload_class_name&gt; ::= &lt;identifier&gt;\n\n\n\t&lt;<b>inheritance</b>&gt;\n\t\nSpecifies a parent workload <b>class</b>. ... &lt;<b>inheritance</b>&gt; ::= \n   PARENT \\{ &lt;parent_name&gt; | NULL }\n\nA child workload <b>class</b> inherits the TOTAL STATEMENT MEMORY\nLIMIT or TOTAL STATEMENT THREAD\nLIMIT values from the parent workload <b>classes</b>. ... Syntax\n\n\nCREATE WORKLOAD <b>CLASS</b> &lt;workload_class_name&gt; \n   [ &lt;<b>inheritance</b>&gt; ] \n   [ &lt;property_list&gt; ] \n   [ &lt;location_limit_list&gt; ]\n   [ ENABLE | DISABLE ]\n\n\n\nSyntax Elements\n\n\n\t&lt;workload_class_name&gt;\n\t\nCreates ...  — Product: SAP HANA Cloud, SAP HANA Database (QRC 4/2025)\n\nhttps://help.sap.com/docs/HANA_CLOUD_DATABASE/c1d3f60099654ecfb3fe36ac93c121bb/dc417c30b1b3460c8860f6c7ea2a7faa.html?locale=en-US&state=PRODUCTION&version=2025_4_QRC",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/HANA_CLOUD_DATABASE/c1d3f60099654ecfb3fe36ac93c121bb/dc417c30b1b3460c8860f6c7ea2a7faa.html?locale=en-US&state=PRODUCTION&version=2025_4_QRC",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-f4da66d54fdd144b9dbdbcb7cf965cb8",
+      "text": "\n\nsuperclass (BC-<b>ABA</b>)\n\n\n\n<b>ABAP</b> Runtime Environment (BC-<b>ABA</b>)\n\n<b>Class</b>\nfrom which subclasses are derived by means of <b>inheritance</b>. ...  — Product: SAP Asset Retirement Obligation Management (1.0)\n\nhttps://help.sap.com/doc/saphelp_arom10/1.0/en-US/f4/da66d54fdd144b9dbdbcb7cf965cb8/content.htm",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/doc/saphelp_arom10/1.0/en-US/f4/da66d54fdd144b9dbdbcb7cf965cb8/content.htm",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#prefer-composition-to-inheritance",
+      "text": "Prefer composition to inheritance\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Classes](#classes) > [Classes: Object orientation](#classes-object-orientation) > [This section](#prefer-composition-to-inheritance) Avoid building hierarchies of classes with inheritance. Instead, favor composition. Clean inheritance is hard to d...\n\n/sap-styleguides/clean-abap/CleanABAP#prefer-composition-to-inheritance",
+      "bm25": -7.91091846168643,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#prefer-composition-to-inheritance",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.03218390804597701,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.91091846168643,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.7999999999999998
+      }
+    },
+    {
+      "id": "sap-help-c088885f720911d1b44d0000e8a52bed",
+      "text": " Creating a Standard Class\n\nNote \n                                 \n                                 \n                                 For more information about <b>ABAP</b> <b>classes</b>, see the <b>ABAP</b> User Guide under <b>Classes</b>. ... In the <b>Class</b> Type group box, choose Usual <b>ABAP</b> <b>Class</b>.\n\t In the <b>Class</b> field, enter a name of the new <b>class</b> according to the naming conventions. ... The Undo <b>inheritance</b> and Change <b>inheritance</b> options allow you to change\n                                                         the <b>inheritance</b> relationship. ...  — Product: SAP S/4HANA (1709 FPS01 (Jan 2018))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/bd833c8355f34e96a6e83096b38bf192/c088885f720911d1b44d0000e8a52bed.html?locale=en-US&state=PRODUCTION&version=1709 001",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/bd833c8355f34e96a6e83096b38bf192/c088885f720911d1b44d0000e8a52bed.html?locale=en-US&state=PRODUCTION&version=1709 001",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation",
+      "text": "ABAP Object Orientation\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation",
+      "bm25": -7.775773885674299,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.031914893617021274,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.775773885674299,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-classes",
+      "text": "Creating Classes\n\nYou can either create local or global classes: <table> <tr>\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-classes",
+      "bm25": -7.775659434807255,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-classes",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.031578947368421054,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.775659434807255,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#classes-and-objects",
+      "text": "Classes and Objects\n\nObject-oriented programming in ABAP means dealing with [classes](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenclass_glosry.htm \"Glossary Entry\") and\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#classes-and-objects",
+      "bm25": -7.773023764233909,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#classes-and-objects",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.030927835051546393,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.773023764233909,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#executable-examples",
+      "text": "Executable Examples\n\n- [zcl_demo_abap_objects](./src/zcl_demo_abap_objects.clas.abap)  - [zcl_demo_abap_objects_misc](./src/zcl_demo_abap_objects_misc.clas.abap): Additional syntax examples   - [zcl_demo_abap_oo_inheritance_1](./src/zcl_demo_abap_oo_inheritance_1.clas.abap): Focuses on inheritance; the inheritance tree ...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#executable-examples",
+      "bm25": -8.00295427742664,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#executable-examples",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -8.00295427742664,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#final-if-not-designed-for-inheritance",
+      "text": "FINAL if not designed for inheritance\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Classes](#classes) > [Scope](#scope) > [This section](#final-if-not-designed-for-inheritance) Make classes that are not explicitly designed for inheritance `FINAL`. When designing class cooperation,\n\n/sap-styleguides/clean-abap/CleanABAP#final-if-not-designed-for-inheritance",
+      "bm25": -7.806704920744372,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#final-if-not-designed-for-inheritance",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.030107526881720432,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.806704920744372,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.7999999999999998
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#class-attributes",
+      "text": "Class Attributes\n\n-   The attributes of a class (or interface) mean the data objects declared within a     class (or interface). -   [Instance abap CLASS zcl_demo_abap DEFINITION PUBLIC FINAL CREATE PUBLIC PUBLIC SECTION\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#class-attributes",
+      "bm25": -7.769928659239575,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#class-attributes",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.028571428571428574,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.769928659239575,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#class-based-and-classic-exceptions",
+      "text": "Class-Based and Classic Exceptions\n\n- [Catchable exceptions](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abencatchable_exception_glosry.htm) are represented by exception objects of exception classes. - Predefined global exception classes exist, custom exception classes can be created. You can also create ...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#class-based-and-classic-exceptions",
+      "bm25": -7.76876884429577,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#class-based-and-classic-exceptions",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.02727272727272727,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.76876884429577,
+        "rank": 50,
+        "rrfScore": 0.00909090909090909,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-a-local-class",
+      "text": "Creating a Local Class\n\n- You can create local classes, for example, in the [CCIMP include](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenccimp_glosry.htm) (*Local Types* tab in ADT) of a [class pool](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenclass_pool_gl...\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-a-local-class",
+      "bm25": -7.768685074795444,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-a-local-class",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.02702702702702703,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.768685074795444,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#interfaces",
+      "text": "Interfaces\n\nInterfaces ... -   represent a template for the components in the public visibility     section of classes.\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#interfaces",
+      "bm25": -7.7737702422685615,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#interfaces",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.026041666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.7737702422685615,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-a-global-class",
+      "text": "Creating a Global Class\n\nThe code snippet shows a basic skeleton of a global class. There are [further additions](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abapclass_options.htm) possible for the declaration part. abap Declaration part CLASS global_class DEFINITION PUBLIC Makes class global\n\n/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-a-global-class",
+      "bm25": -7.767299584140997,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/04_ABAP_Object_Orientation#creating-a-global-class",
+      "relFile": "04_ABAP_Object_Orientation.md",
+      "finalScore": 0.025641025641025644,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -7.767299584140997,
+        "rank": 57,
+        "rrfScore": 0.008547008547008548,
+        "boost": 2
+      }
+    }
+  ]
+}

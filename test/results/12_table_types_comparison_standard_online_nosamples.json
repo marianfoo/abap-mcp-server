@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "STANDARD TABLE vs SORTED TABLE vs HASHED TABLE",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:18:57.264Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENKEY_TABLE_GLOSRY",
+      "text": "ABENKEY_TABLE_GLOSRY\n\nSuperordinate term for [sorted tables](ABENSORTED_TABLE_GLOSRY.html) and [hashed tables](ABENHASHED_TABLE_GLOSRY.html), in which the [primary table key](ABENPRIMARY_TABLE_KEY_GLOSRY.html), unlike [standard tables](ABENSTANDARD_TABLE_GLOSRY.html), has its own stable administration that allows optimized access. ABENABALA\\_GLOSSARY.html\n\n/abap-docs-standard/ABENKEY_TABLE_GLOSRY",
+      "bm25": -14.973328384577322,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENKEY_TABLE_GLOSRY",
+      "relFile": "ABENKEY_TABLE_GLOSRY.md",
+      "finalScore": 0.053623188405797106,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.973328384577322,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSELECT_TABLE_TYPE_GUIDL",
+      "text": "ABENSELECT_TABLE_TYPE_GUIDL\n\nThe table category specifies the internal administration for an internal table and the primary access type: Standard tables and sorted tables can be summarized under the term *index tables*. An index access is always the fastest way to access table entries. The prerequisite for an index access is that the value for the index specification has been determined in advance. This usually requires a pre\n\n/abap-docs-standard/ABENSELECT_TABLE_TYPE_GUIDL",
+      "bm25": -14.714909258744235,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSELECT_TABLE_TYPE_GUIDL",
+      "relFile": "ABENSELECT_TABLE_TYPE_GUIDL.md",
+      "finalScore": 0.05333333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.714909258744235,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPRIMARY_TABLE_KEY_GLOSRY",
+      "text": "ABENPRIMARY_TABLE_KEY_GLOSRY\n\nEach [internal table](ABENINTERNAL_TABLE_GLOSRY.html) has a primary [table key](ABENTABLE_KEY_GLOSRY.html) that is either a user-defined key or the [standard key](ABENSTANDARD_KEY_GLOSRY.html). In [hashed tables](ABENHASHED_TABLE_GLOSRY.html), the primary key is a [hash key](ABENHASH_KEY_GLOSRY.html) and in [sorted tables](ABENSORTED_TABLE_GLOSRY.html), the primary key is a [sorted key](ABENSORTED\n\n/abap-docs-standard/ABENPRIMARY_TABLE_KEY_GLOSRY",
+      "bm25": -14.95978625542412,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPRIMARY_TABLE_KEY_GLOSRY",
+      "relFile": "ABENPRIMARY_TABLE_KEY_GLOSRY.md",
+      "finalScore": 0.05285714285714286,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.95978625542412,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENINT_TABLE_AT_ABEXA",
+      "text": "ABENINT_TABLE_AT_ABEXA\n\nThis example demonstrates group level processing in internal tables. A hashed table `itab` is created, filled with six lines, and sorted by the primary table key. In the `LOOP` - `ENDLOOP` loop, the work area `line` is used and is displayed for every loop pass. The first field of the primary table key `col1` is used for group level processing. The sum of all numeric fields is calculated each time\n\n/abap-docs-standard/ABENINT_TABLE_AT_ABEXA",
+      "bm25": -14.154799914189942,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENINT_TABLE_AT_ABEXA",
+      "relFile": "ABENINT_TABLE_AT_ABEXA.md",
+      "finalScore": 0.04457831325301205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.154799914189942,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDESCRIBE_TABLE",
+      "text": "ABAPDESCRIBE_TABLE\n\n`DESCRIBE TABLE itab [KIND knd]\\ [LINES lin]\\ [OCCURS n].` This statement determines some of the properties of the internal table `itab` and assigns them to the specified target fields. The following can be specified as target fields of each addition: The different additions enable the table category, the number of currently filled lines, and the [initial memory requirement](ABENINITIAL_MEM_REQ_GL\n\n/abap-docs-standard/ABAPDESCRIBE_TABLE",
+      "bm25": -13.576387854660085,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDESCRIBE_TABLE",
+      "relFile": "ABAPDESCRIBE_TABLE.md",
+      "finalScore": 0.0425531914893617,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.576387854660085,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDATA_ITAB",
+      "text": "ABAPDATA_ITAB\n\n`DATA itab \\{\\ \\{TYPE [STANDARD]|SORTED|HASHED TABLE OF [REF TO] type\\}`\\\\            `|\\ \\{LIKE [STANDARD]|SORTED|HASHED TABLE OF dobj\\}\\ \\}`\\\\  This statement defines an internal table. The definition of the line type, the table category ([`STANDARD TABLE`](ABAPTYPES_TABCAT.html), [`SORTED TABLE`](ABAPTYPES_TABCAT.html), or [`HASHED TABLE`](ABAPTYPES_TABCAT.html)), and the [initial memory requir\n\n/abap-docs-standard/ABAPDATA_ITAB",
+      "bm25": -15.347359994497625,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDATA_ITAB",
+      "relFile": "ABAPDATA_ITAB.md",
+      "finalScore": 0.04098360655737705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.347359994497625,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDIC_TABLE_TYPES_TECH",
+      "text": "ABENDDIC_TABLE_TYPES_TECH\n\nA table type describes an [internal table](ABENINTERNAL_TABLE_GLOSRY.html) with the following technical properties: -   The line type can be defined as follows: -   The line type can be defined by referencing any [data type](ABENDDIC_DATA_TYPES.html), including [DDIC database tables](ABENDDIC_DATABASE_TABLES.html) and [DDIC views](ABENDDIC_VIEWS.html).\n\n/abap-docs-standard/ABENDDIC_TABLE_TYPES_TECH",
+      "bm25": -13.265500427989481,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDIC_TABLE_TYPES_TECH",
+      "relFile": "ABENDDIC_TABLE_TYPES_TECH.md",
+      "finalScore": 0.04040404040404041,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.265500427989481,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 3
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_SHORTREF",
+      "text": "ABAPTYPES_SHORTREF\n\n`TYPES dtype[(len)]\\ \\{TYPE \\{\\ \\{abap_type [LENGTH len]\\                                        [DECIMALS dec]\\}\\                           |\\ \\{[LINE OF] type\\}\\                           |\\ \\{REF TO type\\}\\                           |\\ \\{\\ \\{\\{[STANDARD] TABLE\\}\\                               |\\ \\{SORTED TABLE\\}\\                               |\\{HASHED TABLE\\}\\}\\                               O\n\n/abap-docs-standard/ABAPTYPES_SHORTREF",
+      "bm25": -15.294260702124804,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_SHORTREF",
+      "relFile": "ABAPTYPES_SHORTREF.md",
+      "finalScore": 0.04032258064516129,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.294260702124804,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDATA_SHORTREF",
+      "text": "ABAPDATA_SHORTREF\n\n`DATA var[(len)]\\ [TYPE \\{\\ \\{abap_type [LENGTH len]\\                                     [DECIMALS dec]\\}\\                        |\\ \\{[LINE OF] type [BOXED]\\}\\                        |\\ \\{REF TO type\\}\\                        |\\ \\{\\ \\{\\{[STANDARD] TABLE\\}\\                            |\\{SORTED TABLE\\}\\                            |\\{HASHED TABLE\\}\\}\\                            OF [REF TO] type\n\n/abap-docs-standard/ABAPDATA_SHORTREF",
+      "bm25": -15.255324148329569,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDATA_SHORTREF",
+      "relFile": "ABAPDATA_SHORTREF.md",
+      "finalScore": 0.03968253968253968,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.255324148329569,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDATA_KEYDEF",
+      "text": "ABAPDATA_KEYDEF\n\nDefinition of the table keys of an internal table. The following can be defined: Declaration of a [hashed table](ABENHASHED_TABLE_GLOSRY.html) with a unique primary key and two non-unique secondary [sorted keys](ABENSORTED_KEY_GLOSRY.html), `cityfrom_to` and `airp_from_to`. -   A [primary table key](ABENPRIMARY_TABLE_KEY_GLOSRY.html) using [`key`](ABAPDATA_PRIMARY_KEY.html).\n\n/abap-docs-standard/ABAPDATA_KEYDEF",
+      "bm25": -15.055152979435807,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDATA_KEYDEF",
+      "relFile": "ABAPDATA_KEYDEF.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.055152979435807,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_TABCAT",
+      "text": "ABAPTYPES_TABCAT\n\n`... \\{\\ \\{[STANDARD] TABLE\\}\\      |\\ \\{SORTED TABLE\\}\\      |\\ \\{HASHED TABLE\\}\\      |\\ \\{ANY TABLE\\}\\      |\\ \\{INDEX TABLE\\}\\ \\} ...` Defines the table category of an internal table. Possible specifications: The addition `STANDARD` is optional for standard tables.\n\n/abap-docs-standard/ABAPTYPES_TABCAT",
+      "bm25": -15.045092175126317,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_TABCAT",
+      "relFile": "ABAPTYPES_TABCAT.md",
+      "finalScore": 0.03787878787878788,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.045092175126317,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCREATE_DATA_ITAB",
+      "text": "ABAPCREATE_DATA_ITAB\n\n`CREATE DATA dref```\\ [[`area_handle`](ABAPCREATE_DATA_AREA_HANDLE.html)]``\\\\                   `\\{\\ \\{TYPE [STANDARD]|SORTED|HASHED TABLE OF [REF TO]\\ \\{type|(name)\\}\\}`\\\\                   `|\\ \\{LIKE [STANDARD]|SORTED|HASHED TABLE OF dobj\\}\\ \\}`\\\\\n\n/abap-docs-standard/ABAPCREATE_DATA_ITAB",
+      "bm25": -15.034128404729216,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCREATE_DATA_ITAB",
+      "relFile": "ABAPCREATE_DATA_ITAB.md",
+      "finalScore": 0.03731343283582089,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.034128404729216,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_STANDARD_KEY",
+      "text": "ABENITAB_STANDARD_KEY\n\nThe standard key is a special [primary table key](ABENPRIMARY_TABLE_KEY_GLOSRY.html) of an internal table. The key fields of the standard key are defined as follows: Empty standard keys are not possible for sorted tables and hashed tables, and an error occurs if an attempt is made to create a key like this.\n\n/abap-docs-standard/ABENITAB_STANDARD_KEY",
+      "bm25": -14.280573804112295,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_STANDARD_KEY",
+      "relFile": "ABENITAB_STANDARD_KEY.md",
+      "finalScore": 0.037037037037037035,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.280573804112295,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNESTED_INTERNAL_TABLES_ABEXA",
+      "text": "ABENNESTED_INTERNAL_TABLES_ABEXA\n\nThis example demonstrates how nested internal tables are declared and used. The example shows the declaration of two internal tables, `t_address_tab` and `company_tab`, where `t_address_tab` is contained in `company_tab`. For this, `t_address_tab` is defined as the table type. The component `addresses` of the `company` structure is declared with this type. The data type of `company` is used as the\n\n/abap-docs-standard/ABENNESTED_INTERNAL_TABLES_ABEXA",
+      "bm25": -13.263355738429839,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNESTED_INTERNAL_TABLES_ABEXA",
+      "relFile": "ABENNESTED_INTERNAL_TABLES_ABEXA.md",
+      "finalScore": 0.037000000000000005,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.263355738429839,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "sap-help-ec48145db6d04e83ae31f1203c963f53",
+      "text": "Business Configuration Sets\n\n_records   TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE6</b>$,\n      lt_insert_table7_records   TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE7</b>$,\n      lt_insert_table8_records   TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE8</b>$. ... lt_remove_table2_records   TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE2</b>$,\n      lt_insert_table3_records   TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE3</b>$,\n      lt_insert_table4_deletions TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE4</b>$,\n      lt_insert_table6 ... OF $<b>TABLE1</b>$,\n      lt_table2_records  TYPE <b>STANDARD</b> <b>TABLE</b> OF $<b>TABLE2</b>$,\n      lt_entity_records  TYPE if_xco_bcs_entity=&gt;tt_entity_records ...  — Product: SAP BTP ABAP environment (Cloud)\n\nhttps://help.sap.com/docs/ABAP_ENVIRONMENT/250515df61b74848810389e964f8c367/ec48145db6d04e83ae31f1203c963f53.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_ENVIRONMENT/250515df61b74848810389e964f8c367/ec48145db6d04e83ae31f1203c963f53.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-0c4ef7eb53684d22af44f7fd7b80eddd",
+      "text": "Operating Profit Summation Level\n\nStructure\n\n                              \n                              \n                              \n                              \n                                 <b>Table</b> 838: Filters\tObject Type\tName ... Actual <b>vs</b> Previous (%)\t&nbsp;\t\n                                             Actual <b>vs</b> Previous (%) = Actual <b>vs</b> Previous ... Actual <b>vs</b> Plan (%)\t&nbsp;\t\n                                             Actual <b>vs</b> Plan (%) = Actual <b>vs</b> Plan/Plan * 100 ...  — Product: BI Content 7.57 (7.57 SP15)\n\nhttps://help.sap.com/docs/BI_CONTENT_757/8283ab99b2f540c18afbe5cbb34501e3/0c4ef7eb53684d22af44f7fd7b80eddd.html?locale=en-US&state=PRODUCTION&version=7.57.15",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/BI_CONTENT_757/8283ab99b2f540c18afbe5cbb34501e3/0c4ef7eb53684d22af44f7fd7b80eddd.html?locale=en-US&state=PRODUCTION&version=7.57.15",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-b8d6f98188d946208ab505858e12e63d",
+      "text": "Contribution Margin II\n\nStructure\n\n                              \n                              \n                              \n                              \n                                 <b>Table</b> 834: Filters\tObject Type\tName ... Actual <b>vs</b> Previous (%)\t&nbsp;\t\n                                             Actual <b>vs</b> Previous (%) = Actual <b>vs</b> Previous ... <b>Table</b> ...  — Product: BI Content 7.57 (7.57 SP15)\n\nhttps://help.sap.com/docs/BI_CONTENT_757/8283ab99b2f540c18afbe5cbb34501e3/b8d6f98188d946208ab505858e12e63d.html?locale=en-US&state=PRODUCTION&version=7.57.15",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/BI_CONTENT_757/8283ab99b2f540c18afbe5cbb34501e3/b8d6f98188d946208ab505858e12e63d.html?locale=en-US&state=PRODUCTION&version=7.57.15",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCREATE_DATA_SHORTREF",
+      "text": "ABAPCREATE_DATA_SHORTREF\n\n`CREATE DATA dref [ AREA HANDLE handle ]\\                   [ TYPE \\{\\ \\{abap_type|(name)                             [LENGTH len]\\ [DECIMALS dec]\\}\\                          |\\ \\{[LINE OF] type|(name)\\}\\                          |\\ \\{REF TO type|(name)\\}\\                          |\\ \\{\\ \\{\\{[STANDARD] TABLE\\}\\                             |\\{SORTED TABLE\\}\\                             |\\{HASHED TA\n\n/abap-docs-standard/ABAPCREATE_DATA_SHORTREF",
+      "bm25": -14.81215481762556,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCREATE_DATA_SHORTREF",
+      "relFile": "ABAPCREATE_DATA_SHORTREF.md",
+      "finalScore": 0.035211267605633804,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.81215481762556,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-cbc0875112064db3a0d72b9365d94b5d",
+      "text": "Getting the Axis Sorts in a Report Element\n\n<b>Tables</b> have the following identifiers:\n\n\n\t\n'<b>HTable</b>' or 'Form' <b>has</b> only one axis with identifier\n0 (role 'Row') \n\n\n\t\n'<b>VTable</b>' one axis with identifier 1 (role\n'Column')\n\n\n\t\n'<b>XTable</b>' <b>has</b> 3 axes with identifiers ... Getting the Axis <b>Sorts</b> in a Report Element\n\nUsage\n\n\nGets the <b>sort</b> type (ascending or descending) of an axis in a report element of type <b>Table</b>\n(<b>HTable</b>, <b>VTable</b>, <b>XTable</b>, and Form), Section, Visualization, ... &gt;\n&lt;<b>sorts</b>&gt;\n    &lt;<b>sort</b> order=&quot;Ascending&quot; dataType=&quot;String&quot;&gt;=[Resort]&lt;/<b>sort</b>&gt;\n&lt;/<b>sorts</b>&gt;\n\n\n\n\nExample: Get the <b>sorts</b> of a <b>table's</b> axis\n\n\nGET\n/documents/17196/reports/3/elements/12/axes/1/<b>sorts</b>\n\n&lt;? ...  — Product: SAP BusinessObjects Web Intelligence (4.3 SP4)\n\nhttps://help.sap.com/docs/SAP_BUSINESSOBJECTS_WEB_INTELLIGENCE/0ef63ba725cd41a8ab4a69c226ec6b07/cbc0875112064db3a0d72b9365d94b5d.html?locale=en-US&state=PRODUCTION&version=4.3.4",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_BUSINESSOBJECTS_WEB_INTELLIGENCE/0ef63ba725cd41a8ab4a69c226ec6b07/cbc0875112064db3a0d72b9365d94b5d.html?locale=en-US&state=PRODUCTION&version=4.3.4",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_CAT",
+      "text": "ABENITAB_CAT\n\nWhat category of table should be used in an individual case depends on the type of individual line access that will be used most frequently on the table. These rules are made suitably relative to tables with [secondary keys](ABENSECONDARY_TABLE_KEY_GLOSRY.html). A table `scarr_tab_down` intended for index access should be sorted by key field in descending order. This can only be a standard table.\n\n/abap-docs-standard/ABENITAB_CAT",
+      "bm25": -14.807727177373682,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_CAT",
+      "relFile": "ABENITAB_CAT.md",
+      "finalScore": 0.034722222222222224,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.807727177373682,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-607a1e11407b66439f7742c0f93b53c9",
+      "text": "\n\nshipment exclusion <b>table</b> (SCM-APO-<b>VS</b>)\n\n\n\nVehicle Scheduling (SCM-APO-<b>VS</b>)\n\n<b>Table</b>\ncontaining\ndeliveries that were exluded from planning in the component Transportation Planning/Vehicle Scheduling (TP ... /<b>VS</b>). ...  — Product: SAP Test Data Migration Server (4.0 SP11)\n\nhttps://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/60/7a1e11407b66439f7742c0f93b53c9/content.htm",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/doc/saphelp_tdm40/4.0.11/en-US/60/7a1e11407b66439f7742c0f93b53c9/content.htm",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENMODIFY_ITAB_USING_KEY_ABEXA",
+      "text": "ABENMODIFY_ITAB_USING_KEY_ABEXA\n\nThe example shows an index access to a hashed table. The table `sflight_tab` is a hashed table with a unique primary key and a non-unique secondary sorted key. Since a secondary sorted key is specified in the statement `MODIFY` after `USING KEY`, it is possible to access the hashed table using the associated secondary table index. This example only demonstrates the syntax. Generally, instead of us\n\n/abap-docs-standard/ABENMODIFY_ITAB_USING_KEY_ABEXA",
+      "bm25": -15.163973903146983,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENMODIFY_ITAB_USING_KEY_ABEXA",
+      "relFile": "ABENMODIFY_ITAB_USING_KEY_ABEXA.md",
+      "finalScore": 0.034375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.163973903146983,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-3361383271",
+      "text": "ODP Scenario: Service Application Interface (SAPI)\n\nOverview\n\n\n\n\n  \tPurpose\n\tOverview\n\tSAPI <b>vs</b>. ODP\n\tUseful\n        transactions and <b>tables</b> for specific provider or subscriber scenarios\n\tChanges in comparison\n        to classic SAPI\n\n\n\n\n\n\nSAPI <b>vs</b>. ... ROOSATTR: <b>Table</b> which contains all DataSources released for ODP. All officially released SAP\n    <b>standard</b> extractors are mentioned in note&nbsp;2232584 . ... Solution: Use own extractor based on the view you can identify from <b>table</b> ROOSOURCE (see note 2321909&nbsp;).&nbsp; ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/bwdabc/3361383271.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/bwdabc/3361383271.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDATA_SECONDARY_KEY",
+      "text": "ABAPDATA_SECONDARY_KEY\n\n`... \\{UNIQUE HASHED\\}|\\{UNIQUE SORTED\\}|\\{NON-UNIQUE SORTED\\}`\\\\      `KEY key_name [ALIAS alias_name] COMPONENTS comp1 comp2 ...` Definition of a [secondary table key](ABENSECONDARY_TABLE_KEY_GLOSRY.html) of an internal table. The syntax and semantics of the additions are the same as those for the statement [`TYPES`](ABAPTYPES_SECONDARY_KEY.html) for standalone table types.\n\n/abap-docs-standard/ABAPDATA_SECONDARY_KEY",
+      "bm25": -14.781447085129972,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDATA_SECONDARY_KEY",
+      "relFile": "ABAPDATA_SECONDARY_KEY.md",
+      "finalScore": 0.033783783783783786,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.781447085129972,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3dd4b18e75e04a2fb6de28542da21baa",
+      "text": "Process\n\nData in internal format is stored in the <b>table</b>\nT7CZJHM01. The <b>table</b> contains both\nindividual forms and forms with summary data for <b>VS</b>. The <b>table</b> cannot be edited\ndirectly. ... Process\n\n\n\n\n\n\n\n\n\nMonthly Report Process\n\n\n\tPayroll calculation\nBefore running the next steps, ensure that the payroll for all\npersonnel numbers you intend to report for the given <b>VS</b> <b>has</b> been\nsuccessfully ... Note\n\nIf an employee transferred between <b>VS</b> and, in the current (IN) period, a\nretroactive recalculation was performed for a period when they worked on\nanother <b>VS</b>, you must process the employee before ...  — Product: SAP S/4HANA (2025 (Oct 2025))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ca3e3af1d317483b8bb43a5ff0856fd3/3dd4b18e75e04a2fb6de28542da21baa.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ca3e3af1d317483b8bb43a5ff0856fd3/3dd4b18e75e04a2fb6de28542da21baa.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-1609f740fe7f4298ac757ff06040f969",
+      "text": "Processing Status Overview (Workbench)\n\nIt uses a <b>table</b> to <b>sort</b> the forms:\n\n\tVertically by type (Individual, Summary, Saved in B2A)\n\n\tHorizontally by status (0, 1, 2, 10, etc.) ... Selection\n\n\n\tIn period\nThe period from which you want to view data stored in the\nT7CZJHM01 <b>table</b>. ... It may be useful to use this program for one specific <b>VS</b> so that the\nstatuses of forms for other <b>VS</b> don't affect which step is offered. ...  — Product: SAP S/4HANA (2025 (Oct 2025))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ca3e3af1d317483b8bb43a5ff0856fd3/1609f740fe7f4298ac757ff06040f969.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ca3e3af1d317483b8bb43a5ff0856fd3/1609f740fe7f4298ac757ff06040f969.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-c530b773fbda418c9dfcf3c7b3ff8eba",
+      "text": "Compilation and Submission to B2A\n\nIf the program finds individual forms in <b>table</b>\nT7CZJHM01 with status 1, it compiles a\nlogical submission by grouping forms related to one <b>VS</b> and one FOR period. ... The\nprogram displays an ALV <b>table</b> with the identification of the data being sent to B2A. ... If the Test checkbox isn't selected, the resulting packages are\nsent to B2A, and the processed records in the <b>table</b> are marked with status 10. ...  — Product: SAP S/4HANA (2025 (Oct 2025))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ca3e3af1d317483b8bb43a5ff0856fd3/c530b773fbda418c9dfcf3c7b3ff8eba.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/ca3e3af1d317483b8bb43a5ff0856fd3/c530b773fbda418c9dfcf3c7b3ff8eba.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_KEY_PRIMARY",
+      "text": "ABENITAB_KEY_PRIMARY\n\nEach internal table has a primary table key that allows access to individual lines of the table by specifying a key. Declaration of a hashed table with a unique primary key. The table is filled with data from a database table and accessed using a [table expression](ABENTABLE_EXPRESSION_GLOSRY.html) with values specified for the primary key. -   The components of the primary table key are declared\n\n/abap-docs-standard/ABENITAB_KEY_PRIMARY",
+      "bm25": -14.608592561370717,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_KEY_PRIMARY",
+      "relFile": "ABENITAB_KEY_PRIMARY.md",
+      "finalScore": 0.03246753246753247,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.608592561370717,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENREAD_ITAB_USING_KEY_ABEXA",
+      "text": "ABENREAD_ITAB_USING_KEY_ABEXA\n\nThis example measures the runtime of the statement `READ TABLE` with various table keys. The table `itab` is a standard table with a non-unique primary key, a unique secondary sorted key, and a unique secondary hash key. For demonstration purposes, this class hides the syntax warning that different table keys in an internal table cannot contain the same components using the [pragma](ABENPRAGMA_GLO\n\n/abap-docs-standard/ABENREAD_ITAB_USING_KEY_ABEXA",
+      "bm25": -14.984471660767522,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENREAD_ITAB_USING_KEY_ABEXA",
+      "relFile": "ABENREAD_ITAB_USING_KEY_ABEXA.md",
+      "finalScore": 0.03235294117647059,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.984471660767522,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "sap-help-eb11be4af3e04aa1895306a01b312cdb",
+      "text": "Compound Words\n\n70ms \t2\t6\tIDF scoring \n\tmusic tracks (<b>short</b> text documents) \t6 400 000\t1 250 000 \t70ms \t5\t7\ttextSearch=compare \n\n\n\n\n\n\n\nExamples\n\n\nCreating a <b>table</b>: \n\n\nCREATE COLUMN <b>TABLE</b> SNACKS (TEXT TEXT FUZZY SEARCH ... Examples\nof\ncompound\nwords: \n\n\t\n&quot;Hans-Peter&quot; <b>vs</b>. &quot;Hanspeter&quot; \n\n\n\t\n&quot;Abfahrt Zeit&quot; <b>vs</b>. &quot;Abfahrtszeit&quot; \n\n\n\t\n&quot;Post Office&quot; <b>vs</b>. &quot;Postoffice&quot; \n\n\n\t\n&quot;<b>soft</b> ball&quot; <b>vs</b>. &quot;softball&quot; \n\n\n\t\n&quot;Example-Cola&quot; <b>vs</b>. ... Data Domain \t<b>Table</b> Rows \tDictionary Size \tRequest Baseline \tcomposeWords Factor \tdecomposeWords Factor \tComment \n\tlastnames \t10 000 000 \t540 000 \t50ms \t1\t1.6\t&nbsp;\n\tfull-text documents \t130 000 \t1 200 000 ...  — Product: SAP HANA Platform (2.0 SPS 08)\n\nhttps://help.sap.com/docs/SAP_HANA_PLATFORM/691cb949c1034198800afde3e5be6570/eb11be4af3e04aa1895306a01b312cdb.html?locale=en-US&state=PRODUCTION&version=2.0.08",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_HANA_PLATFORM/691cb949c1034198800afde3e5be6570/eb11be4af3e04aa1895306a01b312cdb.html?locale=en-US&state=PRODUCTION&version=2.0.08",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_SECONDARY_KEY",
+      "text": "ABAPTYPES_SECONDARY_KEY\n\n`... \\{UNIQUE HASHED\\}|\\{UNIQUE SORTED\\}|\\{NON-UNIQUE SORTED\\}`\\\\      `KEY key_name [ALIAS alias_name] COMPONENTS comp1 comp2 ...` Definition of a [secondary table key](ABENSECONDARY_TABLE_KEY_GLOSRY.html) with an internal table type. An internal table can have up to 15 secondary keys.\n\n/abap-docs-standard/ABAPTYPES_SECONDARY_KEY",
+      "bm25": -14.567062568905916,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_SECONDARY_KEY",
+      "relFile": "ABAPTYPES_SECONDARY_KEY.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.567062568905916,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_KEY_SECONDARY",
+      "text": "ABENITAB_KEY_SECONDARY\n\nAccess to an internal table using a secondary key is always optimized. This allows additional optimized keys to be introduced for sorted and hashed tables as well as optimized key accesses for standard tables. The key fields of a secondary table key are only write-protected if the secondary table key is in use within a `LOOP` or a `MODIFY` statement. Otherwise, the secondary key fields are not wri\n\n/abap-docs-standard/ABENITAB_KEY_SECONDARY",
+      "bm25": -14.488304319171236,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_KEY_SECONDARY",
+      "relFile": "ABENITAB_KEY_SECONDARY.md",
+      "finalScore": 0.03164556962025317,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.488304319171236,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCOLLECT_GUIDL",
+      "text": "ABENCOLLECT_GUIDL\n\nThe statement `COLLECT` can be used to collect lines and insert them in an internal table. If a line with the relevant primary key already exists in the target table, the values of numeric components are added to the values in the existing table line. Otherwise, a new line is inserted in the table. **Do not fill standard tables with collections of lines** Only use the statement `COLLECT` for hashe\n\n/abap-docs-standard/ABENCOLLECT_GUIDL",
+      "bm25": -14.294310986345376,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCOLLECT_GUIDL",
+      "relFile": "ABENCOLLECT_GUIDL.md",
+      "finalScore": 0.03125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.294310986345376,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_DATA_TYPE",
+      "text": "ABENITAB_DATA_TYPE\n\nA [table type](ABENTABLE_TYPE_GLOSRY.html) defined as a [DDIC table type](ABENDDIC_TABLE_TYPE_GLOSRY.html) or using [`TYPES`](ABAPTYPES_ITAB.html) or [`DATA`](ABAPDATA_ITAB.html) is specified completely using the following [technical type properties](ABENTECHNICAL_TYPE_PRPT_GLOSRY.html): Unlike all other user-defined data types, a table type defined in the ABAP Dictionary or using [`TYPES`](ABAPTY\n\n/abap-docs-standard/ABENITAB_DATA_TYPE",
+      "bm25": -14.131832949518,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_DATA_TYPE",
+      "relFile": "ABENITAB_DATA_TYPE.md",
+      "finalScore": 0.02976190476190476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.131832949518,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_GDL",
+      "text": "ABENITAB_GDL\n\nAn internal table is a dynamic data object consisting of a sequence of lines with the same data type. The data type of an internal table is a table type that has the following basic properties of every internal table: Internal tables enable variable datasets (a variable number of lines) with a fixed structure (the line type) to be processed in the working memory of the [internal session](ABENINTER\n\n/abap-docs-standard/ABENITAB_GDL",
+      "bm25": -13.96428365596381,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_GDL",
+      "relFile": "ABENITAB_GDL.md",
+      "finalScore": 0.029069767441860465,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.96428365596381,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLOOP_AT_ITAB_KEY_ABEXA",
+      "text": "ABENLOOP_AT_ITAB_KEY_ABEXA\n\nThe example demonstrates the execution of the statement `LOOP AT itab` with different table keys. The table `spfli_tab` is a hashed table with an unique primary key and two non-unique sorted secondary keys. -   The first `LOOP` takes place without a key specification. The table output is in the order in which the table was filled, that is, sorted by the fields specified after `ORDER BY` in the `SE\n\n/abap-docs-standard/ABENLOOP_AT_ITAB_KEY_ABEXA",
+      "bm25": -14.619996503800676,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLOOP_AT_ITAB_KEY_ABEXA",
+      "relFile": "ABENLOOP_AT_ITAB_KEY_ABEXA.md",
+      "finalScore": 0.02894736842105263,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.619996503800676,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_MESH_ASSOCIATION",
+      "text": "ABAPTYPES_MESH_ASSOCIATION\n\n`... ASSOCIATION _assoc TO node ON tcomp1 = scomp1                               [AND tcomp2 = scomp2                               [AND ... ]]\\                               [USING KEY key_name] ...` Definition of a mesh association named `_assoc` for a mesh node of a mesh type. The addition `ASSOCIATION` to `TYPES` can only be used in the definition of a node of a mesh type between [`TYPES BEGIN\n\n/abap-docs-standard/ABAPTYPES_MESH_ASSOCIATION",
+      "bm25": -13.915245125508418,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_MESH_ASSOCIATION",
+      "relFile": "ABAPTYPES_MESH_ASSOCIATION.md",
+      "finalScore": 0.028735632183908046,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.915245125508418,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPCOLLECT",
+      "text": "ABAPCOLLECT\n\nThis statement inserts the content of a work area `wa` either as a single line in an internal table `itab` or adds the values of its numeric components to the corresponding values of existing lines with the same [primary table key](ABENPRIMARY_TABLE_KEY_GLOSRY.html). `wa` is a [functional operand position](ABENFUNCTIONAL_POSITION_GLOSRY.html). Prerequisite for the use of this statement is that `wa\n\n/abap-docs-standard/ABAPCOLLECT",
+      "bm25": -13.844954770518326,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPCOLLECT",
+      "relFile": "ABAPCOLLECT.md",
+      "finalScore": 0.02840909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.844954770518326,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSECONDARY_KEY_GUIDL",
+      "text": "ABENSECONDARY_KEY_GUIDL\n\nSecondary keys can be declared for internal tables. The following options are possible: These keys are assigned a name when they are declared and can be created for any table category. The primary key (nameless up to this point) is assigned a predefined name (`primary_key`), which allows it to be explicitly addressed. A secondary table index is created internally for each sorted secondary key. Thi\n\n/abap-docs-standard/ABENSECONDARY_KEY_GUIDL",
+      "bm25": -13.810015853838143,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSECONDARY_KEY_GUIDL",
+      "relFile": "ABENSECONDARY_KEY_GUIDL.md",
+      "finalScore": 0.028089887640449437,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.810015853838143,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_KEYDEF",
+      "text": "ABAPTYPES_KEYDEF\n\n`[\\ \\{WITH|WITHOUT\\} FURTHER SECONDARY KEYS ] ...` Definition of the table key of a table type. The following can be defined: The order in which the components of a table key are defined is significant for the table type. The additions `WITH|WITHOUT FURTHER SECONDARY KEYS` determine the genericness with respect to the secondary table key.\n\n/abap-docs-standard/ABAPTYPES_KEYDEF",
+      "bm25": -13.773742529223272,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_KEYDEF",
+      "relFile": "ABAPTYPES_KEYDEF.md",
+      "finalScore": 0.027472527472527476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.773742529223272,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPDATA_PRIMARY_KEY",
+      "text": "ABAPDATA_PRIMARY_KEY\n\n`... \\{\\ [UNIQUE | NON-UNIQUE]`\\\\        `\\{\\ \\{KEY [primary_key [ALIAS alias_name] COMPONENTS] comp1 comp2 ...\\}`\\\\        `|\\ \\{DEFAULT KEY\\}\\ \\}  \\}`\\\\\n\n/abap-docs-standard/ABAPDATA_PRIMARY_KEY",
+      "bm25": -13.696514209420357,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPDATA_PRIMARY_KEY",
+      "relFile": "ABAPDATA_PRIMARY_KEY.md",
+      "finalScore": 0.02717391304347826,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.696514209420357,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENLOOP_AT_ITAB_STEP_ABEXA",
+      "text": "ABENLOOP_AT_ITAB_STEP_ABEXA\n\nThe example demonstrates the execution of the statement `LOOP AT itab` with different `STEP` additions. The table `itab` is a hashed table with a unique key and a non-unique sorted key. Using `STEP` additions, the step size and the direction of a loop can be defined. The first table output displays the values for the hashed table in the order in which the table is filled. See also the [executable\n\n/abap-docs-standard/ABENLOOP_AT_ITAB_STEP_ABEXA",
+      "bm25": -14.216748993926782,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENLOOP_AT_ITAB_STEP_ABEXA",
+      "relFile": "ABENLOOP_AT_ITAB_STEP_ABEXA.md",
+      "finalScore": 0.02682926829268293,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.216748993926782,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDELETE_ITAB_USING_KEY_ABEXA",
+      "text": "ABENDELETE_ITAB_USING_KEY_ABEXA\n\nThis example measures the runtime of the statement `DELETE ... WHERE` with various table keys. The table `itab` is a hashed table with a unique primary key and a non-unique secondary sorted key. The method `refresh_itab` fills the table with 100000 lines, whereby the second column contains random numbers between 1 and 10. The class measures the runtime of the statement `DELETE itab`, whereby a con\n\n/abap-docs-standard/ABENDELETE_ITAB_USING_KEY_ABEXA",
+      "bm25": -14.057882670282563,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDELETE_ITAB_USING_KEY_ABEXA",
+      "relFile": "ABENDELETE_ITAB_USING_KEY_ABEXA.md",
+      "finalScore": 0.02588235294117647,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.057882670282563,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTYPES_PRIMARY_KEY",
+      "text": "ABAPTYPES_PRIMARY_KEY\n\n`... \\{\\ [UNIQUE | NON-UNIQUE]`\\\\        `\\{\\ \\{KEY [primary_key [ALIAS alias_name] COMPONENTS] comp1 comp2 ...\\}`\\\\        `|\\ \\{DEFAULT KEY\\}\\ \\}  \\}`\\\\\n\n/abap-docs-standard/ABAPTYPES_PRIMARY_KEY",
+      "bm25": -13.4219842570952,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTYPES_PRIMARY_KEY",
+      "relFile": "ABAPTYPES_PRIMARY_KEY.md",
+      "finalScore": 0.02577319587628866,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.4219842570952,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENITAB_KEY_MEMORY",
+      "text": "ABENITAB_KEY_MEMORY\n\nIn addition to the basic memory requirement specified in [Memory Requirement for Deep Data Objects](ABENMEMORY_CONSUMPTION_1.html), which is created to administrate internal tables in table headers, additional memory is required for administrating each individual line, so allowing optimized access to the individual lines. This internal administration of individual lines has two variants: How a tab\n\n/abap-docs-standard/ABENITAB_KEY_MEMORY",
+      "bm25": -13.39792990172813,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENITAB_KEY_MEMORY",
+      "relFile": "ABENITAB_KEY_MEMORY.md",
+      "finalScore": 0.02551020408163265,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.39792990172813,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13361128",
+      "text": "New ABAP Table Sum\n\n...dd together the field SUMMARY_FIELD, then this would require a read and update of that record, and the COLLECT statement would not work. In this case, a Sorted Table or Hashed Table would be a good c...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/new-abap-table-sum/ba-p/13361128?search-action-id=497478281965&search-result-uid=13361128",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/new-abap-table-sum/ba-p/13361128?search-action-id=497478281965&search-result-uid=13361128",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13365823",
+      "text": "Fast access to a dynamic table ?\n\n...ther words, I didn't think it was possible to create a sorted or hashed dynamic table . But now I know this is not true, and I want to share it with you. &nbsp; The test case I have c...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/fast-access-to-a-dynamic-table/ba-p/13365823?search-action-id=497478281965&search-result-uid=13365823",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/fast-access-to-a-dynamic-table/ba-p/13365823?search-action-id=497478281965&search-result-uid=13365823",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSET_LOCALE_ABEXA",
+      "text": "ABENSET_LOCALE_ABEXA\n\nThis example demonstrates how to set the text environment explicitly. This example shows the effect of the locale of the text environment on sorts. In Hungarian text environments, *Cs* and *Cu* are sorted differently than in English environments. \\* Public class definition \\\\nCLASS cl\\_demo\\_set\\_locale DEFINITION \\\\n INHERITING FROM cl\\_demo\\_classrun \\\\n PUBLIC \\\\n CREATE PUBLIC. \\\\n PUBLIC SECT\n\n/abap-docs-standard/ABENSET_LOCALE_ABEXA",
+      "bm25": -13.800860152971923,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSET_LOCALE_ABEXA",
+      "relFile": "ABENSET_LOCALE_ABEXA.md",
+      "finalScore": 0.024444444444444446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.800860152971923,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "community-13572640",
+      "text": "Joins on Internal Tables? ‒ The ABAP SQL Table Buf...\n\n...ccording to the WITH KEY condition) and with the complexity of O(N*M) if itab2 is a standard table or is a sorted / hashed table with another key. Using the SELECT statement an equivalent statement will r...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/joins-on-internal-tables-the-abap-sql-table-buffer-engine-is-grown-up/ba-p/13572640?search-action-id=497478281965&search-result-uid=13572640",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/joins-on-internal-tables-the-abap-sql-table-buffer-engine-is-grown-up/ba-p/13572640?search-action-id=497478281965&search-result-uid=13572640",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSORT_ITAB_SEC_KEY_ABEXA",
+      "text": "ABENSORT_ITAB_SEC_KEY_ABEXA\n\nThis example demonstrates how tables with secondary table keys are sorted. The table `itab` has a secondary hash key for the column `col2`. If the table is sorted in descending order using this column, the primary index is applied accordingly and a `LOOP` without a key produces the new order. If, however, [`USING KEY`](ABAPLOOP_AT_ITAB_COND.html) is used to specify the secondary hash key in the lo\n\n/abap-docs-standard/ABENSORT_ITAB_SEC_KEY_ABEXA",
+      "bm25": -13.608630692124882,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSORT_ITAB_SEC_KEY_ABEXA",
+      "relFile": "ABENSORT_ITAB_SEC_KEY_ABEXA.md",
+      "finalScore": 0.023655913978494626,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.608630692124882,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.2
+      }
+    }
+  ]
+}

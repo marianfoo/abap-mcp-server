@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "SQL trace ST05 performance analysis",
+    "options": {
+      "abapFlavor": "standard",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:19:01.198Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-standard/ABENSQL_TRACE_GLOSRY",
+      "text": "ABENSQL_TRACE_GLOSRY\n\nTrace function used to analyze the [SQL](ABENSQL_GLOSRY.html) statements passed from the [database interface](ABENDATABASE_INTERFACE_GLOSRY.html) to the [database system](ABENDATABASE_INTERFACE_GLOSRY.html). It can be called from the tools [ABAP Debugger](ABENABAP_DEBUGGER_GLOSRY.html) or [performance trace](ABENPERFORMANCE_TRACE_GLOSRY.html) (transaction `ST05`). ABENTECHNO\\_GLOSSARY.html ABENSQL\n\n/abap-docs-standard/ABENSQL_TRACE_GLOSRY",
+      "bm25": -36.901017336426875,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSQL_TRACE_GLOSRY",
+      "relFile": "ABENSQL_TRACE_GLOSRY.md",
+      "finalScore": 0.05245901639344263,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -36.901017336426875,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPERFORMANCE_TRACE_GLOSRY",
+      "text": "ABENPERFORMANCE_TRACE_GLOSRY\n\nTest tool combining multiple trace functions that allow system behavior to be analyzed in [database access](ABENDB_ACCESS.html) ([SQL trace](ABENSQL_TRACE_GLOSRY.html)), access to the [table buffer](ABENTABLE_BUFFER_GLOSRY.html), access to [lock management](ABENSAP_LOCK.html) reads, and for external read access using [RFC](ABENRFC_GLOSRY.html) and [ICF](ABENICF_GLOSRY.html). Called using [transact\n\n/abap-docs-standard/ABENPERFORMANCE_TRACE_GLOSRY",
+      "bm25": -29.755921906094024,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPERFORMANCE_TRACE_GLOSRY",
+      "relFile": "ABENPERFORMANCE_TRACE_GLOSRY.md",
+      "finalScore": 0.05161290322580645,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -29.755921906094024,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_SQL_OVIEW",
+      "text": "ABENABAP_SQL_OVIEW\n\nABAP SQL defines the subset of ABAP statements that enable direct access to data in the [standard database](ABENSTANDARD_DB_GLOSRY.html) of the current [AS ABAP](ABENAS_ABAP_GLOSRY.html). The ABAP SQL statements represent the [DQL](ABENDQL_GLOSRY.html) and [DML](ABENDML_GLOSRY.html) parts of [SQL](ABENSQL_GLOSRY.html) in ABAP, which is supported by all database systems. ABAP SQL statements are pro\n\n/abap-docs-standard/ABENABAP_SQL_OVIEW",
+      "bm25": -29.315024176867485,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_SQL_OVIEW",
+      "relFile": "ABENABAP_SQL_OVIEW.md",
+      "finalScore": 0.047619047619047616,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -29.315024176867485,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCX_SQL_EXCEPTION",
+      "text": "ABENCX_SQL_EXCEPTION\n\nAny errors that occur when using dynamic SQL statements with ADBC raise exceptions of the class `CX_SQL_EXCEPTION`. Alongside its [exception texts](ABENEXCEPTION_TEXT_GLOSRY.html), this class has the following instance attributes, whose content indicates the cause of the error: **Attribute** **Meaning** `DB_ERROR` *X*, if an SQL statement was not executed by DBMS. `SQL_CODE` and `SQL_MESSAGE` cont\n\n/abap-docs-standard/ABENCX_SQL_EXCEPTION",
+      "bm25": -13.564512929748085,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCX_SQL_EXCEPTION",
+      "relFile": "ABENCX_SQL_EXCEPTION.md",
+      "finalScore": 0.04,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.564512929748085,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_PROPAGATE_BUFFER",
+      "text": "ABENCDS_PROPAGATE_BUFFER\n\n`PROPAGATE VIEW ENTITY BUFFER ON cds_entity  \\{    propagated_field1[,    propagated_field2][,    ...]\\  \\}[;]` Defines a [CDS propagated buffer](ABENCDS_PROP_BUFFER_GLOSRY.html) in the [CDS DDL](ABENCDS_DDL_GLOSRY.html) for a [CDS entity](ABENCDS_ENTITY_GLOSRY.html). A CDS propagated buffer is a [CDS entity buffer](ABENCDS_ENTITY_BUFFER_GLOSRY.html) that defines [SQL path target fields](ABENSQL_T\n\n/abap-docs-standard/ABENCDS_PROPAGATE_BUFFER",
+      "bm25": -24.691373700364043,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_PROPAGATE_BUFFER",
+      "relFile": "ABENCDS_PROPAGATE_BUFFER.md",
+      "finalScore": 0.038461538461538464,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.691373700364043,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_DCL_ROLE_CONDITIONS",
+      "text": "ABENCDS_DCL_ROLE_CONDITIONS\n\nPart of an [access condition](ABENACCESS_CONDITION_GLOSRY.html)\\\\ [`cds_cond`](ABENCDS_DCL_ROLE_COND_EXPR.html) in an [access rule](ABENACCESS_RULE_GLOSRY.html) of the statement [`DEFINE ROLE`](ABENCDS_F1_DEFINE_ROLE.html) in [CDS DCL](ABENCDS_DCL_GLOSRY.html). The following categories of conditions can be specified, which can be combined using `AND` or `OR`: On the left side of a condition of thi\n\n/abap-docs-standard/ABENCDS_DCL_ROLE_CONDITIONS",
+      "bm25": -22.28821069795296,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_DCL_ROLE_CONDITIONS",
+      "relFile": "ABENCDS_DCL_ROLE_CONDITIONS.md",
+      "finalScore": 0.03787878787878788,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.28821069795296,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSYNTAX-TRACE",
+      "text": "ABAPSYNTAX-TRACE\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** `SYNTAX-TRACE \\{\\ \\{ON [...]\\}\\ | OFF \\}.` This statement has no effect at runtime and only affects the syntax check or the generation of the program that contains the statement. If the syntax check or generation was called in the test environment, this statement switches on trace output.\n\n/abap-docs-standard/ABAPSYNTAX-TRACE",
+      "bm25": -13.040281255819044,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSYNTAX-TRACE",
+      "relFile": "ABAPSYNTAX-TRACE.md",
+      "finalScore": 0.037500000000000006,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.040281255819044,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-3354611687",
+      "text": "TCode for Statistics\n\nTCode for Statistics\n<b>ST01</b> System <b>Trace</b>\n <b>ST02</b> Setups/Tune Buffers\n <b>ST03</b> <b>Performance</b>, SAP Statistics, Workload <b>Analysis</b>\n <b>ST04</b>\n  Select activity of the databases\n <b>ST05</b> <b>SQL</b> <b>Trace</b>\n <b>ST06</b> Operating System Monitor ... <b>ST07</b> Application monitor\n\n  <b>ST08</b> Network Monitor\n <b>ST09</b> Network Alert Monitor\n ST10 Table Call Statistics\n ST11 Display Developer\n  <b>Traces</b>\n ST12 Application Monitor\n ST14 Application <b>Analysis</b>\n ST22 ABAP ... Runtime Error <b>Analysis</b>\n ST22 ABAP/4\n  Runtime Error <b>Analysis</b>\n ST62 Create industry short texts\n STAT Local transaction statistics ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611687.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611687.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDICDDL_DEFINE_JOIN_DRUL",
+      "text": "ABENDDICDDL_DEFINE_JOIN_DRUL\n\n`DEFINE JOIN DEPENDENCY RULE drul    ON dbtab1, dbtab2      IF \\{ cond_pattern \\}        THEN \\{ derived_cond \\}` Variant of the [Dictionary DDL](ABENDICTIONARY_DDL_GLOSRY.html) statement [`DEFINE DEPENDENCY RULE`](ABENDDICDDL_DEFINE_DRUL.html) used to define a join [dependency rule](ABENDEPENDENCY_RULE_GLOSRY.html). A join dependency rule can be defined for exactly two database tables `dbtab1` an\n\n/abap-docs-standard/ABENDDICDDL_DEFINE_JOIN_DRUL",
+      "bm25": -19.580729986813765,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDICDDL_DEFINE_JOIN_DRUL",
+      "relFile": "ABENDDICDDL_DEFINE_JOIN_DRUL.md",
+      "finalScore": 0.03676470588235294,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.580729986813765,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-b7737c423f7b4019afd6abcb4ea56b94",
+      "text": "System Statuses\n\nRescheduled\n\tST046\n\tRescheduling Required\n\t<b>ST057</b>\n\tReturn in Process\n\t<b>ST056</b>\n\tReturn Requested\n\t<b>ST055</b>\n\tReturned\n\tST044\n\tScheduled\n\tST080\n\tShipped\n\tST002\n\tSubmitted for Approval\n\t<b>ST053</b>\n\tTask Completed ... Complete\n\tCMP\n\tCompleted\n\t<b>ST005</b>\n\tConditionally Approved\n\tST012\n\tConditionally Released\n\tST019\n\tConfirmed\n\tCNS\n\tConsumed\n\tST1\n\tCreated\n\t<b>ST058</b>\n\tCredit Limit Check Invalid\n\t<b>ST059</b>\n\tCredit Limit Check Valid ... ST060\n\tCredit Note Issued\n\tST061\n\tCredit Note Pending\n\t<b>ST065</b>\n\tDebit Note Issued\n\tST066\n\tDebit Note Pending\n\tST028\n\tDeleted\n\tST009\n\tDelivered\n\t<b>ST5</b>\n\tERP Order Created\n\tST036\n\tGenerated\n\tST039\n\tGoods Issued ...  — Product: SAP Cell and Gene Therapy Orchestration (SHIP)\n\nhttps://help.sap.com/docs/SAP_CGT_ORCH/954c28e512094088acf68bc1dc3782a2/b7737c423f7b4019afd6abcb4ea56b94.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_CGT_ORCH/954c28e512094088acf68bc1dc3782a2/b7737c423f7b4019afd6abcb4ea56b94.html?locale=en-US&state=PRODUCTION&version=SHIP",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDICDDL_DEFINE_FILTER_DRUL",
+      "text": "ABENDDICDDL_DEFINE_FILTER_DRUL\n\n`DEFINE FILTER DEPENDENCY RULE drul    ON dbtab      IF \\{ cond_pattern \\}        THEN \\{ derived_cond \\}` Variant of the [Dictionary DDL](ABENDICTIONARY_DDL_GLOSRY.html) statement [`DEFINE DEPENDENCY RULE`](ABENDDICDDL_DEFINE_DRUL.html) used to define a filter [dependency rule](ABENDEPENDENCY_RULE_GLOSRY.html). A filter dependency rule can be defined for exactly one DDIC database table `dbtab`. I\n\n/abap-docs-standard/ABENDDICDDL_DEFINE_FILTER_DRUL",
+      "bm25": -18.469251631042955,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDICDDL_DEFINE_FILTER_DRUL",
+      "relFile": "ABENDDICDDL_DEFINE_FILTER_DRUL.md",
+      "finalScore": 0.036231884057971016,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.469251631042955,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPTRACE-ENTRY",
+      "text": "ABAPTRACE-ENTRY\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** This statement writes the string contained in a flat character-like data object `text` to the current system trace if the trace is enabled in the transaction `ST01` using the trace component `*General kernel*`. abenabap.html abenabap\\_reference.html abenprogram\\_editing.html abenabap\\_tests.html abentests\\\n\n/abap-docs-standard/ABAPTRACE-ENTRY",
+      "bm25": -12.9028283227307,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPTRACE-ENTRY",
+      "relFile": "ABAPTRACE-ENTRY.md",
+      "finalScore": 0.03614457831325302,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.9028283227307,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2
+      }
+    },
+    {
+      "id": "sap-help-3354611508",
+      "text": "t codes for basis\n\n<b>ST04</b> <b>SQL</b> Server <b>Performance</b> <b>Analysis</b>\n\n            \t\n              <b>ST05</b> <b>Performance</b> <b>trace</b>\n\n            \n\t\n              DB50\n\n            \t\n              <b>ST06</b> or ST06N Operating System Monitor ... Buffers\n\n            \n\t\n              DB15 Data Archiving: Database Tables\n\n            \t\n              <b>ST04</b> Select DB activities (<b>SQL</b> Server <b>Performance</b> <b>Analysis</b>) ... DB12 DB Backup Monitor\n\n            \t\n              <b>ST01</b> System <b>Trace</b>\n\n            \n\t\n              DB13 DBA Planning Calendar\n\n            \t\n              <b>ST02</b> Setups/Tune ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611508.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611508.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_F1_COND_PFCG_MAPPING",
+      "text": "CDS or DDIC source code was not found\n\n`... ( ... \\{ element1[, element2 ...] \\} ... )          =|?= ASPECT pfcg_auth                 ( ... PFCG_MAPPING = pfcg_mapping ...  ) ...` Assigns an element list specified in curly brackets `\\{ element1[, element2 ...] \\}` to a [PFCG mapping](ABENCDS_PFCG_MAPPING_GLOSRY.html)\\\\ `pfcg_mapping` in the definition of a [PFCG condition](ABENCDS_F1_COND_PFCG.html). When the PFCG condition is transfor\n\n/abap-docs-standard/ABENCDS_F1_COND_PFCG_MAPPING",
+      "bm25": -17.00923523284334,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_F1_COND_PFCG_MAPPING",
+      "relFile": "ABENCDS_F1_COND_PFCG_MAPPING.md",
+      "finalScore": 0.035211267605633804,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.00923523284334,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3354611343",
+      "text": "Transaction Code For Basis Administration\n\nDB15 Data Archiving: Database Tables\n\n        \t\n          <b>ST04</b> Select DB activities (<b>SQL</b> Server <b>Performance</b> <b>Analysis</b>)\n\n        \n\t\n          <b>ST04</b> <b>SQL</b> Server <b>Performance</b> <b>Analysis</b>\n\n        \t\n          <b>ST05</b> ... <b>Performance</b> <b>trace</b>\n\n        \n\t\n          DB50\n\n        \t\n          <b>ST06</b> or ST06N Operating System Monitor\n\n        \n\t\n          RZ20\n\n        \t\n          ST10 Table call statistics ... DB12 DB Backup Monitor\n\n        \t\n          <b>ST01</b> System <b>Trace</b>\n\n        \n\t\n          DB13 DBA Planning Calendar\n\n        \t\n          <b>ST02</b> Setups/Tune Buffers ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611343.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611343.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENSTRUCTURE_STYLE_GDL",
+      "text": "ABENSTRUCTURE_STYLE_GDL\n\nThis section covers all aspects of a program that have no direct affect on its functions. These aspects remain hidden to users when they use the program. However, structure and style are very significant for the traceability of the program flow by a human viewer. The source code must be designed in such a way that a person other than the program developer can work with it properly. There are many\n\n/abap-docs-standard/ABENSTRUCTURE_STYLE_GDL",
+      "bm25": -15.530922189927976,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENSTRUCTURE_STYLE_GDL",
+      "relFile": "ABENSTRUCTURE_STYLE_GDL.md",
+      "finalScore": 0.034722222222222224,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.530922189927976,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3354611342",
+      "text": "Transaction Code For Basis Admin\n\nDB15 Data Archiving: Database Tables \n\n        \t\n           <b>ST04</b> Select DB activities (<b>SQL</b> Server <b>Performance</b> <b>Analysis</b>) \n\n        \n\t\n           <b>ST04</b> <b>SQL</b> Server <b>Performance</b> <b>Analysis</b> ... <b>ST05</b> <b>Performance</b> <b>trace</b> \n\n        \n\t\n           DB50 \n\n        \t\n           <b>ST06</b> or ST06N Operating System Monitor \n\n        \n\t\n           RZ20 \n\n        \t\n           ST10 Table call statistics ... DB12 DB Backup Monitor \n\n        \t\n           <b>ST01</b> System <b>Trace</b> \n\n        \n\t\n           DB13 DBA Planning Calendar \n\n        \t\n           <b>ST02</b> Setups/Tune Buffers ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611342.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611342.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAMC",
+      "text": "ABENAMC\n\nABAP Messaging Channels (AMC) are a method of communication between ABAP programs using messages. Using a publish and subscribe mechanism, messages can be exchanged between any AS ABAP programs, which allows communication between different user sessions and AS instances. Messages can be implemented as data objects with specific data types. Messages that can be sent and received are: ABAP messaging\n\n/abap-docs-standard/ABENAMC",
+      "bm25": -14.024767667777443,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAMC",
+      "relFile": "ABENAMC.md",
+      "finalScore": 0.03424657534246575,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.024767667777443,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3353523835",
+      "text": "Finding a BADI using Buffer trace - Transaction ST05 (Screenshots)\n\n&rarr; Start transaction '<b>ST05</b>' (<b>Performance</b> <b>Analysis</b>).\n &rarr; Set flag field &quot;Buffer\n    <b>trace</b>&quot;\n\n   Remark: We need to <b>trace</b> also the buffer calls,\n  because BADI database tables are buffered. ... Finding a BADI using Buffer <b>trace</b> - Transaction <b>ST05</b> (Screenshots)\nSAP Enhancements&nbsp;&rarr; Business Add-in (BADI)\n\n How do we find the BADI's associate\n  for a transaction using 'Buffer <b>Trace</b>' (<b>SQL</b> <b>Trace</b>)? ... (Especially view V_EXT_IMP and V_EXT_ACT)\n &rarr; Push the button\n  &quot;Activate <b>Trace</b>&quot;. Start transaction in a new GUI session.\n\n\n\n\n\n&rarr; Go back to the <b>Performance</b> <b>trace</b> session. ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/abap/3353523835.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/abap/3353523835.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3354611551",
+      "text": "Some More Transactions 1.2\n\nSystem\n  <b>Trace</b>\n<b>ST02</b> Setups/Tune Buffers\n<b>ST03</b> <b>Performance</b>, SAP Statistics, Workload\n<b>ST04</b> Select activity of the\n  databases\n<b>ST05</b> <b>SQL</b> <b>Trace</b>\n<b>ST06</b> Operating System Monitor\n<b>ST07</b> Application monitor\n<b>ST08</b> Network ... Monitor\n<b>ST09</b> Network Alert Monitor\nST10 Table Call Statistics\nST11 Display Developer <b>Traces</b>\nST12\n  Application Monitor\nST14 Application <b>Analysis</b>\nST22 ABAP Runtime Error <b>Analysis</b>\nST22 ABAP/4 Runtime ... Error\n  <b>Analysis</b>\nST62 Create industry short texts\nSTAT Local transaction statistics\nSTMS Transport Management\n  System\nSTUN <b>Performance</b> Monitoring\nSTW1 Test Workbench: Test catalog\nSTW2 Test workbench: ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611551.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/basis/3354611551.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-7602dcdd76524e8586173364e6dffe61",
+      "text": "Transaction Codes\n\nTuning Summary\n\n\t<b>ST03</b>\n\tWorkload <b>Analysis</b> and <b>Performance</b> Statistics\n\n\t<b>ST05</b>\n\t<b>Performance</b> <b>Trace</b> \n\n\t<b>ST06</b>\n\tOperating System Monitor\n\n\tST10\n\tTable Call Statistics\n\n\tST11\n\tDeveloper <b>Traces</b> \n\n\tST22\n\tABAP Dump ... <b>Analysis</b>\n\n\tSTAD \n\tSAP Statistic\n\n\tSU01\n\tUser Maintenance\n\n\tSU50\n\tView/Set Own User Data\n\n\tSU53\n\tEvaluate Authorization Check ... Monitoring Customizing \n\n\tSE11\n\tABAP Dictionary\n\n\tSE14\n\tDatabase Utility\n\n\tSE16\n\tData Browser\n\n\tSE17\n\tGeneral Table Display\n\n\tSE30\n\tABAP Runtime <b>Analysis</b>\n\n\tSE38\n\tABAP Editor\n\n\tSE80\n\tObject Navigation/ ...  — Product: SAP on IBM DB2 for Z/OS (Current Version)\n\nhttps://help.sap.com/docs/DB2/b4698846aa2645dbabff5dbec08f4124/7602dcdd76524e8586173364e6dffe61.html?locale=en-US&state=PRODUCTION&version=CURRENT_VERSION",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DB2/b4698846aa2645dbabff5dbec08f4124/7602dcdd76524e8586173364e6dffe61.html?locale=en-US&state=PRODUCTION&version=CURRENT_VERSION",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3362694280",
+      "text": "The SCN Community's Wiki of SAP Transaction Codes\n\n&nbsp;\n\n  <b>ST01</b>&nbsp;&ndash;&nbsp;System <b>Trace</b>&nbsp;\n\n  <b>ST02</b>&nbsp;&ndash;&nbsp;Setups/Tune Buffers&nbsp;\n\n  <b>ST04</b>&nbsp;&ndash;&nbsp;Select DB activities&nbsp;\n\n  <b>ST05</b>&nbsp;&ndash;&nbsp;<b>Performance</b> <b>trace</b>&nbsp;\n\n  <b>ST06</b>&nbsp;&ndash;&nbsp;Operating System Monitor&nbsp;\n\n  ST10&nbsp;&ndash;&nbsp;Table call statistics&nbsp;\n\n  <b>ST03</b>&nbsp;&ndash;&nbsp;<b>Performance</b> ... Browser&nbsp;\n\n  SM30&nbsp;&ndash;&nbsp;Call View Maintenance&nbsp;\n\n  SM31&nbsp;&ndash;&nbsp;Table Maintenance&nbsp;\n\n  &nbsp;\n\n\nBackground Jobs Administration:&nbsp;\n\n&nbsp;\n\n  SM36&nbsp;&ndash;&nbsp;Define Background Job&nbsp;\n\n  SM37&nbsp;&ndash;&nbsp;Background Job Overview&nbsp;\n\n  SM39&nbsp;&ndash;&nbsp;Job <b>Analysis</b> ... &nbsp;\n\n  SM13&nbsp;&ndash;&nbsp;Display Update Records&nbsp;\n\n  SM21&nbsp;&ndash;&nbsp;System Log&nbsp;\n\n  SM50&nbsp;&ndash;&nbsp;Work Process Overview&nbsp;\n\n  SM51&nbsp;&ndash;&nbsp;List of SAP Servers&nbsp;\n\n  SM66&nbsp;&ndash;&nbsp;System Wide Work Process Overview&nbsp;\n\n  ST22&nbsp;&ndash;&nbsp;ABAP/4 Runtime Error <b>Analysis</b> ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/nwtech/3362694280.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/nwtech/3362694280.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-3362173768",
+      "text": "Performance Analysis Tools\n\n<b>Trace</b> (<b>ST05</b>)\n\tTable <b>Analysis</b> (DB05)\n\tABAP Dictionary (SE11)\n              \n\tSAP MaxDB Tools\n\n\n          \n\n        \n\n        \n\n\n        \n\n\n      \n\n      \n        \n          \n            SAP Notes ... <b>Performance</b> <b>Analysis</b> Tools\n\n\n\n  \n    \n      \n        SAP&reg; MaxDB -&nbsp;<b>Performance</b>\n              <b>Analysis</b> Tools \n\n        \n\nThis section\n          describes the general tools and transactions for <b>performance</b> ... Details\n\n  \n    SAP System\n\n    The SAP system offers a range of transactions with which you can analyze <b>performance</b> problems: <b>ST03</b>, <b>ST05</b>,\n        STAD, SE30, DB05 ...  — Product: Support Content (1.0)\n\nhttps://help.sap.com/docs/SUPPORT_CONTENT/maxdb/3362173768.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SUPPORT_CONTENT/maxdb/3362173768.html?locale=en-US&state=PRODUCTION&version=1.0",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENABAP_HANA",
+      "text": "ABENABAP_HANA\n\nTo exploit the in-memory properties of the SAP HANA database in an optimal way, however, application logic must be passed in a suitable form from AS ABAP to the SAP HANA database. This can be done, for example, using suitably programmed [joins](ABENJOIN_GLOSRY.html) or using [SQL expressions](ABENSQL_EXPRESSION_GLOSRY.html) in [ABAP SQL](ABENABAP_SQL_GLOSRY.html) or in [ABAP CDS](ABENABAP_CDS_GLOS\n\n/abap-docs-standard/ABENABAP_HANA",
+      "bm25": -13.229762904827576,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENABAP_HANA",
+      "relFile": "ABENABAP_HANA.md",
+      "finalScore": 0.03205128205128205,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.229762904827576,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDEVELOPER_TRACE_GLOSRY",
+      "text": "ABENDEVELOPER_TRACE_GLOSRY\n\nTrace files on the [host computers](ABENHOST_COMPUTER_GLOSRY.html) of an [AS ABAP](ABENAS_ABAP_GLOSRY.html) that contain technical information for use in the event of an error. ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-standard/ABENDEVELOPER_TRACE_GLOSRY",
+      "bm25": -12.771667317809133,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDEVELOPER_TRACE_GLOSRY",
+      "relFile": "ABENDEVELOPER_TRACE_GLOSRY.md",
+      "finalScore": 0.031764705882352945,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.771667317809133,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENDDIC_DATABASE_TABLES_INDEX",
+      "text": "ABENDDIC_DATABASE_TABLES_INDEX\n\nIndexes are special structures on the database that can improve the query processing time or provide additional query capabilities like text search. One or several indexes can be defined per database table. A DDIC database table has at least one [primary index](ABENPRIMARY_INDEX_GLOSRY.html) defined by its key fields. It can also have one or more optional [secondary indexes](ABENSECONDARY_INDEX_GL\n\n/abap-docs-standard/ABENDDIC_DATABASE_TABLES_INDEX",
+      "bm25": -12.96470954378592,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENDDIC_DATABASE_TABLES_INDEX",
+      "relFile": "ABENDDIC_DATABASE_TABLES_INDEX.md",
+      "finalScore": 0.030864197530864196,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.96470954378592,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENTESTS_INTERNAL",
+      "text": "ABENTESTS_INTERNAL\n\n**These statements are for internal use only. \\\\nDo not use them in application programs.** -   [`TRACE-ENTRY`](ABAPTRACE-ENTRY.html) -   [`SYNTAX-TRACE`](ABAPSYNTAX-TRACE.html)\n\n/abap-docs-standard/ABENTESTS_INTERNAL",
+      "bm25": -12.926588579182916,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENTESTS_INTERNAL",
+      "relFile": "ABENTESTS_INTERNAL.md",
+      "finalScore": 0.03048780487804878,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.926588579182916,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPGENERATE_SUBR_POOL_INTERNAL",
+      "text": "ABAPGENERATE_SUBR_POOL_INTERNAL\n\n**This addition is for internal use only. \\\\nIt must not be used in application programs.** Trace output is saved to the file specified in `trf`. This addition automatically activates trace mode. abenabap.html abenabap\\_reference.html abenprogram\\_editing.html abenabap\\_language\\_dynamic.html abenabap\\_generic\\_program.html abapgenerate\\_subroutine\\_pool.html\n\n/abap-docs-standard/ABAPGENERATE_SUBR_POOL_INTERNAL",
+      "bm25": -12.808918733260075,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPGENERATE_SUBR_POOL_INTERNAL",
+      "relFile": "ABAPGENERATE_SUBR_POOL_INTERNAL.md",
+      "finalScore": 0.02976190476190476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.808918733260075,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSYNTAX-CHECK_INTERNAL",
+      "text": "Statements included in the interface of a program\n\n**These additions are for internal use only. \\\\nDo not use them in application programs.** If a runtime error occurs, the field `sid` returns the maximum 30-character key of the corresponding [short dump](ABENSHORT_DUMP_GLOSRY.html). Any trace output is stored in the internal table `trt`. The trace output is controlled by the statements `SYNTAX-TRACE ON` and `SYNTAX-TRACE OFF`. A standard table wi\n\n/abap-docs-standard/ABAPSYNTAX-CHECK_INTERNAL",
+      "bm25": -12.668780631169984,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSYNTAX-CHECK_INTERNAL",
+      "relFile": "ABAPSYNTAX-CHECK_INTERNAL.md",
+      "finalScore": 0.029069767441860465,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.668780631169984,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENAPC",
+      "text": "ABENAPC\n\nEach communication step using ABAP Push Channels, such as sending a message or responding to an event, can trigger the change of the [work process](ABENWORK_PROCESS_GLOSRY.html) and usually triggers a [database commit](ABENDATABASE_COMMIT_GLOSRY.html). ABAP Push Channels (APC) enable bidirectional communication with the Internet for ABAP programs using: Both communication protocols are based on th\n\n/abap-docs-standard/ABENAPC",
+      "bm25": -12.050702260348109,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENAPC",
+      "relFile": "ABENAPC.md",
+      "finalScore": 0.02840909090909091,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.050702260348109,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPGENERATE_DYNPRO",
+      "text": "ABAPGENERATE_DYNPRO\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** `GENERATE DYNPRO h f e m ID g`\\\\    `... MESSAGE f1 ... LINE f2 ... WORD f3.`\n\n/abap-docs-standard/ABAPGENERATE_DYNPRO",
+      "bm25": -11.74136077261391,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPGENERATE_DYNPRO",
+      "relFile": "ABAPGENERATE_DYNPRO.md",
+      "finalScore": 0.028089887640449437,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.74136077261391,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSYNTAX-CHECK_FOR_DYNPRO",
+      "text": "ABAPSYNTAX-CHECK_FOR_DYNPRO\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** `SYNTAX-CHECK FOR DYNPRO h f e m ...MESSAGE f1 ...LINE f2                                  ...WORD f3.` The `[dynpro](ABENDYNPRO_GLOSRY.html)` description is taken from the structure `h` and the internal tables `f`, `e`, and `m`. The structure `h` (dynpro header) should correspond to the structure `D020S`,\n\n/abap-docs-standard/ABAPSYNTAX-CHECK_FOR_DYNPRO",
+      "bm25": -11.618943803507713,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSYNTAX-CHECK_FOR_DYNPRO",
+      "relFile": "ABAPSYNTAX-CHECK_FOR_DYNPRO.md",
+      "finalScore": 0.02777777777777778,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.618943803507713,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCORRECTNESS_QUALITY_GUIDL",
+      "text": "ABENCORRECTNESS_QUALITY_GUIDL\n\nMost organizations that develop professional software have product standards that must be adhered to. These product standards define what is meant by correctness and quality of a program. SAP has many such standards, which development departments have to comply with. The current product standards that are most important to developers are listed below: Although these standards are, in part, legal r\n\n/abap-docs-standard/ABENCORRECTNESS_QUALITY_GUIDL",
+      "bm25": -11.605024378116926,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCORRECTNESS_QUALITY_GUIDL",
+      "relFile": "ABENCORRECTNESS_QUALITY_GUIDL.md",
+      "finalScore": 0.027472527472527476,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.605024378116926,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSYNTAX-CHECK_FOR_PROGRAM",
+      "text": "ABAPSYNTAX-CHECK_FOR_PROGRAM\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** `SYNTAX-CHECK FOR PROGRAM prog`\\\\                   `MESSAGE mess LINE lin WORD wrd`\\\\\n\n/abap-docs-standard/ABAPSYNTAX-CHECK_FOR_PROGRAM",
+      "bm25": -11.105053516850539,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSYNTAX-CHECK_FOR_PROGRAM",
+      "relFile": "ABAPSYNTAX-CHECK_FOR_PROGRAM.md",
+      "finalScore": 0.02688172043010753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.105053516850539,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNESTING_DEPTH_GUIDL",
+      "text": "ABENNESTING_DEPTH_GUIDL\n\nThe nesting depth is the number of statement blocks that are nested due to the use of control structures (branches, loops). We will discuss the nesting depth at the level of a procedure ([method](ABENFUNCT_MODULE_SUBROUTINE_GUIDL.html)). [Implementations must not](ABENDIAL_MOD_EVENT_BLOCK_GUIDL.html) occur at other points. The maximum nesting depth is restricted to 256 by ABAP Compiler. **Restrict\n\n/abap-docs-standard/ABENNESTING_DEPTH_GUIDL",
+      "bm25": -11.041785482050456,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNESTING_DEPTH_GUIDL",
+      "relFile": "ABENNESTING_DEPTH_GUIDL.md",
+      "finalScore": 0.026595744680851064,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.041785482050456,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPOPEN_DATASET",
+      "text": "System Fields\n\nThis statement opens the file specified in `dset` on the [host computer](ABENHOST_COMPUTER_GLOSRY.html) of the current AS instance for the access specified in [`access`](ABAPOPEN_DATASET_ACCESS.html) in a storage mode specified in [`mode`](ABAPOPEN_DATASET_MODE.html). `dset` expects a character-like data object containing the [physical name](ABENPHYSICAL_FILENAME_GLOSRY.html) of the file. The file\n\n/abap-docs-standard/ABAPOPEN_DATASET",
+      "bm25": -10.996033392186717,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPOPEN_DATASET",
+      "relFile": "ABAPOPEN_DATASET.md",
+      "finalScore": 0.02631578947368421,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.996033392186717,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPGENERATE_REPORT",
+      "text": "ABAPGENERATE_REPORT\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** `GENERATE REPORT prog [error_handling].` The program specified in the `prog` field is generated in the current work process. If the program is an executable program, that is, a program of internal type 1, the [selection screen](ABENSELECTION_SCREEN_GLOSRY.html) is also generated automatically.\n\n/abap-docs-standard/ABAPGENERATE_REPORT",
+      "bm25": -10.990611081061942,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPGENERATE_REPORT",
+      "relFile": "ABAPGENERATE_REPORT.md",
+      "finalScore": 0.02577319587628866,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.990611081061942,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-620-TOOLS",
+      "text": "ABENNEWS-620-TOOLS\n\nCode Inspector is a tool that enables ABAP programs, function modules, classes, interfaces, and dictionary objects to be checked statically for errors, performance, security, and reliability. The development of these [repository objects](ABENREPOSITORY_OBJECT_GLOSRY.html) is supported by simple search and check functions. The check results are available in the form of a tree hierarchy Code Inspect\n\n/abap-docs-standard/ABENNEWS-620-TOOLS",
+      "bm25": -22.041307398664447,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-620-TOOLS",
+      "relFile": "ABENNEWS-620-TOOLS.md",
+      "finalScore": 0.025373134328358207,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.041307398664447,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPOPEN_DATASET_ERROR_HANDLING",
+      "text": "ABAPOPEN_DATASET_ERROR_HANDLING\n\n`... [MESSAGE msg]`\\\\      `[IGNORING CONVERSION ERRORS]`\\\\      `[REPLACEMENT CHARACTER rc] ...`\n\n/abap-docs-standard/ABAPOPEN_DATASET_ERROR_HANDLING",
+      "bm25": -10.133151530048464,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPOPEN_DATASET_ERROR_HANDLING",
+      "relFile": "ABAPOPEN_DATASET_ERROR_HANDLING.md",
+      "finalScore": 0.025252525252525256,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.133151530048464,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13563513",
+      "text": "ST05 : Analyze Individual Trace Records\n\n...Analysis Guide might also be helpful. The Open SAP course A First Step Towards SAP HANA Query Optimization covers further techniques for SQL query performance analyses and optimizations.\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/st05-analyze-individual-trace-records/ba-p/13563513?search-action-id=497478151718&search-result-uid=13563513",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/st05-analyze-individual-trace-records/ba-p/13563513?search-action-id=497478151718&search-result-uid=13563513",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_1795438715-_ANNO",
+      "text": "Eliminate Internal Business Volume with This Feature\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. To enable Analytics, there has to be defined CDS views which represent the Analytical Provider and CDS view, which represent analytical queries. Analytical queries must select from an A\n\n/abap-docs-standard/ABENCDS_1795438715-_ANNO",
+      "bm25": -10.029164646274355,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_1795438715-_ANNO",
+      "relFile": "ABENCDS_1795438715-_ANNO.md",
+      "finalScore": 0.025,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -10.029164646274355,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-12823559",
+      "text": "The SQL Trace ( ST05 ) &#150; Quick and Easy\n\nThe SQL Trace , which is part of the Performance Trace (transaction ST05 ), is the most important tool to test the performance of the database. Unfortunately, information on how to use the SQL Trace a...\n\nhttps://community.sap.com/t5/application-development-and-automation-blog-posts/the-sql-trace-st05-quick-and-easy/ba-p/12823559?search-action-id=497478151718&search-result-uid=12823559",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/application-development-and-automation-blog-posts/the-sql-trace-st05-quick-and-easy/ba-p/12823559?search-action-id=497478151718&search-result-uid=12823559",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABAPSCAN",
+      "text": "I (identifier)\n\n**This statement is for internal use only. \\\\nIt must not be used in application programs.** Breaks down the ABAP source code contained in the source code table `itab1` into tokens according to the rules of the ABAP scanner. The tokens are returned (one for each line) in the token table `itab2`. The source code to be broken down must not necessarily be contained in an internal table. It can be spe\n\n/abap-docs-standard/ABAPSCAN",
+      "bm25": -9.92227819712417,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABAPSCAN",
+      "relFile": "ABAPSCAN.md",
+      "finalScore": 0.024752475247524754,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.92227819712417,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_785013031_ANNO",
+      "text": "Eliminate Internal Business Volume with This Feature\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. To enable Analytics, there has to be defined CDS views which represent the Analytical Provider and CDS view, which represent analytical queries. Analytical queries must select from an A\n\n/abap-docs-standard/ABENCDS_785013031_ANNO",
+      "bm25": -9.854732339165722,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_785013031_ANNO",
+      "relFile": "ABENCDS_785013031_ANNO.md",
+      "finalScore": 0.024509803921568627,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.854732339165722,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-13560035",
+      "text": "ST05 : Activate Trace Recording with Filter\n\n...he performance analysis of their business application. Maybe they do not have authorization to run ST05 , while you are not allowed to work with the application. Or you do not know ahead of time w...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/st05-activate-trace-recording-with-filter/ba-p/13560035?search-action-id=497478151718&search-result-uid=13560035",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/st05-activate-trace-recording-with-filter/ba-p/13560035?search-action-id=497478151718&search-result-uid=13560035",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENNEWS-710-TOOLS",
+      "text": "ABENNEWS-710-TOOLS\n\nCode Completion has been added to the new ABAP front-end editor. This tool proposes appropriate ABAP words and operands for the current code location. By default, Code Completion is called using Ctrl+Space. The following units can be completed: The proposals can be accepted as they are or as patterns with prefilled parameters. The <ZK>Source Code-Based Editor</> setting is used to expand the inter\n\n/abap-docs-standard/ABENNEWS-710-TOOLS",
+      "bm25": -17.397046925413683,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENNEWS-710-TOOLS",
+      "relFile": "ABENNEWS-710-TOOLS.md",
+      "finalScore": 0.024285714285714285,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.397046925413683,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCDS_1211955043-_ANNO",
+      "text": "Eliminate Internal Business Volume with This Feature\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. To enable Analytics, there has to be defined CDS views which represent the Analytical Provider and CDS view, which represent analytical queries. Analytical queries must select from an A\n\n/abap-docs-standard/ABENCDS_1211955043-_ANNO",
+      "bm25": -9.846766760060452,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCDS_1211955043-_ANNO",
+      "relFile": "ABENCDS_1211955043-_ANNO.md",
+      "finalScore": 0.02427184466019417,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.846766760060452,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENPROGRAM_PROPERTY_GUIDL",
+      "text": "ABENPROGRAM_PROPERTY_GUIDL\n\nAlongside various, less important properties, each ABAP program has a set of program properties that control specific aspects of the program behavior and syntax check severity: The program properties are defined when a program is created the relevant tool (Class Builder, Function Builder, ABAP Editor). It is possible to change them later. **Use the default settings for program properties**\n\n/abap-docs-standard/ABENPROGRAM_PROPERTY_GUIDL",
+      "bm25": -9.81275033379659,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENPROGRAM_PROPERTY_GUIDL",
+      "relFile": "ABENPROGRAM_PROPERTY_GUIDL.md",
+      "finalScore": 0.02403846153846154,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.81275033379659,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/core-data-services/index#tipps-und-trick",
+      "text": "Tipps und Trick\n\n{: .recommendation }   > 1. Performance Tracing - Untersuchen Sie immer jeden CDS-View! Egal ob SAP Standard oder selbst erstellt. Über einen SQL Trace in ST05 können Sie die SQL Ausführung nachvollziehen, dazu müssen Sie die .PLV Datei extrahieren und in Eclipse anzeigen. So können Sie Zeitverteilu...\n\n/dsag-abap-leitfaden/core-data-services/index#tipps-und-trick",
+      "bm25": -26.297153771521522,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/core-data-services/index#tipps-und-trick",
+      "relFile": "core-data-services/index.md",
+      "finalScore": 0.0234375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.297153771521522,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 0.5
+      }
+    },
+    {
+      "id": "/abap-docs-standard/ABENCOMPLEXITY_GDL",
+      "text": "ABENCOMPLEXITY_GDL\n\nThe aim of program complexity is to keep the source code as clear and readable as possible for the human reader. The computer has no problems with compiling or executing highly complex programs. Unformatted source code does also not constitute any problems. The human reader, however, is usually overwhelmed by the program complexity. High complexity in this context means, for example, voluminous pr\n\n/abap-docs-standard/ABENCOMPLEXITY_GDL",
+      "bm25": -9.527569422375493,
+      "sourceId": "abap-docs-standard",
+      "path": "/abap-docs-standard/ABENCOMPLEXITY_GDL",
+      "relFile": "ABENCOMPLEXITY_GDL.md",
+      "finalScore": 0.02336448598130841,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -9.527569422375493,
+        "rank": 47,
+        "rrfScore": 0.009345794392523364,
+        "boost": 1.5
+      }
+    }
+  ]
+}

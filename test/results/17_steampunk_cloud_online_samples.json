@@ -1,0 +1,801 @@
+{
+  "meta": {
+    "query": "Steampunk ABAP Environment BTP",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": true,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:19:02.024Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
+      "text": "ABENSTEAMPUNK_GLOSRY\n\nInternal SAP project name for the [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). See also [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html). ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
+      "bm25": -27.07640740849976,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSTEAMPUNK_GLOSRY",
+      "relFile": "ABENSTEAMPUNK_GLOSRY.md",
+      "finalScore": 0.09508196721311475,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -27.07640740849976,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 4.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAP_BTP_ABAP_ENV_GLOSRY",
+      "text": "ABENSAP_BTP_ABAP_ENV_GLOSRY\n\nABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENSAP_BTP_ABAP_ENV_GLOSRY",
+      "bm25": -18.877055926816226,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAP_BTP_ABAP_ENV_GLOSRY",
+      "relFile": "ABENSAP_BTP_ABAP_ENV_GLOSRY.md",
+      "finalScore": 0.09402985074626866,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.877055926816226,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 5.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY",
+      "text": "ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY\n\nRestricted [ABAP development environment](ABENABAP_DEV_ENVIR_GLOSRY.html) (aka [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html)) for customer developments in [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html), [SAP S/4HANA Cloud Private Edition](ABENSAP_S4HANA_CPRIV_GLOSRY.html) and [SAP S/4HANA](ABENSAP_S4HANA_GLOSRY.html). The developments are governed by the restricted\n\n/abap-docs-cloud/ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY",
+      "bm25": -26.09017106731694,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY",
+      "relFile": "ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.md",
+      "finalScore": 0.09354838709677418,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.09017106731694,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 4.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEMBEDDED_STEAMPUNK_GLOSRY",
+      "text": "ABENEMBEDDED_STEAMPUNK_GLOSRY\n\nInternal SAP project name for [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html). See also [Steampunk](ABENSTEAMPUNK_GLOSRY.html). ABENTECHNO\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENEMBEDDED_STEAMPUNK_GLOSRY",
+      "bm25": -20.16360471731576,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEMBEDDED_STEAMPUNK_GLOSRY",
+      "relFile": "ABENEMBEDDED_STEAMPUNK_GLOSRY.md",
+      "finalScore": 0.08923076923076924,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.16360471731576,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 4.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
+      "text": "ABENNEWS-756-ABAP_DOCU\n\nFrom release 7.56 on, important settings of the ABAP Keyword Documentation can be configured explicitly. Before, the documentation was configured implicitly from system settings. The configuration of the ABAP Keyword Documentation is saved in customizing table `ABDOCCONFIG`, that is maintained with transaction code `ABAP_DOCU_CONFIG` (based on executable program `ABAP_DOCU_CONFIG`) or with the con\n\n/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
+      "bm25": -22.2057523273515,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-756-ABAP_DOCU",
+      "relFile": "ABENNEWS-756-ABAP_DOCU.md",
+      "finalScore": 0.08412698412698412,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.2057523273515,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 4.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENABAP_ENVIRONMNENT_GLOSRY",
+      "text": "ABENABAP_ENVIRONMNENT_GLOSRY\n\nABAP environment may refer to: -   [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). -   [ABAP development environment](ABENABAP_DEV_ENVIR_GLOSRY.html).\n\n/abap-docs-cloud/ABENABAP_ENVIRONMNENT_GLOSRY",
+      "bm25": -14.137846909312797,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENABAP_ENVIRONMNENT_GLOSRY",
+      "relFile": "ABENABAP_ENVIRONMNENT_GLOSRY.md",
+      "finalScore": 0.08405797101449275,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.137846909312797,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 4.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAP_BTP_GLOSRY",
+      "text": "ABENSAP_BTP_GLOSRY\n\nSAP BTP for short. A platform for development and deployment of business technology provided by SAP. The main focus of SAP BTP is on cloud development, but it also supports technologies used in on-premise deployments such as the [SAP HANA database](ABENHANA_DATABASE_GLOSRY.html). SAP BTP comprises the [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html) that makes the [ABAP technology](ABE\n\n/abap-docs-cloud/ABENSAP_BTP_GLOSRY",
+      "bm25": -14.066986340965954,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAP_BTP_GLOSRY",
+      "relFile": "ABENSAP_BTP_GLOSRY.md",
+      "finalScore": 0.08285714285714285,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.066986340965954,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 4.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-783-ABAP_DOCU",
+      "text": "ABENNEWS-783-ABAP_DOCU\n\nFrom release 7.83 on, important settings of the ABAP Keyword Documentation can be configured explicitly. Before, the documentation was configured implicitly from system settings. The configuration of the ABAP Keyword Documentation is saved in customizing table `ABDOCCONFIG`, that is maintained with transaction code `ABAP_DOCU_CONFIG` (based on executable program `ABAP_DOCU_CONFIG`) or with the con\n\n/abap-docs-cloud/ABENNEWS-783-ABAP_DOCU",
+      "bm25": -22.2057523273515,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-783-ABAP_DOCU",
+      "relFile": "ABENNEWS-783-ABAP_DOCU.md",
+      "finalScore": 0.0828125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.2057523273515,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 4.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
+      "text": "ABENSAP_S4HANA_CPUB_GLOSRY\n\nSAP S/4HANA Cloud for short. Cloud version of [SAP S/4HANA](ABENSAP_S4HANA_GLOSRY.html). Partner and customer developments are governed by the [ABAP Cloud](ABENABAP_CLOUD_GLOSRY.html) paradigm. For that the [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html) (aka [embedded Steampunk](ABENEMBEDDED_STEAMPUNK_GLOSRY.html)) can be used. See also [SAP S/4HANA Cloud Private Edit\n\n/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
+      "bm25": -19.60554448834505,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAP_S4HANA_CPUB_GLOSRY",
+      "relFile": "ABENSAP_S4HANA_CPUB_GLOSRY.md",
+      "finalScore": 0.0803030303030303,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.60554448834505,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 4.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_DDL_V5",
+      "text": "ABENCDS_DDL_V5\n\nIn [CDS DDL](ABENCDS_DDL_GLOSRY.html), the following restrictions apply to CDS entities defined by customers and partners in [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html) and [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html): -   In the definition of CDS entities, only repository objects released by SAP, or repository objects in the same software component\n\n/abap-docs-cloud/ABENCDS_DDL_V5",
+      "bm25": -13.983115510572011,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_DDL_V5",
+      "relFile": "ABENCDS_DDL_V5.md",
+      "finalScore": 0.07887323943661971,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.983115510572011,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 4.6
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSAP_S4HANA_CPRIV_GLOSRY",
+      "text": "ABENSAP_S4HANA_CPRIV_GLOSRY\n\nCloud version of [SAP S/4HANA](ABENSAP_S4HANA_GLOSRY.html) based on the [ABAP Platform](ABENABAP_PLATFORM_GLOSRY.html) of SAP S/4HANA. Partner and customer developments can either use the [ABAP Cloud](ABENABAP_CLOUD_GLOSRY.html) or the [classic ABAP](ABENCLASSIC_ABAP_GLOSRY.html) paradigm. For ABAP Cloud the [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html) (aka [embedde\n\n/abap-docs-cloud/ABENSAP_S4HANA_CPRIV_GLOSRY",
+      "bm25": -17.74273647691986,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSAP_S4HANA_CPRIV_GLOSRY",
+      "relFile": "ABENSAP_S4HANA_CPRIV_GLOSRY.md",
+      "finalScore": 0.07794117647058824,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.74273647691986,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 4.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENDDIC_V5",
+      "text": "ABENDDIC_V5\n\nIn [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html) and [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html), customers and partners can define DDIC data elements, DDIC structures, and DDIC database tables in ADT. The restriction applies to these dictionary objects that only repository objects [released as API](ABENRELEASED_API_GLOSRY.html) for [ABAP language ve\n\n/abap-docs-cloud/ABENDDIC_V5",
+      "bm25": -13.898028678269524,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENDDIC_V5",
+      "relFile": "ABENDDIC_V5.md",
+      "finalScore": 0.07567567567567568,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.898028678269524,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 4.6
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
+      "text": "ABENCDS_F1_DCL_SYNTAX_V5\n\nIn [CDS DCL](ABENCDS_DCL_GLOSRY.html), the following restrictions apply to CDS roles and CDS access policies defined by customers and partners in [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html) and [SAP S/4HANA Cloud ABAP environment](ABENS4_HANA_CLOUD_ABAP_ENV_GLOSRY.html): See [Released APIs](ABENRELEASED_APIS.html) for a list of repository objects that are released as APIs in the c\n\n/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
+      "bm25": -13.590733901183869,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_F1_DCL_SYNTAX_V5",
+      "relFile": "ABENCDS_F1_DCL_SYNTAX_V5.md",
+      "finalScore": 0.0691358024691358,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.590733901183869,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 4.6
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-91",
+      "text": "ABENNEWS-91\n\nThe 9.1x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.9x](ABENNEWS-79.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). The first\n\n/abap-docs-cloud/ABENNEWS-91",
+      "bm25": -13.822758381259446,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-91",
+      "relFile": "ABENNEWS-91.md",
+      "finalScore": 0.064,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.822758381259446,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 3.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-76",
+      "text": "ABENNEWS-76\n\nThe following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.html). The first column links to the respective release news. The [ABAP technology](ABENABAP_TECHNO_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-76",
+      "bm25": -13.819333872229631,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-76",
+      "relFile": "ABENNEWS-76.md",
+      "finalScore": 0.0631578947368421,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.819333872229631,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 3.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-79",
+      "text": "ABENNEWS-79\n\nThe 7.9x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.8x](ABENNEWS-78.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-79",
+      "bm25": -13.81248995829632,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-79",
+      "relFile": "ABENNEWS-79.md",
+      "finalScore": 0.06233766233766234,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.81248995829632,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 3.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-77",
+      "text": "ABENNEWS-77\n\nThe 7.7x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.6x](ABENNEWS-76.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-77",
+      "bm25": -13.781776022314721,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-77",
+      "relFile": "ABENNEWS-77.md",
+      "finalScore": 0.061538461538461535,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.781776022314721,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 3.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-78",
+      "text": "ABENNEWS-78\n\nThe 7.8x [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) are based on ABAP release [7.7x](ABENNEWS-77.html). The following table shows the [ABAP releases](ABENABAP_RELEASE_GLOSRY.html) and the associated [ABAP kernel](ABENKERNEL_GLOSRY.html) releases that are shipped with [SAP S/4HANA Cloud Public Edition](ABENSAP_S4HANA_CPUB_GLOSRY.html) and [SAP BTP ABAP environment](ABENSAP_BTP_ABAP_ENV_GLOSRY.ht\n\n/abap-docs-cloud/ABENNEWS-78",
+      "bm25": -13.776670307957122,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-78",
+      "relFile": "ABENNEWS-78.md",
+      "finalScore": 0.060759493670886074,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.776670307957122,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 3.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#sap-btp-abap-environment-trial",
+      "text": "SAP BTP ABAP Environment Trial\n\nIf you don’t have a system available, you could also try it out in the SAP BTP ABAP Environment Trial systems. Check out this [tutorial](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html) on how to get a trial user. <br/>\n\n/abap-fiori-showcase/README#sap-btp-abap-environment-trial",
+      "bm25": -13.903693090880505,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#sap-btp-abap-environment-trial",
+      "relFile": "README.md",
+      "finalScore": 0.05205479452054794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.903693090880505,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README#sap-btp-abap-environment-and-sap-s-4hana-cloud-abap-environment",
+      "text": "SAP BTP ABAP Environment and SAP S/4HANA Cloud ABAP Environment\n\n1. Create a package **'ZDMO_RAP_GENERATOR'**. 2. Link this package with the URL of the RAP Generator repository `https://github.com/SAP-samples/cloud-abap-rap`. 3. Use the branch `abap-environment`.\n\n/cloud-abap-rap/README#sap-btp-abap-environment-and-sap-s-4hana-cloud-abap-environment",
+      "bm25": -13.91626062239673,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README#sap-btp-abap-environment-and-sap-s-4hana-cloud-abap-environment",
+      "relFile": "README.md",
+      "finalScore": 0.05138888888888889,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.91626062239673,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
+      "text": "ABENCDS_LANGUAGE_ELEMENTS\n\nThe following sections shows all available language elements of the [CDS DDL](ABENCDS_DDL_GLOSRY.html) and [CDS DCL](ABENCDS_DCL_GLOSRY.html) in [ABAP CDS](ABENABAP_CDS_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). In addition to the language elements shown here, C\n\n/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
+      "bm25": -12.62967650968975,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_LANGUAGE_ELEMENTS",
+      "relFile": "ABENCDS_LANGUAGE_ELEMENTS.md",
+      "finalScore": 0.04827586206896552,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.62967650968975,
+        "rank": 56,
+        "rrfScore": 0.008620689655172414,
+        "boost": 4.6
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README_old#sap-btp-abap-environment-or-sap-s-4hana-cloud-abap-environment",
+      "text": "SAP BTP, ABAP Environment or SAP S/4HANA Cloud, ABAP Environment\n\nWhen you want to install this sample code in your own ABAP Environment systems you can simply download it using the abapGIT plugin in ABAP Development Tools in Eclipse when working with *SAP BTP, ABAP environment* or *SAP S/4HANA Cloud, ABAP Environment*   Use the following link to the GitHub repsit...\n\n/cloud-abap-rap/README_old#sap-btp-abap-environment-or-sap-s-4hana-cloud-abap-environment",
+      "bm25": -13.59693853200829,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README_old#sap-btp-abap-environment-or-sap-s-4hana-cloud-abap-environment",
+      "relFile": "README_old.md",
+      "finalScore": 0.046250000000000006,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.59693853200829,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README_old#sap-btp-abap-environment-and-sap-s-4hana-cloud-abap-environment",
+      "text": "SAP BTP ABAP Environment and SAP S/4HANA Cloud ABAP Environment\n\n1. Create a package **'ZDMO_RAP_GENERATOR'** 2. Link this package with the URL of the RAP Generator repo `https://github.com/SAP-samples/cloud-abap-rap`   3. Pull changes\n\n/cloud-abap-rap/README_old#sap-btp-abap-environment-and-sap-s-4hana-cloud-abap-environment",
+      "bm25": -13.37874010843801,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README_old#sap-btp-abap-environment-and-sap-s-4hana-cloud-abap-environment",
+      "relFile": "README_old.md",
+      "finalScore": 0.0451219512195122,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.37874010843801,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 2.7
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "text": "ABENRAP_FEATURE_TABLE\n\nThe following sections shows all available language elements of the [RAP BDL](ABENCDS_BDL_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). The following tables list the keywords that can be used in BDEFs of type managed, unmanaged, and projection. If the release dates\n\n/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "bm25": -11.600813545678447,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "relFile": "ABENRAP_FEATURE_TABLE.md",
+      "finalScore": 0.039716312056737584,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.600813545678447,
+        "rank": 81,
+        "rrfScore": 0.0070921985815602835,
+        "boost": 4.6
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/25_Authorization_Checks#executable-example-sap-btp-abap-environment-",
+      "text": "Executable Example (SAP BTP ABAP Environment)\n\n> [!NOTE] > - The example is intentionally simplified and nonsemantic, designed to explore basic authorization checks. > - It is not meant to serve as a model for proper authorization check design. Always devise your own solutions for each unique case.\n\n/abap-cheat-sheets/25_Authorization_Checks#executable-example-sap-btp-abap-environment-",
+      "bm25": -12.927763148858178,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/25_Authorization_Checks#executable-example-sap-btp-abap-environment-",
+      "relFile": "25_Authorization_Checks.md",
+      "finalScore": 0.0392156862745098,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.927763148858178,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 3
+      }
+    },
+    {
+      "id": "sap-help-e9f4167cd4f94f7da072fc8676c4112f",
+      "text": "Tools\n\nTools\n\n\n<b>ABAP</b> Development Tools for Eclipse\n\n\n\nNew MyHome for <b>Steampunk</b>\n\nPlanned Release: |SAP\n<b>BTP</b> <b>ABAP</b> <b>environment</b> 2602|\n\nMyHome is the improved front-page of the S/4 <b>ABAP</b> FLP that offers more insights ...  — Product: ABAP Platform Cross-Product (latest)\n\nhttps://help.sap.com/docs/ABAP_PLATFORM_CROSS/f2afdaf444844c38909aefc7bc792cdb/e9f4167cd4f94f7da072fc8676c4112f.html?locale=en-US&state=PRODUCTION&version=latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_PLATFORM_CROSS/f2afdaf444844c38909aefc7bc792cdb/e9f4167cd4f94f7da072fc8676c4112f.html?locale=en-US&state=PRODUCTION&version=latest",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-f33957fb40e54a278e38e24c994acd5c",
+      "text": "Examples of Lot Allocation\n\nSystem) for Lot Selection Method FIFO\tDate\n\n\tBusiness Transaction\n\n\t<b>BT</b> Item\n\n\tLot ID\n\n\tQuantity <b>BT</b> in Lot\n\n\tAmount <b>BT</b> in Lot in EUR\n\n\n\tJanuary 21\n\n\t<b>BT</b> 1\n\n\t1\n\n\t1\n\n\t10 units\n\n\t1000\n\n\n\tFebruary 10\n\n\t<b>BT</b> 2 ... 23\n\n\t<b>BT1</b>\n\n\t1\n2\n\n\tPurchase\nCharge (to pay)\n\n\t1000\n1\n\n\t10 units\n\n\n\tFebruary 10\n\n\tFebruary 12\n\n\t<b>BT2</b>\n\n\t1\n2\n\n\tPurchase\nCharge (to pay)\n\n\t3300\n1\n\n\t30 units\n\n\n\tFebruary 20\n\n\tFebruary 22\n\n\t<b>BT3</b>\n\n\t1\n2\n\n\tPurchase ... Charge (to pay)\n\n\t6500\n1\n\n\t50 units\n\n\n\tMarch 20\n\n\tMarch 22\n\n\t<b>BT4</b>\n\n\t1\n\n\tSale\n\n\t2500\n\n\t20 units\n\n\n\tMarch 22\n\n\tMarch 22\n\n\t<b>BT5</b>\n\n\t1\n\n\tIncoming payment\n\n\t2500\n\n\t\n\n\n\n\tApril 4\n\n\tApril 13\n\n\t<b>BT6</b>\n\n\t1\n\n\tDividends ...  — Product: SAP S/4HANA (2022 Latest)\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/273982318bde4278abeff26a3b020fd9/f33957fb40e54a278e38e24c994acd5c.html?locale=en-US&state=PRODUCTION&version=2022.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/273982318bde4278abeff26a3b020fd9/f33957fb40e54a278e38e24c994acd5c.html?locale=en-US&state=PRODUCTION&version=2022.latest",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-13323f6f6c114ccb94a4ca2bddec4a14",
+      "text": "Configuration for Specific Use Cases\n\n<b>ABAP</b> <b>Environment</b>\n\n\nBefore starting the <b>ABAP</b> cloud project, create a SAP <b>BTP</b> destination for your SAP <b>BTP</b>\n<b>ABAP</b> <b>Environment</b> within your subaccount. ... Before working with the <b>ABAP</b> cloud project, you must create a&nbsp;SAP <b>BTP</b>&nbsp;destination for your\nsubaccount. ... Type\n\tHTTP\n\n\tURL\n\thost-url-<b>steampunk</b>-system\n\nNote\n\nFor S/4HANA Public\nCloud, use the URL ending in -api\nafter the host system. ...  — Product: SAP Build (Cloud)\n\nhttps://help.sap.com/docs/SAP Build/9d385a1842594230993661ca78dce150/13323f6f6c114ccb94a4ca2bddec4a14.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP Build/9d385a1842594230993661ca78dce150/13323f6f6c114ccb94a4ca2bddec4a14.html?locale=en-US&state=PRODUCTION&version=Cloud",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_694e21e1-e5e2-4b54-9c54-6f14de392ac9",
+      "text": "Develop extensions for SAP S/4HANA with SAP BTP, ABAP Environment, runtime\n\nand Required Systems\n, Learn About SAP <b>BTP</b>, <b>ABAP</b> <b>Environment</b>\n, Install the <b>ABAP</b> Development Tools ADT\n, Quick Account Setup\n, Create an SAP <b>BTP</b> <b>ABAP</b> <b>Environment</b> Trial User\n, Connect to your SAP <b>BTP</b>, <b>ABAP</b> ... SAP S/4HANA Cloud <b>ABAP</b> <b>Environment</b> (aka embedded <b>Steampunk</b>) now offers the new developer extensibility option in addition to the proven key user and side-by-side extensibility options. ... Problem- Use the SAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> to build side-by-side extensions and to reach a clean core. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_694e21e1-e5e2-4b54-9c54-6f14de392ac9.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_694e21e1-e5e2-4b54-9c54-6f14de392ac9.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_0d65670b-50e4-47fc-9ff4-a43ef48a3994",
+      "text": "Develop extensions for SAP S/4HANA with SAP BTP, ABAP Environment, runtime\n\nand Required Systems\n, Learn About SAP <b>BTP</b>, <b>ABAP</b> <b>Environment</b>\n, Install the <b>ABAP</b> Development Tools ADT\n, Quick Account Setup\n, Create an SAP <b>BTP</b> <b>ABAP</b> <b>Environment</b> Trial User\n, Connect to your SAP <b>BTP</b>, <b>ABAP</b> ... SAP S/4HANA Cloud <b>ABAP</b> <b>Environment</b> (aka embedded <b>Steampunk</b>) now offers the new developer extensibility option in addition to the proven key user and side-by-side extensibility options. ... <b>ABAP</b> <b>Environment</b>:  \nCreate an SAP <b>BTP</b> <b>ABAP</b> instance, configure connection to the SAP S/4HANA Cloud system. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_deliverable_uc/dc_usecase_0d65670b-50e4-47fc-9ff4-a43ef48a3994.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_deliverable_uc/dc_usecase_0d65670b-50e4-47fc-9ff4-a43ef48a3994.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_878402c0-dd03-4bef-a61b-2aad6443a569",
+      "text": "SAP S/4HANA Cloud Transportation Order Attachment Management in the SAP BTP ABAP Environment\n\nRAP is available on\n\nSAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> (aka <b>Steampunk</b>)\n\nSAP S/4HANA on-premise starting with edition 1909\n\nSAP S/4HANA Cloud, <b>ABAP</b> <b>environment</b> (aka embedded <b>Steampunk</b>)\n\nHow do I get started with ... extension in the SAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> for SAP S/4HANA Cloud. ... It is very suitable for customers who want to build side-by-side extension solutions in SAP <b>BTP</b>, <b>ABAP</b> <b>environments</b>. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_878402c0-dd03-4bef-a61b-2aad6443a569.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_878402c0-dd03-4bef-a61b-2aad6443a569.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_d6f50a54-7691-4555-8c08-af158907151c",
+      "text": "SAP S/4HANA Cloud Transportation Order Attachment Management in the SAP BTP ABAP Environment\n\nRAP is available on\n\nSAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> (aka <b>Steampunk</b>)\n\nSAP S/4HANA on-premise starting with edition 1909\n\nSAP S/4HANA Cloud, <b>ABAP</b> <b>environment</b> (aka embedded <b>Steampunk</b>)\n\nProject Board \nUse Case ... extension in the SAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> for SAP S/4HANA Cloud. ... It is very suitable for customers who want to build side-by-side extension solutions in SAP <b>BTP</b>, <b>ABAP</b> <b>environments</b>. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_deliverable_uc/dc_usecase_d6f50a54-7691-4555-8c08-af158907151c.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_deliverable_uc/dc_usecase_d6f50a54-7691-4555-8c08-af158907151c.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/README#for-abap-platform-cloud",
+      "text": "For ABAP Platform Cloud\n\nChoose this if you are working on SAP BTP or SAP S/4HANA Cloud, public edition.  To import the feature showcase app into your ABAP Environment, follow the steps in the [README](../ABAP-platform-cloud/README.md) file of the branch <em>ABAP-platform-cloud</em> and download the sources from this branch...\n\n/abap-fiori-showcase/README#for-abap-platform-cloud",
+      "bm25": -13.200946562470467,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/README#for-abap-platform-cloud",
+      "relFile": "README.md",
+      "finalScore": 0.033333333333333326,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.200946562470467,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_3f8877c6-cea9-4b0f-bca9-dc3947b6f41d",
+      "text": "SAP S/4HANA Cloud Transportation Order Attachment Management with the SAP CAP NodeJs\n\nRAP is available on\n\nSAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> (aka <b>Steampunk</b>)\n\nSAP S/4HANA on-premise starting with edition 1909\n\nSAP S/4HANA Cloud, <b>ABAP</b> <b>environment</b> (aka embedded <b>Steampunk</b>)\n\nHow do I get started with ... SAP <b>BTP</b> <b>ABAP</b> <b>Environment</b> trial) are required to carry out hands-on exercises.\n\nWhich E2E scenarios are supported? ... Then the CAP application calls an OData API in SAP S/4HANA to get details about the TO that is stored in an <b>ABAP</b> <b>environment</b> table and exposed as an OData API. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_3f8877c6-cea9-4b0f-bca9-dc3947b6f41d.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_3f8877c6-cea9-4b0f-bca9-dc3947b6f41d.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_12f93118-4571-44b8-99f5-02c8bf1b1530",
+      "text": "SAP S/4HANA Cloud Transportation Order Attachment Management with the SAP CAP Java\n\nRAP is available on\n\nSAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> (aka <b>Steampunk</b>)\n\nSAP S/4HANA on-premise starting with edition 1909\n\nSAP S/4HANA Cloud, <b>ABAP</b> <b>environment</b> (aka embedded <b>Steampunk</b>)\n\nHow do I get started with ... SAP <b>BTP</b> <b>ABAP</b> <b>Environment</b> trial) are required to carry out hands-on exercises.\n\nWhich E2E scenarios are supported? ... Then CAP application calls an OData API in SAP S/4HANA to get details about the TO that is stored in an <b>ABAP</b> <b>environment</b> table and exposed as an OData API. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_12f93118-4571-44b8-99f5-02c8bf1b1530.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_usecase/dc_usecase_12f93118-4571-44b8-99f5-02c8bf1b1530.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-dc_usecase_a33695b8-4476-48b7-98c7-b942717b029a",
+      "text": "SAP S/4HANA Cloud Transportation Order Attachment Management with the SAP CAP Java\n\nRAP is available on\n\nSAP <b>BTP</b>, <b>ABAP</b> <b>environment</b> (aka <b>Steampunk</b>)\n\nSAP S/4HANA on-premise starting with edition 1909\n\nSAP S/4HANA Cloud, <b>ABAP</b> <b>environment</b> (aka embedded <b>Steampunk</b>)\n\nHow do I get started with ... SAP <b>BTP</b> <b>ABAP</b> <b>Environment</b> trial) are required to carry out hands-on exercises.\n\nWhich E2E scenarios are supported? ... Then CAP application calls an OData API in SAP S/4HANA to get details about the TO that is stored in an <b>ABAP</b> <b>environment</b> table and exposed as an OData API. ...  — Product: Discovery Center Joule (Cloud)\n\nhttps://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_deliverable_uc/dc_usecase_a33695b8-4476-48b7-98c7-b942717b029a.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/DISCOVERY_CENTER_JOULE/dc_deliverable_uc/dc_usecase_a33695b8-4476-48b7-98c7-b942717b029a.html?locale=en-US&state=PRODUCTION&version=0.1",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software#kollisionspr-fung-auf-dotabap-org",
+      "text": "Kollisionsprüfung auf dotabap.org\n\nIst Ihr Projekt auf [dotabap.org](https://dotabap.org) gelistet, werden die enthaltenen Objekte automatisch auf Namenskollisionen mit allen anderen dort gelisteten Projekten geprüft. Die Bezeichner Ihrer Entwicklungsobjekte sollten neben dem Namensraum ein Projektkürzel, oft ein dreistelliges Akrony...\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software#kollisionspr-fung-auf-dotabap-org",
+      "bm25": -13.0386889348419,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/open-source/developing-open-source-software#kollisionspr-fung-auf-dotabap-org",
+      "relFile": "open-source/developing-open-source-software.md",
+      "finalScore": 0.02888888888888889,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.0386889348419,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.6
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software#abap-open-source-namespaces",
+      "text": "ABAP Open Source Namespaces\n\nEin ABAP Open Source Namespace ist ein reservierter Namensraum, dessen Reparaturlizenz öffentlich einsehbar ist. Sie sind in der Maintain-Namespaces-App automatisch verfügbar und lösen damit die Problematik der Installation in Public-Cloud-Systemen. Der Schwierigkeitsgrad im Vergleich zur Verwendung...\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software#abap-open-source-namespaces",
+      "bm25": -13.021132341949533,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/open-source/developing-open-source-software#abap-open-source-namespaces",
+      "relFile": "open-source/developing-open-source-software.md",
+      "finalScore": 0.026804123711340208,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.021132341949533,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 1.6
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software#unterst-tzung-verschiedener-abap-sprachversionen",
+      "text": "Unterstützung verschiedener ABAP-Sprachversionen\n\nEine weitere Komplexität ist die Unterstützung mehrerer ABAP-Sprachversionen. Es kann beispielsweise sein, dass Sie sich auf ABAP-Release 7.50 einschränken und eine SAP-API dort bereits verfügbar und auch im ABAP Cloud Developer Trial enthalten ist. Sie ist allerdings nicht für die Nutzung in ABAP C...\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software#unterst-tzung-verschiedener-abap-sprachversionen",
+      "bm25": -12.99663238836044,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/open-source/developing-open-source-software#unterst-tzung-verschiedener-abap-sprachversionen",
+      "relFile": "open-source/developing-open-source-software.md",
+      "finalScore": 0.025742574257425745,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.99663238836044,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 1.6
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README",
+      "text": "Description\n\n[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-abap-rap)](https://api.reuse.software/info/github.com/SAP-samples/cloud-abap-rap)\n\n/cloud-abap-rap/README",
+      "bm25": -13.069749599081039,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README",
+      "relFile": "README.md",
+      "finalScore": 0.025581395348837212,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.069749599081039,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/forms/adobe-document-service#sap-forms-service-by-adobe-cloud-ads-",
+      "text": "SAP Forms Service by Adobe (Cloud-ADS)\n\n- Läuft als Service auf der SAP BTP (Cloud Foundry Environment) - Bereitstellung und Wartung durch SAP {: .note }\n\n/dsag-abap-leitfaden/forms/adobe-document-service#sap-forms-service-by-adobe-cloud-ads-",
+      "bm25": -13.32027207999333,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/forms/adobe-document-service#sap-forms-service-by-adobe-cloud-ads-",
+      "relFile": "forms/adobe-document-service.md",
+      "finalScore": 0.025301204819277112,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.32027207999333,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 1.1
+      }
+    },
+    {
+      "id": "community-13567772",
+      "text": "Demystifying: SAP BTP - ABAP Environment , Steampun...\n\nIntroduction: In the fast-paced world of SAP development, buzzwords can often create confusion and uncertainty. Among these buzzwords, SAP BTP - ABAP Environment , Steampunk , ABAP Cloud, and E...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/demystifying-sap-btp-abap-environment-steampunk-abap-on-cloud-embedded/ba-p/13567772?search-action-id=497478170866&search-result-uid=13567772",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/demystifying-sap-btp-abap-environment-steampunk-abap-on-cloud-embedded/ba-p/13567772?search-action-id=497478170866&search-result-uid=13567772",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-14094161",
+      "text": "SAP BTP ABAP Environment – New software delivery o...\n\n...icensing and pricing models. &nbsp; Introduction SAP BTP ABAP Environment &nbsp;(aka Steampunk ) supports now two options for partners to deliver products to their customers. Partners build side-by-s...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-new-software-delivery-option-add-on-product/ba-p/14094161?search-action-id=497478170866&search-result-uid=14094161",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-new-software-delivery-option-add-on-product/ba-p/14094161?search-action-id=497478170866&search-result-uid=14094161",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software",
+      "text": "Entwicklung von Open-Source-Software\n\n{: .no_toc}\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software",
+      "bm25": -13.141458190558417,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/open-source/developing-open-source-software",
+      "relFile": "open-source/developing-open-source-software.md",
+      "finalScore": 0.024705882352941178,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.141458190558417,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.1
+      }
+    },
+    {
+      "id": "community-14221722",
+      "text": "SAP BTP ABAP Environment on SAP Cloud Infrastructu...\n\nWith the availability of SAP BTP ABAP Environment on SAP Cloud Infrastructure&nbsp;on September 19th 2025, Steampunk has reached the next milestone in the multi-hyperscaler availability for our c...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-on-sap-cloud-infrastructure/ba-p/14221722?search-action-id=497478170866&search-result-uid=14221722",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-btp-abap-environment-on-sap-cloud-infrastructure/ba-p/14221722?search-action-id=497478170866&search-result-uid=14221722",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/README#-how-to-use",
+      "text": "🏗️ How to Use\n\n1. **ABAP syntax info**: Get info in a nutshell on ABAP syntax and concepts related to various ABAP topics in the [ABAP cheat sheets](#-abap-cheat-sheets-overview). 2. **Demo examples**: Import the ABAP development objects of this repository (Note: *main* branch for the SAP BTP ABAP environment only...\n\n/abap-cheat-sheets/README#-how-to-use",
+      "bm25": -12.821470043022195,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/README#-how-to-use",
+      "relFile": "README.md",
+      "finalScore": 0.02427184466019417,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.821470043022195,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software#namensr-ume",
+      "text": "Namensräume\n\nDas Namensraumkonzept in ABAP führt dazu, dass lediglich im Kundennamensraum die Beteiligung ohne zusätzliche Schritte möglich ist. Der Kundennamensraum erhöht allerdings die Wahrscheinlichkeit für Namenskonflikte über verschiedene Projekte hinweg. Es gibt zwei verschiedene Lösungsansätze:\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software#namensr-ume",
+      "bm25": -13.0527683415819,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/open-source/developing-open-source-software#namensr-ume",
+      "relFile": "open-source/developing-open-source-software.md",
+      "finalScore": 0.02413793103448276,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.0527683415819,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 1.1
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/README#-getting-started-with-the-examples",
+      "text": "🎬 Getting Started with the Examples\n\nThe main focus of the ABAP cheat sheets is ABAP for Cloud Development. The examples in the *main* branch of the repository are designed to be imported into the SAP BTP ABAP environment. For Standard ABAP, you can find examples in the other branches of the repository (note that except for specific ex...\n\n/abap-cheat-sheets/README#-getting-started-with-the-examples",
+      "bm25": -12.818509485470594,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/README#-getting-started-with-the-examples",
+      "relFile": "README.md",
+      "finalScore": 0.02403846153846154,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.818509485470594,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/cloud-abap-rap/README#sap-s-4hana-2021-2022-or-2023",
+      "text": "SAP S/4HANA 2021, 2022 or 2023\n\n1. Create a package **'TEST_RAP_GENERATOR'**. 2. Start the report `ZABAPGIT_STANDALONE`. You might have to download the [source code](https://raw.githubusercontent.com/abapGit/build/main/zabapgit_standalone.prog.abap) of this open source tool. 3. Create an an online repository with the package and w...\n\n/cloud-abap-rap/README#sap-s-4hana-2021-2022-or-2023",
+      "bm25": -13.030160564434064,
+      "sourceId": "cloud-abap-rap",
+      "path": "/cloud-abap-rap/README#sap-s-4hana-2021-2022-or-2023",
+      "relFile": "README.md",
+      "finalScore": 0.02391304347826087,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.030160564434064,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/dsag-abap-leitfaden/open-source/developing-open-source-software#anpassung-des-entwicklungsprozesses-zur-ber-cksichtigung-externer-entwickler",
+      "text": "Anpassung des Entwicklungsprozesses zur Berücksichtigung externer Entwickler\n\nHaben Sie sich für eine Komponente entschieden, die Sie \"open-sourcen\" möchten, gibt es einige Punkte zu beachten, um den Zugang für externe Beteiligung möglichst einfach zu gestalten.\n\n/dsag-abap-leitfaden/open-source/developing-open-source-software#anpassung-des-entwicklungsprozesses-zur-ber-cksichtigung-externer-entwickler",
+      "bm25": -13.052768339031145,
+      "sourceId": "dsag-abap-leitfaden",
+      "path": "/dsag-abap-leitfaden/open-source/developing-open-source-software#anpassung-des-entwicklungsprozesses-zur-ber-cksichtigung-externer-entwickler",
+      "relFile": "open-source/developing-open-source-software.md",
+      "finalScore": 0.023863636363636365,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.052768339031145,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 1.1
+      }
+    }
+  ]
+}

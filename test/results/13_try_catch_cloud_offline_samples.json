@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "query": "TRY CATCH CLEANUP exception handling",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": false,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:57.295Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-docs-cloud/ABAPCATCH_TRY",
+      "text": "ABAPCATCH_TRY\n\n`CATCH [BEFORE UNWIND] cx_class1 cx_class2 ... [INTO oref].` Introduces a `CATCH` block of a [`TRY`](ABAPTRY.html) control structure in which exceptions can be handled. A `CATCH` block is an exception handler, meaning the program logic that is executed whenever the associated exception is raised in the `TRY` block of the same `TRY` control structure.\n\n/abap-docs-cloud/ABAPCATCH_TRY",
+      "bm25": -25.869947073852053,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPCATCH_TRY",
+      "relFile": "ABAPCATCH_TRY.md",
+      "finalScore": 0.06031746031746031,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.869947073852053,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPCLEANUP",
+      "text": "ABAPCLEANUP\n\n`CLEANUP [INTO oref].` Introduces a statement block of a [`TRY`](ABAPTRY.html) control structure where cleanups can be performed. A `CLEANUP` block is executed exactly when a class-based exception in the `TRY` block of the same `TRY` control structure is raised but is handled in a `CATCH` block of an external `TRY` control structure. A `CLEANUP` block is executed immediately before the context of\n\n/abap-docs-cloud/ABAPCLEANUP",
+      "bm25": -26.560708086920123,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPCLEANUP",
+      "relFile": "ABAPCLEANUP.md",
+      "finalScore": 0.054098360655737705,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.560708086920123,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPTRY",
+      "text": "ABAPTRY\n\nThe statement `TRY` introduces a control structure with multiple statement blocks. The first statement block `try_block` is always processed, whereas a branching off to exactly one of the remaining statement blocks only occurs if a [class-based exception](ABENCLASS_BASED_EXCEPTION_GLOSRY.html) is raised in `try_block`. A `TRY` control structure defines the following statement blocks: Division by z\n\n/abap-docs-cloud/ABAPTRY",
+      "bm25": -26.49370105366124,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPTRY",
+      "relFile": "ABAPTRY.md",
+      "finalScore": 0.0532258064516129,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -26.49370105366124,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEXCEPTIONS_SYSTEM_RESPONSE",
+      "text": "ABENEXCEPTIONS_SYSTEM_RESPONSE\n\nA class-based exception occurs in a statement block for one of the following reasons: In both cases, the occurrence of a class-based exception interrupts the sequential processing of the current statement block, and the system responds as follows: Note the following special features:\n\n/abap-docs-cloud/ABENEXCEPTIONS_SYSTEM_RESPONSE",
+      "bm25": -24.898949829275672,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEXCEPTIONS_SYSTEM_RESPONSE",
+      "relFile": "ABENEXCEPTIONS_SYSTEM_RESPONSE.md",
+      "finalScore": 0.049999999999999996,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.898949829275672,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRAISE_EXCEPTION_CLASS",
+      "text": "ABAPRAISE_EXCEPTION_CLASS\n\nThis statement interrupts execution of the current statement block and raises a [class-based exception](ABENCLASS_BASED_EXCEPTION_GLOSRY.html). It can be used at any point in a [processing block](ABENPROCESSING_BLOCK_GLOSRY.html). The statement interrupts the program flow and searches for a [handler](ABAPCATCH_TRY.html) as described in [System Response After a Class-Based Exception](ABENEXCEPTIONS\n\n/abap-docs-cloud/ABAPRAISE_EXCEPTION_CLASS",
+      "bm25": -23.68109976063597,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRAISE_EXCEPTION_CLASS",
+      "relFile": "ABAPRAISE_EXCEPTION_CLASS.md",
+      "finalScore": 0.048529411764705876,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.68109976063597,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRESUME",
+      "text": "ABAPRESUME\n\nThis statement exits the [`CATCH`](ABAPCATCH_TRY.html) handling of a [resumable exception](ABENRESUMABLE_EXCEPTION_GLOSRY.html) and resumes processing after the place where the exception was raised. The statement `RESUME` can only be listed in a [`CATCH`](ABAPCATCH_TRY.html) block of a [`TRY`](ABAPTRY.html) control structure for which the addition `BEFORE UNWIND` is declared. When exception handli\n\n/abap-docs-cloud/ABAPRESUME",
+      "bm25": -24.94756173784195,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRESUME",
+      "relFile": "ABAPRESUME.md",
+      "finalScore": 0.043076923076923075,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.94756173784195,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCATCH_EXCEPTION_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates how class-based exceptions are caught. The method `meth1` raises a non-resumable exception and the method `meth2` raises a resumable exception that is handled in the `TRY` control structures of the method `main` using `CATCH`. -   If handled without `BEFORE UNWIND`, the `CLEANUP` block is executed in both cases before handling and the context of the called method does not\n\n/abap-docs-cloud/ABENCATCH_EXCEPTION_ABEXA",
+      "bm25": -25.81365153683676,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCATCH_EXCEPTION_ABEXA",
+      "relFile": "ABENCATCH_EXCEPTION_ABEXA.md",
+      "finalScore": 0.0390625,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -25.81365153683676,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#catch-into-storing-exception-objects-and-evaluation",
+      "text": "CATCH ... INTO ...: Storing Exception Objects and Evaluation\n\n- If you specify `INTO` in the `CATCH` statement, it stores a reference to the exception object. - This helps to determine and evaluate the specific exception. - You can specify ... Note specification root class cx_root DATA exception TYPE cx_root block\n\n/abap-cheat-sheets/27_Exceptions#catch-into-storing-exception-objects-and-evaluation",
+      "bm25": -21.901900985768496,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#catch-into-storing-exception-objects-and-evaluation",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.038571428571428576,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.901900985768496,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.7
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEXCEPTION_CLASS_CREATE",
+      "text": "ABENEXCEPTION_CLASS_CREATE\n\nException classes can be defined globally in the [Class Library](ABENCLASS_LIBRARY_GLOSRY.html) or locally in a program. The naming conventions for global exception classes prescribe the prefix `CX_` or, in the case of exception classes created in customer systems, `YCX_` or `ZCX_`. There is a set of predefined global exception classes, such as those prefixed with `CX_SY_`, whose exceptions are ra\n\n/abap-docs-cloud/ABENEXCEPTION_CLASS_CREATE",
+      "bm25": -18.59999226740981,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEXCEPTION_CLASS_CREATE",
+      "relFile": "ABENEXCEPTION_CLASS_CREATE.md",
+      "finalScore": 0.0351063829787234,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.59999226740981,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRETRY",
+      "text": "ABAPRETRY\n\nThis statement exits the [`CATCH`](ABAPCATCH_TRY.html) handling of a [class-based exception](ABENCLASS_BASED_EXCEPTION_GLOSRY.html) and continues processing with the [`TRY`](ABAPTRY.html) statement of the current `TRY` control structure. The `RETRY` statement can only be executed within a `CATCH` block of a `TRY` control structure. The following exception handling extends the ABAP-specific handlin\n\n/abap-docs-cloud/ABAPRETRY",
+      "bm25": -16.999236358557418,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRETRY",
+      "relFile": "ABAPRETRY.md",
+      "finalScore": 0.03402061855670103,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.999236358557418,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENABAP_EXCEPTIONS",
+      "text": "ABENABAP_EXCEPTIONS\n\nExceptions are events during the execution of an ABAP program that interrupt the program flow because it is not possible for the program to continue in a meaningful way. Exception handling enables a response to these events. Exception situations can be detected either by the program or by the runtime framework. When an exception situation is detected, either the ABAP program or the runtime framewo\n\n/abap-docs-cloud/ABENABAP_EXCEPTIONS",
+      "bm25": -16.61415425710835,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENABAP_EXCEPTIONS",
+      "relFile": "ABENABAP_EXCEPTIONS.md",
+      "finalScore": 0.033673469387755096,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.61415425710835,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#cleanup-statements",
+      "text": "CLEANUP Statements\n\n- `CLEANUP` statements introduce statement blocks within a `TRY` control structure. - They include implementations to create consistent states before further processing. - The blocks' implementations are executed when an exception is raised, but the exception is handled externally, not within the sa...\n\n/abap-cheat-sheets/27_Exceptions#cleanup-statements",
+      "bm25": -24.59797077913728,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#cleanup-statements",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.03283582089552239,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -24.59797077913728,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCATCHABLE_EXCEPTION_GLOSRY",
+      "text": "ABENCATCHABLE_EXCEPTION_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENCATCHABLE_EXCEPTION_GLOSRY",
+      "bm25": -16.011931312064526,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCATCHABLE_EXCEPTION_GLOSRY",
+      "relFile": "ABENCATCHABLE_EXCEPTION_GLOSRY.md",
+      "finalScore": 0.03271028037383177,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.011931312064526,
+        "rank": 47,
+        "rrfScore": 0.009345794392523364,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEXCEPTIONS_PRE_610",
+      "text": "ABENEXCEPTIONS_PRE_610\n\n***This concept is only supported temporarily in the current ABAP language version and must be replaced with a valid concept for that version.***\\\\ \\\\n\\\\n Exceptions are [class-based](ABENEXCEPTIONS.html). Before the introduction of exception classes, there were the following types of exceptions: The class-based exceptions replace and enhance the previous concepts completely. Class-based exception\n\n/abap-docs-cloud/ABENEXCEPTIONS_PRE_610",
+      "bm25": -16.48232321586717,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEXCEPTIONS_PRE_610",
+      "relFile": "ABENEXCEPTIONS_PRE_610.md",
+      "finalScore": 0.032673267326732675,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.48232321586717,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENUNCATCHABLE_EXCEPTION_GLOSRY",
+      "text": "ABENUNCATCHABLE_EXCEPTION_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENUNCATCHABLE_EXCEPTION_GLOSRY",
+      "bm25": -15.959676841267486,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENUNCATCHABLE_EXCEPTION_GLOSRY",
+      "relFile": "ABENUNCATCHABLE_EXCEPTION_GLOSRY.md",
+      "finalScore": 0.032407407407407406,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.959676841267486,
+        "rank": 48,
+        "rrfScore": 0.009259259259259259,
+        "boost": 2.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEXCEPTIONS",
+      "text": "ABENEXCEPTIONS\n\nClass-based exceptions are implemented as instances of [exception classes](ABENEXCEPTIONS_CLASSES.html). Exception classes are either predefined globally in the system or can be defined by the user both globally and locally. Class-based exceptions are raised either by the [ABAP runtime framework](ABENABAP_RUNTIME_FRMWK_GLOSRY.html) or by a program. When an exception is raised, an exception object\n\n/abap-docs-cloud/ABENEXCEPTIONS",
+      "bm25": -16.305602009524247,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEXCEPTIONS",
+      "relFile": "ABENEXCEPTIONS.md",
+      "finalScore": 0.032038834951456305,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.305602009524247,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#retry-statements",
+      "text": "RETRY Statements\n\n`RETRY` statements ... - exit the exception handling in the `CATCH` block and continue with the `TRY` block of the current control structure. - cause the entire `TRY` control structure to process again. Remove the exception cause before or after `RETRY` in the `TRY` block executed again. following e...\n\n/abap-cheat-sheets/27_Exceptions#retry-statements",
+      "bm25": -22.098412574578898,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#retry-statements",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.0318840579710145,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -22.098412574578898,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENABAP_LANGUAGE_EXCEPTIONS",
+      "text": "ABENABAP_LANGUAGE_EXCEPTIONS\n\nError situations that occur during the execution of an ABAP statement raise exceptions. These exceptions are fully integrated into the [exception concept](ABENABAP_EXCEPTIONS.html) and are raised by the runtime framework. Two types of exception exist: Each catchable exception is assigned to a runtime error that terminates the program if the exception is neither caught by using the [`CATCH`](ABAPCA\n\n/abap-docs-cloud/ABENABAP_LANGUAGE_EXCEPTIONS",
+      "bm25": -16.03768523233276,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENABAP_LANGUAGE_EXCEPTIONS",
+      "relFile": "ABENABAP_LANGUAGE_EXCEPTIONS.md",
+      "finalScore": 0.03113207547169811,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.03768523233276,
+        "rank": 46,
+        "rrfScore": 0.009433962264150943,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#try-control-structures",
+      "text": "TRY Control Structures\n\n- Exceptions can be handled locally using [`TRY`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abaptry.htm) control structures - To be prepared for potential exceptions that are raised when executing statements, statements can be included and executed within such a `TRY`...\n\n/abap-cheat-sheets/27_Exceptions#try-control-structures",
+      "bm25": -21.841093604373473,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#try-control-structures",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.030555555555555558,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.841093604373473,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#exceptions",
+      "text": "Exceptions\n\n[Exceptions](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenexception_glosry.htm) ... - are error situations that occur during the execution of an ABAP program and interrupt the program flow. You can implement exception handling to appropriately react to these situatio...\n\n/abap-cheat-sheets/27_Exceptions#exceptions",
+      "bm25": -21.746518081088404,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#exceptions",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.030136986301369864,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.746518081088404,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#exception-classes",
+      "text": "Exception Classes\n\nException classes ... - are special classes that form the basis of catchable exceptions.    - When an exception is raised, an object of an exception class is created, making exceptions instances of these classes. METHODS divide IMPORTING num1 TYPE num2 TYPE RETURNING VALUE div_result\n\n/abap-cheat-sheets/27_Exceptions#exception-classes",
+      "bm25": -21.73547956051109,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#exception-classes",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.029729729729729735,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.73547956051109,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEXCEPTION_CATEGORIES",
+      "text": "ABENEXCEPTION_CATEGORIES\n\nException classes are subclasses of the following abstract classes: The assignment to one of the three abstract subclasses of `CX_ROOT` determines the exception category, that is, whether an exception must be declared explicitly in the procedure interface when [propagating from a procedure](ABENEXCEPTIONS_PROCEDURES.html), and how the declaration is checked: If an exception of category `CX_STATIC_\n\n/abap-docs-cloud/ABENEXCEPTION_CATEGORIES",
+      "bm25": -15.409912250908992,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEXCEPTION_CATEGORIES",
+      "relFile": "ABENEXCEPTION_CATEGORIES.md",
+      "finalScore": 0.029729729729729728,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.409912250908992,
+        "rank": 51,
+        "rrfScore": 0.009009009009009009,
+        "boost": 2.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENMETHOD_FOR_ENTITY_EVENT",
+      "text": "ABENMETHOD_FOR_ENTITY_EVENT\n\n**RAP event handler method definitions:** **RAP event handler method implementations:** When a RAP business event is raised using a [`RAISE ENTITY EVENT`](ABAPRAISE_ENTITY_EVENT.html) ABAP EML statement, the RAP event handler methods are called locally in the system and processed asynchronously.\n\n/abap-docs-cloud/ABENMETHOD_FOR_ENTITY_EVENT",
+      "bm25": -18.597232153365326,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENMETHOD_FOR_ENTITY_EVENT",
+      "relFile": "ABENMETHOD_FOR_ENTITY_EVENT.md",
+      "finalScore": 0.02947368421052631,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.597232153365326,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#raising-class-based-exceptions",
+      "text": "Raising Class-Based Exceptions\n\n- Class-based exceptions are raised in two ways:   - The ABAP runtime framework raises predefined exceptions.      - Taking zero division as an example, not handling the class-based exception `CX_SY_ZERODIVIDE` causes the ABAP runtime framework to raise an exception and cause a runtime error. DATA d...\n\n/abap-cheat-sheets/27_Exceptions#raising-class-based-exceptions",
+      "bm25": -21.725766383949978,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#raising-class-based-exceptions",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.029333333333333336,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.725766383949978,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRAP_CL_ABAP_TX",
+      "text": "ABAPRAP_CL_ABAP_TX\n\nThe [static methods](ABENSTATIC_METHOD_GLOSRY.html) of the `CL_ABAP_TX` class can be used to explicitly activate [transactional phases](ABENTR_PHASE_GLOSRY.html), thereby controlling the status of the runtime environment and enabling transactional consistency checks with the [controlled SAP LUW](ABENCONTROLLED_SAP_LUW_GLOSRY.html). The following methods are available: Calling the `MODIFY` and `SAV\n\n/abap-docs-cloud/ABAPRAP_CL_ABAP_TX",
+      "bm25": -17.18248804071807,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRAP_CL_ABAP_TX",
+      "relFile": "ABAPRAP_CL_ABAP_TX.md",
+      "finalScore": 0.029166666666666664,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.18248804071807,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions",
+      "text": "Exceptions and Runtime Errors\n\n<a name=\"top\"></a>\n\n/abap-cheat-sheets/27_Exceptions",
+      "bm25": -21.638144955593052,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.028571428571428574,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.638144955593052,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEXCEPTION_GLOSRY",
+      "text": "ABENEXCEPTION_GLOSRY\n\nError situation during execution of an [ABAP program](ABENABAP_PROGRAM_GLOSRY.html). Exceptions are [catchable](ABENCATCHABLE_EXCEPTION_GLOSRY.html) (statements [`TRY`](ABAPTRY.html), [`CATCH`](ABAPCATCH_TRY.html)) or [uncatchable](ABENUNCATCHABLE_EXCEPTION_GLOSRY.html). Uncaught exceptions result in a [runtime error](ABENRUNTIME_ERROR_GLOSRY.html). ABENABALA\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENEXCEPTION_GLOSRY",
+      "bm25": -16.204503748007838,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEXCEPTION_GLOSRY",
+      "relFile": "ABENEXCEPTION_GLOSRY.md",
+      "finalScore": 0.028571428571428574,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.204503748007838,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 1.9999999999999998
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#exception-categories",
+      "text": "Exception Categories\n\nException classes are subclasses of three abstract classes, which in turn are subclasses of the root class `CX_ROOT`: ``` CX_ROOT CX_ROOT CX_STATIC_CHECK CX_DYNAMIC_CHECK CX_NO_CHECK Method definition using RAISING parameter CLASS\n\n/abap-cheat-sheets/27_Exceptions#exception-categories",
+      "bm25": -21.601028627465396,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#exception-categories",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.027848101265822787,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.601028627465396,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENDECLARATION_POSITIONS",
+      "text": "ABENDECLARATION_POSITIONS\n\nDeclaration positions are [write-only positions](ABENWRITE_ONLY_POSITION_GLOSRY.html) in which a [declaration expression](ABENDECLARATION_EXPRESSION_GLOSRY.html) can be specified for an [inline declaration](ABENINLINE_DECLARATION_GLOSRY.html). There are no declaration positions within expressions. Declaration positions include the following: Unlike in [standalone method calls](ABAPCALL_METHOD_STAT\n\n/abap-docs-cloud/ABENDECLARATION_POSITIONS",
+      "bm25": -16.46030870863563,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENDECLARATION_POSITIONS",
+      "relFile": "ABENDECLARATION_POSITIONS.md",
+      "finalScore": 0.02745098039215686,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.46030870863563,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRESUMABLE_EXCEPTION_GLOSRY",
+      "text": "ABENRESUMABLE_EXCEPTION_GLOSRY\n\nABENABALA\\_GLOSSARY.html\n\n/abap-docs-cloud/ABENRESUMABLE_EXCEPTION_GLOSRY",
+      "bm25": -15.746719255102908,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRESUMABLE_EXCEPTION_GLOSRY",
+      "relFile": "ABENRESUMABLE_EXCEPTION_GLOSRY.md",
+      "finalScore": 0.02727272727272727,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.746719255102908,
+        "rank": 50,
+        "rrfScore": 0.00909090909090909,
+        "boost": 1.9999999999999998
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENTRY_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates the `TRY` control structure. -   If the content of `number` is greater than 100, the `TRY` control structure of the [compilation unit](ABENCOMPILATION_UNIT_GLOSRY.html) raises an exception of the class `CX_DEMO_ABS_TOO_LARGE` in the `TRY` block. This exception is handled by the second `CATCH` block of the same `TRY` control structure, since the subclass of the most genera\n\n/abap-docs-cloud/ABENTRY_ABEXA",
+      "bm25": -20.16910712708309,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENTRY_ABEXA",
+      "relFile": "ABENTRY_ABEXA.md",
+      "finalScore": 0.02717391304347826,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -20.16910712708309,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBRANCH_GLOSRY",
+      "text": "ABENBRANCH_GLOSRY\n\nAlso referred to as selection. [Control structure](ABENCONTROL_STRUCTURE_GLOSRY.html) that can consist of multiple [statement blocks](ABENSTATEMENT_BLOCK_GLOSRY.html) that are defined using the keywords [`IF` - `ELSEIF` - `ELSE` - `ENDIF`](ABAPIF.html), [`CASE` - `WHEN` - `ENDCASE`](ABAPCASE.html), [`TRY` - `CATCH` - `CLEANUP` - `ENDTRY`](ABAPTRY.html) and are executed depending on conditions. Bra\n\n/abap-docs-cloud/ABENBRANCH_GLOSRY",
+      "bm25": -19.049956481136814,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBRANCH_GLOSRY",
+      "relFile": "ABENBRANCH_GLOSRY.md",
+      "finalScore": 0.02688172043010753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.049956481136814,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#components-of-exception-classes",
+      "text": "Components of Exception Classes\n\n- The following list covers a selection of exception class components relevant, for example, to evaluate exceptions raised using exception objects. - Exception classes include instance methods because of inheriting from the root class `CX_ROOT`:   - `get_text`: Returns the exception text\n\n/abap-cheat-sheets/27_Exceptions#components-of-exception-classes",
+      "bm25": -21.58236045182142,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#components-of-exception-classes",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.02619047619047619,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.58236045182142,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#using-messages-as-exception-texts",
+      "text": "Using Messages as Exception Texts\n\n- Each exception has an [exception text](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abenexception_text_glosry.htm) that describes the error and can be retrieved as outlined above. This helps you analyze the error. Imagine using exceptions in user interfaces; if a ...\n\n/abap-cheat-sheets/27_Exceptions#using-messages-as-exception-texts",
+      "bm25": -21.58153183744883,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#using-messages-as-exception-texts",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.02588235294117647,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.58153183744883,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#classic-exceptions",
+      "text": "Classic Exceptions\n\n- In older ABAP code, you may encounter non-class-based exceptions, the predecessors of class-based exceptions. - They should not be used in new developments. - They are specified in method signatures with the `EXCEPTIONS` addition. cl_abap_typedescr describe_by_name EXPORTING p_name CL_THAT_DOES_NO...\n\n/abap-cheat-sheets/27_Exceptions#classic-exceptions",
+      "bm25": -21.58153183744883,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#classic-exceptions",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.025581395348837212,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.58153183744883,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRAISE_SHORTDUMP",
+      "text": "ABAPRAISE_SHORTDUMP\n\nThis statement interrupts the execution of the current statement block and raises the [runtime error](ABENRUNTIME_ERROR_GLOSRY.html)\\\\ `RAISE_SHORTDUMP`, which performs a [database rollback](ABENDATABASE_ROLLBACK_GLOSRY.html). This runtime error is linked with an [exception object](ABENEXCEPTION_OBJECT_GLOSRY.html) using `TYPE` or `oref`: The [short dump](ABENSHORT_DUMP_GLOSRY.html) of the runtime\n\n/abap-docs-cloud/ABAPRAISE_SHORTDUMP",
+      "bm25": -15.341021638107568,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRAISE_SHORTDUMP",
+      "relFile": "ABAPRAISE_SHORTDUMP.md",
+      "finalScore": 0.024778761061946902,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.341021638107568,
+        "rank": 53,
+        "rrfScore": 0.008849557522123894,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#syntax-variants-of-raise-exception-throw",
+      "text": "Syntax Variants of RAISE EXCEPTION/THROW\n\n- This section provides examples of `RAISE EXCEPTION` statements and the `THROW` addition to the `COND` and `SWITCH` operators. - Note that the `RESUMABLE` addition is not covered. See more details above.  - The variants of statements covered in the example include the use of these additions. Check ...\n\n/abap-cheat-sheets/27_Exceptions#syntax-variants-of-raise-exception-throw",
+      "bm25": -21.564011084789502,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#syntax-variants-of-raise-exception-throw",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.024444444444444446,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.564011084789502,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#local-exception-classes",
+      "text": "Local Exception Classes\n\n- You can create local exception classes within your class pool for exceptions specific to your program that are not needed globally. - The following simplified example explores a local exception class. It uses a message class that is part of the ABAP cheat sheet repository.  - In the example, the g...\n\n/abap-cheat-sheets/27_Exceptions#local-exception-classes",
+      "bm25": -21.56305511955514,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#local-exception-classes",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.02417582417582418,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.56305511955514,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 1.2
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#resume-statements-and-resumable-additions",
+      "text": "RESUME Statements and RESUMABLE Additions\n\n- `RESUME` statements ...   - exit the exception handling in the `CATCH` block of a [resumable exception](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenresumable_exception_glosry.htm) and continue processing from where the exception was raised.     - The exception con...\n\n/abap-cheat-sheets/27_Exceptions#resume-statements-and-resumable-additions",
+      "bm25": -21.901182023944603,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#resume-statements-and-resumable-additions",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.023943661971830985,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.901182023944603,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-770-EXCEPTIONS",
+      "text": "ABENNEWS-770-EXCEPTIONS\n\nThe attribute `IS_RESUMABLE` of an [exception object](ABENEXCEPTION_OBJECT_GLOSRY.html) is now set after exceptions raised by the statement [`RAISE RESUMABLE EXCEPTION`](ABAPRAISE_EXCEPTION_CLASS.html) only if the [`CATCH`](ABAPCATCH_TRY.html) statement in question has the addition `BEFORE UNWIND`. Previously in catches, the attribute was set for every exception raised in this way. abenabap.html a\n\n/abap-docs-cloud/ABENNEWS-770-EXCEPTIONS",
+      "bm25": -15.951326371638839,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-770-EXCEPTIONS",
+      "relFile": "ABENNEWS-770-EXCEPTIONS.md",
+      "finalScore": 0.022935779816513763,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.951326371638839,
+        "rank": 49,
+        "rrfScore": 0.009174311926605505,
+        "boost": 1.4999999999999998
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#more-information",
+      "text": "More Information\n\n[ABAP Keyword Documentation](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenabap_exceptions.htm)\n\n/abap-cheat-sheets/27_Exceptions#more-information",
+      "bm25": -21.63866964493156,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#more-information",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.022368421052631576,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.63866964493156,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-772-EXCEPTIONS",
+      "text": "ABENNEWS-772-EXCEPTIONS\n\nThe new statement [`RAISE SHORTDUMP`](ABAPRAISE_SHORTDUMP.html) raises [runtime errors](ABENRUNTIME_ERROR_GLOSRY.html) linked with an [exception object](ABENEXCEPTION_OBJECT_GLOSRY.html). This means more information can now be passed to the [short dump](ABENSHORT_DUMP_GLOSRY.html) than was previously possible in an [exit message](ABENEXIT_MESSAGE_GLOSRY.html). The new method `GET_LATEST_T100_EXCEP\n\n/abap-docs-cloud/ABENNEWS-772-EXCEPTIONS",
+      "bm25": -15.349962352862088,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-772-EXCEPTIONS",
+      "relFile": "ABENNEWS-772-EXCEPTIONS.md",
+      "finalScore": 0.02232142857142857,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.349962352862088,
+        "rank": 52,
+        "rrfScore": 0.008928571428571428,
+        "boost": 1.4999999999999998
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-753-EXCEPTIONS",
+      "text": "ABENNEWS-753-EXCEPTIONS\n\nThe new statement [`RAISE SHORTDUMP`](ABAPRAISE_SHORTDUMP.html) raises [runtime errors](ABENRUNTIME_ERROR_GLOSRY.html) associated with an [exception object](ABENEXCEPTION_OBJECT_GLOSRY.html). This means more information can now be passed to the [short dump](ABENSHORT_DUMP_GLOSRY.html) than was previously possible in an [exit message](ABENEXIT_MESSAGE_GLOSRY.html). The new method `GET_LATEST_T100_E\n\n/abap-docs-cloud/ABENNEWS-753-EXCEPTIONS",
+      "bm25": -15.329406027978152,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-753-EXCEPTIONS",
+      "relFile": "ABENNEWS-753-EXCEPTIONS.md",
+      "finalScore": 0.021929824561403508,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.329406027978152,
+        "rank": 54,
+        "rrfScore": 0.008771929824561403,
+        "boost": 1.4999999999999998
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#executable-example",
+      "text": "Executable Example\n\n[zcl_demo_abap_error_handling](./src/zcl_demo_abap_error_handling.clas.abap) > [!NOTE] > - The example involves the following artifacts:\n\n/abap-cheat-sheets/27_Exceptions#executable-example",
+      "bm25": -21.636803664522876,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#executable-example",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.021794871794871794,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.636803664522876,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#messages-in-rap",
+      "text": "Messages in RAP\n\n- In ABAP EML, the relevant [BDEF derived type](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_derived_type_glosry.htm) is `TYPE ... REPORTED`, available in the context of [RAP responses](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abe...\n\n/abap-cheat-sheets/27_Exceptions#messages-in-rap",
+      "bm25": -21.59772824630792,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#messages-in-rap",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.02125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.59772824630792,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#runtime-errors",
+      "text": "Runtime Errors\n\nRuntime errors ... - occur when the execution of an ABAP program cannot continue and is terminated.  - are caused in the following situations: Short Text Division type INT8 Runtime Error COMPUTE_INT_ZERODIVIDE Exception CX_SY_ZERODIVIDE\n\n/abap-cheat-sheets/27_Exceptions#runtime-errors",
+      "bm25": -21.59451714652776,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#runtime-errors",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.02098765432098765,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.59451714652776,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#programmatically-raising-runtime-erros",
+      "text": "Programmatically Raising Runtime Erros\n\n- Runtime errors can be raised using ...   - [`RAISE SHORTDUMP`](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abapraise_shortdump.htm) statments or    - the `THROW SHORTDUMP` addition in the context of `COND` and `SWITCH` operators RAISE SHORTDUMP TYPE cx_sy_zerodivide D...\n\n/abap-cheat-sheets/27_Exceptions#programmatically-raising-runtime-erros",
+      "bm25": -21.58845544698244,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#programmatically-raising-runtime-erros",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.020731707317073172,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.58845544698244,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#violations-of-abap-contract-checks-causing-runtime-errors",
+      "text": "Violations of ABAP Contract Checks Causing Runtime Errors\n\nABAP contract checks include ... - RAP BO contract checks    - They define rules for the [RAP BO provider](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index.htm?file=abenrap_bo_provider_glosry.htm) and [RAP BO consumer](https://help.sap.com/doc/abapdocu_cp_index_htm/CLOUD/en-US/index....\n\n/abap-cheat-sheets/27_Exceptions#violations-of-abap-contract-checks-causing-runtime-errors",
+      "bm25": -21.58845544698244,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#violations-of-abap-contract-checks-causing-runtime-errors",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.020481927710843374,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.58845544698244,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-753-TRANSFORMATIONS",
+      "text": "ABENNEWS-753-TRANSFORMATIONS\n\nThe new transformation option [`OPTIONS exceptions = 'resumable'`](ABAPCALL_TRANSFORMATION_OPTIONS.html) can be used to make exceptions of the class `CX_ST_DESERIALIZATION_ERROR` into resumable exceptions. In handling with [`CATCH BEFORE UNWIND`](ABAPCATCH_TRY.html), the new attribute `RESULT_REF_FOR_RESUME` of the exception object of the class `CX_ST_DESERIALIZATION_ERROR` points to the target fi\n\n/abap-docs-cloud/ABENNEWS-753-TRANSFORMATIONS",
+      "bm25": -16.531640793202957,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-753-TRANSFORMATIONS",
+      "relFile": "ABENNEWS-753-TRANSFORMATIONS.md",
+      "finalScore": 0.020202020202020204,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.531640793202957,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 1
+      }
+    },
+    {
+      "id": "/abap-cheat-sheets/27_Exceptions#system-interfaces-for-messages",
+      "text": "System Interfaces for Messages\n\n- Exception classes must implement one of the system interfaces for messages to use exception texts:   - `IF_T100_MESSAGE`:     - Contains the `T100KEY` structured attribute (type `SCX_T100KEY`), specifying a message in the `T100` database table. Components are: `msgid` for the message class, `msgno...\n\n/abap-cheat-sheets/27_Exceptions#system-interfaces-for-messages",
+      "bm25": -21.578328651647876,
+      "sourceId": "abap-cheat-sheets",
+      "path": "/abap-cheat-sheets/27_Exceptions#system-interfaces-for-messages",
+      "relFile": "27_Exceptions.md",
+      "finalScore": 0.01954022988505747,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -21.578328651647876,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 0.7
+      }
+    }
+  ]
+}

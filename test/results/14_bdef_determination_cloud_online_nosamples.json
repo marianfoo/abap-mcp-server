@@ -1,0 +1,593 @@
+{
+  "meta": {
+    "query": "BDEF determination on modify",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": true,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:18:58.326Z",
+    "count": 37
+  },
+  "results": [
+    {
+      "id": "/abap-docs-cloud/ABENBDL_EXTENSIBLE",
+      "text": "ABENBDL_EXTENSIBLE\n\n`...  extensible [\\{    [with validations on save;]\\    [with determinations on save;]\\    [with determinations on modify;]\\    [with additional save;]\\  \\}]\\   ...` The addition `extensible` can be used to allow [BDEF extensions](ABENBDL_EXTENSION.html). If it is not specified, then extensions are not allowed. As a prerequisite, [BDEF strict mode](ABENBDL_STRICT.html) must be switched on. The key\n\n/abap-docs-cloud/ABENBDL_EXTENSIBLE",
+      "bm25": -19.11175407688835,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_EXTENSIBLE",
+      "relFile": "ABENBDL_EXTENSIBLE.md",
+      "finalScore": 0.05573770491803279,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -19.11175407688835,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_DET",
+      "text": "ABAPHANDLER_METH_DET\n\n**Handler method definition:** See the required BDEF notations for both variants in the topic [RAP BDL - determinations](ABENBDL_DETERMINATIONS.html). Used for determinations that are executed during the [RAP save sequence](ABENRAP_SAVE_SEQ_GLOSRY.html).\n\n/abap-docs-cloud/ABAPHANDLER_METH_DET",
+      "bm25": -18.786307842929084,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_DET",
+      "relFile": "ABAPHANDLER_METH_DET.md",
+      "finalScore": 0.053968253968253964,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.786307842929084,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_EXTENSIBILITY_ENABLING_M_U",
+      "text": "ABENBDL_EXTENSIBILITY_ENABLING_M_U\n\nTo allow [BDEF extensions](ABENRAP_EXTENSION_GLOSRY.html) to a managed or unmanaged RAP behavior definition, [BDEF strict mode](ABENRAP_STRICT_MODE_GLOSRY.html) must be switched on using the keyword [`strict[(version)]`](ABENBDL_STRICT.html). The keyword `extensible` can be specified at different places to allow for extensions: In the header declaration, the following optional additions are availa\n\n/abap-docs-cloud/ABENBDL_EXTENSIBILITY_ENABLING_M_U",
+      "bm25": -18.4123561726076,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_EXTENSIBILITY_ENABLING_M_U",
+      "relFile": "ABENBDL_EXTENSIBILITY_ENABLING_M_U.md",
+      "finalScore": 0.05230769230769231,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.4123561726076,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DETERMINE_ACTION",
+      "text": "ABENBDL_DETERMINE_ACTION\n\nA determine action can include on-save determinations and validations. On-modify determinations are not allowed. The determinations and validations are specified within curly brackets `\\{ \\}` and they are separated by semicolons (`;`). It is possible to specify a determine action without any determinations and validations. Determinations and validations of [child entities](ABENCHILD_ENTITY_GLOSRY.\n\n/abap-docs-cloud/ABENBDL_DETERMINE_ACTION",
+      "bm25": -18.37907882903643,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DETERMINE_ACTION",
+      "relFile": "ABENBDL_DETERMINE_ACTION.md",
+      "finalScore": 0.051515151515151514,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.37907882903643,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DETERMINATIONS",
+      "text": "ABENBDL_DETERMINATIONS\n\n`determination DetName \\{on modify \\{ CUD1 |\\ \\{field Field1\\};                                   [ CUD2;  ...; ]  [field Field2; ...] \\} \\}\\                       |\\{on save   \\{ CUD1 |\\ \\{field Field1\\};                                   [ CUD2;  ...; ]  [field Field2; ...] \\} \\}` A [determination](ABENRAP_DETERMINATION_GLOSRY.html) modifies instances of [RAP business objects](ABENRAP_BO_GLOSRY.\n\n/abap-docs-cloud/ABENBDL_DETERMINATIONS",
+      "bm25": -16.854936490186425,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DETERMINATIONS",
+      "relFile": "ABENBDL_DETERMINATIONS.md",
+      "finalScore": 0.051315789473684204,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.854936490186425,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_EXT_ENABL_EXT_BASE",
+      "text": "ABENBDL_EXT_ENABL_EXT_BASE\n\nTo extend a [base BDEF extension](ABENRAP_BASE_BDEF_EXT_GLOSRY.html), the keyword `extensible` can be specified in the following places: In the header declaration, the following optional additions are available: In BDEF extensions to unmanaged RAP BOs, there are the following limitations:\n\n/abap-docs-cloud/ABENBDL_EXT_ENABL_EXT_BASE",
+      "bm25": -18.345903887382637,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_EXT_ENABL_EXT_BASE",
+      "relFile": "ABENBDL_EXT_ENABL_EXT_BASE.md",
+      "finalScore": 0.050746268656716415,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.345903887382637,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_INTERNAL",
+      "text": "ABENBDL_INTERNAL\n\nDefines a [RAP BO operation](ABENRAP_BO_OPERATION_GLOSRY.html) as [internal](ABENRAP_INTERNAL_OPERATION_GLOSRY.html). That means that the operation in question can only be accessed from within the [ABAP behavior pool](ABENBEHAVIOR_POOL_GLOSRY.html), for example from an [action](ABENBDL_ACTION.html), a [validation](ABENBDL_VALIDATIONS.html), or a [determination](ABENBDL_DETERMINATIONS.html). When a\n\n/abap-docs-cloud/ABENBDL_INTERNAL",
+      "bm25": -18.013073300631632,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_INTERNAL",
+      "relFile": "ABENBDL_INTERNAL.md",
+      "finalScore": 0.049999999999999996,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.013073300631632,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DRAFT_ACTION",
+      "text": "ABENBDL_DRAFT_ACTION\n\nDraft actions must be specified for [lock master entities](ABENRAP_LOCK_MA_ENT_GLOSRY.html) that are defined using the keyword `lock master` only, as they refer to the whole lockable subtree of a business object. Draft actions are provided by the [RAP framework](ABENRAP_FRAMEWORK_GLOSRY.html) in all scenarios. An implementation in the [ABAP behavior pool](ABENBEHAVIOR_POOL_GLOSRY.html) is not requ\n\n/abap-docs-cloud/ABENBDL_DRAFT_ACTION",
+      "bm25": -17.465733968189326,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DRAFT_ACTION",
+      "relFile": "ABENBDL_DRAFT_ACTION.md",
+      "finalScore": 0.04927536231884058,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.465733968189326,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_NEW_ELEM_EXT",
+      "text": "ABENBDL_NEW_ELEM_EXT\n\nThe elements listed in this topic can be added to the [body](ABENCDS_ENTITY_BODY_GLOSRY.html) of an existing RAP BO entity. All of them are optional, and multiple elements or all elements can be specified together. The elements can be added in a [base BDEF extension](ABENRAP_BASE_BDEF_EXT_GLOSRY.html) with or without the addition [`using interface`](ABENBDL_USING_INTERFACE.html). In other words, t\n\n/abap-docs-cloud/ABENBDL_NEW_ELEM_EXT",
+      "bm25": -17.393908544782267,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_NEW_ELEM_EXT",
+      "relFile": "ABENBDL_NEW_ELEM_EXT.md",
+      "finalScore": 0.04857142857142857,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.393908544782267,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DRAFT_ACTION_EXT",
+      "text": "ABENBDL_DRAFT_ACTION_EXT\n\nExtends an existing [draft determine action Prepare](ABENRAP_BO_DRAFT_ACTION_GLOSRY.html) with extension [determinations](ABENRAP_DETERMINATION_GLOSRY.html) and extension [validations](ABENRAP_VALIDATION_GLOSRY.html). At least one extension determination or extension validation must be specified within curly brackets. The optional addition [(always)](ABENBDL_DETERMINE_ACTION.html) can be used. Det\n\n/abap-docs-cloud/ABENBDL_DRAFT_ACTION_EXT",
+      "bm25": -17.31776610732201,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DRAFT_ACTION_EXT",
+      "relFile": "ABENBDL_DRAFT_ACTION_EXT.md",
+      "finalScore": 0.04788732394366197,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.31776610732201,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ACTION_ONSAVE",
+      "text": "ABENBDL_ACTION_ONSAVE\n\nDefines a [RAP save action](ABENRAP_SAVE_ACTION_GLOSRY.html). RAP save actions are [RAP actions](ABENRAP_ACTION_GLOSRY.html) that can only be called during a specified [RAP saver method](ABENABP_SAVER_METHOD_GLOSRY.html) in the [RAP save sequence](ABENRAP_SAVE_SEQ_GLOSRY.html). Any call during the [RAP interaction phase](ABENRAP_INT_PHASE_GLOSRY.html) leads to a [short dump](ABENSHORT_DUMP_GLOSRY.\n\n/abap-docs-cloud/ABENBDL_ACTION_ONSAVE",
+      "bm25": -17.232736332853893,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ACTION_ONSAVE",
+      "relFile": "ABENBDL_ACTION_ONSAVE.md",
+      "finalScore": 0.04722222222222222,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.232736332853893,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DETERMINE_ACTION_EXT",
+      "text": "ABENBDL_DETERMINE_ACTION_EXT\n\nExtends an existing [determine action](ABENRAP_BO_DET_ACTION_GLOSRY.html)\\\\ `DetermineActionName` with extension [determinations](ABENRAP_DETERMINATION_GLOSRY.html) and extension [validations](ABENRAP_VALIDATION_GLOSRY.html). At least one extension determination or extension validation must be specified within curly brackets. If the optional addition `always` is used, then all determinations and v\n\n/abap-docs-cloud/ABENBDL_DETERMINE_ACTION_EXT",
+      "bm25": -17.116268321546933,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DETERMINE_ACTION_EXT",
+      "relFile": "ABENBDL_DETERMINE_ACTION_EXT.md",
+      "finalScore": 0.04657534246575342,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -17.116268321546933,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DET_ACTION_EXT_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates how a determine action is extended via a BDEF extension. The CDS data model consists of the root entity `DEMO_RAP_EXTENSIBILITY_DET_ACT` and its child entity `DEMO_RAP_EXT_DET_ACT_CHILD`. CDS transactional interface, root entity:\n\n/abap-docs-cloud/ABENBDL_DET_ACTION_EXT_ABEXA",
+      "bm25": -16.98080602848031,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DET_ACTION_EXT_ABEXA",
+      "relFile": "ABENBDL_DET_ACTION_EXT_ABEXA.md",
+      "finalScore": 0.04594594594594595,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.98080602848031,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_GROUP_EXTENSION",
+      "text": "ABENBDL_GROUP_EXTENSION\n\nGrouping divides the implementation-relevant parts of a [business object's](ABENRAP_BO_GLOSRY.html) business logic into multiple groups for behavior implementation. Each group is assigned to a separate [implementation class](ABENBDL_IN_CLASS_UNIQUE_EXT.html). This works for BDEF extensions in the same way as for RAP BOs, see the topic [RAP - `group`](ABENBDL_GROUPING.html). The original BDEF may d\n\n/abap-docs-cloud/ABENBDL_GROUP_EXTENSION",
+      "bm25": -16.94818407276501,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_GROUP_EXTENSION",
+      "relFile": "ABENBDL_GROUP_EXTENSION.md",
+      "finalScore": 0.04533333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.94818407276501,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPTYPE_TABLE_FOR",
+      "text": "ABAPTYPE_TABLE_FOR\n\n`... TABLE FOR \\{ ACTION IMPORT bdef~action \\}\\              |\\ \\{ ACTION RESULT bdef~action \\}\\              |\\ \\{\\ [INSTANCE] AUTHORIZATION KEY bdef[~group]\\ \\}\\              |\\ \\{\\ [INSTANCE] AUTHORIZATION RESULT bdef[~group]\\ \\}\\              |\\ \\{ CHANGE bdef \\}\\              |\\ \\{ CREATE bdef [\\\\_assoc]\\ \\}\\              |\\ \\{ DELETE bdef \\}\\              |\\ \\{ DETERMINATION bdef~det \\}\\\n\n/abap-docs-cloud/ABAPTYPE_TABLE_FOR",
+      "bm25": -16.668153228576685,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPTYPE_TABLE_FOR",
+      "relFile": "ABAPTYPE_TABLE_FOR.md",
+      "finalScore": 0.04415584415584416,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.668153228576685,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_STRICT_2",
+      "text": "ABENBDL_STRICT_2\n\nThe addition `strict(2)` enables [BDEF strict mode](ABENRAP_STRICT_MODE_GLOSRY.html), version 2. When strict mode is switched on, outdated syntax which normally produces a syntax check warning leads to a syntax check error. Strict mode version 2 introduces mainly stricter checks for the [RAP BO contract](ABENRAP_BO_CONTRACT_GLOSRY.html). Contract violations lead to [runtime errors](ABENRUNTIME_ERR\n\n/abap-docs-cloud/ABENBDL_STRICT_2",
+      "bm25": -16.542573453476024,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_STRICT_2",
+      "relFile": "ABENBDL_STRICT_2.md",
+      "finalScore": 0.04358974358974359,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.542573453476024,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ENTITY_PROJ_EXT_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates how the behavior of a projection BDEF is extended by means of a projection BDEF extension. The CDS data model consists of one root node without child entities: **CDS transactional interface**\n\n/abap-docs-cloud/ABENBDL_ENTITY_PROJ_EXT_ABEXA",
+      "bm25": -15.698633182582764,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ENTITY_PROJ_EXT_ABEXA",
+      "relFile": "ABENBDL_ENTITY_PROJ_EXT_ABEXA.md",
+      "finalScore": 0.043037974683544304,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.698633182582764,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL__BEHAVIOR_EXT_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates how the behavior of a RAP BO is extended by means of a BDEF extension. The CDS data model consists of one root node without child entities: **CDS transactional interface**\n\n/abap-docs-cloud/ABENBDL__BEHAVIOR_EXT_ABEXA",
+      "bm25": -15.55966020357572,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL__BEHAVIOR_EXT_ABEXA",
+      "relFile": "ABENBDL__BEHAVIOR_EXT_ABEXA.md",
+      "finalScore": 0.0425,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.55966020357572,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRAP_HANDLER_METHODS_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates various RAP handler methods with an unmanaged and draft-enabled RAP BO. Note that the simplified example does not represent a real business scenario. The focus is on the technical side by giving an idea on self-implementing the handler methods of an [ABAP behavior pool (ABP)](ABENBEHAVIOR_POOL_GLOSRY.html) and dealing with the method parameters. The code should not be reu\n\n/abap-docs-cloud/ABENRAP_HANDLER_METHODS_ABEXA",
+      "bm25": -14.645145116356343,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_HANDLER_METHODS_ABEXA",
+      "relFile": "ABENRAP_HANDLER_METHODS_ABEXA.md",
+      "finalScore": 0.0419753086419753,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.645145116356343,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-756-CDS_BDL",
+      "text": "ABENNEWS-756-CDS_BDL\n\nIt is now possible to trigger a [determination on modify](ABENBDL_DETERMINATIONS.html) by another determination on modify. The new [RAP BO operation addition](ABENBDL_OPERATIONS_ADDITIONS.html)\\\\ [`authorization:update`](ABENBDL_ACTIONS_AUTH_UPDATE.html) is available for managed and unmanaged BOs. It delegates the authorization control for an operation to the authorization control that is specifie\n\n/abap-docs-cloud/ABENNEWS-756-CDS_BDL",
+      "bm25": -18.945129470409206,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-756-CDS_BDL",
+      "relFile": "ABENNEWS-756-CDS_BDL.md",
+      "finalScore": 0.04193548387096774,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.945129470409206,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_IN_CLASS_UNIQUE_EXT",
+      "text": "Further executable examples\n\n`... implementation in class ClassName unique;` Specifies an [ABAP behavior pool](ABENBEHAVIOR_POOL_GLOSRY.html) for the extended RAP business object. Valid abbreviations are [extension](ABENRAP_PREFIX_EXTENSION_GLOSRY.html) ABAP behavior pool or extension ABP. An extension ABP is an optional component of a BDEF extension and only required if the BDEF extension specifies implementation-relevant co\n\n/abap-docs-cloud/ABENBDL_IN_CLASS_UNIQUE_EXT",
+      "bm25": -14.614825181685786,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_IN_CLASS_UNIQUE_EXT",
+      "relFile": "ABENBDL_IN_CLASS_UNIQUE_EXT.md",
+      "finalScore": 0.041463414634146344,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.614825181685786,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_FOREIGN",
+      "text": "ABENBDL_FOREIGN\n\n`...  foreign entity ForeignEntityName [alias AliasName];   ...` Defines a [RAP BO entity](ABENRAP_BO_ENTITY_GLOSRY.html) which is not part of the [CDS composition tree](ABENCDS_COMPOSITION_TREE_GLOSRY.html) of the current RAP BO as part of the [response structures](ABAPEML_RESPONSE.html), thus enabling message mapping for other BOs. An alias name `AliasName` can be specified. The length of this a\n\n/abap-docs-cloud/ABENBDL_FOREIGN",
+      "bm25": -14.60464949118617,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_FOREIGN",
+      "relFile": "ABENBDL_FOREIGN.md",
+      "finalScore": 0.04096385542168675,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.60464949118617,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-782-CDS_BDL",
+      "text": "ABENNEWS-782-CDS_BDL\n\nIt is now possible to trigger a [determination on modify](ABENBDL_DETERMINATIONS.html) by another determination on modify. The new addition [`always`](ABENBDL_DETERMINE_ACTION.html) can be used for determinations and validations assigned to a [`determine action`](ABENBDL_DETERMINE_ACTION.html). When the determine action is called, determinations and validations with this flag are executed regardle\n\n/abap-docs-cloud/ABENNEWS-782-CDS_BDL",
+      "bm25": -18.7855196978408,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-782-CDS_BDL",
+      "relFile": "ABENNEWS-782-CDS_BDL.md",
+      "finalScore": 0.040624999999999994,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -18.7855196978408,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "text": "ABENRAP_FEATURE_TABLE\n\nThe following sections shows all available language elements of the [RAP BDL](ABENCDS_BDL_GLOSRY.html) and their release dates. For further information on the release dates, see [ABAP Release News](ABENNEWS.html) and [ABAP Release Mapping](ABENABAPRELEASE_MAPPING.html). The following tables list the keywords that can be used in BDEFs of type managed, unmanaged, and projection. If the release dates\n\n/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "bm25": -14.554623849897988,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_FEATURE_TABLE",
+      "relFile": "ABENRAP_FEATURE_TABLE.md",
+      "finalScore": 0.04047619047619047,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -14.554623849897988,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "sap-help-439c61407a3148a79212c2ee5ffa6b91",
+      "text": "Defining the Extension Behavior\n\n/DMO/determineCountryCode with the trigger time on <b>modify</b> and the field trigger\nPhoneNumber.\n<b>determination</b> /DMO/determineCountryCode on <b>modify</b> \\{ field PhoneNumber; }\n\n\tDefine the <b>determination</b> /DMO/determineDiallingCode ... with the trigger time on <b>modify</b> and the field trigger\nCountryCode.\n<b>determination</b> /DMO/determineDiallingCode on <b>modify</b> \\{ field CountryCode; }\n\n\tDefine the factory action /DMO/createFromTemplate  with ... /DMO/determineCountryCode on <b>modify</b> \\{ field PhoneNumber; }\n\n  <b>determination</b> /DMO/determineDiallingCode on <b>modify</b> \\{ field CountryCode; }\n\n  extend draft determine action Prepare\n  \\{\n    validation / ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/439c61407a3148a79212c2ee5ffa6b91.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/439c61407a3148a79212c2ee5ffa6b91.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.036885245901639344,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.014754098360655738,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-b502fdb6fa864d14ac5960a90927ed1f",
+      "text": "Extensibility-Enablement for Behavior Extensions\n\nIt's not possible to add <b>determinations</b> or validations with trigger conditions to a <b>BDEF</b> extension, if\nit's not defined in the <b>BDEF</b> header. ... The\n<b>determinations</b> and validations with their trigger conditions defined after extensible in the <b>BDEF</b> header apply to\nall entity nodes defined as extensible. ... Behavior Extensions: Extension providers can add additional behavior like\nvalidations or <b>determinations</b>. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/b502fdb6fa864d14ac5960a90927ed1f.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/b502fdb6fa864d14ac5960a90927ed1f.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.036290322580645164,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.014516129032258065,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-90aa679971b1481a8cb3757e1e58259b",
+      "text": "App Extensibility: Manage Reload Requests (Expert)\n\nR_LastMileReloadRequestTP and the behavior definition projections that expose the\nbehavior via the API and the user interface (UI) have been marked as extensible to allow the creation and use of custom validations,\n<b>determinations</b> ... For this purpose, the following\nextensibility options are available:\n\n\n\nFor Developers\n\n\nThe business object behavior definition (<b>BDEF</b>) and relevant <b>BDEF</b> projections for reload requests can be extended ... Object Type\n\tObject Name\n\tPackage\n\n\t<b>BDEF</b> (behavior definition)\n\tR_LastMileReloadRequestTP (Interface\nI_LastMileReloadRequestTP)\n\tLMD &gt; RAP_LE_LMD &gt;\nRAP_LE_LMD_RR\n\n\t<b>BDEF</b> projection (for the Manage Reload ...  — Product: SAP S/4HANA (2025 (Oct 2025))\n\nhttps://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/e322becd165844e5868e590bc8efafaf/90aa679971b1481a8cb3757e1e58259b.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/e322becd165844e5868e590bc8efafaf/90aa679971b1481a8cb3757e1e58259b.html?locale=en-US&state=PRODUCTION&version=2025.000",
+      "relFile": "",
+      "finalScore": 0.03571428571428571,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.014285714285714285,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-08089b5592924586a762d9546d7f1eb9",
+      "text": "Behavior Extensions\n\nMETHODS ext_action FOR <b>MODIFY</b>\n      IMPORTING keys FOR ACTION Root~ext_action RESULT result.\n\nENDCLASS. ... You can add <b>determinations</b> and\nvalidations that you've defined in the <b>BDEF</b> extension to determine action PREPARE in the extension. This is\nrecommended to guarantee correct message handling. ... Validations and <b>Determinations</b> in Behavior Extensions\n\nYou can only define validations and <b>determinations</b> with their trigger conditions if the original BO is enabled for them, otherwise\nthis results in ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/08089b5592924586a762d9546d7f1eb9.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/08089b5592924586a762d9546d7f1eb9.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03515625,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 4,
+        "rrfScore": 0.0140625,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-e6139ad7d4b34e94835941ef8826e900",
+      "text": "Extensibility Feature Overview\n\nAdd new extension <b>determinations</b> and validations with their respective trigger conditions in a <b>BDEF</b>\nextension. ... For more information, see Extensibility-Enablement for Behavior Extensions\n\t\tAbout <b>determinations</b> and validations: <b>Determinations</b> and Validations. ... Only behavior and trigger conditions specified in the <b>BDEF</b> header can be added in a behavior extension. ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/e6139ad7d4b34e94835941ef8826e900.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/e6139ad7d4b34e94835941ef8826e900.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.03461538461538462,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 5,
+        "rrfScore": 0.013846153846153847,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-9cddeaa625854358b9cbedd198667787",
+      "text": "Development Constraints\n\nfor interfaces and abstract\n\n\t<b>BDEFs</b> where entities contain virtual or path elements\n\n\t<b>BDEFs</b> with draft scope\n\n\n\n \n  Before-<b>Modify</b> and Augmentation Exits\n In case the augment adds operations on &quot;non-original ... Using <b>Determinations</b> and Validations\n When using <b>determinations</b> and validations, the following constraints are given:\n \tThe trigger operation update for <b>determinations</b> and validations on save is only supported ... <b>BDEF</b> C1 Release\n C1 release of <b>BDEFs</b> is currently not supported for:\tManaged and unmanaged <b>BDEFs</b> (only projections, interfaces and abstract)\n\n\t<b>BDEFs</b> with language version 5 (customer objects), but allowed ...  — Product: ABAP Cloud (ABAP Cross-Product)\n\nhttps://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/9cddeaa625854358b9cbedd198667787.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f34b91da667bc1fcce6/9cddeaa625854358b9cbedd198667787.html?locale=en-US&state=PRODUCTION&version=sap_cross_product_abap",
+      "relFile": "",
+      "finalScore": 0.034090909090909095,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 6,
+        "rrfScore": 0.013636363636363637,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-8e171df87429466ebdad0f87a9fe3768",
+      "text": "Extensibility for Profit Center API\n\nThis OData service cannot be extended using the following BAdIs: \n\tProfit Center on Save Action (FIN_PROFIT_CENTER_ON_SAVE)\n\n\tProfit Center Validation (FIN_PROFIT_CENTER_VALIDATION)\n\n\tProfit Center <b>Determination</b> ... <b>BDEF</b> Extension Point\n\tPurpose\n\n\t<b>BDEF</b>: Validate Fields in a Profit Center Object\n(PROFIT_CENTER_VALIDATION)\n\tSet up validation checks for custom fields in a profit center master data record. ... Custom Logic\n\n\nDevelopers can add custom behavior for this OData service by using the following behavior definition (<b>BDEF</b>) extension points for the\nProfit Center (I_ProfitCenterTP_2) business object: ...  — Product: SAP S/4HANA Cloud Public Edition (2602 Latest)\n\nhttps://help.sap.com/docs/SAP_S4HANA_CLOUD/b978f98fc5884ff2aeb10c8fdeb8a43b/8e171df87429466ebdad0f87a9fe3768.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_CLOUD/b978f98fc5884ff2aeb10c8fdeb8a43b/8e171df87429466ebdad0f87a9fe3768.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "relFile": "",
+      "finalScore": 0.033582089552238806,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 7,
+        "rrfScore": 0.013432835820895522,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-87f748107cc5476096c047c61a7ca621",
+      "text": "Extensibility for Cost Center API\n\nNote\n\nThis OData service cannot be extended using the following BAdIs: \n\tCost Center on Save Action (FIN_COST_CENTER_ON_SAVE)\n\n\tCost Center Validation (FIN_COST_CENTER_VALIDATION)\n\n\tCost Center <b>Determination</b> ... Custom Logic\n\n\nDevelopers can add custom behavior for this OData service by using the following behavior definition (<b>BDEF</b>) extension points for the\nCost Center business object:\n\n\t<b>BDEF</b> Extension Point ... Purpose\n\tBusiness Object\n\n\t<b>BDEF</b>: Validate Fields in a Cost Center Object (COST_CENTER_VALIDATION)\n\tSet up validation checks for custom fields in a cost center master data record. ...  — Product: SAP S/4HANA Cloud Public Edition (2602 Latest)\n\nhttps://help.sap.com/docs/SAP_S4HANA_CLOUD/1e3c2c0366834d1fb76461f439248880/87f748107cc5476096c047c61a7ca621.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_S4HANA_CLOUD/1e3c2c0366834d1fb76461f439248880/87f748107cc5476096c047c61a7ca621.html?locale=en-US&state=PRODUCTION&version=2602.500",
+      "relFile": "",
+      "finalScore": 0.03308823529411765,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 8,
+        "rrfScore": 0.013235294117647059,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-741dfc88293d4ac99186815b9fc35e31",
+      "text": "Message Mapping\n\nForeign Entity Definition\n\n\nA RAP BO entity is added as foreign entity by adding foreign entity\nForeignEntityName to the <b>BDEF</b> header in the base BO or the projection\n<b>BDEF</b>. ... If several RAP BOs are part of a\n<b>MODIFY</b> request, the MAP_MESSAGES\nimplementations are called for every RAP BO during the save sequence. ... Map Messages Implementation\n\n\n\n\n\nWhen a business object is defined as foreign entity in a <b>BDEF</b>, the\nreported structure of the original BO is extended with the\ncomponents of the foreign entity allowing ...  — Product: ABAP_PLATFORM_NEW (2023 Latest)\n\nhttps://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/741dfc88293d4ac99186815b9fc35e31.html?locale=en-US&state=PRODUCTION&version=202310.latest",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/ABAP_PLATFORM_NEW/fc4c71aa50014fd1b43721701471913d/741dfc88293d4ac99186815b9fc35e31.html?locale=en-US&state=PRODUCTION&version=202310.latest",
+      "relFile": "",
+      "finalScore": 0.03260869565217392,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 9,
+        "rrfScore": 0.013043478260869566,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "sap-help-5ef2c70fd6b644e7a74bf0c8cf2e346a",
+      "text": "Examples of Strings\n\n&quot;\t&quot;abctabdef&quot;\t&quot;abc&quot; &amp; tab &amp; &quot;<b>def</b>&quot;\n\tabc\\<b>tdef</b>\t&quot;abc\\\\<b>tdef</b>&quot;\t@&quot;abc\\<b>tdef</b>&quot;\t&quot;abc\\<b>tdef</b>&quot;\n\n\n\nNote\n\nAs you can see from the examples, if the Allow Verbatim String and Escape Sequences checkbox is selected, backslashes ... 1&quot; &amp; doublequote &amp; \n&quot;,&quot; &amp; doublequote &amp; \n&quot;b&quot; &amp; doublequote &amp; \n&quot;:&quot; &amp; doublequote &amp; \n&quot;2&quot; &amp; doublequote &amp; \n&quot;}&quot;\n\n\n\n\n\n\tLine1lfLine2\t&quot;Line1\\nLine2&quot;\t@&quot;Line1\nLine2&quot;\n\n\t&quot;Line1&quot; &amp; lf &amp; &quot;Line2&quot; \n\tabctabdef\t&quot;abc\\<b>tdef</b> ...  — Product: SAP Plant Connectivity (15.5 SP05)\n\nhttps://help.sap.com/docs/SAP_PLANT_CONNECTIVITY/c90214be0d934ebdb6f3bce29c63c0ff/5ef2c70fd6b644e7a74bf0c8cf2e346a.html?locale=en-US&state=PRODUCTION&version=15.5.5",
+      "bm25": 0,
+      "sourceId": "sap-help",
+      "path": "https://help.sap.com/docs/SAP_PLANT_CONNECTIVITY/c90214be0d934ebdb6f3bce29c63c0ff/5ef2c70fd6b644e7a74bf0c8cf2e346a.html?locale=en-US&state=PRODUCTION&version=15.5.5",
+      "relFile": "",
+      "finalScore": 0.03214285714285714,
+      "sourceKind": "sap_help",
+      "debug": {
+        "rank": 10,
+        "rrfScore": 0.012857142857142857,
+        "boost": 1.5
+      }
+    },
+    {
+      "id": "community-14032642",
+      "text": "Precheck Methods, Validations, Determinations, Rea...\n\n...ame example as base we will implement&nbsp;Precheck Methods, Validation, Determination , Read and Modify EML Statements in ABAP&nbsp;RESTful Application Programming Model.&nbsp; Precheck Methods P...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/precheck-methods-validations-determinations-read-and-modify-eml-statements/ba-p/14032642?search-action-id=497478234922&search-result-uid=14032642",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/precheck-methods-validations-determinations-read-and-modify-eml-statements/ba-p/14032642?search-action-id=497478234922&search-result-uid=14032642",
+      "relFile": "",
+      "finalScore": 0.025245901639344263,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 1,
+        "rrfScore": 0.011475409836065573,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-14062042",
+      "text": "RAP: Augmentation\n\nAugmentation: used to enhance the modify request, before it reaches transactional buffer. augmentation is available for projection bdef s on ly. the augment methods are called before the&nbsp;c...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-members/rap-augmentation/ba-p/14062042?search-action-id=497478234922&search-result-uid=14062042",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-members/rap-augmentation/ba-p/14062042?search-action-id=497478234922&search-result-uid=14062042",
+      "relFile": "",
+      "finalScore": 0.024838709677419354,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 2,
+        "rrfScore": 0.01129032258064516,
+        "boost": 1.2000000000000002
+      }
+    },
+    {
+      "id": "community-13530605",
+      "text": "C0 Developer Extensibility for CDS Behavior Defini...\n\n...t&nbsp;fulfills all requirements for C0 release : &nbsp; managed implementation in class bp_demo_rap_base_det_val unique; strict(2); extensible { with determination s on modify ; with determination ...\n\nhttps://community.sap.com/t5/technology-blog-posts-by-sap/c0-developer-extensibility-for-cds-behavior-definitions/ba-p/13530605?search-action-id=497478234922&search-result-uid=13530605",
+      "bm25": 0,
+      "sourceId": "sap-community",
+      "path": "https://community.sap.com/t5/technology-blog-posts-by-sap/c0-developer-extensibility-for-cds-behavior-definitions/ba-p/13530605?search-action-id=497478234922&search-result-uid=13530605",
+      "relFile": "",
+      "finalScore": 0.024444444444444442,
+      "sourceKind": "sap_community",
+      "debug": {
+        "rank": 3,
+        "rrfScore": 0.01111111111111111,
+        "boost": 1.2000000000000002
+      }
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "meta": {
+    "query": "RAP action with importing parameters result",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": false,
+      "includeSamples": false
+    },
+    "timestamp": "2026-01-31T19:19:02.048Z",
+    "count": 37
+  },
+  "results": [
+    {
+      "id": "/abap-docs-cloud/ABENBDL_REDEFINE_PARAM",
+      "text": "Redefined Input Parameter for RAP Actions and RAP Functions\n\n`... deep parameter RedefinedAbstractBDEF ...` `... deep result RedefinedAbstractBDEF ...` `... deep parameter RedefinedAbstractBDEF ...`\n\n/abap-docs-cloud/ABENBDL_REDEFINE_PARAM",
+      "bm25": -12.753882724325416,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_REDEFINE_PARAM",
+      "relFile": "ABENBDL_REDEFINE_PARAM.md",
+      "finalScore": 0.06470588235294118,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.753882724325416,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 3.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPMETHODS_FOR_RAP_BEHV",
+      "text": "ABAPMETHODS_FOR_RAP_BEHV\n\n**Handler method definitions:** **Handler method implementations:** The following list provides an overview on parameters of handler methods:\n\n/abap-docs-cloud/ABAPMETHODS_FOR_RAP_BEHV",
+      "bm25": -16.25181962858585,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPMETHODS_FOR_RAP_BEHV",
+      "relFile": "ABAPMETHODS_FOR_RAP_BEHV.md",
+      "finalScore": 0.06290322580645161,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.25181962858585,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_MODIFY",
+      "text": "ABAPHANDLER_METH_MODIFY\n\n**Handler method definitions:** Handles create operations. See more details and the required BDEF specifications for the variant in the following topics:\n\n/abap-docs-cloud/ABAPHANDLER_METH_MODIFY",
+      "bm25": -16.831220989655325,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_MODIFY",
+      "relFile": "ABAPHANDLER_METH_MODIFY.md",
+      "finalScore": 0.05573770491803279,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -16.831220989655325,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_PRECHECK",
+      "text": "ABAPHANDLER_METH_PRECHECK\n\n**Handler method definitions:** See the required BDEF notations in the following topic: [RAP BDL - precheck](ABENBDL_PRECHECK.html). Handles the precheck for [create operations](ABENBDL_STANDARD_OPERATIONS.html).\n\n/abap-docs-cloud/ABAPHANDLER_METH_PRECHECK",
+      "bm25": -15.191329203884608,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_PRECHECK",
+      "relFile": "ABAPHANDLER_METH_PRECHECK.md",
+      "finalScore": 0.053968253968253964,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -15.191329203884608,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENMETHOD_FOR_ENTITY_EVENT",
+      "text": "ABENMETHOD_FOR_ENTITY_EVENT\n\n**RAP event handler method definitions:** **RAP event handler method implementations:** When a RAP business event is raised using a [`RAISE ENTITY EVENT`](ABAPRAISE_ENTITY_EVENT.html) ABAP EML statement, the RAP event handler methods are called locally in the system and processed asynchronously.\n\n/abap-docs-cloud/ABENMETHOD_FOR_ENTITY_EVENT",
+      "bm25": -13.265683935693257,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENMETHOD_FOR_ENTITY_EVENT",
+      "relFile": "ABENMETHOD_FOR_ENTITY_EVENT.md",
+      "finalScore": 0.053125,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -13.265683935693257,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPTYPE_STRUCTURE_FOR",
+      "text": "ABAPTYPE_STRUCTURE_FOR\n\n`... STRUCTURE FOR \\{ ACTION IMPORT bdef~action \\}\\                  |\\ \\{ ACTION REQUEST bdef~action \\}\\                  |\\ \\{ ACTION RESULT bdef~action \\}\\                  |\\ \\{\\ [INSTANCE] AUTHORIZATION KEY bdef[~group]\\ \\}\\                  |\\ \\{\\ [INSTANCE] AUTHORIZATION REQUEST bdef[~group]\\ \\}\\                  |\\ \\{\\ [INSTANCE] AUTHORIZATION RESULT bdef[~group]\\ \\}\\                  |\\ \\\n\n/abap-docs-cloud/ABAPTYPE_STRUCTURE_FOR",
+      "bm25": -12.872954044282842,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPTYPE_STRUCTURE_FOR",
+      "relFile": "ABAPTYPE_STRUCTURE_FOR.md",
+      "finalScore": 0.05230769230769231,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.872954044282842,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRAP_CL_ABAP_BEHV_AUX",
+      "text": "ABAPRAP_CL_ABAP_BEHV_AUX\n\nThe `CL_ABAP_BEHV_AUX` class includes methods for retrieving various pieces of information. Regarding `GET_CURRENT_CONTEXT`: The following code snippet shows how information on the current context might be retrieved using the `GET_CURRENT_CONTEXT` method by storing the information in a variable [declared inline](ABENINLINE_DECLARATION_GLOSRY.html).\n\n/abap-docs-cloud/ABAPRAP_CL_ABAP_BEHV_AUX",
+      "bm25": -12.360060987444024,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRAP_CL_ABAP_BEHV_AUX",
+      "relFile": "ABAPRAP_CL_ABAP_BEHV_AUX.md",
+      "finalScore": 0.052000000000000005,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.360060987444024,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPTYPE_TABLE_FOR",
+      "text": "ABAPTYPE_TABLE_FOR\n\n`... TABLE FOR \\{ ACTION IMPORT bdef~action \\}\\              |\\ \\{ ACTION RESULT bdef~action \\}\\              |\\ \\{\\ [INSTANCE] AUTHORIZATION KEY bdef[~group]\\ \\}\\              |\\ \\{\\ [INSTANCE] AUTHORIZATION RESULT bdef[~group]\\ \\}\\              |\\ \\{ CHANGE bdef \\}\\              |\\ \\{ CREATE bdef [\\\\_assoc]\\ \\}\\              |\\ \\{ DELETE bdef \\}\\              |\\ \\{ DETERMINATION bdef~det \\}\\\n\n/abap-docs-cloud/ABAPTYPE_TABLE_FOR",
+      "bm25": -12.855085760191582,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPTYPE_TABLE_FOR",
+      "relFile": "ABAPTYPE_TABLE_FOR.md",
+      "finalScore": 0.051515151515151514,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.855085760191582,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ACTION_NONFACTORY",
+      "text": "ABENBDL_ACTION_NONFACTORY\n\nDefines a [RAP action](ABENRAP_ACTION_GLOSRY.html) which offers non-standard behavior. The custom logic must be implemented in the [RAP handler method](ABENABP_HANDLER_METHOD_GLOSRY.html)\\\\ [`FOR MODIFY`](ABAPHANDLER_METH_MODIFY.html). An action per default relates to a [RAP BO entity instance](ABENRAP_BO_ENTITY_INST_GLOSRY.html) and changes the state of the instance. If the optional keyword [`sta\n\n/abap-docs-cloud/ABENBDL_ACTION_NONFACTORY",
+      "bm25": -12.14053979343728,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ACTION_NONFACTORY",
+      "relFile": "ABENBDL_ACTION_NONFACTORY.md",
+      "finalScore": 0.049367088607594936,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.14053979343728,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ABSTRACT",
+      "text": "ABENBDL_ABSTRACT\n\nA [RAP abstract behavior definition](ABENCDS_ABSTRACT_BDEF_GLOSRY.html) mainly serves as typing mechanism for deep [action](ABENRAP_ACTION_GLOSRY.html) or [function](ABENRAP_FUNCTION_GLOSRY.html) parameters. Only a limited range of syntax elements is available, such as associations and type mapping. It is not possible to define any transactional behavior in an abstract behavior definition. The fol\n\n/abap-docs-cloud/ABENBDL_ABSTRACT",
+      "bm25": -12.402149887946916,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ABSTRACT",
+      "relFile": "ABENBDL_ABSTRACT.md",
+      "finalScore": 0.04722222222222222,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.402149887946916,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ACTION_ONSAVE",
+      "text": "ABENBDL_ACTION_ONSAVE\n\nDefines a [RAP save action](ABENRAP_SAVE_ACTION_GLOSRY.html). RAP save actions are [RAP actions](ABENRAP_ACTION_GLOSRY.html) that can only be called during a specified [RAP saver method](ABENABP_SAVER_METHOD_GLOSRY.html) in the [RAP save sequence](ABENRAP_SAVE_SEQ_GLOSRY.html). Any call during the [RAP interaction phase](ABENRAP_INT_PHASE_GLOSRY.html) leads to a [short dump](ABENSHORT_DUMP_GLOSRY.\n\n/abap-docs-cloud/ABENBDL_ACTION_ONSAVE",
+      "bm25": -11.922104625851777,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ACTION_ONSAVE",
+      "relFile": "ABENBDL_ACTION_ONSAVE.md",
+      "finalScore": 0.046987951807228916,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.922104625851777,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_READ",
+      "text": "ABAPHANDLER_METH_READ\n\n**Handler method definitions:** The method parameters can be passed by reference (see [`REFERENCE`](ABAPMETHODS_PARAMETERS.html)), except for the predefined parameters `failed` and `reported`. **Note** Find information about the handler methods to be implemented for [RAP default values functions](ABENRAP_BO_DEFAULTING_GLOSRY.html) [here](ABAPRAP_HANDLER_DEFAULT_VAL_FUNC.html).\n\n/abap-docs-cloud/ABAPHANDLER_METH_READ",
+      "bm25": -12.401311499533664,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_READ",
+      "relFile": "ABAPHANDLER_METH_READ.md",
+      "finalScore": 0.04657534246575342,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.401311499533664,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_REDEF_PARAM_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates how input and output parameters of [RAP actions](ABENRAP_ACTION_GLOSRY.html), [RAP functions](ABENRAP_FUNCTION_GLOSRY.html), and [RAP business events](ABENRAP_ENTITY_EVENT_GLOSRY.html) can be redefined in a [projection BDEF](ABENCDS_PROJ_BDEF_GLOSRY.html) or in an [interface BDEF](ABENCDS_INTERFACE_BDEF_GLOSRY.html). **Note** This example does not fully meet the requireme\n\n/abap-docs-cloud/ABENBDL_REDEF_PARAM_ABEXA",
+      "bm25": -12.773444218539472,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_REDEF_PARAM_ABEXA",
+      "relFile": "ABENBDL_REDEF_PARAM_ABEXA.md",
+      "finalScore": 0.04626865671641791,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.773444218539472,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPRAP_HANDLER_DEFAULT_VAL_FUNC",
+      "text": "The names of the methods are predefined\n\n**Handler method definition:** **Note** The syntax above only covers the definition as it is created by the quick fix in the [ABAP development tools for Eclipse](ABENADT_GLOSRY.html). For all options, see [here](ABAPHANDLER_METH_READ.html). If RAP BO operations are defined with [RAP default values functions](ABENRAP_BO_DEFAULTING_GLOSRY.html), [RAP handler methods](ABENABP_HANDLER_METHOD_GLOSRY.ht\n\n/abap-docs-cloud/ABAPRAP_HANDLER_DEFAULT_VAL_FUNC",
+      "bm25": -12.36364337456121,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPRAP_HANDLER_DEFAULT_VAL_FUNC",
+      "relFile": "ABAPRAP_HANDLER_DEFAULT_VAL_FUNC.md",
+      "finalScore": 0.04594594594594595,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.36364337456121,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENDERIVED_TYPE_HIERARCHY_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates [actions](ABENRAP_ACTION_GLOSRY.html) whose [`deep` input parameters](ABENBDL_ACTION_INPUT_PARAM.html) and [`deep` output parameters](ABENBDL_ACTION_OUTPUT_PARA.html) use the [BDEF derived types](ABENRAP_DERIVED_TYPE_GLOSRY.html)\\\\ [`TYPE TABLE FOR HIERARCHY`](ABAPTYPE_TABLE_FOR.html) and [`TYPE STRUCTURE FOR HIERARCHY`](ABAPTYPE_STRUCTURE_FOR.html) with a [managed](ABENB\n\n/abap-docs-cloud/ABENDERIVED_TYPE_HIERARCHY_ABEXA",
+      "bm25": -12.70276386643777,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENDERIVED_TYPE_HIERARCHY_ABEXA",
+      "relFile": "ABENDERIVED_TYPE_HIERARCHY_ABEXA.md",
+      "finalScore": 0.04492753623188406,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.70276386643777,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_FEATURES",
+      "text": "ABAPHANDLER_METH_FEATURES\n\n**Handler method definition:** See the required BDEF notations for both variants in the topic [RAP - `feature control`](ABENBDL_ACTIONS_FC.html). Examples for RAP handler method definitions. Find demonstrations of method implementations in the executable examples further down.\n\n/abap-docs-cloud/ABAPHANDLER_METH_FEATURES",
+      "bm25": -12.22027782503696,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_FEATURES",
+      "relFile": "ABAPHANDLER_METH_FEATURES.md",
+      "finalScore": 0.04473684210526315,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.22027782503696,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ACTION_FACTORY",
+      "text": "ABENBDL_ACTION_FACTORY\n\nFor factory actions, the same rules apply as for [non-factory actions](ABENBDL_ACTION_NONFACTORY.html) with the following differences: For each unique [BDEF derived type](ABENRAP_DERIVED_TYPE_GLOSRY.html)\\\\ `%cid` (for static factory actions) or `%key` (for instance-bound factory actions) passed to the action, the number of newly created instances (none, one, or multiple) are added to the [respons\n\n/abap-docs-cloud/ABENBDL_ACTION_FACTORY",
+      "bm25": -11.637276478947532,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ACTION_FACTORY",
+      "relFile": "ABENBDL_ACTION_FACTORY.md",
+      "finalScore": 0.04431818181818182,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.637276478947532,
+        "rank": 28,
+        "rrfScore": 0.011363636363636364,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRAP_HANDLER_METHODS_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates various RAP handler methods with an unmanaged and draft-enabled RAP BO. Note that the simplified example does not represent a real business scenario. The focus is on the technical side by giving an idea on self-implementing the handler methods of an [ABAP behavior pool (ABP)](ABENBEHAVIOR_POOL_GLOSRY.html) and dealing with the method parameters. The code should not be reu\n\n/abap-docs-cloud/ABENRAP_HANDLER_METHODS_ABEXA",
+      "bm25": -12.69948872672622,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRAP_HANDLER_METHODS_ABEXA",
+      "relFile": "ABENRAP_HANDLER_METHODS_ABEXA.md",
+      "finalScore": 0.04428571428571428,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.69948872672622,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_AUTH",
+      "text": "ABAPHANDLER_METH_AUTH\n\n**Handler method definition:** See the required BDEF notations for both variants in the topic [RAP - Authorization](ABENBDL_AUTHORIZATION.html). Authorization handler methods should be implemented using [`AUTHORITY-CHECK OBJECT`](ABAPAUTHORITY-CHECK.html).\n\n/abap-docs-cloud/ABAPHANDLER_METH_AUTH",
+      "bm25": -12.199350765295197,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_AUTH",
+      "relFile": "ABAPHANDLER_METH_AUTH.md",
+      "finalScore": 0.04415584415584416,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.199350765295197,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ACTION_REPEATABLE",
+      "text": "ABENBDL_ACTION_REPEATABLE\n\nDefines a non-factory [RAP action](ABENRAP_ACTION_GLOSRY.html) or a [RAP function](ABENRAP_FUNCTION_GLOSRY.html) as [repeatable RAP BO operation](ABENRAP_REPEATABLE_ACTION_GLOSRY.html). A repeatable RAP BO operation can be executed multiple times on the same [RAP BO entity instance](ABENRAP_BO_ENTITY_INST_GLOSRY.html) within the same [ABAP EML](ABENABAP_EML_GLOSRY.html) or [OData](ABENODATA_GLOSRY\n\n/abap-docs-cloud/ABENBDL_ACTION_REPEATABLE",
+      "bm25": -11.634901938930907,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ACTION_REPEATABLE",
+      "relFile": "ABENBDL_ACTION_REPEATABLE.md",
+      "finalScore": 0.043820224719101124,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.634901938930907,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENEML_RESPONSES_2_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example demonstrates the response parameters `FAILED`, `MAPPED` and `REPORTED` with a simple managed RAP BO. To show content for the responses, errors are intentionally produced in the context of a `MODIFY` statement trying to create new instances. The CDS data model consists of the root entity `DEMO_MANAGED_ROOT` and its child entity `DEMO_MANAGED_CHILD`. **Behavior definition**\n\n/abap-docs-cloud/ABENEML_RESPONSES_2_ABEXA",
+      "bm25": -12.651476428534101,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENEML_RESPONSES_2_ABEXA",
+      "relFile": "ABENEML_RESPONSES_2_ABEXA.md",
+      "finalScore": 0.04366197183098592,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.651476428534101,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_DEFAULT_FUNCTION",
+      "text": "ABENBDL_DEFAULT_FUNCTION\n\nRAP BO operation addition that defines a [RAP default values function](ABENRAP_BO_DEFAULTING_GLOSRY.html) for a RAP BO operation. A default values function defaults field values or input parameters for a RAP BO operation on the user interface. An implementation in the [RAP handler method](ABENABP_HANDLER_METHOD_GLOSRY.html)\\\\ [`FOR READ ... FOR FUNCTION ...`](ABAPRAP_HANDLER_DEFAULT_VAL_FUNC.html)\n\n/abap-docs-cloud/ABENBDL_DEFAULT_FUNCTION",
+      "bm25": -12.138927506058966,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_DEFAULT_FUNCTION",
+      "relFile": "ABENBDL_DEFAULT_FUNCTION.md",
+      "finalScore": 0.0425,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.138927506058966,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_ACTION_OUTPUT_PARA",
+      "text": "ABENBDL_ACTION_OUTPUT_PARA\n\nThe output parameter for an [action](ABENBDL_ACTION.html) or [function](ABENBDL_FUNCTION.html) is defined with the keyword `result`. It can be used to store the result of an action or function in an internal table. For details on the components of the result structure, see the topic [ABAP EML - `RESULT result_tab`](ABAPEML_RESULT.html). If a result parameter is declared in the action or function d\n\n/abap-docs-cloud/ABENBDL_ACTION_OUTPUT_PARA",
+      "bm25": -11.440601630389768,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_ACTION_OUTPUT_PARA",
+      "relFile": "ABENBDL_ACTION_OUTPUT_PARA.md",
+      "finalScore": 0.04148936170212766,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.440601630389768,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 2.9
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_GLOBAL_FEATURES",
+      "text": "ABAPHANDLER_METH_GLOBAL_FEATURES\n\n**Handler method definition:** See the required BDEF notations for both variants in the topic [RAP - `feature control`](ABENBDL_ACTIONS_FC.html). Example for a RAP handler method definition. Find a demonstration of a method implementation in the executable example further down.\n\n/abap-docs-cloud/ABAPHANDLER_METH_GLOBAL_FEATURES",
+      "bm25": -11.761786486416684,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_GLOBAL_FEATURES",
+      "relFile": "ABAPHANDLER_METH_GLOBAL_FEATURES.md",
+      "finalScore": 0.04,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.761786486416684,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENRPM_DERIVED_TYPES",
+      "text": "ABENRPM_DERIVED_TYPES\n\nEach BDEF derived type can be categorized as input or output (result) derived type according to its use as import or export parameter in methods of [RAP BO providers](ABENRAP_BO_PROVIDER_GLOSRY.html). For example, the types `... FOR CREATE ...` or `... FOR UPDATE ...` are used for providing input; `... FOR READ RESULT ...`, `... FOR ACTION RESULT ...` or `... FOR FAILED ...` are used to return a r\n\n/abap-docs-cloud/ABENRPM_DERIVED_TYPES",
+      "bm25": -11.698861859744566,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENRPM_DERIVED_TYPES",
+      "relFile": "ABENRPM_DERIVED_TYPES.md",
+      "finalScore": 0.03953488372093023,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.698861859744566,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPHANDLER_METH_GLOBAL_AUTH",
+      "text": "ABAPHANDLER_METH_GLOBAL_AUTH\n\n**Handler method definition:** See the required BDEF notations for both variants in the topic [RAP - Authorization](ABENBDL_AUTHORIZATION.html). Authorization handler methods should be implemented using [`AUTHORITY-CHECK OBJECT`](ABAPAUTHORITY-CHECK.html).\n\n/abap-docs-cloud/ABAPHANDLER_METH_GLOBAL_AUTH",
+      "bm25": -11.668458907469958,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPHANDLER_METH_GLOBAL_AUTH",
+      "relFile": "ABAPHANDLER_METH_GLOBAL_AUTH.md",
+      "finalScore": 0.03908045977011494,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.668458907469958,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENBDL_INVERSE_FUNCT",
+      "text": "ABENBDL_INVERSE_FUNCT\n\nAn inverse function is a static function that can be defined for a [foreign key association](ABENFOREIGN_KEY_ASSOC_GLOSRY.html). For a given value of the foreign key of that association, the inverse function returns all instances of the [association source](ABENASSOCIATION_SOURCE_GLOSRY.html) entity where the supplied value of the foreign key matches. Like any static function, you can use the inve\n\n/abap-docs-cloud/ABENBDL_INVERSE_FUNCT",
+      "bm25": -11.507915860905376,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENBDL_INVERSE_FUNCT",
+      "relFile": "ABENBDL_INVERSE_FUNCT.md",
+      "finalScore": 0.03777777777777778,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.507915860905376,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPMODIFY_ENTITY_ENTITIES_OP",
+      "text": "ABAPMODIFY_ENTITY_ENTITIES_OP\n\nThe EML `MODIFY` statement supports the following operations: In both, managed and unmanaged implementations, all modify operations must be specified in the [RAP behavior definition](ABENCDS_BEHAVIOR_DEFINITION_GLOSRY.html). See more details in the BDL documentation: [`Define Behavior, Standard Operations`](ABENBDL_STANDARD_OPERATIONS.html). All nonstandard operations (actions) must be user-implem\n\n/abap-docs-cloud/ABAPMODIFY_ENTITY_ENTITIES_OP",
+      "bm25": -11.43302238129464,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPMODIFY_ENTITY_ENTITIES_OP",
+      "relFile": "ABAPMODIFY_ENTITY_ENTITIES_OP.md",
+      "finalScore": 0.035789473684210524,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.43302238129464,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_27509916-_ANNO",
+      "text": "No KTD found\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`Consumption Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8\n\n/abap-docs-cloud/ABENCDS_27509916-_ANNO",
+      "bm25": -11.431383800719248,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_27509916-_ANNO",
+      "relFile": "ABENCDS_27509916-_ANNO.md",
+      "finalScore": 0.035416666666666666,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.431383800719248,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABAPTYPE_RESPONSE_FOR",
+      "text": "ABAPTYPE_RESPONSE_FOR\n\n`... RESPONSE FOR \\{ FAILED                   | MAPPED                   | REPORTED                     \\{\\ [EARLY | LATE]\\ \\}\\                     bdef \\} ...` The BDEF derived types with `TYPE RESPONSE FOR ...` are basically [deep structures](ABENDEEP_STRUCTURE_GLOSRY.html) containing one internal table as nested component for each entity of the RAP BO. Therefore, all information on all entities\n\n/abap-docs-cloud/ABAPTYPE_RESPONSE_FOR",
+      "bm25": -11.428249898969032,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABAPTYPE_RESPONSE_FOR",
+      "relFile": "ABAPTYPE_RESPONSE_FOR.md",
+      "finalScore": 0.03505154639175258,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.428249898969032,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 2.4
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENSHEET_RAP_CALC_DR_LN_M_ABEXA",
+      "text": "Demo for ABAP Keyword Documentation\n\nThis example represents a calculator using RAP concepts, i. e. using ABAP EML in the context of a [managed](ABENMANAGED_RAP_BO_GLOSRY.html) and [draft-enabled](ABENDRAFT_RAP_BO_GLOSRY.html) RAP business object with [RAP late numbering](ABENRAP_LATE_NUMBERING_GLOSRY.html) to carry out simple calculations. Here, a [RAP BO instance](ABENRAP_BO_INSTANCE_GLOSRY.html) consists of a calculation ID (which\n\n/abap-docs-cloud/ABENSHEET_RAP_CALC_DR_LN_M_ABEXA",
+      "bm25": -11.49696356923426,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENSHEET_RAP_CALC_DR_LN_M_ABEXA",
+      "relFile": "ABENSHEET_RAP_CALC_DR_LN_M_ABEXA.md",
+      "finalScore": 0.03406593406593407,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.49696356923426,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_ABSTRACT_BDEF_GLOSRY",
+      "text": "ABENCDS_ABSTRACT_BDEF_GLOSRY\n\nRAP abstract BDEF or abstract BDEF for short. A RAP abstract behavior definition is a [RAP behavior definition](ABENCDS_BEHAVIOR_DEFINITION_GLOSRY.html) of [implementation type](ABENCDS_BDEF_IMPL_TYPE_GLOSRY.html) abstract. It is based on a [CDS abstract entity](ABENCDS_ABSTRACT_ENTITY_GLOSRY.html) and it mainly serves as typing mechanism for deep action or function parameters. ABENRAP\\_GLOSSARY.h\n\n/abap-docs-cloud/ABENCDS_ABSTRACT_BDEF_GLOSRY",
+      "bm25": -11.450625185928535,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_ABSTRACT_BDEF_GLOSRY",
+      "relFile": "ABENCDS_ABSTRACT_BDEF_GLOSRY.md",
+      "finalScore": 0.03333333333333334,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.450625185928535,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 2.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-816-CDS_BDL",
+      "text": "ABENNEWS-816-CDS_BDL\n\nA [RAP default values function](ABENRAP_BO_DEFAULTING_GLOSRY.html) can be used to default values for fields or input parameters for RAP BO operations on the user interface. The syntax for defining a default values function is [`default function`](ABENBDL_DEFAULT_FUNCTION.html). The new statement [`auxiliary class`](ABENBDL_AUXILIARY_CLASS.html) can be used to specify one or more [ABP auxiliary cla\n\n/abap-docs-cloud/ABENNEWS-816-CDS_BDL",
+      "bm25": -12.194301958114341,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-816-CDS_BDL",
+      "relFile": "ABENNEWS-816-CDS_BDL.md",
+      "finalScore": 0.033333333333333326,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.194301958114341,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-779-CDS_BDL",
+      "text": "ABENNEWS-779-CDS_BDL\n\nThe new statement [`numbering:managed`](ABENBDL_FIELD_NUMBERING.html) can be used to automatically generate values for primary key fields with a UUID. Available for managed RAP BOs. For actions and functions, the [output parameter](ABENBDL_ACTION_OUTPUT_PARA.html) can now be an entity or a structure. The addition [`selective`](ABENBDL_ACTION_OUTPUT_PARA.html) can be used for an output parameter to\n\n/abap-docs-cloud/ABENNEWS-779-CDS_BDL",
+      "bm25": -12.018699507285595,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-779-CDS_BDL",
+      "relFile": "ABENNEWS-779-CDS_BDL.md",
+      "finalScore": 0.03209876543209876,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.018699507285595,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-758-CDS_BDL",
+      "text": "ABENNEWS-758-CDS_BDL\n\nIn [RAP interface behavior definitions](ABENCDS_INTERFACE_BDEF_GLOSRY.html), the following [RAP field characteristics](ABENRAP_FIELD_CHAR_GLOSRY.html) are now available: In [RAP interface behavior definitions](ABENCDS_INTERFACE_BDEF_GLOSRY.html), [RAP business events](ABENRAP_ENTITY_EVENT_GLOSRY.html) can be reused using the syntax [`use event`](ABENBDL_USE_PROJECTION.html). A new [RAP field chara\n\n/abap-docs-cloud/ABENNEWS-758-CDS_BDL",
+      "bm25": -11.964113474828734,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-758-CDS_BDL",
+      "relFile": "ABENNEWS-758-CDS_BDL.md",
+      "finalScore": 0.031707317073170725,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.964113474828734,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-793-CDS_BDL",
+      "text": "ABENNEWS-793-CDS_BDL\n\nIn [RAP interface behavior definitions](ABENCDS_INTERFACE_BDEF_GLOSRY.html), [RAP business events](ABENRAP_ENTITY_EVENT_GLOSRY.html) can be reused using the syntax [`use event`](ABENBDL_USE_PROJECTION.html). The optional addition [`optimized`](ABENBDL_DRAFT_ACTION.html) is now available for the [draft action `Activate`](ABENBDL_DRAFT_ACTION.html). SAP recommends always using this addition, since i\n\n/abap-docs-cloud/ABENNEWS-793-CDS_BDL",
+      "bm25": -11.871430903208717,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-793-CDS_BDL",
+      "relFile": "ABENNEWS-793-CDS_BDL.md",
+      "finalScore": 0.030952380952380946,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.871430903208717,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 1.5999999999999999
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENNEWS-755-CDS_BDL",
+      "text": "ABENNEWS-755-CDS_BDL\n\nThe new statement [`mapping for`](ABENBDL_TYPE_MAPPING.html) can be used to map field names from legacy code to field names from the current data model. Available for unmanaged and managed business objects. The new statement [`with additional save`](ABENBDL_SAVING.html) can be used to enhance the default save sequence in a managed implementation scenario. The new statement [`with unmanaged save`](\n\n/abap-docs-cloud/ABENNEWS-755-CDS_BDL",
+      "bm25": -11.468542666596594,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENNEWS-755-CDS_BDL",
+      "relFile": "ABENNEWS-755-CDS_BDL.md",
+      "finalScore": 0.028260869565217388,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.468542666596594,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 1.5999999999999999
+      }
+    }
+  ]
+}

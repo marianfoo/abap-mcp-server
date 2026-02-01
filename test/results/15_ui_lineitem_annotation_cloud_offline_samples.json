@@ -1,0 +1,814 @@
+{
+  "meta": {
+    "query": "@UI.lineItem position importance",
+    "options": {
+      "abapFlavor": "cloud",
+      "includeOnline": false,
+      "includeSamples": true
+    },
+    "timestamp": "2026-01-31T19:18:58.352Z",
+    "count": 50
+  },
+  "results": [
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#highlighting-line-items-based-on-criticality",
+      "text": "Highlighting Line Items Based on Criticality\n\n*Search term:* `#LineItemHighlight` Line items can be highlighted based on criticality. The `@UI.lineItem` annotation should be annotated at ***Entity level***. > [!NOTE] Search Term #LineItemHighlight @UI.lineItem criticality CriticalityCode Annotation that line item\n\n/abap-fiori-showcase/03_list_report_content#highlighting-line-items-based-on-criticality",
+      "bm25": -23.563208106165227,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#highlighting-line-items-based-on-criticality",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.06229508196721312,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.563208106165227,
+        "rank": 1,
+        "rrfScore": 0.01639344262295082,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#actions-in-toolbar",
+      "text": "Actions in Toolbar\n\n*Search term:* `#ActionInLineItem` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/action_line_item.jpg\" title=\"Action - Line Item\" /> With this `@UI.lineItem` annotation, the action is displayed above the table on the right, with other ...\n\n/abap-fiori-showcase/03_list_report_content#actions-in-toolbar",
+      "bm25": -23.48988475104738,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#actions-in-toolbar",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.06129032258064516,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.48988475104738,
+        "rank": 2,
+        "rrfScore": 0.016129032258064516,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#navigation-button",
+      "text": "Navigation Button\n\n*Search term:* `#Navigation-IBN` An action navigating to a published app of an associated entity can be added, through Intent Based Navigation using `@UI.lineItem`. When the navigation is setup properly, a button will be rendered at the table toolbar. Since this feature requires Fiori Launchpad and ...\n\n/abap-fiori-showcase/03_list_report_content#navigation-button",
+      "bm25": -23.472272038279392,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#navigation-button",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.06031746031746031,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.472272038279392,
+        "rank": 3,
+        "rrfScore": 0.015873015873015872,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#configuring-tables",
+      "text": "Configuring Tables\n\nTo see columns in your table, you would first have to define them with the annotation `@UI.lineItem` at the property, either in the CDS view or in a metadata extension. The most basic setting you can use would be: - the order of the column in the table and  - changing the column label, if you do not...\n\n/abap-fiori-showcase/03_list_report_content#configuring-tables",
+      "bm25": -23.46144924116073,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#configuring-tables",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.059375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.46144924116073,
+        "rank": 4,
+        "rrfScore": 0.015625,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#table",
+      "text": "Table\n\n*Search term:* `#OPTable` Table sections are most commonly for child entities or other associated entities. The implementation consists of two parts. First the associated or child entity needs the `@UI.lineItem` annotation. This defines which fields are displayed. > [!NOTE] @UI.lineItem position Sea...\n\n/abap-fiori-showcase/06_object_page_content#table",
+      "bm25": -12.896482661907866,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#table",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.04367816091954023,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.896482661907866,
+        "rank": 27,
+        "rrfScore": 0.011494252873563218,
+        "boost": 2.8
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_1264505495-_ANNO",
+      "text": "No KTD found\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`UI Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f3\n\n/abap-docs-cloud/ABENCDS_1264505495-_ANNO",
+      "bm25": -11.569984089751705,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_1264505495-_ANNO",
+      "relFile": "ABENCDS_1264505495-_ANNO.md",
+      "finalScore": 0.034126984126984124,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.569984089751705,
+        "rank": 66,
+        "rrfScore": 0.007936507936507936,
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_2004414295_ANNO",
+      "text": "ABENCDS_2004414295_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`UI Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f3\n\n/abap-docs-cloud/ABENCDS_2004414295_ANNO",
+      "bm25": -11.458119793532644,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_2004414295_ANNO",
+      "relFile": "ABENCDS_2004414295_ANNO.md",
+      "finalScore": 0.03359375,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.458119793532644,
+        "rank": 68,
+        "rrfScore": 0.0078125,
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_2054237562_ANNO",
+      "text": "ABENCDS_2054237562_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`UI Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f3\n\n/abap-docs-cloud/ABENCDS_2054237562_ANNO",
+      "bm25": -11.453092214851342,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_2054237562_ANNO",
+      "relFile": "ABENCDS_2054237562_ANNO.md",
+      "finalScore": 0.03333333333333333,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.453092214851342,
+        "rank": 69,
+        "rrfScore": 0.007751937984496124,
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_1089309723-_ANNO",
+      "text": "ABENCDS_1089309723-_ANNO\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`UI Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f3\n\n/abap-docs-cloud/ABENCDS_1089309723-_ANNO",
+      "bm25": -11.406795422417659,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_1089309723-_ANNO",
+      "relFile": "ABENCDS_1089309723-_ANNO.md",
+      "finalScore": 0.03307692307692308,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.406795422417659,
+        "rank": 70,
+        "rrfScore": 0.007692307692307693,
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENCDS_1090436236-_ANNO",
+      "text": "No KTD found\n\nThe following table shows the [properties](ABENCDS_SAP_ANNO_PROPS.html) of the annotation: The [annotation definition](ABENCDS_ANNO_DEFINITION_GLOSRY.html) documentation ([KTD](ABENKTD_GLOSRY.html)) is shown below. More documentation for that [framework-specific](ABENFRMWRK_ANNOTATION_GLOSRY.html) annotation can be found under [`UI Annotations`](https://help.sap.com/docs/ABAP_Cloud/f055b8bf582d4f3\n\n/abap-docs-cloud/ABENCDS_1090436236-_ANNO",
+      "bm25": -11.271459735680134,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENCDS_1090436236-_ANNO",
+      "relFile": "ABENCDS_1090436236-_ANNO.md",
+      "finalScore": 0.032824427480916026,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.271459735680134,
+        "rank": 71,
+        "rrfScore": 0.007633587786259542,
+        "boost": 3.3
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content",
+      "text": "List Report - Content Area\n\n- [List Report - Content Area](#list-report---content-area)\n\n/abap-fiori-showcase/03_list_report_content",
+      "bm25": -23.4255460096449,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.027692307692307693,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.4255460096449,
+        "rank": 5,
+        "rrfScore": 0.015384615384615385,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#content",
+      "text": "Content\n\n- [List Report - Content Area](#list-report---content-area)     - [Configuring Tables](#configuring-tables)         - [Actions - List](#actions---list)\n\n/abap-fiori-showcase/03_list_report_content#content",
+      "bm25": -23.422751300006002,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#content",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.027272727272727275,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.422751300006002,
+        "rank": 6,
+        "rrfScore": 0.015151515151515152,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#selection-presentation-variant-list-report",
+      "text": "Selection Presentation Variant - List Report\n\n*Search term:* `#SelectionPresentationVariant` A SelectionPresentationVariant bundles a Selection Variant and a Presentation Variant. > [!NOTE] @UI.presentationVariant qualifier pvariant maxItems Search Term #DefaultSort sortOrder StringProperty direction\n\n/abap-fiori-showcase/03_list_report_content#selection-presentation-variant-list-report",
+      "bm25": -23.405999334608808,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#selection-presentation-variant-list-report",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.026865671641791045,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.405999334608808,
+        "rank": 7,
+        "rrfScore": 0.014925373134328358,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#static-field-control-for-large-object-stream-property",
+      "text": "Static Field Control for Large Object/Stream Property\n\n*Search term:* `#StreamStaticFeatureCtrl` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud). Search Term #StreamStaticFeatureCtrl @Semantics.largeObject ...\n\n/abap-fiori-showcase/03_list_report_content#static-field-control-for-large-object-stream-property",
+      "bm25": -23.390667855629882,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#static-field-control-for-large-object-stream-property",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.026470588235294117,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.390667855629882,
+        "rank": 8,
+        "rrfScore": 0.014705882352941176,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#dynamic-field-control-for-large-object-stream-property",
+      "text": "Dynamic Field Control for Large Object/Stream Property\n\n*Search term:* `#StreamDynamicFeatureCtrl` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud). stream_filename abap.char stream_mimetype abap.char stream_...\n\n/abap-fiori-showcase/03_list_report_content#dynamic-field-control-for-large-object-stream-property",
+      "bm25": -23.390667855629882,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#dynamic-field-control-for-large-object-stream-property",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.026086956521739132,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.390667855629882,
+        "rank": 9,
+        "rrfScore": 0.014492753623188406,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#presentation-variant-list-report",
+      "text": "Presentation Variant - List Report\n\n*Search term:* `#PresentationVariant` A presentation variant defines how the result of a queried collection of entities is shaped and how this result is displayed, for example as a list report or a chart (`@UI.presentationVariant.visualizations`), the sorting order (`@UI.presentationVariant.sortOrde...\n\n/abap-fiori-showcase/03_list_report_content#presentation-variant-list-report",
+      "bm25": -23.387882825933286,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#presentation-variant-list-report",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.025714285714285714,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.387882825933286,
+        "rank": 10,
+        "rrfScore": 0.014285714285714285,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-a-progress-indicator-to-a-table",
+      "text": "Adding a Progress Indicator to a Table\n\n*Search term:* `#DataPointProgressTable` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_progress_ind.jpg\" title=\"Progress Indicator in Table\" /> To add a progress indicator to the table, you first need to define a datapoint with `...\n\n/abap-fiori-showcase/03_list_report_content#adding-a-progress-indicator-to-a-table",
+      "bm25": -23.387882825933286,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-a-progress-indicator-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02535211267605634,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.387882825933286,
+        "rank": 11,
+        "rrfScore": 0.014084507042253521,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-a-contact-quick-view-to-a-table",
+      "text": "Adding a Contact Quick View to a Table\n\n*Search term:* `#ContactInHeader, #ContactInLineItem, #Contact` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_contact.jpg\" title=\"Contact Quickview in Table\" width=\"70%\" height=\"70%\" /> To have a data field which shows a contact ...\n\n/abap-fiori-showcase/03_list_report_content#adding-a-contact-quick-view-to-a-table",
+      "bm25": -23.387882825933286,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-a-contact-quick-view-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.024999999999999998,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.387882825933286,
+        "rank": 12,
+        "rrfScore": 0.013888888888888888,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-large-object-stream-property-to-a-table",
+      "text": "Adding Large Object/Stream Property to a Table\n\n*Search term:* `#Stream, #StreamTable` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/streams_table.jpg\" title=\"Large Object/Streams - Table\" /> You can enable your RAP application for maintaining large objects (LOBs). By doing so, you ...\n\n/abap-fiori-showcase/03_list_report_content#adding-large-object-stream-property-to-a-table",
+      "bm25": -23.387882825933286,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-large-object-stream-property-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.024657534246575342,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.387882825933286,
+        "rank": 13,
+        "rrfScore": 0.0136986301369863,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-a-rating-indicator-to-a-table",
+      "text": "Adding a Rating Indicator to a Table\n\n*Search term:* `#DataPointRatingTable` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_rating_ind.jpg\" title=\"Bullet Micro Chart in Table\" /> To add a rating indicator (stars) to the table, you first need to define a datapoint with...\n\n/abap-fiori-showcase/03_list_report_content#adding-a-rating-indicator-to-a-table",
+      "bm25": -23.386490600617375,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-a-rating-indicator-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.024324324324324326,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.386490600617375,
+        "rank": 14,
+        "rrfScore": 0.013513513513513514,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#bullet-micro-chart-table",
+      "text": "Bullet Micro Chart - Table\n\n*Search term:* `#BulletMicroChartTable` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_bullet.jpg\" title=\"Bullet Micro Chart in Table\" /> To add a bullet micro chart to a table you have to first define a data point at the property...\n\n/abap-fiori-showcase/03_list_report_content#bullet-micro-chart-table",
+      "bm25": -23.386490600617375,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#bullet-micro-chart-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.024,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.386490600617375,
+        "rank": 15,
+        "rrfScore": 0.013333333333333334,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#radial-micro-chart-table",
+      "text": "Radial Micro Chart - Table\n\n*Search term:* `#RadialMicroChartTable` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_radial.jpg\" title=\"Radial Micro Chart in Table\" /> To add a radial micro chart to a table you have to first define a data point at the property...\n\n/abap-fiori-showcase/03_list_report_content#radial-micro-chart-table",
+      "bm25": -23.386490600617375,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#radial-micro-chart-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02368421052631579,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.386490600617375,
+        "rank": 16,
+        "rrfScore": 0.013157894736842105,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#inline-actions-in-line-item",
+      "text": "Inline Actions in Line Item\n\n*Search term:* `#InlineActionInLineItem` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud) and for SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, ...\n\n/abap-fiori-showcase/03_list_report_content#inline-actions-in-line-item",
+      "bm25": -23.38509856826477,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#inline-actions-in-line-item",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.023376623376623377,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38509856826477,
+        "rank": 17,
+        "rrfScore": 0.012987012987012988,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#copy-action-in-line-item",
+      "text": "Copy Action in Line Item\n\n*Search term:* `#CopyActionInLineItem` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud) and for SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, pr...\n\n/abap-fiori-showcase/03_list_report_content#copy-action-in-line-item",
+      "bm25": -23.38509856826477,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#copy-action-in-line-item",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.023076923076923078,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38509856826477,
+        "rank": 18,
+        "rrfScore": 0.01282051282051282,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#datafield-withaction-in-line-item",
+      "text": "Datafield WithAction in Line Item\n\n*Search term:* `#WithActionInLineItem` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud) and for SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, pr...\n\n/abap-fiori-showcase/03_list_report_content#datafield-withaction-in-line-item",
+      "bm25": -23.38509856826477,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#datafield-withaction-in-line-item",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02278481012658228,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38509856826477,
+        "rank": 19,
+        "rrfScore": 0.012658227848101266,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-currency-or-uom-fields-to-a-table",
+      "text": "Adding Currency or UoM Fields to a Table\n\n*Search term:* `#Units` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_currency.jpg\" title=\"Field with Currency in Table\" /> The special thing about quantity or price properties, is that they have an additional property of unit/cu...\n\n/abap-fiori-showcase/03_list_report_content#adding-currency-or-uom-fields-to-a-table",
+      "bm25": -23.38509856826477,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-currency-or-uom-fields-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.022500000000000003,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38509856826477,
+        "rank": 20,
+        "rrfScore": 0.0125,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-navigation-with-url-to-a-table",
+      "text": "Adding Navigation with URL to a Table\n\n*Search term:* `#Navigation-URL` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/url_navigation_table.jpg\" title=\"URL Navigation - Table\" /> You can set the text of a property as a link to an external website using the annotation `@UI.li...\n\n/abap-fiori-showcase/03_list_report_content#adding-navigation-with-url-to-a-table",
+      "bm25": -23.38509856826477,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-navigation-with-url-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.022222222222222223,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38509856826477,
+        "rank": 21,
+        "rrfScore": 0.012345679012345678,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/sap-styleguides/clean-abap/CleanABAP#use-constants-to-describe-purpose-and-importance-of-test-data",
+      "text": "Use constants to describe purpose and importance of test data\n\n> [Clean ABAP](#clean-abap) > [Content](#content) > [Testing](#testing) > [Test Data](#test-data) > [This section](#use-constants-to-describe-purpose-and-importance-of-test-data) ```ABAP CONSTANTS some_nonsense_key TYPE char8 VALUE 'ABCDEFGH'. CONSTANTS some_nonsense_key TYPE char8 VALUE ABCDEFGH ME...\n\n/sap-styleguides/clean-abap/CleanABAP#use-constants-to-describe-purpose-and-importance-of-test-data",
+      "bm25": -12.312702362659097,
+      "sourceId": "sap-styleguides",
+      "path": "/sap-styleguides/clean-abap/CleanABAP#use-constants-to-describe-purpose-and-importance-of-test-data",
+      "relFile": "clean-abap/CleanABAP.md",
+      "finalScore": 0.02210526315789474,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.312702362659097,
+        "rank": 35,
+        "rrfScore": 0.010526315789473684,
+        "boost": 1.1
+      }
+    },
+    {
+      "id": "/abap-docs-cloud/ABENST_XML_LITERALS_GENERAL",
+      "text": "ABENST_XML_LITERALS_GENERAL\n\n`<element [attr]\\ [tt:ref=\"node\">]\\                  [tt:lax=...]\\                  [tt:extensible=...]>\\    ...  </element>` Here, `element` is the name of the element and `attr` is a set of optional literal attributes with any name. The optional ST-specific attribute [`tt:ref`](ABENST_TT_REF.html) sets the current node `node` for the context of the literal element. The optional ST-specific attri\n\n/abap-docs-cloud/ABENST_XML_LITERALS_GENERAL",
+      "bm25": -11.565001481146442,
+      "sourceId": "abap-docs-cloud",
+      "path": "/abap-docs-cloud/ABENST_XML_LITERALS_GENERAL",
+      "relFile": "ABENST_XML_LITERALS_GENERAL.md",
+      "finalScore": 0.02204724409448819,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.565001481146442,
+        "rank": 67,
+        "rrfScore": 0.007874015748031496,
+        "boost": 1.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#defining-the-default-sort-order",
+      "text": "Defining the Default Sort Order\n\n*Search term:* `#DefaultSort` Use the `@UI.presentationVariant` annotation to define a default sort order. The attribute `by` defines, on which property the sort order should be applied. Without a sort order defined with `direction`, the values are ascending. @UI.presentationVariant Search Term #Def...\n\n/abap-fiori-showcase/03_list_report_content#defining-the-default-sort-order",
+      "bm25": -23.38231508227468,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#defining-the-default-sort-order",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.021951219512195124,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38231508227468,
+        "rank": 22,
+        "rrfScore": 0.012195121951219513,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-a-quick-view-to-a-table",
+      "text": "Adding a Quick View to a Table\n\n*Search term:* `#QuickViewTable` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud) and for SAP S/4HANA, on-premise edition or SAP S/4HANA Cloud, private ...\n\n/abap-fiori-showcase/03_list_report_content#adding-a-quick-view-to-a-table",
+      "bm25": -23.38092362854985,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-a-quick-view-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02168674698795181,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38092362854985,
+        "rank": 23,
+        "rrfScore": 0.012048192771084338,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-multiple-fields-to-one-column-in-a-table",
+      "text": "Adding Multiple Fields to one Column in a Table\n\n*Search term:* `#MultiFieldsCol` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_multi_field.jpg\" title=\"Multi Field Column in Table\" /> Multiple fields can be shown in one column, if a field group is added to line item (with annot...\n\n/abap-fiori-showcase/03_list_report_content#adding-multiple-fields-to-one-column-in-a-table",
+      "bm25": -23.38092362854985,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-multiple-fields-to-one-column-in-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.02142857142857143,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.38092362854985,
+        "rank": 24,
+        "rrfScore": 0.011904761904761904,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#adding-images-to-a-table",
+      "text": "Adding Images to a Table\n\n*Search term:* `#Image` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/table_image.jpg\" title=\"Image in Table\" /> Images are typically the first column in a table and help to visually guide the user. An image can be added to a table by ...\n\n/abap-fiori-showcase/03_list_report_content#adding-images-to-a-table",
+      "bm25": -23.379532367613606,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#adding-images-to-a-table",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.021176470588235293,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.379532367613606,
+        "rank": 25,
+        "rrfScore": 0.011764705882352941,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/03_list_report_content#selection-variant-list-report",
+      "text": "Selection Variant - List Report\n\n*Search term:* `#SelectionVariant` With a selection variant, you can define how the properties of an entity set should be filtered. The attribute `text` of the annotation is the title of the view and the attribute `filter` contains all filter parameters. > [!NOTE] Search Term #SelectionVariant @UI.s...\n\n/abap-fiori-showcase/03_list_report_content#selection-variant-list-report",
+      "bm25": -23.378141299422307,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/03_list_report_content#selection-variant-list-report",
+      "relFile": "03_list_report_content.md",
+      "finalScore": 0.020930232558139535,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -23.378141299422307,
+        "rank": 26,
+        "rrfScore": 0.011627906976744186,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#solution",
+      "text": "Solution\n\nFind the source code for the created CDS metadata extensions in the **[/week2/sources](/week2/sources)** folder: - [W2U5_DDLX_ZC_RAP_TRAVEL_####](/week2/sources/W2U5_DDLX_ZC_RAP_TRAVEL.txt)  - [W2U5_DDLX_ZC_RAP_BOOKING_####](/week2/sources/W2U5_DDLX_ZC_RAP_BOOKING.txt)\n\n/abap-platform-rap-opensap/week2/unit5#solution",
+      "bm25": -12.368334376541757,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#solution",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.019101123595505618,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.368334376541757,
+        "rank": 29,
+        "rrfScore": 0.011235955056179775,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#summary",
+      "text": "Summary\n\nYou have completed the exercise!   In this unit, you have learned how to create and use CDS metadata extensions to enrich a CDS data model with UI-specific annotations.\n\n/abap-platform-rap-opensap/week2/unit5#summary",
+      "bm25": -12.3594766123909,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#summary",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.01888888888888889,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.3594766123909,
+        "rank": 30,
+        "rrfScore": 0.011111111111111112,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content",
+      "text": "Object Page - Content Area\n\n- [Object Page - Content Area](#object-page---content-area)\n\n/abap-fiori-showcase/06_object_page_content",
+      "bm25": -11.676378440600764,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.01875,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.676378440600764,
+        "rank": 36,
+        "rrfScore": 0.010416666666666666,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5",
+      "text": "HANDS-ON EXERCISE FOR WEEK 2 UNIT 5: ENRICHING THE PROJECTED DATA MODEL WITH UI METADATA\n\n[Week 2 Unit 4: Defining the CDS Data Model Projection](unit4.md)\n\n/abap-platform-rap-opensap/week2/unit5",
+      "bm25": -12.348868354779176,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.01868131868131868,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.348868354779176,
+        "rank": 31,
+        "rrfScore": 0.01098901098901099,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#content",
+      "text": "Content\n\n- [Object Page - Content Area](#object-page---content-area)   - [General Features](#general-features)     - [Nested Tabs](#nested-tabs)\n\n/abap-fiori-showcase/06_object_page_content#content",
+      "bm25": -11.674056749317293,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#content",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.018556701030927835,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.674056749317293,
+        "rank": 37,
+        "rrfScore": 0.010309278350515464,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#step-1-annotate-the-travel-projection-view",
+      "text": "Step 1. Annotate the Travel Projection View\n\nFirst, create the CDS metadata extensions **`ZC_RAP_Travel_####`** (where `####` is your chosen suffix)  to enrich the Travel BO projection view with UI semantics. 1.\tRight-click on your Travel BO projection view **`ZC_RAP_Travel_####`** in the Project Explorer and select **New Metadata Extension** ...\n\n/abap-platform-rap-opensap/week2/unit5#step-1-annotate-the-travel-projection-view",
+      "bm25": -12.342690785131108,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#step-1-annotate-the-travel-projection-view",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.018478260869565215,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.342690785131108,
+        "rank": 32,
+        "rrfScore": 0.010869565217391304,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#service-definition-dmo-ui-featureshowcaseapp",
+      "text": "Service Definition /DMO/UI_FeatureShowcaseApp\n\nThe hierarchy CDS View should be exposed in the service. > [!NOTE]  > Source: Service Definition **/DMO/UI_FeatureShowcaseApp** define service UI_FeatureShowcaseApp expose FSA_I_Folder Folder\n\n/abap-fiori-showcase/06_object_page_content#service-definition-dmo-ui-featureshowcaseapp",
+      "bm25": -11.665938139619232,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#service-definition-dmo-ui-featureshowcaseapp",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.01836734693877551,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.665938139619232,
+        "rank": 38,
+        "rrfScore": 0.01020408163265306,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#step-2-annotate-the-booking-projection-view",
+      "text": "Step 2. Annotate the Booking Projection View\n\nNow, you will create the CDS metadata extensions **`ZC_RAP_Booking_####`** (where `####` is your chosen suffix)  to enrich the Booking BO projection view with UI semantics.   1.\tRight-click on your Booking BO projection view **`ZC_RAP_Booking_####`** in the Project Explorer and choose **New Metadata...\n\n/abap-platform-rap-opensap/week2/unit5#step-2-annotate-the-booking-projection-view",
+      "bm25": -12.342690785131108,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#step-2-annotate-the-booking-projection-view",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.01827956989247312,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.342690785131108,
+        "rank": 33,
+        "rrfScore": 0.010752688172043012,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#consumption-semanticobject",
+      "text": "Consumption.semanticObject\n\nAssociating the semantic object using `@Consumption.semanticObject` and keyword `semanticObjectAction` in the UI anotation. > [!NOTE]  > Source: Metadata Extension **/DMO/FSA_C_RootTP** @UI.facet Search Term #OPForm purpose #HEADER #STANDARD label FieldGroup #OPForm\n\n/abap-fiori-showcase/06_object_page_content#consumption-semanticobject",
+      "bm25": -11.66014608460034,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#consumption-semanticobject",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.018181818181818184,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.66014608460034,
+        "rank": 39,
+        "rrfScore": 0.010101010101010102,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-platform-rap-opensap/week2/unit5#introduction",
+      "text": "Introduction\n\nIn the present hands-on exercise, you will enrich your CDS data model projection with UI metadata for the latter generation of an SAP Fiori elements-based Travel list report app. The focus of this course is on the RESTful back-end implementation of apps. Therefore, we will use only a few UI annotati...\n\n/abap-platform-rap-opensap/week2/unit5#introduction",
+      "bm25": -12.33740191608417,
+      "sourceId": "abap-platform-rap-opensap",
+      "path": "/abap-platform-rap-opensap/week2/unit5#introduction",
+      "relFile": "week2/unit5.md",
+      "finalScore": 0.018085106382978722,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -12.33740191608417,
+        "rank": 34,
+        "rrfScore": 0.010638297872340425,
+        "boost": 0.7
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#selection-presentation-variant-object-page",
+      "text": "Selection Presentation Variant - Object Page\n\n*Search term:* `#SelectionPresentationVariant-Child` A SelectionPresentationVariant bundles a Selection Variant and a Presentation Variant. > [!NOTE] Search Term #SelectionPresentationVariant Child @UI.selectionPresentationVariant qualifier ChildSP presentationVariantQualifier pVariant selectionVari...\n\n/abap-fiori-showcase/06_object_page_content#selection-presentation-variant-object-page",
+      "bm25": -11.65898836787874,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#selection-presentation-variant-object-page",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.018000000000000002,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.65898836787874,
+        "rank": 40,
+        "rrfScore": 0.01,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#rap-treeview-for-hierarchy",
+      "text": "RAP Treeview for Hierarchy\n\n*Search term:* `#RAPTreeview, #RAPTreeviewSection` > [!WARNING]   > Only available with the latest [SAP BTP or SAP S/4HANA Cloud, public edition release](https://github.com/SAP-samples/abap-platform-fiori-feature-showcase/tree/ABAP-platform-cloud).\n\n/abap-fiori-showcase/06_object_page_content#rap-treeview-for-hierarchy",
+      "bm25": -11.655516605022196,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#rap-treeview-for-hierarchy",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.017821782178217824,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.655516605022196,
+        "rank": 41,
+        "rrfScore": 0.009900990099009901,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#connected-fields",
+      "text": "Connected Fields\n\n*Search term:* `#ConnectedFields` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/op_connected_fields.jpg\" title=\"Connected Fields - Object Page\" /> When two properties are semantically connected, they can be displayed next to each other...\n\n/abap-fiori-showcase/06_object_page_content#connected-fields",
+      "bm25": -11.654359812940395,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#connected-fields",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.01764705882352941,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.654359812940395,
+        "rank": 42,
+        "rrfScore": 0.00980392156862745,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#metadata-extension-dmo-fsa-c-roottp",
+      "text": "Metadata Extension /DMO/FSA_C_RootTP\n\nA facet is added to show the treeview as a list report within the object page. > [!NOTE]  > Source: Metadata Extension **/DMO/FSA_C_FolderTP** annotate entity FSA_C_RootTP with @UI.facet Search Term #RAPTreeviewSection purpose #STANDARD\n\n/abap-fiori-showcase/06_object_page_content#metadata-extension-dmo-fsa-c-roottp",
+      "bm25": -11.654359812940395,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#metadata-extension-dmo-fsa-c-roottp",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.017475728155339806,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.654359812940395,
+        "rank": 43,
+        "rrfScore": 0.009708737864077669,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#adding-titles-to-object-page-tables",
+      "text": "Adding Titles to Object Page Tables\n\n*Search term:* `#OPTableTitle` The title of an Object Page table is the attribute `typeNamePlural` of the `@UI.headerInfo` annotation. > [!NOTE] Search Term #HeaderInfo @UI.headerInfo typeNamePlural Root Entities #OPTableTitle Search Term\n\n/abap-fiori-showcase/06_object_page_content#adding-titles-to-object-page-tables",
+      "bm25": -11.65320325184433,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#adding-titles-to-object-page-tables",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.01730769230769231,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.65320325184433,
+        "rank": 44,
+        "rrfScore": 0.009615384615384616,
+        "boost": 0.8
+      }
+    },
+    {
+      "id": "/abap-fiori-showcase/06_object_page_content#preview",
+      "text": "Preview\n\n*Search term:* `#Preview` <img src=\"https://raw.githubusercontent.com/SAP-samples/abap-platform-fiori-feature-showcase/main/Images/Guide/op_preview.jpg\" title=\"IsPartOfPreview - Object Page\" /> A reference facet in a collection facet is not shown after loading the app, when the reference facet has t...\n\n/abap-fiori-showcase/06_object_page_content#preview",
+      "bm25": -11.64973495377444,
+      "sourceId": "abap-fiori-showcase",
+      "path": "/abap-fiori-showcase/06_object_page_content#preview",
+      "relFile": "06_object_page_content.md",
+      "finalScore": 0.017142857142857144,
+      "sourceKind": "offline",
+      "debug": {
+        "bm25Score": -11.64973495377444,
+        "rank": 45,
+        "rrfScore": 0.009523809523809525,
+        "boost": 0.8
+      }
+    }
+  ]
+}

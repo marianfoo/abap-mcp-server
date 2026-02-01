@@ -97,6 +97,36 @@ function hasImplementationIntent(query: string): boolean {
 }
 
 /**
+ * Detect clean code / best practice intent from query
+ */
+function hasCleanCodeIntent(query: string): boolean {
+  return /\b(clean\s*code|naming\s*convention|best\s*practice|style\s*guide|coding\s*standard)\b/i.test(query);
+}
+
+/**
+ * Detect if query is specifically about news/releases
+ */
+function hasNewsIntent(query: string): boolean {
+  return /\b(news|release|update|new\s+in|what'?s\s*new)\b/i.test(query);
+}
+
+/**
+ * Extract annotation patterns from query (e.g., @UI.lineItem, @ObjectModel)
+ */
+function extractAnnotationPatterns(query: string): string[] {
+  // Match @Namespace.annotationName patterns
+  const matches = query.match(/@[A-Za-z]+(\.[A-Za-z]+)?/g);
+  return matches || [];
+}
+
+/**
+ * Detect if query is about annotations
+ */
+function hasAnnotationQuery(query: string): boolean {
+  return query.includes('@') || /\b(annotation)\b/i.test(query);
+}
+
+/**
  * Detect query context for contextBoosts
  * Returns matching context keys from metadata
  */
@@ -165,12 +195,36 @@ function determineAbapFlavor(query: string, explicitFlavor?: 'standard' | 'cloud
   return 'standard';
 }
 
-// Sample-heavy sources (code repositories)
+// Sample-heavy sources (code repositories and cheat sheets)
 const SAMPLE_SOURCES = [
   'abap-platform-rap-opensap',
   'cloud-abap-rap', 
-  'abap-platform-reuse-services'
+  'abap-platform-reuse-services',
+  'abap-cheat-sheets',
+  'abap-fiori-showcase'
 ];
+
+// Language suffixes to filter out for multi-language sources (e.g., CleanABAP_de, CleanABAP_ja)
+// These are translation duplicates of English content
+const NON_ENGLISH_SUFFIXES = ['_de', '_ja', '_zh', '_fr', '_es', '_pt', '_ko', '_kr', '_ru'];
+
+/**
+ * Check if a result is a non-English variant of a multi-language source
+ * Returns true if the result should be filtered out (is a translation duplicate)
+ * Note: dsag-abap-leitfaden is NOT filtered as it's unique content, not a translation
+ */
+function isNonEnglishVariant(id: string, sourceId: string): boolean {
+  // Only filter style guides that have language suffixes (CleanABAP_de, CleanABAP_ja, etc.)
+  // Check if the path contains a language-suffixed directory
+  for (const suffix of NON_ENGLISH_SUFFIXES) {
+    if (id.includes(`/sap-styleguides/CleanABAP${suffix}/`) || 
+        id.includes(`CleanABAP${suffix}`) ||
+        sourceId.endsWith(suffix)) {
+      return true;
+    }
+  }
+  return false;
+}
 
 /**
  * Unified search across ABAP documentation sources
@@ -250,6 +304,13 @@ export async function search(
     });
   }
   
+  // Filter out non-English variants of multi-language sources (e.g., CleanABAP_de)
+  // This keeps dsag-abap-leitfaden as it's unique content, not a translation duplicate
+  rows = rows.filter(r => {
+    const sourceId = extractSourceId(r.libraryId || r.id);
+    return !isNonEnglishVariant(r.id || '', sourceId);
+  });
+  
   // Smart ABAP library filtering based on flavor
   if (requestedAbapFlavor === 'cloud') {
     // For cloud-specific queries, show cloud ABAP docs
@@ -316,6 +377,83 @@ export async function search(
     // Intent-based sample boosting
     if (wantsImplementation && SAMPLE_SOURCES.includes(sourceId)) {
       boost += 1.5; // Significant boost for samples when user wants implementation
+    }
+    
+    // Title boosting: boost results where query terms appear in the title
+    const title = (r.title || '').toLowerCase();
+    const queryTerms = query.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    let titleMatchCount = 0;
+    for (const term of queryTerms) {
+      if (title.includes(term)) {
+        titleMatchCount++;
+      }
+    }
+    if (titleMatchCount > 0) {
+      // Boost proportional to how many query terms match in title
+      boost += 0.5 * titleMatchCount;
+    }
+    
+    // Glossary down-ranking: slightly penalize glossary entries to prefer practical guides
+    // Glossary entries are useful for definitions but often not what users want for "how to" queries
+    if (r.id && r.id.includes('_GLOSRY')) {
+      boost -= 0.3;
+    }
+    
+    // Clean code intent: boost style guides significantly
+    if (hasCleanCodeIntent(query) && sourceId === 'sap-styleguides') {
+      boost += 3.0;
+    }
+    
+    // Down-rank news articles for non-news queries
+    if (r.id && r.id.includes('ABENNEWS-') && !hasNewsIntent(query)) {
+      boost -= 0.8;
+    }
+    
+    // Penalize example documents when user doesn't want examples
+    const isExampleDoc = r.id && (r.id.includes('_ABEXA') || r.id.includes('_EXAMPLE'));
+    if (isExampleDoc && !wantsImplementation) {
+      boost -= 0.3;
+    }
+    
+    // Annotation query handling
+    const annotationPatterns = extractAnnotationPatterns(query);
+    const isAnnotationQuery = hasAnnotationQuery(query);
+    
+    if (isAnnotationQuery) {
+      const textLower = (r.text || r.description || '').toLowerCase();
+      const idLower = (r.id || '').toLowerCase();
+      
+      // 1. Strong boost for results that contain the exact annotation pattern in text
+      for (const pattern of annotationPatterns) {
+        if (textLower.includes(pattern.toLowerCase())) {
+          boost += 2.0; // Strong boost for exact annotation match in content
+        }
+      }
+      
+      // 2. Boost annotation definition docs (_ANNO files)
+      if (idLower.includes('_anno')) {
+        boost += 1.5;
+      }
+      
+      // 3. Boost CDS annotation reference docs (ABENCDS_F1_)
+      if (idLower.includes('abencds_f1_')) {
+        boost += 1.0;
+      }
+      
+      // 4. Penalize unrelated example docs for annotation queries
+      if (r.id && r.id.includes('_ABEXA') && annotationPatterns.length > 0) {
+        // Check if the example actually mentions the annotation
+        let mentionsAnnotation = false;
+        for (const pattern of annotationPatterns) {
+          if (textLower.includes(pattern.toLowerCase())) {
+            mentionsAnnotation = true;
+            break;
+          }
+        }
+        if (!mentionsAnnotation) {
+          boost -= 1.0; // Penalize examples that don't mention the queried annotation
+        }
+      }
     }
     
     // Calculate RRF score based on BM25 rank (index)
@@ -514,10 +652,37 @@ export async function search(
     }
   }
   
-  console.log(`Deduplication: ${allResults.length} -> ${deduped.size} unique results`);
+  // Second pass: deduplicate release notes with identical content (ABENNEWS-*)
+  // These often have different IDs but identical snippets across versions
+  const contentDeduped = new Map<string, SearchResult>();
+  const releaseNoteTexts = new Map<string, string>(); // Track seen release note content
+  
+  for (const result of deduped.values()) {
+    // Check if this is a release note entry
+    if (result.id && result.id.includes('ABENNEWS-')) {
+      // Use the text content (excluding the ID part) as the dedupe key
+      const textWithoutId = result.text.replace(/ABENNEWS-\d+/g, 'ABENNEWS-XXX').trim();
+      const contentKey = `release-note:${textWithoutId.substring(0, 200)}`; // First 200 chars
+      
+      if (releaseNoteTexts.has(contentKey)) {
+        // Skip duplicate release note content, keep the one with higher score
+        const existingKey = releaseNoteTexts.get(contentKey)!;
+        if (contentDeduped.get(existingKey)!.finalScore < result.finalScore) {
+          contentDeduped.delete(existingKey);
+          contentDeduped.set(result.id, result);
+          releaseNoteTexts.set(contentKey, result.id);
+        }
+        continue;
+      }
+      releaseNoteTexts.set(contentKey, result.id);
+    }
+    contentDeduped.set(result.id, result);
+  }
+  
+  console.log(`Deduplication: ${allResults.length} -> ${deduped.size} -> ${contentDeduped.size} unique results (incl. release notes)`);
   
   // Return top k results
-  return Array.from(deduped.values())
+  return Array.from(contentDeduped.values())
     .sort((a, b) => b.finalScore - a.finalScore)
     .slice(0, k);
 }
