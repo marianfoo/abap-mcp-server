@@ -44,7 +44,7 @@ const RRF_K = 60;
 const RRF_WEIGHTS = {
   offline: 1.0,      // Full weight for offline (indexed) results
   sap_help: 0.9,     // Slightly lower for SAP Help
-  sap_community: 0.7 // Lower for community (can be noisy)
+  sap_community: 0.6 // Lower for community (can be noisy)
 };
 
 /**
@@ -601,7 +601,7 @@ export async function search(
           const rank = idx + 1;
           const rrfScore = rrf(rank) * RRF_WEIGHTS.sap_community;
           // Apply online boost (slightly lower for community as it can be noisier)
-          const communityBoost = onlineBoost * 0.8; // 80% of SAP Help boost
+          const communityBoost = onlineBoost * 0.5; // 50% of SAP Help boost
           const finalScore = rrfScore * (1 + communityBoost);
           
           return {
@@ -622,7 +622,7 @@ export async function search(
         });
         onlineResults.push(...communityResults);
         onlineStatus.sapCommunity.resultCount = communityResults.length;
-        console.log(`✅ [SAP Community] Processed ${communityResults.length} results with boost=${onlineBoost * 0.8}`);
+        console.log(`✅ [SAP Community] Processed ${communityResults.length} results with boost=${onlineBoost * 0.5}`);
       } else {
         console.log(`⚠️ [SAP Community] No results in response (results array empty or missing)`);
       }
