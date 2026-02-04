@@ -1,6 +1,6 @@
 {
   "name": "mcp-abap-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ABAP/RAP-focused MCP server for ADT (Eclipse) - search documentation, lint code",
   "repository": {
     "type": "git",
