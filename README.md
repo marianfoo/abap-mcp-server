@@ -229,6 +229,126 @@ npm run start:streamable     # Start Streamable HTTP MCP server (port 3122)
 
 ---
 
+## Self-Hosting with Docker
+
+Run your own instance of the MCP server on a VPS behind a reverse proxy (Nginx, Traefik, Caddy, etc.).
+
+<details>
+<summary><b>Quick Start</b></summary>
+
+```bash
+# Build the image
+docker build -t abap-mcp-server .
+
+# Run the container
+docker run -d -p 3122:3122 --name abap-mcp-server abap-mcp-server
+
+# Verify it's running
+curl http://localhost:3122/health
+```
+
+Connect your MCP client to: `http://your-server:3122/mcp`
+
+</details>
+
+<details>
+<summary><b>Docker Compose (Recommended)</b></summary>
+
+Create a `docker-compose.yml`:
+
+```yaml
+services:
+  abap-mcp-server:
+    build: .
+    ports:
+      - "3122:3122"
+    restart: unless-stopped
+    healthcheck:
+      # Note: requires Node.js >= 18 for global fetch() support
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3122/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+```
+
+Then run:
+
+```bash
+docker compose up -d
+```
+
+</details>
+
+<details>
+<summary><b>Environment Variables</b></summary>
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `MCP_HOST` | `127.0.0.1` (local) / `0.0.0.0` (Docker) | MCP (Streamable HTTP) server bind address |
+| `MCP_PORT` | `3122` | MCP (Streamable HTTP) server port |
+| `HOST` | `127.0.0.1` | HTTP status server bind address |
+| `NODE_ENV` | `production` | Environment mode |
+| `LOG_LEVEL` | `INFO` | Log verbosity (DEBUG, INFO, WARN, ERROR) |
+| `RETURN_K` | `30` | Maximum search results to return |
+
+The Dockerfile sets `MCP_HOST=0.0.0.0` by default to allow connections from outside the container. If you also expose the HTTP status server, configure `HOST` accordingly.
+
+</details>
+
+<details>
+<summary><b>Auto-Update Strategies</b></summary>
+
+Since Docker containers are immutable, here are strategies to keep documentation updated:
+
+### Option 1: Scheduled Image Rebuild (Recommended)
+
+Add a cron job to rebuild daily:
+
+```bash
+# crontab -e (runs at 4 AM)
+0 4 * * * cd /path/to/abap-mcp-server && docker compose build --no-cache && docker compose up -d
+```
+
+### Option 2: Watchtower (for registry-based images)
+
+If you publish images to a registry:
+
+```yaml
+services:
+  abap-mcp-server:
+    image: ghcr.io/marianfoo/abap-mcp-server:latest
+    ports:
+      - "3122:3122"
+    restart: unless-stopped
+    
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 86400  # Check daily (24h)
+```
+
+### Option 3: Volume Mounts with External Updates
+
+Mount sources as volumes and update externally:
+
+```yaml
+services:
+  abap-mcp-server:
+    build: .
+    ports:
+      - "3122:3122"
+    volumes:
+      - ./sources:/app/sources:ro
+      - ./dist/data:/app/dist/data:ro
+```
+
+Then run a host cron job to update sources and rebuild the index.
+
+</details>
+
+---
+
 ## Architecture
 
 - **MCP Server** (Node.js/TypeScript) – Exposes search, fetch, and abap_lint tools
