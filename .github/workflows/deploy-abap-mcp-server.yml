@@ -123,11 +123,12 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         env:
           NEW_VERSION: ${{ env.NEW_VERSION }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          envs: NEW_VERSION
+          envs: NEW_VERSION,GITHUB_TOKEN
           script: |
             set -Eeuo pipefail
 
@@ -175,15 +176,20 @@ jobs:
             sudo chown -R "$USER":"$USER" /opt/mcp-sap
 
             echo "==> Clone or update repo (with submodules)"
+            
+            # Configure git to use the token for all GitHub URLs (handles main repo + submodules)
+            git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+            git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "git@github.com:"
+
             if [ -d /opt/mcp-sap/abap-mcp-server/.git ]; then
               cd /opt/mcp-sap/abap-mcp-server
-              git config --global url."https://github.com/".insteadOf git@github.com:
+              # Ensure origin uses the generic URL (the config above will intercept it and add auth)
+              git remote set-url origin https://github.com/marianfoo/abap-mcp-server.git
               git fetch --prune
               git reset --hard origin/main
             else
               cd /opt/mcp-sap
-              git config --global url."https://github.com/".insteadOf git@github.com:
-               git clone https://github.com/marianfoo/abap-mcp-server.git
+              git clone https://github.com/marianfoo/abap-mcp-server.git
               cd abap-mcp-server
             fi
             

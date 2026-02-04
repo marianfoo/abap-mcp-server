@@ -31,10 +31,13 @@ jobs:
     steps:
       - name: Update submodules on server with database safety checks
         uses: appleboy/ssh-action@v1.0.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          envs: GITHUB_TOKEN
           script: |
             set -e
             cd /opt/mcp-sap/abap-mcp-server
@@ -189,8 +192,9 @@ jobs:
             pm2 stop $SERVICES || true
             sleep 3
               
-              # Configure git for HTTPS
-              git config --global url."https://github.com/".insteadOf git@github.com:
+              # Configure git for HTTPS with token authentication
+              git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+              git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "git@github.com:"
               
               echo "==> Checking for submodule updates"
               # Get current submodule commits
