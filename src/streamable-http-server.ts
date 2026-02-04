@@ -11,6 +11,33 @@ import { BaseServerHandler } from "./lib/BaseServerHandler.js";
 
 // Version will be updated by deployment script
 const VERSION = "1.0.2";
+const MCP_PROTOCOL_VERSIONS = ["2025-11-25", "2025-06-18", "2025-03-26"];
+const MCP_PROTOCOL_PRIMARY = MCP_PROTOCOL_VERSIONS[0];
+const DEFAULT_ALLOWED_ORIGINS = ["http://localhost:*", "http://127.0.0.1:*"];
+const RAW_ALLOWED_ORIGINS = (process.env.MCP_ALLOWED_ORIGINS || "")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+const ALLOWED_ORIGINS = RAW_ALLOWED_ORIGINS.length ? RAW_ALLOWED_ORIGINS : DEFAULT_ALLOWED_ORIGINS;
+const ALLOW_NULL_ORIGIN = ALLOWED_ORIGINS.includes("null");
+const ALLOWED_ORIGIN_PATTERNS = ALLOWED_ORIGINS.filter((origin) => origin !== "null");
+
+function escapeRegex(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function isOriginAllowed(origin?: string): boolean {
+  if (!origin) return true; // Non-browser or direct client (no Origin header)
+  if (origin === "null") return ALLOW_NULL_ORIGIN;
+
+  return ALLOWED_ORIGIN_PATTERNS.some((pattern) => {
+    if (pattern.includes("*")) {
+      const regex = new RegExp(`^${escapeRegex(pattern).replace(/\\\*/g, ".*")}$`);
+      return regex.test(origin);
+    }
+    return origin === pattern;
+  });
+}
 
 
 // Simple in-memory event store for resumability
@@ -59,10 +86,11 @@ function createServer() {
   const serverOptions: NonNullable<ConstructorParameters<typeof Server>[1]> & {
     protocolVersions?: string[];
   } = {
-    protocolVersions: ["2025-07-09"],
+    protocolVersions: MCP_PROTOCOL_VERSIONS,
     capabilities: {
-      // resources: {},  // DISABLED: Causes 60,000+ resources which breaks Cursor
-      tools: {}       // Enable tools capability
+      resources: {},  // Resource templates enabled; avoids listing 60,000+ resources
+      tools: {},      // Enable tools capability
+      prompts: {}     // Enable prompts capability
     }
   };
 
@@ -92,9 +120,34 @@ async function main() {
   
   // Configure CORS to expose Mcp-Session-Id header for browser-based clients
   app.use(cors({
-    origin: '*', // Allow all origins - adjust as needed for production
+    origin: (origin, callback) => {
+      const allowed = isOriginAllowed(origin || undefined);
+      callback(null, allowed);
+    },
     exposedHeaders: ['Mcp-Session-Id']
   }));
+
+  // Validate Origin for MCP requests to prevent DNS rebinding attacks
+  app.use('/mcp', (req, res, next) => {
+    const origin = req.headers.origin as string | undefined;
+    if (!isOriginAllowed(origin)) {
+      logger.warn('Rejected MCP request from disallowed Origin', {
+        origin: origin || 'none',
+        method: req.method,
+        userAgent: req.headers['user-agent']
+      });
+      res.status(403).json({
+        jsonrpc: '2.0',
+        error: {
+          code: -32000,
+          message: 'Origin not allowed'
+        },
+        id: null
+      });
+      return;
+    }
+    next();
+  });
 
   // Store transports by session ID
   const transports: { [sessionId: string]: StreamableHTTPServerTransport } = {};
@@ -111,7 +164,7 @@ async function main() {
         old_endpoint: "/sse",
         new_endpoint: "/mcp",
         transport: "MCP Streamable HTTP", 
-        protocol_version: "2025-07-09"
+        protocol_version: MCP_PROTOCOL_PRIMARY
       },
       documentation: "https://github.com/marianfoo/abap-mcp-server#connect-from-your-mcp-client",
       alternatives: {
@@ -255,7 +308,7 @@ async function main() {
       version: VERSION,
       timestamp: new Date().toISOString(),
       transport: 'streamable-http',
-      protocol: '2025-07-09'
+      protocol: MCP_PROTOCOL_PRIMARY
     });
   });
 
@@ -276,7 +329,7 @@ async function main() {
   console.log(`
 ==============================================
 MCP STREAMABLE HTTP SERVER
-Protocol version: 2025-07-09
+Protocol version: ${MCP_PROTOCOL_PRIMARY}
 
 Endpoint: /mcp
 Methods: GET, POST, DELETE

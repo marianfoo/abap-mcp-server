@@ -270,7 +270,7 @@ const server = createServer(async (req, res) => {
         old_endpoint: "/sse",
         new_endpoint: "/mcp",
         transport: "MCP Streamable HTTP",
-        protocol_version: "2025-07-09"
+        protocol_version: "2025-11-25"
       },
       documentation: "https://github.com/marianfoo/abap-mcp-server#connect-from-your-mcp-client",
       alternatives: {

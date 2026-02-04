@@ -19,11 +19,15 @@ import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
   ListPromptsRequestSchema,
-  GetPromptRequestSchema
+  GetPromptRequestSchema,
+  ListResourcesRequestSchema,
+  ListResourceTemplatesRequestSchema,
+  ReadResourceRequestSchema
 } from "@modelcontextprotocol/sdk/types.js";
 import {
   searchLibraries,
-  fetchLibraryDocumentation
+  fetchLibraryDocumentation,
+  readDocumentationResource
 } from "./localDocs.js";
 import { lintAbapCode, LintResult } from "./abaplint.js";
 
@@ -42,6 +46,8 @@ interface SearchResult {
   id: string;
   title: string;
   url: string;
+  library_id?: string;
+  topic?: string;
   snippet?: string;
   score?: number;
   metadata?: Record<string, any>;
@@ -65,6 +71,8 @@ function createSearchResponse(results: SearchResult[]): any {
     id: result.id,
     title: result.title ? result.title.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n') : result.title,
     url: result.url,
+    library_id: result.library_id,
+    topic: result.topic,
     // Additional fields for enhanced functionality
     snippet: result.snippet ? result.snippet.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '').replace(/\r\n/g, '\n').replace(/\r/g, '\n') : result.snippet,
     score: result.score,
@@ -78,7 +86,8 @@ function createSearchResponse(results: SearchResult[]): any {
         type: "text",
         text: JSON.stringify({ results: cleanedResults })
       }
-    ]
+    ],
+    structuredContent: { results: cleanedResults }
   };
 }
 
@@ -106,7 +115,8 @@ function createDocumentResponse(document: DocumentResult): any {
         type: "text", 
         text: JSON.stringify(cleanedDocument)
       }
-    ]
+    ],
+    structuredContent: cleanedDocument
   };
 }
 
@@ -123,7 +133,11 @@ function createErrorResponse(error: string, requestId?: string): any {
           requestId: requestId || 'unknown'
         })
       }
-    ]
+    ],
+    structuredContent: {
+      error,
+      requestId: requestId || 'unknown'
+    }
   };
 }
 
@@ -174,9 +188,12 @@ export class BaseServerHandler {
   static configureServer(srv: Server): void {
     this.setupToolHandlers(srv);
 
-    const capabilities = (srv as unknown as { _capabilities?: { prompts?: object } })._capabilities;
+    const capabilities = (srv as unknown as { _capabilities?: { prompts?: object; resources?: object } })._capabilities;
     if (capabilities?.prompts) {
       this.setupPromptHandlers(srv);
+    }
+    if (capabilities?.resources) {
+      this.setupResourceHandlers(srv);
     }
   }
 
@@ -279,6 +296,31 @@ QUERY TIPS:
                 }
               },
               required: ["query"]
+            },
+            outputSchema: {
+              type: "object",
+              properties: {
+                results: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      id: { type: "string" },
+                      title: { type: "string" },
+                      url: { type: "string" },
+                      library_id: { type: "string" },
+                      topic: { type: "string" },
+                      snippet: { type: "string" },
+                      score: { type: "number" },
+                      metadata: { type: "object", additionalProperties: true }
+                    },
+                    required: ["id", "title", "url"],
+                    additionalProperties: true
+                  }
+                }
+              },
+              required: ["results"],
+              additionalProperties: true
             }
           },
           {
@@ -318,6 +360,18 @@ RETURNS:
                 }
               },
               required: ["id"]
+            },
+            outputSchema: {
+              type: "object",
+              properties: {
+                id: { type: "string" },
+                title: { type: "string" },
+                text: { type: "string" },
+                url: { type: "string" },
+                metadata: { type: "object", additionalProperties: true }
+              },
+              required: ["id", "title", "text", "url"],
+              additionalProperties: true
             }
           },
           {
@@ -405,6 +459,35 @@ USE CASES:
                 }
               },
               required: ["code"]
+            },
+            outputSchema: {
+              type: "object",
+              properties: {
+                findings: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      line: { type: "number" },
+                      column: { type: "number" },
+                      endLine: { type: "number" },
+                      endColumn: { type: "number" },
+                      message: { type: "string" },
+                      severity: { type: "string", enum: ["error", "warning", "info"] },
+                      ruleKey: { type: "string" }
+                    },
+                    required: ["line", "column", "message", "severity", "ruleKey"],
+                    additionalProperties: true
+                  }
+                },
+                errorCount: { type: "number" },
+                warningCount: { type: "number" },
+                infoCount: { type: "number" },
+                success: { type: "boolean" },
+                error: { type: "string" }
+              },
+              required: ["findings", "errorCount", "warningCount", "infoCount", "success"],
+              additionalProperties: true
             }
           }
         ]
@@ -673,7 +756,8 @@ USE CASES:
                 type: "text",
                 text: JSON.stringify(result)
               }
-            ]
+            ],
+            structuredContent: result
           };
         } catch (error) {
           logger.logToolError(name, timing.requestId, timing.startTime, error);
@@ -843,6 +927,114 @@ Please provide more details about your specific issue, and I'll search for relev
 
         default:
           throw new Error(`Unknown prompt: ${name}`);
+      }
+    });
+  }
+
+  /**
+   * Setup resource handlers (templates + read)
+   */
+  private static setupResourceHandlers(srv: Server): void {
+    // Keep list lightweight; rely on templates for scale
+    srv.setRequestHandler(ListResourcesRequestSchema, async () => {
+      return {
+        resources: [
+          {
+            uri: "abap-docs:///community",
+            name: "SAP Community Posts",
+            title: "SAP Community Posts",
+            description: "Real-time access to SAP Community posts and solutions.",
+            mimeType: "text/markdown"
+          }
+        ]
+      };
+    });
+
+    srv.setRequestHandler(ListResourceTemplatesRequestSchema, async () => {
+      return {
+        resourceTemplates: [
+          {
+            uriTemplate: "abap-docs://doc/{docId}",
+            name: "ABAP Doc by ID",
+            title: "ABAP Document by ID",
+            description: "Read a document by search result id. URL-encode the id (e.g., /abap-docs-standard/abapselect).",
+            mimeType: "text/markdown"
+          },
+          {
+            uriTemplate: "abap-docs://library/{libraryId}",
+            name: "ABAP Library Overview",
+            title: "ABAP Library Overview",
+            description: "Read a library overview (libraryId without leading slash, e.g., abap-docs-standard).",
+            mimeType: "text/markdown"
+          },
+          {
+            uriTemplate: "abap-docs://library/{libraryId}/{topic}",
+            name: "ABAP Library Topic",
+            title: "ABAP Library Topic",
+            description: "Read a topic within a library (topic may be URL-encoded).",
+            mimeType: "text/markdown"
+          }
+        ]
+      };
+    });
+
+    srv.setRequestHandler(ReadResourceRequestSchema, async (request) => {
+      const uri = request.params.uri;
+
+      const docPrefix = "abap-docs://doc/";
+      const libraryPrefix = "abap-docs://library/";
+
+      try {
+        if (uri.startsWith(docPrefix)) {
+          const encodedId = uri.slice(docPrefix.length);
+          if (!encodedId) {
+            throw new Error("Missing docId in resource URI.");
+          }
+          const docId = decodeURIComponent(encodedId);
+          const text = await fetchLibraryDocumentation(docId);
+          if (!text) {
+            throw new Error(`Document not found: ${docId}`);
+          }
+          return {
+            contents: [
+              {
+                uri,
+                mimeType: "text/markdown",
+                text
+              }
+            ]
+          };
+        }
+
+        if (uri.startsWith(libraryPrefix)) {
+          const rest = uri.slice(libraryPrefix.length);
+          const [libraryIdRaw, ...topicParts] = rest.split("/");
+          if (!libraryIdRaw) {
+            throw new Error("Missing libraryId in resource URI.");
+          }
+          const libraryId = libraryIdRaw.startsWith("/") ? libraryIdRaw : `/${libraryIdRaw}`;
+          const topic = topicParts.length ? decodeURIComponent(topicParts.join("/")) : "";
+          const text = await fetchLibraryDocumentation(libraryId, topic);
+          if (!text) {
+            throw new Error(`Library not found: ${libraryId}`);
+          }
+          return {
+            contents: [
+              {
+                uri,
+                mimeType: "text/markdown",
+                text
+              }
+            ]
+          };
+        }
+
+        // Fallback to legacy resource URIs (abap-docs:///library/relFile, community, etc.)
+        return await readDocumentationResource(uri);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        logger.warn("Resource read failed", { uri, error: message });
+        throw new Error(message);
       }
     });
   }

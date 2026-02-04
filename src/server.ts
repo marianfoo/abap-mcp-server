@@ -1,17 +1,32 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { format } from "node:util";
 import { logger } from "./lib/logger.js";
 import { BaseServerHandler } from "./lib/BaseServerHandler.js";
+
+const MCP_PROTOCOL_VERSIONS = ["2025-11-25", "2025-06-18", "2025-03-26"];
+
+function redirectStdoutLogsToStderr(): void {
+  const writeToStderr = (...args: unknown[]) => {
+    process.stderr.write(format(...args) + '\n');
+  };
+
+  console.log = writeToStderr;
+  console.info = writeToStderr;
+  console.debug = writeToStderr;
+}
+
+redirectStdoutLogsToStderr();
 
 function createServer() {
   const serverOptions: NonNullable<ConstructorParameters<typeof Server>[1]> & {
     protocolVersions?: string[];
   } = {
-    protocolVersions: ["2025-07-09"],
+    protocolVersions: MCP_PROTOCOL_VERSIONS,
     capabilities: {
-      // resources: {},  // DISABLED: Causes 60,000+ resources which breaks Cursor
+      resources: {},  // Resource templates enabled; avoids listing 60,000+ resources
       tools: {},      // Enable tools capability
-      prompts: {}     // Enable prompts capability for 2025-07-09 protocol
+      prompts: {}     // Enable prompts capability
     }
   };
 

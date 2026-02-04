@@ -8,7 +8,7 @@ Use it online at https://mcp-abap.marianzeis.de/mcp
 
 ---
 
-## Quick Start
+## Quick Start (for local use)
 
 ```bash
 # Clone and setup
@@ -41,9 +41,8 @@ Use the hosted version without any local installation.
 
 ```json
 {
-  "mcpServers": {
-    "abap-mcp": {
-      "type": "sse",
+  "servers": {
+    "abap-docs": {
       "url": "https://mcp-abap.marianzeis.de/mcp"
     }
   }
@@ -62,9 +61,8 @@ Run the server locally for offline access and local linting.
 
 ```json
 {
-  "mcpServers": {
-    "abap-mcp": {
-      "type": "sse",
+  "servers": {
+    "abap-docs": {
       "url": "http://127.0.0.1:3122/mcp"
     }
   }
