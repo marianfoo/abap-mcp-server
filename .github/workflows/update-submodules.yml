@@ -26,7 +26,7 @@ jobs:
     name: Update Submodules on Server
     runs-on: ubuntu-22.04
     environment:
-      name: remove server
+      name: remote server
 
     steps:
       - name: Update submodules on server with database safety checks
@@ -94,7 +94,7 @@ jobs:
             # For health checks, test search functionality 
             if [ "$IS_HEALTH_CHECK_SCHEDULE" = "true" ] || [ "$HEALTH_CHECK_ONLY" = "true" ]; then
               echo "==> Testing search functionality"
-              SEARCH_TEST=$(curl -s -X POST http://127.0.0.1:3001/mcp \
+              SEARCH_TEST=$(curl -s -X POST http://127.0.0.1:3002/mcp \
                 -H "Content-Type: application/json" \
                 -d '{"role": "user", "content": "health check search"}' || echo "curl_failed")
               
@@ -144,9 +144,12 @@ jobs:
               fi
               echo "✅ Memory OK: ${AVAILABLE_MB_MEM}MB available"
               
-              echo "==> Gracefully stopping services for repair"
-              pm2 stop all || true
-              sleep 3
+            # Specific services to manage
+            SERVICES="abap-mcp-http abap-mcp-streamable"
+
+            echo "==> Gracefully stopping services for repair"
+            pm2 stop $SERVICES || true
+            sleep 3
               
               # Remove corrupted database
               echo "🗑️  Removing corrupted database"
@@ -182,9 +185,9 @@ jobs:
               fi
               echo "✅ Disk space OK: ${AVAILABLE_MB}MB available"
               
-              echo "==> Gracefully stopping services for update"
-              pm2 stop all || true
-              sleep 3
+            echo "==> Gracefully stopping services for update"
+            pm2 stop $SERVICES || true
+            sleep 3
               
               # Configure git for HTTPS
               git config --global url."https://github.com/".insteadOf git@github.com:
@@ -250,14 +253,14 @@ jobs:
               chown -R "$USER":"$USER" /opt/mcp-sap/logs
               
               echo "==> Restarting services"
-              pm2 start all
+              pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs
               pm2 save
               sleep 10
             fi
             
             echo "==> Health verification"
             # Test search functionality
-            SEARCH_TEST=$(curl -s -X POST http://127.0.0.1:3001/mcp \
+            SEARCH_TEST=$(curl -s -X POST http://127.0.0.1:3002/mcp \
               -H "Content-Type: application/json" \
               -d '{"role": "user", "content": "test search"}' || echo "curl_failed")
             

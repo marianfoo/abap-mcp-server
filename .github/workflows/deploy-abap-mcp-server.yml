@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     # 👇 must match the environment where you stored the secrets
     environment:
-      name: remove server
+      name: remote server
 
     steps:
       - name: Check out repo (for action context only)
@@ -210,7 +210,7 @@ jobs:
             echo "✅ Memory OK: ${AVAILABLE_MB_MEM}MB available"
 
             echo "==> Stop MCP services gracefully before build"
-            pm2 stop abap-mcp-proxy abap-mcp-http abap-mcp-streamable || true
+            pm2 stop abap-mcp-http abap-mcp-streamable || true
             sleep 3
             
             echo "==> Run setup (shallow, single-branch submodules + build)"
