@@ -213,34 +213,45 @@ export class BaseServerHandler {
 
 FUNCTION NAME: search
 
-This is a unified search tool for ABAP and RAP development documentation. It searches across multiple offline sources and can optionally include online sources (SAP Help Portal, SAP Community).
+Unified search for ABAP + RAP development documentation. It searches across curated OFFLINE sources (fast, deterministic) and can also include ONLINE sources (best-effort, 10s timeout per source) when enabled.
 
-AVAILABLE OFFLINE SOURCES (searched by default):
-• abap-docs-standard: Official ABAP Keyword Documentation for Standard ABAP (on-premise, full syntax)
-• abap-docs-cloud: Official ABAP Keyword Documentation for ABAP Cloud (BTP, restricted syntax)
-• abap-cheat-sheets: ABAP Cheat Sheets with practical examples and code snippets
-• sap-styleguides: SAP Clean ABAP Style Guide and best practices
-• dsag-abap-leitfaden: DSAG ABAP Development Guidelines (German)
-• abap-fiori-showcase: ABAP RAP Fiori Elements Feature Showcase (RAP + annotations)
-• abap-platform-rap-opensap: RAP course samples from openSAP
-• cloud-abap-rap: ABAP Cloud + RAP examples
-• abap-platform-reuse-services: RAP reuse services examples
+Use this to discover the best document IDs, then call \`fetch(id=...)\` to retrieve full content.
+
+SOURCES OVERVIEW
+
+OFFLINE sources (local FTS index; always searched unless filtered via \`sources\`):
+Reference & guidance (not sample-heavy):
+• abap-docs-standard (offline): Official ABAP Keyword Documentation for on‑premise systems (full syntax). Best for statement syntax + semantics.
+• abap-docs-cloud (offline): Official ABAP Keyword Documentation for ABAP Cloud/BTP (restricted syntax). Best for Steampunk/BTP constraints.
+• sap-styleguides (offline): SAP Clean ABAP Style Guide + best practices (includes translations; non‑English duplicates are filtered).
+• dsag-abap-leitfaden (offline): DSAG ABAP Leitfaden (German) with ABAP development guidelines and best practices.
+
+Sample-heavy OFFLINE sources (controlled by \`includeSamples\`; great for implementation, can dominate broad queries):
+• abap-cheat-sheets (offline, samples): Many practical ABAP/RAP snippets; quick “how-to” reference.
+• abap-fiori-showcase (offline, samples): Annotation-driven RAP + OData V4 + Fiori Elements feature showcase.
+• abap-platform-rap-opensap (offline, samples): openSAP “Building Apps with RAP” course samples (ABAP/CDS).
+• cloud-abap-rap (offline, samples): ABAP Cloud + RAP example projects (ABAP/CDS).
+• abap-platform-reuse-services (offline, samples): RAP reuse services examples (number ranges, change documents, mail, Adobe Forms, ...).
 
 OPTIONAL ONLINE SOURCES (when includeOnline=true):
-• SAP Help Portal (help.sap.com): Official product documentation
-• SAP Community: Blog posts, discussions, troubleshooting solutions
-• Software-Heroes (software-heroes.com): ABAP/RAP tutorials and articles
+• sap-help (online): SAP Help Portal product documentation (official, broad scope).
+• sap-community (online): SAP Community blogs + Q&A + troubleshooting (practical, quality varies).
+• software-heroes (online): Software Heroes ABAP/RAP articles & tutorials (searched in EN+DE, deduplicated by URL; feed search is disabled).
+
+NOTE ABOUT \`abapFlavor\`:
+• This primarily affects the OFFICIAL ABAP Keyword Documentation sources (abap-docs-standard vs abap-docs-cloud). Other sources are kept.
 
 PARAMETERS:
 • query (required): Search terms. Be specific and use technical ABAP/RAP terminology.
 • k (optional, default=50): Number of results to return.
-• includeOnline (optional, default=true): Search SAP Help Portal and SAP Community in addition to offline docs. Online searches have a 10-second timeout. Set to false for faster offline-only search.
-• includeSamples (optional, default=true): Include code-heavy sample repositories in results.
+• includeOnline (optional, default=true): Keep this ON for best answers. Only set to false if online search is blocked/slow/unreliable in your environment OR you explicitly want OFFLINE-only sources.
+• includeSamples (optional, default=true): Includes sample-heavy offline sources (repos, showcases, cheat sheets). If results are flooded by examples and you want more conceptual/reference docs, set to false. Turn it on when you want implementation/code.
 • abapFlavor (optional, default="auto"): Filter by ABAP flavor:
   - "standard": Only Standard ABAP (on-premise, full syntax)
   - "cloud": Only ABAP Cloud (BTP, restricted syntax)
   - "auto": Detect from query (add "cloud" or "btp" for cloud, otherwise standard)
-• sources (optional): Array of specific source IDs to search (e.g., ["abap-docs-standard", "abap-cheat-sheets"])
+• sources (optional): Restrict OFFLINE search to specific source IDs (does not disable online sources; use includeOnline for that).
+  Example: ["abap-docs-standard", "sap-styleguides"]
 
 RETURNS (JSON array of results, each containing):
 • id: Document identifier (use with fetch to get full content)
@@ -260,8 +271,9 @@ QUERY TIPS:
 • Be specific: "RAP behavior definition" not just "RAP"
 • Include ABAP keywords: "SELECT FOR ALL ENTRIES", "LOOP AT GROUP BY"
 • For ABAP Cloud: Add "cloud" or "btp" to query, or set abapFlavor="cloud"
-• For faster search: Set includeOnline=false to skip online sources
-• For implementation examples: Ensure includeSamples=true`,
+• For OFFLINE-only: Set includeOnline=false (use this mainly when online search does not work for you)
+• If results are too code-heavy: Set includeSamples=false
+• For implementation examples: Keep includeSamples=true`,
             inputSchema: {
               type: "object",
               properties: {
@@ -278,12 +290,12 @@ QUERY TIPS:
                 },
                 includeOnline: {
                   type: "boolean",
-                  description: "Search SAP Help Portal and SAP Community in addition to offline docs (adds ~1-2s latency). Set to false for faster offline-only search. Default: true.",
+                  description: "Include online sources (SAP Help, SAP Community, Software Heroes). Default: true. Only turn off if online search is blocked/slow/unreliable or you explicitly want offline-only sources.",
                   default: true
                 },
                 includeSamples: {
                   type: "boolean",
-                  description: "Include code-heavy sample repositories in results. Default: true.",
+                  description: "Include sample-heavy offline sources (cheat sheets, showcases, example repos). Default: true. Turn off if you want fewer code examples and more reference/guidance docs.",
                   default: true
                 },
                 abapFlavor: {

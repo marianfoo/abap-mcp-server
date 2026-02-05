@@ -75,8 +75,8 @@ Run the server locally for offline access and local linting.
 ### 🔍 **Unified ABAP Documentation Search**
 - **search** – Search across all ABAP documentation sources with intelligent filtering
   - Automatic ABAP flavor detection (Standard vs Cloud)
-  - Optional online search (SAP Help Portal + SAP Community) with 10s timeout
-  - Filter by specific sources or include code samples
+  - Online search enabled by default (`includeOnline: true`) with best-effort sources (SAP Help Portal + SAP Community + Software-Heroes) and a 10s timeout (worst-case)
+  - Restrict offline sources via `sources`, and control sample-heavy sources via `includeSamples`
 - **fetch** – Retrieve complete documents with formatting
 
 ### ✨ **Local ABAP Linting**
@@ -84,6 +84,12 @@ Run the server locally for offline access and local linting.
   - Lint local ABAP files and directories
   - Returns structured findings (file, line, message, severity)
   - Configurable via abaplint.json
+
+### 📊 **ABAP Feature Matrix** (Software Heroes)
+- **abap_feature_matrix** – Check ABAP feature availability across SAP releases
+  - Data from [Software Heroes ABAP Feature Matrix](https://software-heroes.com/en/abap-feature-matrix)
+  - Search for features and see which releases support them
+  - Results cached for 24 hours for fast performance
 
 ---
 
@@ -97,16 +103,19 @@ Search across all ABAP documentation sources with intelligent filtering.
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `query` | string | (required) | Search terms for ABAP/RAP documentation |
-| `includeOnline` | boolean | false | Include SAP Help Portal and SAP Community (adds ~10s latency) |
-| `includeSamples` | boolean | true | Include code-heavy sample repositories |
+| `k` | number | 50 | Number of results to return (1–100) |
+| `includeOnline` | boolean | true | Include online sources (SAP Help, SAP Community, Software-Heroes). Keep this on; only turn it off if online search is blocked/slow/unreliable or you explicitly want offline-only sources. |
+| `includeSamples` | boolean | true | Include sample-heavy offline sources (cheat sheets, showcases, example repos). Turn this off if results are flooded by examples and you want more reference/guidance docs. |
 | `abapFlavor` | "standard" \| "cloud" \| "auto" | "auto" | Filter by ABAP flavor |
-| `sources` | string[] | all | Specific source IDs to search |
+| `sources` | string[] | all | Restrict OFFLINE search to specific source IDs (online sources are controlled via `includeOnline`) |
 
 **Examples:**
 ```
 search(query="SELECT FOR ALL ENTRIES")
 search(query="RAP behavior definition", abapFlavor="cloud")
-search(query="CDS annotations", includeOnline=true)
+search(query="CDS annotations", includeSamples=false)         # less code-heavy
+search(query="RAP troubleshooting", includeOnline=true)       # explicit (default is true)
+search(query="LOOP AT GROUP BY", includeOnline=false)         # offline-only fallback
 ```
 
 ### `fetch` - Get Full Document Content
@@ -151,30 +160,93 @@ Run abaplint static analysis on local ABAP files.
 }
 ```
 
+### `abap_feature_matrix` - ABAP Feature Availability
+
+Search the Software Heroes ABAP Feature Matrix to check feature availability across SAP releases.
+
+**Data Source:** [software-heroes.com/en/abap-feature-matrix](https://software-heroes.com/en/abap-feature-matrix)
+
+**How it works:** The server always fetches the **full matrix in English**, caches the parsed result for **24 hours**, and performs **local filtering**. If `query` is omitted/empty, it returns the full feature list (optionally limited via `limit`).
+
+**Parameters:**
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `query` | string | (optional) | Feature keywords to search for. If omitted/empty, returns all features. |
+| `limit` | number | (none) | Maximum number of results. If omitted, returns all matching features. |
+
+**Status Markers:**
+- ✅ `available` - Feature is available in the release
+- ❌ `unavailable` - Feature is not available
+- ⭕ `deprecated` - Feature is deprecated
+- ❔ `needs_review` - Status needs verification
+- 🔽 `downport` - Feature was backported from a newer release
+
+**Examples:**
+```
+abap_feature_matrix(query="inline declaration")
+abap_feature_matrix(query="CORRESPONDING")
+abap_feature_matrix(limit=50)              # first 50 features (no query)
+abap_feature_matrix(query="CDS", limit=10)
+```
+
+**Returns:**
+```json
+{
+  "matches": [
+    {
+      "feature": "Inline Declarations in SELECT",
+      "section": "ABAP SQL",
+      "link": "https://help.sap.com/...",
+      "statusByRelease": {
+        "7.40": "unavailable",
+        "7.50": "available",
+        "LATEST": "available"
+      },
+      "score": 15
+    }
+  ],
+  "meta": {
+    "totalFeatures": 150,
+    "totalSections": 12,
+    "sections": ["ABAP SQL", "ABAP Statements"]
+  },
+  "sourceUrl": "https://software-heroes.com/en/abap-feature-matrix",
+  "legend": {
+    "✅": "Available",
+    "❌": "Not available"
+  }
+}
+```
+
 ---
 
 ## Documentation Sources
 
-### Core ABAP Documentation
-| Source ID | Description |
-|-----------|-------------|
-| `abap-docs-standard` | Official ABAP Keyword Documentation (Standard/On-Premise, full syntax) |
-| `abap-docs-cloud` | Official ABAP Keyword Documentation (ABAP Cloud/BTP, restricted syntax) |
-| `abap-cheat-sheets` | ABAP Cheat Sheets with practical examples for ABAP and RAP |
-| `sap-styleguides` | SAP Clean ABAP Style Guide and best practices |
-| `dsag-abap-leitfaden` | DSAG ABAP Development Guidelines (German) |
+### Offline Sources (local FTS index)
 
-### RAP & Fiori Elements
-| Source ID | Description |
-|-----------|-------------|
-| `abap-fiori-showcase` | ABAP RAP Fiori Elements Feature Showcase (annotations, UI patterns) |
-| `abap-platform-rap-opensap` | RAP openSAP Course Samples |
-| `cloud-abap-rap` | ABAP Cloud + RAP Examples |
-| `abap-platform-reuse-services` | RAP Reuse Services (Number Ranges, Change Documents, etc.) |
+These are always searched unless you restrict them via `sources`. The entries marked as **sample-heavy** are controlled by `includeSamples`.
 
-### Online Sources (when `includeOnline=true`)
-- **SAP Help Portal** (help.sap.com) – Official product documentation
-- **SAP Community** – Blog posts, discussions, troubleshooting solutions
+| Source ID | Sample-heavy | What to expect |
+|-----------|--------------|----------------|
+| `abap-docs-standard` | no | Official ABAP Keyword Documentation for on‑premise systems (full syntax). Best for statement syntax + semantics. |
+| `abap-docs-cloud` | no | Official ABAP Keyword Documentation for ABAP Cloud/BTP (restricted syntax). Best for Steampunk/BTP constraints. |
+| `sap-styleguides` | no | SAP Clean ABAP Style Guide + best practices (includes translations; non‑English duplicates are filtered). |
+| `dsag-abap-leitfaden` | no | DSAG ABAP Leitfaden (German) with ABAP development guidelines and best practices. |
+| `abap-cheat-sheets` | yes | Many practical ABAP/RAP snippets; quick “how-to” reference (can dominate broad queries). |
+| `abap-fiori-showcase` | yes | Annotation-driven RAP + OData V4 + Fiori Elements feature showcase. |
+| `abap-platform-rap-opensap` | yes | openSAP “Building Apps with RAP” course samples (ABAP/CDS). |
+| `cloud-abap-rap` | yes | ABAP Cloud + RAP example projects (ABAP/CDS). |
+| `abap-platform-reuse-services` | yes | RAP reuse services examples (number ranges, change documents, mail, Adobe Forms, ...). |
+
+### Online Sources (when `includeOnline=true`, default)
+
+Online search is best-effort and runs in parallel with a 10s timeout (worst-case). Turn it off only if you have connectivity issues or explicitly want offline-only results.
+
+| Source ID | What to expect | Notes |
+|----------|-----------------|------|
+| `sap-help` | SAP Help Portal product documentation (official, broad scope). | Can be very good for product docs; can also be noisy because scope is huge. |
+| `sap-community` | SAP Community blogs + Q&A + troubleshooting (practical, quality varies). | Great for “how do I fix…?” queries. |
+| `software-heroes` | Software Heroes ABAP/RAP articles & tutorials. | Searched in **EN + DE** and deduplicated by URL; feed search is disabled. |
 
 ---
 
@@ -205,6 +277,12 @@ Run abaplint static analysis on local ABAP files.
 ### With Online Sources
 - "Search SAP Community for RAP troubleshooting" (`includeOnline=true`)
 - "Find SAP Help documentation on ABAP Cloud development" (`includeOnline=true`)
+
+### Feature Availability (Software Heroes)
+- "Is inline declaration available in SAP 7.40?"
+- "When was CDS View Entity introduced?"
+- "Show me features available from release 7.54"
+- "Check if CORRESPONDING constructor works in my release"
 
 ---
 
@@ -287,7 +365,10 @@ docker compose up -d
 | `HOST` | `127.0.0.1` | HTTP status server bind address |
 | `NODE_ENV` | `production` | Environment mode |
 | `LOG_LEVEL` | `INFO` | Log verbosity (DEBUG, INFO, WARN, ERROR) |
-| `RETURN_K` | `30` | Maximum search results to return |
+| `RETURN_K` | `50` | Default number of search results to return |
+| `SOFTWARE_HEROES_CLIENT` | `ABAPMCPSERVER` | Client identifier for Software Heroes API (sent in headers) |
+| `SOFTWARE_HEROES_TIMEOUT_MS` | `10000` | Timeout for Software Heroes API requests (ms) |
+| `SOFTWARE_HEROES_CACHE_TTL_MS` | `86400000` | Cache TTL for Software Heroes API responses (content search + feature matrix, 24h default) |
 
 The Dockerfile sets `MCP_HOST=0.0.0.0` by default to allow connections from outside the container. If you also expose the HTTP status server, configure `HOST` accordingly.
 
@@ -381,3 +462,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 - ABAP documentation sources from various SAP and community repositories
 - [abaplint](https://github.com/abaplint/abaplint) for ABAP static analysis
 - [Model Context Protocol](https://modelcontextprotocol.io/) by Anthropic
+- [Software Heroes](https://software-heroes.com/) (Björn Schulz) for offering the ABAP Feature Matrix and content search APIs
