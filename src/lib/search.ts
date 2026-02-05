@@ -4,7 +4,8 @@ import { CONFIG } from "./config.js";
 import { loadMetadata, getSourceBoosts, expandQueryTerms, getContextBoosts, getAllContextBoosts } from "./metadata.js";
 import { searchSapHelp } from "./sapHelp.js";
 import { searchCommunity } from "./localDocs.js";
-import { SearchResponse } from "./types.js";
+import { searchSoftwareHeroesContent } from "./softwareHeroes/index.js";
+import { SearchResponse, SearchResult as ApiSearchResult } from "./types.js";
 
 export type SearchResult = {
   id: string;
@@ -14,7 +15,7 @@ export type SearchResult = {
   path: string;
   relFile: string;
   finalScore: number;
-  sourceKind: 'offline' | 'sap_help' | 'sap_community';
+  sourceKind: 'offline' | 'sap_help' | 'sap_community' | 'software_heroes';
   // Debug info for ranking analysis
   debug?: {
     bm25Score?: number;
@@ -42,9 +43,10 @@ const RRF_K = 60;
 
 // Source weights for RRF fusion
 const RRF_WEIGHTS = {
-  offline: 1.0,      // Full weight for offline (indexed) results
-  sap_help: 0.9,     // Slightly lower for SAP Help
-  sap_community: 0.6 // Lower for community (can be noisy)
+  offline: 1.0,        // Full weight for offline (indexed) results
+  sap_help: 0.9,       // Slightly lower for SAP Help
+  sap_community: 0.6,  // Lower for community (can be noisy)
+  software_heroes: 0.85 // Software-Heroes (high quality ABAP/RAP tutorials)
 };
 
 /**
@@ -490,11 +492,12 @@ export async function search(
   // Online search status for debugging
   const onlineStatus = {
     sapHelp: { status: 'skipped' as string, resultCount: 0, error: null as string | null },
-    sapCommunity: { status: 'skipped' as string, resultCount: 0, error: null as string | null }
+    sapCommunity: { status: 'skipped' as string, resultCount: 0, error: null as string | null },
+    softwareHeroes: { status: 'skipped' as string, resultCount: 0, error: null as string | null }
   };
   
   if (includeOnline) {
-    console.log('🌐 [ONLINE] Starting online searches (SAP Help, Community) with 10s timeout...');
+    console.log('🌐 [ONLINE] Starting online searches (SAP Help, Community, Software-Heroes) with 10s timeout...');
     console.log(`🌐 [ONLINE] Query: "${query}"`);
     
     const onlineSearches = await Promise.allSettled([
@@ -509,6 +512,50 @@ export async function search(
         searchCommunity(query),
         ONLINE_TIMEOUT_MS,
         'SAP Community search'
+      ),
+      // Software-Heroes search with timeout - search both EN and DE languages
+      // since content is available in both and query could be in either language
+      withTimeout(
+        (async (): Promise<SearchResponse> => {
+          // Run both language searches in parallel
+          const [enResults, deResults] = await Promise.allSettled([
+            searchSoftwareHeroesContent(query, { language: 'en' }),
+            searchSoftwareHeroesContent(query, { language: 'de' })
+          ]);
+          
+          // Merge results, deduplicating by URL
+          const seenUrls = new Set<string>();
+          const mergedResults: ApiSearchResult[] = [];
+          
+          // Process EN results first
+          if (enResults.status === 'fulfilled' && enResults.value.results) {
+            for (const r of enResults.value.results) {
+              if (r.url && !seenUrls.has(r.url)) {
+                seenUrls.add(r.url);
+                mergedResults.push(r);
+              }
+            }
+          }
+          
+          // Then DE results (may overlap or be unique)
+          if (deResults.status === 'fulfilled' && deResults.value.results) {
+            for (const r of deResults.value.results) {
+              if (r.url && !seenUrls.has(r.url)) {
+                seenUrls.add(r.url);
+                mergedResults.push(r);
+              }
+            }
+          }
+          
+          console.log(`🌐 [Software-Heroes] Merged ${mergedResults.length} results from EN+DE searches`);
+          
+          return {
+            results: mergedResults,
+            error: mergedResults.length === 0 ? 'No results from either language' : undefined
+          };
+        })(),
+        ONLINE_TIMEOUT_MS,
+        'Software-Heroes search'
       )
     ]);
     
@@ -633,8 +680,67 @@ export async function search(
       console.warn(`❌ [SAP Community] Failed or timed out:`, reason);
     }
     
+    // Process Software-Heroes results with RRF scoring
+    console.log(`🌐 [Software-Heroes] Status: ${onlineSearches[2].status}`);
+    if (onlineSearches[2].status === 'fulfilled') {
+      const heroesResponse = onlineSearches[2].value as SearchResponse;
+      onlineStatus.softwareHeroes.status = 'fulfilled';
+      
+      // Debug: log raw response structure
+      console.log(`🌐 [Software-Heroes] Response keys: ${Object.keys(heroesResponse || {}).join(', ')}`);
+      console.log(`🌐 [Software-Heroes] results array length: ${heroesResponse?.results?.length ?? 'undefined'}`);
+      console.log(`🌐 [Software-Heroes] error field: ${heroesResponse?.error ?? 'none'}`);
+      
+      if (heroesResponse?.error) {
+        onlineStatus.softwareHeroes.error = heroesResponse.error;
+        console.warn(`🌐 [Software-Heroes] Error in response: ${heroesResponse.error}`);
+      }
+      
+      if (heroesResponse?.results && heroesResponse.results.length > 0) {
+        // Debug: log first result structure
+        const firstResult = heroesResponse.results[0];
+        console.log(`🌐 [Software-Heroes] First result keys: ${Object.keys(firstResult || {}).join(', ')}`);
+        console.log(`🌐 [Software-Heroes] First result title: ${firstResult?.title}`);
+        
+        // Software-Heroes provides high-quality ABAP tutorials, give it a healthy boost
+        const heroesBoost = onlineBoost * 0.9; // Slightly lower than SAP Help but higher than Community
+        
+        const heroesResults: SearchResult[] = heroesResponse.results.slice(0, 10).map((r, idx) => {
+          const rank = idx + 1;
+          const rrfScore = rrf(rank) * RRF_WEIGHTS.software_heroes;
+          const finalScore = rrfScore * (1 + heroesBoost);
+          
+          return {
+            id: r.id || `software-heroes-${idx}`,
+            text: `${r.title || ''}\n\n${r.description || r.snippet || ''}\n\n${r.url || ''}`,
+            bm25: 0,
+            sourceId: 'software-heroes',
+            path: r.url || '',
+            relFile: '',
+            finalScore,
+            sourceKind: 'software_heroes' as const,
+            debug: {
+              rank,
+              rrfScore,
+              boost: heroesBoost
+            }
+          };
+        });
+        onlineResults.push(...heroesResults);
+        onlineStatus.softwareHeroes.resultCount = heroesResults.length;
+        console.log(`✅ [Software-Heroes] Processed ${heroesResults.length} results with boost=${heroesBoost}`);
+      } else {
+        console.log(`⚠️ [Software-Heroes] No results in response (results array empty or missing)`);
+      }
+    } else {
+      const reason = (onlineSearches[2] as PromiseRejectedResult).reason;
+      onlineStatus.softwareHeroes.status = 'rejected';
+      onlineStatus.softwareHeroes.error = reason?.message || String(reason);
+      console.warn(`❌ [Software-Heroes] Failed or timed out:`, reason);
+    }
+    
     // Summary
-    console.log(`🌐 [ONLINE] Summary: SAP Help=${onlineStatus.sapHelp.resultCount}, Community=${onlineStatus.sapCommunity.resultCount}, Total online=${onlineResults.length}, boost=${onlineBoost}`);
+    console.log(`🌐 [ONLINE] Summary: SAP Help=${onlineStatus.sapHelp.resultCount}, Community=${onlineStatus.sapCommunity.resultCount}, Software-Heroes=${onlineStatus.softwareHeroes.resultCount}, Total online=${onlineResults.length}, boost=${onlineBoost}`);
   }
   
   // Merge offline and online results

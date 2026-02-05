@@ -1,6 +1,9 @@
 /**
- * Software Heroes module - exports for ABAP Feature Matrix
+ * Software Heroes module - exports for content search and ABAP Feature Matrix
  */
+
+// Content search
+export { searchSoftwareHeroesContent } from "./contentSearch.js";
 
 // ABAP Feature Matrix
 export {
