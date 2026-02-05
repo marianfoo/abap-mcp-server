@@ -8,9 +8,10 @@
  * - search: Unified search across ABAP documentation (offline + optional online)
  * - fetch: Retrieve full document content
  * - abap_lint: Local ABAP code linting
+ * - abap_feature_matrix: Check ABAP feature availability across SAP releases (Software Heroes)
  * 
  * The function names may appear with different prefixes depending on your MCP client:
- * - Simple names: search, fetch, abap_lint
+ * - Simple names: search, fetch, abap_lint, abap_feature_matrix
  * - Prefixed names: mcp_abap-mcp-server_search, etc.
  */
 
@@ -30,6 +31,7 @@ import {
   readDocumentationResource
 } from "./localDocs.js";
 import { lintAbapCode, LintResult } from "./abaplint.js";
+import { searchFeatureMatrix, SearchFeatureMatrixResult, getFeatureMatrixCacheStats } from "./softwareHeroes/index.js";
 
 import { SearchResponse } from "./types.js";
 import { logger } from "./logger.js";
@@ -227,6 +229,7 @@ AVAILABLE OFFLINE SOURCES (searched by default):
 OPTIONAL ONLINE SOURCES (when includeOnline=true):
 • SAP Help Portal (help.sap.com): Official product documentation
 • SAP Community: Blog posts, discussions, troubleshooting solutions
+• Software-Heroes (software-heroes.com): ABAP/RAP tutorials and articles
 
 PARAMETERS:
 • query (required): Search terms. Be specific and use technical ABAP/RAP terminology.
@@ -247,7 +250,7 @@ RETURNS (JSON array of results, each containing):
 • score: Relevance score (RRF-fused from multiple sources)
 • library_id: Source library identifier
 • metadata.source: Source ID (abap-docs-standard, sap-help, etc.)
-• metadata.sourceKind: "offline" | "sap_help" | "sap_community"
+• metadata.sourceKind: "offline" | "sap_help" | "sap_community" | "software_heroes"
 
 TYPICAL WORKFLOW:
 1. search(query="your ABAP/RAP question")
@@ -487,6 +490,100 @@ USE CASES:
                 error: { type: "string" }
               },
               required: ["findings", "errorCount", "warningCount", "infoCount", "success"],
+              additionalProperties: true
+            }
+          },
+          {
+            name: "abap_feature_matrix",
+            description: `ABAP FEATURE MATRIX: abap_feature_matrix(query="feature keywords")
+
+FUNCTION NAME: abap_feature_matrix
+
+Search the Software Heroes ABAP Feature Matrix to check feature availability across SAP releases.
+The matrix shows which ABAP features are available in different SAP releases (7.40, 7.50, 7.52, 7.54, 7.55, 7.56, 7.57, 2020, 2021, 2022, 2023, LATEST).
+
+DATA SOURCE: https://software-heroes.com/en/abap-feature-matrix
+Full matrix is fetched in English and cached for 24 hours. Filtering is done locally.
+
+STATUS MARKERS:
+• ✅ available - Feature is available in the release
+• ❌ unavailable - Feature is not available
+• ⭕ deprecated - Feature is deprecated
+• ❔ needs_review - Status needs verification
+• 🔽 downport - Feature was backported from a newer release
+
+PARAMETERS:
+• query (optional): Feature keywords to search for (e.g., "inline declaration", "CORRESPONDING", "mesh"). If empty, returns all features.
+• limit (optional): Maximum number of results. If not specified, returns all matching features.
+
+RETURNS JSON with:
+• matches: Array of matching features with:
+  - feature: Feature name
+  - section: Category (e.g., "ABAP SQL", "ABAP Statements")
+  - link: URL to more information (if available)
+  - statusByRelease: Object mapping release versions to status
+  - score: Relevance score
+• meta: Matrix metadata (totalFeatures, totalSections, sections)
+• sourceUrl: Attribution URL to Software Heroes
+• legend: Explanation of status markers
+
+EXAMPLES:
+abap_feature_matrix(query="inline declaration")
+abap_feature_matrix(query="CORRESPONDING")
+abap_feature_matrix() - returns all features
+abap_feature_matrix(query="CDS", limit=10)
+
+USE CASES:
+• Check if a feature is available in your target SAP release
+• Find when a specific ABAP feature was introduced
+• Compare feature availability across releases
+• Get full matrix and let LLM interpret/filter results`,
+            inputSchema: {
+              type: "object",
+              properties: {
+                query: {
+                  type: "string",
+                  description: "Feature keywords to search for. If empty or not provided, returns all features."
+                },
+                limit: {
+                  type: "number",
+                  description: "Maximum number of results. If not specified, returns all matching features.",
+                  minimum: 1
+                }
+              },
+              required: []
+            },
+            outputSchema: {
+              type: "object",
+              properties: {
+                matches: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      feature: { type: "string" },
+                      section: { type: "string" },
+                      link: { type: "string" },
+                      statusByRelease: { type: "object", additionalProperties: { type: "string" } },
+                      score: { type: "number" }
+                    },
+                    required: ["feature", "section", "statusByRelease", "score"],
+                    additionalProperties: true
+                  }
+                },
+                meta: {
+                  type: "object",
+                  properties: {
+                    totalFeatures: { type: "number" },
+                    totalSections: { type: "number" },
+                    sections: { type: "array", items: { type: "string" } }
+                  },
+                  additionalProperties: true
+                },
+                sourceUrl: { type: "string" },
+                legend: { type: "object", additionalProperties: { type: "string" } }
+              },
+              required: ["matches", "meta", "sourceUrl", "legend"],
               additionalProperties: true
             }
           }
@@ -763,6 +860,73 @@ USE CASES:
           logger.logToolError(name, timing.requestId, timing.startTime, error);
           return createErrorResponse(
             `Error running abaplint: ${error}`,
+            timing.requestId
+          );
+        }
+      }
+
+      if (name === "abap_feature_matrix") {
+        const { query, limit } = args as {
+          query?: string;
+          limit?: number;
+        };
+
+        // Query is now optional - empty string returns all features
+        const searchQuery = query || '';
+
+        // Enhanced logging with timing
+        const timing = logger.logToolStart(name, searchQuery || '(all features)', clientMetadata);
+
+        // Log cache stats for debugging
+        const cacheStats = getFeatureMatrixCacheStats();
+        console.log(`\n🔍 [ABAP_FEATURE_MATRIX] ========================================`);
+        console.log(`🔍 [ABAP_FEATURE_MATRIX] Query: "${searchQuery || '(all features)'}"`);
+        console.log(`🔍 [ABAP_FEATURE_MATRIX] Limit: ${limit || 'all'}`);
+        console.log(`🔍 [ABAP_FEATURE_MATRIX] Cache: ${cacheStats.size} entries, TTL=${cacheStats.ttlHours}h`);
+        console.log(`🔍 [ABAP_FEATURE_MATRIX] Request ID: ${timing.requestId}`);
+
+        try {
+          const searchStartTime = Date.now();
+
+          const result: SearchFeatureMatrixResult = await searchFeatureMatrix({
+            query: searchQuery,
+            limit,
+          });
+
+          const searchDuration = Date.now() - searchStartTime;
+          console.log(`🔍 [ABAP_FEATURE_MATRIX] Search completed in ${searchDuration}ms`);
+          console.log(`🔍 [ABAP_FEATURE_MATRIX] Matches found: ${result.matches.length} of ${result.meta.totalFeatures} total features`);
+
+          if (result.matches.length > 0) {
+            console.log(`🔍 [ABAP_FEATURE_MATRIX] Top 3 matches:`);
+            result.matches.slice(0, 3).forEach((m, i) => {
+              console.log(`   ${i + 1}. [${m.section}] "${m.feature}" (score=${m.score})`);
+            });
+          }
+
+          logger.logToolSuccess(name, timing.requestId, timing.startTime, result.matches.length, {
+            totalFeatures: result.meta.totalFeatures,
+            totalSections: result.meta.totalSections,
+            sections: result.meta.sections,
+          });
+
+          console.log(`🔍 [ABAP_FEATURE_MATRIX] ========================================\n`);
+
+          // Return structured JSON response
+          return {
+            content: [
+              {
+                type: "text",
+                text: JSON.stringify(result)
+              }
+            ],
+            structuredContent: result
+          };
+        } catch (error) {
+          console.error(`❌ [ABAP_FEATURE_MATRIX] Error:`, error);
+          logger.logToolError(name, timing.requestId, timing.startTime, error);
+          return createErrorResponse(
+            `Error searching ABAP Feature Matrix: ${error}`,
             timing.requestId
           );
         }

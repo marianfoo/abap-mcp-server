@@ -17,4 +17,18 @@ export const CONFIG = {
   // Maximum content length for SAP Help and Community full content retrieval
   // Limits help prevent token overflow and keep responses manageable (~18,750 tokens)
   MAX_CONTENT_LENGTH: 75000,  // 75,000 characters
+
+  // ---------------------------------------------------------------------------
+  // Software Heroes API Configuration
+  // ---------------------------------------------------------------------------
+  
+  // Client identifier sent in headers (User-Agent and X-Client)
+  SOFTWARE_HEROES_CLIENT: process.env.SOFTWARE_HEROES_CLIENT || "ABAPMCPSERVER",
+  
+  // Request timeout in milliseconds (default: 10 seconds)
+  SOFTWARE_HEROES_TIMEOUT_MS: Number(process.env.SOFTWARE_HEROES_TIMEOUT_MS || 10000),
+  
+  // Cache TTL in milliseconds (default: 24 hours = 86400000ms)
+  // Cache is in-server (process-local) and resets on restart/deploy
+  SOFTWARE_HEROES_CACHE_TTL_MS: Number(process.env.SOFTWARE_HEROES_CACHE_TTL_MS || 86400000),
 };
