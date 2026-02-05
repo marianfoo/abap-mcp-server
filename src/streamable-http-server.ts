@@ -10,7 +10,7 @@ import { logger } from "./lib/logger.js";
 import { BaseServerHandler } from "./lib/BaseServerHandler.js";
 
 // Version will be updated by deployment script
-const VERSION = "1.0.5";
+const VERSION = "1.0.6";
 const MCP_PROTOCOL_VERSIONS = ["2025-11-25", "2025-06-18", "2025-03-26"];
 const MCP_PROTOCOL_PRIMARY = MCP_PROTOCOL_VERSIONS[0];
 const DEFAULT_ALLOWED_ORIGINS = ["http://localhost:*", "http://127.0.0.1:*"];
