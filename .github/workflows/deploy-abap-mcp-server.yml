@@ -185,11 +185,11 @@ jobs:
               cd /opt/mcp-sap/abap-mcp-server
               # Ensure origin uses the generic URL (the config above will intercept it and add auth)
               git remote set-url origin https://github.com/marianfoo/abap-mcp-server.git
-              git fetch --prune
-              git reset --hard origin/main
+              git fetch --prune --quiet
+              git reset --hard origin/main --quiet
             else
               cd /opt/mcp-sap
-              git clone https://github.com/marianfoo/abap-mcp-server.git
+              git clone --quiet https://github.com/marianfoo/abap-mcp-server.git
               cd abap-mcp-server
             fi
             
@@ -216,7 +216,7 @@ jobs:
             echo "✅ Memory OK: ${AVAILABLE_MB_MEM}MB available"
 
             echo "==> Stop MCP services gracefully before build"
-            pm2 stop abap-mcp-http abap-mcp-streamable || true
+            pm2 stop abap-mcp-http abap-mcp-streamable > /dev/null 2>&1 || true
             sleep 3
             
             echo "==> Run setup (shallow, single-branch submodules + build)"
@@ -235,9 +235,9 @@ jobs:
 
             echo "==> (Re)start MCP services with BM25 search support"
             # HTTP status on 127.0.0.1:3002; Streamable HTTP on 127.0.0.1:3124
-            pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs --only abap-mcp-http       || pm2 restart abap-mcp-http
-            pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs --only abap-mcp-streamable || pm2 restart abap-mcp-streamable
-            pm2 save
+            (pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs --only abap-mcp-http       || pm2 restart abap-mcp-http) > /dev/null 2>&1
+            (pm2 start /opt/mcp-sap/abap-mcp-server/ecosystem.config.cjs --only abap-mcp-streamable || pm2 restart abap-mcp-streamable) > /dev/null 2>&1
+            pm2 save > /dev/null 2>&1
 
             echo "==> Enhanced health checks with database verification"
             sleep 5

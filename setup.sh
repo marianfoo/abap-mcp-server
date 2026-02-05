@@ -5,14 +5,14 @@ echo "🚀 Setting up SAP Documentation MCP Server..."
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-npm install
+npm install --loglevel=warn
 
 # Initialize and update git submodules
 echo "📚 Initializing documentation submodules..."
 
 # Initialize/update submodules (including new ones) to latest
 echo "  → Syncing submodule configuration..."
-git submodule sync --recursive
+git submodule sync --recursive --quiet
 
 # Collect submodules from .gitmodules
 echo "  → Ensuring all top-level submodules are present (shallow, single branch)..."
@@ -30,9 +30,9 @@ while IFS= read -r line; do
 
   if [ ! -d "$path/.git" ]; then
     echo "      - cloning shallow..."
-    GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none --no-tags --single-branch --depth 1 --branch "$branch" "$url" "$path" || {
+    GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none --no-tags --single-branch --depth 1 --branch "$branch" --quiet "$url" "$path" || {
       echo "      ! clone failed for $path, retrying with master"
-      GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none --no-tags --single-branch --depth 1 --branch master "$url" "$path" || true
+      GIT_LFS_SKIP_SMUDGE=1 git clone --filter=blob:none --no-tags --single-branch --depth 1 --branch master --quiet "$url" "$path" || true
     }
   else
     echo "      - updating shallow to latest $branch..."
@@ -44,16 +44,16 @@ while IFS= read -r line; do
     git -C "$path" config remote.origin.tagOpt --no-tags || true
     git -C "$path" config remote.origin.promisor true || true
     git -C "$path" config remote.origin.partialclonefilter blob:none || true
-    if ! GIT_LFS_SKIP_SMUDGE=1 git -C "$path" fetch --filter=blob:none --no-tags --depth 1 --prune origin "$branch"; then
+    if ! GIT_LFS_SKIP_SMUDGE=1 git -C "$path" fetch --filter=blob:none --no-tags --depth 1 --prune --quiet origin "$branch"; then
       echo "      ! fetch failed for $branch, trying master"
       git -C "$path" config remote.origin.fetch "+refs/heads/master:refs/remotes/origin/master"
       git -C "$path" remote set-branches origin master || true
-      GIT_LFS_SKIP_SMUDGE=1 git -C "$path" fetch --filter=blob:none --no-tags --depth 1 --prune origin master || true
+      GIT_LFS_SKIP_SMUDGE=1 git -C "$path" fetch --filter=blob:none --no-tags --depth 1 --prune --quiet origin master || true
       branch=master
     fi
     # Checkout/reset to the fetched tip
-    git -C "$path" checkout -B "$branch" "origin/$branch" 2>/dev/null || git -C "$path" checkout "$branch" || true
-    git -C "$path" reset --hard "origin/$branch" 2>/dev/null || true
+    git -C "$path" checkout -B "$branch" "origin/$branch" --quiet 2>/dev/null || git -C "$path" checkout "$branch" --quiet || true
+    git -C "$path" reset --hard "origin/$branch" --quiet 2>/dev/null || true
     # Compact local repository storage (keeps only the shallow pack)
     git -C "$path" reflog expire --expire=now --all >/dev/null 2>&1 || true
     git -C "$path" gc --prune=now --aggressive >/dev/null 2>&1 || true
@@ -64,11 +64,10 @@ if [ -n "$SKIP_NESTED_SUBMODULES" ]; then
   echo "  → Skipping nested submodule initialization (SKIP_NESTED_SUBMODULES=1)"
 else
   echo "  → Initializing nested submodules to pinned commits (shallow)..."
-  git submodule update --init --recursive --depth 1 || true
+  git submodule update --init --recursive --depth 1 --quiet || true
 fi
 
-echo "  → Current submodule status:"
-git submodule status --recursive || true
+echo "  → Submodule setup complete"
 
 # Build the search index
 echo "🔍 Building search index..."
