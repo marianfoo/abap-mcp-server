@@ -1,6 +1,8 @@
-# ABAP/RAP MCP Server
+# ABAP Community MCP Server
 
-A dedicated MCP server for ABAP and RAP development in ADT (Eclipse). Provides unified search across ABAP documentation, code samples, and style guides, plus local ABAP linting.
+> **Community Project** -- This is an independent, community-driven MCP server. It is **not** an official SAP product and is not affiliated with or endorsed by SAP SE.
+
+A dedicated MCP server for ABAP and RAP development in ADT (Eclipse). Provides unified search across ABAP documentation, code samples, and style guides, plus local ABAP linting. Built and maintained by the ABAP community.
 
 Use it online at https://mcp-abap.marianzeis.de/mcp
 
@@ -314,10 +316,10 @@ Run your own instance of the MCP server on a VPS behind a reverse proxy (Nginx, 
 
 ```bash
 # Build the image
-docker build -t abap-mcp-server .
+docker build -t abap-community-mcp-server .
 
 # Run the container
-docker run -d -p 3122:3122 --name abap-mcp-server abap-mcp-server
+docker run -d -p 3122:3122 --name abap-community-mcp-server abap-community-mcp-server
 
 # Verify it's running
 curl http://localhost:3122/health
@@ -334,7 +336,7 @@ Create a `docker-compose.yml`:
 
 ```yaml
 services:
-  abap-mcp-server:
+  abap-community-mcp-server:
     build: .
     ports:
       - "3122:3122"
@@ -366,7 +368,7 @@ docker compose up -d
 | `NODE_ENV` | `production` | Environment mode |
 | `LOG_LEVEL` | `INFO` | Log verbosity (DEBUG, INFO, WARN, ERROR) |
 | `RETURN_K` | `50` | Default number of search results to return |
-| `SOFTWARE_HEROES_CLIENT` | `ABAPMCPSERVER` | Client identifier for Software Heroes API (sent in headers) |
+| `SOFTWARE_HEROES_CLIENT` | `ABAPCOMMUNITYMCPSERVER` | Client identifier for Software Heroes API (sent in headers) |
 | `SOFTWARE_HEROES_TIMEOUT_MS` | `10000` | Timeout for Software Heroes API requests (ms) |
 | `SOFTWARE_HEROES_CACHE_TTL_MS` | `86400000` | Cache TTL for Software Heroes API responses (content search + feature matrix, 24h default) |
 
@@ -394,7 +396,7 @@ If you publish images to a registry:
 
 ```yaml
 services:
-  abap-mcp-server:
+  abap-community-mcp-server:
     image: ghcr.io/marianfoo/abap-mcp-server:latest
     ports:
       - "3122:3122"
@@ -413,7 +415,7 @@ Mount sources as volumes and update externally:
 
 ```yaml
 services:
-  abap-mcp-server:
+  abap-community-mcp-server:
     build: .
     ports:
       - "3122:3122"

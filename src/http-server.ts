@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // ---- build/package meta -----------------------------------------------------
-let packageInfo: { version: string; name: string } = { version: "unknown", name: "abap-mcp-server" };
+let packageInfo: { version: string; name: string } = { version: "unknown", name: "abap-community-mcp-server" };
 try {
   const packagePath = join(__dirname, "../../package.json");
   packageInfo = JSON.parse(readFileSync(packagePath, "utf8"));

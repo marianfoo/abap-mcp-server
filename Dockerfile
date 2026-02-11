@@ -1,4 +1,4 @@
-# Multi-stage build for abap-mcp-server
+# Multi-stage build for abap-community-mcp-server
 # Enables self-hosting behind a reverse proxy (Nginx, Traefik, Caddy, etc.)
 
 # ============ Build Stage ============

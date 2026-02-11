@@ -12,7 +12,7 @@
  * 
  * The function names may appear with different prefixes depending on your MCP client:
  * - Simple names: search, fetch, abap_lint, abap_feature_matrix
- * - Prefixed names: mcp_abap-mcp-server_search, etc.
+ * - Prefixed names: mcp_abap-community-mcp-server_search, etc.
  */
 
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";

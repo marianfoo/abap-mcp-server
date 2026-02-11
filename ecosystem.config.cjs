@@ -1,4 +1,4 @@
-// PM2 configuration for ABAP MCP server
+// PM2 configuration for ABAP Community MCP server
 // Modern MCP streamable HTTP transport only (SSE proxy removed)
 module.exports = {
   apps: [

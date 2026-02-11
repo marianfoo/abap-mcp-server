@@ -304,7 +304,7 @@ async function main() {
   app.get('/health', (req: Request, res: Response) => {
     res.json({
       status: 'healthy',
-      service: 'abap-mcp-server-streamable',
+      service: 'abap-community-mcp-server-streamable',
       version: VERSION,
       timestamp: new Date().toISOString(),
       transport: 'streamable-http',
