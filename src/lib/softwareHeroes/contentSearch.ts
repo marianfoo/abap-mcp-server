@@ -1,7 +1,7 @@
 // Software Heroes Content Search
 // Search articles, pages, code, and feed from software-heroes.com using START_SEARCH API
 
-import { callSoftwareHeroesApi, SoftwareHeroesApiOptions } from "./core.js";
+import { callSoftwareHeroesApi, SoftwareHeroesApiOptions, decodeEntities, stripTags } from "./core.js";
 import { SearchResponse, SearchResult } from "../types.js";
 
 // ---------------------------------------------------------------------------
@@ -39,40 +39,8 @@ export interface ParsedSearchHit {
 const BASE_URL = "https://software-heroes.com";
 
 // ---------------------------------------------------------------------------
-// HTML Parsing Utilities
+// HTML Parsing Utilities (decodeEntities & stripTags imported from core.ts)
 // ---------------------------------------------------------------------------
-
-/** Decode HTML entities */
-const decodeEntities = (s = ""): string =>
-  s
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&apos;/g, "'")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&ouml;/g, "ö")
-    .replace(/&auml;/g, "ä")
-    .replace(/&uuml;/g, "ü")
-    .replace(/&Ouml;/g, "Ö")
-    .replace(/&Auml;/g, "Ä")
-    .replace(/&Uuml;/g, "Ü")
-    .replace(/&szlig;/g, "ß")
-    .replace(/&rsquo;/g, "'")
-    .replace(/&lsquo;/g, "'")
-    .replace(/&rdquo;/g, '"')
-    .replace(/&ldquo;/g, '"')
-    .replace(/&ndash;/g, "–")
-    .replace(/&mdash;/g, "—")
-    .replace(/&#\d+;/g, (match) => {
-      const code = parseInt(match.slice(2, -1), 10);
-      return String.fromCharCode(code);
-    });
-
-/** Strip HTML tags and clean whitespace */
-const stripTags = (html = ""): string =>
-  decodeEntities(html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim());
 
 /** Make a relative URL absolute */
 const absolutizeUrl = (href: string): string => {

@@ -1,30 +1,31 @@
-// Build pipeline step 1: Creates dist/data/index.json (bundle of ABAP/RAP docs from submodules)
+// Build pipeline step 1: Creates dist/data/index.json (bundle of all docs from submodules)
 import fg from "fast-glob";
 import fs from "fs/promises";
 import path, { join } from "path";
 import matter from "gray-matter";
+import { getAllowedSources, getVariantName } from "../src/lib/variant.js";
 
 interface DocEntry {
-  id: string;              // "/abap-docs-standard/<rel-path>", "/abap-cheat-sheets/<rel-path>", etc.
+  id: string;              // "/sapui5/<rel-path>", "/cap/<rel-path>", "/openui5-api/<rel-path>", or "/openui5-samples/<rel-path>"
   title: string;
   description: string;
   snippetCount: number;
   relFile: string;         // path relative to sources/…
   type?: "markdown" | "jsdoc" | "sample" | "markdown-section";  // type of documentation
-  controlName?: string;    // for ABAP: object name (class, interface, etc.)
-  namespace?: string;      // for ABAP: package or namespace
-  keywords?: string[];     // searchable keywords and tags (ABAP statements, RAP terms)
-  properties?: string[];   // for structured docs
-  events?: string[];       // for structured docs
-  aggregations?: string[]; // for structured docs
+  controlName?: string;    // extracted UI5 control name (e.g., "Wizard", "Button")
+  namespace?: string;      // UI5 namespace (e.g., "sap.m", "sap.f")
+  keywords?: string[];     // searchable keywords and tags
+  properties?: string[];   // control properties for API docs
+  events?: string[];       // control events for API docs
+  aggregations?: string[]; // control aggregations for API docs
   parentDocument?: string; // for sections, the ID of the parent document
   sectionStartLine?: number; // for sections, the line number where the section starts
   headingLevel?: number;   // for sections, the heading level (2=##, 3=###, 4=####)
 }
 
 interface LibraryBundle {
-  id: string;              // "/abap-docs-standard" | "/abap-cheat-sheets" | "/abap-fiori-showcase", etc.
-  name: string;            // "ABAP Keyword Documentation (Standard)", "ABAP Cheat Sheets", etc.
+  id: string;              // "/sapui5" | "/cap" | "/openui5-api" | "/openui5-samples"
+  name: string;            // "SAPUI5", "CAP", "OpenUI5 API", "OpenUI5 Samples"
   description: string;
   docs: DocEntry[];
 }
@@ -40,8 +41,179 @@ interface SourceConfig {
   type: "markdown" | "jsdoc" | "sample";
 }
 
-// ABAP/RAP-focused sources only
 const SOURCES: SourceConfig[] = [
+  {
+    repoName: "sapui5-docs",
+    absDir: join("sources", "sapui5-docs", "docs"),
+    id: "/sapui5",
+    name: "SAPUI5",
+    description: "Official SAPUI5 Markdown documentation",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cap-docs",
+    absDir: join("sources", "cap-docs"),
+    id: "/cap",
+    name: "SAP Cloud Application Programming Model (CAP)",
+    description: "CAP (Capire) reference & guides",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "openui5",
+    absDir: join("sources", "openui5", "src"),
+    id: "/openui5-api",
+    name: "OpenUI5 API",
+    description: "OpenUI5 Control API documentation and JSDoc",
+    filePattern: "**/src/**/*.js",
+    exclude: "**/test/**/*",
+    type: "jsdoc" as const
+  },
+  {
+    repoName: "openui5",
+    absDir: join("sources", "openui5", "src"),
+    id: "/openui5-samples",
+    name: "OpenUI5 Samples", 
+    description: "OpenUI5 demokit sample applications and code examples",
+    filePattern: "**/demokit/sample/**/*.{js,xml,json,html}",
+    type: "sample" as const
+  },
+  {
+    repoName: "wdi5",
+    absDir: join("sources", "wdi5", "docs"),
+    id: "/wdi5",
+    name: "wdi5",
+    description: "wdi5 end-to-end test framework documentation",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "ui5-tooling",
+    absDir: join("sources", "ui5-tooling", "docs"),
+    id: "/ui5-tooling",
+    name: "UI5 Tooling ",
+    description: "UI5 Tooling documentation",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cloud-mta-build-tool",
+    absDir: join("sources", "cloud-mta-build-tool", "docs", "docs"),
+    id: "/cloud-mta-build-tool",
+    name: "Cloud MTA Build Tool",
+    description: "Cloud MTA Build Tool documentation",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "ui5-webcomponents",
+    absDir: join("sources", "ui5-webcomponents", "docs"),
+    id: "/ui5-webcomponents",
+    name: "UI5 Web Components",
+    description: "UI5 Web Components documentation",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cloud-sdk",
+    absDir: join("sources", "cloud-sdk", "docs-js"),
+    id: "/cloud-sdk-js",
+    name: "Cloud SDK (JavaScript)",
+    description: "Cloud SDK (JavaScript) documentation",
+    filePattern: "**/*.mdx",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cloud-sdk",
+    absDir: join("sources", "cloud-sdk", "docs-java"),
+    id: "/cloud-sdk-java",
+    name: "Cloud SDK (Java)",
+    description: "Cloud SDK (Java) documentation",
+    filePattern: "**/*.mdx",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cloud-sdk-ai",
+    absDir: join("sources", "cloud-sdk-ai", "docs-js"),
+    id: "/cloud-sdk-ai-js",
+    name: "Cloud SDK AI (JavaScript)",
+    description: "Cloud SDK AI (JavaScript) documentation",
+    filePattern: "**/*.mdx",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cloud-sdk-ai",
+    absDir: join("sources", "cloud-sdk-ai", "docs-java"),
+    id: "/cloud-sdk-ai-java",
+    name: "Cloud SDK AI (Java)",
+    description: "Cloud SDK AI (Java) documentation",
+    filePattern: "**/*.mdx",
+    type: "markdown" as const
+  },
+  {
+    repoName: "ui5-typescript",
+    absDir: join("sources", "ui5-typescript"),
+    id: "/ui5-typescript",
+    name: "UI5 TypeScript",
+    description: "Official entry point to anything TypeScript related for UI5",
+    filePattern: "*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "ui5-cc-spreadsheetimporter",
+    absDir: join("sources", "ui5-cc-spreadsheetimporter", "docs"),
+    id: "/ui5-cc-spreadsheetimporter",
+    name: "UI5 CC Spreadsheet Importer",
+    description: "UI5 Custom Control for importing spreadsheet data",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "abap-cheat-sheets",
+    absDir: join("sources", "abap-cheat-sheets"),
+    id: "/abap-cheat-sheets",
+    name: "ABAP Cheat Sheets",
+    description: "Comprehensive ABAP syntax examples and cheat sheets",
+    filePattern: "*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "sap-styleguides",
+    absDir: join("sources", "sap-styleguides"),
+    id: "/sap-styleguides",
+    name: "SAP Style Guides",
+    description: "SAP coding style guides and best practices including Clean ABAP",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "dsag-abap-leitfaden",
+    absDir: join("sources", "dsag-abap-leitfaden", "docs"),
+    id: "/dsag-abap-leitfaden",
+    name: "DSAG ABAP Leitfaden",
+    description: "German ABAP guidelines and best practices by DSAG",
+    filePattern: "**/*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "abap-fiori-showcase",
+    absDir: join("sources", "abap-fiori-showcase"),
+    id: "/abap-fiori-showcase",
+    name: "ABAP Platform Fiori Feature Showcase",
+    description: "Annotation-driven SAP Fiori Elements features for OData V4 using ABAP RAP",
+    filePattern: "*.md",
+    type: "markdown" as const
+  },
+  {
+    repoName: "cap-fiori-showcase", 
+    absDir: join("sources", "cap-fiori-showcase"),
+    id: "/cap-fiori-showcase",
+    name: "CAP Fiori Elements Feature Showcase",
+    description: "SAP Fiori Elements features and annotations showcase using CAP",
+    filePattern: "*.md",
+    type: "markdown" as const
+  },
   {
     repoName: "abap-docs",
     absDir: join("sources", "abap-docs", "docs", "standard", "md"),
@@ -58,42 +230,6 @@ const SOURCES: SourceConfig[] = [
     name: "ABAP Keyword Documentation (Cloud)",
     description: "Official ABAP language reference for BTP/Cloud (restricted syntax) - individual files optimized for LLM consumption",
     filePattern: "*.md",
-    type: "markdown" as const
-  },
-  {
-    repoName: "abap-cheat-sheets",
-    absDir: join("sources", "abap-cheat-sheets"),
-    id: "/abap-cheat-sheets",
-    name: "ABAP Cheat Sheets",
-    description: "Comprehensive ABAP and RAP syntax examples and cheat sheets with practical code",
-    filePattern: "*.md",
-    type: "markdown" as const
-  },
-  {
-    repoName: "sap-styleguides",
-    absDir: join("sources", "sap-styleguides"),
-    id: "/sap-styleguides",
-    name: "SAP Clean ABAP Style Guide",
-    description: "SAP Clean ABAP coding style guides and best practices",
-    filePattern: "**/*.md",
-    type: "markdown" as const
-  },
-  {
-    repoName: "dsag-abap-leitfaden",
-    absDir: join("sources", "dsag-abap-leitfaden", "docs"),
-    id: "/dsag-abap-leitfaden",
-    name: "DSAG ABAP Leitfaden",
-    description: "German ABAP development guidelines and best practices by DSAG",
-    filePattern: "**/*.md",
-    type: "markdown" as const
-  },
-  {
-    repoName: "abap-fiori-showcase",
-    absDir: join("sources", "abap-fiori-showcase"),
-    id: "/abap-fiori-showcase",
-    name: "ABAP RAP Fiori Feature Showcase",
-    description: "Annotation-driven SAP Fiori Elements features for OData V4 using ABAP RAP",
-    filePattern: "**/*.md",
     type: "markdown" as const
   },
   {
@@ -124,6 +260,9 @@ const SOURCES: SourceConfig[] = [
     type: "markdown" as const
   }
 ];
+
+const ALLOWED_SOURCE_IDS = new Set(getAllowedSources());
+const ACTIVE_SOURCES = SOURCES.filter((source) => ALLOWED_SOURCE_IDS.has(source.id));
 
 // Extract meaningful content from ABAP documentation files
 function extractAbapContent(content: string, filename: string): { title: string; description: string; snippetCount: number } {
@@ -549,9 +688,10 @@ function extractMarkdownSections(content: string, lines: string[], src: any, rel
 
 async function main() {
   await fs.mkdir("dist/data", { recursive: true });
+  console.log("Using MCP variant " + getVariantName() + " with " + ACTIVE_SOURCES.length + " active source bundles.");
   const all: Record<string, LibraryBundle> = {};
 
-  for (const src of SOURCES) {
+  for (const src of ACTIVE_SOURCES) {
     const patterns = [src.filePattern];
     if (src.exclude) {
       patterns.push(`!${src.exclude}`);

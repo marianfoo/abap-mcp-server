@@ -356,5 +356,3 @@ function mapSeverity(severity: any): 'error' | 'warning' | 'info' {
   return 'info';
 }
 
-// Keep old export name for compatibility during transition
-export const lintAbapFiles = lintAbapCode;

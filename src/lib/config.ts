@@ -1,3 +1,7 @@
+import { getVariantConfig } from "./variant.js";
+
+const variant = getVariantConfig();
+
 // Central configuration for search system
 export const CONFIG = {
   // Default number of results to return (50 is optimal for comprehensive coverage)
@@ -5,7 +9,7 @@ export const CONFIG = {
   
   // Database paths
   DB_PATH: "dist/data/docs.sqlite",
-  METADATA_PATH: "src/metadata.json",
+  METADATA_PATH: process.env.METADATA_PATH || variant.metadataPath || "src/metadata.json",
   
   // Search behavior
   USE_OR_LOGIC: true, // Use OR logic for better recall in BM25-only mode

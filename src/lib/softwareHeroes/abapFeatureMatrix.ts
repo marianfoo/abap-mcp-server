@@ -3,7 +3,7 @@
 // Always fetches full English content and caches it locally
 // No external HTML parsing dependencies - uses regex-based best-effort parsing
 
-import { callSoftwareHeroesApi, TtlCache } from "./core.js";
+import { callSoftwareHeroesApi, TtlCache, decodeEntities, stripTags } from "./core.js";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -66,22 +66,8 @@ const matrixCache = new TtlCache<ParsedFeatureMatrix>(24 * 60 * 60 * 1000);
 const CACHE_KEY = "abap-feature-matrix-en";
 
 // ---------------------------------------------------------------------------
-// HTML Parsing Utilities
+// HTML Parsing Utilities (decodeEntities & stripTags imported from core.ts)
 // ---------------------------------------------------------------------------
-
-/** Decode HTML entities */
-const decodeEntities = (s = ""): string =>
-  s
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, " ");
-
-/** Strip HTML tags and clean whitespace */
-const stripTags = (html = ""): string =>
-  decodeEntities(html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim());
 
 /** Extract href from an anchor tag */
 const extractHref = (html: string): string | undefined => {

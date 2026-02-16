@@ -111,6 +111,42 @@ export const softwareHeroesCache = new TtlCache<SoftwareHeroesApiResponse>(
 );
 
 // ---------------------------------------------------------------------------
+// Shared HTML Parsing Utilities
+// ---------------------------------------------------------------------------
+
+/** Decode HTML entities (comprehensive: standard, German umlauts, smart quotes, numeric) */
+export const decodeEntities = (s = ""): string =>
+  s
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&ouml;/g, "ö")
+    .replace(/&auml;/g, "ä")
+    .replace(/&uuml;/g, "ü")
+    .replace(/&Ouml;/g, "Ö")
+    .replace(/&Auml;/g, "Ä")
+    .replace(/&Uuml;/g, "Ü")
+    .replace(/&szlig;/g, "ß")
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ldquo;/g, '"')
+    .replace(/&ndash;/g, "–")
+    .replace(/&mdash;/g, "—")
+    .replace(/&#\d+;/g, (match) => {
+      const code = parseInt(match.slice(2, -1), 10);
+      return String.fromCharCode(code);
+    });
+
+/** Strip HTML tags and clean whitespace */
+export const stripTags = (html = ""): string =>
+  decodeEntities(html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim());
+
+// ---------------------------------------------------------------------------
 // API Client
 // ---------------------------------------------------------------------------
 
@@ -214,10 +250,3 @@ export function getCacheStats(): { size: number; ttlHours: number } {
   };
 }
 
-/**
- * Clear the Software Heroes cache (useful for testing or manual refresh)
- */
-export function clearCache(): void {
-  softwareHeroesCache.clear();
-  console.log("🗑️ [SoftwareHeroes] Cache cleared");
-}

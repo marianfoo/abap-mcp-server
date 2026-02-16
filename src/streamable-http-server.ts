@@ -8,36 +8,11 @@ import {
 } from "@modelcontextprotocol/sdk/types.js";
 import { logger } from "./lib/logger.js";
 import { BaseServerHandler } from "./lib/BaseServerHandler.js";
+import { getVariantConfig } from "./lib/variant.js";
 
 // Version will be updated by deployment script
-const VERSION = "1.0.7";
-const MCP_PROTOCOL_VERSIONS = ["2025-11-25", "2025-06-18", "2025-03-26"];
-const MCP_PROTOCOL_PRIMARY = MCP_PROTOCOL_VERSIONS[0];
-const DEFAULT_ALLOWED_ORIGINS = ["http://localhost:*", "http://127.0.0.1:*"];
-const RAW_ALLOWED_ORIGINS = (process.env.MCP_ALLOWED_ORIGINS || "")
-  .split(",")
-  .map((origin) => origin.trim())
-  .filter(Boolean);
-const ALLOWED_ORIGINS = RAW_ALLOWED_ORIGINS.length ? RAW_ALLOWED_ORIGINS : DEFAULT_ALLOWED_ORIGINS;
-const ALLOW_NULL_ORIGIN = ALLOWED_ORIGINS.includes("null");
-const ALLOWED_ORIGIN_PATTERNS = ALLOWED_ORIGINS.filter((origin) => origin !== "null");
-
-function escapeRegex(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function isOriginAllowed(origin?: string): boolean {
-  if (!origin) return true; // Non-browser or direct client (no Origin header)
-  if (origin === "null") return ALLOW_NULL_ORIGIN;
-
-  return ALLOWED_ORIGIN_PATTERNS.some((pattern) => {
-    if (pattern.includes("*")) {
-      const regex = new RegExp(`^${escapeRegex(pattern).replace(/\\\*/g, ".*")}$`);
-      return regex.test(origin);
-    }
-    return origin === pattern;
-  });
-}
+const VERSION = "0.3.21";
+const variant = getVariantConfig();
 
 
 // Simple in-memory event store for resumability
@@ -86,18 +61,16 @@ function createServer() {
   const serverOptions: NonNullable<ConstructorParameters<typeof Server>[1]> & {
     protocolVersions?: string[];
   } = {
-    protocolVersions: MCP_PROTOCOL_VERSIONS,
+    protocolVersions: ["2025-07-09"],
     capabilities: {
-      resources: {},  // Resource templates enabled; avoids listing 60,000+ resources
-      tools: {},      // Enable tools capability
-      prompts: {}     // Enable prompts capability
+      // resources: {},  // DISABLED: Causes 60,000+ resources which breaks Cursor
+      tools: {}       // Enable tools capability
     }
   };
 
   const srv = new Server({
-    name: "ABAP MCP Streamable HTTP",
-    description:
-      "ABAP/RAP MCP server with Streamable HTTP transport - supports ABAP Keyword Documentation, Cheat Sheets, Styleguides, and RAP examples",
+    name: variant.server.streamableName,
+    description: variant.server.streamableDescription,
     version: VERSION
   }, serverOptions);
 
@@ -111,8 +84,7 @@ async function main() {
   // Initialize search system with metadata
   BaseServerHandler.initializeMetadata();
 
-  const MCP_PORT = process.env.MCP_PORT ? parseInt(process.env.MCP_PORT, 10) : 3122;
-  const MCP_HOST = process.env.HOST || process.env.MCP_HOST || '127.0.0.1';
+  const MCP_PORT = process.env.MCP_PORT ? parseInt(process.env.MCP_PORT, 10) : variant.server.streamablePort;
   
   // Create Express application
   const app = express();
@@ -120,34 +92,9 @@ async function main() {
   
   // Configure CORS to expose Mcp-Session-Id header for browser-based clients
   app.use(cors({
-    origin: (origin, callback) => {
-      const allowed = isOriginAllowed(origin || undefined);
-      callback(null, allowed);
-    },
+    origin: '*', // Allow all origins - adjust as needed for production
     exposedHeaders: ['Mcp-Session-Id']
   }));
-
-  // Validate Origin for MCP requests to prevent DNS rebinding attacks
-  app.use('/mcp', (req, res, next) => {
-    const origin = req.headers.origin as string | undefined;
-    if (!isOriginAllowed(origin)) {
-      logger.warn('Rejected MCP request from disallowed Origin', {
-        origin: origin || 'none',
-        method: req.method,
-        userAgent: req.headers['user-agent']
-      });
-      res.status(403).json({
-        jsonrpc: '2.0',
-        error: {
-          code: -32000,
-          message: 'Origin not allowed'
-        },
-        id: null
-      });
-      return;
-    }
-    next();
-  });
 
   // Store transports by session ID
   const transports: { [sessionId: string]: StreamableHTTPServerTransport } = {};
@@ -164,12 +111,12 @@ async function main() {
         old_endpoint: "/sse",
         new_endpoint: "/mcp",
         transport: "MCP Streamable HTTP", 
-        protocol_version: MCP_PROTOCOL_PRIMARY
+        protocol_version: "2025-07-09"
       },
-      documentation: "https://github.com/marianfoo/abap-mcp-server#connect-from-your-mcp-client",
+      documentation: "https://github.com/marianfoo/mcp-sap-docs#connect-from-your-mcp-client",
       alternatives: {
-        "Local MCP Streamable HTTP": "http://127.0.0.1:3122/mcp",
-        "Public MCP Streamable HTTP": "https://mcp-abap.marianzeis.de/mcp"
+        "Local MCP Streamable HTTP": "http://127.0.0.1:" + variant.server.streamablePort + "/mcp",
+        "Public MCP Streamable HTTP": "https://mcp-sap-docs.marianzeis.de/mcp"
       }
     };
     
@@ -304,16 +251,16 @@ async function main() {
   app.get('/health', (req: Request, res: Response) => {
     res.json({
       status: 'healthy',
-      service: 'abap-community-mcp-server-streamable',
+      service: variant.server.pm2StreamableName,
       version: VERSION,
       timestamp: new Date().toISOString(),
       transport: 'streamable-http',
-      protocol: MCP_PROTOCOL_PRIMARY
+      protocol: '2025-07-09'
     });
   });
 
-  // Start the server (bind address configurable via MCP_HOST env var)
-  const server = app.listen(MCP_PORT, MCP_HOST, (error?: Error) => {
+  // Start the server (bind to localhost for local-only access)
+  const server = app.listen(MCP_PORT, '127.0.0.1', (error?: Error) => {
     if (error) {
       console.error('Failed to start server:', error);
       process.exit(1);
@@ -325,11 +272,11 @@ async function main() {
   server.keepAliveTimeout = 0;  // Disable keep-alive timeout
   server.headersTimeout = 0;    // Disable headers timeout
   
-  console.log(`📚 MCP Streamable HTTP Server listening on http://${MCP_HOST}:${MCP_PORT}`);
+  console.log(`📚 MCP Streamable HTTP Server listening on http://127.0.0.1:${MCP_PORT}`);
   console.log(`
 ==============================================
 MCP STREAMABLE HTTP SERVER
-Protocol version: ${MCP_PROTOCOL_PRIMARY}
+Protocol version: 2025-07-09
 
 Endpoint: /mcp
 Methods: GET, POST, DELETE
@@ -344,8 +291,7 @@ Health check: GET /health
 `);
 
   // Log server startup
-  logger.info("ABAP MCP Streamable HTTP server starting up", {
-    host: MCP_HOST,
+  logger.info("MCP SAP Docs Streamable HTTP server starting up", {
     port: MCP_PORT,
     nodeEnv: process.env.NODE_ENV,
     logLevel: process.env.LOG_LEVEL,
@@ -353,9 +299,8 @@ Health check: GET /health
   });
 
   // Log successful startup
-  logger.info("ABAP MCP Streamable HTTP server ready", {
+  logger.info("MCP SAP Docs Streamable HTTP server ready", {
     transport: "streamable-http",
-    host: MCP_HOST,
     port: MCP_PORT,
     pid: process.pid
   });

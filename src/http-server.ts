@@ -6,14 +6,16 @@ import { execSync } from "child_process";
 import { searchLibraries } from "./lib/localDocs.js";
 import { search } from "./lib/search.js";
 import { CONFIG } from "./lib/config.js";
-import { loadMetadata, getDocUrlConfig } from "./lib/metadata.js";
+import { getDocUrlConfig } from "./lib/metadata.js";
 import { generateDocumentationUrl, formatSearchResult } from "./lib/url-generation/index.js";
+import { getAllowedSubmodulePaths, getVariantConfig } from "./lib/variant.js";
+import { BaseServerHandler } from "./lib/BaseServerHandler.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // ---- build/package meta -----------------------------------------------------
-let packageInfo: { version: string; name: string } = { version: "unknown", name: "abap-community-mcp-server" };
+let packageInfo: { version: string; name: string } = { version: "unknown", name: "mcp-sap-docs" };
 try {
   const packagePath = join(__dirname, "../../package.json");
   packageInfo = JSON.parse(readFileSync(packagePath, "utf8"));
@@ -21,6 +23,7 @@ try {
   console.warn("Could not read package.json:", error instanceof Error ? error.message : "Unknown error");
 }
 const buildTimestamp = new Date().toISOString();
+const variant = getVariantConfig();
 
 // ---- helpers ----------------------------------------------------------------
 function safeExec(cmd: string, cwd?: string) {
@@ -160,23 +163,13 @@ const server = createServer(async (req, res) => {
 
     // docs/search status
     const sourcesRoot = join(__dirname, "../../sources");
-    const knownSources = [
-      "abap-docs",
-      "abap-cheat-sheets",
-      "sap-styleguides",
-      "dsag-abap-leitfaden",
-      "abap-fiori-showcase",
-      "abap-platform-rap-opensap",
-      "cloud-abap-rap",
-      "abap-platform-reuse-services"
-    ];
+    const knownSources = getAllowedSubmodulePaths().map((entry) => entry.replace(/^sources\//, ""));
     const presentSources = existsSync(sourcesRoot)
       ? readdirSync(sourcesRoot, { withFileTypes: true })
           .filter((e) => e.isDirectory())
           .map((e) => e.name)
       : [];
 
-    const toCheck = knownSources.filter((s) => presentSources.includes(s));
     const resources: Record<string, any> = {};
     let totalResources = 0;
 
@@ -198,7 +191,7 @@ const server = createServer(async (req, res) => {
     }
 
     // index + FTS footprint
-    const dataRoot = join(__dirname, "../data");
+    const dataRoot = join(__dirname, "../../data");
     const indexJson = join(dataRoot, "index.json");
     const ftsDb = join(dataRoot, "docs.sqlite");
     const indexStat = existsSync(indexJson) ? statSync(indexJson) : null;
@@ -253,8 +246,8 @@ const server = createServer(async (req, res) => {
         nodeVersion: process.version,
         platform: process.platform,
         pid: process.pid,
-        port: Number(process.env.PORT || 3001),
-        bind: process.env.HOST || "127.0.0.1",
+        port: Number(process.env.PORT || variant.server.httpStatusPort),
+        bind: "127.0.0.1",
       },
     };
 
@@ -270,12 +263,12 @@ const server = createServer(async (req, res) => {
         old_endpoint: "/sse",
         new_endpoint: "/mcp",
         transport: "MCP Streamable HTTP",
-        protocol_version: "2025-11-25"
+        protocol_version: "2025-07-09"
       },
-      documentation: "https://github.com/marianfoo/abap-mcp-server#connect-from-your-mcp-client",
+      documentation: "https://github.com/marianfoo/mcp-sap-docs#connect-from-your-mcp-client",
       alternatives: {
         "Local MCP Streamable HTTP": "http://127.0.0.1:3122/mcp",
-        "Public MCP Streamable HTTP": "https://mcp-abap.marianzeis.de/mcp"
+        "Public MCP Streamable HTTP": "https://mcp-sap-docs.marianzeis.de/mcp"
       }
     };
     
@@ -302,22 +295,14 @@ const server = createServer(async (req, res) => {
   return json(res, 404, { error: "Not Found", path: req.url, method: req.method });
 });
 
-// Initialize search system with metadata
+// Initialize search system with metadata and start server
 (async () => {
-  console.log('🔧 Initializing BM25 search system...');
-  try {
-    loadMetadata();
-    console.log('✅ Search system ready with metadata');
-  } catch (error) {
-    console.warn('⚠️ Metadata loading failed, using defaults');
-    console.log('✅ Search system ready');
-  }
-  
+  BaseServerHandler.initializeMetadata();
+
   // Start server
-  const PORT = Number(process.env.PORT || 3001);
-  const HOST = process.env.HOST || "127.0.0.1";
-  // Bind address configurable via HOST env var (default: 127.0.0.1 for local-only)
-  server.listen(PORT, HOST, () => {
-    console.log(`📚 HTTP server running on http://${HOST}:${PORT} (status: /status, health: /healthz, ready: /readyz)`);
+  const PORT = Number(process.env.PORT || variant.server.httpStatusPort);
+  // Bind to 127.0.0.1 to keep local-only
+  server.listen(PORT, "127.0.0.1", () => {
+    console.log(`📚 HTTP server running on http://127.0.0.1:${PORT} (status: /status, health: /healthz, ready: /readyz)`);
   });
 })();

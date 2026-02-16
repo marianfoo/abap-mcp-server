@@ -1,3 +1,9 @@
+> Historical documentation note
+>
+> This file is kept for background and milestone history.
+> For the current architecture and operational model, start with:
+> README.md, docs/ARCHITECTURE.md, docs/DEV.md, docs/TESTS.md, and docs/UPSTREAM-ONE-WAY-SYNC-IMPLEMENTATION.md.
+
 # ABAP Documentation - Standard System Integration
 
 ## ✅ **Integration Complete** 
@@ -85,7 +91,7 @@ sources/abap-docs/docs/7.58/md/
 
 ### **1. Initialize Submodule**
 ```bash
-cd /Users/marianzeis/DEV/abap-mcp-server
+cd /Users/marianzeis/DEV/sap-docs-mcp
 git submodule update --init --recursive sources/abap-docs
 ```
 
@@ -102,7 +108,7 @@ This will:
 
 ### **3. Build Index**
 ```bash
-cd /Users/marianzeis/DEV/abap-mcp-server
+cd /Users/marianzeis/DEV/sap-docs-mcp
 npm run build:index
 ```
 

@@ -12,5 +12,5 @@ export {
   type SearchFeatureMatrixResult,
 } from "./abapFeatureMatrix.js";
 
-// Core utilities (if needed externally)
-export { TtlCache, getCacheStats } from "./core.js";
+// Core utilities
+export { decodeEntities, stripTags } from "./core.js";

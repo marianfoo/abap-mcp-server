@@ -39,6 +39,7 @@ import { search } from "./search.js";
 import { CONFIG } from "./config.js";
 import { loadMetadata, getDocUrlConfig } from "./metadata.js";
 import { generateDocumentationUrl, formatSearchResult } from "./url-generation/index.js";
+import { isToolEnabled, getVariantName } from "./variant.js";
 
 /**
  * Helper functions for creating structured JSON responses compatible with ChatGPT and all MCP clients
@@ -205,7 +206,7 @@ export class BaseServerHandler {
   private static setupToolHandlers(srv: Server): void {
     // List available tools
     srv.setRequestHandler(ListToolsRequestSchema, async () => {
-      return {
+      const response = {
         tools: [
           {
             name: "search",
@@ -601,6 +602,12 @@ USE CASES:
           }
         ]
       };
+
+      if (!isToolEnabled("abapLint")) {
+        response.tools = response.tools.filter((tool) => tool.name !== "abap_lint");
+      }
+
+      return response;
     });
 
     // Handle tool execution
@@ -726,8 +733,6 @@ USE CASES:
           
           return createSearchResponse(searchResults);
         } catch (error) {
-          // DEBUG: Log error details
-          console.error(`❌ [SEARCH TOOL] Error during search:`, error);
           logger.logToolError(name, timing.requestId, timing.startTime, error, false);
           logger.info('Attempting fallback to original search after unified search failure');
           
@@ -830,6 +835,11 @@ USE CASES:
       }
 
       if (name === "abap_lint") {
+        if (!isToolEnabled("abapLint")) {
+          const timing = logger.logToolStart(name, "disabled", clientMetadata);
+          logger.logToolError(name, timing.requestId, timing.startTime, new Error("Tool disabled for this variant"));
+          return createErrorResponse("Tool " + name + " is disabled for MCP variant " + getVariantName() + ".", timing.requestId);
+        }
         const { code, filename, version } = args as { 
           code: string; 
           filename?: string;
@@ -935,7 +945,6 @@ USE CASES:
             structuredContent: result
           };
         } catch (error) {
-          console.error(`❌ [ABAP_FEATURE_MATRIX] Error:`, error);
           logger.logToolError(name, timing.requestId, timing.startTime, error);
           return createErrorResponse(
             `Error searching ABAP Feature Matrix: ${error}`,
@@ -949,34 +958,77 @@ USE CASES:
   }
 
   /**
-   * Setup prompt handlers for ABAP/RAP development
+   * Setup prompt handlers (variant-aware prompt catalog with backward-compatible aliases)
    */
   private static setupPromptHandlers(srv: Server): void {
+    const isAbapVariant = getVariantName() === "abap";
+
     // List available prompts
     srv.setRequestHandler(ListPromptsRequestSchema, async () => {
+      if (isAbapVariant) {
+        return {
+          prompts: [
+            {
+              name: "abap_search_help",
+              title: "ABAP/RAP Documentation Search Helper",
+              description: "Helps users construct effective search queries for ABAP and RAP documentation",
+              arguments: [
+                {
+                  name: "topic",
+                  description: "ABAP topic (RAP, CDS, BOPF, etc.)",
+                  required: false
+                },
+                {
+                  name: "flavor",
+                  description: "ABAP flavor: standard (on-premise) or cloud (BTP)",
+                  required: false
+                }
+              ]
+            },
+            {
+              name: "abap_troubleshoot",
+              title: "ABAP Issue Troubleshooting Guide",
+              description: "Guides users through troubleshooting common ABAP development issues",
+              arguments: [
+                {
+                  name: "error_message",
+                  description: "Error message or symptom description",
+                  required: false
+                },
+                {
+                  name: "context",
+                  description: "Development context (RAP, CDS, classic ABAP, etc.)",
+                  required: false
+                }
+              ]
+            }
+          ]
+        };
+      }
+
       return {
         prompts: [
           {
-            name: "abap_search_help",
-            title: "ABAP/RAP Documentation Search Helper",
-            description: "Helps users construct effective search queries for ABAP and RAP documentation",
+            name: "sap_search_help",
+            title: "SAP Documentation Search Helper",
+            description: "Helps users construct effective search queries for SAP documentation",
             arguments: [
               {
-                name: "topic",
-                description: "ABAP topic (RAP, CDS, BOPF, etc.)",
+                name: "domain",
+                description: "SAP domain (UI5, CAP, ABAP, etc.)",
                 required: false
               },
               {
-                name: "flavor",
-                description: "ABAP flavor: standard (on-premise) or cloud (BTP)",
+                name: "context",
+                description: "Specific context or technology area",
                 required: false
               }
             ]
           },
           {
-            name: "abap_troubleshoot",
-            title: "ABAP Issue Troubleshooting Guide",
-            description: "Guides users through troubleshooting common ABAP development issues",
+            name: "sap_troubleshoot",
+            title: "SAP Issue Troubleshooting Guide",
+            description: "Guides users through troubleshooting common SAP development issues",
             arguments: [
               {
                 name: "error_message",
@@ -984,8 +1036,8 @@ USE CASES:
                 required: false
               },
               {
-                name: "context",
-                description: "Development context (RAP, CDS, classic ABAP, etc.)",
+                name: "technology",
+                description: "SAP technology stack (UI5, CAP, ABAP, etc.)",
                 required: false
               }
             ]
@@ -999,6 +1051,49 @@ USE CASES:
       const { name, arguments: args } = request.params;
       
       switch (name) {
+        case "sap_search_help":
+          const domain = args?.domain || "general SAP";
+          const context = args?.context || "development";
+          
+          return {
+            description: `Search helper for ${domain} documentation`,
+            messages: [
+              {
+                role: "user",
+                content: {
+                  type: "text",
+                  text: `I need help searching ${domain} documentation for ${context}. What search terms should I use to find the most relevant results?
+
+Here are some tips for effective SAP documentation searches:
+
+**For UI5/Frontend:**
+- Include specific control names (e.g., "Table", "Button", "ObjectPage")
+- Mention UI5 version if relevant
+- Use terms like "properties", "events", "aggregations"
+
+**For CAP/Backend:**
+- Include CDS concepts (e.g., "entity", "service", "annotation")
+- Mention specific features (e.g., "authentication", "authorization", "events")
+- Use terms like "deployment", "configuration"
+
+**For ABAP:**
+- Standard ABAP (on-premise, full syntax) is the default
+- Add "cloud" or "btp" to search ABAP Cloud (restricted syntax)
+- Use specific statement types (e.g., "SELECT", "LOOP", "MODIFY")
+- Include object types (e.g., "class", "method", "interface")
+
+**General Tips:**
+- Be specific rather than broad
+- Include error codes if troubleshooting
+- Use technical terms rather than business descriptions
+- Combine multiple related terms
+
+What specific topic are you looking for help with?`
+                }
+              }
+            ]
+          };
+
         case "abap_search_help":
           const topic = args?.topic || "ABAP";
           const flavor = args?.flavor || "standard";
@@ -1046,18 +1141,67 @@ What specific ABAP topic are you looking for help with?`
             ]
           };
 
-        case "abap_troubleshoot":
-          const errorMessage = args?.error_message || "an issue";
-          const context = args?.context || "ABAP";
+        case "sap_troubleshoot":
+          const sapErrorMessage = args?.error_message || "an issue";
+          const technology = args?.technology || "SAP";
           
           return {
-            description: `Troubleshooting guide for ${context}`,
+            description: "Troubleshooting guide for SAP",
             messages: [
               {
                 role: "user", 
                 content: {
                   type: "text",
-                  text: `I'm experiencing ${errorMessage} with ${context}. Let me help you troubleshoot this systematically.
+                  text: `I'm experiencing ${sapErrorMessage} with ${technology}. Let me help you troubleshoot this systematically.
+
+**Step 1: Information Gathering**
+- What is the exact error message or symptom?
+- When does this occur (during development, runtime, deployment)?
+- What were you trying to accomplish?
+- What technology stack are you using?
+
+**Step 2: Initial Search Strategy**
+Let me search the SAP documentation for similar issues:
+
+**For UI5 Issues:**
+- Search for the exact error message
+- Include control or component names
+- Look for browser console errors
+
+**For CAP Issues:**
+- Check service definitions and annotations
+- Look for deployment configuration
+- Verify database connections
+
+**For ABAP Issues:**
+- Standard ABAP is default; add "cloud" or "btp" for ABAP Cloud
+- Look for syntax or runtime errors
+- Check object dependencies
+
+**Step 3: Common Solutions**
+Based on the issue type, I'll search for:
+- Official SAP documentation
+- Community discussions
+- Code examples and samples
+
+Please provide more details about your specific issue, and I'll search for relevant solutions.`
+                }
+              }
+            ]
+          };
+
+        case "abap_troubleshoot":
+          const errorMessage = args?.error_message || "an issue";
+          const abapContext = args?.context || "ABAP";
+          
+          return {
+            description: `Troubleshooting guide for ${abapContext}`,
+            messages: [
+              {
+                role: "user", 
+                content: {
+                  type: "text",
+                  text: `I'm experiencing ${errorMessage} with ${abapContext}. Let me help you troubleshoot this systematically.
 
 **Step 1: Information Gathering**
 - What is the exact error message or symptom?

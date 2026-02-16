@@ -1,11 +1,6 @@
 {
   "name": "mcp-abap-community-server",
-  "version": "1.0.7",
-  "description": "ABAP/RAP-focused MCP server for ADT (Eclipse) - search documentation, lint code",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/marianfoo/abap-mcp-server.git"
-  },
+  "version": "0.3.21",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
@@ -25,24 +20,24 @@
     "test:integration:urls": "npm run build && node test/tools/run-tests.js --spec search-url-verification.js",
     "test:smoke": "node test/tools/search.smoke.js",
     "test:community": "npm run build:tsc && node test/community-search.ts",
-    "test:software-heroes": "npm run build:tsc && npx vitest run test/software-heroes-afm.test.ts",
     "test:urls:status": "npm run build:tsc && npx tsx test/url-status.ts",
     "check-version": "node scripts/check-version.js",
     "setup": "bash setup.sh",
-    "setup:submodules": "bash -lc 'git submodule sync --recursive && git submodule update --init --recursive --depth 1 && git submodule status --recursive'"
+    "setup:submodules": "bash -lc 'git submodule sync --recursive && git submodule update --init --recursive --depth 1 && git submodule status --recursive'",
+    "test:software-heroes": "npm run build:tsc && npx vitest run test/software-heroes-afm.test.ts test/software-heroes-content-search.test.ts"
   },
   "ts-node": {
     "esm": true
   },
   "dependencies": {
-    "@abaplint/core": "^2.115.0",
     "@modelcontextprotocol/sdk": "^1.25.3",
     "better-sqlite3": "^12.2.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "fast-glob": "^3.3.2",
     "gray-matter": "^4.0.3",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "@abaplint/core": "^2.115.0"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
@@ -52,5 +47,17 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.4.4",
     "vitest": "^2.1.5"
+  },
+  "description": "ABAP/RAP-focused MCP server for ADT (Eclipse) - search documentation, lint code",
+  "homepage": "https://github.com/marianfoo/abap-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marianfoo/abap-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marianfoo/abap-mcp-server/issues"
+  },
+  "bin": {
+    "mcp-abap-community-server": "dist/src/server.js"
   }
 }

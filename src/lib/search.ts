@@ -34,7 +34,7 @@ export interface UnifiedSearchOptions {
 }
 
 // Timeout constant for online sources (10 seconds)
-const ONLINE_TIMEOUT_MS = 10000;
+const ONLINE_TIMEOUT_MS = CONFIG.SOFTWARE_HEROES_TIMEOUT_MS;
 
 // RRF (Reciprocal Rank Fusion) constants
 // k parameter controls how much weight early ranks get vs later ranks
@@ -178,6 +178,57 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
   ]);
 }
 
+/**
+ * Process a single online source result into SearchResult[] with RRF scoring
+ * Consolidates the repeated pattern used for SAP Help, Community, and Software-Heroes
+ */
+function processOnlineSource(
+  settled: PromiseSettledResult<SearchResponse>,
+  sourceName: string,
+  sourceKind: SearchResult['sourceKind'],
+  rrfWeight: number,
+  boost: number,
+  maxResults = 10
+): SearchResult[] {
+  if (settled.status !== 'fulfilled') {
+    const reason = (settled as PromiseRejectedResult).reason;
+    console.warn(`❌ [${sourceName}] Failed or timed out:`, reason?.message || reason);
+    return [];
+  }
+
+  const response = settled.value as SearchResponse;
+
+  if (response?.error) {
+    console.warn(`⚠️ [${sourceName}] ${response.error}`);
+  }
+
+  if (!response?.results || response.results.length === 0) {
+    console.log(`⚠️ [${sourceName}] No results`);
+    return [];
+  }
+
+  const results: SearchResult[] = response.results.slice(0, maxResults).map((r, idx) => {
+    const rank = idx + 1;
+    const rrfScore = rrf(rank) * rrfWeight;
+    const finalScore = rrfScore * (1 + boost);
+
+    return {
+      id: r.id || `${sourceKind}-${idx}`,
+      text: `${r.title || ''}\n\n${r.description || r.snippet || ''}\n\n${r.url || ''}`,
+      bm25: 0,
+      sourceId: sourceKind.replace(/_/g, '-'),
+      path: r.url || '',
+      relFile: '',
+      finalScore,
+      sourceKind,
+      debug: { rank, rrfScore, boost }
+    };
+  });
+
+  console.log(`✅ [${sourceName}] ${results.length} results (boost=${boost.toFixed(2)})`);
+  return results;
+}
+
 // Determine ABAP flavor from query and explicit parameter
 function determineAbapFlavor(query: string, explicitFlavor?: 'standard' | 'cloud' | 'auto'): 'standard' | 'cloud' {
   // If explicit flavor is specified (not 'auto'), use it
@@ -199,8 +250,10 @@ function determineAbapFlavor(query: string, explicitFlavor?: 'standard' | 'cloud
 
 // Sample-heavy sources (code repositories and cheat sheets)
 const SAMPLE_SOURCES = [
+  'openui5-samples',
+  'cap-fiori-showcase',
   'abap-platform-rap-opensap',
-  'cloud-abap-rap', 
+  'cloud-abap-rap',
   'abap-platform-reuse-services',
   'abap-cheat-sheets',
   'abap-fiori-showcase'
@@ -489,35 +542,18 @@ export async function search(
   // Optionally search online sources with timeout
   let onlineResults: SearchResult[] = [];
   
-  // Online search status for debugging
-  const onlineStatus = {
-    sapHelp: { status: 'skipped' as string, resultCount: 0, error: null as string | null },
-    sapCommunity: { status: 'skipped' as string, resultCount: 0, error: null as string | null },
-    softwareHeroes: { status: 'skipped' as string, resultCount: 0, error: null as string | null }
-  };
-  
   if (includeOnline) {
-    console.log('🌐 [ONLINE] Starting online searches (SAP Help, Community, Software-Heroes) with 10s timeout...');
-    console.log(`🌐 [ONLINE] Query: "${query}"`);
+    console.log(`🌐 [ONLINE] Starting online searches for "${query}" (${ONLINE_TIMEOUT_MS}ms timeout)...`);
     
     const onlineSearches = await Promise.allSettled([
       // SAP Help search with timeout
-      withTimeout(
-        searchSapHelp(query),
-        ONLINE_TIMEOUT_MS,
-        'SAP Help search'
-      ),
+      withTimeout(searchSapHelp(query), ONLINE_TIMEOUT_MS, 'SAP Help search'),
       // SAP Community search with timeout  
-      withTimeout(
-        searchCommunity(query),
-        ONLINE_TIMEOUT_MS,
-        'SAP Community search'
-      ),
+      withTimeout(searchCommunity(query), ONLINE_TIMEOUT_MS, 'SAP Community search'),
       // Software-Heroes search with timeout - search both EN and DE languages
       // since content is available in both and query could be in either language
       withTimeout(
         (async (): Promise<SearchResponse> => {
-          // Run both language searches in parallel
           const [enResults, deResults] = await Promise.allSettled([
             searchSoftwareHeroesContent(query, { language: 'en' }),
             searchSoftwareHeroesContent(query, { language: 'de' })
@@ -527,27 +563,16 @@ export async function search(
           const seenUrls = new Set<string>();
           const mergedResults: ApiSearchResult[] = [];
           
-          // Process EN results first
-          if (enResults.status === 'fulfilled' && enResults.value.results) {
-            for (const r of enResults.value.results) {
-              if (r.url && !seenUrls.has(r.url)) {
-                seenUrls.add(r.url);
-                mergedResults.push(r);
+          for (const langResult of [enResults, deResults]) {
+            if (langResult.status === 'fulfilled' && langResult.value.results) {
+              for (const r of langResult.value.results) {
+                if (r.url && !seenUrls.has(r.url)) {
+                  seenUrls.add(r.url);
+                  mergedResults.push(r);
+                }
               }
             }
           }
-          
-          // Then DE results (may overlap or be unique)
-          if (deResults.status === 'fulfilled' && deResults.value.results) {
-            for (const r of deResults.value.results) {
-              if (r.url && !seenUrls.has(r.url)) {
-                seenUrls.add(r.url);
-                mergedResults.push(r);
-              }
-            }
-          }
-          
-          console.log(`🌐 [Software-Heroes] Merged ${mergedResults.length} results from EN+DE searches`);
           
           return {
             results: mergedResults,
@@ -559,188 +584,18 @@ export async function search(
       )
     ]);
     
-    // Calculate online boost to make online results competitive with boosted offline results
-    // When user explicitly requests includeOnline=true, they expect to see online results
-    // Without this boost, offline results with context boosts (1.9x) completely dominate
-    // This boost makes top online results competitive with mid-tier offline results
-    const onlineBoost = 1.5; // Baseline boost for online results when explicitly requested
+    // Online boost makes results competitive with boosted offline results
+    // Without this, offline context boosts (~1.9x) completely dominate
+    const onlineBoost = 1.5;
     
-    // Process SAP Help results with RRF scoring
-    console.log(`🌐 [SAP Help] Status: ${onlineSearches[0].status}`);
-    if (onlineSearches[0].status === 'fulfilled') {
-      const helpResponse = onlineSearches[0].value as SearchResponse;
-      onlineStatus.sapHelp.status = 'fulfilled';
-      
-      // Debug: log raw response structure
-      console.log(`🌐 [SAP Help] Response keys: ${Object.keys(helpResponse || {}).join(', ')}`);
-      console.log(`🌐 [SAP Help] results array length: ${helpResponse?.results?.length ?? 'undefined'}`);
-      console.log(`🌐 [SAP Help] error field: ${helpResponse?.error ?? 'none'}`);
-      
-      if (helpResponse?.error) {
-        onlineStatus.sapHelp.error = helpResponse.error;
-        console.warn(`🌐 [SAP Help] Error in response: ${helpResponse.error}`);
-      }
-      
-      if (helpResponse?.results && helpResponse.results.length > 0) {
-        // Debug: log first result structure
-        const firstResult = helpResponse.results[0];
-        console.log(`🌐 [SAP Help] First result keys: ${Object.keys(firstResult || {}).join(', ')}`);
-        console.log(`🌐 [SAP Help] First result title: ${firstResult?.title}`);
-        
-        const helpResults: SearchResult[] = helpResponse.results.slice(0, 10).map((r, idx) => {
-          const rank = idx + 1;
-          const rrfScore = rrf(rank) * RRF_WEIGHTS.sap_help;
-          // Apply online boost to make results competitive with boosted offline results
-          const finalScore = rrfScore * (1 + onlineBoost);
-          
-          return {
-            id: r.id || `sap-help-${idx}`,
-            text: `${r.title || ''}\n\n${r.description || r.snippet || ''}\n\n${r.url || ''}`,
-            bm25: 0,
-            sourceId: 'sap-help',
-            path: r.url || '',
-            relFile: '',
-            finalScore,
-            sourceKind: 'sap_help' as const,
-            debug: {
-              rank,
-              rrfScore,
-              boost: onlineBoost
-            }
-          };
-        });
-        onlineResults.push(...helpResults);
-        onlineStatus.sapHelp.resultCount = helpResults.length;
-        console.log(`✅ [SAP Help] Processed ${helpResults.length} results with boost=${onlineBoost}`);
-      } else {
-        console.log(`⚠️ [SAP Help] No results in response (results array empty or missing)`);
-      }
-    } else {
-      const reason = (onlineSearches[0] as PromiseRejectedResult).reason;
-      onlineStatus.sapHelp.status = 'rejected';
-      onlineStatus.sapHelp.error = reason?.message || String(reason);
-      console.warn(`❌ [SAP Help] Failed or timed out:`, reason);
-    }
+    // Process each online source using shared helper
+    onlineResults.push(
+      ...processOnlineSource(onlineSearches[0], 'SAP Help', 'sap_help', RRF_WEIGHTS.sap_help, onlineBoost),
+      ...processOnlineSource(onlineSearches[1], 'SAP Community', 'sap_community', RRF_WEIGHTS.sap_community, onlineBoost * 0.5),
+      ...processOnlineSource(onlineSearches[2], 'Software-Heroes', 'software_heroes', RRF_WEIGHTS.software_heroes, onlineBoost * 0.9)
+    );
     
-    // Process SAP Community results with RRF scoring
-    console.log(`🌐 [SAP Community] Status: ${onlineSearches[1].status}`);
-    if (onlineSearches[1].status === 'fulfilled') {
-      const communityResponse = onlineSearches[1].value as SearchResponse;
-      onlineStatus.sapCommunity.status = 'fulfilled';
-      
-      // Debug: log raw response structure
-      console.log(`🌐 [SAP Community] Response keys: ${Object.keys(communityResponse || {}).join(', ')}`);
-      console.log(`🌐 [SAP Community] results array length: ${communityResponse?.results?.length ?? 'undefined'}`);
-      console.log(`🌐 [SAP Community] error field: ${communityResponse?.error ?? 'none'}`);
-      
-      if (communityResponse?.error) {
-        onlineStatus.sapCommunity.error = communityResponse.error;
-        console.warn(`🌐 [SAP Community] Error in response: ${communityResponse.error}`);
-      }
-      
-      if (communityResponse?.results && communityResponse.results.length > 0) {
-        // Debug: log first result structure
-        const firstResult = communityResponse.results[0];
-        console.log(`🌐 [SAP Community] First result keys: ${Object.keys(firstResult || {}).join(', ')}`);
-        console.log(`🌐 [SAP Community] First result title: ${firstResult?.title}`);
-        
-        const communityResults: SearchResult[] = communityResponse.results.slice(0, 10).map((r, idx) => {
-          const rank = idx + 1;
-          const rrfScore = rrf(rank) * RRF_WEIGHTS.sap_community;
-          // Apply online boost (slightly lower for community as it can be noisier)
-          const communityBoost = onlineBoost * 0.5; // 50% of SAP Help boost
-          const finalScore = rrfScore * (1 + communityBoost);
-          
-          return {
-            id: r.id || `community-${idx}`,
-            text: `${r.title || ''}\n\n${r.description || r.snippet || ''}\n\n${r.url || ''}`,
-            bm25: 0,
-            sourceId: 'sap-community',
-            path: r.url || '',
-            relFile: '',
-            finalScore,
-            sourceKind: 'sap_community' as const,
-            debug: {
-              rank,
-              rrfScore,
-              boost: communityBoost
-            }
-          };
-        });
-        onlineResults.push(...communityResults);
-        onlineStatus.sapCommunity.resultCount = communityResults.length;
-        console.log(`✅ [SAP Community] Processed ${communityResults.length} results with boost=${onlineBoost * 0.5}`);
-      } else {
-        console.log(`⚠️ [SAP Community] No results in response (results array empty or missing)`);
-      }
-    } else {
-      const reason = (onlineSearches[1] as PromiseRejectedResult).reason;
-      onlineStatus.sapCommunity.status = 'rejected';
-      onlineStatus.sapCommunity.error = reason?.message || String(reason);
-      console.warn(`❌ [SAP Community] Failed or timed out:`, reason);
-    }
-    
-    // Process Software-Heroes results with RRF scoring
-    console.log(`🌐 [Software-Heroes] Status: ${onlineSearches[2].status}`);
-    if (onlineSearches[2].status === 'fulfilled') {
-      const heroesResponse = onlineSearches[2].value as SearchResponse;
-      onlineStatus.softwareHeroes.status = 'fulfilled';
-      
-      // Debug: log raw response structure
-      console.log(`🌐 [Software-Heroes] Response keys: ${Object.keys(heroesResponse || {}).join(', ')}`);
-      console.log(`🌐 [Software-Heroes] results array length: ${heroesResponse?.results?.length ?? 'undefined'}`);
-      console.log(`🌐 [Software-Heroes] error field: ${heroesResponse?.error ?? 'none'}`);
-      
-      if (heroesResponse?.error) {
-        onlineStatus.softwareHeroes.error = heroesResponse.error;
-        console.warn(`🌐 [Software-Heroes] Error in response: ${heroesResponse.error}`);
-      }
-      
-      if (heroesResponse?.results && heroesResponse.results.length > 0) {
-        // Debug: log first result structure
-        const firstResult = heroesResponse.results[0];
-        console.log(`🌐 [Software-Heroes] First result keys: ${Object.keys(firstResult || {}).join(', ')}`);
-        console.log(`🌐 [Software-Heroes] First result title: ${firstResult?.title}`);
-        
-        // Software-Heroes provides high-quality ABAP tutorials, give it a healthy boost
-        const heroesBoost = onlineBoost * 0.9; // Slightly lower than SAP Help but higher than Community
-        
-        const heroesResults: SearchResult[] = heroesResponse.results.slice(0, 10).map((r, idx) => {
-          const rank = idx + 1;
-          const rrfScore = rrf(rank) * RRF_WEIGHTS.software_heroes;
-          const finalScore = rrfScore * (1 + heroesBoost);
-          
-          return {
-            id: r.id || `software-heroes-${idx}`,
-            text: `${r.title || ''}\n\n${r.description || r.snippet || ''}\n\n${r.url || ''}`,
-            bm25: 0,
-            sourceId: 'software-heroes',
-            path: r.url || '',
-            relFile: '',
-            finalScore,
-            sourceKind: 'software_heroes' as const,
-            debug: {
-              rank,
-              rrfScore,
-              boost: heroesBoost
-            }
-          };
-        });
-        onlineResults.push(...heroesResults);
-        onlineStatus.softwareHeroes.resultCount = heroesResults.length;
-        console.log(`✅ [Software-Heroes] Processed ${heroesResults.length} results with boost=${heroesBoost}`);
-      } else {
-        console.log(`⚠️ [Software-Heroes] No results in response (results array empty or missing)`);
-      }
-    } else {
-      const reason = (onlineSearches[2] as PromiseRejectedResult).reason;
-      onlineStatus.softwareHeroes.status = 'rejected';
-      onlineStatus.softwareHeroes.error = reason?.message || String(reason);
-      console.warn(`❌ [Software-Heroes] Failed or timed out:`, reason);
-    }
-    
-    // Summary
-    console.log(`🌐 [ONLINE] Summary: SAP Help=${onlineStatus.sapHelp.resultCount}, Community=${onlineStatus.sapCommunity.resultCount}, Software-Heroes=${onlineStatus.softwareHeroes.resultCount}, Total online=${onlineResults.length}, boost=${onlineBoost}`);
+    console.log(`🌐 [ONLINE] Total: ${onlineResults.length} online results`);
   }
   
   // Merge offline and online results

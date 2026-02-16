@@ -1377,7 +1377,7 @@ export async function searchLibraries(query: string, fileContent?: string): Prom
         snippet: r.docDescription,
         score: r.score,
         metadata: {
-          source: 'abap-docs',
+          source: 'sap-docs',
           library: libraryId,
           rank: index + 1,
           context: queryContext
@@ -1711,7 +1711,7 @@ export async function listDocumentationResources() {
   // Add library overview resources
   for (const lib of Object.values(index)) {
     resources.push({
-      uri: `abap-docs://${lib.id}`,
+      uri: `sap-docs://${lib.id}`,
       name: `${lib.name} Documentation Overview`,
       description: lib.description,
       mimeType: "text/markdown"
@@ -1720,7 +1720,7 @@ export async function listDocumentationResources() {
     // Add individual document resources
     for (const doc of lib.docs) {
       resources.push({
-        uri: `abap-docs://${lib.id}/${encodeURIComponent(doc.relFile)}`,
+        uri: `sap-docs://${lib.id}/${encodeURIComponent(doc.relFile)}`,
         name: doc.title,
         description: `${doc.description} (${doc.snippetCount} code snippets)`,
         mimeType: "text/markdown"
@@ -1730,7 +1730,7 @@ export async function listDocumentationResources() {
 
   // Add SAP Community as a searchable resource
   resources.push({
-    uri: "abap-docs:///community",
+    uri: "sap-docs:///community",
     name: "SAP Community Posts",
     description: "Real-time access to SAP Community blog posts, discussions, and solutions. Search for topics to find community insights and practical solutions.",
     mimeType: "text/markdown"
@@ -1743,7 +1743,7 @@ export async function readDocumentationResource(uri: string) {
   const index = await loadIndex();
   
   // Handle community overview
-  if (uri === "abap-docs:///community") {
+  if (uri === "sap-docs:///community") {
     const overview = [
       `# SAP Community`,
       ``,
@@ -1777,9 +1777,9 @@ export async function readDocumentationResource(uri: string) {
     };
   }
 
-  // Parse URI: abap-docs://[libraryId]/[optional-file-path]
-  // Note: libraryId starts with '/', so we may have abap-docs:///cap/... (3 slashes)
-  const match = uri.match(/^abap-docs:\/\/\/?([^\/]+)(?:\/(.+))?$/);
+  // Parse URI: sap-docs://[libraryId]/[optional-file-path]
+  // Note: libraryId starts with '/', so we may have sap-docs:///cap/... (3 slashes)
+  const match = uri.match(/^sap-docs:\/\/\/?([^\/]+)(?:\/(.+))?$/);
   if (!match) {
     throw new Error(`Invalid resource URI: ${uri}`);
   }
