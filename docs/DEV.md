@@ -79,7 +79,7 @@ Online search sources (when `includeOnline=true`):
 
 - SAP Help
 - SAP Community
-- Software Heroes content search
+- Software Heroes content search (via `START_SEARCH_JSON`, structured JSON)
 
 `fetch` remains shared and unchanged.
 
@@ -98,11 +98,23 @@ Defined in `config/variants/*.json` and enforced by `src/lib/variant.ts` + `src/
 - Unified search: `src/lib/search.ts`
 - Runtime config: `src/lib/config.ts`
 - Metadata access: `src/lib/metadata.ts`
+- Software Heroes core/client: `src/lib/softwareHeroes/core.ts`
+- Software Heroes content search: `src/lib/softwareHeroes/contentSearch.ts`
+- ABAP Feature Matrix: `src/lib/softwareHeroes/abapFeatureMatrix.ts`
 - Build index: `scripts/build-index.ts`
 - Build FTS: `scripts/build-fts.ts`
 - Setup/submodules: `setup.sh`
 - Sync automation: `scripts/sync-to-abap.sh`
 - Sync workflow: `.github/workflows/sync-to-abap-main.yml`
+
+## Environment Variables (Software Heroes)
+
+| Variable | Default | Description |
+|---|---|---|
+| `SOFTWARE_HEROES_CLIENT` | `ABAPMCPSERVER` | Client identifier sent in API headers |
+| `SOFTWARE_HEROES_TIMEOUT_MS` | `10000` | Request timeout (ms) |
+| `SOFTWARE_HEROES_CACHE_TTL_MS` | `86400000` | In-memory cache TTL (ms, default 24 h) |
+| `SOFTWARE_HEROES_AFM_CACHE_PATH` | `dist/data/abap-feature-matrix.json` | Disk cache path for the ABAP Feature Matrix |
 
 ## One-Way Sync Workflow (Upstream -> ABAP Repo)
 

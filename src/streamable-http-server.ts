@@ -9,6 +9,7 @@ import {
 import { logger } from "./lib/logger.js";
 import { BaseServerHandler } from "./lib/BaseServerHandler.js";
 import { getVariantConfig } from "./lib/variant.js";
+import { prefetchFeatureMatrix } from "./lib/softwareHeroes/abapFeatureMatrix.js";
 
 // Version will be updated by deployment script
 const VERSION = "0.3.22";
@@ -84,7 +85,11 @@ async function main() {
   // Initialize search system with metadata
   BaseServerHandler.initializeMetadata();
 
+  // Pre-warm the ABAP Feature Matrix (fire-and-forget, never blocks startup)
+  prefetchFeatureMatrix();
+
   const MCP_PORT = process.env.MCP_PORT ? parseInt(process.env.MCP_PORT, 10) : variant.server.streamablePort;
+  const MCP_HOST = process.env.MCP_HOST || '127.0.0.1';
   
   // Create Express application
   const app = express();
@@ -259,8 +264,8 @@ async function main() {
     });
   });
 
-  // Start the server (bind to localhost for local-only access)
-  const server = app.listen(MCP_PORT, '127.0.0.1', (error?: Error) => {
+  // Bind host is configurable; default remains localhost unless overridden.
+  const server = app.listen(MCP_PORT, MCP_HOST, (error?: Error) => {
     if (error) {
       console.error('Failed to start server:', error);
       process.exit(1);
@@ -272,7 +277,7 @@ async function main() {
   server.keepAliveTimeout = 0;  // Disable keep-alive timeout
   server.headersTimeout = 0;    // Disable headers timeout
   
-  console.log(`📚 MCP Streamable HTTP Server listening on http://127.0.0.1:${MCP_PORT}`);
+  console.log(`📚 MCP Streamable HTTP Server listening on http://${MCP_HOST}:${MCP_PORT}`);
   console.log(`
 ==============================================
 MCP STREAMABLE HTTP SERVER
