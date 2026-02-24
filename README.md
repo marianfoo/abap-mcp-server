@@ -2,13 +2,20 @@
 
 > Community project. This server is not an official SAP product.
 
+## Public Hosted Endpoint
+
+> **Ready to use — no setup required**
+>
+> **`https://mcp-abap.marianzeis.de/mcp`**
+
 `abap-mcp-server` is the ABAP-focused downstream variant generated from upstream `mcp-sap-docs`.
 
 ## What This Variant Provides
 
-- Unified ABAP/RAP search (`search`)
-- Document retrieval (`fetch`)
+- Unified ABAP/RAP search (`search`) — searches offline docs + optional online sources (SAP Help, SAP Community, Software Heroes)
+- Document retrieval (`fetch`) — retrieve full document or community post content by ID
 - ABAP feature matrix lookup (`abap_feature_matrix`)
+- SAP Community search (`sap_community_search`) — dedicated community-only search for troubleshooting, error messages, and workarounds not found via `search`
 - Local ABAP linting (`abap_lint`)
 
 Search parameters:
@@ -38,10 +45,6 @@ Default local streamable endpoint:
 Health:
 
 - `http://127.0.0.1:3124/health`
-
-## Hosted Endpoint
-
-- `https://mcp-abap.marianzeis.de/mcp`
 
 ## Eclipse / Copilot Example
 
