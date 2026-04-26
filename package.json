@@ -1,6 +1,6 @@
 {
   "name": "mcp-abap-community-server",
-  "version": "0.3.39",
+  "version": "0.3.40",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
