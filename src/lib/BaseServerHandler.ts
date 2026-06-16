@@ -31,6 +31,7 @@ import {
   readDocumentationResource,
   searchCommunity
 } from "./localDocs.js";
+import { getSapHelpDocument } from "./sapHelp.js";
 import { buildLiqlSearchUrl } from "./communityBestMatch.js";
 import { lintAbapCode, LintResult } from "./abaplint.js";
 import { searchFeatureMatrix, SearchFeatureMatrixResult, getFeatureMatrixCacheStats } from "./softwareHeroes/index.js";
@@ -261,6 +262,8 @@ Unified search for ABAP + RAP development documentation. It searches across cura
 
 Use this to discover the best document IDs, then call \`fetch(id=...)\` to retrieve full content.
 
+LANGUAGE: Query in ENGLISH — the corpus and ranking are primarily English; non-English queries return weaker results.
+
 SOURCES OVERVIEW
 
 OFFLINE sources (local FTS index; always searched unless filtered via \`sources\`):
@@ -327,7 +330,7 @@ ESCALATION: If search returns no useful results (especially for specific error m
               properties: {
                 query: {
                   type: "string",
-                  description: "Search terms for ABAP/RAP documentation. Be specific and use technical terms."
+                  description: "Search terms for ABAP/RAP documentation, in ENGLISH (corpus is primarily English). Be specific and use technical terms."
                 },
                 k: {
                   type: "number",
@@ -356,6 +359,10 @@ ESCALATION: If search returns no useful results (especially for specific error m
                   type: "array",
                   items: { type: "string" },
                   description: "Optional: specific source IDs to search. If not provided, searches all ABAP sources."
+                },
+                version: {
+                  type: "string",
+                  description: "Optional SAP release filter, applied ONLY to online SAP Help (help.sap.com) — offline docs are unaffected. Omit it for the latest content (the right default for most queries). To pin an older release, copy a result's `versionId` value EXACTLY and pass it back here — it is case-sensitive and its format varies by product (e.g. '2025.001', '2.0.08', '10.0', '2211', 'Cloud', '2026_06'). Discover valid values in one step: run the same search WITHOUT version first; every result shows its `versionId`. Never invent, reformat, or guess the token (a bare year like '2025' is usually a different release). If a version matches nothing, the latest results are returned instead, so no results are lost."
                 }
               },
               required: ["query"]
@@ -603,7 +610,7 @@ USE CASES:
               properties: {
                 query: {
                   type: "string",
-                  description: "Feature keywords to search for. If empty or not provided, returns all features."
+                  description: "Feature keywords to search for, in ENGLISH (matrix is English). If empty or not provided, returns all features."
                 },
                 limit: {
                   type: "number",
@@ -861,7 +868,7 @@ WORKFLOW:
               properties: {
                 query: {
                   type: "string",
-                  description: "Search terms for SAP Community. Be specific - use error messages, symptoms, or technical terms."
+                  description: "Search terms for SAP Community, in ENGLISH (corpus is primarily English). Be specific - use error messages, symptoms, or technical terms."
                 },
                 k: {
                   type: "number",
@@ -948,7 +955,7 @@ ${contextNote}`,
               inputSchema: {
                 type: "object",
                 properties: {
-                  query: { type: "string", description: "Object name or topic keyword to search." },
+                  query: { type: "string", description: "Object name or topic keyword to search, in ENGLISH." },
                   system_type: {
                     type: "string",
                     enum: ["public_cloud", "btp", "private_cloud", "on_premise"],
@@ -1079,7 +1086,7 @@ RETURNS (JSON):
             inputSchema: {
               type: "object",
               properties: {
-                query: { type: "string", description: "Search terms for BTP services." },
+                query: { type: "string", description: "Search terms for BTP services, in ENGLISH." },
                 top: { type: "number", description: "Number of results (default 10, max 25)." },
                 category: { type: "string", description: "Category filter (e.g., 'AI', 'Integration', 'Data and Analytics')." },
                 license_model: { type: "string", enum: ["free", "payg", "subscription", "btpea", "cloudcredits"], description: "License model filter." }
@@ -1164,14 +1171,16 @@ RETURNS (JSON):
           includeOnline = true,  // Online search enabled by default
           includeSamples = true,
           abapFlavor = 'auto',
-          sources
-        } = args as { 
+          sources,
+          version
+        } = args as {
           query: string;
           k?: number;
           includeOnline?: boolean;
           includeSamples?: boolean;
           abapFlavor?: 'standard' | 'cloud' | 'auto';
           sources?: string[];
+          version?: string;
         };
         
         // Validate and constrain k parameter (max 100 results)
@@ -1183,7 +1192,7 @@ RETURNS (JSON):
         // DEBUG: Log all input parameters
         console.log(`\n🔍 [SEARCH TOOL] ========================================`);
         console.log(`🔍 [SEARCH TOOL] Query: "${query}"`);
-        console.log(`🔍 [SEARCH TOOL] Parameters: k=${resultCount}, includeOnline=${includeOnline}, includeSamples=${includeSamples}, abapFlavor=${abapFlavor}`);
+        console.log(`🔍 [SEARCH TOOL] Parameters: k=${resultCount}, includeOnline=${includeOnline}, includeSamples=${includeSamples}, abapFlavor=${abapFlavor}, version=${version || 'latest'}`);
         console.log(`🔍 [SEARCH TOOL] Sources filter: ${sources ? sources.join(', ') : 'all'}`);
         console.log(`🔍 [SEARCH TOOL] Request ID: ${timing.requestId}`);
         
@@ -1192,12 +1201,13 @@ RETURNS (JSON):
           console.log(`🔍 [SEARCH TOOL] Calling unified search...`);
           const searchStartTime = Date.now();
           
-          const results = await search(query, { 
+          const results = await search(query, {
             k: resultCount,
             includeOnline,
             includeSamples,
             abapFlavor,
-            sources
+            sources,
+            version
           });
           
           const searchDuration = Date.now() - searchStartTime;
@@ -1258,15 +1268,19 @@ RETURNS (JSON):
                 sourceKind: r.sourceKind || 'offline',
                 library: libraryId,
                 bm25Score: r.bm25,
-                rank: index + 1
+                rank: index + 1,
+                // SAP Help hits carry a structured citation (loio/product/version); surface it
+                // so the agent can cite/dedup/verify version without fetching. Absent otherwise.
+                ...(r.citation ?? {})
               }
             };
           });
           
-          logger.logToolSuccess(name, timing.requestId, timing.startTime, topResults.length, { 
+          logger.logToolSuccess(name, timing.requestId, timing.startTime, topResults.length, {
             includeOnline,
             includeSamples,
-            abapFlavor
+            abapFlavor,
+            version: version || 'latest'
           });
           
           // DEBUG: Log output summary
@@ -1334,8 +1348,47 @@ RETURNS (JSON):
         const timing = logger.logToolStart(name, searchKey, clientMetadata);
         
         try {
+          // SAP Help documents carry a structured citation (loio / product / version /
+          // deliverable build) resolved during fetch — surface it as metadata instead of
+          // the generic, hardcoded `source: 'abap-docs'` path used for offline docs.
+          if (library_id.startsWith('sap-help-')) {
+            const { text, citation } = await getSapHelpDocument(library_id);
+
+            if (!text) {
+              logger.logToolSuccess(name, timing.requestId, timing.startTime, 0);
+              return createErrorResponse(`Nothing found for ${library_id}`, timing.requestId);
+            }
+
+            const document: DocumentResult = {
+              id: library_id,
+              title: citation.title || library_id,
+              text,
+              url: citation.url || `#${library_id}`,
+              metadata: {
+                source: 'sap-help',
+                sourceKind: 'sap_help',
+                loio: citation.loio ?? undefined,
+                product: citation.product,
+                requestedVersion: citation.requestedVersion,
+                versionId: citation.versionId,
+                version: citation.version,
+                language: citation.language,
+                deliverableId: citation.deliverableId,
+                buildNo: citation.buildNo,
+                contentLength: text.length
+              }
+            };
+
+            logger.logToolSuccess(name, timing.requestId, timing.startTime, 1, {
+              contentLength: text.length,
+              libraryId: library_id
+            });
+
+            return createDocumentResponse(document);
+          }
+
           const text = await fetchLibraryDocumentation(library_id, topic);
-          
+
           if (!text) {
             logger.logToolSuccess(name, timing.requestId, timing.startTime, 0);
             return createErrorResponse(
@@ -1343,7 +1396,7 @@ RETURNS (JSON):
               timing.requestId
             );
           }
-          
+
           // Transform document content to ChatGPT-compatible format
           const fetchedSourceUrl = extractSourceUrlFromText(text);
           const rootLibraryId = library_id.startsWith('/') ? extractLibraryIdFromPath(library_id) : library_id;
