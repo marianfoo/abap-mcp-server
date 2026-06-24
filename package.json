@@ -1,14 +1,18 @@
 {
   "name": "mcp-abap-community-server",
-  "version": "0.3.48",
+  "version": "0.3.49",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
     "build:tsc": "tsc",
     "build:index": "npm run build:tsc && node dist/scripts/build-index.js",
     "build:fts": "npm run build:tsc && node dist/scripts/build-fts.js",
+    "build:fts-only": "npm run build:tsc && node dist/scripts/build-index.js && node dist/scripts/build-fts.js",
     "build": "npm run build:tsc && node dist/scripts/build-index.js && node dist/scripts/build-fts.js && node dist/scripts/build-embeddings.js",
     "build:embeddings": "npm run build:tsc && node dist/scripts/build-embeddings.js",
+    "btp:build-image": "bash scripts/btp/build-ghcr-image.sh",
+    "btp:build-image:push": "bash scripts/btp/build-ghcr-image.sh --push",
+    "btp:deploy:mta": "bash scripts/btp/deploy-cf-mta.sh",
     "start": "node dist/src/server.js",
     "start:http": "node dist/src/http-server.js",
     "start:streamable": "node dist/src/streamable-http-server.js",
@@ -37,6 +41,8 @@
     "eval": "npm run build:tsc && node test/eval/run-eval.js",
     "eval:update": "npm run build:tsc && node test/eval/run-eval.js --update",
     "test:version-filter": "npm run build:tsc && npx vitest run test/version-filter-sap-help.test.ts",
+    "test:product-filter": "npm run build:tsc && npx vitest run test/product-filter-sap-help.test.ts",
+    "test:fallback-ladder": "npx vitest run test/help-fallback-ladder.test.ts",
     "test:citations": "npm run build:tsc && npx vitest run test/citations-sap-help.test.ts",
     "test:html-to-md": "npm run build:tsc && npx vitest run test/html-to-md.test.ts"
   },
