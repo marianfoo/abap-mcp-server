@@ -1,5 +1,7 @@
 # ABAP MCP Server
 
+[![MCP status](https://mcpvitals.com/badge/e7bc757132.svg)](https://mcpvitals.com/status/e7bc757132)
+
 > Community project. This server is not an official SAP product.
 
 ## Public Hosted Endpoint
