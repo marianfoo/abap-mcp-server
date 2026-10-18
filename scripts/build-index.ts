@@ -7,6 +7,7 @@ import { getAllowedSources, getVariantName } from "../src/lib/variant.js";
 import { materializeOpenUxGeneratedSources } from "./materialize-openux-generated.js";
 import { materializeTutorials, TUTORIALS } from "./materialize-tutorials.js";
 import { extractVocabularyTerms } from "./odata-vocabulary-terms.js";
+import { markdownDescription } from "./markdown-description.js";
 
 interface DocEntry {
   id: string;              // "/sapui5/<rel-path>", "/cap/<rel-path>", "/openui5-api/<rel-path>", or "/openui5-samples/<rel-path>"
@@ -104,8 +105,8 @@ const SOURCES: SourceConfig[] = [
     repoName: "ui5-tooling",
     absDir: join("sources", "ui5-tooling", "docs"),
     id: "/ui5-tooling",
-    name: "UI5 Tooling ",
-    description: "UI5 Tooling documentation",
+    name: "UI5 CLI",
+    description: "UI5 CLI v4 documentation (formerly UI5 Tooling)",
     filePattern: "**/*.md",
     type: "markdown" as const
   },
@@ -1175,9 +1176,7 @@ async function main() {
         } else if (frontmatter?.synopsis && content.includes("{{ $frontmatter.synopsis }}")) {
           description = frontmatter.synopsis;
         } else {
-          // Fallback to content extraction
-          const rawDescription = lines.find((l) => l.trim() && !l.startsWith("#"))?.trim() || "";
-          description = rawDescription;
+          description = markdownDescription(content);
         }
         
         // Extract keywords from frontmatter (especially important for ABAP docs)
