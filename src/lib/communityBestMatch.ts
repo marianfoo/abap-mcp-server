@@ -78,16 +78,22 @@ export function normalizeCommunityUrl(url?: string, postId?: string): string {
  * Returns topic-level messages only (depth=0) to avoid reply noise.
  */
 export function buildLiqlSearchUrl(query: string, limit = 20, subjectOnly = false, minKudos = 0): string {
-  const escaped = query.replace(/'/g, "\\'");
+  // LiQL escapes a quote by doubling it; a backslash is a plain character there.
+  const escaped = query.replace(/'/g, "''");
+  // Tool arguments are not type-checked at runtime: force integers before pasting them into the query.
+  // Kudos are integers: round up to preserve the meaning of a fractional minimum.
+  const kudos = Math.ceil(Number(minKudos));
+  const requestedLimit = Math.trunc(Number(limit));
+  const max = Number.isSafeInteger(requestedLimit) && requestedLimit > 0 ? requestedLimit : 20;
   const matchClause = subjectOnly
     ? `subject MATCHES '${escaped}'`
     : `(subject MATCHES '${escaped}' OR body MATCHES '${escaped}')`;
-  const kudosClause = minKudos > 0 ? ` AND kudos.sum(weight) >= ${minKudos}` : "";
+  const kudosClause = Number.isSafeInteger(kudos) && kudos > 0 ? ` AND kudos.sum(weight) >= ${kudos}` : "";
   const liql = [
     "SELECT id, subject, search_snippet, post_time, view_href, kudos.sum(weight)",
     "FROM messages",
     `WHERE ${matchClause} AND depth = 0${kudosClause}`,
-    `LIMIT ${limit}`,
+    `LIMIT ${max}`,
   ].join(" ");
   return `${LIQL_BASE}?q=${encodeURIComponent(liql)}`;
 }
@@ -98,6 +104,7 @@ async function executeLiqlSearch(url: string, userAgent?: string): Promise<any[]
       Accept: "application/json",
       "User-Agent": userAgent || "sap-docs-mcp/1.0 (LiQLSearch)",
     },
+    signal: AbortSignal.timeout(CONFIG.SAP_COMMUNITY_TIMEOUT_MS),
   });
 
   if (!response.ok) {
@@ -168,8 +175,13 @@ export async function searchCommunityBestMatch(
   console.log(`[SAP Community] LiQL broad (subject+body): query="${query}" minKudos=${minKudos}`);
   const broadSearch = executeLiqlSearch(broadUrl, userAgent);
 
-  const termResults = await Promise.all(termSearches);
-  const broadItems = await broadSearch;
+  // allSettled: one slow or failed search must not discard the others. Fail only if every search failed,
+  // so an outage is not mistaken for "no results".
+  const settled = await Promise.allSettled([broadSearch, ...termSearches]);
+  const failed = settled.filter((r): r is PromiseRejectedResult => r.status === "rejected");
+  if (failed.length === settled.length) throw failed[0].reason;
+  for (const r of failed) console.warn("[SAP Community] LiQL search failed, continuing with the rest:", r.reason);
+  const [broadItems, ...termResults] = settled.map(r => (r.status === "fulfilled" ? r.value : []));
 
   for (const items of termResults) allItems.push(...items);
   allItems.push(...broadItems);
@@ -251,7 +263,8 @@ export async function getCommunityPostsByIds(postIds: string[], userAgent?: stri
       headers: {
         'Accept': 'application/json',
         'User-Agent': userAgent || 'sap-docs-mcp/1.0 (BatchRetrieval)'
-      }
+      },
+      signal: AbortSignal.timeout(CONFIG.SAP_COMMUNITY_TIMEOUT_MS)
     });
 
     if (!response.ok) {
